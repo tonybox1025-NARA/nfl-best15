@@ -1,0 +1,8 @@
+nflreadpy>=0.1.4
+polars
+pyarrow
+pandas
+numpy
+scikit-learn
+lightgbm
+requests

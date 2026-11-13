@@ -1,0 +1,2837 @@
+{
+ "season": 2026,
+ "week": 10,
+ "generated_at": "2026-11-13 03:13 ET",
+ "sources": {
+  "injuries": "NFL 공식 리포트 296건 · ESPN 연결 실패(ProxyError)",
+  "weather": "날씨 0경기 · 10경기 실패",
+  "odds": "배당 미사용 (ODDS_API_KEY 없음)"
+ },
+ "has_odds": false,
+ "overall": {
+  "prob": [
+   {
+    "rank": 1,
+    "name": "Rashee Rice",
+    "pos": "WR",
+    "team": "KC",
+    "opp": "ATL",
+    "label": "리셉션 4개 이상",
+    "prob": 67.9,
+    "status": "",
+    "game_id": "2026_10_KC_ATL"
+   },
+   {
+    "rank": 2,
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "NYJ",
+    "label": "패싱 225야드 이상",
+    "prob": 67.7,
+    "status": "",
+    "game_id": "2026_10_BUF_NYJ"
+   },
+   {
+    "rank": 3,
+    "name": "Garrett Wilson",
+    "pos": "WR",
+    "team": "NYJ",
+    "opp": "BUF",
+    "label": "리셉션 4개 이상",
+    "prob": 67.2,
+    "status": "제한 훈련",
+    "game_id": "2026_10_BUF_NYJ"
+   },
+   {
+    "rank": 4,
+    "name": "Sam LaPorta",
+    "pos": "TE",
+    "team": "DET",
+    "opp": "NE",
+    "label": "리시빙 30야드 이상",
+    "prob": 67.2,
+    "status": "",
+    "game_id": "2026_10_NE_DET"
+   },
+   {
+    "rank": 5,
+    "name": "Tyler Warren",
+    "pos": "TE",
+    "team": "IND",
+    "opp": "MIA",
+    "label": "리셉션 4개 이상",
+    "prob": 67.2,
+    "status": "",
+    "game_id": "2026_10_MIA_IND"
+   },
+   {
+    "rank": 6,
+    "name": "Christian McCaffrey",
+    "pos": "RB",
+    "team": "SF",
+    "opp": "DAL",
+    "label": "리시빙 20야드 이상",
+    "prob": 67.0,
+    "status": "훈련 불참",
+    "game_id": "2026_10_SF_DAL"
+   },
+   {
+    "rank": 7,
+    "name": "Zay Flowers",
+    "pos": "WR",
+    "team": "BAL",
+    "opp": "LAC",
+    "label": "리셉션 4개 이상",
+    "prob": 66.7,
+    "status": "",
+    "game_id": "2026_10_LAC_BAL"
+   },
+   {
+    "rank": 8,
+    "name": "Trevor Lawrence",
+    "pos": "QB",
+    "team": "JAX",
+    "opp": "TEN",
+    "label": "패싱 225야드 이상",
+    "prob": 66.6,
+    "status": "",
+    "game_id": "2026_10_JAX_TEN"
+   },
+   {
+    "rank": 9,
+    "name": "Drake Maye",
+    "pos": "QB",
+    "team": "NE",
+    "opp": "DET",
+    "label": "패싱 225야드 이상",
+    "prob": 66.6,
+    "status": "",
+    "game_id": "2026_10_NE_DET"
+   },
+   {
+    "rank": 10,
+    "name": "Dak Prescott",
+    "pos": "QB",
+    "team": "DAL",
+    "opp": "SF",
+    "label": "패싱 225야드 이상",
+    "prob": 66.2,
+    "status": "",
+    "game_id": "2026_10_SF_DAL"
+   },
+   {
+    "rank": 11,
+    "name": "James Cook",
+    "pos": "RB",
+    "team": "BUF",
+    "opp": "NYJ",
+    "label": "애니타임 터치다운",
+    "prob": 65.7,
+    "status": "",
+    "game_id": "2026_10_BUF_NYJ"
+   },
+   {
+    "rank": 12,
+    "name": "A.J. Brown",
+    "pos": "WR",
+    "team": "NE",
+    "opp": "DET",
+    "label": "리시빙 40야드 이상",
+    "prob": 65.1,
+    "status": "제한 훈련",
+    "game_id": "2026_10_NE_DET"
+   },
+   {
+    "rank": 13,
+    "name": "Omar Cooper Jr.",
+    "pos": "WR",
+    "team": "NYJ",
+    "opp": "BUF",
+    "label": "리시빙 40야드 이상",
+    "prob": 64.6,
+    "status": "제한 훈련",
+    "game_id": "2026_10_BUF_NYJ"
+   },
+   {
+    "rank": 14,
+    "name": "Christian McCaffrey",
+    "pos": "RB",
+    "team": "SF",
+    "opp": "DAL",
+    "label": "러싱 50야드 이상",
+    "prob": 63.2,
+    "status": "훈련 불참",
+    "game_id": "2026_10_SF_DAL"
+   },
+   {
+    "rank": 15,
+    "name": "Braelon Allen",
+    "pos": "RB",
+    "team": "NYJ",
+    "opp": "BUF",
+    "label": "러싱 50야드 이상",
+    "prob": 63.2,
+    "status": "",
+    "game_id": "2026_10_BUF_NYJ"
+   }
+  ],
+  "edge": [],
+  "td": [
+   {
+    "rank": 1,
+    "name": "James Cook",
+    "pos": "RB",
+    "team": "BUF",
+    "opp": "NYJ",
+    "label": "애니타임 터치다운",
+    "prob": 65.7,
+    "status": "",
+    "game_id": "2026_10_BUF_NYJ"
+   },
+   {
+    "rank": 2,
+    "name": "Christian McCaffrey",
+    "pos": "RB",
+    "team": "SF",
+    "opp": "DAL",
+    "label": "애니타임 터치다운",
+    "prob": 62.4,
+    "status": "훈련 불참",
+    "game_id": "2026_10_SF_DAL"
+   },
+   {
+    "rank": 3,
+    "name": "Jahmyr Gibbs",
+    "pos": "RB",
+    "team": "DET",
+    "opp": "NE",
+    "label": "애니타임 터치다운",
+    "prob": 58.9,
+    "status": "",
+    "game_id": "2026_10_NE_DET"
+   },
+   {
+    "rank": 4,
+    "name": "Javonte Williams",
+    "pos": "RB",
+    "team": "DAL",
+    "opp": "SF",
+    "label": "애니타임 터치다운",
+    "prob": 58.5,
+    "status": "",
+    "game_id": "2026_10_SF_DAL"
+   },
+   {
+    "rank": 5,
+    "name": "Kyren Williams",
+    "pos": "RB",
+    "team": "LA",
+    "opp": "ARI",
+    "label": "애니타임 터치다운",
+    "prob": 52.8,
+    "status": "",
+    "game_id": "2026_10_LA_ARI"
+   },
+   {
+    "rank": 6,
+    "name": "Kenneth Walker III",
+    "pos": "RB",
+    "team": "KC",
+    "opp": "ATL",
+    "label": "애니타임 터치다운",
+    "prob": 51.4,
+    "status": "",
+    "game_id": "2026_10_KC_ATL"
+   },
+   {
+    "rank": 7,
+    "name": "Chuba Hubbard",
+    "pos": "RB",
+    "team": "CAR",
+    "opp": "NO",
+    "label": "애니타임 터치다운",
+    "prob": 46.9,
+    "status": "",
+    "game_id": "2026_10_CAR_NO"
+   },
+   {
+    "rank": 8,
+    "name": "Jaxon Smith-Njigba",
+    "pos": "WR",
+    "team": "SEA",
+    "opp": "LV",
+    "label": "애니타임 터치다운",
+    "prob": 46.7,
+    "status": "훈련 불참",
+    "game_id": "2026_10_SEA_LV"
+   },
+   {
+    "rank": 9,
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "NYJ",
+    "label": "애니타임 터치다운",
+    "prob": 46.2,
+    "status": "",
+    "game_id": "2026_10_BUF_NYJ"
+   },
+   {
+    "rank": 10,
+    "name": "Puka Nacua",
+    "pos": "WR",
+    "team": "LA",
+    "opp": "ARI",
+    "label": "애니타임 터치다운",
+    "prob": 43.8,
+    "status": "훈련 불참",
+    "game_id": "2026_10_LA_ARI"
+   },
+   {
+    "rank": 11,
+    "name": "George Kittle",
+    "pos": "TE",
+    "team": "SF",
+    "opp": "DAL",
+    "label": "애니타임 터치다운",
+    "prob": 43.2,
+    "status": "",
+    "game_id": "2026_10_SF_DAL"
+   },
+   {
+    "rank": 12,
+    "name": "Bhayshul Tuten",
+    "pos": "RB",
+    "team": "JAX",
+    "opp": "TEN",
+    "label": "애니타임 터치다운",
+    "prob": 42.9,
+    "status": "훈련 불참",
+    "game_id": "2026_10_JAX_TEN"
+   },
+   {
+    "rank": 13,
+    "name": "Blake Corum",
+    "pos": "RB",
+    "team": "LA",
+    "opp": "ARI",
+    "label": "애니타임 터치다운",
+    "prob": 42.0,
+    "status": "",
+    "game_id": "2026_10_LA_ARI"
+   },
+   {
+    "rank": 14,
+    "name": "Tee Higgins",
+    "pos": "WR",
+    "team": "CIN",
+    "opp": "PIT",
+    "label": "애니타임 터치다운",
+    "prob": 41.9,
+    "status": "",
+    "game_id": "2026_10_PIT_CIN"
+   },
+   {
+    "rank": 15,
+    "name": "Tony Pollard",
+    "pos": "RB",
+    "team": "TEN",
+    "opp": "JAX",
+    "label": "애니타임 터치다운",
+    "prob": 40.5,
+    "status": "훈련 불참",
+    "game_id": "2026_10_JAX_TEN"
+   }
+  ]
+ },
+ "games": [
+  {
+   "game_id": "2026_10_NE_DET",
+   "away": "NE",
+   "home": "DET",
+   "kickoff": "2026-11-15 09:30 ET",
+   "stadium": "FC Bayern Munich Stadium",
+   "roof": "dome",
+   "spread_home": 2.5,
+   "total": 50.5,
+   "proj": {
+    "away": 24.0,
+    "home": 26.5
+   },
+   "weather": {
+    "dome": true
+   },
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Hunter Henry",
+     "team": "NE",
+     "position": "TE",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "A.J. Brown",
+     "team": "NE",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Rhamondre Stevenson",
+     "team": "NE",
+     "position": "RB",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Amon-Ra St. Brown",
+     "team": "DET",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Sione Vaki",
+     "team": "DET",
+     "position": "RB",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Sam LaPorta",
+     "pos": "TE",
+     "team": "DET",
+     "opp": "NE",
+     "label": "리시빙 30야드 이상",
+     "prob": 67.2,
+     "status": "",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 2,
+     "name": "Drake Maye",
+     "pos": "QB",
+     "team": "NE",
+     "opp": "DET",
+     "label": "패싱 225야드 이상",
+     "prob": 66.6,
+     "status": "",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 3,
+     "name": "Amon-Ra St. Brown",
+     "pos": "WR",
+     "team": "DET",
+     "opp": "NE",
+     "label": "리셉션 6개 이상",
+     "prob": 65.3,
+     "status": "제한 훈련",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 4,
+     "name": "A.J. Brown",
+     "pos": "WR",
+     "team": "NE",
+     "opp": "DET",
+     "label": "리시빙 40야드 이상",
+     "prob": 65.1,
+     "status": "제한 훈련",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 5,
+     "name": "Jared Goff",
+     "pos": "QB",
+     "team": "DET",
+     "opp": "NE",
+     "label": "패싱 250야드 이상",
+     "prob": 64.4,
+     "status": "",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 6,
+     "name": "Hunter Henry",
+     "pos": "TE",
+     "team": "NE",
+     "opp": "DET",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "제한 훈련",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 7,
+     "name": "Jahmyr Gibbs",
+     "pos": "RB",
+     "team": "DET",
+     "opp": "NE",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 8,
+     "name": "Jahmyr Gibbs",
+     "pos": "RB",
+     "team": "DET",
+     "opp": "NE",
+     "label": "러싱 60야드 이상",
+     "prob": 61.9,
+     "status": "",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 9,
+     "name": "A.J. Brown",
+     "pos": "WR",
+     "team": "NE",
+     "opp": "DET",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "제한 훈련",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 10,
+     "name": "DeMario Douglas",
+     "pos": "WR",
+     "team": "NE",
+     "opp": "DET",
+     "label": "리시빙 40야드 이상",
+     "prob": 60.6,
+     "status": "",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 11,
+     "name": "Jared Goff",
+     "pos": "QB",
+     "team": "DET",
+     "opp": "NE",
+     "label": "패싱 TD 2개 이상",
+     "prob": 60.6,
+     "status": "",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 12,
+     "name": "Amon-Ra St. Brown",
+     "pos": "WR",
+     "team": "DET",
+     "opp": "NE",
+     "label": "리시빙 70야드 이상",
+     "prob": 60.4,
+     "status": "제한 훈련",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 13,
+     "name": "Rhamondre Stevenson",
+     "pos": "RB",
+     "team": "NE",
+     "opp": "DET",
+     "label": "러싱 40야드 이상",
+     "prob": 59.2,
+     "status": "제한 훈련",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 14,
+     "name": "Drake Maye",
+     "pos": "QB",
+     "team": "NE",
+     "opp": "DET",
+     "label": "패싱 TD 2개 이상",
+     "prob": 55.5,
+     "status": "",
+     "game_id": "2026_10_NE_DET"
+    },
+    {
+     "rank": 15,
+     "name": "Rhamondre Stevenson",
+     "pos": "RB",
+     "team": "NE",
+     "opp": "DET",
+     "label": "애니타임 터치다운",
+     "prob": 37.4,
+     "status": "제한 훈련",
+     "game_id": "2026_10_NE_DET"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_KC_ATL",
+   "away": "KC",
+   "home": "ATL",
+   "kickoff": "2026-11-15 13:00 ET",
+   "stadium": "Mercedes-Benz Stadium",
+   "roof": NaN,
+   "spread_home": -3.0,
+   "total": 46.5,
+   "proj": {
+    "away": 24.8,
+    "home": 21.8
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Jaydn Ott",
+     "team": "KC",
+     "position": "RB",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Zachariah Branch",
+     "team": "ATL",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Rashee Rice",
+     "pos": "WR",
+     "team": "KC",
+     "opp": "ATL",
+     "label": "리셉션 4개 이상",
+     "prob": 67.9,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 2,
+     "name": "Kyle Pitts",
+     "pos": "TE",
+     "team": "ATL",
+     "opp": "KC",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 3,
+     "name": "Bijan Robinson",
+     "pos": "RB",
+     "team": "ATL",
+     "opp": "KC",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 4,
+     "name": "Drake London",
+     "pos": "WR",
+     "team": "ATL",
+     "opp": "KC",
+     "label": "리셉션 4개 이상",
+     "prob": 63.4,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 5,
+     "name": "Drake London",
+     "pos": "WR",
+     "team": "ATL",
+     "opp": "KC",
+     "label": "리시빙 40야드 이상",
+     "prob": 61.5,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 6,
+     "name": "Patrick Mahomes",
+     "pos": "QB",
+     "team": "KC",
+     "opp": "ATL",
+     "label": "패싱 225야드 이상",
+     "prob": 59.2,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 7,
+     "name": "Kenneth Walker III",
+     "pos": "RB",
+     "team": "KC",
+     "opp": "ATL",
+     "label": "러싱 70야드 이상",
+     "prob": 59.0,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 8,
+     "name": "Michael Penix Jr.",
+     "pos": "QB",
+     "team": "ATL",
+     "opp": "KC",
+     "label": "패싱 225야드 이상",
+     "prob": 58.2,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 9,
+     "name": "Bijan Robinson",
+     "pos": "RB",
+     "team": "ATL",
+     "opp": "KC",
+     "label": "러싱 60야드 이상",
+     "prob": 57.9,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 10,
+     "name": "Rashee Rice",
+     "pos": "WR",
+     "team": "KC",
+     "opp": "ATL",
+     "label": "리시빙 50야드 이상",
+     "prob": 57.0,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 11,
+     "name": "Travis Kelce",
+     "pos": "TE",
+     "team": "KC",
+     "opp": "ATL",
+     "label": "리시빙 40야드 이상",
+     "prob": 56.2,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    },
+    {
+     "rank": 12,
+     "name": "Kenneth Walker III",
+     "pos": "RB",
+     "team": "KC",
+     "opp": "ATL",
+     "label": "애니타임 터치다운",
+     "prob": 51.4,
+     "status": "",
+     "game_id": "2026_10_KC_ATL"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_HOU_CLE",
+   "away": "HOU",
+   "home": "CLE",
+   "kickoff": "2026-11-15 13:00 ET",
+   "stadium": "Huntington Bank Field",
+   "roof": "outdoors",
+   "spread_home": -4.5,
+   "total": 40.5,
+   "proj": {
+    "away": 22.5,
+    "home": 18.0
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Brevin Jordan",
+     "team": "HOU",
+     "position": "TE",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Tank Dell",
+     "team": "HOU",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Marvin Harrison Jr.",
+     "team": "HOU",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Woody Marks",
+     "team": "HOU",
+     "position": "RB",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Harold Fannin Jr.",
+     "team": "CLE",
+     "position": "TE",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Denzel Boston",
+     "team": "CLE",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Dalton Schultz",
+     "pos": "TE",
+     "team": "HOU",
+     "opp": "CLE",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 2,
+     "name": "Harold Fannin Jr.",
+     "pos": "TE",
+     "team": "CLE",
+     "opp": "HOU",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "제한 훈련",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 3,
+     "name": "Nico Collins",
+     "pos": "WR",
+     "team": "HOU",
+     "opp": "CLE",
+     "label": "리시빙 40야드 이상",
+     "prob": 62.4,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 4,
+     "name": "Denzel Boston",
+     "pos": "WR",
+     "team": "CLE",
+     "opp": "HOU",
+     "label": "리시빙 40야드 이상",
+     "prob": 61.9,
+     "status": "훈련 불참",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 5,
+     "name": "Denzel Boston",
+     "pos": "WR",
+     "team": "CLE",
+     "opp": "HOU",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "훈련 불참",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 6,
+     "name": "Nico Collins",
+     "pos": "WR",
+     "team": "HOU",
+     "opp": "CLE",
+     "label": "리셉션 4개 이상",
+     "prob": 61.2,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 7,
+     "name": "Deshaun Watson",
+     "pos": "QB",
+     "team": "CLE",
+     "opp": "HOU",
+     "label": "패싱 200야드 이상",
+     "prob": 60.6,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 8,
+     "name": "Quinshon Judkins",
+     "pos": "RB",
+     "team": "CLE",
+     "opp": "HOU",
+     "label": "러싱 50야드 이상",
+     "prob": 60.5,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 9,
+     "name": "KC Concepcion",
+     "pos": "WR",
+     "team": "CLE",
+     "opp": "HOU",
+     "label": "리시빙 40야드 이상",
+     "prob": 60.4,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 10,
+     "name": "C.J. Stroud",
+     "pos": "QB",
+     "team": "HOU",
+     "opp": "CLE",
+     "label": "패싱 225야드 이상",
+     "prob": 58.8,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 11,
+     "name": "Woody Marks",
+     "pos": "RB",
+     "team": "HOU",
+     "opp": "CLE",
+     "label": "러싱 50야드 이상",
+     "prob": 58.5,
+     "status": "제한 훈련",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 12,
+     "name": "Harold Fannin Jr.",
+     "pos": "TE",
+     "team": "CLE",
+     "opp": "HOU",
+     "label": "리시빙 30야드 이상",
+     "prob": 56.9,
+     "status": "제한 훈련",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 13,
+     "name": "C.J. Stroud",
+     "pos": "QB",
+     "team": "HOU",
+     "opp": "CLE",
+     "label": "패싱 TD 2개 이상",
+     "prob": 55.5,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 14,
+     "name": "Woody Marks",
+     "pos": "RB",
+     "team": "HOU",
+     "opp": "CLE",
+     "label": "애니타임 터치다운",
+     "prob": 37.7,
+     "status": "제한 훈련",
+     "game_id": "2026_10_HOU_CLE"
+    },
+    {
+     "rank": 15,
+     "name": "Quinshon Judkins",
+     "pos": "RB",
+     "team": "CLE",
+     "opp": "HOU",
+     "label": "애니타임 터치다운",
+     "prob": 31.5,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_MIN_GB",
+   "away": "MIN",
+   "home": "GB",
+   "kickoff": "2026-11-15 13:00 ET",
+   "stadium": "Lambeau Field",
+   "roof": "outdoors",
+   "spread_home": 3.0,
+   "total": 41.5,
+   "proj": {
+    "away": 19.2,
+    "home": 22.2
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Carson Wentz",
+     "team": "MIN",
+     "position": "QB",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Kyler Murray",
+     "team": "MIN",
+     "position": "QB",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "T.J. Hockenson",
+     "team": "MIN",
+     "position": "TE",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Josh Jacobs",
+     "team": "GB",
+     "position": "RB",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Jauan Jennings",
+     "team": "MIN",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Savion Williams",
+     "team": "GB",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Matthew Golden",
+     "pos": "WR",
+     "team": "GB",
+     "opp": "MIN",
+     "label": "리시빙 50야드 이상",
+     "prob": 63.7,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 2,
+     "name": "Christian Watson",
+     "pos": "WR",
+     "team": "GB",
+     "opp": "MIN",
+     "label": "리시빙 50야드 이상",
+     "prob": 63.7,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 3,
+     "name": "Tucker Kraft",
+     "pos": "TE",
+     "team": "GB",
+     "opp": "MIN",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 4,
+     "name": "Matthew Golden",
+     "pos": "WR",
+     "team": "GB",
+     "opp": "MIN",
+     "label": "리셉션 5개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 5,
+     "name": "Christian Watson",
+     "pos": "WR",
+     "team": "GB",
+     "opp": "MIN",
+     "label": "리셉션 4개 이상",
+     "prob": 62.7,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 6,
+     "name": "Justin Jefferson",
+     "pos": "WR",
+     "team": "MIN",
+     "opp": "GB",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 7,
+     "name": "T.J. Hockenson",
+     "pos": "TE",
+     "team": "MIN",
+     "opp": "GB",
+     "label": "리시빙 30야드 이상",
+     "prob": 59.4,
+     "status": "훈련 불참",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 8,
+     "name": "Jordan Love",
+     "pos": "QB",
+     "team": "GB",
+     "opp": "MIN",
+     "label": "패싱 225야드 이상",
+     "prob": 58.1,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 9,
+     "name": "Aaron Jones",
+     "pos": "RB",
+     "team": "MIN",
+     "opp": "GB",
+     "label": "러싱 50야드 이상",
+     "prob": 58.1,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 10,
+     "name": "Justin Jefferson",
+     "pos": "WR",
+     "team": "MIN",
+     "opp": "GB",
+     "label": "리시빙 40야드 이상",
+     "prob": 56.4,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 11,
+     "name": "Jordan Love",
+     "pos": "QB",
+     "team": "GB",
+     "opp": "MIN",
+     "label": "패싱 TD 2개 이상",
+     "prob": 55.5,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    },
+    {
+     "rank": 12,
+     "name": "Kaleb Johnson",
+     "pos": "RB",
+     "team": "GB",
+     "opp": "MIN",
+     "label": "애니타임 터치다운",
+     "prob": 32.4,
+     "status": "",
+     "game_id": "2026_10_MIN_GB"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_MIA_IND",
+   "away": "MIA",
+   "home": "IND",
+   "kickoff": "2026-11-15 13:00 ET",
+   "stadium": "Lucas Oil Stadium",
+   "roof": NaN,
+   "spread_home": 3.5,
+   "total": 38.5,
+   "proj": {
+    "away": 17.5,
+    "home": 21.0
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Mo Alie-Cox",
+     "team": "IND",
+     "position": "TE",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Jared Wayne",
+     "team": "MIA",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Will Kacmarek",
+     "team": "MIA",
+     "position": "TE",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Chris Bell",
+     "team": "MIA",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Tyler Warren",
+     "pos": "TE",
+     "team": "IND",
+     "opp": "MIA",
+     "label": "리셉션 4개 이상",
+     "prob": 67.2,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 2,
+     "name": "Greg Dulcich",
+     "pos": "TE",
+     "team": "MIA",
+     "opp": "IND",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 3,
+     "name": "Keenan Allen",
+     "pos": "WR",
+     "team": "IND",
+     "opp": "MIA",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 4,
+     "name": "Tyler Warren",
+     "pos": "TE",
+     "team": "IND",
+     "opp": "MIA",
+     "label": "리시빙 40야드 이상",
+     "prob": 60.7,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 5,
+     "name": "Ollie Gordon II",
+     "pos": "RB",
+     "team": "MIA",
+     "opp": "IND",
+     "label": "러싱 50야드 이상",
+     "prob": 60.2,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 6,
+     "name": "Jonathan Taylor",
+     "pos": "RB",
+     "team": "IND",
+     "opp": "MIA",
+     "label": "러싱 50야드 이상",
+     "prob": 58.5,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 7,
+     "name": "Caleb Douglas",
+     "pos": "WR",
+     "team": "MIA",
+     "opp": "IND",
+     "label": "리시빙 40야드 이상",
+     "prob": 57.9,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 8,
+     "name": "Greg Dulcich",
+     "pos": "TE",
+     "team": "MIA",
+     "opp": "IND",
+     "label": "리시빙 30야드 이상",
+     "prob": 57.9,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 9,
+     "name": "Keenan Allen",
+     "pos": "WR",
+     "team": "IND",
+     "opp": "MIA",
+     "label": "리시빙 40야드 이상",
+     "prob": 57.0,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 10,
+     "name": "Jonathan Taylor",
+     "pos": "RB",
+     "team": "IND",
+     "opp": "MIA",
+     "label": "애니타임 터치다운",
+     "prob": 36.8,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    },
+    {
+     "rank": 11,
+     "name": "Ollie Gordon II",
+     "pos": "RB",
+     "team": "MIA",
+     "opp": "IND",
+     "label": "애니타임 터치다운",
+     "prob": 32.8,
+     "status": "",
+     "game_id": "2026_10_MIA_IND"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_CAR_NO",
+   "away": "CAR",
+   "home": "NO",
+   "kickoff": "2026-11-15 13:00 ET",
+   "stadium": "Caesars Superdome",
+   "roof": "dome",
+   "spread_home": 2.5,
+   "total": 48.5,
+   "proj": {
+    "away": 23.0,
+    "home": 25.5
+   },
+   "weather": {
+    "dome": true
+   },
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "CJ Donaldson",
+     "team": "NO",
+     "position": "RB",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Chris Olave",
+     "pos": "WR",
+     "team": "NO",
+     "opp": "CAR",
+     "label": "리셉션 5개 이상",
+     "prob": 65.4,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 2,
+     "name": "Jalen Coker",
+     "pos": "WR",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "리시빙 40야드 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 3,
+     "name": "Darren Waller",
+     "pos": "TE",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "리셉션 3개 이상",
+     "prob": 63.3,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 4,
+     "name": "Chuba Hubbard",
+     "pos": "RB",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "러싱 50야드 이상",
+     "prob": 62.7,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 5,
+     "name": "Tetairoa McMillan",
+     "pos": "WR",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "리셉션 5개 이상",
+     "prob": 62.4,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 6,
+     "name": "Tyler Shough",
+     "pos": "QB",
+     "team": "NO",
+     "opp": "CAR",
+     "label": "패싱 225야드 이상",
+     "prob": 62.1,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 7,
+     "name": "Jalen Coker",
+     "pos": "WR",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 8,
+     "name": "Audric Estime",
+     "pos": "RB",
+     "team": "NO",
+     "opp": "CAR",
+     "label": "러싱 40야드 이상",
+     "prob": 59.2,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 9,
+     "name": "Tetairoa McMillan",
+     "pos": "WR",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "리시빙 60야드 이상",
+     "prob": 56.7,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 10,
+     "name": "Chris Olave",
+     "pos": "WR",
+     "team": "NO",
+     "opp": "CAR",
+     "label": "리시빙 70야드 이상",
+     "prob": 55.7,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 11,
+     "name": "Bryce Young",
+     "pos": "QB",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "패싱 TD 2개 이상",
+     "prob": 55.5,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 12,
+     "name": "Bryce Young",
+     "pos": "QB",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "패싱 250야드 이상",
+     "prob": 55.0,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 13,
+     "name": "Chuba Hubbard",
+     "pos": "RB",
+     "team": "CAR",
+     "opp": "NO",
+     "label": "애니타임 터치다운",
+     "prob": 46.9,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 14,
+     "name": "Kendre Miller",
+     "pos": "RB",
+     "team": "NO",
+     "opp": "CAR",
+     "label": "애니타임 터치다운",
+     "prob": 37.6,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    },
+    {
+     "rank": 15,
+     "name": "Audric Estime",
+     "pos": "RB",
+     "team": "NO",
+     "opp": "CAR",
+     "label": "애니타임 터치다운",
+     "prob": 32.9,
+     "status": "",
+     "game_id": "2026_10_CAR_NO"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_BUF_NYJ",
+   "away": "BUF",
+   "home": "NYJ",
+   "kickoff": "2026-11-15 13:00 ET",
+   "stadium": "MetLife Stadium",
+   "roof": "outdoors",
+   "spread_home": -8.5,
+   "total": 50.5,
+   "proj": {
+    "away": 29.5,
+    "home": 21.0
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Garrett Wilson",
+     "team": "NYJ",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Dalton Kincaid",
+     "team": "BUF",
+     "position": "TE",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Omar Cooper Jr.",
+     "team": "NYJ",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Josh Allen",
+     "pos": "QB",
+     "team": "BUF",
+     "opp": "NYJ",
+     "label": "패싱 225야드 이상",
+     "prob": 67.7,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 2,
+     "name": "Garrett Wilson",
+     "pos": "WR",
+     "team": "NYJ",
+     "opp": "BUF",
+     "label": "리셉션 4개 이상",
+     "prob": 67.2,
+     "status": "제한 훈련",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 3,
+     "name": "James Cook",
+     "pos": "RB",
+     "team": "BUF",
+     "opp": "NYJ",
+     "label": "애니타임 터치다운",
+     "prob": 65.7,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 4,
+     "name": "Omar Cooper Jr.",
+     "pos": "WR",
+     "team": "NYJ",
+     "opp": "BUF",
+     "label": "리시빙 40야드 이상",
+     "prob": 64.6,
+     "status": "제한 훈련",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 5,
+     "name": "Dalton Kincaid",
+     "pos": "TE",
+     "team": "BUF",
+     "opp": "NYJ",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "제한 훈련",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 6,
+     "name": "Braelon Allen",
+     "pos": "RB",
+     "team": "NYJ",
+     "opp": "BUF",
+     "label": "러싱 50야드 이상",
+     "prob": 63.2,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 7,
+     "name": "Omar Cooper Jr.",
+     "pos": "WR",
+     "team": "NYJ",
+     "opp": "BUF",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "제한 훈련",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 8,
+     "name": "Adonai Mitchell",
+     "pos": "WR",
+     "team": "NYJ",
+     "opp": "BUF",
+     "label": "리시빙 40야드 이상",
+     "prob": 59.0,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 9,
+     "name": "Garrett Wilson",
+     "pos": "WR",
+     "team": "NYJ",
+     "opp": "BUF",
+     "label": "리시빙 50야드 이상",
+     "prob": 58.9,
+     "status": "제한 훈련",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 10,
+     "name": "Khalil Shakir",
+     "pos": "WR",
+     "team": "BUF",
+     "opp": "NYJ",
+     "label": "리셉션 4개 이상",
+     "prob": 58.3,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 11,
+     "name": "Khalil Shakir",
+     "pos": "WR",
+     "team": "BUF",
+     "opp": "NYJ",
+     "label": "리시빙 40야드 이상",
+     "prob": 57.7,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 12,
+     "name": "Geno Smith",
+     "pos": "QB",
+     "team": "NYJ",
+     "opp": "BUF",
+     "label": "패싱 225야드 이상",
+     "prob": 57.4,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 13,
+     "name": "James Cook",
+     "pos": "RB",
+     "team": "BUF",
+     "opp": "NYJ",
+     "label": "러싱 90야드 이상",
+     "prob": 57.3,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 14,
+     "name": "Breece Hall",
+     "pos": "RB",
+     "team": "NYJ",
+     "opp": "BUF",
+     "label": "러싱 50야드 이상",
+     "prob": 56.6,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    },
+    {
+     "rank": 15,
+     "name": "Josh Allen",
+     "pos": "QB",
+     "team": "BUF",
+     "opp": "NYJ",
+     "label": "패싱 TD 2개 이상",
+     "prob": 56.1,
+     "status": "",
+     "game_id": "2026_10_BUF_NYJ"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_JAX_TEN",
+   "away": "JAX",
+   "home": "TEN",
+   "kickoff": "2026-11-15 13:00 ET",
+   "stadium": "Nissan Stadium",
+   "roof": "outdoors",
+   "spread_home": -10.5,
+   "total": 46.5,
+   "proj": {
+    "away": 28.5,
+    "home": 18.0
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Jakobi Meyers",
+     "team": "JAX",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Tony Pollard",
+     "team": "TEN",
+     "position": "RB",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Chris Rodriguez Jr.",
+     "team": "JAX",
+     "position": "RB",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Tyjae Spears",
+     "team": "TEN",
+     "position": "RB",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Bhayshul Tuten",
+     "team": "JAX",
+     "position": "RB",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Carnell Tate",
+     "team": "TEN",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Trevor Lawrence",
+     "pos": "QB",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "패싱 225야드 이상",
+     "prob": 66.6,
+     "status": "",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 2,
+     "name": "Parker Washington",
+     "pos": "WR",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "리시빙 50야드 이상",
+     "prob": 64.3,
+     "status": "",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 3,
+     "name": "Brenton Strange",
+     "pos": "TE",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 4,
+     "name": "Carnell Tate",
+     "pos": "WR",
+     "team": "TEN",
+     "opp": "JAX",
+     "label": "리시빙 40야드 이상",
+     "prob": 62.5,
+     "status": "훈련 불참",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 5,
+     "name": "Wan'Dale Robinson",
+     "pos": "WR",
+     "team": "TEN",
+     "opp": "JAX",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 6,
+     "name": "Carnell Tate",
+     "pos": "WR",
+     "team": "TEN",
+     "opp": "JAX",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "훈련 불참",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 7,
+     "name": "Bhayshul Tuten",
+     "pos": "RB",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "러싱 50야드 이상",
+     "prob": 60.9,
+     "status": "훈련 불참",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 8,
+     "name": "Jakobi Meyers",
+     "pos": "WR",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "리시빙 40야드 이상",
+     "prob": 60.9,
+     "status": "제한 훈련",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 9,
+     "name": "Cam Ward",
+     "pos": "QB",
+     "team": "TEN",
+     "opp": "JAX",
+     "label": "패싱 200야드 이상",
+     "prob": 59.9,
+     "status": "",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 10,
+     "name": "Trevor Lawrence",
+     "pos": "QB",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "패싱 TD 2개 이상",
+     "prob": 59.5,
+     "status": "",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 11,
+     "name": "Brenton Strange",
+     "pos": "TE",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "리시빙 30야드 이상",
+     "prob": 57.6,
+     "status": "",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 12,
+     "name": "Tony Pollard",
+     "pos": "RB",
+     "team": "TEN",
+     "opp": "JAX",
+     "label": "러싱 50야드 이상",
+     "prob": 56.5,
+     "status": "훈련 불참",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 13,
+     "name": "Bhayshul Tuten",
+     "pos": "RB",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "애니타임 터치다운",
+     "prob": 42.9,
+     "status": "훈련 불참",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 14,
+     "name": "Tony Pollard",
+     "pos": "RB",
+     "team": "TEN",
+     "opp": "JAX",
+     "label": "애니타임 터치다운",
+     "prob": 40.5,
+     "status": "훈련 불참",
+     "game_id": "2026_10_JAX_TEN"
+    },
+    {
+     "rank": 15,
+     "name": "Parker Washington",
+     "pos": "WR",
+     "team": "JAX",
+     "opp": "TEN",
+     "label": "애니타임 터치다운",
+     "prob": 33.8,
+     "status": "",
+     "game_id": "2026_10_JAX_TEN"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_LA_ARI",
+   "away": "LA",
+   "home": "ARI",
+   "kickoff": "2026-11-15 16:05 ET",
+   "stadium": "State Farm Stadium",
+   "roof": NaN,
+   "spread_home": -9.5,
+   "total": 39.5,
+   "proj": {
+    "away": 24.5,
+    "home": 15.0
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Colby Parkinson",
+     "team": "LA",
+     "position": "TE",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Davis Allen",
+     "team": "LA",
+     "position": "TE",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Puka Nacua",
+     "team": "LA",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Trey McBride",
+     "pos": "TE",
+     "team": "ARI",
+     "opp": "LA",
+     "label": "리셉션 5개 이상",
+     "prob": 66.1,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 2,
+     "name": "Trey McBride",
+     "pos": "TE",
+     "team": "ARI",
+     "opp": "LA",
+     "label": "리시빙 40야드 이상",
+     "prob": 61.9,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 3,
+     "name": "Puka Nacua",
+     "pos": "WR",
+     "team": "LA",
+     "opp": "ARI",
+     "label": "리셉션 6개 이상",
+     "prob": 61.7,
+     "status": "훈련 불참",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 4,
+     "name": "Matthew Stafford",
+     "pos": "QB",
+     "team": "LA",
+     "opp": "ARI",
+     "label": "패싱 225야드 이상",
+     "prob": 61.0,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 5,
+     "name": "Michael Wilson",
+     "pos": "WR",
+     "team": "ARI",
+     "opp": "LA",
+     "label": "리셉션 5개 이상",
+     "prob": 60.9,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 6,
+     "name": "Puka Nacua",
+     "pos": "WR",
+     "team": "LA",
+     "opp": "ARI",
+     "label": "리시빙 50야드 이상",
+     "prob": 59.6,
+     "status": "훈련 불참",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 7,
+     "name": "Kyren Williams",
+     "pos": "RB",
+     "team": "LA",
+     "opp": "ARI",
+     "label": "러싱 50야드 이상",
+     "prob": 58.5,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 8,
+     "name": "Blake Corum",
+     "pos": "RB",
+     "team": "LA",
+     "opp": "ARI",
+     "label": "러싱 40야드 이상",
+     "prob": 58.5,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 9,
+     "name": "Michael Wilson",
+     "pos": "WR",
+     "team": "ARI",
+     "opp": "LA",
+     "label": "리시빙 50야드 이상",
+     "prob": 57.9,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 10,
+     "name": "Matthew Stafford",
+     "pos": "QB",
+     "team": "LA",
+     "opp": "ARI",
+     "label": "패싱 TD 2개 이상",
+     "prob": 55.5,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 11,
+     "name": "Kyren Williams",
+     "pos": "RB",
+     "team": "LA",
+     "opp": "ARI",
+     "label": "애니타임 터치다운",
+     "prob": 52.8,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    },
+    {
+     "rank": 12,
+     "name": "Blake Corum",
+     "pos": "RB",
+     "team": "LA",
+     "opp": "ARI",
+     "label": "애니타임 터치다운",
+     "prob": 42.0,
+     "status": "",
+     "game_id": "2026_10_LA_ARI"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_SEA_LV",
+   "away": "SEA",
+   "home": "LV",
+   "kickoff": "2026-11-15 16:05 ET",
+   "stadium": "Allegiant Stadium",
+   "roof": "dome",
+   "spread_home": -6.5,
+   "total": 40.5,
+   "proj": {
+    "away": 23.5,
+    "home": 17.0
+   },
+   "weather": {
+    "dome": true
+   },
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Sam Darnold",
+     "team": "SEA",
+     "position": "QB",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Drew Lock",
+     "team": "SEA",
+     "position": "QB",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Jaxon Smith-Njigba",
+     "team": "SEA",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Michael Mayer",
+     "pos": "TE",
+     "team": "LV",
+     "opp": "SEA",
+     "label": "리셉션 3개 이상",
+     "prob": 63.6,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 2,
+     "name": "Brock Bowers",
+     "pos": "TE",
+     "team": "LV",
+     "opp": "SEA",
+     "label": "리시빙 50야드 이상",
+     "prob": 63.5,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 3,
+     "name": "Emanuel Wilson",
+     "pos": "RB",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "러싱 50야드 이상",
+     "prob": 62.4,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 4,
+     "name": "Jaxon Smith-Njigba",
+     "pos": "WR",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "리셉션 6개 이상",
+     "prob": 61.6,
+     "status": "훈련 불참",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 5,
+     "name": "Sam Darnold",
+     "pos": "QB",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "패싱 200야드 이상",
+     "prob": 60.6,
+     "status": "훈련 불참",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 6,
+     "name": "Brock Bowers",
+     "pos": "TE",
+     "team": "LV",
+     "opp": "SEA",
+     "label": "리셉션 6개 이상",
+     "prob": 59.7,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 7,
+     "name": "Drew Lock",
+     "pos": "QB",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "패싱 200야드 이상",
+     "prob": 58.8,
+     "status": "제한 훈련",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 8,
+     "name": "Tre Tucker",
+     "pos": "WR",
+     "team": "LV",
+     "opp": "SEA",
+     "label": "리시빙 40야드 이상",
+     "prob": 58.6,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 9,
+     "name": "Zach Charbonnet",
+     "pos": "RB",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "러싱 50야드 이상",
+     "prob": 58.5,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 10,
+     "name": "Ashton Jeanty",
+     "pos": "RB",
+     "team": "LV",
+     "opp": "SEA",
+     "label": "리셉션 4개 이상",
+     "prob": 58.2,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 11,
+     "name": "Jadarian Price",
+     "pos": "RB",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "러싱 40야드 이상",
+     "prob": 57.9,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 12,
+     "name": "Jaxon Smith-Njigba",
+     "pos": "WR",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "리시빙 70야드 이상",
+     "prob": 57.0,
+     "status": "훈련 불참",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 13,
+     "name": "Ashton Jeanty",
+     "pos": "RB",
+     "team": "LV",
+     "opp": "SEA",
+     "label": "리시빙 20야드 이상",
+     "prob": 56.9,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 14,
+     "name": "Emanuel Wilson",
+     "pos": "RB",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "애니타임 터치다운",
+     "prob": 34.7,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    },
+    {
+     "rank": 15,
+     "name": "Zach Charbonnet",
+     "pos": "RB",
+     "team": "SEA",
+     "opp": "LV",
+     "label": "애니타임 터치다운",
+     "prob": 33.5,
+     "status": "",
+     "game_id": "2026_10_SEA_LV"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_SF_DAL",
+   "away": "SF",
+   "home": "DAL",
+   "kickoff": "2026-11-15 16:25 ET",
+   "stadium": "AT&T Stadium",
+   "roof": NaN,
+   "spread_home": -3.5,
+   "total": 55.5,
+   "proj": {
+    "away": 29.5,
+    "home": 26.0
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [
+    {
+     "player_display_name": "Mike Evans",
+     "team": "SF",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Christian McCaffrey",
+     "team": "SF",
+     "position": "RB",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Tyler Goodson",
+     "team": "DAL",
+     "position": "RB",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "George Pickens",
+     "team": "DAL",
+     "position": "WR",
+     "status": "제한 훈련",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Jake Ferguson",
+     "team": "DAL",
+     "position": "TE",
+     "status": "훈련 불참",
+     "injury": NaN
+    },
+    {
+     "player_display_name": "Jonathan Mingo",
+     "team": "DAL",
+     "position": "WR",
+     "status": "훈련 불참",
+     "injury": NaN
+    }
+   ],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Christian McCaffrey",
+     "pos": "RB",
+     "team": "SF",
+     "opp": "DAL",
+     "label": "리시빙 20야드 이상",
+     "prob": 67.0,
+     "status": "훈련 불참",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 2,
+     "name": "Dak Prescott",
+     "pos": "QB",
+     "team": "DAL",
+     "opp": "SF",
+     "label": "패싱 225야드 이상",
+     "prob": 66.2,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 3,
+     "name": "Brock Purdy",
+     "pos": "QB",
+     "team": "SF",
+     "opp": "DAL",
+     "label": "패싱 250야드 이상",
+     "prob": 64.4,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 4,
+     "name": "George Pickens",
+     "pos": "WR",
+     "team": "DAL",
+     "opp": "SF",
+     "label": "리셉션 4개 이상",
+     "prob": 63.2,
+     "status": "제한 훈련",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 5,
+     "name": "Christian McCaffrey",
+     "pos": "RB",
+     "team": "SF",
+     "opp": "DAL",
+     "label": "러싱 50야드 이상",
+     "prob": 63.2,
+     "status": "훈련 불참",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 6,
+     "name": "CeeDee Lamb",
+     "pos": "WR",
+     "team": "DAL",
+     "opp": "SF",
+     "label": "리셉션 6개 이상",
+     "prob": 62.6,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 7,
+     "name": "Mike Evans",
+     "pos": "WR",
+     "team": "SF",
+     "opp": "DAL",
+     "label": "리시빙 60야드 이상",
+     "prob": 62.6,
+     "status": "훈련 불참",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 8,
+     "name": "Brock Purdy",
+     "pos": "QB",
+     "team": "SF",
+     "opp": "DAL",
+     "label": "패싱 TD 2개 이상",
+     "prob": 61.6,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 9,
+     "name": "George Pickens",
+     "pos": "WR",
+     "team": "DAL",
+     "opp": "SF",
+     "label": "리시빙 50야드 이상",
+     "prob": 61.6,
+     "status": "제한 훈련",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 10,
+     "name": "Mike Evans",
+     "pos": "WR",
+     "team": "SF",
+     "opp": "DAL",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "훈련 불참",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 11,
+     "name": "George Kittle",
+     "pos": "TE",
+     "team": "SF",
+     "opp": "DAL",
+     "label": "리셉션 5개 이상",
+     "prob": 59.4,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 12,
+     "name": "George Kittle",
+     "pos": "TE",
+     "team": "SF",
+     "opp": "DAL",
+     "label": "리시빙 60야드 이상",
+     "prob": 58.8,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 13,
+     "name": "Javonte Williams",
+     "pos": "RB",
+     "team": "DAL",
+     "opp": "SF",
+     "label": "애니타임 터치다운",
+     "prob": 58.5,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 14,
+     "name": "Javonte Williams",
+     "pos": "RB",
+     "team": "DAL",
+     "opp": "SF",
+     "label": "러싱 60야드 이상",
+     "prob": 57.1,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    },
+    {
+     "rank": 15,
+     "name": "Dak Prescott",
+     "pos": "QB",
+     "team": "DAL",
+     "opp": "SF",
+     "label": "패싱 TD 2개 이상",
+     "prob": 55.5,
+     "status": "",
+     "game_id": "2026_10_SF_DAL"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_PIT_CIN",
+   "away": "PIT",
+   "home": "CIN",
+   "kickoff": "2026-11-15 20:20 ET",
+   "stadium": "Paycor Stadium",
+   "roof": "outdoors",
+   "spread_home": 3.5,
+   "total": 49.5,
+   "proj": {
+    "away": 23.0,
+    "home": 26.5
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Joe Burrow",
+     "pos": "QB",
+     "team": "CIN",
+     "opp": "PIT",
+     "label": "패싱 225야드 이상",
+     "prob": 65.9,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 2,
+     "name": "Aaron Rodgers",
+     "pos": "QB",
+     "team": "PIT",
+     "opp": "CIN",
+     "label": "패싱 225야드 이상",
+     "prob": 64.3,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 3,
+     "name": "Ja'Marr Chase",
+     "pos": "WR",
+     "team": "CIN",
+     "opp": "PIT",
+     "label": "리셉션 6개 이상",
+     "prob": 61.9,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 4,
+     "name": "Joe Burrow",
+     "pos": "QB",
+     "team": "CIN",
+     "opp": "PIT",
+     "label": "패싱 TD 2개 이상",
+     "prob": 61.6,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 5,
+     "name": "Chase Brown",
+     "pos": "RB",
+     "team": "CIN",
+     "opp": "PIT",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 6,
+     "name": "Germie Bernard",
+     "pos": "WR",
+     "team": "PIT",
+     "opp": "CIN",
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 7,
+     "name": "DK Metcalf",
+     "pos": "WR",
+     "team": "PIT",
+     "opp": "CIN",
+     "label": "리셉션 4개 이상",
+     "prob": 61.2,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 8,
+     "name": "Jaylen Warren",
+     "pos": "RB",
+     "team": "PIT",
+     "opp": "CIN",
+     "label": "러싱 50야드 이상",
+     "prob": 60.6,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 9,
+     "name": "Ja'Marr Chase",
+     "pos": "WR",
+     "team": "CIN",
+     "opp": "PIT",
+     "label": "리시빙 60야드 이상",
+     "prob": 58.8,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 10,
+     "name": "Chase Brown",
+     "pos": "RB",
+     "team": "CIN",
+     "opp": "PIT",
+     "label": "러싱 50야드 이상",
+     "prob": 57.7,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 11,
+     "name": "Tee Higgins",
+     "pos": "WR",
+     "team": "CIN",
+     "opp": "PIT",
+     "label": "리시빙 50야드 이상",
+     "prob": 56.6,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 12,
+     "name": "Aaron Rodgers",
+     "pos": "QB",
+     "team": "PIT",
+     "opp": "CIN",
+     "label": "패싱 TD 2개 이상",
+     "prob": 55.5,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 13,
+     "name": "Jaylen Warren",
+     "pos": "RB",
+     "team": "PIT",
+     "opp": "CIN",
+     "label": "애니타임 터치다운",
+     "prob": 40.0,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    },
+    {
+     "rank": 14,
+     "name": "Mike Gesicki",
+     "pos": "TE",
+     "team": "CIN",
+     "opp": "PIT",
+     "label": "애니타임 터치다운",
+     "prob": 31.6,
+     "status": "",
+     "game_id": "2026_10_PIT_CIN"
+    }
+   ],
+   "best15_edge": []
+  },
+  {
+   "game_id": "2026_10_LAC_BAL",
+   "away": "LAC",
+   "home": "BAL",
+   "kickoff": "2026-11-16 20:15 ET",
+   "stadium": "M&T Bank Stadium",
+   "roof": "outdoors",
+   "spread_home": 4.5,
+   "total": 38.5,
+   "proj": {
+    "away": 17.0,
+    "home": 21.5
+   },
+   "weather": null,
+   "notes": [],
+   "injuries": [],
+   "best15_prob": [
+    {
+     "rank": 1,
+     "name": "Zay Flowers",
+     "pos": "WR",
+     "team": "BAL",
+     "opp": "LAC",
+     "label": "리셉션 4개 이상",
+     "prob": 66.7,
+     "status": "",
+     "game_id": "2026_10_LAC_BAL"
+    },
+    {
+     "rank": 2,
+     "name": "Derrick Henry",
+     "pos": "RB",
+     "team": "BAL",
+     "opp": "LAC",
+     "label": "러싱 60야드 이상",
+     "prob": 62.3,
+     "status": "",
+     "game_id": "2026_10_LAC_BAL"
+    },
+    {
+     "rank": 3,
+     "name": "Justin Herbert",
+     "pos": "QB",
+     "team": "LAC",
+     "opp": "BAL",
+     "label": "패싱 200야드 이상",
+     "prob": 60.6,
+     "status": "",
+     "game_id": "2026_10_LAC_BAL"
+    },
+    {
+     "rank": 4,
+     "name": "Zay Flowers",
+     "pos": "WR",
+     "team": "BAL",
+     "opp": "LAC",
+     "label": "리시빙 50야드 이상",
+     "prob": 58.9,
+     "status": "",
+     "game_id": "2026_10_LAC_BAL"
+    },
+    {
+     "rank": 5,
+     "name": "Derrick Henry",
+     "pos": "RB",
+     "team": "BAL",
+     "opp": "LAC",
+     "label": "애니타임 터치다운",
+     "prob": 40.5,
+     "status": "",
+     "game_id": "2026_10_LAC_BAL"
+    },
+    {
+     "rank": 6,
+     "name": "Omarion Hampton",
+     "pos": "RB",
+     "team": "LAC",
+     "opp": "BAL",
+     "label": "애니타임 터치다운",
+     "prob": 31.3,
+     "status": "",
+     "game_id": "2026_10_LAC_BAL"
+    }
+   ],
+   "best15_edge": []
+  }
+ ],
+ "out_players": [],
+ "seconds": 20.5,
+ "changes": []
+}

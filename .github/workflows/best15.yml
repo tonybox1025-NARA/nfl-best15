@@ -1,0 +1,45 @@
+# 무료 자동 실행 (GitHub Actions)
+# - 정해진 시간에 자동 실행
+# - 앱의 "최신 업데이트" 버튼 → workflow_dispatch(refresh=true) 호출 → 1~2분 뒤 결과 갱신
+name: best15
+
+on:
+  schedule:
+    - cron: "0 14 * * 3,4,5"        # 수·목·금 09:00 ET (부상 리포트)
+    - cron: "0 15-23 * * 0"         # 일요일 10:00~18:00 ET 매시간 (비출전 명단 포함)
+    - cron: "0 22 * * 1,4"          # 월·목 17:00 ET (MNF/TNF 전)
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: "부상·날씨·배당만 새로 받기"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: cache
+          key: nfl-cache-${{ github.run_id }}
+          restore-keys: nfl-cache-
+      - name: 베스트 15 계산
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python run_week.py ${{ inputs.refresh && '--refresh' || '' }}
+      - name: 결과 저장
+        run: |
+          git config user.name "best15-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add output/*.json
+          git commit -m "best15 $(date -u +%FT%TZ)" || echo "변경 없음"
+          git push
