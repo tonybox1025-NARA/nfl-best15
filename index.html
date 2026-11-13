@@ -93,35 +93,13 @@ ol{margin:0;padding-left:20px;font-size:13px;color:var(--mu2);line-height:1.7}
 .toast{position:fixed;left:16px;right:16px;margin:0 auto;width:fit-content;max-width:calc(100% - 32px);text-align:center;bottom:96px;background:var(--tx);color:var(--bg);font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;z-index:20;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
 </style>
-</head>
 <body>
-<main class="wrap" id="app"><div class="empty">불러오는 중…</div></main>
+<main class="wrap" id="app"><div class="empty">…</div></main>
 
-<nav class="tabs" aria-label="하단 메뉴">
-  <a href="#home" data-tab="home"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>베스트 15</a>
-  <a href="#games" data-tab="games"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>경기</a>
-  <a href="#ticket" data-tab="ticket"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M13 6v12" stroke-dasharray="2 2"/></svg>내 티켓<span class="cnt" id="tcnt" hidden></span></a>
-  <a href="#record" data-tab="record"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>적중 기록</a>
-  <a href="#check" data-tab="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>확인 필요</a>
-</nav>
+<nav class="tabs" id="tabs"></nav>
 
 <div class="overlay" id="settings" role="dialog" aria-modal="true" aria-labelledby="st-title">
-  <div class="sheet">
-    <div class="between"><h2 id="st-title">업데이트 버튼 설정</h2><button class="btn-ghost" id="st-close">닫기</button></div>
-    <div class="small muted" style="line-height:1.6">업데이트 버튼은 GitHub에 "지금 다시 계산해" 신호를 보내요. 그러려면 이 기기에 GitHub 토큰을 한 번 저장해야 해요. 토큰은 <b>이 기기 브라우저에만</b> 저장되고 다른 곳으로 보내지지 않아요.</div>
-    <ol>
-      <li>GitHub → 오른쪽 위 프로필 → <b>Settings</b> → 맨 아래 <b>Developer settings</b></li>
-      <li><b>Personal access tokens → Fine-grained tokens → Generate new token</b></li>
-      <li>Token name: <b>best15</b>, Expiration: <b>1 year</b></li>
-      <li>Repository access: <b>Only select repositories → nfl-best15</b></li>
-      <li>Permissions → Repository permissions: <b>Actions: Read and write</b>, <b>Contents: Read-only</b></li>
-      <li><b>Generate token</b> → 나온 토큰(github_pat_…)을 복사해서 아래에 붙여넣기</li>
-    </ol>
-    <label for="tok">GitHub 토큰</label>
-    <input type="password" id="tok" placeholder="github_pat_..." autocomplete="off">
-    <div class="row"><button class="btn-main" id="st-save" style="flex:1">저장</button><button class="btn-ghost" id="st-del">지우기</button></div>
-    <div class="small muted" id="st-msg"></div>
-  </div>
+  <div class="sheet" id="st-sheet"></div>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -139,16 +117,158 @@ const store = {
 let D = null;                 // latest.json
 let view = { sort: store.get("sort", "prob"), gsort: "prob" };
 let refreshing = null;        // {start, status}
+let LANG = store.get("lang", "ko");
 
-const I = {
-  refresh: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>',
-  back: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
-  gear: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
-  star: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
-  starOn: '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
+// ================================================================== 언어 (한국어 / English)
+const T = {
+  ko: {
+    loading: "불러오는 중…", tab_home: "베스트 15", tab_games: "경기", tab_ticket: "내 티켓", tab_record: "적중 기록", tab_check: "확인 필요",
+    season_week: (s, w) => `${s} 시즌 · ${w}주차`, title_home: "전체 베스트 15", last_update: "마지막 업데이트",
+    first_kick: k => "첫 킥오프 " + k, refresh: "최신 정보로 업데이트", refreshing: "최신 정보 계산 중…", refreshing_short: "계산 중…",
+    src_inj: "부상·출전", src_odds: "배당", src_wx: "날씨", changes: n => `직전 업데이트 대비 바뀐 것 ${n}건`, more: n => `외 ${n}건`,
+    s_prob: "확률순", s_edge: "엣지순", s_td: "터치다운",
+    h_edge: "엣지 = 우리 확률 − FanDuel 배당 확률. 높을수록 배당 대비 가치가 커요.",
+    h_td: "애니타임 터치다운 확률이 높은 순서예요.",
+    h_prob: "적중 확률이 높은 순서예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요.",
+    no_data: "아직 데이터가 없어요", see_check: n => `⚠ 확인 필요 픽 ${n}개 보기 →`,
+    disclaimer: "확률은 과거 데이터로 계산한 추정치예요. 2024·2025 시즌 검증에서 실제 적중은 모델 확률보다 평균 3~4%p 낮았어요.",
+    edge: "엣지", implied: "배당 확률", add_t: "티켓 후보에 담기", rm_t: "티켓에서 빼기", added: "티켓 후보에 담았어요", removed: "티켓에서 뺐어요",
+    title_games: "이번 주 경기", games_hint: "경기를 누르면 그 경기의 베스트 15가 나와요.", inj_n: n => `부상·훈련 ${n}명`,
+    proj: "예상 점수", spread: "스프레드", total: "총점 O/U", weather: "날씨", outdoor: "야외", dome: "돔", wind: "바람", top1: "1위",
+    back_games: "이번 주 경기", away: "원정", home: "홈", roof: "지붕", no_fc: "예보 없음", dome_long: "돔 경기 (날씨 영향 없음)", precip: "강수",
+    inj_title: "부상·출전 현황", inactive_note: "최종 비출전 명단: 킥오프 90분 전", none: "특이사항 없음", game_best: "이 경기 베스트 15",
+    back: "뒤로", rank: r => `${r}위`, check_badge: "⚠ 확인 필요", final_prob: "최종 확률", odds: "배당",
+    blend: (m, k) => `모델 ${m}% · 시장(수수료 제외) ${k}% → 65:35로 섞은 값이 최종 확률이에요.`,
+    check_warn: "모델과 FanDuel 차이가 커요. 모델이 모르는 역할 변화(주전 복귀·뎁스차트 변동)나 부상 정보가 있을 수 있어요. 뉴스를 확인한 뒤 쓰세요.",
+    recent_n: n => `최근 ${n}경기`, hits_n: (n, h) => `${n}경기 중 ${h}번 달성`, need_line: x => `점선 = 기준 ${x}`, wk_opp: (w, o) => `${w}주 ${o}`, no_recent: "최근 기록 없음",
+    why: "왜 이 픽인가요", r_hits: (n, h) => `최근 ${n}경기 중 ${h}번 달성`, r_hits_td: "터치다운을 기록한 경기 수", r_hits_y: x => `기준 ${x} 이상 기록한 경기 수`,
+    r_mu: m => `모델 예상값 ${m}`, r_mu2: (x, hi) => `기준선 ${x} 대비 ${hi ? "높아요" : "낮아요"}`,
+    r_def: (o, r) => `상대 ${o} 수비: 이번 주 ${r}위로 많이 허용`, r_def2: (p, a) => `${p} 상대 최근 8경기 평균 허용 ${a} (1위 = 가장 많이 허용 = 유리)`,
+    u_car: x => `러싱 점유율 ${x}`, u_tgt: x => `타깃 점유율 ${x}`, u_rz: x => `레드존(10야드 안) 점유율 ${x}`, r_use: "팀 내 사용량 (최근 가중 평균)",
+    r_imp: x => `팀 예상 득점 ${x}점`, r_fav: x => `${x}점 차 우세 예상 → 리드 상황 많음`, r_dog: x => `${x}점 차 열세 예상 → 따라가는 상황 많음`, r_even: "박빙 예상",
+    r_tdr: x => `최근 16경기 TD 경기 비율 ${x}`, r_wind: x => `킥오프 바람 ${x}mph`, r_wind_hi: "강풍: 패싱 불리, 러싱 유리", r_wind_lo: "영향 적음",
+    t_rm: "티켓에서 빼기", t_add: "내 티켓 후보에 담기",
+    title_ticket: "내 티켓", t_empty: "픽 옆의 ☆를 누르면 여기에 담겨요. 담은 픽들을 모두 맞힐 확률과 예상 배당을 계산해 드려요.", clear: "비우기",
+    t_n: "픽 수", t_all: "모두 맞힐 확률", t_odds: "예상 배당", t_noodds: "* 배당이 없는 픽은 계산에서 빠졌어요. 실제 배당은 FanDuel에서 확인하세요.",
+    t_same: "같은 경기 픽이 여러 개 있어요. 서로 영향을 주기 때문에(예: QB 패싱 TD와 WR TD) 실제 확률은 위 숫자와 달라요.",
+    t_note: "모두 맞힐 확률은 각 픽을 서로 독립으로 보고 곱한 값이에요. 픽이 많아질수록 확률이 빠르게 낮아져요.",
+    rec_sub: "경기 직전 추천 vs 실제 결과", title_record: "적중 기록", rec_err: e => `기록을 불러오지 못했어요 (${e}).`,
+    rec_empty: "아직 채점된 경기가 없어요. 이번 주부터 <b>킥오프 직전의 픽</b>을 보관하고 있어요. 경기가 끝나고 공식 기록이 올라오면(보통 다음 날) 자동으로 채점돼서 여기에 쌓여요.",
+    st_pred: (h, g, a) => `${h}/${g} · 예측 ${a}%`, st_none: "채점 전", rec_all: "전체 베스트 15", rec_game: "경기별 베스트 15", rec_td: "TD 상위 15",
+    void_note: t => `무효 = 그 선수가 출전하지 않은 경우예요 (FanDuel도 이런 픽은 무효 처리해요). 마지막 채점 ${t}`,
+    cal_title: "예측 확률 vs 실제 적중률", cal_hint: "회색 = 예측, 주황 = 실제. 두 막대가 비슷할수록 믿을 만한 모델이에요.",
+    cal_row: (l, n) => `${l} 구간 · ${n}개`, actual: x => `실제 ${x}%`, wk_title: (s, w) => `${s} 시즌 ${w}주차 · 전체 베스트 15`,
+    wk_hits: (h, g) => `${h}/${g} 적중`, wk_pend: n => ` · 대기 ${n}`, wk_games: (h, g, r) => `경기별 베스트 15 전체: ${h}/${g} 적중 (${r}%)`, wk_td: (h, g) => `TD 상위 15명: ${h}/${g} 적중`,
+    res: { hit: "적중", miss: "실패", void: "무효", pending: "대기" },
+    title_check: "확인 필요", check_info: "모델과 FanDuel 배당 차이가 15%p 넘는 픽이에요. 모델이 모르는 정보(주전 복귀, 역할 축소, 뎁스차트 변동, 부상)가 있을 가능성이 커서 <b>베스트 15에서는 뺐어요</b>. 뉴스를 확인하고 문제가 없을 때만 쓰세요.",
+    check_none: "지금은 없어요",
+    elapsed: (s, m, ss) => `${s} · ${m}:${ss} 경과 (보통 3~4분)`, need_token: "업데이트 버튼을 쓰려면 먼저 토큰을 저장해 주세요.",
+    rq: "GitHub에 계산 요청 중", r_auth: "토큰 권한 문제예요. 설정에서 토큰을 확인해 주세요.", r_fail: c => "요청 실패 (HTTP " + c + ")",
+    r_queued: "대기 중", r_prog: "부상·날씨·배당 받아서 계산 중", r_fin: "마무리 중", r_cfail: "계산이 실패했어요. GitHub Actions 화면을 확인해 주세요.",
+    r_load: "결과 불러오는 중", r_done: "최신 정보로 업데이트했어요", r_slow: "12분이 지나도 끝나지 않았어요. 잠시 뒤 새로고침해 주세요.",
+    load_err: e => `데이터를 불러오지 못했어요 (${e}). 잠시 뒤 새로고침해 주세요.`,
+    st_title: "설정", lang: "언어", st_upd: "업데이트 버튼 설정", close: "닫기",
+    st_info: '업데이트 버튼은 GitHub에 "지금 다시 계산해" 신호를 보내요. 그러려면 이 기기에 GitHub 토큰을 한 번 저장해야 해요. 토큰은 <b>이 기기 브라우저에만</b> 저장되고 다른 곳으로 보내지지 않아요.',
+    st_steps: ["GitHub → 오른쪽 위 프로필 → <b>Settings</b> → 맨 아래 <b>Developer settings</b>", "<b>Personal access tokens → Fine-grained tokens → Generate new token</b>",
+      "Token name: <b>best15</b>, Expiration: <b>1 year</b>", "Repository access: <b>Only select repositories → nfl-best15</b>",
+      "Permissions → Repository permissions: <b>Actions: Read and write</b>, <b>Contents: Read-only</b>", "<b>Generate token</b> → 나온 토큰(github_pat_…)을 복사해서 아래에 붙여넣기"],
+    tok: "GitHub 토큰", save: "저장", del: "지우기", tok_saved: "토큰이 저장돼 있어요.", tok_del: "지웠어요.", checking: "확인 중…",
+    tok_ok: "저장했어요. 이제 업데이트 버튼을 쓸 수 있어요.", tok_bad: c => "토큰을 확인하지 못했어요 (HTTP " + c + "). 권한과 저장소 선택을 다시 확인해 주세요.",
+    settings_aria: "설정", menu: "하단 메뉴", sort_aria: "정렬",
+    st: { active: "출전", questionable: "Q 불확실", doubtful: "D 결장 유력", out: "OUT" },
+    dow: ["일", "월", "화", "수", "목", "금", "토"],
+  },
+  en: {
+    loading: "Loading…", tab_home: "Best 15", tab_games: "Games", tab_ticket: "My Ticket", tab_record: "Record", tab_check: "Check",
+    season_week: (s, w) => `${s} Season · Week ${w}`, title_home: "Overall Best 15", last_update: "Last update",
+    first_kick: k => "First kickoff " + k, refresh: "Update to latest", refreshing: "Calculating latest…", refreshing_short: "Calculating…",
+    src_inj: "Injuries", src_odds: "Odds", src_wx: "Weather", changes: n => `${n} change${n > 1 ? "s" : ""} since last update`, more: n => `+${n} more`,
+    s_prob: "Probability", s_edge: "Edge", s_td: "Touchdown",
+    h_edge: "Edge = our probability − FanDuel implied probability. Higher means more value vs. the odds.",
+    h_td: "Sorted by anytime touchdown probability.",
+    h_prob: "Sorted by hit probability. Picks with odds blend model 65% + market 35%.",
+    no_data: "No data yet", see_check: n => `⚠ See ${n} picks to check →`,
+    disclaimer: "Probabilities are estimates from historical data. In 2024–2025 backtests, actual hit rates ran 3–4 pts below model probabilities on average.",
+    edge: "Edge", implied: "implied", add_t: "Add to ticket", rm_t: "Remove from ticket", added: "Added to ticket", removed: "Removed from ticket",
+    title_games: "This Week's Games", games_hint: "Tap a game to see its Best 15.", inj_n: n => `${n} injury/practice`,
+    proj: "Projected", spread: "Spread", total: "Total O/U", weather: "Weather", outdoor: "Outdoor", dome: "Dome", wind: "wind", top1: "#1",
+    back_games: "This week's games", away: "Away", home: "Home", roof: "Roof", no_fc: "No forecast", dome_long: "Dome (no weather impact)", precip: "precip",
+    inj_title: "Injury report", inactive_note: "Final inactives: 90 min before kickoff", none: "Nothing notable", game_best: "Best 15 for this game",
+    back: "Back", rank: r => `#${r}`, check_badge: "⚠ Check", final_prob: "Final prob.", odds: "Odds",
+    blend: (m, k) => `Model ${m}% · Market (no-vig) ${k}% → blended 65:35 into the final probability.`,
+    check_warn: "Model and FanDuel disagree a lot. The market may know something the model doesn't (role change, a starter returning, depth chart, injury). Check the news before using.",
+    recent_n: n => `Last ${n} games`, hits_n: (n, h) => `Hit ${h} of ${n}`, need_line: x => `Dashed line = ${x}`, wk_opp: (w, o) => `Wk${w} ${o}`, no_recent: "No recent games",
+    why: "Why this pick", r_hits: (n, h) => `Hit in ${h} of last ${n} games`, r_hits_td: "Games with a touchdown", r_hits_y: x => `Games with ${x} or more`,
+    r_mu: m => `Model expects ${m}`, r_mu2: (x, hi) => `${hi ? "Above" : "Below"} the line of ${x}`,
+    r_def: (o, r) => `${o} defense: #${r} most allowed this week`, r_def2: (p, a) => `Avg allowed to ${p}s, last 8 games: ${a} (#1 = allows most = favorable)`,
+    u_car: x => `Carry share ${x}`, u_tgt: x => `Target share ${x}`, u_rz: x => `Red zone (inside 10) share ${x}`, r_use: "Team usage (recent weighted avg.)",
+    r_imp: x => `Team implied total ${x} pts`, r_fav: x => `Favored by ${x} → more time leading`, r_dog: x => `Underdog by ${x} → more time trailing`, r_even: "Close game expected",
+    r_tdr: x => `TD in ${x} of last 16 games`, r_wind: x => `Wind at kickoff ${x} mph`, r_wind_hi: "Strong wind: hurts passing, helps rushing", r_wind_lo: "Little impact",
+    t_rm: "Remove from ticket", t_add: "Add to my ticket",
+    title_ticket: "My Ticket", t_empty: "Tap ☆ next to a pick to add it here. We'll calculate the chance all picks hit and the estimated parlay odds.", clear: "Clear",
+    t_n: "Picks", t_all: "All hit", t_odds: "Est. odds", t_noodds: "* Picks without odds are left out. Check the real price on FanDuel.",
+    t_same: "Several picks are from the same game. They affect each other (e.g. QB pass TD and WR TD), so the real probability differs from the number above.",
+    t_note: "The all-hit probability multiplies each pick as if independent. It drops fast as you add picks.",
+    rec_sub: "Pre-kickoff picks vs. actual results", title_record: "Record", rec_err: e => `Couldn't load the record (${e}).`,
+    rec_empty: "No graded games yet. Starting this week, <b>picks are saved right before kickoff</b>. When games finish and official stats are posted (usually the next day), they are graded automatically and appear here.",
+    st_pred: (h, g, a) => `${h}/${g} · pred. ${a}%`, st_none: "Not graded", rec_all: "Overall Best 15", rec_game: "Per-game Best 15", rec_td: "TD Top 15",
+    void_note: t => `Void = the player didn't play (FanDuel voids these too). Last graded ${t}`,
+    cal_title: "Predicted vs. actual", cal_hint: "Gray = predicted, orange = actual. The closer they are, the more trustworthy the model.",
+    cal_row: (l, n) => `${l} · ${n} picks`, actual: x => `Actual ${x}%`, wk_title: (s, w) => `${s} Week ${w} · Overall Best 15`,
+    wk_hits: (h, g) => `${h}/${g} hit`, wk_pend: n => ` · ${n} pending`, wk_games: (h, g, r) => `All per-game Best 15: ${h}/${g} hit (${r}%)`, wk_td: (h, g) => `TD Top 15: ${h}/${g} hit`,
+    res: { hit: "HIT", miss: "MISS", void: "VOID", pending: "PENDING" },
+    title_check: "Check First", check_info: "These picks differ from FanDuel by more than 15 pts. The market likely knows something the model doesn't (a starter returning, reduced role, depth chart, injury), so they are <b>left out of the Best 15</b>. Use them only after checking the news.",
+    check_none: "Nothing right now",
+    elapsed: (s, m, ss) => `${s} · ${m}:${ss} elapsed (usually 3–4 min)`, need_token: "Save a token first to use the update button.",
+    rq: "Sending request to GitHub", r_auth: "Token permission problem. Check your token in Settings.", r_fail: c => "Request failed (HTTP " + c + ")",
+    r_queued: "Queued", r_prog: "Fetching injuries, weather, odds and calculating", r_fin: "Finishing", r_cfail: "The calculation failed. Check GitHub Actions.",
+    r_load: "Loading results", r_done: "Updated to the latest", r_slow: "Still not done after 12 minutes. Please refresh in a moment.",
+    load_err: e => `Couldn't load data (${e}). Please refresh in a moment.`,
+    st_title: "Settings", lang: "Language", st_upd: "Update button setup", close: "Close",
+    st_info: 'The update button tells GitHub to "recalculate now". To do that, save a GitHub token on this device once. The token is stored <b>only in this browser</b> and is never sent anywhere else.',
+    st_steps: ["GitHub → profile (top right) → <b>Settings</b> → <b>Developer settings</b> (bottom)", "<b>Personal access tokens → Fine-grained tokens → Generate new token</b>",
+      "Token name: <b>best15</b>, Expiration: <b>1 year</b>", "Repository access: <b>Only select repositories → nfl-best15</b>",
+      "Permissions → Repository permissions: <b>Actions: Read and write</b>, <b>Contents: Read-only</b>", "<b>Generate token</b> → copy the token (github_pat_…) and paste it below"],
+    tok: "GitHub token", save: "Save", del: "Delete", tok_saved: "A token is saved.", tok_del: "Deleted.", checking: "Checking…",
+    tok_ok: "Saved. The update button is ready.", tok_bad: c => "Couldn't verify the token (HTTP " + c + "). Check its permissions and repository.",
+    settings_aria: "Settings", menu: "Main menu", sort_aria: "Sort",
+    st: { active: "Active", questionable: "Questionable", doubtful: "Doubtful", out: "OUT" },
+    dow: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+  },
 };
+const L = () => T[LANG];
 
-// ------------------------------------------------------------------ data
+// 엔진이 만든 한국어 문구 → 영어
+function trLabel(s) {
+  if (LANG === "ko" || !s) return s;
+  const n = x => (String(x).includes(".") ? "Over " + x : x + "+");
+  return s
+    .replace(/^애니타임 터치다운$/, "Anytime TD")
+    .replace(/^패싱 TD ([\d.]+)개 이상$/, (_, x) => `${n(x)} Pass TDs`)
+    .replace(/^패싱 ([\d.]+)야드 이상$/, (_, x) => `${n(x)} Pass Yds`)
+    .replace(/^러싱 ([\d.]+)야드 이상$/, (_, x) => `${n(x)} Rush Yds`)
+    .replace(/^리시빙 ([\d.]+)야드 이상$/, (_, x) => `${n(x)} Rec Yds`)
+    .replace(/^리셉션 ([\d.]+)개 이상$/, (_, x) => `${n(x)} Receptions`);
+}
+function trChange(c) {
+  if (LANG === "ko") return c;
+  let m;
+  if ((m = /^▲ (.+?) ((?:애니타임|패싱|러싱|리시빙|리셉션).+?) 새로 진입 \((\d+)위, ([\d.]+)%\)$/.exec(c))) return `▲ ${m[1]} ${trLabel(m[2])} entered (#${m[3]}, ${m[4]}%)`;
+  if ((m = /^• (.+?) ((?:애니타임|패싱|러싱|리시빙|리셉션).+?) ([\d.]+)% → ([\d.]+)%$/.exec(c))) return `• ${m[1]} ${trLabel(m[2])} ${m[3]}% → ${m[4]}%`;
+  if ((m = /^▼ (.+?) ((?:애니타임|패싱|러싱|리시빙|리셉션).+?) 베스트 15에서 빠짐$/.exec(c))) return `▼ ${m[1]} ${trLabel(m[2])} dropped out`;
+  if ((m = /^✕ (.+) 결장 반영$/.exec(c))) return `✕ ${m[1]} ruled out`;
+  return c;
+}
+function trEffect(s) {
+  if (LANG === "ko") return s;
+  return String(s).replace("동료 타깃", "teammate targets").replace("RB 캐리", "RB carries");
+}
+function trStatus(st) {
+  if (LANG === "ko") return st;
+  return st === "훈련 불참" ? "DNP" : st === "제한 훈련" ? "Limited" : st;
+}
+
+// ================================================================== data
 function token() { return store.get("gh_token", ""); }
 function gh(path, opt = {}) {
   const h = { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", ...(opt.headers || {}) };
@@ -158,7 +278,6 @@ function gh(path, opt = {}) {
 // 예전 결과 파일에 NaN/Infinity가 섞여 있어도 읽을 수 있게 null로 바꿔요
 function parseJSON(t) { return JSON.parse(t.replace(/:\s*-?(NaN|Infinity)\b/g, ": null")); }
 async function loadData(fresh) {
-  // 토큰이 있으면 GitHub API로 '방금 저장된' 결과를, 없으면 이 사이트에 배포된 파일을 읽어요
   try {
     if (fresh && token()) {
       const r = await gh("/contents/output/latest.json?ref=main", { headers: { Accept: "application/vnd.github.raw+json" } });
@@ -168,11 +287,10 @@ async function loadData(fresh) {
     if (!r.ok) throw new Error("HTTP " + r.status);
     D = parseJSON(await r.text());
   } catch (e) {
-    $("#app").innerHTML = `<div class="card">데이터를 불러오지 못했어요 (${esc(e.message)}). 잠시 뒤 새로고침해 주세요.</div>`;
+    $("#app").innerHTML = `<div class="card">${esc(L().load_err(e.message))}</div>`;
     throw e;
   }
 }
-
 let R = null, Rerr = null;  // record.json
 async function loadRecord(fresh) {
   try {
@@ -187,281 +305,300 @@ async function loadRecord(fresh) {
   } catch (e) { Rerr = e.message; }
 }
 
-// ------------------------------------------------------------------ helpers
-const DOW = ["일","월","화","수","목","금","토"];
+// ================================================================== helpers
+const I = {
+  refresh: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>',
+  back: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
+  gear: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+  star: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
+  starOn: '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
+  list: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>',
+  cal: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>',
+  ticket: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M13 6v12" stroke-dasharray="2 2"/></svg>',
+  chart: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>',
+  warn: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>',
+};
 function kick(s) {             // "2026-11-15 13:00 ET" → "일 11/15 1:00 PM"
   const m = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/.exec(s || ""); if (!m) return s || "";
   const d = new Date(+m[1], +m[2] - 1, +m[3]); let h = +m[4]; const ap = h >= 12 ? "PM" : "AM"; h = h % 12 || 12;
-  return `${DOW[d.getDay()]} ${+m[2]}/${+m[3]} ${h}:${m[5]} ${ap}`;
+  return `${L().dow[d.getDay()]} ${+m[2]}/${+m[3]} ${h}:${m[5]} ${ap}`;
 }
 function gameOf(gid) { return D.games.find(g => g.game_id === gid); }
 function badge(st) {
   if (!st) return "";
-  const s = st.toLowerCase();
-  if (s === "active") return '<span class="badge b-ok">출전</span>';
-  if (s === "questionable") return '<span class="badge b-q">Q 불확실</span>';
-  if (s === "doubtful") return '<span class="badge b-out">D 결장 유력</span>';
-  if (s === "out" || s.includes("reserve")) return '<span class="badge b-out">OUT</span>';
-  if (st === "훈련 불참" || st === "제한 훈련") return `<span class="badge b-soft">${esc(st)}</span>`;
-  return `<span class="badge b-soft">${esc(st)}</span>`;
+  const s = st.toLowerCase(), S = L().st;
+  if (s === "active") return `<span class="badge b-ok">${S.active}</span>`;
+  if (s === "questionable") return `<span class="badge b-q">${S.questionable}</span>`;
+  if (s === "doubtful") return `<span class="badge b-out">${S.doubtful}</span>`;
+  if (s === "out" || s.includes("reserve")) return `<span class="badge b-out">${S.out}</span>`;
+  return `<span class="badge b-soft">${esc(trStatus(st))}</span>`;
 }
 const fmtOdds = o => o == null ? "" : (o > 0 ? "+" : "") + Math.round(o);
 const pid = p => `${p.name}|${p.label}|${p.game_id}`;
+const isTD = p => p.market === "td" || (p.label || "").includes("터치다운");
 function ticket() { return store.get("ticket_" + (D ? D.season + "_" + D.week : ""), []); }
 function setTicket(t) { store.set("ticket_" + D.season + "_" + D.week, t); updCount(); }
 function inTicket(p) { return ticket().some(x => pid(x) === pid(p)); }
 function toggleTicket(p) {
   let t = ticket();
-  if (inTicket(p)) { t = t.filter(x => pid(x) !== pid(p)); toast("티켓에서 뺐어요"); }
-  else { t.push(p); toast("티켓 후보에 담았어요"); }
+  if (inTicket(p)) { t = t.filter(x => pid(x) !== pid(p)); toast(L().removed); }
+  else { t.push(p); toast(L().added); }
   setTicket(t);
 }
-function updCount() { const n = D ? ticket().length : 0; const c = $("#tcnt"); c.hidden = !n; c.textContent = n; }
+function updCount() { const c = $("#tcnt"); if (!c) return; const n = D ? ticket().length : 0; c.hidden = !n; c.textContent = n; }
 function toast(m) { const t = $("#toast"); t.textContent = m; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 1600); }
 let PICKS = {};                // 화면에 그린 픽 (클릭용)
 function reg(p) { const k = "p" + Object.keys(PICKS).length; PICKS[k] = p; return k; }
+const sw = () => L().season_week(D.season, D.week);
 
 function pickRow(p, opts = {}) {
-  const k = reg(p); const g = gameOf(p.game_id);
+  const k = reg(p); const g = gameOf(p.game_id); const t = L();
   const top = p.rank <= 3 ? " top" : "";
-  const edge = p.edge == null ? "" : (p.edge > 0 ? `<span class="edge-p">엣지 +${p.edge.toFixed(1)}%p</span>` : `<span class="edge-n">엣지 ${p.edge.toFixed(1)}%p</span>`);
-  const odds = p.odds == null ? "" : `<div class="small muted">FanDuel ${fmtOdds(p.odds)} · 배당 확률 ${p.implied}%</div>`;
+  const edge = p.edge == null ? "" : (p.edge > 0 ? `<span class="edge-p">${t.edge} +${p.edge.toFixed(1)}%p</span>` : `<span class="edge-n">${t.edge} ${p.edge.toFixed(1)}%p</span>`);
+  const odds = p.odds == null ? "" : `<div class="small muted">FanDuel ${fmtOdds(p.odds)} · ${t.implied} ${p.implied}%</div>`;
   const on = inTicket(p);
   return `<div class="pick" role="link" tabindex="0" data-pick="${k}">
     <div class="rank${top}">${p.rank}</div>
     <div class="pmain">
       <div class="row"><span class="pname">${esc(p.name)}</span>${badge(p.status)}</div>
       <div class="small muted">${esc(p.team)} ${esc(p.pos)} · vs ${esc(p.opp)}${g && !opts.noGame ? " · " + kick(g.kickoff) : ""}</div>
-      <div class="plabel">${esc(p.label)}</div>
+      <div class="plabel">${esc(trLabel(p.label))}</div>
       <div class="bar"><i style="width:${p.prob}%"></i></div>
       ${odds}
     </div>
     <div class="pside"><div class="pprob">${p.prob.toFixed(1)}%</div>${edge}</div>
-    <button class="star${on ? " on" : ""}" data-star="${k}" aria-label="${on ? "티켓에서 빼기" : "티켓 후보에 담기"}">${on ? I.starOn : I.star}</button>
+    <button class="star${on ? " on" : ""}" data-star="${k}" aria-label="${on ? t.rm_t : t.add_t}">${on ? I.starOn : I.star}</button>
   </div>`;
 }
 
-// ------------------------------------------------------------------ views
+// ================================================================== views
 function vHome() {
-  const o = D.overall;
+  const o = D.overall, t = L();
   const list = view.sort === "edge" ? o.edge : view.sort === "td" ? o.td : o.prob;
-  const seg = (k, t, dis) => `<button class="${view.sort === k ? "on" : ""}" data-sort="${k}" ${dis ? "disabled" : ""}>${t}</button>`;
+  const seg = (k, s, dis) => `<button class="${view.sort === k ? "on" : ""}" data-sort="${k}" ${dis ? "disabled" : ""}>${s}</button>`;
   const src = D.sources || {};
   const status = refreshing ? refreshText() : "";
   return `
   <header class="between">
-    <div><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>전체 베스트 15</h1></div>
-    <button class="btn-ghost" id="open-st" aria-label="업데이트 버튼 설정" style="width:44px;padding:0;display:flex;align-items:center;justify-content:center">${I.gear}</button>
+    <div><div class="sub">${sw()}</div><h1>${t.title_home}</h1></div>
+    <div class="row">
+      <button class="btn-ghost" data-lang="${LANG === "ko" ? "en" : "ko"}" aria-label="${t.lang}" style="width:52px;padding:0;font-weight:700">${LANG === "ko" ? "EN" : "한"}</button>
+      <button class="btn-ghost" id="open-st" aria-label="${t.settings_aria}" style="width:44px;padding:0;display:flex;align-items:center;justify-content:center">${I.gear}</button>
+    </div>
   </header>
   <section class="card" style="display:flex;flex-direction:column;gap:12px">
     <div class="between">
-      <div><div class="small muted">마지막 업데이트</div><div style="font-size:16px;font-weight:700">${esc(D.generated_at)}</div></div>
+      <div><div class="small muted">${t.last_update}</div><div style="font-size:16px;font-weight:700">${esc(D.generated_at)}</div></div>
       <div class="small muted" style="text-align:right">${esc(nextKick())}</div>
     </div>
-    <button class="btn-main" id="refresh" ${refreshing ? "disabled" : ""}><span class="${refreshing ? "spin" : ""}" style="display:flex">${I.refresh}</span>${refreshing ? "최신 정보 계산 중…" : "최신 정보로 업데이트"}</button>
+    <button class="btn-main" id="refresh" ${refreshing ? "disabled" : ""}><span class="${refreshing ? "spin" : ""}" style="display:flex">${I.refresh}</span>${refreshing ? t.refreshing : t.refresh}</button>
     ${status ? `<div class="small" style="color:var(--acc2);text-align:center">${status}</div>` : ""}
     <div class="mini">
-      <div><span class="small muted">부상·출전</span><b title="${esc(src.injuries)}">${esc(short(src.injuries))}</b></div>
-      <div><span class="small muted">배당</span><b title="${esc(src.odds)}">${esc(short(src.odds))}</b></div>
-      <div><span class="small muted">날씨</span><b title="${esc(src.weather)}">${esc(short(src.weather))}</b></div>
+      <div><span class="small muted">${t.src_inj}</span><b title="${esc(src.injuries)}">${esc(short(src.injuries))}</b></div>
+      <div><span class="small muted">${t.src_odds}</span><b title="${esc(src.odds)}">${esc(short(src.odds))}</b></div>
+      <div><span class="small muted">${t.src_wx}</span><b title="${esc(src.weather)}">${esc(short(src.weather))}</b></div>
     </div>
-    ${D.changes && D.changes.length ? `<div class="changes" style="border-top:1px solid var(--line);padding-top:10px"><div class="small muted" style="font-weight:700">직전 업데이트 대비 바뀐 것 ${D.changes.length}건</div>${D.changes.slice(0, 8).map(c => `<div>${esc(c)}</div>`).join("")}${D.changes.length > 8 ? `<div class="small muted">외 ${D.changes.length - 8}건</div>` : ""}</div>` : ""}
+    ${D.changes && D.changes.length ? `<div class="changes" style="border-top:1px solid var(--line);padding-top:10px"><div class="small muted" style="font-weight:700">${t.changes(D.changes.length)}</div>${D.changes.slice(0, 8).map(c => `<div>${esc(trChange(c))}</div>`).join("")}${D.changes.length > 8 ? `<div class="small muted">${t.more(D.changes.length - 8)}</div>` : ""}</div>` : ""}
   </section>
-  <div class="seg" role="group" aria-label="정렬">${seg("prob", "확률순")}${seg("edge", "엣지순", !o.edge.length)}${seg("td", "터치다운")}</div>
-  <div class="small muted" style="padding:0 2px">${view.sort === "edge" ? "엣지 = 우리 확률 − FanDuel 배당 확률. 높을수록 배당 대비 가치가 커요." : view.sort === "td" ? "애니타임 터치다운 확률이 높은 순서예요." : "적중 확률이 높은 순서예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요."}</div>
-  <div class="list">${list.length ? list.map(p => pickRow(p)).join("") : '<div class="empty">아직 데이터가 없어요</div>'}</div>
-  ${o.check && o.check.length ? `<a href="#check" class="card" style="text-decoration:none;color:var(--warn);font-size:14px;font-weight:700">⚠ 확인 필요 픽 ${o.check.length}개 보기 →</a>` : ""}
-  <div class="small muted" style="line-height:1.6;padding:0 2px">확률은 과거 데이터로 계산한 추정치예요. 2024·2025 시즌 검증에서 실제 적중은 모델 확률보다 평균 3~4%p 낮았어요.</div>`;
+  <div class="seg" role="group" aria-label="${t.sort_aria}">${seg("prob", t.s_prob)}${seg("edge", t.s_edge, !o.edge.length)}${seg("td", t.s_td)}</div>
+  <div class="small muted" style="padding:0 2px">${view.sort === "edge" ? t.h_edge : view.sort === "td" ? t.h_td : t.h_prob}</div>
+  <div class="list">${list.length ? list.map(p => pickRow(p)).join("") : `<div class="empty">${t.no_data}</div>`}</div>
+  ${o.check && o.check.length ? `<a href="#check" class="card" style="text-decoration:none;color:var(--warn);font-size:14px;font-weight:700">${t.see_check(o.check.length)}</a>` : ""}
+  <div class="small muted" style="line-height:1.6;padding:0 2px">${t.disclaimer}</div>`;
 }
 function short(s) {
-  s = s || "";
-  if (s.includes("ESPN 실시간")) return "ESPN " + (s.match(/ESPN 실시간 (\d+)/) || [])[1] + "건";
-  if (s.startsWith("FanDuel")) return (s.match(/배당 (\d+)개/) || [])[1] + "개 새로";
-  if (s.includes("분 전 데이터")) return (s.match(/배당 (\d+)분 전/) || [])[1] + "분 전";
-  if (s.startsWith("날씨 실패")) return "실패";
-  if (s.startsWith("날씨")) return (s.match(/날씨 (\d+)경기/) || [])[1] + "경기";
-  if (s.includes("미사용")) return "미사용";
+  s = s || ""; const ko = LANG === "ko"; let m;
+  if ((m = /ESPN 실시간 (\d+)/.exec(s))) return ko ? `ESPN ${m[1]}건` : `ESPN ${m[1]}`;
+  if (s.includes("NFL 공식 리포트")) return ko ? "NFL" : "NFL";
+  if (s.startsWith("FanDuel")) { m = /배당 (\d+)개/.exec(s); return ko ? `${m && m[1]}개 새로` : `${m && m[1]} new`; }
+  if ((m = /배당 (\d+)분 전/.exec(s))) return ko ? `${m[1]}분 전` : `${m[1]} min ago`;
+  if (s.includes("이전 배당")) return ko ? "이전 배당" : "Previous";
+  if (s.startsWith("날씨 실패")) return ko ? "실패" : "Failed";
+  if ((m = /날씨 (\d+)경기/.exec(s))) return ko ? `${m[1]}경기` : `${m[1]} games`;
+  if (s.includes("야외 경기 없음")) return ko ? "야외 없음" : "All dome";
+  if (s.includes("미사용")) return ko ? "미사용" : "Off";
   return s.split(" ")[0] || "-";
 }
-function nextKick() {
-  const up = D.games.map(g => g.kickoff).sort()[0];
-  return up ? "첫 킥오프 " + kick(up) : "";
-}
+function nextKick() { const up = D.games.map(g => g.kickoff).sort()[0]; return up ? L().first_kick(kick(up)) : ""; }
+const favStr = g => g.spread_home > 0 ? `${g.home} −${g.spread_home}` : g.spread_home < 0 ? `${g.away} −${-g.spread_home}` : "PK";
 
 function vGames() {
-  return `<header><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>이번 주 경기</h1></header>
-  <div class="small muted">경기를 누르면 그 경기의 베스트 15가 나와요.</div>
+  const t = L();
+  return `<header><div class="sub">${sw()}</div><h1>${t.title_games}</h1></header>
+  <div class="small muted">${t.games_hint}</div>
   <div class="list">${D.games.map(g => {
     const top = g.best15_prob[0];
     const inj = g.injuries.filter(i => i.status && i.status.toLowerCase() !== "active").length;
     const w = g.weather;
-    const wx = !w ? "야외" : w.dome ? "돔" : `${w.temp_f}°F · 바람 ${w.wind_mph}mph`;
-    const fav = g.spread_home > 0 ? `${g.home} −${g.spread_home}` : g.spread_home < 0 ? `${g.away} −${-g.spread_home}` : "PK";
+    const wx = !w ? t.outdoor : w.dome ? t.dome : `${w.temp_f}°F · ${t.wind} ${w.wind_mph}mph`;
     return `<div class="card game" role="link" tabindex="0" data-game="${esc(g.game_id)}">
-      <div class="between"><span class="small muted">${kick(g.kickoff)}</span>${inj ? `<span class="badge b-q">부상·훈련 ${inj}명</span>` : ""}</div>
+      <div class="between"><span class="small muted">${kick(g.kickoff)}</span>${inj ? `<span class="badge b-q">${t.inj_n(inj)}</span>` : ""}</div>
       <div class="between">
         <div><div class="team">${esc(g.away)} <span class="muted" style="font-size:16px">@</span> ${esc(g.home)}</div><div class="small muted">${esc(g.stadium || "")}</div></div>
-        <div style="text-align:right"><div class="small muted">예상 점수</div><div class="num" style="font-weight:700">${g.proj.away} – ${g.proj.home}</div></div>
+        <div style="text-align:right"><div class="small muted">${t.proj}</div><div class="num" style="font-weight:700">${g.proj.away} – ${g.proj.home}</div></div>
       </div>
-      <div class="mini"><div><span class="small muted">스프레드</span><b>${esc(fav)}</b></div><div><span class="small muted">총점 O/U</span><b>${g.total}</b></div><div><span class="small muted">날씨</span><b>${esc(wx)}</b></div></div>
-      ${top ? `<div class="between small"><span style="color:var(--mu2)">1위 · <span style="color:var(--acc2)">${esc(top.name)} ${esc(top.label)}</span></span><b style="color:var(--acc)">${top.prob}%</b></div>` : ""}
+      <div class="mini"><div><span class="small muted">${t.spread}</span><b>${esc(favStr(g))}</b></div><div><span class="small muted">${t.total}</span><b>${g.total}</b></div><div><span class="small muted">${t.weather}</span><b>${esc(wx)}</b></div></div>
+      ${top ? `<div class="between small"><span style="color:var(--mu2)">${t.top1} · <span style="color:var(--acc2)">${esc(top.name)} ${esc(trLabel(top.label))}</span></span><b style="color:var(--acc)">${top.prob}%</b></div>` : ""}
     </div>`;
   }).join("")}</div>`;
 }
 
 function vGame(gid) {
   const g = gameOf(gid); if (!g) return vGames();
+  const t = L();
   const list = view.gsort === "edge" && g.best15_edge.length ? g.best15_edge : g.best15_prob;
   const w = g.weather;
-  const wx = !w ? "예보 없음" : w.dome ? "돔 경기 (날씨 영향 없음)" : `${w.temp_f}°F · 바람 ${w.wind_mph}mph · 강수 ${w.precip_pct}%`;
-  const fav = g.spread_home > 0 ? `${g.home} −${g.spread_home}` : g.spread_home < 0 ? `${g.away} −${-g.spread_home}` : "PK";
+  const wx = !w ? t.no_fc : w.dome ? t.dome_long : `${w.temp_f}°F · ${t.wind} ${w.wind_mph}mph · ${t.precip} ${w.precip_pct}%`;
   const inj = g.injuries.filter(i => i.status && i.status.toLowerCase() !== "active");
-  return `<button class="back" data-go="#games">${I.back}이번 주 경기</button>
+  return `<button class="back" data-go="#games">${I.back}${t.back_games}</button>
   <section class="card" style="display:flex;flex-direction:column;gap:12px">
     <div class="small muted" style="text-align:center">${kick(g.kickoff)} · ${esc(g.stadium || "")}</div>
     <div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;text-align:center">
-      <div><div class="team" style="font-size:28px">${esc(g.away)}</div><div class="small muted">원정</div></div>
-      <div><div class="small muted">예상 점수</div><div class="num" style="font-size:22px;font-weight:700">${g.proj.away} – ${g.proj.home}</div></div>
-      <div><div class="team" style="font-size:28px">${esc(g.home)}</div><div class="small muted">홈</div></div>
+      <div><div class="team" style="font-size:28px">${esc(g.away)}</div><div class="small muted">${t.away}</div></div>
+      <div><div class="small muted">${t.proj}</div><div class="num" style="font-size:22px;font-weight:700">${g.proj.away} – ${g.proj.home}</div></div>
+      <div><div class="team" style="font-size:28px">${esc(g.home)}</div><div class="small muted">${t.home}</div></div>
     </div>
-    <div class="mini"><div><span class="small muted">스프레드</span><b>${esc(fav)}</b></div><div><span class="small muted">총점 O/U</span><b>${g.total}</b></div><div><span class="small muted">지붕</span><b>${esc(g.roof || "-")}</b></div></div>
-    <div class="small" style="color:var(--mu2)">날씨: ${esc(wx)}</div>
-    <button class="btn-line" id="refresh2" ${refreshing ? "disabled" : ""}>${refreshing ? "계산 중…" : "최신 정보로 업데이트"}</button>
+    <div class="mini"><div><span class="small muted">${t.spread}</span><b>${esc(favStr(g))}</b></div><div><span class="small muted">${t.total}</span><b>${g.total}</b></div><div><span class="small muted">${t.roof}</span><b>${esc(g.roof || "-")}</b></div></div>
+    <div class="small" style="color:var(--mu2)">${t.weather}: ${esc(wx)}</div>
+    <button class="btn-line" id="refresh2" ${refreshing ? "disabled" : ""}>${refreshing ? t.refreshing_short : t.refresh}</button>
   </section>
-  ${g.notes.length ? `<section class="card small" style="color:var(--acc2)">${g.notes.map(n => `✕ ${esc(n.name)} (${esc(n.pos)}) ${esc(n.status)} → ${esc(n.effect)}`).join("<br>")}</section>` : ""}
+  ${g.notes.length ? `<section class="card small" style="color:var(--acc2)">${g.notes.map(n => `✕ ${esc(n.name)} (${esc(n.pos)}) ${esc(trStatus(n.status))} → ${esc(trEffect(n.effect))}`).join("<br>")}</section>` : ""}
   <section class="card" style="display:flex;flex-direction:column;gap:8px">
-    <div class="between"><b>부상·출전 현황</b><span class="small muted">최종 비출전 명단: 킥오프 90분 전</span></div>
-    ${inj.length ? inj.map(i => `<div class="between small"><span>${esc(i.player_display_name)} · ${esc(i.team)} ${esc(i.position)}${i.injury ? " · " + esc(i.injury) : ""}</span>${badge(i.status)}</div>`).join("") : '<div class="small muted">특이사항 없음</div>'}
+    <div class="between"><b>${t.inj_title}</b><span class="small muted">${t.inactive_note}</span></div>
+    ${inj.length ? inj.map(i => `<div class="between small"><span>${esc(i.player_display_name)} · ${esc(i.team)} ${esc(i.position)}${i.injury ? " · " + esc(i.injury) : ""}</span>${badge(i.status)}</div>`).join("") : `<div class="small muted">${t.none}</div>`}
   </section>
-  <div class="between"><h2>이 경기 베스트 15</h2>
-    ${g.best15_edge.length ? `<div class="seg" style="width:180px"><button class="${view.gsort !== "edge" ? "on" : ""}" data-gsort="prob">확률순</button><button class="${view.gsort === "edge" ? "on" : ""}" data-gsort="edge">엣지순</button></div>` : ""}
+  <div class="between"><h2>${t.game_best}</h2>
+    ${g.best15_edge.length ? `<div class="seg" style="width:190px"><button class="${view.gsort !== "edge" ? "on" : ""}" data-gsort="prob">${t.s_prob}</button><button class="${view.gsort === "edge" ? "on" : ""}" data-gsort="edge">${t.s_edge}</button></div>` : ""}
   </div>
   <div class="list">${list.map(p => pickRow(p, { noGame: true })).join("")}</div>`;
 }
 
-function vPick(k) {
-  const p = PICKS[k]; if (!p) return vHome();
+function vPick() {
+  const p = lastPick && lastPick.p; if (!p) return vHome();
+  PICKS = { p0: p }; const k = "p0"; const t = L();
   const d = p.detail || {}; const g = gameOf(p.game_id);
   const rec = d.recent || [];
-  const need = p.label.includes("터치다운") ? 1 : d.need;
+  const td = isTD(p);
+  const need = td ? 1 : d.need;
   const max = Math.max(need || 1, ...rec.map(r => r.val || 0)) * 1.15 || 1;
   const H = 110;
   const chart = rec.length ? `<div class="chart" style="height:${H + 30}px;margin-top:22px">
-      ${need != null ? `<div class="need" style="bottom:${(need / max) * H}px"></div><div class="small" style="position:absolute;left:0;top:-22px;color:var(--mu2)">점선 = 기준 ${need}</div>` : ""}
+      ${need != null ? `<div class="need" style="bottom:${(need / max) * H}px"></div><div class="small" style="position:absolute;left:0;top:-22px;color:var(--mu2)">${t.need_line(need)}</div>` : ""}
       ${rec.map(r => `<div class="col"><span class="num small" style="font-weight:700">${r.val ?? "-"}</span><i class="${(r.val ?? 0) >= (need ?? 0) ? "" : "miss"}" style="height:${Math.max(3, ((r.val || 0) / max) * H)}px"></i></div>`).join("")}
     </div>
-    <div style="display:grid;grid-template-columns:repeat(${rec.length},minmax(0,1fr));gap:12px;text-align:center" class="small muted">${rec.map(r => `<span>${r.wk}주 ${esc(r.opp)}</span>`).join("")}</div>` : '<div class="small muted">최근 기록 없음</div>';
+    <div style="display:grid;grid-template-columns:repeat(${rec.length},minmax(0,1fr));gap:12px;text-align:center" class="small muted">${rec.map(r => `<span>${t.wk_opp(r.wk, esc(r.opp))}</span>`).join("")}</div>` : `<div class="small muted">${t.no_recent}</div>`;
   const pct = x => x == null ? "-" : Math.round(x * 100) + "%";
   const reasons = [];
-  if (d.recent_hits != null && rec.length) reasons.push(["📊", `최근 ${rec.length}경기 중 ${d.recent_hits}번 달성`, p.label.includes("터치다운") ? "터치다운을 기록한 경기 수" : `기준 ${need} 이상 기록한 경기 수`]);
-  if (d.mu != null) reasons.push(["🎯", `모델 예상값 ${d.mu}`, `기준선 ${need ?? "-"} 대비 ${d.mu >= (need ?? 0) ? "높아요" : "낮아요"}`]);
-  if (d.def_rank != null) reasons.push([d.def_rank <= 8 ? "✅" : d.def_rank >= 19 ? "⚠️" : "•", `상대 ${esc(p.opp)} 수비: 이번 주 ${Math.round(d.def_rank)}위로 많이 허용`, `${esc(p.pos)} 상대 최근 8경기 평균 허용 ${d.def_allowed ?? "-"} (1위 = 가장 많이 허용 = 유리)`]);
+  if (d.recent_hits != null && rec.length) reasons.push(["📊", t.r_hits(rec.length, d.recent_hits), td ? t.r_hits_td : t.r_hits_y(need)]);
+  if (d.mu != null) reasons.push(["🎯", t.r_mu(d.mu), t.r_mu2(need ?? "-", d.mu >= (need ?? 0))]);
+  if (d.def_rank != null) reasons.push([d.def_rank <= 8 ? "✅" : d.def_rank >= 19 ? "⚠️" : "•", t.r_def(esc(p.opp), Math.round(d.def_rank)), t.r_def2(esc(p.pos), d.def_allowed ?? "-")]);
   const use = [];
-  if (d.carry_share >= 0.05) use.push(`러싱 점유율 ${pct(d.carry_share)}`);
-  if (d.tgt_share >= 0.03) use.push(`타깃 점유율 ${pct(d.tgt_share)}`);
-  if (d.rz_share >= 0.03) use.push(`레드존(10야드 안) 점유율 ${pct(d.rz_share)}`);
-  if (use.length) reasons.push(["🏈", "팀 내 사용량 (최근 가중 평균)", use.join(" · ")]);
-  if (d.implied_total != null) reasons.push(["📈", `팀 예상 득점 ${d.implied_total}점`, d.spread > 0 ? `${d.spread}점 차 우세 예상 → 리드 상황 많음` : d.spread < 0 ? `${-d.spread}점 차 열세 예상 → 따라가는 상황 많음` : "박빙 예상"]);
-  if (d.td_rate != null && p.label.includes("터치다운")) reasons.push(["🔥", `최근 16경기 TD 경기 비율 ${pct(d.td_rate)}`, ""]);
-  if (d.wind) reasons.push([d.wind >= 15 ? "💨" : "•", `킥오프 바람 ${d.wind}mph`, d.wind >= 15 ? "강풍: 패싱 불리, 러싱 유리" : "영향 적음"]);
+  if (d.carry_share >= 0.05) use.push(t.u_car(pct(d.carry_share)));
+  if (d.tgt_share >= 0.03) use.push(t.u_tgt(pct(d.tgt_share)));
+  if (d.rz_share >= 0.03) use.push(t.u_rz(pct(d.rz_share)));
+  if (use.length) reasons.push(["🏈", t.r_use, use.join(" · ")]);
+  if (d.implied_total != null) reasons.push(["📈", t.r_imp(d.implied_total), d.spread > 0 ? t.r_fav(d.spread) : d.spread < 0 ? t.r_dog(-d.spread) : t.r_even]);
+  if (d.td_rate != null && td) reasons.push(["🔥", t.r_tdr(pct(d.td_rate)), ""]);
+  if (d.wind) reasons.push([d.wind >= 15 ? "💨" : "•", t.r_wind(d.wind), d.wind >= 15 ? t.r_wind_hi : t.r_wind_lo]);
   const on = inTicket(p);
-  return `<button class="back" data-go="back">${I.back}뒤로</button>
+  return `<button class="back" data-go="back">${I.back}${t.back}</button>
   <section style="display:flex;flex-direction:column;gap:6px">
-    <div class="row">${p.rank ? `<span class="badge" style="background:var(--acc);color:var(--acc-ink);font-size:12px;padding:2px 8px">${p.rank}위</span>` : ""}${badge(p.status)}${p.check ? '<span class="badge b-q">⚠ 확인 필요</span>' : ""}</div>
+    <div class="row">${p.rank ? `<span class="badge" style="background:var(--acc);color:var(--acc-ink);font-size:12px;padding:2px 8px">${t.rank(p.rank)}</span>` : ""}${badge(p.status)}${p.check ? `<span class="badge b-q">${t.check_badge}</span>` : ""}</div>
     <h1>${esc(p.name)}</h1>
     <div class="small muted">${esc(p.team)} ${esc(p.pos)} · vs ${esc(p.opp)}${g ? " · " + kick(g.kickoff) : ""}</div>
-    <div style="font-size:18px;font-weight:700;color:var(--acc2)">${esc(p.label)}</div>
+    <div style="font-size:18px;font-weight:700;color:var(--acc2)">${esc(trLabel(p.label))}</div>
   </section>
   <section class="mini">
-    <div><span class="small muted">최종 확률</span><span class="num" style="font-size:24px;font-weight:700;color:var(--acc)">${p.prob.toFixed(1)}%</span></div>
-    <div><span class="small muted">${p.odds != null ? "FanDuel " + fmtOdds(p.odds) : "배당"}</span><span class="num" style="font-size:24px;font-weight:700">${p.implied != null ? p.implied + "%" : "-"}</span></div>
-    <div><span class="small muted">엣지</span><span class="num" style="font-size:24px;font-weight:700;color:${p.edge > 0 ? "var(--ok)" : "var(--mu)"}">${p.edge != null ? (p.edge > 0 ? "+" : "") + p.edge.toFixed(1) + "%p" : "-"}</span></div>
+    <div><span class="small muted">${t.final_prob}</span><span class="num" style="font-size:24px;font-weight:700;color:var(--acc)">${p.prob.toFixed(1)}%</span></div>
+    <div><span class="small muted">${p.odds != null ? "FanDuel " + fmtOdds(p.odds) : t.odds}</span><span class="num" style="font-size:24px;font-weight:700">${p.implied != null ? p.implied + "%" : "-"}</span></div>
+    <div><span class="small muted">${t.edge}</span><span class="num" style="font-size:24px;font-weight:700;color:${p.edge > 0 ? "var(--ok)" : "var(--mu)"}">${p.edge != null ? (p.edge > 0 ? "+" : "") + p.edge.toFixed(1) + "%p" : "-"}</span></div>
   </section>
-  ${p.model_prob != null ? `<div class="small muted">모델 ${p.model_prob}% · 시장(수수료 제외) ${p.market_prob}% → 65:35로 섞은 값이 최종 확률이에요.</div>` : ""}
-  ${p.check ? `<div class="card small" style="color:var(--warn)">모델과 FanDuel 차이가 커요. 모델이 모르는 역할 변화(주전 복귀·뎁스차트 변동)나 부상 정보가 있을 수 있어요. 뉴스를 확인한 뒤 쓰세요.</div>` : ""}
+  ${p.model_prob != null ? `<div class="small muted">${t.blend(p.model_prob, p.market_prob)}</div>` : ""}
+  ${p.check ? `<div class="card small" style="color:var(--warn)">${t.check_warn}</div>` : ""}
   <section class="card" style="display:flex;flex-direction:column;gap:12px">
-    <div class="between"><b>최근 ${rec.length}경기</b>${d.recent_hits != null ? `<span class="small" style="color:var(--ok);font-weight:700">${rec.length}경기 중 ${d.recent_hits}번 달성</span>` : ""}</div>
+    <div class="between"><b>${t.recent_n(rec.length)}</b>${d.recent_hits != null ? `<span class="small" style="color:var(--ok);font-weight:700">${t.hits_n(rec.length, d.recent_hits)}</span>` : ""}</div>
     ${chart}
   </section>
   <section class="card" style="display:flex;flex-direction:column;gap:6px">
-    <b>왜 이 픽인가요</b>
+    <b>${t.why}</b>
     ${reasons.map(r => `<div class="reason"><span class="ic">${r[0]}</span><div><div style="font-size:14px;font-weight:700">${r[1]}</div>${r[2] ? `<div class="small muted">${r[2]}</div>` : ""}</div></div>`).join("")}
   </section>
-  <button class="btn-main" data-star="${k}">${on ? "티켓에서 빼기" : "내 티켓 후보에 담기"}</button>`;
+  <button class="btn-main" data-star="${k}">${on ? t.t_rm : t.t_add}</button>`;
 }
 
 function vTicket() {
-  const t = ticket();
-  if (!t.length) return `<header><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>내 티켓</h1></header>
-    <div class="card small muted" style="line-height:1.7">픽 옆의 ☆를 누르면 여기에 담겨요. 담은 픽들을 모두 맞힐 확률과 예상 배당을 계산해 드려요.</div>`;
-  const prob = t.reduce((a, p) => a * p.prob / 100, 1);
-  const allOdds = t.every(p => p.odds != null);
-  const withOdds = t.filter(p => p.odds != null);
+  const tk = ticket(), t = L();
+  if (!tk.length) return `<header><div class="sub">${sw()}</div><h1>${t.title_ticket}</h1></header>
+    <div class="card small muted" style="line-height:1.7">${t.t_empty}</div>`;
+  const prob = tk.reduce((a, p) => a * p.prob / 100, 1);
+  const allOdds = tk.every(p => p.odds != null);
+  const withOdds = tk.filter(p => p.odds != null);
   const dec = withOdds.reduce((a, p) => a * (p.odds > 0 ? 1 + p.odds / 100 : 1 + 100 / -p.odds), 1);
   const am = !withOdds.length ? "-" : dec >= 2 ? "+" + Math.round((dec - 1) * 100) : "−" + Math.round(100 / (dec - 1));
-  const byGame = {}; t.forEach(p => byGame[p.game_id] = (byGame[p.game_id] || 0) + 1);
+  const byGame = {}; tk.forEach(p => byGame[p.game_id] = (byGame[p.game_id] || 0) + 1);
   const sameGame = Object.values(byGame).some(n => n > 1);
-  return `<header class="between"><div><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>내 티켓</h1></div><button class="btn-ghost" id="clear-t">비우기</button></header>
+  return `<header class="between"><div><div class="sub">${sw()}</div><h1>${t.title_ticket}</h1></div><button class="btn-ghost" id="clear-t">${t.clear}</button></header>
   <section class="mini">
-    <div><span class="small muted">픽 수</span><span class="num" style="font-size:24px;font-weight:700">${t.length}</span></div>
-    <div><span class="small muted">모두 맞힐 확률</span><span class="num" style="font-size:24px;font-weight:700;color:var(--acc)">${(prob * 100).toFixed(1)}%</span></div>
-    <div><span class="small muted">예상 배당${allOdds ? "" : "*"}</span><span class="num" style="font-size:24px;font-weight:700">${am}</span></div>
+    <div><span class="small muted">${t.t_n}</span><span class="num" style="font-size:24px;font-weight:700">${tk.length}</span></div>
+    <div><span class="small muted">${t.t_all}</span><span class="num" style="font-size:24px;font-weight:700;color:var(--acc)">${(prob * 100).toFixed(1)}%</span></div>
+    <div><span class="small muted">${t.t_odds}${allOdds ? "" : "*"}</span><span class="num" style="font-size:24px;font-weight:700">${am}</span></div>
   </section>
-  ${!allOdds ? '<div class="small muted">* 배당이 없는 픽은 계산에서 빠졌어요. 실제 배당은 FanDuel에서 확인하세요.</div>' : ""}
-  ${sameGame ? '<div class="card small" style="color:var(--warn)">같은 경기 픽이 여러 개 있어요. 서로 영향을 주기 때문에(예: QB 패싱 TD와 WR TD) 실제 확률은 위 숫자와 달라요.</div>' : ""}
-  <div class="list">${t.map(p => pickRow(p)).join("")}</div>
-  <div class="small muted" style="line-height:1.6">모두 맞힐 확률은 각 픽을 서로 독립으로 보고 곱한 값이에요. 픽이 많아질수록 확률이 빠르게 낮아져요.</div>`;
+  ${!allOdds ? `<div class="small muted">${t.t_noodds}</div>` : ""}
+  ${sameGame ? `<div class="card small" style="color:var(--warn)">${t.t_same}</div>` : ""}
+  <div class="list">${tk.map(p => pickRow(p)).join("")}</div>
+  <div class="small muted" style="line-height:1.6">${t.t_note}</div>`;
 }
 
-const RES = { hit: ["r-hit", "적중"], miss: ["r-miss", "실패"], void: ["r-void", "무효"], pending: ["r-pending", "대기"] };
+const RESC = { hit: "r-hit", miss: "r-miss", void: "r-void", pending: "r-pending" };
 function vRecord() {
-  const head = `<header><div class="sub">경기 직전 추천 vs 실제 결과</div><h1>적중 기록</h1></header>`;
-  if (!R) { loadRecord(!!token()).then(render); return head + '<div class="empty">불러오는 중…</div>'; }
-  if (Rerr) return head + `<div class="card">기록을 불러오지 못했어요 (${esc(Rerr)}).</div>`;
+  const t = L();
+  const head = `<header><div class="sub">${t.rec_sub}</div><h1>${t.title_record}</h1></header>`;
+  if (!R) { loadRecord(!!token()).then(render); return head + `<div class="empty">${t.loading}</div>`; }
+  if (Rerr) return head + `<div class="card">${esc(t.rec_err(Rerr))}</div>`;
   const s = R.overall_best15;
-  if (R.empty || !s || !(s.graded || s.pending)) return head + `<div class="card small" style="line-height:1.7;color:var(--mu2)">아직 채점된 경기가 없어요. 이번 주부터 <b>킥오프 직전의 픽</b>을 보관하고 있어요. 경기가 끝나고 공식 기록이 올라오면(보통 다음 날) 자동으로 채점돼서 여기에 쌓여요.</div>`;
-  const stat = (t, x) => `<div><span class="small muted">${t}</span><span class="num" style="font-size:20px;font-weight:700">${x && x.graded ? x.rate + "%" : "-"}</span><span class="small muted">${x && x.graded ? `${x.hits}/${x.graded} · 예측 ${x.avg_prob}%` : "채점 전"}</span></div>`;
-  const cal = (R.calibration || []).map(c => `<div class="cal"><div class="between small"><span style="color:var(--mu2)">${c.label} 구간 · ${c.n}개</span><b>실제 ${c.actual}%</b></div>
+  if (R.empty || !s || !(s.graded || s.pending)) return head + `<div class="card small" style="line-height:1.7;color:var(--mu2)">${t.rec_empty}</div>`;
+  const stat = (lbl, x) => `<div><span class="small muted">${lbl}</span><span class="num" style="font-size:20px;font-weight:700">${x && x.graded ? x.rate + "%" : "-"}</span><span class="small muted">${x && x.graded ? t.st_pred(x.hits, x.graded, x.avg_prob) : t.st_none}</span></div>`;
+  const cal = (R.calibration || []).map(c => `<div class="cal"><div class="between small"><span style="color:var(--mu2)">${t.cal_row(c.label, c.n)}</span><b>${t.actual(c.actual)}</b></div>
       <div class="b"><i style="width:${c.pred}%;background:#5B6B86"></i></div><div class="b"><i style="width:${c.actual}%;background:var(--acc)"></i></div></div>`).join("");
   const weeks = (R.weeks || []).map(w => {
-    const L = w.lists.prob; const sm = L.summary;
+    const Ls = w.lists.prob; const sm = Ls.summary;
     return `<section class="card" style="display:flex;flex-direction:column;gap:8px">
-      <div class="between"><b>${w.season} 시즌 ${w.week}주차 · 전체 베스트 15</b><span class="small" style="color:var(--acc2)">${sm.graded ? `${sm.hits}/${sm.graded} 적중` : ""}${sm.pending ? ` · 대기 ${sm.pending}` : ""}</span></div>
-      ${L.picks.map(p => `<div class="between small" style="padding:3px 0;border-top:1px solid var(--line2)">
-        <span style="min-width:0"><b class="num" style="color:var(--mu);display:inline-block;width:20px">${p.rank}</b>${esc(p.name)} · <span style="color:var(--acc2)">${esc(p.label)}</span> <span class="muted">${p.prob}%</span></span>
-        <span class="row" style="flex:none">${p.actual != null ? `<span class="num muted">${p.actual}</span>` : ""}<span class="res ${RES[p.result][0]}">${RES[p.result][1]}</span></span></div>`).join("")}
-      ${w.games_summary && w.games_summary.graded ? `<div class="small muted">경기별 베스트 15 전체: ${w.games_summary.hits}/${w.games_summary.graded} 적중 (${w.games_summary.rate}%)</div>` : ""}
-      ${w.lists.td && w.lists.td.summary.graded ? `<div class="small muted">TD 상위 15명: ${w.lists.td.summary.hits}/${w.lists.td.summary.graded} 적중</div>` : ""}
+      <div class="between"><b>${t.wk_title(w.season, w.week)}</b><span class="small" style="color:var(--acc2)">${sm.graded ? t.wk_hits(sm.hits, sm.graded) : ""}${sm.pending ? t.wk_pend(sm.pending) : ""}</span></div>
+      ${Ls.picks.map(p => `<div class="between small" style="padding:3px 0;border-top:1px solid var(--line2)">
+        <span style="min-width:0"><b class="num" style="color:var(--mu);display:inline-block;width:20px">${p.rank}</b>${esc(p.name)} · <span style="color:var(--acc2)">${esc(trLabel(p.label))}</span> <span class="muted">${p.prob}%</span></span>
+        <span class="row" style="flex:none">${p.actual != null ? `<span class="num muted">${p.actual}</span>` : ""}<span class="res ${RESC[p.result]}">${t.res[p.result]}</span></span></div>`).join("")}
+      ${w.games_summary && w.games_summary.graded ? `<div class="small muted">${t.wk_games(w.games_summary.hits, w.games_summary.graded, w.games_summary.rate)}</div>` : ""}
+      ${w.lists.td && w.lists.td.summary.graded ? `<div class="small muted">${t.wk_td(w.lists.td.summary.hits, w.lists.td.summary.graded)}</div>` : ""}
     </section>`;
   }).join("");
   return head + `
-  <section class="mini">${stat("전체 베스트 15", R.overall_best15)}${stat("경기별 베스트 15", R.game_best15)}${stat("TD 상위 15", R.td_top15)}</section>
-  <div class="small muted">무효 = 그 선수가 출전하지 않은 경우예요 (FanDuel도 이런 픽은 무효 처리해요). 마지막 채점 ${esc(R.updated_at)}</div>
-  ${cal ? `<section class="card" style="display:flex;flex-direction:column;gap:10px"><div><b>예측 확률 vs 실제 적중률</b><div class="small muted">회색 = 예측, 주황 = 실제. 두 막대가 비슷할수록 믿을 만한 모델이에요.</div></div>${cal}</section>` : ""}
+  <section class="mini">${stat(t.rec_all, R.overall_best15)}${stat(t.rec_game, R.game_best15)}${stat(t.rec_td, R.td_top15)}</section>
+  <div class="small muted">${t.void_note(esc(R.updated_at))}</div>
+  ${cal ? `<section class="card" style="display:flex;flex-direction:column;gap:10px"><div><b>${t.cal_title}</b><div class="small muted">${t.cal_hint}</div></div>${cal}</section>` : ""}
   ${weeks}`;
 }
 
 function vCheck() {
-  const c = D.overall.check || [];
-  return `<header><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>확인 필요</h1></header>
-  <div class="card small" style="color:var(--mu2);line-height:1.7">모델과 FanDuel 배당 차이가 15%p 넘는 픽이에요. 모델이 모르는 정보(주전 복귀, 역할 축소, 뎁스차트 변동, 부상)가 있을 가능성이 커서 <b>베스트 15에서는 뺐어요</b>. 뉴스를 확인하고 문제가 없을 때만 쓰세요.</div>
-  <div class="list">${c.length ? c.map(p => pickRow(p)).join("") : '<div class="empty">지금은 없어요</div>'}</div>`;
+  const c = D.overall.check || [], t = L();
+  return `<header><div class="sub">${sw()}</div><h1>${t.title_check}</h1></header>
+  <div class="card small" style="color:var(--mu2);line-height:1.7">${t.check_info}</div>
+  <div class="list">${c.length ? c.map(p => pickRow(p)).join("") : `<div class="empty">${t.check_none}</div>`}</div>`;
 }
 
-// ------------------------------------------------------------------ refresh (GitHub Actions)
+// ================================================================== refresh (GitHub Actions)
 function refreshText() {
   const s = Math.round((Date.now() - refreshing.start) / 1000);
-  const mm = Math.floor(s / 60), ss = String(s % 60).padStart(2, "0");
-  return `${refreshing.status} · ${mm}:${ss} 경과 (보통 3~4분)`;
+  return L().elapsed(refreshing.status(), Math.floor(s / 60), String(s % 60).padStart(2, "0"));
 }
 async function doRefresh() {
   if (refreshing) return;
-  if (!token()) { openSettings("업데이트 버튼을 쓰려면 먼저 토큰을 저장해 주세요."); return; }
-  refreshing = { start: Date.now(), status: "GitHub에 계산 요청 중" }; render();
+  const t0 = L();
+  if (!token()) { openSettings(t0.need_token); return; }
+  refreshing = { start: Date.now(), status: () => L().rq }; render();
   try {
     const r = await gh(`/actions/workflows/${WF}/dispatches`, { method: "POST", body: JSON.stringify({ ref: "main", inputs: { refresh: "true" } }) });
-    if (r.status === 401 || r.status === 403) throw new Error("토큰 권한 문제예요. 설정에서 토큰을 확인해 주세요.");
-    if (!r.ok) throw new Error("요청 실패 (HTTP " + r.status + ")");
+    if (r.status === 401 || r.status === 403) throw new Error(L().r_auth);
+    if (!r.ok) throw new Error(L().r_fail(r.status));
     const since = refreshing.start - 15000;
     let runId = null;
     for (;;) {
@@ -471,17 +608,17 @@ async function doRefresh() {
       const run = (js.workflow_runs || []).find(x => runId ? x.id === runId : new Date(x.created_at).getTime() >= since);
       if (run) {
         runId = run.id;
-        refreshing.status = run.status === "queued" ? "대기 중" : run.status === "in_progress" ? "부상·날씨·배당 받아서 계산 중" : "마무리 중";
+        refreshing.status = run.status === "queued" ? () => L().r_queued : run.status === "in_progress" ? () => L().r_prog : () => L().r_fin;
         if (run.status === "completed") {
-          if (run.conclusion !== "success") throw new Error("계산이 실패했어요. GitHub Actions 화면을 확인해 주세요.");
-          refreshing.status = "결과 불러오는 중"; render();
+          if (run.conclusion !== "success") throw new Error(L().r_cfail);
+          refreshing.status = () => L().r_load; render();
           await new Promise(res => setTimeout(res, 3000));
           await loadData(true); R = null;
-          refreshing = null; render(); toast("최신 정보로 업데이트했어요");
+          refreshing = null; render(); toast(L().r_done);
           return;
         }
       }
-      if (Date.now() - refreshing.start > 12 * 60000) throw new Error("12분이 지나도 끝나지 않았어요. 잠시 뒤 새로고침해 주세요.");
+      if (Date.now() - refreshing.start > 12 * 60000) throw new Error(L().r_slow);
       render();
     }
   } catch (e) {
@@ -490,23 +627,52 @@ async function doRefresh() {
 }
 setInterval(() => { if (refreshing) { const el = document.querySelector("#refresh + div"); if (el) el.textContent = refreshText(); } }, 1000);
 
-// ------------------------------------------------------------------ settings
-function openSettings(msg) {
-  $("#tok").value = token(); $("#st-msg").textContent = msg || (token() ? "토큰이 저장돼 있어요." : "");
-  $("#settings").classList.add("on");
+// ================================================================== settings (언어 + 토큰)
+function settingsHTML(msg) {
+  const t = L();
+  const lb = (code, name) => `<button class="${LANG === code ? "on" : ""}" data-lang="${code}">${name}</button>`;
+  return `
+    <div class="between"><h2 id="st-title">${t.st_title}</h2><button class="btn-ghost" id="st-close">${t.close}</button></div>
+    <label>${t.lang}</label>
+    <div class="seg" role="group" aria-label="${t.lang}">${lb("ko", "한국어")}${lb("en", "English")}</div>
+    <h2 style="font-size:16px;margin-top:6px">${t.st_upd}</h2>
+    <div class="small muted" style="line-height:1.6">${t.st_info}</div>
+    <ol>${t.st_steps.map(s => `<li>${s}</li>`).join("")}</ol>
+    <label for="tok">${t.tok}</label>
+    <input type="password" id="tok" placeholder="github_pat_..." autocomplete="off" value="${esc(token())}">
+    <div class="row"><button class="btn-main" id="st-save" style="flex:1">${t.save}</button><button class="btn-ghost" id="st-del">${t.del}</button></div>
+    <div class="small muted" id="st-msg">${esc(msg || (token() ? t.tok_saved : ""))}</div>`;
 }
-$("#st-close").onclick = () => $("#settings").classList.remove("on");
-$("#st-del").onclick = () => { store.del("gh_token"); $("#tok").value = ""; $("#st-msg").textContent = "지웠어요."; };
-$("#st-save").onclick = async () => {
-  const v = $("#tok").value.trim(); if (!v) return;
-  store.set("gh_token", v); $("#st-msg").textContent = "확인 중…";
-  const r = await gh(`/actions/workflows/${WF}`);
-  $("#st-msg").textContent = r.ok ? "저장했어요. 이제 업데이트 버튼을 쓸 수 있어요." : "토큰을 확인하지 못했어요 (HTTP " + r.status + "). 권한과 저장소 선택을 다시 확인해 주세요.";
-  if (r.ok) setTimeout(() => $("#settings").classList.remove("on"), 900);
-};
+function openSettings(msg) { $("#st-sheet").innerHTML = settingsHTML(msg); $("#settings").classList.add("on"); }
+$("#settings").addEventListener("click", async e => {
+  const t = L();
+  if (e.target === $("#settings") || e.target.closest("#st-close")) { $("#settings").classList.remove("on"); return; }
+  if (e.target.closest("#st-del")) { store.del("gh_token"); $("#tok").value = ""; $("#st-msg").textContent = t.tok_del; return; }
+  if (e.target.closest("#st-save")) {
+    const v = $("#tok").value.trim(); if (!v) return;
+    store.set("gh_token", v); $("#st-msg").textContent = t.checking;
+    const r = await gh(`/actions/workflows/${WF}`);
+    $("#st-msg").textContent = r.ok ? t.tok_ok : t.tok_bad(r.status);
+    if (r.ok) setTimeout(() => $("#settings").classList.remove("on"), 900);
+  }
+});
 
-// ------------------------------------------------------------------ router
-let prevHash = "#home";
+function setLang(l) {
+  LANG = l === "en" ? "en" : "ko"; store.set("lang", LANG);
+  document.documentElement.lang = LANG; document.title = LANG === "ko" ? "NFL 베스트 15" : "NFL Best 15";
+  renderTabs(); render();
+  if ($("#settings").classList.contains("on")) { const tok = $("#tok").value; $("#st-sheet").innerHTML = settingsHTML(); $("#tok").value = tok; }
+}
+
+// ================================================================== router
+function renderTabs() {
+  const t = L();
+  const a = (id, ic, name, extra = "") => `<a href="#${id}" data-tab="${id}">${ic}${name}${extra}</a>`;
+  $("#tabs").setAttribute("aria-label", t.menu);
+  $("#tabs").innerHTML = a("home", I.list, t.tab_home) + a("games", I.cal, t.tab_games) +
+    a("ticket", I.ticket, t.tab_ticket, '<span class="cnt" id="tcnt" hidden></span>') + a("record", I.chart, t.tab_record) + a("check", I.warn, t.tab_check);
+}
+let lastPick = null;
 function render() {
   if (!D) return;
   PICKS = {};
@@ -517,21 +683,20 @@ function render() {
   else if (h === "#ticket") { html = vTicket(); tab = "ticket"; }
   else if (h === "#check") { html = vCheck(); tab = "check"; }
   else if (h === "#record") { html = vRecord(); tab = "record"; }
-  else if (h.startsWith("#pick-") && lastPick) { html = vPick(lastPick.k); tab = lastPick.tab; }
+  else if (h.startsWith("#pick-") && lastPick) { html = vPick(); tab = lastPick.tab; }
   else html = vHome();
   $("#app").innerHTML = html;
   document.querySelectorAll(".tabs a").forEach(a => a.classList.toggle("on", a.dataset.tab === tab));
   updCount();
 }
-let lastPick = null;
 document.addEventListener("click", e => {
-  const t = e.target.closest("[data-star],[data-pick],[data-game],[data-sort],[data-gsort],[data-go],#refresh,#refresh2,#open-st,#clear-t");
+  const t = e.target.closest("[data-lang],[data-star],[data-pick],[data-game],[data-sort],[data-gsort],[data-go],#refresh,#refresh2,#open-st,#clear-t");
   if (!t) return;
+  if (t.dataset.lang) { setLang(t.dataset.lang); return; }
   if (t.dataset.star) { e.stopPropagation(); toggleTicket(PICKS[t.dataset.star]); const y = scrollY; render(); scrollTo(0, y); return; }
   if (t.dataset.pick) {
     const p = PICKS[t.dataset.pick]; const tab = document.querySelector(".tabs a.on")?.dataset.tab || "home";
-    prevHash = location.hash || "#home"; lastPick = { k: "p0", tab, p };
-    PICKS = { p0: p }; location.hash = "#pick-" + Date.now().toString(36); return;
+    lastPick = { tab, p }; location.hash = "#pick-" + Date.now().toString(36); return;
   }
   if (t.dataset.game) { location.hash = "#game-" + t.dataset.game; return; }
   if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("sort", view.sort); render(); return; }
@@ -542,15 +707,16 @@ document.addEventListener("click", e => {
   if (t.id === "clear-t") { setTicket([]); render(); return; }
 });
 document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.matches("[data-pick],[data-game]")) e.target.click(); });
-window.addEventListener("hashchange", () => {
-  if ((location.hash || "").startsWith("#pick-") && lastPick) PICKS = { p0: lastPick.p };
-  render(); if (!(location.hash || "").startsWith("#pick-")) {} scrollTo(0, 0);
-});
-// 픽 상세에서 PICKS가 비지 않게 render 직전에 복구
-const _vPick = vPick;
-vPick = k => { if (lastPick) PICKS = { p0: lastPick.p }; return _vPick("p0"); };
+window.addEventListener("hashchange", () => { render(); scrollTo(0, 0); });
 
-(async () => { await loadData(!!token()); if ((location.hash || "").startsWith("#pick-")) location.hash = "#home"; render(); })();
+(async () => {
+  document.documentElement.lang = LANG; document.title = LANG === "ko" ? "NFL 베스트 15" : "NFL Best 15";
+  renderTabs();
+  $("#app").innerHTML = `<div class="empty">${L().loading}</div>`;
+  await loadData(!!token());
+  if ((location.hash || "").startsWith("#pick-")) location.hash = "#home";
+  render();
+})();
 </script>
 </body>
 </html>
