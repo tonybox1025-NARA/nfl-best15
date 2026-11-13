@@ -40,12 +40,14 @@ jobs:
       - name: 베스트 15 계산
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-        run: python run_week.py ${{ inputs.refresh && '--refresh' || '' }}
+        run: |
+          python run_week.py ${{ inputs.refresh && '--refresh' || '' }}
+          python make_report.py
       - name: 결과 저장
         run: |
           git config user.name "best15-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add output/*.json
+          git add output/
           git commit -m "best15 $(date -u +%FT%TZ)" || echo "변경 없음"
           git pull --rebase origin main
           git push
