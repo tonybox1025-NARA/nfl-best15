@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B1220">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="베스트15">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<title>NFL 베스트 15</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B1220; --s1:#141D2E; --s2:#1C2740; --line:#26324A; --line2:#1F2A40;
+  --tx:#F2F5FA; --mu:#9AA8BF; --mu2:#C9D3E3; --acc:#FF8A3D; --acc2:#FFC59E; --acc-ink:#1A0E05;
+  --ok:#4ADE80; --warn:#FBBF24; --bad:#F87171; --num:'Space Grotesk',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--tx);font-family:'Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{padding:env(safe-area-inset-top) 0 calc(84px + env(safe-area-inset-bottom))}
+button{font-family:inherit;cursor:pointer}
+a{color:var(--acc)}
+.wrap{max-width:560px;margin:0 auto;padding:16px 16px 24px;display:flex;flex-direction:column;gap:14px}
+.sub{font-size:13px;color:var(--mu);font-weight:500}
+h1{margin:2px 0 0;font-size:26px;font-weight:900;letter-spacing:-.5px}
+h2{margin:0;font-size:19px;font-weight:900}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:14px}
+.row{display:flex;align-items:center;gap:8px}
+.between{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.muted{color:var(--mu)} .small{font-size:12px} .num{font-family:var(--num)}
+.btn-main{height:52px;border:0;border-radius:12px;background:var(--acc);color:var(--acc-ink);font-size:16px;font-weight:900;display:flex;align-items:center;justify-content:center;gap:8px;width:100%}
+.btn-main:disabled{opacity:.7}
+.btn-line{height:44px;border:1px solid var(--acc);border-radius:12px;background:transparent;color:var(--acc);font-size:14px;font-weight:700;padding:0 14px}
+.btn-ghost{height:44px;border:1px solid var(--line);border-radius:12px;background:transparent;color:var(--mu2);font-size:14px;padding:0 14px}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;background:var(--s1);border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{height:42px;border:0;border-radius:9px;background:transparent;color:var(--mu);font-size:14px;font-weight:700}
+.seg button.on{background:var(--tx);color:var(--bg)}
+.mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.mini>div{background:var(--s2);border-radius:10px;padding:8px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.mini b{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pick{display:flex;gap:12px;padding:13px;background:var(--s1);border:1px solid var(--line);border-radius:14px;align-items:center;color:var(--tx);text-decoration:none;cursor:pointer}
+.rank{width:28px;text-align:center;font-family:var(--num);font-weight:700;font-size:20px;color:var(--mu);flex:none}
+.rank.top{color:var(--acc);font-size:23px}
+.pmain{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.pname{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.plabel{font-size:14px;font-weight:500;color:var(--acc2)}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar>i{display:block;height:6px;background:var(--acc);border-radius:3px}
+.pside{display:flex;flex-direction:column;align-items:flex-end;gap:3px;min-width:66px}
+.pprob{font-family:var(--num);font-size:23px;font-weight:700}
+.edge-p{font-size:12px;font-weight:700;color:var(--ok)} .edge-n{font-size:12px;font-weight:700;color:var(--mu)}
+.badge{font-size:10px;font-weight:700;border-radius:6px;padding:1px 6px;white-space:nowrap;flex:none}
+.b-ok{color:var(--ok);border:1px solid var(--ok)}
+.b-q{color:#0B1220;background:var(--warn)}
+.b-out{color:#fff;background:#C2410C}
+.b-soft{color:var(--warn);border:1px solid var(--warn)}
+.star{width:44px;height:44px;border:0;background:transparent;color:var(--mu);display:flex;align-items:center;justify-content:center;flex:none;margin:-8px -6px -8px -4px}
+.star.on{color:var(--acc)}
+.list{display:flex;flex-direction:column;gap:10px}
+.tabs{position:fixed;left:0;right:0;bottom:0;background:#0F1828;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding-bottom:env(safe-area-inset-bottom);z-index:5}
+.tabs a{height:66px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--mu);text-decoration:none;font-size:12px;position:relative}
+.tabs a.on{color:var(--acc);font-weight:700}
+.cnt{position:absolute;top:8px;left:calc(50% + 6px);background:var(--acc);color:var(--acc-ink);font-size:10px;font-weight:900;border-radius:999px;padding:0 5px;min-width:16px;text-align:center}
+.game{display:flex;flex-direction:column;gap:10px;cursor:pointer}
+.team{font-family:var(--num);font-size:22px;font-weight:700}
+.back{display:inline-flex;align-items:center;gap:4px;height:44px;color:var(--mu);font-size:14px;background:none;border:0;padding:0}
+.changes div{font-size:13px;padding:2px 0}
+.chart{position:relative;height:150px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:end;border-bottom:1px solid var(--line)}
+.chart .col{display:flex;flex-direction:column;align-items:center;gap:4px}
+.chart .col i{display:block;width:100%;border-radius:6px 6px 0 0;background:var(--acc)}
+.chart .col i.miss{background:#5B6B86}
+.chart .need{position:absolute;left:0;right:0;border-top:2px dashed var(--mu)}
+.reason{display:flex;gap:10px;align-items:flex-start;padding:4px 0}
+.reason .ic{width:22px;flex:none;text-align:center;font-weight:900}
+.overlay{position:fixed;inset:0;background:rgba(5,9,18,.75);display:none;align-items:flex-end;justify-content:center;z-index:10}
+.overlay.on{display:flex}
+.sheet{background:var(--s1);border:1px solid var(--line);border-radius:18px 18px 0 0;width:100%;max-width:560px;padding:18px 16px calc(18px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:12px;max-height:90vh;overflow:auto}
+input[type=password],input[type=text]{width:100%;height:46px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--tx);padding:0 12px;font-size:15px}
+label{font-size:13px;color:var(--mu2)}
+ol{margin:0;padding-left:20px;font-size:13px;color:var(--mu2);line-height:1.7}
+.spin{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.empty{color:var(--mu);font-size:14px;text-align:center;padding:30px 0}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:96px;background:var(--tx);color:var(--bg);font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;z-index:20;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<main class="wrap" id="app"><div class="empty">불러오는 중…</div></main>
+
+<nav class="tabs" aria-label="하단 메뉴">
+  <a href="#home" data-tab="home"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>베스트 15</a>
+  <a href="#games" data-tab="games"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>경기</a>
+  <a href="#ticket" data-tab="ticket"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M13 6v12" stroke-dasharray="2 2"/></svg>내 티켓<span class="cnt" id="tcnt" hidden></span></a>
+  <a href="#check" data-tab="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>확인 필요</a>
+</nav>
+
+<div class="overlay" id="settings" role="dialog" aria-modal="true" aria-labelledby="st-title">
+  <div class="sheet">
+    <div class="between"><h2 id="st-title">업데이트 버튼 설정</h2><button class="btn-ghost" id="st-close">닫기</button></div>
+    <div class="small muted" style="line-height:1.6">업데이트 버튼은 GitHub에 "지금 다시 계산해" 신호를 보내요. 그러려면 이 기기에 GitHub 토큰을 한 번 저장해야 해요. 토큰은 <b>이 기기 브라우저에만</b> 저장되고 다른 곳으로 보내지지 않아요.</div>
+    <ol>
+      <li>GitHub → 오른쪽 위 프로필 → <b>Settings</b> → 맨 아래 <b>Developer settings</b></li>
+      <li><b>Personal access tokens → Fine-grained tokens → Generate new token</b></li>
+      <li>Token name: <b>best15</b>, Expiration: <b>1 year</b></li>
+      <li>Repository access: <b>Only select repositories → nfl-best15</b></li>
+      <li>Permissions → Repository permissions: <b>Actions: Read and write</b>, <b>Contents: Read-only</b></li>
+      <li><b>Generate token</b> → 나온 토큰(github_pat_…)을 복사해서 아래에 붙여넣기</li>
+    </ol>
+    <label for="tok">GitHub 토큰</label>
+    <input type="password" id="tok" placeholder="github_pat_..." autocomplete="off">
+    <div class="row"><button class="btn-main" id="st-save" style="flex:1">저장</button><button class="btn-ghost" id="st-del">지우기</button></div>
+    <div class="small muted" id="st-msg"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const REPO = "tonybox1025-NARA/nfl-best15";
+const WF = "best15.yml";
+const API = "https://api.github.com/repos/" + REPO;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { try { localStorage.removeItem(k); } catch (e) {} },
+};
+let D = null;                 // latest.json
+let view = { sort: store.get("sort", "prob"), gsort: "prob" };
+let refreshing = null;        // {start, status}
+
+const I = {
+  refresh: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>',
+  back: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
+  gear: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+  star: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
+  starOn: '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
+};
+
+// ------------------------------------------------------------------ data
+function token() { return store.get("gh_token", ""); }
+function gh(path, opt = {}) {
+  const h = { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", ...(opt.headers || {}) };
+  if (token()) h.Authorization = "Bearer " + token();
+  return fetch(API + path, { ...opt, headers: h, cache: "no-store" });
+}
+async function loadData(fresh) {
+  // 토큰이 있으면 GitHub API로 '방금 저장된' 결과를, 없으면 이 사이트에 배포된 파일을 읽어요
+  try {
+    if (fresh && token()) {
+      const r = await gh("/contents/output/latest.json?ref=main", { headers: { Accept: "application/vnd.github.raw+json" } });
+      if (r.ok) { D = await r.json(); return; }
+    }
+    const r = await fetch("output/latest.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    D = await r.json();
+  } catch (e) {
+    $("#app").innerHTML = `<div class="card">데이터를 불러오지 못했어요 (${esc(e.message)}). 잠시 뒤 새로고침해 주세요.</div>`;
+    throw e;
+  }
+}
+
+// ------------------------------------------------------------------ helpers
+const DOW = ["일","월","화","수","목","금","토"];
+function kick(s) {             // "2026-11-15 13:00 ET" → "일 11/15 1:00 PM"
+  const m = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/.exec(s || ""); if (!m) return s || "";
+  const d = new Date(+m[1], +m[2] - 1, +m[3]); let h = +m[4]; const ap = h >= 12 ? "PM" : "AM"; h = h % 12 || 12;
+  return `${DOW[d.getDay()]} ${+m[2]}/${+m[3]} ${h}:${m[5]} ${ap}`;
+}
+function gameOf(gid) { return D.games.find(g => g.game_id === gid); }
+function badge(st) {
+  if (!st) return "";
+  const s = st.toLowerCase();
+  if (s === "active") return '<span class="badge b-ok">출전</span>';
+  if (s === "questionable") return '<span class="badge b-q">Q 불확실</span>';
+  if (s === "doubtful") return '<span class="badge b-out">D 결장 유력</span>';
+  if (s === "out" || s.includes("reserve")) return '<span class="badge b-out">OUT</span>';
+  if (st === "훈련 불참" || st === "제한 훈련") return `<span class="badge b-soft">${esc(st)}</span>`;
+  return `<span class="badge b-soft">${esc(st)}</span>`;
+}
+const fmtOdds = o => o == null ? "" : (o > 0 ? "+" : "") + Math.round(o);
+const pid = p => `${p.name}|${p.label}|${p.game_id}`;
+function ticket() { return store.get("ticket_" + (D ? D.season + "_" + D.week : ""), []); }
+function setTicket(t) { store.set("ticket_" + D.season + "_" + D.week, t); updCount(); }
+function inTicket(p) { return ticket().some(x => pid(x) === pid(p)); }
+function toggleTicket(p) {
+  let t = ticket();
+  if (inTicket(p)) { t = t.filter(x => pid(x) !== pid(p)); toast("티켓에서 뺐어요"); }
+  else { t.push(p); toast("티켓 후보에 담았어요"); }
+  setTicket(t);
+}
+function updCount() { const n = D ? ticket().length : 0; const c = $("#tcnt"); c.hidden = !n; c.textContent = n; }
+function toast(m) { const t = $("#toast"); t.textContent = m; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 1600); }
+let PICKS = {};                // 화면에 그린 픽 (클릭용)
+function reg(p) { const k = "p" + Object.keys(PICKS).length; PICKS[k] = p; return k; }
+
+function pickRow(p, opts = {}) {
+  const k = reg(p); const g = gameOf(p.game_id);
+  const top = p.rank <= 3 ? " top" : "";
+  const edge = p.edge == null ? "" : (p.edge > 0 ? `<span class="edge-p">엣지 +${p.edge.toFixed(1)}%p</span>` : `<span class="edge-n">엣지 ${p.edge.toFixed(1)}%p</span>`);
+  const odds = p.odds == null ? "" : `<div class="small muted">FanDuel ${fmtOdds(p.odds)} · 배당 확률 ${p.implied}%</div>`;
+  const on = inTicket(p);
+  return `<div class="pick" role="link" tabindex="0" data-pick="${k}">
+    <div class="rank${top}">${p.rank}</div>
+    <div class="pmain">
+      <div class="row"><span class="pname">${esc(p.name)}</span>${badge(p.status)}</div>
+      <div class="small muted">${esc(p.team)} ${esc(p.pos)} · vs ${esc(p.opp)}${g && !opts.noGame ? " · " + kick(g.kickoff) : ""}</div>
+      <div class="plabel">${esc(p.label)}</div>
+      <div class="bar"><i style="width:${p.prob}%"></i></div>
+      ${odds}
+    </div>
+    <div class="pside"><div class="pprob">${p.prob.toFixed(1)}%</div>${edge}</div>
+    <button class="star${on ? " on" : ""}" data-star="${k}" aria-label="${on ? "티켓에서 빼기" : "티켓 후보에 담기"}">${on ? I.starOn : I.star}</button>
+  </div>`;
+}
+
+// ------------------------------------------------------------------ views
+function vHome() {
+  const o = D.overall;
+  const list = view.sort === "edge" ? o.edge : view.sort === "td" ? o.td : o.prob;
+  const seg = (k, t, dis) => `<button class="${view.sort === k ? "on" : ""}" data-sort="${k}" ${dis ? "disabled" : ""}>${t}</button>`;
+  const src = D.sources || {};
+  const status = refreshing ? refreshText() : "";
+  return `
+  <header class="between">
+    <div><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>전체 베스트 15</h1></div>
+    <button class="btn-ghost" id="open-st" aria-label="업데이트 버튼 설정" style="width:44px;padding:0;display:flex;align-items:center;justify-content:center">${I.gear}</button>
+  </header>
+  <section class="card" style="display:flex;flex-direction:column;gap:12px">
+    <div class="between">
+      <div><div class="small muted">마지막 업데이트</div><div style="font-size:16px;font-weight:700">${esc(D.generated_at)}</div></div>
+      <div class="small muted" style="text-align:right">${esc(nextKick())}</div>
+    </div>
+    <button class="btn-main" id="refresh" ${refreshing ? "disabled" : ""}><span class="${refreshing ? "spin" : ""}" style="display:flex">${I.refresh}</span>${refreshing ? "최신 정보 계산 중…" : "최신 정보로 업데이트"}</button>
+    ${status ? `<div class="small" style="color:var(--acc2);text-align:center">${status}</div>` : ""}
+    <div class="mini">
+      <div><span class="small muted">부상·출전</span><b title="${esc(src.injuries)}">${esc(short(src.injuries))}</b></div>
+      <div><span class="small muted">배당</span><b title="${esc(src.odds)}">${esc(short(src.odds))}</b></div>
+      <div><span class="small muted">날씨</span><b title="${esc(src.weather)}">${esc(short(src.weather))}</b></div>
+    </div>
+    ${D.changes && D.changes.length ? `<div class="changes" style="border-top:1px solid var(--line);padding-top:10px"><div class="small muted" style="font-weight:700">직전 업데이트 대비 바뀐 것 ${D.changes.length}건</div>${D.changes.slice(0, 8).map(c => `<div>${esc(c)}</div>`).join("")}${D.changes.length > 8 ? `<div class="small muted">외 ${D.changes.length - 8}건</div>` : ""}</div>` : ""}
+  </section>
+  <div class="seg" role="group" aria-label="정렬">${seg("prob", "확률순")}${seg("edge", "엣지순", !o.edge.length)}${seg("td", "터치다운")}</div>
+  <div class="small muted" style="padding:0 2px">${view.sort === "edge" ? "엣지 = 우리 확률 − FanDuel 배당 확률. 높을수록 배당 대비 가치가 커요." : view.sort === "td" ? "애니타임 터치다운 확률이 높은 순서예요." : "적중 확률이 높은 순서예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요."}</div>
+  <div class="list">${list.length ? list.map(p => pickRow(p)).join("") : '<div class="empty">아직 데이터가 없어요</div>'}</div>
+  ${o.check && o.check.length ? `<a href="#check" class="card" style="text-decoration:none;color:var(--warn);font-size:14px;font-weight:700">⚠ 확인 필요 픽 ${o.check.length}개 보기 →</a>` : ""}
+  <div class="small muted" style="line-height:1.6;padding:0 2px">확률은 과거 데이터로 계산한 추정치예요. 2024·2025 시즌 검증에서 실제 적중은 모델 확률보다 평균 3~4%p 낮았어요.</div>`;
+}
+function short(s) {
+  s = s || "";
+  if (s.includes("ESPN 실시간")) return "ESPN " + (s.match(/ESPN 실시간 (\d+)/) || [])[1] + "건";
+  if (s.startsWith("FanDuel")) return (s.match(/배당 (\d+)개/) || [])[1] + "개 새로";
+  if (s.includes("분 전 데이터")) return (s.match(/배당 (\d+)분 전/) || [])[1] + "분 전";
+  if (s.startsWith("날씨 실패")) return "실패";
+  if (s.startsWith("날씨")) return (s.match(/날씨 (\d+)경기/) || [])[1] + "경기";
+  if (s.includes("미사용")) return "미사용";
+  return s.split(" ")[0] || "-";
+}
+function nextKick() {
+  const up = D.games.map(g => g.kickoff).sort()[0];
+  return up ? "첫 킥오프 " + kick(up) : "";
+}
+
+function vGames() {
+  return `<header><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>이번 주 경기</h1></header>
+  <div class="small muted">경기를 누르면 그 경기의 베스트 15가 나와요.</div>
+  <div class="list">${D.games.map(g => {
+    const top = g.best15_prob[0];
+    const inj = g.injuries.filter(i => i.status && i.status.toLowerCase() !== "active").length;
+    const w = g.weather;
+    const wx = !w ? "야외" : w.dome ? "돔" : `${w.temp_f}°F · 바람 ${w.wind_mph}mph`;
+    const fav = g.spread_home > 0 ? `${g.home} −${g.spread_home}` : g.spread_home < 0 ? `${g.away} −${-g.spread_home}` : "PK";
+    return `<div class="card game" role="link" tabindex="0" data-game="${esc(g.game_id)}">
+      <div class="between"><span class="small muted">${kick(g.kickoff)}</span>${inj ? `<span class="badge b-q">부상·훈련 ${inj}명</span>` : ""}</div>
+      <div class="between">
+        <div><div class="team">${esc(g.away)} <span class="muted" style="font-size:16px">@</span> ${esc(g.home)}</div><div class="small muted">${esc(g.stadium || "")}</div></div>
+        <div style="text-align:right"><div class="small muted">예상 점수</div><div class="num" style="font-weight:700">${g.proj.away} – ${g.proj.home}</div></div>
+      </div>
+      <div class="mini"><div><span class="small muted">스프레드</span><b>${esc(fav)}</b></div><div><span class="small muted">총점 O/U</span><b>${g.total}</b></div><div><span class="small muted">날씨</span><b>${esc(wx)}</b></div></div>
+      ${top ? `<div class="between small"><span style="color:var(--mu2)">1위 · <span style="color:var(--acc2)">${esc(top.name)} ${esc(top.label)}</span></span><b style="color:var(--acc)">${top.prob}%</b></div>` : ""}
+    </div>`;
+  }).join("")}</div>`;
+}
+
+function vGame(gid) {
+  const g = gameOf(gid); if (!g) return vGames();
+  const list = view.gsort === "edge" && g.best15_edge.length ? g.best15_edge : g.best15_prob;
+  const w = g.weather;
+  const wx = !w ? "예보 없음" : w.dome ? "돔 경기 (날씨 영향 없음)" : `${w.temp_f}°F · 바람 ${w.wind_mph}mph · 강수 ${w.precip_pct}%`;
+  const fav = g.spread_home > 0 ? `${g.home} −${g.spread_home}` : g.spread_home < 0 ? `${g.away} −${-g.spread_home}` : "PK";
+  const inj = g.injuries.filter(i => i.status && i.status.toLowerCase() !== "active");
+  return `<button class="back" data-go="#games">${I.back}이번 주 경기</button>
+  <section class="card" style="display:flex;flex-direction:column;gap:12px">
+    <div class="small muted" style="text-align:center">${kick(g.kickoff)} · ${esc(g.stadium || "")}</div>
+    <div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;text-align:center">
+      <div><div class="team" style="font-size:28px">${esc(g.away)}</div><div class="small muted">원정</div></div>
+      <div><div class="small muted">예상 점수</div><div class="num" style="font-size:22px;font-weight:700">${g.proj.away} – ${g.proj.home}</div></div>
+      <div><div class="team" style="font-size:28px">${esc(g.home)}</div><div class="small muted">홈</div></div>
+    </div>
+    <div class="mini"><div><span class="small muted">스프레드</span><b>${esc(fav)}</b></div><div><span class="small muted">총점 O/U</span><b>${g.total}</b></div><div><span class="small muted">지붕</span><b>${esc(g.roof || "-")}</b></div></div>
+    <div class="small" style="color:var(--mu2)">날씨: ${esc(wx)}</div>
+    <button class="btn-line" id="refresh2" ${refreshing ? "disabled" : ""}>${refreshing ? "계산 중…" : "최신 정보로 업데이트"}</button>
+  </section>
+  ${g.notes.length ? `<section class="card small" style="color:var(--acc2)">${g.notes.map(n => `✕ ${esc(n.name)} (${esc(n.pos)}) ${esc(n.status)} → ${esc(n.effect)}`).join("<br>")}</section>` : ""}
+  <section class="card" style="display:flex;flex-direction:column;gap:8px">
+    <div class="between"><b>부상·출전 현황</b><span class="small muted">최종 비출전 명단: 킥오프 90분 전</span></div>
+    ${inj.length ? inj.map(i => `<div class="between small"><span>${esc(i.player_display_name)} · ${esc(i.team)} ${esc(i.position)}${i.injury ? " · " + esc(i.injury) : ""}</span>${badge(i.status)}</div>`).join("") : '<div class="small muted">특이사항 없음</div>'}
+  </section>
+  <div class="between"><h2>이 경기 베스트 15</h2>
+    ${g.best15_edge.length ? `<div class="seg" style="width:180px"><button class="${view.gsort !== "edge" ? "on" : ""}" data-gsort="prob">확률순</button><button class="${view.gsort === "edge" ? "on" : ""}" data-gsort="edge">엣지순</button></div>` : ""}
+  </div>
+  <div class="list">${list.map(p => pickRow(p, { noGame: true })).join("")}</div>`;
+}
+
+function vPick(k) {
+  const p = PICKS[k]; if (!p) return vHome();
+  const d = p.detail || {}; const g = gameOf(p.game_id);
+  const rec = d.recent || [];
+  const need = p.label.includes("터치다운") ? 1 : d.need;
+  const max = Math.max(need || 1, ...rec.map(r => r.val || 0)) * 1.15 || 1;
+  const H = 110;
+  const chart = rec.length ? `<div class="chart" style="height:${H + 30}px;margin-top:22px">
+      ${need != null ? `<div class="need" style="bottom:${(need / max) * H}px"></div><div class="small" style="position:absolute;left:0;top:-22px;color:var(--mu2)">점선 = 기준 ${need}</div>` : ""}
+      ${rec.map(r => `<div class="col"><span class="num small" style="font-weight:700">${r.val ?? "-"}</span><i class="${(r.val ?? 0) >= (need ?? 0) ? "" : "miss"}" style="height:${Math.max(3, ((r.val || 0) / max) * H)}px"></i></div>`).join("")}
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(${rec.length},minmax(0,1fr));gap:12px;text-align:center" class="small muted">${rec.map(r => `<span>${r.wk}주 ${esc(r.opp)}</span>`).join("")}</div>` : '<div class="small muted">최근 기록 없음</div>';
+  const pct = x => x == null ? "-" : Math.round(x * 100) + "%";
+  const reasons = [];
+  if (d.recent_hits != null && rec.length) reasons.push(["📊", `최근 ${rec.length}경기 중 ${d.recent_hits}번 달성`, p.label.includes("터치다운") ? "터치다운을 기록한 경기 수" : `기준 ${need} 이상 기록한 경기 수`]);
+  if (d.mu != null) reasons.push(["🎯", `모델 예상값 ${d.mu}`, `기준선 ${need ?? "-"} 대비 ${d.mu >= (need ?? 0) ? "높아요" : "낮아요"}`]);
+  if (d.def_rank != null) reasons.push([d.def_rank <= 8 ? "✅" : d.def_rank >= 19 ? "⚠️" : "•", `상대 ${esc(p.opp)} 수비: 이번 주 ${Math.round(d.def_rank)}위로 많이 허용`, `${esc(p.pos)} 상대 최근 8경기 평균 허용 ${d.def_allowed ?? "-"} (1위 = 가장 많이 허용 = 유리)`]);
+  const use = [];
+  if (d.carry_share >= 0.05) use.push(`러싱 점유율 ${pct(d.carry_share)}`);
+  if (d.tgt_share >= 0.03) use.push(`타깃 점유율 ${pct(d.tgt_share)}`);
+  if (d.rz_share >= 0.03) use.push(`레드존(10야드 안) 점유율 ${pct(d.rz_share)}`);
+  if (use.length) reasons.push(["🏈", "팀 내 사용량 (최근 가중 평균)", use.join(" · ")]);
+  if (d.implied_total != null) reasons.push(["📈", `팀 예상 득점 ${d.implied_total}점`, d.spread > 0 ? `${d.spread}점 차 우세 예상 → 리드 상황 많음` : d.spread < 0 ? `${-d.spread}점 차 열세 예상 → 따라가는 상황 많음` : "박빙 예상"]);
+  if (d.td_rate != null && p.label.includes("터치다운")) reasons.push(["🔥", `최근 16경기 TD 경기 비율 ${pct(d.td_rate)}`, ""]);
+  if (d.wind) reasons.push([d.wind >= 15 ? "💨" : "•", `킥오프 바람 ${d.wind}mph`, d.wind >= 15 ? "강풍: 패싱 불리, 러싱 유리" : "영향 적음"]);
+  const on = inTicket(p);
+  return `<button class="back" data-go="back">${I.back}뒤로</button>
+  <section style="display:flex;flex-direction:column;gap:6px">
+    <div class="row">${p.rank ? `<span class="badge" style="background:var(--acc);color:var(--acc-ink);font-size:12px;padding:2px 8px">${p.rank}위</span>` : ""}${badge(p.status)}${p.check ? '<span class="badge b-q">⚠ 확인 필요</span>' : ""}</div>
+    <h1>${esc(p.name)}</h1>
+    <div class="small muted">${esc(p.team)} ${esc(p.pos)} · vs ${esc(p.opp)}${g ? " · " + kick(g.kickoff) : ""}</div>
+    <div style="font-size:18px;font-weight:700;color:var(--acc2)">${esc(p.label)}</div>
+  </section>
+  <section class="mini">
+    <div><span class="small muted">최종 확률</span><span class="num" style="font-size:24px;font-weight:700;color:var(--acc)">${p.prob.toFixed(1)}%</span></div>
+    <div><span class="small muted">${p.odds != null ? "FanDuel " + fmtOdds(p.odds) : "배당"}</span><span class="num" style="font-size:24px;font-weight:700">${p.implied != null ? p.implied + "%" : "-"}</span></div>
+    <div><span class="small muted">엣지</span><span class="num" style="font-size:24px;font-weight:700;color:${p.edge > 0 ? "var(--ok)" : "var(--mu)"}">${p.edge != null ? (p.edge > 0 ? "+" : "") + p.edge.toFixed(1) + "%p" : "-"}</span></div>
+  </section>
+  ${p.model_prob != null ? `<div class="small muted">모델 ${p.model_prob}% · 시장(수수료 제외) ${p.market_prob}% → 65:35로 섞은 값이 최종 확률이에요.</div>` : ""}
+  ${p.check ? `<div class="card small" style="color:var(--warn)">모델과 FanDuel 차이가 커요. 모델이 모르는 역할 변화(주전 복귀·뎁스차트 변동)나 부상 정보가 있을 수 있어요. 뉴스를 확인한 뒤 쓰세요.</div>` : ""}
+  <section class="card" style="display:flex;flex-direction:column;gap:12px">
+    <div class="between"><b>최근 ${rec.length}경기</b>${d.recent_hits != null ? `<span class="small" style="color:var(--ok);font-weight:700">${rec.length}경기 중 ${d.recent_hits}번 달성</span>` : ""}</div>
+    ${chart}
+  </section>
+  <section class="card" style="display:flex;flex-direction:column;gap:6px">
+    <b>왜 이 픽인가요</b>
+    ${reasons.map(r => `<div class="reason"><span class="ic">${r[0]}</span><div><div style="font-size:14px;font-weight:700">${r[1]}</div>${r[2] ? `<div class="small muted">${r[2]}</div>` : ""}</div></div>`).join("")}
+  </section>
+  <button class="btn-main" data-star="${k}">${on ? "티켓에서 빼기" : "내 티켓 후보에 담기"}</button>`;
+}
+
+function vTicket() {
+  const t = ticket();
+  if (!t.length) return `<header><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>내 티켓</h1></header>
+    <div class="card small muted" style="line-height:1.7">픽 옆의 ☆를 누르면 여기에 담겨요. 담은 픽들을 모두 맞힐 확률과 예상 배당을 계산해 드려요.</div>`;
+  const prob = t.reduce((a, p) => a * p.prob / 100, 1);
+  const allOdds = t.every(p => p.odds != null);
+  const withOdds = t.filter(p => p.odds != null);
+  const dec = withOdds.reduce((a, p) => a * (p.odds > 0 ? 1 + p.odds / 100 : 1 + 100 / -p.odds), 1);
+  const am = !withOdds.length ? "-" : dec >= 2 ? "+" + Math.round((dec - 1) * 100) : "−" + Math.round(100 / (dec - 1));
+  const byGame = {}; t.forEach(p => byGame[p.game_id] = (byGame[p.game_id] || 0) + 1);
+  const sameGame = Object.values(byGame).some(n => n > 1);
+  return `<header class="between"><div><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>내 티켓</h1></div><button class="btn-ghost" id="clear-t">비우기</button></header>
+  <section class="mini">
+    <div><span class="small muted">픽 수</span><span class="num" style="font-size:24px;font-weight:700">${t.length}</span></div>
+    <div><span class="small muted">모두 맞힐 확률</span><span class="num" style="font-size:24px;font-weight:700;color:var(--acc)">${(prob * 100).toFixed(1)}%</span></div>
+    <div><span class="small muted">예상 배당${allOdds ? "" : "*"}</span><span class="num" style="font-size:24px;font-weight:700">${am}</span></div>
+  </section>
+  ${!allOdds ? '<div class="small muted">* 배당이 없는 픽은 계산에서 빠졌어요. 실제 배당은 FanDuel에서 확인하세요.</div>' : ""}
+  ${sameGame ? '<div class="card small" style="color:var(--warn)">같은 경기 픽이 여러 개 있어요. 서로 영향을 주기 때문에(예: QB 패싱 TD와 WR TD) 실제 확률은 위 숫자와 달라요.</div>' : ""}
+  <div class="list">${t.map(p => pickRow(p)).join("")}</div>
+  <div class="small muted" style="line-height:1.6">모두 맞힐 확률은 각 픽을 서로 독립으로 보고 곱한 값이에요. 픽이 많아질수록 확률이 빠르게 낮아져요.</div>`;
+}
+
+function vCheck() {
+  const c = D.overall.check || [];
+  return `<header><div class="sub">${D.season} 시즌 · ${D.week}주차</div><h1>확인 필요</h1></header>
+  <div class="card small" style="color:var(--mu2);line-height:1.7">모델과 FanDuel 배당 차이가 15%p 넘는 픽이에요. 모델이 모르는 정보(주전 복귀, 역할 축소, 뎁스차트 변동, 부상)가 있을 가능성이 커서 <b>베스트 15에서는 뺐어요</b>. 뉴스를 확인하고 문제가 없을 때만 쓰세요.</div>
+  <div class="list">${c.length ? c.map(p => pickRow(p)).join("") : '<div class="empty">지금은 없어요</div>'}</div>`;
+}
+
+// ------------------------------------------------------------------ refresh (GitHub Actions)
+function refreshText() {
+  const s = Math.round((Date.now() - refreshing.start) / 1000);
+  const mm = Math.floor(s / 60), ss = String(s % 60).padStart(2, "0");
+  return `${refreshing.status} · ${mm}:${ss} 경과 (보통 3~4분)`;
+}
+async function doRefresh() {
+  if (refreshing) return;
+  if (!token()) { openSettings("업데이트 버튼을 쓰려면 먼저 토큰을 저장해 주세요."); return; }
+  refreshing = { start: Date.now(), status: "GitHub에 계산 요청 중" }; render();
+  try {
+    const r = await gh(`/actions/workflows/${WF}/dispatches`, { method: "POST", body: JSON.stringify({ ref: "main", inputs: { refresh: "true" } }) });
+    if (r.status === 401 || r.status === 403) throw new Error("토큰 권한 문제예요. 설정에서 토큰을 확인해 주세요.");
+    if (!r.ok) throw new Error("요청 실패 (HTTP " + r.status + ")");
+    const since = refreshing.start - 15000;
+    let runId = null;
+    for (;;) {
+      await new Promise(res => setTimeout(res, 8000));
+      const rr = await gh(`/actions/workflows/${WF}/runs?per_page=5&event=workflow_dispatch`);
+      const js = await rr.json();
+      const run = (js.workflow_runs || []).find(x => runId ? x.id === runId : new Date(x.created_at).getTime() >= since);
+      if (run) {
+        runId = run.id;
+        refreshing.status = run.status === "queued" ? "대기 중" : run.status === "in_progress" ? "부상·날씨·배당 받아서 계산 중" : "마무리 중";
+        if (run.status === "completed") {
+          if (run.conclusion !== "success") throw new Error("계산이 실패했어요. GitHub Actions 화면을 확인해 주세요.");
+          refreshing.status = "결과 불러오는 중"; render();
+          await new Promise(res => setTimeout(res, 3000));
+          await loadData(true);
+          refreshing = null; render(); toast("최신 정보로 업데이트했어요");
+          return;
+        }
+      }
+      if (Date.now() - refreshing.start > 12 * 60000) throw new Error("12분이 지나도 끝나지 않았어요. 잠시 뒤 새로고침해 주세요.");
+      render();
+    }
+  } catch (e) {
+    refreshing = null; render(); toast(e.message);
+  }
+}
+setInterval(() => { if (refreshing) { const el = document.querySelector("#refresh + div"); if (el) el.textContent = refreshText(); } }, 1000);
+
+// ------------------------------------------------------------------ settings
+function openSettings(msg) {
+  $("#tok").value = token(); $("#st-msg").textContent = msg || (token() ? "토큰이 저장돼 있어요." : "");
+  $("#settings").classList.add("on");
+}
+$("#st-close").onclick = () => $("#settings").classList.remove("on");
+$("#st-del").onclick = () => { store.del("gh_token"); $("#tok").value = ""; $("#st-msg").textContent = "지웠어요."; };
+$("#st-save").onclick = async () => {
+  const v = $("#tok").value.trim(); if (!v) return;
+  store.set("gh_token", v); $("#st-msg").textContent = "확인 중…";
+  const r = await gh(`/actions/workflows/${WF}`);
+  $("#st-msg").textContent = r.ok ? "저장했어요. 이제 업데이트 버튼을 쓸 수 있어요." : "토큰을 확인하지 못했어요 (HTTP " + r.status + "). 권한과 저장소 선택을 다시 확인해 주세요.";
+  if (r.ok) setTimeout(() => $("#settings").classList.remove("on"), 900);
+};
+
+// ------------------------------------------------------------------ router
+let prevHash = "#home";
+function render() {
+  if (!D) return;
+  PICKS = {};
+  const h = location.hash || "#home";
+  let html, tab = "home";
+  if (h.startsWith("#game-")) { html = vGame(h.slice(6)); tab = "games"; }
+  else if (h === "#games") { html = vGames(); tab = "games"; }
+  else if (h === "#ticket") { html = vTicket(); tab = "ticket"; }
+  else if (h === "#check") { html = vCheck(); tab = "check"; }
+  else if (h.startsWith("#pick-") && lastPick) { html = vPick(lastPick.k); tab = lastPick.tab; }
+  else html = vHome();
+  $("#app").innerHTML = html;
+  document.querySelectorAll(".tabs a").forEach(a => a.classList.toggle("on", a.dataset.tab === tab));
+  updCount();
+}
+let lastPick = null;
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-star],[data-pick],[data-game],[data-sort],[data-gsort],[data-go],#refresh,#refresh2,#open-st,#clear-t");
+  if (!t) return;
+  if (t.dataset.star) { e.stopPropagation(); toggleTicket(PICKS[t.dataset.star]); const y = scrollY; render(); scrollTo(0, y); return; }
+  if (t.dataset.pick) {
+    const p = PICKS[t.dataset.pick]; const tab = document.querySelector(".tabs a.on")?.dataset.tab || "home";
+    prevHash = location.hash || "#home"; lastPick = { k: "p0", tab, p };
+    PICKS = { p0: p }; location.hash = "#pick-" + Date.now().toString(36); return;
+  }
+  if (t.dataset.game) { location.hash = "#game-" + t.dataset.game; return; }
+  if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("sort", view.sort); render(); return; }
+  if (t.dataset.gsort) { view.gsort = t.dataset.gsort; const y = scrollY; render(); scrollTo(0, y); return; }
+  if (t.dataset.go) { if (t.dataset.go === "back") history.back(); else location.hash = t.dataset.go; return; }
+  if (t.id === "refresh" || t.id === "refresh2") { doRefresh(); return; }
+  if (t.id === "open-st") { openSettings(); return; }
+  if (t.id === "clear-t") { setTicket([]); render(); return; }
+});
+document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.matches("[data-pick],[data-game]")) e.target.click(); });
+window.addEventListener("hashchange", () => {
+  if ((location.hash || "").startsWith("#pick-") && lastPick) PICKS = { p0: lastPick.p };
+  render(); if (!(location.hash || "").startsWith("#pick-")) {} scrollTo(0, 0);
+});
+// 픽 상세에서 PICKS가 비지 않게 render 직전에 복구
+const _vPick = vPick;
+vPick = k => { if (lastPick) PICKS = { p0: lastPick.p }; return _vPick("p0"); };
+
+(async () => { await loadData(!!token()); if ((location.hash || "").startsWith("#pick-")) location.hash = "#home"; render(); })();
+</script>
+</body>
+</html>

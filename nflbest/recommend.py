@@ -63,12 +63,14 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     status_by_pid = pred.set_index("player_id").status.to_dict()
     cand["status"] = cand.player_id.map(status_by_pid).fillna("")
     has_odds = "edge" in cand and cand.edge.notna().any()
+    if len(cand):
+        cand["detail"] = _details(cand, feat, pred)
 
     def pack(df):
         if df is None or df.empty:
             return []
         cols = ["rank", "name", "pos", "team", "opp", "label", "prob", "status", "game_id"]
-        cols += [c for c in ("odds", "implied", "edge", "model_prob", "market_prob", "check") if c in df]
+        cols += [c for c in ("odds", "implied", "edge", "model_prob", "market_prob", "check", "detail") if c in df]
         recs = df[cols].replace({np.nan: None}).to_dict("records")
         for r in recs:
             if r.get("check") is not None:
@@ -109,12 +111,75 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
         "seconds": round(time.time() - t0, 1),
     }
     result["changes"] = _changes(result)
+    result = _clean(result)
     path = OUT / f"week{week}.json"
     if path.exists():
         (OUT / f"week{week}.prev.json").write_text(path.read_text())
-    path.write_text(json.dumps(result, ensure_ascii=False, indent=1, default=str))
+    path.write_text(json.dumps(result, ensure_ascii=False, indent=1, default=str, allow_nan=False))
     (OUT / "latest.json").write_text(path.read_text())
     return result
+
+
+STAT_COL = {"td": "td_any", "rush_yds": "rushing_yards", "rec_yds": "receiving_yards",
+            "receptions": "receptions", "pass_yds": "passing_yards", "pass_tds": "passing_tds"}
+DEF_COL = {"td": "def_a_td_l8", "rush_yds": "def_a_rush_l8", "rec_yds": "def_a_rec_l8",
+           "receptions": "def_a_recs_l8", "pass_yds": "def_a_pass_l8", "pass_tds": "def_a_ptd_l8"}
+
+
+def _f(x, nd=1):
+    return None if x is None or (isinstance(x, float) and np.isnan(x)) else round(float(x), nd)
+
+
+def _details(cand: pd.DataFrame, feat: pd.DataFrame, pred: pd.DataFrame) -> list[dict]:
+    """픽 상세 화면용 근거: 최근 5경기 기록, 상대 수비 허용 순위, 사용량, 팀 예상 득점."""
+    hist = feat[~feat.upcoming].sort_values("gameday")
+    hist = hist[hist.player_id.isin(set(cand.player_id))]
+    last5 = {pid: g.tail(5) for pid, g in hist.groupby("player_id")}
+    up = pred.set_index("player_id")
+    ranks = {}
+    for m, col in DEF_COL.items():
+        for pos, g in pred.groupby("position"):
+            d = g.drop_duplicates("opponent_team").set_index("opponent_team")[col]
+            ranks[(m, pos)] = d.rank(ascending=False, method="min").to_dict()
+    out = []
+    for r in cand.itertuples():
+        u = up.loc[r.player_id]
+        u = u.iloc[0] if isinstance(u, pd.DataFrame) else u
+        h = last5.get(r.player_id)
+        col = STAT_COL[r.market]
+        recent = [] if h is None else [
+            {"wk": int(x.week), "opp": x.opponent_team, "val": _f(getattr(x, col), 0)} for x in h.itertuples()]
+        line = None if r.market == "td" else (r.line + 0.5 if r.line is not None else None)
+        hits = None
+        if recent:
+            vals = [x["val"] for x in recent if x["val"] is not None]
+            hits = sum(v >= 1 for v in vals) if r.market == "td" else sum(v >= line for v in vals)
+        out.append({
+            "recent": recent, "need": line, "recent_hits": hits,
+            "mu": _f(getattr(r, "mu", None)),
+            "def_rank": ranks.get((r.market, r.pos), {}).get(r.opp),
+            "def_allowed": _f(u.get(DEF_COL[r.market])),
+            "carry_share": _f(u.get("carry_share_ewm"), 3), "tgt_share": _f(u.get("tgt_share_ewm"), 3),
+            "rz_share": _f(u.get("rz_share_ewm"), 3), "implied_total": _f(u.get("implied_total")),
+            "spread": _f(u.get("team_spread")), "wind": _f(u.get("wind"), 0),
+            "td_rate": _f(u.get("td_rate_l16"), 3),
+        })
+    return out
+
+
+def _clean(o):
+    """JSON에 NaN/Infinity가 들어가면 브라우저가 못 읽어요 → null로 바꿔요."""
+    if isinstance(o, dict):
+        return {k: _clean(v) for k, v in o.items()}
+    if isinstance(o, (list, tuple)):
+        return [_clean(v) for v in o]
+    if isinstance(o, (float, np.floating)):
+        return None if not np.isfinite(o) else float(o)
+    if isinstance(o, np.integer):
+        return int(o)
+    if isinstance(o, np.bool_):
+        return bool(o)
+    return o
 
 
 def _checks(cand: pd.DataFrame) -> pd.DataFrame:
