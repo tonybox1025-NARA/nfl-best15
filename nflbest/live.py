@@ -98,7 +98,7 @@ STADIUMS = {
 
 def weather(games: pd.DataFrame) -> tuple[dict, str]:
     """{game_id: {'temp_f', 'wind_mph', 'precip_pct'}} — 킥오프 시각 예보."""
-    out, fails = {}, 0
+    out, fails, err = {}, 0, ""
     for g in games.itertuples():
         if g.roof in ("dome", "closed"):
             out[g.game_id] = {"dome": True}
@@ -107,20 +107,24 @@ def weather(games: pd.DataFrame) -> tuple[dict, str]:
         if not ll:
             continue
         try:
-            js = requests.get("https://api.open-meteo.com/v1/forecast", headers=UA, timeout=15, params={
+            resp = requests.get("https://api.open-meteo.com/v1/forecast", headers=UA, timeout=15, params={
                 "latitude": ll[0], "longitude": ll[1], "timezone": "America/New_York",
                 "hourly": "temperature_2m,wind_speed_10m,precipitation_probability",
                 "temperature_unit": "fahrenheit", "wind_speed_unit": "mph",
-                "start_date": g.gameday, "end_date": g.gameday}).json()
+                "start_date": g.gameday, "end_date": g.gameday})
+            js = resp.json()
+            if "hourly" not in js:
+                raise ValueError(f"HTTP {resp.status_code} {js.get('reason', '')}")
             hour = f"{g.gameday}T{g.gametime[:2]}:00"
             h = js["hourly"]
             i = h["time"].index(hour)
             out[g.game_id] = {"temp_f": round(h["temperature_2m"][i]), "wind_mph": round(h["wind_speed_10m"][i]),
                               "precip_pct": h["precipitation_probability"][i]}
-        except Exception:  # noqa: BLE001
+        except Exception as e:  # noqa: BLE001
             fails += 1
+            err = err or f"{type(e).__name__}: {str(e)[:120]}"
     ok = sum(1 for v in out.values() if not v.get("dome"))
-    return out, f"날씨 {ok}경기" + (f" · {fails}경기 실패" if fails else "")
+    return out, f"날씨 {ok}경기" + (f" · {fails}경기 실패 ({err})" if fails else "")
 
 
 # =================================================================== 배당
@@ -138,7 +142,8 @@ TEAM_FULL = {
 }
 # 무료 플랜(월 500 크레딧) 절약: 1경기 1회 조회 = 마켓 수만큼 크레딧. 기본은 3개 마켓.
 DEFAULT_MARKETS = os.environ.get("ODDS_MARKETS", "player_anytime_td,player_rush_yds,player_reception_yds")
-ODDS_CACHE_MIN = int(os.environ.get("ODDS_CACHE_MIN", "10"))
+# 무료 크레딧 보호: 배당은 기본 12시간에 한 번만 새로 받아요 (--force-odds로 강제 가능)
+ODDS_CACHE_MIN = int(os.environ.get("ODDS_CACHE_MIN", "720"))
 
 
 def odds(games: pd.DataFrame, force: bool = False) -> tuple[pd.DataFrame | None, str]:
@@ -149,7 +154,8 @@ def odds(games: pd.DataFrame, force: bool = False) -> tuple[pd.DataFrame | None,
         return None, "배당 미사용 (ODDS_API_KEY 없음)"
     cache = data.CACHE / "odds.parquet"
     if not force and cache.exists() and time.time() - cache.stat().st_mtime < ODDS_CACHE_MIN * 60:
-        return pd.read_parquet(cache), f"배당 캐시 사용 ({ODDS_CACHE_MIN}분 이내)"
+        age = int((time.time() - cache.stat().st_mtime) / 60)
+        return pd.read_parquet(cache), f"배당 {age}분 전 데이터 사용 (크레딧 절약)"
     base = "https://api.the-odds-api.com/v4/sports/americanfootball_nfl"
     try:
         r = requests.get(f"{base}/events", params={"apiKey": key}, timeout=20)

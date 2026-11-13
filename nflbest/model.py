@@ -17,6 +17,14 @@ import pandas as pd
 
 from .features import STATS
 
+VERSION = 2   # 모델 구조가 바뀌면 올려요 → 자동 재학습
+
+# 확률 보정에 쓰는 기준선 범위 (FanDuel이 낮은/높은 기준선을 걸어도 정확하게)
+CALIB_GRID = {
+    "rush_yds": list(range(5, 131, 5)), "rec_yds": list(range(5, 131, 5)),
+    "receptions": list(range(1, 11)), "pass_yds": list(range(150, 376, 25)), "pass_tds": [1, 2, 3, 4],
+}
+
 POS_CODE = {"QB": 0, "RB": 1, "WR": 2, "TE": 3}
 
 TARGETS = {
@@ -99,6 +107,7 @@ class Bundle:
     resid: dict = field(default_factory=dict)
     calib: dict = field(default_factory=dict)       # 1단계 확률 보정
     sel_calib: dict = field(default_factory=dict)   # 2단계: 후보로 '선택된' 픽의 확률 보정
+    version: int = 0
 
     def save(self, path: Path):
         path.write_bytes(pickle.dumps(self))
@@ -137,7 +146,7 @@ def fit(df: pd.DataFrame, resid_seasons: list[int]) -> Bundle:
     df = prep(df)
     feats = feature_cols(df)
     train = df[~df.upcoming.astype(bool)]
-    b = Bundle(feats=feats)
+    b = Bundle(feats=feats, version=VERSION)
     for name in TARGETS:
         d = rows_for(train, name)
         d = d[d[TARGETS[name][2]].notna()]
@@ -153,7 +162,7 @@ def fit(df: pd.DataFrame, resid_seasons: list[int]) -> Bundle:
             continue
         b.resid[name] = _residuals(p, a)
         # 마켓별 확률 보정: OOF 예측으로 '○ 이상' 확률을 계산해 실제 적중과 맞춤
-        ks = sorted({k for m in M.MARKETS.values() if m[0] == name for v in m[2].values() for k in v})
+        ks = CALIB_GRID[name]
         raw = np.concatenate([_raw_prob(b.resid[name], name, p, k) for k in ks])
         y = np.concatenate([(a >= k).astype(float) for k in ks])
         b.calib[name] = LogitCalib().fit(raw, y.astype(int))

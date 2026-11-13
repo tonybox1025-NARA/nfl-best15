@@ -19,7 +19,9 @@ FIRST_SEASON = 2020
 
 def get_bundle(feat: pd.DataFrame, season: int, retrain_hours: float = 20) -> model.Bundle:
     if BUNDLE.exists() and time.time() - BUNDLE.stat().st_mtime < retrain_hours * 3600:
-        return model.Bundle.load(BUNDLE)
+        b = model.Bundle.load(BUNDLE)
+        if getattr(b, "version", 0) == model.VERSION:
+            return b
     b = model.fit(feat, list(range(FIRST_SEASON, season)))
     b.save(BUNDLE)
     return b
@@ -64,10 +66,12 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
 
     def pack(df):
         cols = ["rank", "name", "pos", "team", "opp", "label", "prob", "status", "game_id"]
-        cols += [c for c in ("odds", "implied", "edge") if c in df]
+        cols += [c for c in ("odds", "implied", "edge", "model_prob", "market_prob", "check") if c in df]
         recs = df[cols].replace({np.nan: None}).to_dict("records")
         for r in recs:
-            for k in ("prob", "implied", "edge"):
+            if r.get("check") is not None:
+                r["check"] = bool(r["check"])
+            for k in ("prob", "implied", "edge", "model_prob", "market_prob"):
                 if r.get(k) is not None:
                     r[k] = round(float(r[k]) * 100, 1)
         return recs

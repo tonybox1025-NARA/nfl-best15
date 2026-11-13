@@ -28,8 +28,14 @@ def main():
     print("\n=== 전체 베스트 15 (확률순) ===")
     for p in r["overall"]["prob"]:
         st = f" [{p['status']}]" if p["status"] else ""
-        edge = f"  엣지 {p['edge']:+.1f}%p" if p.get("edge") is not None else ""
+        edge = f"  FD {p['odds']:+.0f} 엣지 {p['edge']:+.1f}%p" if p.get("edge") is not None else ""
+        if p.get("check"):
+            edge += " ⚠확인 필요"
         print(f"{p['rank']:>2}. {p['name']:<22} {p['team']:>3} vs {p['opp']:<3} {p['label']:<18} {p['prob']:>5.1f}%{edge}{st}")
+    if r["overall"]["edge"]:
+        print("\n=== 엣지순 (배당 대비) ===")
+        for p in r["overall"]["edge"]:
+            print(f"{p['rank']:>2}. {p['name']:<22} {p['team']:>3} {p['label']:<18} {p['prob']:>5.1f}% FD {p['odds']:+.0f} 엣지 {p['edge']:+.1f}%p")
     print("\n=== TD 확률 TOP 15 ===")
     for p in r["overall"]["td"]:
         st = f" [{p['status']}]" if p["status"] else ""
