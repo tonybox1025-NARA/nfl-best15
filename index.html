@@ -149,16 +149,18 @@ function gh(path, opt = {}) {
   if (token()) h.Authorization = "Bearer " + token();
   return fetch(API + path, { ...opt, headers: h, cache: "no-store" });
 }
+// 예전 결과 파일에 NaN/Infinity가 섞여 있어도 읽을 수 있게 null로 바꿔요
+function parseJSON(t) { return JSON.parse(t.replace(/:\s*-?(NaN|Infinity)\b/g, ": null")); }
 async function loadData(fresh) {
   // 토큰이 있으면 GitHub API로 '방금 저장된' 결과를, 없으면 이 사이트에 배포된 파일을 읽어요
   try {
     if (fresh && token()) {
       const r = await gh("/contents/output/latest.json?ref=main", { headers: { Accept: "application/vnd.github.raw+json" } });
-      if (r.ok) { D = await r.json(); return; }
+      if (r.ok) { D = parseJSON(await r.text()); return; }
     }
     const r = await fetch("output/latest.json?t=" + Date.now(), { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
-    D = await r.json();
+    D = parseJSON(await r.text());
   } catch (e) {
     $("#app").innerHTML = `<div class="card">데이터를 불러오지 못했어요 (${esc(e.message)}). 잠시 뒤 새로고침해 주세요.</div>`;
     throw e;
