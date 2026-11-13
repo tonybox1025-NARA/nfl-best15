@@ -1,11 +1,11 @@
 {
  "season": 2026,
  "week": 10,
- "generated_at": "2026-11-13 05:08 ET",
+ "generated_at": "2026-11-13 05:21 ET",
  "sources": {
   "injuries": "NFL 공식 리포트 296건 · ESPN 실시간 800건",
   "weather": "날씨 10경기 (야외)",
-  "odds": "배당 65분 전 데이터 사용 (크레딧 절약)"
+  "odds": "배당 77분 전 데이터 사용 (크레딧 절약)"
  },
  "has_odds": true,
  "overall": {
@@ -22223,19 +22223,6 @@
   "Puka Nacua",
   "Tyler Goodson"
  ],
- "seconds": 17.6,
- "changes": [
-  "▲ Carnell Tate 리시빙 40야드 이상 새로 진입 (9위, 64.9%)",
-  "▲ Josh Allen 패싱 225야드 이상 새로 진입 (11위, 63.8%)",
-  "▲ Aaron Rodgers 패싱 225야드 이상 새로 진입 (12위, 63.4%)",
-  "▲ Javonte Williams 애니타임 터치다운 새로 진입 (13위, 63.2%)",
-  "▲ George Pickens 리시빙 50야드 이상 새로 진입 (14위, 62.4%)",
-  "▲ Emanuel Wilson 러싱 50야드 이상 새로 진입 (15위, 62.4%)",
-  "▼ Aaron Jones 러싱 28.5야드 이상 베스트 15에서 빠짐",
-  "▼ Braelon Allen 러싱 33.5야드 이상 베스트 15에서 빠짐",
-  "▼ Tre Tucker 리시빙 26.5야드 이상 베스트 15에서 빠짐",
-  "▼ Jack Bech 리시빙 4.5야드 이상 베스트 15에서 빠짐",
-  "▼ Tory Horton 리시빙 7.5야드 이상 베스트 15에서 빠짐",
-  "▼ MarShawn Lloyd 러싱 11.5야드 이상 베스트 15에서 빠짐"
- ]
+ "seconds": 11.7,
+ "changes": []
 }
