@@ -65,6 +65,8 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     has_odds = "edge" in cand and cand.edge.notna().any()
 
     def pack(df):
+        if df is None or df.empty:
+            return []
         cols = ["rank", "name", "pos", "team", "opp", "label", "prob", "status", "game_id"]
         cols += [c for c in ("odds", "implied", "edge", "model_prob", "market_prob", "check") if c in df]
         recs = df[cols].replace({np.nan: None}).to_dict("records")
@@ -100,6 +102,7 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
             "prob": pack(picks.best15(cand, "prob")),
             "edge": pack(picks.best15(cand, "edge")) if has_odds else [],
             "td": pack(picks.best15(cand[cand.market == "td"], "prob")),
+            "check": pack(_checks(cand)),
         },
         "games": out_games,
         "out_players": sorted({n["name"] for n in notes}),
@@ -112,6 +115,17 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     path.write_text(json.dumps(result, ensure_ascii=False, indent=1, default=str))
     (OUT / "latest.json").write_text(path.read_text())
     return result
+
+
+def _checks(cand: pd.DataFrame) -> pd.DataFrame:
+    """모델과 시장 차이가 큰 픽 (모델이 모르는 역할 변화·부상 가능성) — 순위에서 빠진 것들."""
+    if "check" not in cand:
+        return cand.iloc[0:0]
+    c = cand[cand.check.fillna(False).astype(bool)].copy()
+    c["gap"] = (c.model_prob - c.market_prob).abs()
+    c = c.sort_values("gap", ascending=False).head(15)
+    c.insert(0, "rank", range(1, len(c) + 1))
+    return c
 
 
 def _redistribute(pred: pd.DataFrame) -> list[dict]:

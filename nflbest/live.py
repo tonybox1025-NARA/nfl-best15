@@ -97,34 +97,42 @@ STADIUMS = {
 
 
 def weather(games: pd.DataFrame) -> tuple[dict, str]:
-    """{game_id: {'temp_f', 'wind_mph', 'precip_pct'}} — 킥오프 시각 예보."""
-    out, fails, err = {}, 0, ""
+    """{game_id: {'temp_f', 'wind_mph', 'precip_pct'}} — 킥오프 시각 예보.
+    야외 경기장 전부를 한 번의 요청으로 받아요 (Open-Meteo 다중 좌표), 실패하면 2번 더 시도."""
+    out = {}
+    outdoor = []
     for g in games.itertuples():
         if g.roof in ("dome", "closed"):
             out[g.game_id] = {"dome": True}
-            continue
-        ll = STADIUMS.get(g.home_team)
-        if not ll:
-            continue
+        elif g.home_team in STADIUMS:
+            outdoor.append(g)
+    if not outdoor:
+        return out, "날씨: 야외 경기 없음"
+    days = sorted({g.gameday for g in outdoor})
+    params = {
+        "latitude": ",".join(str(STADIUMS[g.home_team][0]) for g in outdoor),
+        "longitude": ",".join(str(STADIUMS[g.home_team][1]) for g in outdoor),
+        "timezone": "America/New_York", "hourly": "temperature_2m,wind_speed_10m,precipitation_probability",
+        "temperature_unit": "fahrenheit", "wind_speed_unit": "mph",
+        "start_date": days[0], "end_date": days[-1]}
+    err = ""
+    for attempt in range(3):
         try:
-            resp = requests.get("https://api.open-meteo.com/v1/forecast", headers=UA, timeout=15, params={
-                "latitude": ll[0], "longitude": ll[1], "timezone": "America/New_York",
-                "hourly": "temperature_2m,wind_speed_10m,precipitation_probability",
-                "temperature_unit": "fahrenheit", "wind_speed_unit": "mph",
-                "start_date": g.gameday, "end_date": g.gameday})
+            resp = requests.get("https://api.open-meteo.com/v1/forecast", headers=UA, timeout=40, params=params)
             js = resp.json()
-            if "hourly" not in js:
-                raise ValueError(f"HTTP {resp.status_code} {js.get('reason', '')}")
-            hour = f"{g.gameday}T{g.gametime[:2]}:00"
-            h = js["hourly"]
-            i = h["time"].index(hour)
-            out[g.game_id] = {"temp_f": round(h["temperature_2m"][i]), "wind_mph": round(h["wind_speed_10m"][i]),
-                              "precip_pct": h["precipitation_probability"][i]}
+            js = js if isinstance(js, list) else [js]
+            if "hourly" not in js[0]:
+                raise ValueError(f"HTTP {resp.status_code} {js[0].get('reason', '')}")
+            for g, loc in zip(outdoor, js):
+                h = loc["hourly"]
+                i = h["time"].index(f"{g.gameday}T{g.gametime[:2]}:00")
+                out[g.game_id] = {"temp_f": round(h["temperature_2m"][i]), "wind_mph": round(h["wind_speed_10m"][i]),
+                                  "precip_pct": h["precipitation_probability"][i]}
+            return out, f"날씨 {len(outdoor)}경기 (야외)"
         except Exception as e:  # noqa: BLE001
-            fails += 1
-            err = err or f"{type(e).__name__}: {str(e)[:120]}"
-    ok = sum(1 for v in out.values() if not v.get("dome"))
-    return out, f"날씨 {ok}경기" + (f" · {fails}경기 실패 ({err})" if fails else "")
+            err = f"{type(e).__name__}: {str(e)[:100]}"
+            time.sleep(3 * (attempt + 1))
+    return out, f"날씨 실패 ({err})"
 
 
 # =================================================================== 배당

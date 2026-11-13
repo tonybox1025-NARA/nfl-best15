@@ -95,8 +95,11 @@ def best15(c: pd.DataFrame, by: str = "prob", n: int = 15, per_player: int = 2,
         return c
     per_market = per_market or M.MAX_PER_MARKET
     key = by if by in c and c[by].notna().any() else "prob"
-    if key == "edge":   # 엣지순: 배당 있는 픽만, '확인 필요'는 제외
-        c = c[c.edge.notna() & ~c.get("check", pd.Series(False, index=c.index)).fillna(False).astype(bool)]
+    # '확인 필요'(모델과 시장 차이 큼)는 순위에서 빼고 따로 보여줘요
+    if "check" in c:
+        c = c[~c.check.fillna(False).astype(bool)]
+    if key == "edge":   # 엣지순: 배당 있는 픽만, 확률 MIN_P_EDGE 이상 (복권식 롱샷 제외)
+        c = c[c.edge.notna() & (c.prob >= M.MIN_P_EDGE)]
     c = c.sort_values([key, "prob"], ascending=False)
     c = c.groupby("player_id", sort=False).head(per_player)
     if c.market.nunique() > 1:

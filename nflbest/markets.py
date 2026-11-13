@@ -8,6 +8,7 @@ from __future__ import annotations
 
 MIN_P = 0.55       # 야드/리셉션 마일스톤 후보 최소 확률
 MIN_P_TD = 0.30    # TD 후보 최소 확률 (TD 전용 순위용)
+MIN_P_EDGE = 0.45  # 엣지순 목록 최소 확률 (파레이에 쓰기 어려운 롱샷 제외)
 MAX_PER_MARKET = 4  # 베스트 15 안에서 같은 종류 마켓 최대 개수 (다양성)
 
 # key: (모델 이름, 라벨, {포지션: 기준선 목록})

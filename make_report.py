@@ -20,6 +20,12 @@ L += ["## 전체 경기 베스트 15 (확률순)", ""] + table(r["overall"]["pro
 if r["overall"].get("edge"):
     L += ["", "## 엣지순 베스트 15 (배당 대비 가치, '확인 필요' 제외)", ""] + table(r["overall"]["edge"])
 L += ["", "## 터치다운 확률 TOP 15", ""] + table(r["overall"]["td"])
+if r["overall"].get("check"):
+    L += ["", "## ⚠ 확인 필요 (모델과 FanDuel 차이가 큰 픽 — 순위에서 제외)", "",
+          "모델이 모르는 역할 변화·부상·뎁스차트 변동이 있을 수 있어요. 직접 확인한 뒤 쓰세요.", ""]
+    L += ["| 선수 | 팀 | 픽 | 모델 | 시장 | FanDuel |", "|---|---|---|---|---|---|"]
+    for p in r["overall"]["check"]:
+        L.append(f"| {p['name']} ({p['pos']}) | {p['team']} | {p['label']} | {p['model_prob']}% | {p['market_prob']}% | {p['odds']:+.0f} |")
 L += ["", "## 경기별 베스트 15", ""]
 for g in r["games"]:
     L += [f"### {g['away']} @ {g['home']} · {g['kickoff']} · {g['stadium']}",
