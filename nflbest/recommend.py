@@ -69,7 +69,7 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     def pack(df):
         if df is None or df.empty:
             return []
-        cols = ["rank", "name", "pos", "team", "opp", "label", "prob", "status", "game_id"]
+        cols = ["rank", "player_id", "name", "pos", "team", "opp", "market", "line", "label", "prob", "status", "game_id"]
         cols += [c for c in ("odds", "implied", "edge", "model_prob", "market_prob", "check", "detail") if c in df]
         recs = df[cols].replace({np.nan: None}).to_dict("records")
         for r in recs:
@@ -117,6 +117,8 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
         (OUT / f"week{week}.prev.json").write_text(path.read_text())
     path.write_text(json.dumps(result, ensure_ascii=False, indent=1, default=str, allow_nan=False))
     (OUT / "latest.json").write_text(path.read_text())
+    from . import history
+    history.update(result)
     return result
 
 
