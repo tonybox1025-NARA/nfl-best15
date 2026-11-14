@@ -1,7 +1,7 @@
 # 2026 시즌 10주차 베스트 15
 
-생성: 2026-11-13 20:54 ET  
-데이터: NFL 공식 리포트 300건 · ESPN 실시간 800건 / 날씨 10경기 (야외) / 배당 34분 전 데이터 사용 (크레딧 절약)
+생성: 2026-11-14 02:02 ET  
+데이터: NFL 공식 리포트 345건 · ESPN 실시간 800건 / 날씨 10경기 (야외) / 배당 342분 전 데이터 사용 (크레딧 절약)
 
 > 확률은 과거 데이터 기반 추정치예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요. ⚠는 모델과 시장 차이가 15%p 넘는 픽(역할 변화·부상 확인 필요)이에요.
 
@@ -10,49 +10,49 @@
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Christian Watson (WR) | GB | MIN | 리셉션 4개 이상 | **68.3%** | - | - |  |
-| 2 | Tee Higgins (WR) | CIN | PIT | 리셉션 4개 이상 | **68.1%** | - | - | Active |
-| 3 | Tyler Warren (TE) | IND | MIA | 리셉션 4개 이상 | **67.6%** | - | - | Active |
-| 4 | Drake London (WR) | ATL | KC | 리셉션 4개 이상 | **67.5%** | - | - | Active |
+| 2 | Tyler Warren (TE) | IND | MIA | 리셉션 4개 이상 | **67.6%** | - | - | Active |
+| 3 | Drake London (WR) | ATL | KC | 리셉션 4개 이상 | **67.4%** | - | - | Active |
+| 4 | Zay Flowers (WR) | BAL | LAC | 리셉션 4개 이상 | **67.4%** | - | - | Active |
 | 5 | Joe Burrow (QB) | CIN | PIT | 패싱 225야드 이상 | **67.2%** | - | - | Active |
-| 6 | Trevor Lawrence (QB) | JAX | TEN | 패싱 225야드 이상 | **67.2%** | - | - | Active |
-| 7 | Drake Maye (QB) | NE | DET | 패싱 225야드 이상 | **67.2%** | - | - | Active |
-| 8 | Christian McCaffrey (RB) | SF | DAL | 애니타임 터치다운 | **65.9%** | -270 | -7.1%p |  |
-| 9 | Josh Allen (QB) | BUF | NYJ | 패싱 225야드 이상 | **64.6%** | - | - | Active |
-| 10 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **64.0%** | -165 | +1.7%p | Active |
+| 6 | Drake Maye (QB) | NE | DET | 패싱 225야드 이상 | **67.2%** | - | - | Active |
+| 7 | Christian McCaffrey (RB) | SF | DAL | 애니타임 터치다운 | **65.9%** | -270 | -7.1%p |  |
+| 8 | Aaron Rodgers (QB) | PIT | CIN | 패싱 225야드 이상 | **65.0%** | - | - | Active |
+| 9 | Dak Prescott (QB) | DAL | SF | 패싱 225야드 이상 | **64.2%** | - | - | Active |
+| 10 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **63.8%** | -165 | +1.5%p | Active |
 | 11 | Brock Purdy (QB) | SF | DAL | 패싱 TD 2개 이상 | **62.7%** | - | - |  |
-| 12 | Kenneth Walker III (RB) | KC | ATL | 러싱 70야드 이상 | **62.4%** | - | - | Questionable |
-| 13 | Emanuel Wilson (RB) | SEA | LV | 러싱 50야드 이상 | **62.4%** | - | - | Active |
-| 14 | Jahmyr Gibbs (RB) | DET | NE | 애니타임 터치다운 | **62.2%** | -260 | -10.0%p | Active |
+| 12 | Emanuel Wilson (RB) | SEA | LV | 러싱 50야드 이상 | **62.4%** | - | - | Active |
+| 13 | Jahmyr Gibbs (RB) | DET | NE | 애니타임 터치다운 | **62.2%** | -260 | -10.0%p | Active |
+| 14 | Kenneth Walker III (RB) | KC | ATL | 러싱 70야드 이상 | **61.3%** | - | - | Questionable |
 | 15 | Javonte Williams (RB) | DAL | SF | 애니타임 터치다운 | **61.1%** | -170 | -1.8%p | Active |
 
 ## 엣지순 베스트 15 (배당 대비 가치, '확인 필요' 제외)
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Mason Taylor (TE) | NYJ | BUF | 리시빙 15.5야드 이상 | **60.7%** | -114 | +7.4%p | Active |
-| 2 | Omarion Hampton (RB) | LAC | BAL | 러싱 31.5야드 이상 | **60.1%** | -114 | +6.8%p | Active |
-| 3 | Javonte Williams (RB) | DAL | SF | 러싱 61.5야드 이상 | **59.5%** | -114 | +6.2%p | Active |
-| 4 | Wan'Dale Robinson (WR) | TEN | JAX | 리시빙 37.5야드 이상 | **59.4%** | -114 | +6.2%p | Active |
-| 5 | Xavier Worthy (WR) | KC | ATL | 리시빙 26.5야드 이상 | **59.1%** | -114 | +5.8%p | Active |
-| 6 | Jalen Nailor (WR) | LV | SEA | 리시빙 12.5야드 이상 | **58.4%** | -114 | +5.1%p | Active |
-| 7 | MarShawn Lloyd (RB) | GB | MIN | 러싱 16.5야드 이상 | **56.8%** | -114 | +3.5%p | Active |
-| 8 | Justice Hill (RB) | BAL | LAC | 러싱 12.5야드 이상 | **56.5%** | -114 | +3.3%p | Active |
-| 9 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **64.0%** | -165 | +1.7%p | Active |
+| 1 | Omarion Hampton (RB) | LAC | BAL | 러싱 31.5야드 이상 | **60.1%** | -114 | +6.8%p | Active |
+| 2 | Javonte Williams (RB) | DAL | SF | 러싱 61.5야드 이상 | **59.5%** | -114 | +6.2%p | Active |
+| 3 | Xavier Worthy (WR) | KC | ATL | 리시빙 26.5야드 이상 | **58.7%** | -114 | +5.5%p | Active |
+| 4 | Jalen Nailor (WR) | LV | SEA | 리시빙 12.5야드 이상 | **58.4%** | -114 | +5.1%p | Active |
+| 5 | Adonai Mitchell (WR) | NYJ | BUF | 리시빙 36.5야드 이상 | **58.3%** | -114 | +5.0%p | Questionable |
+| 6 | Josh Cuevas (TE) | BAL | LAC | 리시빙 7.5야드 이상 | **56.7%** | -108 | +4.8%p | Active |
+| 7 | Chase Brown (RB) | CIN | PIT | 러싱 46.5야드 이상 | **56.7%** | -114 | +3.4%p | Active |
+| 8 | Justice Hill (RB) | BAL | LAC | 러싱 12.5야드 이상 | **56.4%** | -114 | +3.2%p | Active |
+| 9 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **63.8%** | -165 | +1.5%p | Active |
 
 ## 터치다운 확률 TOP 15
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Christian McCaffrey (RB) | SF | DAL | 애니타임 터치다운 | **65.9%** | -270 | -7.1%p |  |
-| 2 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **64.0%** | -165 | +1.7%p | Active |
+| 2 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **63.8%** | -165 | +1.5%p | Active |
 | 3 | Jahmyr Gibbs (RB) | DET | NE | 애니타임 터치다운 | **62.2%** | -260 | -10.0%p | Active |
 | 4 | Javonte Williams (RB) | DAL | SF | 애니타임 터치다운 | **61.1%** | -170 | -1.8%p | Active |
-| 5 | Kenneth Walker III (RB) | KC | ATL | 애니타임 터치다운 | **56.2%** | -180 | -8.1%p | Questionable |
-| 6 | Kyren Williams (RB) | LA | ARI | 애니타임 터치다운 | **54.6%** | -140 | -3.7%p |  |
-| 7 | Josh Allen (QB) | BUF | NYJ | 애니타임 터치다운 | **51.1%** | -170 | -11.9%p | Active |
+| 5 | Kenneth Walker III (RB) | KC | ATL | 애니타임 터치다운 | **56.1%** | -180 | -8.2%p | Questionable |
+| 6 | Kyren Williams (RB) | LA | ARI | 애니타임 터치다운 | **54.6%** | -140 | -3.8%p |  |
+| 7 | Josh Allen (QB) | BUF | NYJ | 애니타임 터치다운 | **51.0%** | -170 | -12.0%p | Active |
 | 8 | Chuba Hubbard (RB) | CAR | NO | 애니타임 터치다운 | **50.3%** | -155 | -10.5%p | Active |
 | 9 | Jaxon Smith-Njigba (WR) | SEA | LV | 애니타임 터치다운 | **46.8%** | +100 | -3.2%p | Active |
-| 10 | Bhayshul Tuten (RB) | JAX | TEN | 애니타임 터치다운 | **46.4%** | -120 | -8.1%p | Active |
+| 10 | Bhayshul Tuten (RB) | JAX | TEN | 애니타임 터치다운 | **45.7%** | -120 | -8.9%p | Active |
 | 11 | Derrick Henry (RB) | BAL | LAC | 애니타임 터치다운 | **44.6%** | -135 | -12.8%p | Active |
 | 12 | Blake Corum (RB) | LA | ARI | 애니타임 터치다운 | **43.9%** | +115 | -2.6%p |  |
 | 13 | Chase Brown (RB) | CIN | PIT | 애니타임 터치다운 | **43.6%** | -105 | -7.6%p | Active |
@@ -68,17 +68,17 @@
 | Anthony Gould (WR) | IND | 리시빙 15.5야드 이상 | 9.4% | 51.0% | -114 |
 | Keenan Allen (WR) | IND | 리시빙 18.5야드 이상 | 84.1% | 51.0% | -114 |
 | Ben Yurosek (TE) | MIN | 리시빙 14.5야드 이상 | 18.8% | 51.0% | -114 |
-| Aaron Jones (RB) | MIN | 러싱 27.5야드 이상 | 81.7% | 51.0% | -114 |
-| Braelon Allen (RB) | NYJ | 러싱 33.5야드 이상 | 79.1% | 51.0% | -114 |
+| Aaron Jones (RB) | MIN | 러싱 27.5야드 이상 | 82.2% | 51.0% | -114 |
+| Braelon Allen (RB) | NYJ | 러싱 33.5야드 이상 | 78.9% | 51.0% | -114 |
 | Emanuel Wilson (RB) | SEA | 애니타임 터치다운 | 34.6% | 6.9% | +1200 |
 | Laquon Treadwell (WR) | IND | 리시빙 28.5야드 이상 | 23.9% | 51.0% | -114 |
+| Chimere Dike (WR) | TEN | 리시빙 29.5야드 이상 | 24.6% | 51.0% | -114 |
 | Deion Burks (WR) | IND | 리시빙 17.5야드 이상 | 24.7% | 51.0% | -114 |
-| Justin Jefferson (WR) | MIN | 리시빙 80.5야드 이상 | 27.4% | 51.0% | -114 |
-| Tee Higgins (WR) | CIN | 리시빙 75.5야드 이상 | 27.7% | 51.0% | -114 |
-| Chimere Dike (WR) | TEN | 리시빙 29.5야드 이상 | 27.9% | 51.0% | -114 |
+| Justin Jefferson (WR) | MIN | 리시빙 80.5야드 이상 | 27.6% | 51.0% | -114 |
 | Jack Bech (WR) | LV | 리시빙 4.5야드 이상 | 73.9% | 51.0% | -114 |
 | Tory Horton (WR) | SEA | 리시빙 7.5야드 이상 | 73.8% | 51.0% | -114 |
 | Drake Maye (QB) | NE | 러싱 26.5야드 이상 | 28.6% | 51.0% | -114 |
+| Bam Knight (RB) | ARI | 러싱 29.5야드 이상 | 29.0% | 51.0% | -114 |
 | Drake London (WR) | ATL | 리시빙 72.5야드 이상 | 29.0% | 51.0% | -114 |
 
 ## 경기별 베스트 15
@@ -109,20 +109,20 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Drake London (WR) | ATL | KC | 리셉션 4개 이상 | **67.5%** | - | - | Active |
+| 1 | Drake London (WR) | ATL | KC | 리셉션 4개 이상 | **67.4%** | - | - | Active |
 | 2 | Kyle Pitts (TE) | ATL | KC | 리셉션 3개 이상 | **63.7%** | - | - | Active |
 | 3 | Bijan Robinson (RB) | ATL | KC | 리셉션 3개 이상 | **63.7%** | - | - | Active |
-| 4 | Kenneth Walker III (RB) | KC | ATL | 러싱 70야드 이상 | **62.4%** | - | - | Questionable |
-| 5 | Travis Kelce (TE) | KC | ATL | 리셉션 4개 이상 | **59.8%** | - | - | Active |
-| 6 | Patrick Mahomes (QB) | KC | ATL | 패싱 225야드 이상 | **59.8%** | - | - | Active |
-| 7 | Xavier Worthy (WR) | KC | ATL | 리시빙 26.5야드 이상 | **59.1%** | -114 | +5.8%p | Active |
-| 8 | Michael Penix Jr. (QB) | ATL | KC | 패싱 225야드 이상 | **56.3%** | - | - | Active |
-| 9 | Kenneth Walker III (RB) | KC | ATL | 애니타임 터치다운 | **56.2%** | -180 | -8.1%p | Questionable |
+| 4 | Kenneth Walker III (RB) | KC | ATL | 러싱 70야드 이상 | **61.3%** | - | - | Questionable |
+| 5 | Patrick Mahomes (QB) | KC | ATL | 패싱 225야드 이상 | **59.8%** | - | - | Active |
+| 6 | Travis Kelce (TE) | KC | ATL | 리셉션 4개 이상 | **59.8%** | - | - | Active |
+| 7 | Xavier Worthy (WR) | KC | ATL | 리시빙 26.5야드 이상 | **58.7%** | -114 | +5.5%p | Active |
+| 8 | Michael Penix Jr. (QB) | ATL | KC | 패싱 225야드 이상 | **57.9%** | - | - | Active |
+| 9 | Kenneth Walker III (RB) | KC | ATL | 애니타임 터치다운 | **56.1%** | -180 | -8.2%p | Questionable |
 | 10 | Olamide Zaccheaus (WR) | ATL | KC | 리시빙 7.5야드 이상 | **52.9%** | -114 | -0.4%p | Active |
-| 11 | Rashee Rice (WR) | KC | ATL | 리시빙 54.5야드 이상 | **52.7%** | -114 | -0.5%p | Active |
-| 12 | Noah Gray (TE) | KC | ATL | 리시빙 10.5야드 이상 | **52.2%** | -114 | -1.0%p | Active |
-| 13 | Khalil Herbert (RB) | ATL | KC | 러싱 8.5야드 이상 | **50.2%** | -114 | -3.1%p | Active |
-| 14 | Michael Penix Jr. (QB) | ATL | KC | 러싱 7.5야드 이상 | **46.9%** | -114 | -6.4%p | Active |
+| 11 | Rashee Rice (WR) | KC | ATL | 리시빙 54.5야드 이상 | **52.5%** | -114 | -0.8%p | Active |
+| 12 | Noah Gray (TE) | KC | ATL | 리시빙 10.5야드 이상 | **52.1%** | -114 | -1.1%p | Active |
+| 13 | Khalil Herbert (RB) | ATL | KC | 러싱 8.5야드 이상 | **50.3%** | -114 | -3.0%p | Active |
+| 14 | Michael Penix Jr. (QB) | ATL | KC | 러싱 7.5야드 이상 | **47.0%** | -114 | -6.2%p | Active |
 | 15 | Patrick Mahomes (QB) | KC | ATL | 러싱 8.5야드 이상 | **43.9%** | -114 | -9.4%p | Active |
 
 ### HOU @ CLE · 2026-11-15 13:00 ET · Huntington Bank Field
@@ -132,40 +132,40 @@
 |---|---|---|---|---|---|---|---|---|
 | 1 | Dalton Schultz (TE) | HOU | CLE | 리셉션 3개 이상 | **63.7%** | - | - | Active |
 | 2 | Harold Fannin Jr. (TE) | CLE | HOU | 리셉션 3개 이상 | **63.7%** | - | - | Active |
-| 3 | Nico Collins (WR) | HOU | CLE | 리셉션 4개 이상 | **61.6%** | - | - | Active |
-| 4 | C.J. Stroud (QB) | HOU | CLE | 패싱 225야드 이상 | **61.4%** | - | - |  |
+| 3 | C.J. Stroud (QB) | HOU | CLE | 패싱 225야드 이상 | **63.0%** | - | - |  |
+| 4 | Nico Collins (WR) | HOU | CLE | 리셉션 4개 이상 | **61.6%** | - | - | Active |
 | 5 | Denzel Boston (WR) | CLE | HOU | 리셉션 4개 이상 | **60.5%** | - | - | Questionable |
-| 6 | Woody Marks (RB) | HOU | CLE | 러싱 50야드 이상 | **60.1%** | - | - | Active |
+| 6 | Woody Marks (RB) | HOU | CLE | 러싱 50야드 이상 | **59.6%** | - | - | Active |
 | 7 | Quinshon Judkins (RB) | CLE | HOU | 리시빙 5.5야드 이상 | **56.2%** | -114 | +2.9%p | Active |
 | 8 | C.J. Stroud (QB) | HOU | CLE | 패싱 TD 2개 이상 | **55.5%** | - | - |  |
-| 9 | Dalton Schultz (TE) | HOU | CLE | 리시빙 29.5야드 이상 | **53.8%** | -114 | +0.6%p | Active |
-| 10 | Xavier Hutchinson (WR) | HOU | CLE | 리시빙 29.5야드 이상 | **53.3%** | -114 | +0.0%p | Active |
+| 9 | Dalton Schultz (TE) | HOU | CLE | 리시빙 29.5야드 이상 | **54.4%** | -114 | +1.1%p | Active |
+| 10 | Xavier Hutchinson (WR) | HOU | CLE | 리시빙 29.5야드 이상 | **54.3%** | -114 | +1.0%p | Active |
 | 11 | Denzel Boston (WR) | CLE | HOU | 리시빙 45.5야드 이상 | **51.1%** | -114 | -2.1%p | Questionable |
-| 12 | Dylan Sampson (RB) | CLE | HOU | 러싱 18.5야드 이상 | **45.7%** | -114 | -7.5%p | Active |
-| 13 | Woody Marks (RB) | HOU | CLE | 애니타임 터치다운 | **37.5%** | +140 | -4.2%p | Active |
-| 14 | Quinshon Judkins (RB) | CLE | HOU | 애니타임 터치다운 | **30.8%** | +180 | -4.9%p | Active |
+| 12 | Dylan Sampson (RB) | CLE | HOU | 러싱 18.5야드 이상 | **45.6%** | -114 | -7.7%p | Active |
+| 13 | Woody Marks (RB) | HOU | CLE | 애니타임 터치다운 | **37.6%** | +140 | -4.0%p | Active |
+| 14 | Quinshon Judkins (RB) | CLE | HOU | 애니타임 터치다운 | **31.0%** | +180 | -4.8%p | Active |
 | 15 | Tank Dell (WR) | HOU | CLE | 애니타임 터치다운 | **23.7%** | +330 | +0.4%p | Active |
 
 ### MIN @ GB · 2026-11-15 13:00 ET · Lambeau Field
-스프레드 GB -3.0 · 총점 42.5 · 예상 점수 MIN 19.8 – GB 22.8
+스프레드 GB -2.5 · 총점 42.5 · 예상 점수 MIN 20.0 – GB 22.5
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Christian Watson (WR) | GB | MIN | 리셉션 4개 이상 | **68.3%** | - | - |  |
 | 2 | Matthew Golden (WR) | GB | MIN | 리셉션 5개 이상 | **66.6%** | - | - |  |
-| 3 | Jordan Love (QB) | GB | MIN | 패싱 225야드 이상 | **59.8%** | - | - |  |
+| 3 | Jordan Love (QB) | GB | MIN | 패싱 225야드 이상 | **59.4%** | - | - |  |
 | 4 | Justin Jefferson (WR) | MIN | GB | 리셉션 5개 이상 | **58.9%** | - | - | Active |
 | 5 | Tucker Kraft (TE) | GB | MIN | 리셉션 4개 이상 | **58.8%** | - | - |  |
-| 6 | MarShawn Lloyd (RB) | GB | MIN | 러싱 16.5야드 이상 | **56.8%** | -114 | +3.5%p | Active |
-| 7 | Jordan Love (QB) | GB | MIN | 패싱 TD 2개 이상 | **56.1%** | - | - |  |
-| 8 | Kaleb Johnson (RB) | GB | MIN | 러싱 28.5야드 이상 | **56.0%** | -114 | +2.7%p | Active |
+| 6 | Jordan Love (QB) | GB | MIN | 패싱 TD 2개 이상 | **56.1%** | - | - |  |
+| 7 | MarShawn Lloyd (RB) | GB | MIN | 러싱 16.5야드 이상 | **55.7%** | -114 | +2.4%p | Active |
+| 8 | Kaleb Johnson (RB) | GB | MIN | 러싱 28.5야드 이상 | **55.7%** | -114 | +2.4%p | Active |
 | 9 | Jordan Mason (RB) | MIN | GB | 리시빙 3.5야드 이상 | **55.0%** | -114 | +1.7%p | Active |
 | 10 | Aaron Jones (RB) | MIN | GB | 리시빙 10.5야드 이상 | **48.6%** | -114 | -4.7%p | Active |
-| 11 | Matthew Golden (WR) | GB | MIN | 리시빙 69.5야드 이상 | **48.1%** | -114 | -5.2%p |  |
+| 11 | Matthew Golden (WR) | GB | MIN | 리시빙 69.5야드 이상 | **48.0%** | -114 | -5.2%p |  |
 | 12 | Tucker Kraft (TE) | GB | MIN | 리시빙 37.5야드 이상 | **47.4%** | -114 | -5.8%p |  |
-| 13 | Jordan Mason (RB) | MIN | GB | 러싱 45.5야드 이상 | **47.3%** | -114 | -6.0%p | Active |
-| 14 | Kaleb Johnson (RB) | GB | MIN | 애니타임 터치다운 | **38.7%** | +195 | +4.8%p | Active |
-| 15 | Justin Jefferson (WR) | MIN | GB | 애니타임 터치다운 | **37.1%** | +140 | -4.6%p | Active |
+| 13 | Jordan Mason (RB) | MIN | GB | 러싱 45.5야드 이상 | **47.3%** | -114 | -5.9%p | Active |
+| 14 | Justin Jefferson (WR) | MIN | GB | 애니타임 터치다운 | **37.1%** | +140 | -4.6%p | Active |
+| 15 | Kaleb Johnson (RB) | GB | MIN | 애니타임 터치다운 | **36.8%** | +195 | +2.9%p | Active |
 
 ### MIA @ IND · 2026-11-15 13:00 ET · Lucas Oil Stadium
 스프레드 IND -3.5 · 총점 38.5 · 예상 점수 MIA 17.5 – IND 21.0
@@ -214,42 +214,42 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Garrett Wilson (WR) | NYJ | BUF | 리셉션 4개 이상 | **66.9%** | - | - | Questionable |
-| 2 | Josh Allen (QB) | BUF | NYJ | 패싱 225야드 이상 | **64.6%** | - | - | Active |
-| 3 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **64.0%** | -165 | +1.7%p | Active |
-| 4 | Dalton Kincaid (TE) | BUF | NYJ | 리셉션 3개 이상 | **63.7%** | - | - | Active |
-| 5 | Omar Cooper Jr. (WR) | NYJ | BUF | 리셉션 4개 이상 | **61.6%** | - | - | Questionable |
-| 6 | Mason Taylor (TE) | NYJ | BUF | 리시빙 15.5야드 이상 | **60.7%** | -114 | +7.4%p | Active |
-| 7 | Geno Smith (QB) | NYJ | BUF | 패싱 225야드 이상 | **58.3%** | - | - | Active |
-| 8 | Adonai Mitchell (WR) | NYJ | BUF | 리시빙 36.5야드 이상 | **57.2%** | -114 | +4.0%p | Questionable |
-| 9 | Keon Coleman (WR) | BUF | NYJ | 리시빙 28.5야드 이상 | **56.1%** | -114 | +2.9%p | Active |
-| 10 | Josh Allen (QB) | BUF | NYJ | 패싱 TD 2개 이상 | **55.5%** | - | - | Active |
-| 11 | Braelon Allen (RB) | NYJ | BUF | 리시빙 6.5야드 이상 | **54.7%** | -114 | +1.4%p | Active |
-| 12 | James Cook (RB) | BUF | NYJ | 러싱 91.5야드 이상 | **54.6%** | -114 | +1.4%p | Active |
-| 13 | Breece Hall (RB) | NYJ | BUF | 러싱 52.5야드 이상 | **51.1%** | -114 | -2.2%p | Active |
-| 14 | Braelon Allen (RB) | NYJ | BUF | 애니타임 터치다운 | **36.3%** | +160 | -2.2%p | Active |
-| 15 | DJ Moore (WR) | BUF | NYJ | 애니타임 터치다운 | **31.6%** | +190 | -2.8%p | Active |
+| 1 | Garrett Wilson (WR) | NYJ | BUF | 리셉션 4개 이상 | **67.3%** | - | - | Questionable |
+| 2 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **63.8%** | -165 | +1.5%p | Active |
+| 3 | Dalton Kincaid (TE) | BUF | NYJ | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 4 | Omar Cooper Jr. (WR) | NYJ | BUF | 리셉션 4개 이상 | **61.6%** | - | - | Questionable |
+| 5 | Adonai Mitchell (WR) | NYJ | BUF | 리시빙 36.5야드 이상 | **58.3%** | -114 | +5.0%p | Questionable |
+| 6 | Geno Smith (QB) | NYJ | BUF | 패싱 225야드 이상 | **57.3%** | - | - | Active |
+| 7 | Keon Coleman (WR) | BUF | NYJ | 리시빙 28.5야드 이상 | **56.2%** | -114 | +2.9%p | Active |
+| 8 | Josh Allen (QB) | BUF | NYJ | 패싱 TD 2개 이상 | **56.1%** | - | - | Active |
+| 9 | Josh Allen (QB) | BUF | NYJ | 패싱 250야드 이상 | **54.9%** | - | - | Active |
+| 10 | James Cook (RB) | BUF | NYJ | 러싱 91.5야드 이상 | **54.6%** | -114 | +1.4%p | Active |
+| 11 | Braelon Allen (RB) | NYJ | BUF | 리시빙 6.5야드 이상 | **54.6%** | -114 | +1.3%p | Active |
+| 12 | Dawson Knox (TE) | BUF | NYJ | 리시빙 11.5야드 이상 | **53.9%** | -114 | +0.7%p | Active |
+| 13 | Breece Hall (RB) | NYJ | BUF | 러싱 52.5야드 이상 | **50.2%** | -114 | -3.1%p | Active |
+| 14 | Braelon Allen (RB) | NYJ | BUF | 애니타임 터치다운 | **35.8%** | +160 | -2.7%p | Active |
+| 15 | DJ Moore (WR) | BUF | NYJ | 애니타임 터치다운 | **30.9%** | +190 | -3.6%p | Active |
 
 ### JAX @ TEN · 2026-11-15 13:00 ET · Nissan Stadium
 스프레드 TEN +10.5 · 총점 46.5 · 예상 점수 JAX 28.5 – TEN 18.0
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Trevor Lawrence (QB) | JAX | TEN | 패싱 225야드 이상 | **67.2%** | - | - | Active |
-| 2 | Brenton Strange (TE) | JAX | TEN | 리셉션 3개 이상 | **63.7%** | - | - | Active |
-| 3 | Wan'Dale Robinson (WR) | TEN | JAX | 리셉션 4개 이상 | **61.6%** | - | - | Active |
-| 4 | Trevor Lawrence (QB) | JAX | TEN | 패싱 TD 2개 이상 | **60.0%** | - | - | Active |
-| 5 | Wan'Dale Robinson (WR) | TEN | JAX | 리시빙 37.5야드 이상 | **59.4%** | -114 | +6.2%p | Active |
-| 6 | Parker Washington (WR) | JAX | TEN | 리셉션 4개 이상 | **58.5%** | - | - | Active |
-| 7 | Cam Ward (QB) | TEN | JAX | 패싱 200야드 이상 | **58.1%** | - | - | Active |
-| 8 | Jakobi Meyers (WR) | JAX | TEN | 리시빙 41.5야드 이상 | **57.1%** | -114 | +3.8%p | Active |
-| 9 | Nate Boerkircher (TE) | JAX | TEN | 리시빙 10.5야드 이상 | **56.8%** | -114 | +3.6%p | Active |
-| 10 | Josh Cameron (WR) | JAX | TEN | 리시빙 6.5야드 이상 | **55.1%** | -114 | +1.8%p | Active |
-| 11 | Cam Ward (QB) | TEN | JAX | 러싱 11.5야드 이상 | **51.8%** | -114 | -1.5%p | Active |
-| 12 | Chris Rodriguez Jr. (RB) | JAX | TEN | 러싱 30.5야드 이상 | **50.4%** | -114 | -2.9%p | Active |
-| 13 | Tony Pollard (RB) | TEN | JAX | 러싱 58.5야드 이상 | **46.5%** | -114 | -6.8%p | Active |
-| 14 | Bhayshul Tuten (RB) | JAX | TEN | 애니타임 터치다운 | **46.4%** | -120 | -8.1%p | Active |
-| 15 | Tony Pollard (RB) | TEN | JAX | 애니타임 터치다운 | **41.5%** | +120 | -4.0%p | Active |
+| 1 | Brenton Strange (TE) | JAX | TEN | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 2 | Wan'Dale Robinson (WR) | TEN | JAX | 리셉션 4개 이상 | **61.6%** | - | - | Active |
+| 3 | Trevor Lawrence (QB) | JAX | TEN | 패싱 TD 2개 이상 | **60.0%** | - | - | Active |
+| 4 | Cam Ward (QB) | TEN | JAX | 패싱 200야드 이상 | **58.1%** | - | - | Active |
+| 5 | Wan'Dale Robinson (WR) | TEN | JAX | 리시빙 37.5야드 이상 | **57.5%** | -114 | +4.3%p | Active |
+| 6 | Nate Boerkircher (TE) | JAX | TEN | 리시빙 10.5야드 이상 | **56.6%** | -114 | +3.4%p | Active |
+| 7 | Trevor Lawrence (QB) | JAX | TEN | 패싱 250야드 이상 | **55.0%** | - | - | Active |
+| 8 | Josh Cameron (WR) | JAX | TEN | 리시빙 6.5야드 이상 | **54.8%** | -114 | +1.5%p | Active |
+| 9 | Jakobi Meyers (WR) | JAX | TEN | 리시빙 41.5야드 이상 | **54.6%** | -114 | +1.4%p | Active |
+| 10 | Cam Ward (QB) | TEN | JAX | 러싱 11.5야드 이상 | **51.8%** | -114 | -1.5%p | Active |
+| 11 | Chris Rodriguez Jr. (RB) | JAX | TEN | 러싱 30.5야드 이상 | **50.8%** | -114 | -2.4%p | Active |
+| 12 | Tony Pollard (RB) | TEN | JAX | 러싱 58.5야드 이상 | **48.8%** | -114 | -4.5%p | Active |
+| 13 | Bhayshul Tuten (RB) | JAX | TEN | 애니타임 터치다운 | **45.7%** | -120 | -8.9%p | Active |
+| 14 | Tony Pollard (RB) | TEN | JAX | 애니타임 터치다운 | **41.7%** | +120 | -3.8%p | Active |
+| 15 | Parker Washington (WR) | JAX | TEN | 애니타임 터치다운 | **34.4%** | +130 | -9.1%p | Active |
 
 ### LA @ ARI · 2026-11-15 16:05 ET · State Farm Stadium
 스프레드 ARI +9.5 · 총점 39.5 · 예상 점수 LA 24.5 – ARI 15.0
@@ -259,18 +259,18 @@
 | 1 | Tyler Higbee (TE) | LA | ARI | 리셉션 3개 이상 | **63.7%** | - | - | Active |
 | 2 | Colby Parkinson (TE) | LA | ARI | 리셉션 4개 이상 | **61.6%** | - | - | Active |
 | 3 | Kyren Williams (RB) | LA | ARI | 리셉션 4개 이상 | **61.6%** | - | - |  |
-| 4 | Matthew Stafford (QB) | LA | ARI | 패싱 225야드 이상 | **60.2%** | - | - |  |
+| 4 | Matthew Stafford (QB) | LA | ARI | 패싱 225야드 이상 | **60.6%** | - | - |  |
 | 5 | Trey McBride (TE) | ARI | LA | 리셉션 6개 이상 | **59.7%** | - | - |  |
-| 6 | Kyren Williams (RB) | LA | ARI | 리시빙 19.5야드 이상 | **56.8%** | -114 | +3.5%p |  |
+| 6 | Kyren Williams (RB) | LA | ARI | 리시빙 19.5야드 이상 | **56.7%** | -114 | +3.5%p |  |
 | 7 | Tyler Allgeier (RB) | ARI | LA | 러싱 34.5야드 이상 | **56.3%** | -114 | +3.0%p |  |
 | 8 | Matthew Stafford (QB) | LA | ARI | 패싱 TD 2개 이상 | **56.1%** | - | - |  |
-| 9 | Davis Allen (TE) | LA | ARI | 리시빙 13.5야드 이상 | **55.5%** | -114 | +2.2%p | Questionable |
-| 10 | Blake Corum (RB) | LA | ARI | 리시빙 6.5야드 이상 | **54.8%** | -114 | +1.5%p |  |
-| 11 | Bam Knight (RB) | ARI | LA | 리시빙 6.5야드 이상 | **54.7%** | -114 | +1.5%p | Active |
-| 12 | Jacoby Brissett (QB) | ARI | LA | 러싱 5.5야드 이상 | **50.4%** | -114 | -2.9%p | Active |
+| 9 | Davis Allen (TE) | LA | ARI | 리시빙 13.5야드 이상 | **55.7%** | -114 | +2.4%p | Questionable |
+| 10 | Bam Knight (RB) | ARI | LA | 리시빙 6.5야드 이상 | **55.0%** | -114 | +1.8%p | Active |
+| 11 | Blake Corum (RB) | LA | ARI | 리시빙 6.5야드 이상 | **54.7%** | -114 | +1.5%p |  |
+| 12 | Jacoby Brissett (QB) | ARI | LA | 러싱 5.5야드 이상 | **50.3%** | -114 | -2.9%p | Active |
 | 13 | Blake Corum (RB) | LA | ARI | 애니타임 터치다운 | **43.9%** | +115 | -2.6%p |  |
-| 14 | Davis Allen (TE) | LA | ARI | 애니타임 터치다운 | **19.0%** | +550 | +3.7%p | Questionable |
-| 15 | Bam Knight (RB) | ARI | LA | 애니타임 터치다운 | **18.5%** | +290 | -7.2%p | Active |
+| 14 | Davis Allen (TE) | LA | ARI | 애니타임 터치다운 | **19.3%** | +550 | +3.9%p | Questionable |
+| 15 | Bam Knight (RB) | ARI | LA | 애니타임 터치다운 | **18.4%** | +290 | -7.2%p | Active |
 
 ### SEA @ LV · 2026-11-15 16:05 ET · Allegiant Stadium
 스프레드 LV +6.5 · 총점 40.5 · 예상 점수 SEA 23.5 – LV 17.0
@@ -319,20 +319,20 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Tee Higgins (WR) | CIN | PIT | 리셉션 4개 이상 | **68.1%** | - | - | Active |
-| 2 | Joe Burrow (QB) | CIN | PIT | 패싱 225야드 이상 | **67.2%** | - | - | Active |
-| 3 | Aaron Rodgers (QB) | PIT | CIN | 패싱 225야드 이상 | **63.0%** | - | - | Active |
+| 1 | Joe Burrow (QB) | CIN | PIT | 패싱 225야드 이상 | **67.2%** | - | - | Active |
+| 2 | Aaron Rodgers (QB) | PIT | CIN | 패싱 225야드 이상 | **65.0%** | - | - | Active |
+| 3 | Ja'Marr Chase (WR) | CIN | PIT | 리셉션 6개 이상 | **61.6%** | - | - | Active |
 | 4 | DK Metcalf (WR) | PIT | CIN | 리셉션 4개 이상 | **61.6%** | - | - | Active |
 | 5 | Chase Brown (RB) | CIN | PIT | 리셉션 4개 이상 | **61.6%** | - | - | Active |
 | 6 | Germie Bernard (WR) | PIT | CIN | 리셉션 4개 이상 | **61.6%** | - | - | Active |
 | 7 | Joe Burrow (QB) | CIN | PIT | 패싱 TD 2개 이상 | **60.6%** | - | - | Active |
-| 8 | Chase Brown (RB) | CIN | PIT | 러싱 46.5야드 이상 | **56.5%** | -114 | +3.3%p | Active |
+| 8 | Chase Brown (RB) | CIN | PIT | 러싱 46.5야드 이상 | **56.7%** | -114 | +3.4%p | Active |
 | 9 | Aaron Rodgers (QB) | PIT | CIN | 패싱 TD 2개 이상 | **56.1%** | - | - | Active |
-| 10 | Rico Dowdle (RB) | PIT | CIN | 러싱 30.5야드 이상 | **52.0%** | -114 | -1.3%p | Active |
-| 11 | Samaje Perine (RB) | CIN | PIT | 러싱 17.5야드 이상 | **50.5%** | -114 | -2.7%p | Active |
-| 12 | Dohnte Meyers (WR) | CIN | PIT | 리시빙 19.5야드 이상 | **50.1%** | -114 | -3.2%p | Active |
-| 13 | Darnell Washington (TE) | PIT | CIN | 리시빙 28.5야드 이상 | **47.3%** | -114 | -6.0%p | Active |
-| 14 | DK Metcalf (WR) | PIT | CIN | 리시빙 53.5야드 이상 | **46.5%** | -114 | -6.7%p | Active |
+| 10 | Rico Dowdle (RB) | PIT | CIN | 러싱 30.5야드 이상 | **51.7%** | -114 | -1.6%p | Active |
+| 11 | Samaje Perine (RB) | CIN | PIT | 러싱 17.5야드 이상 | **50.6%** | -114 | -2.7%p | Active |
+| 12 | Dohnte Meyers (WR) | CIN | PIT | 리시빙 19.5야드 이상 | **50.1%** | -114 | -3.1%p | Active |
+| 13 | DK Metcalf (WR) | PIT | CIN | 리시빙 53.5야드 이상 | **47.8%** | -114 | -5.5%p | Active |
+| 14 | Darnell Washington (TE) | PIT | CIN | 리시빙 28.5야드 이상 | **47.3%** | -114 | -6.0%p | Active |
 | 15 | Mike Gesicki (TE) | CIN | PIT | 리시빙 23.5야드 이상 | **44.1%** | -114 | -9.2%p | Active |
 
 ### LAC @ BAL · 2026-11-16 20:15 ET · M&T Bank Stadium
@@ -341,16 +341,16 @@
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Zay Flowers (WR) | BAL | LAC | 리셉션 4개 이상 | **67.4%** | - | - | Active |
-| 2 | Omarion Hampton (RB) | LAC | BAL | 러싱 31.5야드 이상 | **60.1%** | -114 | +6.8%p | Active |
-| 3 | Justin Herbert (QB) | LAC | BAL | 패싱 200야드 이상 | **58.9%** | - | - | Active |
+| 2 | Justin Herbert (QB) | LAC | BAL | 패싱 200야드 이상 | **60.2%** | - | - | Active |
+| 3 | Omarion Hampton (RB) | LAC | BAL | 러싱 31.5야드 이상 | **60.1%** | -114 | +6.8%p | Active |
 | 4 | Josh Cuevas (TE) | BAL | LAC | 리시빙 7.5야드 이상 | **56.7%** | -108 | +4.8%p | Active |
-| 5 | Justice Hill (RB) | BAL | LAC | 러싱 12.5야드 이상 | **56.5%** | -114 | +3.3%p | Active |
+| 5 | Justice Hill (RB) | BAL | LAC | 러싱 12.5야드 이상 | **56.4%** | -114 | +3.2%p | Active |
 | 6 | Kimani Vidal (RB) | LAC | BAL | 러싱 18.5야드 이상 | **55.7%** | -114 | +2.4%p | Active |
 | 7 | Keaton Mitchell (RB) | LAC | BAL | 러싱 11.5야드 이상 | **55.1%** | -114 | +1.8%p | Questionable |
 | 8 | Justice Hill (RB) | BAL | LAC | 리시빙 11.5야드 이상 | **54.5%** | -114 | +1.2%p | Active |
 | 9 | Mark Andrews (TE) | BAL | LAC | 리시빙 21.5야드 이상 | **53.9%** | -114 | +0.7%p | Active |
 | 10 | Omarion Hampton (RB) | LAC | BAL | 리시빙 4.5야드 이상 | **48.0%** | -114 | -5.2%p | Active |
 | 11 | Mark Andrews (TE) | BAL | LAC | 애니타임 터치다운 | **18.9%** | +340 | -3.8%p | Active |
-| 12 | Quentin Johnston (WR) | LAC | BAL | 애니타임 터치다운 | **17.8%** | +490 | +0.8%p | Active |
-| 13 | Ladd McConkey (WR) | LAC | BAL | 애니타임 터치다운 | **17.7%** | +330 | -5.6%p | Questionable |
-| 14 | Tre Harris (WR) | LAC | BAL | 애니타임 터치다운 | **17.1%** | +330 | -6.2%p | Active |
+| 12 | Quentin Johnston (WR) | LAC | BAL | 애니타임 터치다운 | **17.9%** | +490 | +0.9%p | Active |
+| 13 | Ladd McConkey (WR) | LAC | BAL | 애니타임 터치다운 | **17.7%** | +330 | -5.5%p | Questionable |
+| 14 | Tre Harris (WR) | LAC | BAL | 애니타임 터치다운 | **17.2%** | +330 | -6.1%p | Active |

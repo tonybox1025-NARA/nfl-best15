@@ -1,11 +1,11 @@
 {
  "season": 2026,
  "week": 10,
- "generated_at": "2026-11-13 20:54 ET",
+ "generated_at": "2026-11-14 02:02 ET",
  "sources": {
-  "injuries": "NFL 공식 리포트 300건 · ESPN 실시간 800건",
+  "injuries": "NFL 공식 리포트 345건 · ESPN 실시간 800건",
   "weather": "날씨 10경기 (야외)",
-  "odds": "배당 34분 전 데이터 사용 (크레딧 절약)"
+  "odds": "배당 342분 전 데이터 사용 (크레딧 절약)"
  },
  "has_odds": true,
  "overall": {
@@ -65,75 +65,14 @@
      "carry_share": 0.0,
      "tgt_share": 0.234,
      "rz_share": 0.047,
-     "implied_total": 22.8,
-     "spread": 3.0,
+     "implied_total": 22.5,
+     "spread": 2.5,
      "wind": 3.0,
      "td_rate": 0.562
     }
    },
    {
     "rank": 2,
-    "player_id": "00-0036410",
-    "name": "Tee Higgins",
-    "pos": "WR",
-    "team": "CIN",
-    "opp": "PIT",
-    "market": "receptions",
-    "line": 3.5,
-    "label": "리셉션 4개 이상",
-    "prob": 68.1,
-    "status": "Active",
-    "game_id": "2026_10_PIT_CIN",
-    "odds": null,
-    "implied": null,
-    "edge": null,
-    "model_prob": null,
-    "market_prob": null,
-    "check": null,
-    "detail": {
-     "recent": [
-      {
-       "wk": 4,
-       "opp": "JAX",
-       "val": 11.0
-      },
-      {
-       "wk": 5,
-       "opp": "MIA",
-       "val": 2.0
-      },
-      {
-       "wk": 7,
-       "opp": "BAL",
-       "val": 6.0
-      },
-      {
-       "wk": 8,
-       "opp": "TEN",
-       "val": 10.0
-      },
-      {
-       "wk": 9,
-       "opp": "ATL",
-       "val": 5.0
-      }
-     ],
-     "need": 4.0,
-     "recent_hits": 4,
-     "mu": 4.9,
-     "def_rank": 10.0,
-     "def_allowed": 12.0,
-     "carry_share": 0.0,
-     "tgt_share": 0.219,
-     "rz_share": 0.112,
-     "implied_total": 26.5,
-     "spread": 3.5,
-     "wind": 3.0,
-     "td_rate": 0.625
-    }
-   },
-   {
-    "rank": 3,
     "player_id": "00-0040128",
     "name": "Tyler Warren",
     "pos": "TE",
@@ -194,7 +133,7 @@
     }
    },
    {
-    "rank": 4,
+    "rank": 3,
     "player_id": "00-0037238",
     "name": "Drake London",
     "pos": "WR",
@@ -203,7 +142,7 @@
     "market": "receptions",
     "line": 3.5,
     "label": "리셉션 4개 이상",
-    "prob": 67.5,
+    "prob": 67.4,
     "status": "Active",
     "game_id": "2026_10_KC_ATL",
     "odds": null,
@@ -250,8 +189,69 @@
      "rz_share": 0.064,
      "implied_total": 22.2,
      "spread": -3.0,
-     "wind": 2.0,
+     "wind": 4.0,
      "td_rate": 0.25
+    }
+   },
+   {
+    "rank": 4,
+    "player_id": "00-0039064",
+    "name": "Zay Flowers",
+    "pos": "WR",
+    "team": "BAL",
+    "opp": "LAC",
+    "market": "receptions",
+    "line": 3.5,
+    "label": "리셉션 4개 이상",
+    "prob": 67.4,
+    "status": "Active",
+    "game_id": "2026_10_LAC_BAL",
+    "odds": null,
+    "implied": null,
+    "edge": null,
+    "model_prob": null,
+    "market_prob": null,
+    "check": null,
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "ATL",
+       "val": 8.0
+      },
+      {
+       "wk": 6,
+       "opp": "CLE",
+       "val": 6.0
+      },
+      {
+       "wk": 7,
+       "opp": "CIN",
+       "val": 8.0
+      },
+      {
+       "wk": 8,
+       "opp": "BUF",
+       "val": 0.0
+      },
+      {
+       "wk": 9,
+       "opp": "JAX",
+       "val": 3.0
+      }
+     ],
+     "need": 4.0,
+     "recent_hits": 3,
+     "mu": 4.8,
+     "def_rank": 12.0,
+     "def_allowed": 11.5,
+     "carry_share": 0.028,
+     "tgt_share": 0.308,
+     "rz_share": 0.041,
+     "implied_total": 21.5,
+     "spread": 4.5,
+     "wind": 4.0,
+     "td_rate": 0.438
     }
    },
    {
@@ -303,7 +303,7 @@
      ],
      "need": 225.0,
      "recent_hits": 4,
-     "mu": 275.2,
+     "mu": 275.6,
      "def_rank": 11.0,
      "def_allowed": 242.0,
      "carry_share": 0.123,
@@ -311,73 +311,12 @@
      "rz_share": 0.169,
      "implied_total": 26.5,
      "spread": 3.5,
-     "wind": 3.0,
+     "wind": 1.0,
      "td_rate": 0.188
     }
    },
    {
     "rank": 6,
-    "player_id": "00-0036971",
-    "name": "Trevor Lawrence",
-    "pos": "QB",
-    "team": "JAX",
-    "opp": "TEN",
-    "market": "pass_yds",
-    "line": 224.5,
-    "label": "패싱 225야드 이상",
-    "prob": 67.2,
-    "status": "Active",
-    "game_id": "2026_10_JAX_TEN",
-    "odds": null,
-    "implied": null,
-    "edge": null,
-    "model_prob": null,
-    "market_prob": null,
-    "check": null,
-    "detail": {
-     "recent": [
-      {
-       "wk": 4,
-       "opp": "CIN",
-       "val": 227.0
-      },
-      {
-       "wk": 5,
-       "opp": "PHI",
-       "val": 331.0
-      },
-      {
-       "wk": 6,
-       "opp": "HOU",
-       "val": 306.0
-      },
-      {
-       "wk": 8,
-       "opp": "IND",
-       "val": 210.0
-      },
-      {
-       "wk": 9,
-       "opp": "BAL",
-       "val": 242.0
-      }
-     ],
-     "need": 225.0,
-     "recent_hits": 4,
-     "mu": 275.9,
-     "def_rank": 2.0,
-     "def_allowed": 272.8,
-     "carry_share": 0.102,
-     "tgt_share": 0.0,
-     "rz_share": 0.039,
-     "implied_total": 28.5,
-     "spread": 10.5,
-     "wind": 5.0,
-     "td_rate": 0.188
-    }
-   },
-   {
-    "rank": 7,
     "player_id": "00-0039851",
     "name": "Drake Maye",
     "pos": "QB",
@@ -438,7 +377,7 @@
     }
    },
    {
-    "rank": 8,
+    "rank": 7,
     "player_id": "00-0033280",
     "name": "Christian McCaffrey",
     "pos": "RB",
@@ -499,18 +438,18 @@
     }
    },
    {
-    "rank": 9,
-    "player_id": "00-0034857",
-    "name": "Josh Allen",
+    "rank": 8,
+    "player_id": "00-0023459",
+    "name": "Aaron Rodgers",
     "pos": "QB",
-    "team": "BUF",
-    "opp": "NYJ",
+    "team": "PIT",
+    "opp": "CIN",
     "market": "pass_yds",
     "line": 224.5,
     "label": "패싱 225야드 이상",
-    "prob": 64.6,
+    "prob": 65.0,
     "status": "Active",
-    "game_id": "2026_10_BUF_NYJ",
+    "game_id": "2026_10_PIT_CIN",
     "odds": null,
     "implied": null,
     "edge": null,
@@ -521,42 +460,103 @@
      "recent": [
       {
        "wk": 4,
-       "opp": "NE",
-       "val": 253.0
+       "opp": "CLE",
+       "val": 299.0
       },
       {
        "wk": 5,
-       "opp": "LA",
-       "val": 210.0
+       "opp": "IND",
+       "val": 235.0
       },
       {
        "wk": 6,
-       "opp": "LV",
-       "val": 255.0
+       "opp": "TB",
+       "val": 253.0
+      },
+      {
+       "wk": 7,
+       "opp": "NO",
+       "val": 212.0
       },
       {
        "wk": 8,
-       "opp": "BAL",
-       "val": 289.0
-      },
-      {
-       "wk": 9,
-       "opp": "MIN",
-       "val": 234.0
+       "opp": "CLE",
+       "val": 172.0
       }
      ],
      "need": 225.0,
-     "recent_hits": 4,
-     "mu": 264.6,
-     "def_rank": 20.0,
-     "def_allowed": 221.1,
-     "carry_share": 0.219,
-     "tgt_share": 0.002,
-     "rz_share": 0.201,
-     "implied_total": 29.5,
-     "spread": 8.5,
-     "wind": 12.0,
-     "td_rate": 0.625
+     "recent_hits": 3,
+     "mu": 266.1,
+     "def_rank": 9.0,
+     "def_allowed": 248.6,
+     "carry_share": 0.05,
+     "tgt_share": 0.0,
+     "rz_share": 0.001,
+     "implied_total": 23.0,
+     "spread": -3.5,
+     "wind": 1.0,
+     "td_rate": 0.062
+    }
+   },
+   {
+    "rank": 9,
+    "player_id": "00-0033077",
+    "name": "Dak Prescott",
+    "pos": "QB",
+    "team": "DAL",
+    "opp": "SF",
+    "market": "pass_yds",
+    "line": 224.5,
+    "label": "패싱 225야드 이상",
+    "prob": 64.2,
+    "status": "Active",
+    "game_id": "2026_10_SF_DAL",
+    "odds": null,
+    "implied": null,
+    "edge": null,
+    "model_prob": null,
+    "market_prob": null,
+    "check": null,
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "TB",
+       "val": 316.0
+      },
+      {
+       "wk": 6,
+       "opp": "GB",
+       "val": 258.0
+      },
+      {
+       "wk": 7,
+       "opp": "PHI",
+       "val": 212.0
+      },
+      {
+       "wk": 8,
+       "opp": "ARI",
+       "val": 195.0
+      },
+      {
+       "wk": 9,
+       "opp": "IND",
+       "val": 335.0
+      }
+     ],
+     "need": 225.0,
+     "recent_hits": 3,
+     "mu": 264.3,
+     "def_rank": 18.0,
+     "def_allowed": 222.9,
+     "carry_share": 0.098,
+     "tgt_share": 0.0,
+     "rz_share": 0.047,
+     "implied_total": 25.5,
+     "spread": -4.5,
+     "wind": 10.0,
+     "td_rate": 0.125
     }
    },
    {
@@ -569,13 +569,13 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 64.0,
+    "prob": 63.8,
     "status": "Active",
     "game_id": "2026_10_BUF_NYJ",
     "odds": -165.0,
     "implied": 62.3,
-    "edge": 1.7,
-    "model_prob": 68.5,
+    "edge": 1.5,
+    "model_prob": 68.2,
     "market_prob": 55.6,
     "check": false,
     "detail": {
@@ -616,7 +616,7 @@
      "rz_share": 0.355,
      "implied_total": 29.5,
      "spread": 8.5,
-     "wind": 12.0,
+     "wind": 11.0,
      "td_rate": 0.562
     }
    },
@@ -683,67 +683,6 @@
    },
    {
     "rank": 12,
-    "player_id": "00-0038134",
-    "name": "Kenneth Walker III",
-    "pos": "RB",
-    "team": "KC",
-    "opp": "ATL",
-    "market": "rush_yds",
-    "line": 69.5,
-    "label": "러싱 70야드 이상",
-    "prob": 62.4,
-    "status": "Questionable",
-    "game_id": "2026_10_KC_ATL",
-    "odds": null,
-    "implied": null,
-    "edge": null,
-    "model_prob": null,
-    "market_prob": null,
-    "check": null,
-    "detail": {
-     "recent": [
-      {
-       "wk": 4,
-       "opp": "LV",
-       "val": 177.0
-      },
-      {
-       "wk": 6,
-       "opp": "LAC",
-       "val": 128.0
-      },
-      {
-       "wk": 7,
-       "opp": "SEA",
-       "val": 36.0
-      },
-      {
-       "wk": 8,
-       "opp": "DEN",
-       "val": 69.0
-      },
-      {
-       "wk": 9,
-       "opp": "NYJ",
-       "val": 102.0
-      }
-     ],
-     "need": 70.0,
-     "recent_hits": 3,
-     "mu": 96.6,
-     "def_rank": 3.0,
-     "def_allowed": 115.1,
-     "carry_share": 0.721,
-     "tgt_share": 0.13,
-     "rz_share": 0.499,
-     "implied_total": 25.2,
-     "spread": 3.0,
-     "wind": 2.0,
-     "td_rate": 0.5
-    }
-   },
-   {
-    "rank": 13,
     "player_id": "00-0038797",
     "name": "Emanuel Wilson",
     "pos": "RB",
@@ -804,7 +743,7 @@
     }
    },
    {
-    "rank": 14,
+    "rank": 13,
     "player_id": "00-0039139",
     "name": "Jahmyr Gibbs",
     "pos": "RB",
@@ -862,6 +801,67 @@
      "spread": 2.5,
      "wind": 0.0,
      "td_rate": 0.688
+    }
+   },
+   {
+    "rank": 14,
+    "player_id": "00-0038134",
+    "name": "Kenneth Walker III",
+    "pos": "RB",
+    "team": "KC",
+    "opp": "ATL",
+    "market": "rush_yds",
+    "line": 69.5,
+    "label": "러싱 70야드 이상",
+    "prob": 61.3,
+    "status": "Questionable",
+    "game_id": "2026_10_KC_ATL",
+    "odds": null,
+    "implied": null,
+    "edge": null,
+    "model_prob": null,
+    "market_prob": null,
+    "check": null,
+    "detail": {
+     "recent": [
+      {
+       "wk": 4,
+       "opp": "LV",
+       "val": 177.0
+      },
+      {
+       "wk": 6,
+       "opp": "LAC",
+       "val": 128.0
+      },
+      {
+       "wk": 7,
+       "opp": "SEA",
+       "val": 36.0
+      },
+      {
+       "wk": 8,
+       "opp": "DEN",
+       "val": 69.0
+      },
+      {
+       "wk": 9,
+       "opp": "NYJ",
+       "val": 102.0
+      }
+     ],
+     "need": 70.0,
+     "recent_hits": 3,
+     "mu": 94.9,
+     "def_rank": 3.0,
+     "def_allowed": 115.1,
+     "carry_share": 0.721,
+     "tgt_share": 0.13,
+     "rz_share": 0.499,
+     "implied_total": 25.2,
+     "spread": 3.0,
+     "wind": 4.0,
+     "td_rate": 0.5
     }
    },
    {
@@ -929,67 +929,6 @@
   "edge": [
    {
     "rank": 1,
-    "player_id": "00-0040736",
-    "name": "Mason Taylor",
-    "pos": "TE",
-    "team": "NYJ",
-    "opp": "BUF",
-    "market": "rec_yds",
-    "line": 15.5,
-    "label": "리시빙 15.5야드 이상",
-    "prob": 60.7,
-    "status": "Active",
-    "game_id": "2026_10_BUF_NYJ",
-    "odds": -114.0,
-    "implied": 53.3,
-    "edge": 7.4,
-    "model_prob": 65.9,
-    "market_prob": 51.0,
-    "check": false,
-    "detail": {
-     "recent": [
-      {
-       "wk": 5,
-       "opp": "CLE",
-       "val": 24.0
-      },
-      {
-       "wk": 6,
-       "opp": "NE",
-       "val": 33.0
-      },
-      {
-       "wk": 7,
-       "opp": "MIA",
-       "val": 62.0
-      },
-      {
-       "wk": 8,
-       "opp": "LV",
-       "val": 19.0
-      },
-      {
-       "wk": 9,
-       "opp": "KC",
-       "val": 11.0
-      }
-     ],
-     "need": 16.0,
-     "recent_hits": 4,
-     "mu": 30.1,
-     "def_rank": 4.0,
-     "def_allowed": 65.9,
-     "carry_share": 0.0,
-     "tgt_share": 0.151,
-     "rz_share": 0.009,
-     "implied_total": 21.0,
-     "spread": -8.5,
-     "wind": 12.0,
-     "td_rate": 0.125
-    }
-   },
-   {
-    "rank": 2,
     "player_id": "00-0040666",
     "name": "Omarion Hampton",
     "pos": "RB",
@@ -1045,12 +984,12 @@
      "rz_share": 0.389,
      "implied_total": 17.0,
      "spread": -4.5,
-     "wind": 5.0,
+     "wind": 4.0,
      "td_rate": 0.5
     }
    },
    {
-    "rank": 3,
+    "rank": 2,
     "player_id": "00-0036997",
     "name": "Javonte Williams",
     "pos": "RB",
@@ -1111,68 +1050,7 @@
     }
    },
    {
-    "rank": 4,
-    "player_id": "00-0038117",
-    "name": "Wan'Dale Robinson",
-    "pos": "WR",
-    "team": "TEN",
-    "opp": "JAX",
-    "market": "rec_yds",
-    "line": 37.5,
-    "label": "리시빙 37.5야드 이상",
-    "prob": 59.4,
-    "status": "Active",
-    "game_id": "2026_10_JAX_TEN",
-    "odds": -114.0,
-    "implied": 53.3,
-    "edge": 6.2,
-    "model_prob": 64.0,
-    "market_prob": 51.0,
-    "check": false,
-    "detail": {
-     "recent": [
-      {
-       "wk": 4,
-       "opp": "BAL",
-       "val": 19.0
-      },
-      {
-       "wk": 5,
-       "opp": "HOU",
-       "val": 53.0
-      },
-      {
-       "wk": 6,
-       "opp": "IND",
-       "val": 22.0
-      },
-      {
-       "wk": 7,
-       "opp": "CLE",
-       "val": 7.0
-      },
-      {
-       "wk": 8,
-       "opp": "CIN",
-       "val": 57.0
-      }
-     ],
-     "need": 38.0,
-     "recent_hits": 2,
-     "mu": 53.0,
-     "def_rank": 5.0,
-     "def_allowed": 174.5,
-     "carry_share": 0.004,
-     "tgt_share": 0.237,
-     "rz_share": 0.058,
-     "implied_total": 18.0,
-     "spread": -10.5,
-     "wind": 5.0,
-     "td_rate": 0.312
-    }
-   },
-   {
-    "rank": 5,
+    "rank": 3,
     "player_id": "00-0039894",
     "name": "Xavier Worthy",
     "pos": "WR",
@@ -1181,13 +1059,13 @@
     "market": "rec_yds",
     "line": 26.5,
     "label": "리시빙 26.5야드 이상",
-    "prob": 59.1,
+    "prob": 58.7,
     "status": "Active",
     "game_id": "2026_10_KC_ATL",
     "odds": -114.0,
     "implied": 53.3,
-    "edge": 5.8,
-    "model_prob": 63.5,
+    "edge": 5.5,
+    "model_prob": 62.9,
     "market_prob": 51.0,
     "check": false,
     "detail": {
@@ -1220,7 +1098,7 @@
      ],
      "need": 27.0,
      "recent_hits": 3,
-     "mu": 42.6,
+     "mu": 41.8,
      "def_rank": 9.0,
      "def_allowed": 162.9,
      "carry_share": 0.006,
@@ -1228,12 +1106,12 @@
      "rz_share": 0.075,
      "implied_total": 25.2,
      "spread": 3.0,
-     "wind": 2.0,
+     "wind": 4.0,
      "td_rate": 0.062
     }
    },
    {
-    "rank": 6,
+    "rank": 4,
     "player_id": "00-0037291",
     "name": "Jalen Nailor",
     "pos": "WR",
@@ -1294,64 +1172,186 @@
     }
    },
    {
-    "rank": 7,
-    "player_id": "00-0039811",
-    "name": "MarShawn Lloyd",
-    "pos": "RB",
-    "team": "GB",
-    "opp": "MIN",
-    "market": "rush_yds",
-    "line": 16.5,
-    "label": "러싱 16.5야드 이상",
-    "prob": 56.8,
-    "status": "Active",
-    "game_id": "2026_10_MIN_GB",
+    "rank": 5,
+    "player_id": "00-0039890",
+    "name": "Adonai Mitchell",
+    "pos": "WR",
+    "team": "NYJ",
+    "opp": "BUF",
+    "market": "rec_yds",
+    "line": 36.5,
+    "label": "리시빙 36.5야드 이상",
+    "prob": 58.3,
+    "status": "Questionable",
+    "game_id": "2026_10_BUF_NYJ",
     "odds": -114.0,
     "implied": 53.3,
-    "edge": 3.5,
-    "model_prob": 59.9,
+    "edge": 5.0,
+    "model_prob": 62.2,
+    "market_prob": 51.0,
+    "check": false,
+    "detail": {
+     "recent": [
+      {
+       "wk": 1,
+       "opp": "TEN",
+       "val": 60.0
+      },
+      {
+       "wk": 2,
+       "opp": "GB",
+       "val": 63.0
+      },
+      {
+       "wk": 7,
+       "opp": "MIA",
+       "val": 0.0
+      },
+      {
+       "wk": 8,
+       "opp": "LV",
+       "val": 142.0
+      },
+      {
+       "wk": 9,
+       "opp": "KC",
+       "val": 0.0
+      }
+     ],
+     "need": 37.0,
+     "recent_hits": 3,
+     "mu": 49.0,
+     "def_rank": 14.0,
+     "def_allowed": 146.2,
+     "carry_share": 0.001,
+     "tgt_share": 0.217,
+     "rz_share": 0.165,
+     "implied_total": 21.0,
+     "spread": -8.5,
+     "wind": 11.0,
+     "td_rate": 0.188
+    }
+   },
+   {
+    "rank": 6,
+    "player_id": "00-0040887",
+    "name": "Josh Cuevas",
+    "pos": "TE",
+    "team": "BAL",
+    "opp": "LAC",
+    "market": "rec_yds",
+    "line": 7.5,
+    "label": "리시빙 7.5야드 이상",
+    "prob": 56.7,
+    "status": "Active",
+    "game_id": "2026_10_LAC_BAL",
+    "odds": -108.0,
+    "implied": 51.9,
+    "edge": 4.8,
+    "model_prob": 60.5,
+    "market_prob": 49.7,
+    "check": false,
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "ATL",
+       "val": 26.0
+      },
+      {
+       "wk": 6,
+       "opp": "CLE",
+       "val": 44.0
+      },
+      {
+       "wk": 7,
+       "opp": "CIN",
+       "val": 35.0
+      },
+      {
+       "wk": 8,
+       "opp": "BUF",
+       "val": 15.0
+      },
+      {
+       "wk": 9,
+       "opp": "JAX",
+       "val": 0.0
+      }
+     ],
+     "need": 8.0,
+     "recent_hits": 4,
+     "mu": 17.0,
+     "def_rank": 13.0,
+     "def_allowed": 51.1,
+     "carry_share": 0.0,
+     "tgt_share": 0.061,
+     "rz_share": 0.043,
+     "implied_total": 21.5,
+     "spread": 4.5,
+     "wind": 4.0,
+     "td_rate": 0.125
+    }
+   },
+   {
+    "rank": 7,
+    "player_id": "00-0038597",
+    "name": "Chase Brown",
+    "pos": "RB",
+    "team": "CIN",
+    "opp": "PIT",
+    "market": "rush_yds",
+    "line": 46.5,
+    "label": "러싱 46.5야드 이상",
+    "prob": 56.7,
+    "status": "Active",
+    "game_id": "2026_10_PIT_CIN",
+    "odds": -114.0,
+    "implied": 53.3,
+    "edge": 3.4,
+    "model_prob": 59.8,
     "market_prob": 51.0,
     "check": false,
     "detail": {
      "recent": [
       {
        "wk": 4,
-       "opp": "TB",
-       "val": 13.0
-      },
-      {
-       "wk": 5,
-       "opp": "CHI",
-       "val": 31.0
-      },
-      {
-       "wk": 6,
-       "opp": "DAL",
+       "opp": "JAX",
        "val": 10.0
       },
       {
+       "wk": 5,
+       "opp": "MIA",
+       "val": 39.0
+      },
+      {
        "wk": 7,
-       "opp": "DET",
-       "val": 20.0
+       "opp": "BAL",
+       "val": 39.0
       },
       {
        "wk": 8,
-       "opp": "CAR",
-       "val": 7.0
+       "opp": "TEN",
+       "val": 55.0
+      },
+      {
+       "wk": 9,
+       "opp": "ATL",
+       "val": 57.0
       }
      ],
-     "need": 17.0,
+     "need": 47.0,
      "recent_hits": 2,
-     "mu": 27.6,
-     "def_rank": 11.0,
-     "def_allowed": 103.9,
-     "carry_share": 0.289,
-     "tgt_share": 0.054,
-     "rz_share": 0.158,
-     "implied_total": 22.8,
-     "spread": 3.0,
-     "wind": 3.0,
-     "td_rate": 0.2
+     "mu": 56.2,
+     "def_rank": 24.0,
+     "def_allowed": 70.0,
+     "carry_share": 0.551,
+     "tgt_share": 0.148,
+     "rz_share": 0.212,
+     "implied_total": 26.5,
+     "spread": 3.5,
+     "wind": 1.0,
+     "td_rate": 0.312
     }
    },
    {
@@ -1364,13 +1364,13 @@
     "market": "rush_yds",
     "line": 12.5,
     "label": "러싱 12.5야드 이상",
-    "prob": 56.5,
+    "prob": 56.4,
     "status": "Active",
     "game_id": "2026_10_LAC_BAL",
     "odds": -114.0,
     "implied": 53.3,
-    "edge": 3.3,
-    "model_prob": 59.5,
+    "edge": 3.2,
+    "model_prob": 59.4,
     "market_prob": 51.0,
     "check": false,
     "detail": {
@@ -1403,7 +1403,7 @@
      ],
      "need": 13.0,
      "recent_hits": 3,
-     "mu": 24.7,
+     "mu": 24.5,
      "def_rank": 10.0,
      "def_allowed": 105.0,
      "carry_share": 0.129,
@@ -1411,7 +1411,7 @@
      "rz_share": 0.057,
      "implied_total": 21.5,
      "spread": 4.5,
-     "wind": 5.0,
+     "wind": 4.0,
      "td_rate": 0.188
     }
    },
@@ -1425,13 +1425,13 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 64.0,
+    "prob": 63.8,
     "status": "Active",
     "game_id": "2026_10_BUF_NYJ",
     "odds": -165.0,
     "implied": 62.3,
-    "edge": 1.7,
-    "model_prob": 68.5,
+    "edge": 1.5,
+    "model_prob": 68.2,
     "market_prob": 55.6,
     "check": false,
     "detail": {
@@ -1472,7 +1472,7 @@
      "rz_share": 0.355,
      "implied_total": 29.5,
      "spread": 8.5,
-     "wind": 12.0,
+     "wind": 11.0,
      "td_rate": 0.562
     }
    }
@@ -1549,13 +1549,13 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 64.0,
+    "prob": 63.8,
     "status": "Active",
     "game_id": "2026_10_BUF_NYJ",
     "odds": -165.0,
     "implied": 62.3,
-    "edge": 1.7,
-    "model_prob": 68.5,
+    "edge": 1.5,
+    "model_prob": 68.2,
     "market_prob": 55.6,
     "check": false,
     "detail": {
@@ -1596,7 +1596,7 @@
      "rz_share": 0.355,
      "implied_total": 29.5,
      "spread": 8.5,
-     "wind": 12.0,
+     "wind": 11.0,
      "td_rate": 0.562
     }
    },
@@ -1732,13 +1732,13 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 56.2,
+    "prob": 56.1,
     "status": "Questionable",
     "game_id": "2026_10_KC_ATL",
     "odds": -180.0,
     "implied": 64.3,
-    "edge": -8.1,
-    "model_prob": 55.5,
+    "edge": -8.2,
+    "model_prob": 55.4,
     "market_prob": 57.4,
     "check": false,
     "detail": {
@@ -1779,7 +1779,7 @@
      "rz_share": 0.499,
      "implied_total": 25.2,
      "spread": 3.0,
-     "wind": 2.0,
+     "wind": 4.0,
      "td_rate": 0.5
     }
    },
@@ -1798,8 +1798,8 @@
     "game_id": "2026_10_LA_ARI",
     "odds": -140.0,
     "implied": 58.3,
-    "edge": -3.7,
-    "model_prob": 56.0,
+    "edge": -3.8,
+    "model_prob": 55.9,
     "market_prob": 52.1,
     "check": false,
     "detail": {
@@ -1840,7 +1840,7 @@
      "rz_share": 0.442,
      "implied_total": 24.5,
      "spread": 9.5,
-     "wind": 4.0,
+     "wind": 1.0,
      "td_rate": 0.625
     }
    },
@@ -1854,13 +1854,13 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 51.1,
+    "prob": 51.0,
     "status": "Active",
     "game_id": "2026_10_BUF_NYJ",
     "odds": -170.0,
     "implied": 63.0,
-    "edge": -11.9,
-    "model_prob": 48.3,
+    "edge": -12.0,
+    "model_prob": 48.1,
     "market_prob": 56.2,
     "check": false,
     "detail": {
@@ -1901,7 +1901,7 @@
      "rz_share": 0.201,
      "implied_total": 29.5,
      "spread": 8.5,
-     "wind": 12.0,
+     "wind": 11.0,
      "td_rate": 0.625
     }
    },
@@ -2037,13 +2037,13 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 46.4,
+    "prob": 45.7,
     "status": "Active",
     "game_id": "2026_10_JAX_TEN",
     "odds": -120.0,
     "implied": 54.5,
-    "edge": -8.1,
-    "model_prob": 45.2,
+    "edge": -8.9,
+    "model_prob": 44.1,
     "market_prob": 48.7,
     "check": false,
     "detail": {
@@ -2084,7 +2084,7 @@
      "rz_share": 0.229,
      "implied_total": 28.5,
      "spread": 10.5,
-     "wind": 5.0,
+     "wind": 8.0,
      "td_rate": 0.562
     }
    },
@@ -2104,7 +2104,7 @@
     "odds": -135.0,
     "implied": 57.4,
     "edge": -12.8,
-    "model_prob": 41.1,
+    "model_prob": 41.0,
     "market_prob": 51.3,
     "check": false,
     "detail": {
@@ -2145,7 +2145,7 @@
      "rz_share": 0.554,
      "implied_total": 21.5,
      "spread": 4.5,
-     "wind": 5.0,
+     "wind": 4.0,
      "td_rate": 0.625
     }
    },
@@ -2165,7 +2165,7 @@
     "odds": 115.0,
     "implied": 46.5,
     "edge": -2.6,
-    "model_prob": 45.2,
+    "model_prob": 45.1,
     "market_prob": 41.5,
     "check": false,
     "detail": {
@@ -2206,7 +2206,7 @@
      "rz_share": 0.096,
      "implied_total": 24.5,
      "spread": 9.5,
-     "wind": 4.0,
+     "wind": 1.0,
      "td_rate": 0.438
     }
    },
@@ -2267,7 +2267,7 @@
      "rz_share": 0.212,
      "implied_total": 26.5,
      "spread": 3.5,
-     "wind": 3.0,
+     "wind": 1.0,
      "td_rate": 0.312
     }
    },
@@ -2572,8 +2572,8 @@
      "carry_share": 0.0,
      "tgt_share": 0.026,
      "rz_share": 0.0,
-     "implied_total": 19.8,
-     "spread": -3.0,
+     "implied_total": 20.0,
+     "spread": -2.5,
      "wind": 3.0,
      "td_rate": 0.0
     }
@@ -2588,13 +2588,13 @@
     "market": "rush_yds",
     "line": 27.5,
     "label": "러싱 27.5야드 이상",
-    "prob": 71.0,
+    "prob": 71.3,
     "status": "Active",
     "game_id": "2026_10_MIN_GB",
     "odds": -114.0,
     "implied": 53.3,
-    "edge": 17.7,
-    "model_prob": 81.7,
+    "edge": 18.0,
+    "model_prob": 82.2,
     "market_prob": 51.0,
     "check": true,
     "detail": {
@@ -2627,14 +2627,14 @@
      ],
      "need": 28.0,
      "recent_hits": 2,
-     "mu": 57.8,
+     "mu": 59.4,
      "def_rank": 15.0,
      "def_allowed": 92.5,
      "carry_share": 0.48,
      "tgt_share": 0.097,
      "rz_share": 0.193,
-     "implied_total": 19.8,
-     "spread": -3.0,
+     "implied_total": 20.0,
+     "spread": -2.5,
      "wind": 3.0,
      "td_rate": 0.25
     }
@@ -2649,13 +2649,13 @@
     "market": "rush_yds",
     "line": 33.5,
     "label": "러싱 33.5야드 이상",
-    "prob": 69.3,
+    "prob": 69.1,
     "status": "Active",
     "game_id": "2026_10_BUF_NYJ",
     "odds": -114.0,
     "implied": 53.3,
-    "edge": 16.0,
-    "model_prob": 79.1,
+    "edge": 15.8,
+    "model_prob": 78.9,
     "market_prob": 51.0,
     "check": true,
     "detail": {
@@ -2688,7 +2688,7 @@
      ],
      "need": 34.0,
      "recent_hits": 4,
-     "mu": 63.7,
+     "mu": 63.1,
      "def_rank": 19.0,
      "def_allowed": 77.6,
      "carry_share": 0.541,
@@ -2696,7 +2696,7 @@
      "rz_share": 0.226,
      "implied_total": 21.0,
      "spread": -8.5,
-     "wind": 12.0,
+     "wind": 11.0,
      "td_rate": 0.25
     }
    },
@@ -2824,6 +2824,67 @@
    },
    {
     "rank": 8,
+    "player_id": "00-0040705",
+    "name": "Chimere Dike",
+    "pos": "WR",
+    "team": "TEN",
+    "opp": "JAX",
+    "market": "rec_yds",
+    "line": 29.5,
+    "label": "리시빙 29.5야드 이상",
+    "prob": 33.8,
+    "status": "Active",
+    "game_id": "2026_10_JAX_TEN",
+    "odds": -114.0,
+    "implied": 53.3,
+    "edge": -19.4,
+    "model_prob": 24.6,
+    "market_prob": 51.0,
+    "check": true,
+    "detail": {
+     "recent": [
+      {
+       "wk": 4,
+       "opp": "BAL",
+       "val": 15.0
+      },
+      {
+       "wk": 5,
+       "opp": "HOU",
+       "val": 28.0
+      },
+      {
+       "wk": 6,
+       "opp": "IND",
+       "val": 0.0
+      },
+      {
+       "wk": 7,
+       "opp": "CLE",
+       "val": 0.0
+      },
+      {
+       "wk": 8,
+       "opp": "CIN",
+       "val": 71.0
+      }
+     ],
+     "need": 30.0,
+     "recent_hits": 1,
+     "mu": 20.1,
+     "def_rank": 5.0,
+     "def_allowed": 174.5,
+     "carry_share": 0.003,
+     "tgt_share": 0.075,
+     "rz_share": 0.03,
+     "implied_total": 18.0,
+     "spread": -10.5,
+     "wind": 8.0,
+     "td_rate": 0.25
+    }
+   },
+   {
+    "rank": 9,
     "player_id": "00-0041132",
     "name": "Deion Burks",
     "pos": "WR",
@@ -2884,7 +2945,7 @@
     }
    },
    {
-    "rank": 9,
+    "rank": 10,
     "player_id": "00-0036322",
     "name": "Justin Jefferson",
     "pos": "WR",
@@ -2893,13 +2954,13 @@
     "market": "rec_yds",
     "line": 80.5,
     "label": "리시빙 80.5야드 이상",
-    "prob": 35.7,
+    "prob": 35.8,
     "status": "Active",
     "game_id": "2026_10_MIN_GB",
     "odds": -114.0,
     "implied": 53.3,
-    "edge": -17.6,
-    "model_prob": 27.4,
+    "edge": -17.5,
+    "model_prob": 27.6,
     "market_prob": 51.0,
     "check": true,
     "detail": {
@@ -2932,142 +2993,20 @@
      ],
      "need": 81.0,
      "recent_hits": 0,
-     "mu": 63.0,
+     "mu": 63.2,
      "def_rank": 8.0,
      "def_allowed": 163.9,
      "carry_share": 0.004,
      "tgt_share": 0.302,
      "rz_share": 0.169,
-     "implied_total": 19.8,
-     "spread": -3.0,
+     "implied_total": 20.0,
+     "spread": -2.5,
      "wind": 3.0,
      "td_rate": 0.188
     }
    },
    {
-    "rank": 10,
-    "player_id": "00-0036410",
-    "name": "Tee Higgins",
-    "pos": "WR",
-    "team": "CIN",
-    "opp": "PIT",
-    "market": "rec_yds",
-    "line": 75.5,
-    "label": "리시빙 75.5야드 이상",
-    "prob": 35.9,
-    "status": "Active",
-    "game_id": "2026_10_PIT_CIN",
-    "odds": -114.0,
-    "implied": 53.3,
-    "edge": -17.4,
-    "model_prob": 27.7,
-    "market_prob": 51.0,
-    "check": true,
-    "detail": {
-     "recent": [
-      {
-       "wk": 4,
-       "opp": "JAX",
-       "val": 157.0
-      },
-      {
-       "wk": 5,
-       "opp": "MIA",
-       "val": 22.0
-      },
-      {
-       "wk": 7,
-       "opp": "BAL",
-       "val": 148.0
-      },
-      {
-       "wk": 8,
-       "opp": "TEN",
-       "val": 155.0
-      },
-      {
-       "wk": 9,
-       "opp": "ATL",
-       "val": 32.0
-      }
-     ],
-     "need": 76.0,
-     "recent_hits": 3,
-     "mu": 59.5,
-     "def_rank": 17.0,
-     "def_allowed": 138.5,
-     "carry_share": 0.0,
-     "tgt_share": 0.219,
-     "rz_share": 0.112,
-     "implied_total": 26.5,
-     "spread": 3.5,
-     "wind": 3.0,
-     "td_rate": 0.625
-    }
-   },
-   {
     "rank": 11,
-    "player_id": "00-0040705",
-    "name": "Chimere Dike",
-    "pos": "WR",
-    "team": "TEN",
-    "opp": "JAX",
-    "market": "rec_yds",
-    "line": 29.5,
-    "label": "리시빙 29.5야드 이상",
-    "prob": 36.0,
-    "status": "Active",
-    "game_id": "2026_10_JAX_TEN",
-    "odds": -114.0,
-    "implied": 53.3,
-    "edge": -17.3,
-    "model_prob": 27.9,
-    "market_prob": 51.0,
-    "check": true,
-    "detail": {
-     "recent": [
-      {
-       "wk": 4,
-       "opp": "BAL",
-       "val": 15.0
-      },
-      {
-       "wk": 5,
-       "opp": "HOU",
-       "val": 28.0
-      },
-      {
-       "wk": 6,
-       "opp": "IND",
-       "val": 0.0
-      },
-      {
-       "wk": 7,
-       "opp": "CLE",
-       "val": 0.0
-      },
-      {
-       "wk": 8,
-       "opp": "CIN",
-       "val": 71.0
-      }
-     ],
-     "need": 30.0,
-     "recent_hits": 1,
-     "mu": 21.8,
-     "def_rank": 5.0,
-     "def_allowed": 174.5,
-     "carry_share": 0.003,
-     "tgt_share": 0.075,
-     "rz_share": 0.03,
-     "implied_total": 18.0,
-     "spread": -10.5,
-     "wind": 5.0,
-     "td_rate": 0.25
-    }
-   },
-   {
-    "rank": 12,
     "player_id": "00-0040729",
     "name": "Jack Bech",
     "pos": "WR",
@@ -3128,7 +3067,7 @@
     }
    },
    {
-    "rank": 13,
+    "rank": 12,
     "player_id": "00-0040648",
     "name": "Tory Horton",
     "pos": "WR",
@@ -3189,7 +3128,7 @@
     }
    },
    {
-    "rank": 14,
+    "rank": 13,
     "player_id": "00-0039851",
     "name": "Drake Maye",
     "pos": "QB",
@@ -3250,6 +3189,67 @@
     }
    },
    {
+    "rank": 14,
+    "player_id": "00-0037157",
+    "name": "Bam Knight",
+    "pos": "RB",
+    "team": "ARI",
+    "opp": "LA",
+    "market": "rush_yds",
+    "line": 29.5,
+    "label": "러싱 29.5야드 이상",
+    "prob": 36.7,
+    "status": "Active",
+    "game_id": "2026_10_LA_ARI",
+    "odds": -114.0,
+    "implied": 53.3,
+    "edge": -16.6,
+    "model_prob": 29.0,
+    "market_prob": 51.0,
+    "check": true,
+    "detail": {
+     "recent": [
+      {
+       "wk": 2,
+       "opp": "SEA",
+       "val": 24.0
+      },
+      {
+       "wk": 5,
+       "opp": "DET",
+       "val": 8.0
+      },
+      {
+       "wk": 6,
+       "opp": "LA",
+       "val": 80.0
+      },
+      {
+       "wk": 7,
+       "opp": "DEN",
+       "val": 48.0
+      },
+      {
+       "wk": 8,
+       "opp": "DAL",
+       "val": 8.0
+      }
+     ],
+     "need": 30.0,
+     "recent_hits": 2,
+     "mu": 22.7,
+     "def_rank": 24.0,
+     "def_allowed": 70.0,
+     "carry_share": 0.252,
+     "tgt_share": 0.058,
+     "rz_share": 0.15,
+     "implied_total": 15.0,
+     "spread": -9.5,
+     "wind": 1.0,
+     "td_rate": 0.312
+    }
+   },
+   {
     "rank": 15,
     "player_id": "00-0037238",
     "name": "Drake London",
@@ -3306,7 +3306,7 @@
      "rz_share": 0.064,
      "implied_total": 22.2,
      "spread": -3.0,
-     "wind": 2.0,
+     "wind": 4.0,
      "td_rate": 0.25
     }
    }
@@ -4391,8 +4391,8 @@
     "home": 22.2
    },
    "weather": {
-    "temp_f": 54,
-    "wind_mph": 2,
+    "temp_f": 53,
+    "wind_mph": 4,
     "precip_pct": 0
    },
    "notes": [],
@@ -4535,7 +4535,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 67.5,
+     "prob": 67.4,
      "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "odds": null,
@@ -4582,7 +4582,7 @@
       "rz_share": 0.064,
       "implied_total": 22.2,
       "spread": -3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.25
      }
     },
@@ -4635,7 +4635,7 @@
       ],
       "need": 3.0,
       "recent_hits": 4,
-      "mu": 3.5,
+      "mu": 3.4,
       "def_rank": 3.0,
       "def_allowed": 6.6,
       "carry_share": 0.0,
@@ -4643,7 +4643,7 @@
       "rz_share": 0.211,
       "implied_total": 22.2,
       "spread": -3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.312
      }
     },
@@ -4704,7 +4704,7 @@
       "rz_share": 0.309,
       "implied_total": 22.2,
       "spread": -3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.5
      }
     },
@@ -4718,7 +4718,7 @@
      "market": "rush_yds",
      "line": 69.5,
      "label": "러싱 70야드 이상",
-     "prob": 62.4,
+     "prob": 61.3,
      "status": "Questionable",
      "game_id": "2026_10_KC_ATL",
      "odds": null,
@@ -4757,7 +4757,7 @@
       ],
       "need": 70.0,
       "recent_hits": 3,
-      "mu": 96.6,
+      "mu": 94.9,
       "def_rank": 3.0,
       "def_allowed": 115.1,
       "carry_share": 0.721,
@@ -4765,12 +4765,73 @@
       "rz_share": 0.499,
       "implied_total": 25.2,
       "spread": 3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.5
      }
     },
     {
      "rank": 5,
+     "player_id": "00-0033873",
+     "name": "Patrick Mahomes",
+     "pos": "QB",
+     "team": "KC",
+     "opp": "ATL",
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 59.8,
+     "status": "Active",
+     "game_id": "2026_10_KC_ATL",
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "model_prob": null,
+     "market_prob": null,
+     "check": null,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "LV",
+        "val": 225.0
+       },
+       {
+        "wk": 6,
+        "opp": "LAC",
+        "val": 272.0
+       },
+       {
+        "wk": 7,
+        "opp": "SEA",
+        "val": 165.0
+       },
+       {
+        "wk": 8,
+        "opp": "DEN",
+        "val": 321.0
+       },
+       {
+        "wk": 9,
+        "opp": "NYJ",
+        "val": 242.0
+       }
+      ],
+      "need": 225.0,
+      "recent_hits": 4,
+      "mu": 237.1,
+      "def_rank": 10.0,
+      "def_allowed": 243.8,
+      "carry_share": 0.105,
+      "tgt_share": 0.001,
+      "rz_share": 0.051,
+      "implied_total": 25.2,
+      "spread": 3.0,
+      "wind": 4.0,
+      "td_rate": 0.125
+     }
+    },
+    {
+     "rank": 6,
      "player_id": "00-0030506",
      "name": "Travis Kelce",
      "pos": "TE",
@@ -4826,69 +4887,8 @@
       "rz_share": 0.033,
       "implied_total": 25.2,
       "spread": 3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.312
-     }
-    },
-    {
-     "rank": 6,
-     "player_id": "00-0033873",
-     "name": "Patrick Mahomes",
-     "pos": "QB",
-     "team": "KC",
-     "opp": "ATL",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 59.8,
-     "status": "Active",
-     "game_id": "2026_10_KC_ATL",
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "model_prob": null,
-     "market_prob": null,
-     "check": null,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "LV",
-        "val": 225.0
-       },
-       {
-        "wk": 6,
-        "opp": "LAC",
-        "val": 272.0
-       },
-       {
-        "wk": 7,
-        "opp": "SEA",
-        "val": 165.0
-       },
-       {
-        "wk": 8,
-        "opp": "DEN",
-        "val": 321.0
-       },
-       {
-        "wk": 9,
-        "opp": "NYJ",
-        "val": 242.0
-       }
-      ],
-      "need": 225.0,
-      "recent_hits": 4,
-      "mu": 237.4,
-      "def_rank": 10.0,
-      "def_allowed": 243.8,
-      "carry_share": 0.105,
-      "tgt_share": 0.001,
-      "rz_share": 0.051,
-      "implied_total": 25.2,
-      "spread": 3.0,
-      "wind": 2.0,
-      "td_rate": 0.125
      }
     },
     {
@@ -4901,13 +4901,13 @@
      "market": "rec_yds",
      "line": 26.5,
      "label": "리시빙 26.5야드 이상",
-     "prob": 59.1,
+     "prob": 58.7,
      "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 5.8,
-     "model_prob": 63.5,
+     "edge": 5.5,
+     "model_prob": 62.9,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -4940,7 +4940,7 @@
       ],
       "need": 27.0,
       "recent_hits": 3,
-      "mu": 42.6,
+      "mu": 41.8,
       "def_rank": 9.0,
       "def_allowed": 162.9,
       "carry_share": 0.006,
@@ -4948,7 +4948,7 @@
       "rz_share": 0.075,
       "implied_total": 25.2,
       "spread": 3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.062
      }
     },
@@ -4962,7 +4962,7 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 56.3,
+     "prob": 57.9,
      "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "odds": null,
@@ -5001,7 +5001,7 @@
       ],
       "need": 225.0,
       "recent_hits": 2,
-      "mu": 225.7,
+      "mu": 228.0,
       "def_rank": 21.0,
       "def_allowed": 220.5,
       "carry_share": 0.113,
@@ -5009,7 +5009,7 @@
       "rz_share": 0.009,
       "implied_total": 22.2,
       "spread": -3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.062
      }
     },
@@ -5023,13 +5023,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 56.2,
+     "prob": 56.1,
      "status": "Questionable",
      "game_id": "2026_10_KC_ATL",
      "odds": -180.0,
      "implied": 64.3,
-     "edge": -8.1,
-     "model_prob": 55.5,
+     "edge": -8.2,
+     "model_prob": 55.4,
      "market_prob": 57.4,
      "check": false,
      "detail": {
@@ -5070,7 +5070,7 @@
       "rz_share": 0.499,
       "implied_total": 25.2,
       "spread": 3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.5
      }
     },
@@ -5131,7 +5131,7 @@
       "rz_share": 0.021,
       "implied_total": 22.2,
       "spread": -3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.125
      }
     },
@@ -5145,13 +5145,13 @@
      "market": "rec_yds",
      "line": 54.5,
      "label": "리시빙 54.5야드 이상",
-     "prob": 52.7,
+     "prob": 52.5,
      "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -0.5,
-     "model_prob": 53.7,
+     "edge": -0.8,
+     "model_prob": 53.3,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -5184,7 +5184,7 @@
       ],
       "need": 55.0,
       "recent_hits": 2,
-      "mu": 65.9,
+      "mu": 65.5,
       "def_rank": 9.0,
       "def_allowed": 162.9,
       "carry_share": 0.005,
@@ -5192,7 +5192,7 @@
       "rz_share": 0.071,
       "implied_total": 25.2,
       "spread": 3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.5
      }
     },
@@ -5206,13 +5206,13 @@
      "market": "rec_yds",
      "line": 10.5,
      "label": "리시빙 10.5야드 이상",
-     "prob": 52.2,
+     "prob": 52.1,
      "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -1.0,
-     "model_prob": 52.9,
+     "edge": -1.1,
+     "model_prob": 52.8,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -5245,7 +5245,7 @@
       ],
       "need": 11.0,
       "recent_hits": 5,
-      "mu": 16.9,
+      "mu": 16.8,
       "def_rank": 16.0,
       "def_allowed": 48.8,
       "carry_share": 0.0,
@@ -5253,7 +5253,7 @@
       "rz_share": 0.046,
       "implied_total": 25.2,
       "spread": 3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.062
      }
     },
@@ -5267,13 +5267,13 @@
      "market": "rush_yds",
      "line": 8.5,
      "label": "러싱 8.5야드 이상",
-     "prob": 50.2,
+     "prob": 50.3,
      "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -3.1,
-     "model_prob": 49.7,
+     "edge": -3.0,
+     "model_prob": 49.9,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -5306,7 +5306,7 @@
       ],
       "need": 9.0,
       "recent_hits": 3,
-      "mu": 14.3,
+      "mu": 14.5,
       "def_rank": 20.0,
       "def_allowed": 73.8,
       "carry_share": 0.149,
@@ -5314,7 +5314,7 @@
       "rz_share": 0.083,
       "implied_total": 22.2,
       "spread": -3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.0
      }
     },
@@ -5328,13 +5328,13 @@
      "market": "rush_yds",
      "line": 7.5,
      "label": "러싱 7.5야드 이상",
-     "prob": 46.9,
+     "prob": 47.0,
      "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -6.4,
-     "model_prob": 44.7,
+     "edge": -6.2,
+     "model_prob": 44.9,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -5367,7 +5367,7 @@
       ],
       "need": 8.0,
       "recent_hits": 3,
-      "mu": 12.7,
+      "mu": 12.8,
       "def_rank": 10.0,
       "def_allowed": 15.4,
       "carry_share": 0.113,
@@ -5375,7 +5375,7 @@
       "rz_share": 0.009,
       "implied_total": 22.2,
       "spread": -3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.062
      }
     },
@@ -5436,7 +5436,7 @@
       "rz_share": 0.051,
       "implied_total": 25.2,
       "spread": 3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.125
      }
     }
@@ -5452,13 +5452,13 @@
      "market": "rec_yds",
      "line": 26.5,
      "label": "리시빙 26.5야드 이상",
-     "prob": 59.1,
+     "prob": 58.7,
      "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 5.8,
-     "model_prob": 63.5,
+     "edge": 5.5,
+     "model_prob": 62.9,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -5491,7 +5491,7 @@
       ],
       "need": 27.0,
       "recent_hits": 3,
-      "mu": 42.6,
+      "mu": 41.8,
       "def_rank": 9.0,
       "def_allowed": 162.9,
       "carry_share": 0.006,
@@ -5499,7 +5499,7 @@
       "rz_share": 0.075,
       "implied_total": 25.2,
       "spread": 3.0,
-      "wind": 2.0,
+      "wind": 4.0,
       "td_rate": 0.062
      }
     }
@@ -5519,9 +5519,9 @@
     "home": 18.0
    },
    "weather": {
-    "temp_f": 45,
-    "wind_mph": 14,
-    "precip_pct": 42
+    "temp_f": 46,
+    "wind_mph": 12,
+    "precip_pct": 45
    },
    "notes": [
     {
@@ -5720,7 +5720,7 @@
       "rz_share": 0.065,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.125
      }
     },
@@ -5781,12 +5781,73 @@
       "rz_share": 0.069,
       "implied_total": 18.0,
       "spread": -4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.438
      }
     },
     {
      "rank": 3,
+     "player_id": "00-0039163",
+     "name": "C.J. Stroud",
+     "pos": "QB",
+     "team": "HOU",
+     "opp": "CLE",
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 63.0,
+     "status": "",
+     "game_id": "2026_10_HOU_CLE",
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "model_prob": null,
+     "market_prob": null,
+     "check": null,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "DAL",
+        "val": 347.0
+       },
+       {
+        "wk": 5,
+        "opp": "TEN",
+        "val": 261.0
+       },
+       {
+        "wk": 6,
+        "opp": "JAX",
+        "val": 312.0
+       },
+       {
+        "wk": 7,
+        "opp": "NYG",
+        "val": 153.0
+       },
+       {
+        "wk": 9,
+        "opp": "LAC",
+        "val": 384.0
+       }
+      ],
+      "need": 225.0,
+      "recent_hits": 4,
+      "mu": 247.7,
+      "def_rank": 22.0,
+      "def_allowed": 217.1,
+      "carry_share": 0.097,
+      "tgt_share": 0.0,
+      "rz_share": 0.069,
+      "implied_total": 22.5,
+      "spread": 4.5,
+      "wind": 12.0,
+      "td_rate": 0.125
+     }
+    },
+    {
+     "rank": 4,
      "player_id": "00-0036554",
      "name": "Nico Collins",
      "pos": "WR",
@@ -5842,69 +5903,8 @@
       "rz_share": 0.102,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.375
-     }
-    },
-    {
-     "rank": 4,
-     "player_id": "00-0039163",
-     "name": "C.J. Stroud",
-     "pos": "QB",
-     "team": "HOU",
-     "opp": "CLE",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 61.4,
-     "status": "",
-     "game_id": "2026_10_HOU_CLE",
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "model_prob": null,
-     "market_prob": null,
-     "check": null,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "DAL",
-        "val": 347.0
-       },
-       {
-        "wk": 5,
-        "opp": "TEN",
-        "val": 261.0
-       },
-       {
-        "wk": 6,
-        "opp": "JAX",
-        "val": 312.0
-       },
-       {
-        "wk": 7,
-        "opp": "NYG",
-        "val": 153.0
-       },
-       {
-        "wk": 9,
-        "opp": "LAC",
-        "val": 384.0
-       }
-      ],
-      "need": 225.0,
-      "recent_hits": 4,
-      "mu": 246.1,
-      "def_rank": 22.0,
-      "def_allowed": 217.1,
-      "carry_share": 0.097,
-      "tgt_share": 0.0,
-      "rz_share": 0.069,
-      "implied_total": 22.5,
-      "spread": 4.5,
-      "wind": 14.0,
-      "td_rate": 0.125
      }
     },
     {
@@ -5964,7 +5964,7 @@
       "rz_share": 0.17,
       "implied_total": 18.0,
       "spread": -4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.3
      }
     },
@@ -5978,7 +5978,7 @@
      "market": "rush_yds",
      "line": 49.5,
      "label": "러싱 50야드 이상",
-     "prob": 60.1,
+     "prob": 59.6,
      "status": "Active",
      "game_id": "2026_10_HOU_CLE",
      "odds": null,
@@ -6017,7 +6017,7 @@
       ],
       "need": 50.0,
       "recent_hits": 4,
-      "mu": 66.5,
+      "mu": 66.3,
       "def_rank": 4.0,
       "def_allowed": 114.4,
       "carry_share": 0.552,
@@ -6025,7 +6025,7 @@
       "rz_share": 0.312,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.25
      }
     },
@@ -6086,7 +6086,7 @@
       "rz_share": 0.466,
       "implied_total": 18.0,
       "spread": -4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.188
      }
     },
@@ -6147,7 +6147,7 @@
       "rz_share": 0.069,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.125
      }
     },
@@ -6161,13 +6161,13 @@
      "market": "rec_yds",
      "line": 29.5,
      "label": "리시빙 29.5야드 이상",
-     "prob": 53.8,
+     "prob": 54.4,
      "status": "Active",
      "game_id": "2026_10_HOU_CLE",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 0.6,
-     "model_prob": 55.4,
+     "edge": 1.1,
+     "model_prob": 56.3,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -6200,7 +6200,7 @@
       ],
       "need": 30.0,
       "recent_hits": 4,
-      "mu": 38.4,
+      "mu": 39.4,
       "def_rank": 8.0,
       "def_allowed": 61.0,
       "carry_share": 0.0,
@@ -6208,7 +6208,7 @@
       "rz_share": 0.065,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.125
      }
     },
@@ -6222,13 +6222,13 @@
      "market": "rec_yds",
      "line": 29.5,
      "label": "리시빙 29.5야드 이상",
-     "prob": 53.3,
+     "prob": 54.3,
      "status": "Active",
      "game_id": "2026_10_HOU_CLE",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 0.0,
-     "model_prob": 54.5,
+     "edge": 1.0,
+     "model_prob": 56.1,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -6261,7 +6261,7 @@
       ],
       "need": 30.0,
       "recent_hits": 2,
-      "mu": 37.7,
+      "mu": 39.1,
       "def_rank": 16.0,
       "def_allowed": 138.6,
       "carry_share": 0.02,
@@ -6269,7 +6269,7 @@
       "rz_share": 0.096,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.125
      }
     },
@@ -6330,7 +6330,7 @@
       "rz_share": 0.17,
       "implied_total": 18.0,
       "spread": -4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.3
      }
     },
@@ -6344,13 +6344,13 @@
      "market": "rush_yds",
      "line": 18.5,
      "label": "러싱 18.5야드 이상",
-     "prob": 45.7,
+     "prob": 45.6,
      "status": "Active",
      "game_id": "2026_10_HOU_CLE",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -7.5,
-     "model_prob": 42.9,
+     "edge": -7.7,
+     "model_prob": 42.7,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -6383,7 +6383,7 @@
       ],
       "need": 19.0,
       "recent_hits": 3,
-      "mu": 21.1,
+      "mu": 21.0,
       "def_rank": 14.0,
       "def_allowed": 94.8,
       "carry_share": 0.182,
@@ -6391,7 +6391,7 @@
       "rz_share": 0.018,
       "implied_total": 18.0,
       "spread": -4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.062
      }
     },
@@ -6405,13 +6405,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 37.5,
+     "prob": 37.6,
      "status": "Active",
      "game_id": "2026_10_HOU_CLE",
      "odds": 140.0,
      "implied": 41.7,
-     "edge": -4.2,
-     "model_prob": 37.6,
+     "edge": -4.0,
+     "model_prob": 37.9,
      "market_prob": 37.2,
      "check": false,
      "detail": {
@@ -6452,7 +6452,7 @@
       "rz_share": 0.312,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.25
      }
     },
@@ -6466,13 +6466,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 30.8,
+     "prob": 31.0,
      "status": "Active",
      "game_id": "2026_10_HOU_CLE",
      "odds": 180.0,
      "implied": 35.7,
-     "edge": -4.9,
-     "model_prob": 30.2,
+     "edge": -4.8,
+     "model_prob": 30.5,
      "market_prob": 31.9,
      "check": false,
      "detail": {
@@ -6513,7 +6513,7 @@
       "rz_share": 0.466,
       "implied_total": 18.0,
       "spread": -4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.188
      }
     },
@@ -6533,7 +6533,7 @@
      "odds": 330.0,
      "implied": 23.3,
      "edge": 0.4,
-     "model_prob": 25.3,
+     "model_prob": 25.2,
      "market_prob": 20.8,
      "check": false,
      "detail": {
@@ -6574,7 +6574,7 @@
       "rz_share": 0.025,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.25
      }
     }
@@ -6637,7 +6637,7 @@
       "rz_share": 0.466,
       "implied_total": 18.0,
       "spread": -4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.188
      }
     },
@@ -6651,13 +6651,13 @@
      "market": "rec_yds",
      "line": 29.5,
      "label": "리시빙 29.5야드 이상",
-     "prob": 53.8,
+     "prob": 54.4,
      "status": "Active",
      "game_id": "2026_10_HOU_CLE",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 0.6,
-     "model_prob": 55.4,
+     "edge": 1.1,
+     "model_prob": 56.3,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -6690,7 +6690,7 @@
       ],
       "need": 30.0,
       "recent_hits": 4,
-      "mu": 38.4,
+      "mu": 39.4,
       "def_rank": 8.0,
       "def_allowed": 61.0,
       "carry_share": 0.0,
@@ -6698,7 +6698,7 @@
       "rz_share": 0.065,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.125
      }
     },
@@ -6712,13 +6712,13 @@
      "market": "rec_yds",
      "line": 29.5,
      "label": "리시빙 29.5야드 이상",
-     "prob": 53.3,
+     "prob": 54.3,
      "status": "Active",
      "game_id": "2026_10_HOU_CLE",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 0.0,
-     "model_prob": 54.5,
+     "edge": 1.0,
+     "model_prob": 56.1,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -6751,7 +6751,7 @@
       ],
       "need": 30.0,
       "recent_hits": 2,
-      "mu": 37.7,
+      "mu": 39.1,
       "def_rank": 16.0,
       "def_allowed": 138.6,
       "carry_share": 0.02,
@@ -6759,7 +6759,7 @@
       "rz_share": 0.096,
       "implied_total": 22.5,
       "spread": 4.5,
-      "wind": 14.0,
+      "wind": 12.0,
       "td_rate": 0.125
      }
     }
@@ -6772,14 +6772,14 @@
    "kickoff": "2026-11-15 13:00 ET",
    "stadium": "Lambeau Field",
    "roof": "outdoors",
-   "spread_home": 3.0,
+   "spread_home": 2.5,
    "total": 42.5,
    "proj": {
-    "away": 19.8,
-    "home": 22.8
+    "away": 20.0,
+    "home": 22.5
    },
    "weather": {
-    "temp_f": 41,
+    "temp_f": 37,
     "wind_mph": 3,
     "precip_pct": 0
    },
@@ -6964,8 +6964,8 @@
       "carry_share": 0.0,
       "tgt_share": 0.234,
       "rz_share": 0.047,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.562
      }
@@ -7025,8 +7025,8 @@
       "carry_share": 0.004,
       "tgt_share": 0.284,
       "rz_share": 0.127,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.375
      }
@@ -7041,7 +7041,7 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 59.8,
+     "prob": 59.4,
      "status": "",
      "game_id": "2026_10_MIN_GB",
      "odds": null,
@@ -7080,14 +7080,14 @@
       ],
       "need": 225.0,
       "recent_hits": 5,
-      "mu": 236.3,
+      "mu": 239.0,
       "def_rank": 24.0,
       "def_allowed": 186.9,
       "carry_share": 0.054,
       "tgt_share": 0.0,
       "rz_share": 0.025,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.125
      }
@@ -7147,8 +7147,8 @@
       "carry_share": 0.004,
       "tgt_share": 0.302,
       "rz_share": 0.169,
-      "implied_total": 19.8,
-      "spread": -3.0,
+      "implied_total": 20.0,
+      "spread": -2.5,
       "wind": 3.0,
       "td_rate": 0.188
      }
@@ -7208,75 +7208,14 @@
       "carry_share": 0.019,
       "tgt_share": 0.156,
       "rz_share": 0.046,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.438
      }
     },
     {
      "rank": 6,
-     "player_id": "00-0039811",
-     "name": "MarShawn Lloyd",
-     "pos": "RB",
-     "team": "GB",
-     "opp": "MIN",
-     "market": "rush_yds",
-     "line": 16.5,
-     "label": "러싱 16.5야드 이상",
-     "prob": 56.8,
-     "status": "Active",
-     "game_id": "2026_10_MIN_GB",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 3.5,
-     "model_prob": 59.9,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "TB",
-        "val": 13.0
-       },
-       {
-        "wk": 5,
-        "opp": "CHI",
-        "val": 31.0
-       },
-       {
-        "wk": 6,
-        "opp": "DAL",
-        "val": 10.0
-       },
-       {
-        "wk": 7,
-        "opp": "DET",
-        "val": 20.0
-       },
-       {
-        "wk": 8,
-        "opp": "CAR",
-        "val": 7.0
-       }
-      ],
-      "need": 17.0,
-      "recent_hits": 2,
-      "mu": 27.6,
-      "def_rank": 11.0,
-      "def_allowed": 103.9,
-      "carry_share": 0.289,
-      "tgt_share": 0.054,
-      "rz_share": 0.158,
-      "implied_total": 22.8,
-      "spread": 3.0,
-      "wind": 3.0,
-      "td_rate": 0.2
-     }
-    },
-    {
-     "rank": 7,
      "player_id": "00-0036264",
      "name": "Jordan Love",
      "pos": "QB",
@@ -7324,16 +7263,77 @@
       ],
       "need": 2.0,
       "recent_hits": 4,
-      "mu": 1.8,
+      "mu": 1.7,
       "def_rank": 25.0,
       "def_allowed": 0.6,
       "carry_share": 0.054,
       "tgt_share": 0.0,
       "rz_share": 0.025,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.125
+     }
+    },
+    {
+     "rank": 7,
+     "player_id": "00-0039811",
+     "name": "MarShawn Lloyd",
+     "pos": "RB",
+     "team": "GB",
+     "opp": "MIN",
+     "market": "rush_yds",
+     "line": 16.5,
+     "label": "러싱 16.5야드 이상",
+     "prob": 55.7,
+     "status": "Active",
+     "game_id": "2026_10_MIN_GB",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 2.4,
+     "model_prob": 58.3,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "TB",
+        "val": 13.0
+       },
+       {
+        "wk": 5,
+        "opp": "CHI",
+        "val": 31.0
+       },
+       {
+        "wk": 6,
+        "opp": "DAL",
+        "val": 10.0
+       },
+       {
+        "wk": 7,
+        "opp": "DET",
+        "val": 20.0
+       },
+       {
+        "wk": 8,
+        "opp": "CAR",
+        "val": 7.0
+       }
+      ],
+      "need": 17.0,
+      "recent_hits": 2,
+      "mu": 26.4,
+      "def_rank": 11.0,
+      "def_allowed": 103.9,
+      "carry_share": 0.289,
+      "tgt_share": 0.054,
+      "rz_share": 0.158,
+      "implied_total": 22.5,
+      "spread": 2.5,
+      "wind": 3.0,
+      "td_rate": 0.2
      }
     },
     {
@@ -7346,13 +7346,13 @@
      "market": "rush_yds",
      "line": 28.5,
      "label": "러싱 28.5야드 이상",
-     "prob": 56.0,
+     "prob": 55.7,
      "status": "Active",
      "game_id": "2026_10_MIN_GB",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 2.7,
-     "model_prob": 58.7,
+     "edge": 2.4,
+     "model_prob": 58.2,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -7385,14 +7385,14 @@
       ],
       "need": 29.0,
       "recent_hits": 2,
-      "mu": 40.2,
+      "mu": 39.8,
       "def_rank": 11.0,
       "def_allowed": 103.9,
       "carry_share": 0.255,
       "tgt_share": 0.006,
       "rz_share": 0.062,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.062
      }
@@ -7452,8 +7452,8 @@
       "carry_share": 0.422,
       "tgt_share": 0.039,
       "rz_share": 0.174,
-      "implied_total": 19.8,
-      "spread": -3.0,
+      "implied_total": 20.0,
+      "spread": -2.5,
       "wind": 3.0,
       "td_rate": 0.312
      }
@@ -7513,8 +7513,8 @@
       "carry_share": 0.48,
       "tgt_share": 0.097,
       "rz_share": 0.193,
-      "implied_total": 19.8,
-      "spread": -3.0,
+      "implied_total": 20.0,
+      "spread": -2.5,
       "wind": 3.0,
       "td_rate": 0.25
      }
@@ -7529,13 +7529,13 @@
      "market": "rec_yds",
      "line": 69.5,
      "label": "리시빙 69.5야드 이상",
-     "prob": 48.1,
+     "prob": 48.0,
      "status": "",
      "game_id": "2026_10_MIN_GB",
      "odds": -114.0,
      "implied": 53.3,
      "edge": -5.2,
-     "model_prob": 46.5,
+     "model_prob": 46.4,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -7568,14 +7568,14 @@
       ],
       "need": 70.0,
       "recent_hits": 4,
-      "mu": 74.3,
+      "mu": 74.1,
       "def_rank": 23.0,
       "def_allowed": 119.9,
       "carry_share": 0.004,
       "tgt_share": 0.284,
       "rz_share": 0.127,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.375
      }
@@ -7635,8 +7635,8 @@
       "carry_share": 0.019,
       "tgt_share": 0.156,
       "rz_share": 0.046,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.438
      }
@@ -7656,8 +7656,8 @@
      "game_id": "2026_10_MIN_GB",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -6.0,
-     "model_prob": 45.3,
+     "edge": -5.9,
+     "model_prob": 45.4,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -7690,81 +7690,20 @@
       ],
       "need": 46.0,
       "recent_hits": 3,
-      "mu": 45.3,
+      "mu": 45.4,
       "def_rank": 15.0,
       "def_allowed": 92.5,
       "carry_share": 0.422,
       "tgt_share": 0.039,
       "rz_share": 0.174,
-      "implied_total": 19.8,
-      "spread": -3.0,
+      "implied_total": 20.0,
+      "spread": -2.5,
       "wind": 3.0,
       "td_rate": 0.312
      }
     },
     {
      "rank": 14,
-     "player_id": "00-0040142",
-     "name": "Kaleb Johnson",
-     "pos": "RB",
-     "team": "GB",
-     "opp": "MIN",
-     "market": "td",
-     "line": null,
-     "label": "애니타임 터치다운",
-     "prob": 38.7,
-     "status": "Active",
-     "game_id": "2026_10_MIN_GB",
-     "odds": 195.0,
-     "implied": 33.9,
-     "edge": 4.8,
-     "model_prob": 43.3,
-     "market_prob": 30.3,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 3,
-        "opp": "ATL",
-        "val": 0.0
-       },
-       {
-        "wk": 4,
-        "opp": "TB",
-        "val": 0.0
-       },
-       {
-        "wk": 5,
-        "opp": "CHI",
-        "val": 0.0
-       },
-       {
-        "wk": 6,
-        "opp": "DAL",
-        "val": 0.0
-       },
-       {
-        "wk": 9,
-        "opp": "NE",
-        "val": 1.0
-       }
-      ],
-      "need": null,
-      "recent_hits": 1,
-      "mu": null,
-      "def_rank": 20.0,
-      "def_allowed": 0.6,
-      "carry_share": 0.255,
-      "tgt_share": 0.006,
-      "rz_share": 0.062,
-      "implied_total": 22.8,
-      "spread": 3.0,
-      "wind": 3.0,
-      "td_rate": 0.062
-     }
-    },
-    {
-     "rank": 15,
      "player_id": "00-0036322",
      "name": "Justin Jefferson",
      "pos": "WR",
@@ -7818,10 +7757,71 @@
       "carry_share": 0.004,
       "tgt_share": 0.302,
       "rz_share": 0.169,
-      "implied_total": 19.8,
-      "spread": -3.0,
+      "implied_total": 20.0,
+      "spread": -2.5,
       "wind": 3.0,
       "td_rate": 0.188
+     }
+    },
+    {
+     "rank": 15,
+     "player_id": "00-0040142",
+     "name": "Kaleb Johnson",
+     "pos": "RB",
+     "team": "GB",
+     "opp": "MIN",
+     "market": "td",
+     "line": null,
+     "label": "애니타임 터치다운",
+     "prob": 36.8,
+     "status": "Active",
+     "game_id": "2026_10_MIN_GB",
+     "odds": 195.0,
+     "implied": 33.9,
+     "edge": 2.9,
+     "model_prob": 40.4,
+     "market_prob": 30.3,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 3,
+        "opp": "ATL",
+        "val": 0.0
+       },
+       {
+        "wk": 4,
+        "opp": "TB",
+        "val": 0.0
+       },
+       {
+        "wk": 5,
+        "opp": "CHI",
+        "val": 0.0
+       },
+       {
+        "wk": 6,
+        "opp": "DAL",
+        "val": 0.0
+       },
+       {
+        "wk": 9,
+        "opp": "NE",
+        "val": 1.0
+       }
+      ],
+      "need": null,
+      "recent_hits": 1,
+      "mu": null,
+      "def_rank": 20.0,
+      "def_allowed": 0.6,
+      "carry_share": 0.255,
+      "tgt_share": 0.006,
+      "rz_share": 0.062,
+      "implied_total": 22.5,
+      "spread": 2.5,
+      "wind": 3.0,
+      "td_rate": 0.062
      }
     }
    ],
@@ -7836,13 +7836,13 @@
      "market": "rush_yds",
      "line": 16.5,
      "label": "러싱 16.5야드 이상",
-     "prob": 56.8,
+     "prob": 55.7,
      "status": "Active",
      "game_id": "2026_10_MIN_GB",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.5,
-     "model_prob": 59.9,
+     "edge": 2.4,
+     "model_prob": 58.3,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -7875,14 +7875,14 @@
       ],
       "need": 17.0,
       "recent_hits": 2,
-      "mu": 27.6,
+      "mu": 26.4,
       "def_rank": 11.0,
       "def_allowed": 103.9,
       "carry_share": 0.289,
       "tgt_share": 0.054,
       "rz_share": 0.158,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.2
      }
@@ -7897,13 +7897,13 @@
      "market": "rush_yds",
      "line": 28.5,
      "label": "러싱 28.5야드 이상",
-     "prob": 56.0,
+     "prob": 55.7,
      "status": "Active",
      "game_id": "2026_10_MIN_GB",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 2.7,
-     "model_prob": 58.7,
+     "edge": 2.4,
+     "model_prob": 58.2,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -7936,14 +7936,14 @@
       ],
       "need": 29.0,
       "recent_hits": 2,
-      "mu": 40.2,
+      "mu": 39.8,
       "def_rank": 11.0,
       "def_allowed": 103.9,
       "carry_share": 0.255,
       "tgt_share": 0.006,
       "rz_share": 0.062,
-      "implied_total": 22.8,
-      "spread": 3.0,
+      "implied_total": 22.5,
+      "spread": 2.5,
       "wind": 3.0,
       "td_rate": 0.062
      }
@@ -8003,8 +8003,8 @@
       "carry_share": 0.422,
       "tgt_share": 0.039,
       "rz_share": 0.174,
-      "implied_total": 19.8,
-      "spread": -3.0,
+      "implied_total": 20.0,
+      "spread": -2.5,
       "wind": 3.0,
       "td_rate": 0.312
      }
@@ -8025,7 +8025,7 @@
     "home": 21.0
    },
    "weather": {
-    "temp_f": 47,
+    "temp_f": 46,
     "wind_mph": 4,
     "precip_pct": 0
    },
@@ -10480,8 +10480,8 @@
     "home": 21.0
    },
    "weather": {
-    "temp_f": 49,
-    "wind_mph": 12,
+    "temp_f": 47,
+    "wind_mph": 11,
     "precip_pct": 0
    },
    "notes": [],
@@ -10652,7 +10652,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 66.9,
+     "prob": 67.3,
      "status": "Questionable",
      "game_id": "2026_10_BUF_NYJ",
      "odds": null,
@@ -10691,7 +10691,7 @@
       ],
       "need": 4.0,
       "recent_hits": 3,
-      "mu": 4.7,
+      "mu": 4.8,
       "def_rank": 13.0,
       "def_allowed": 11.2,
       "carry_share": 0.0,
@@ -10699,73 +10699,12 @@
       "rz_share": 0.116,
       "implied_total": 21.0,
       "spread": -8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.438
      }
     },
     {
      "rank": 2,
-     "player_id": "00-0034857",
-     "name": "Josh Allen",
-     "pos": "QB",
-     "team": "BUF",
-     "opp": "NYJ",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 64.6,
-     "status": "Active",
-     "game_id": "2026_10_BUF_NYJ",
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "model_prob": null,
-     "market_prob": null,
-     "check": null,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "NE",
-        "val": 253.0
-       },
-       {
-        "wk": 5,
-        "opp": "LA",
-        "val": 210.0
-       },
-       {
-        "wk": 6,
-        "opp": "LV",
-        "val": 255.0
-       },
-       {
-        "wk": 8,
-        "opp": "BAL",
-        "val": 289.0
-       },
-       {
-        "wk": 9,
-        "opp": "MIN",
-        "val": 234.0
-       }
-      ],
-      "need": 225.0,
-      "recent_hits": 4,
-      "mu": 264.6,
-      "def_rank": 20.0,
-      "def_allowed": 221.1,
-      "carry_share": 0.219,
-      "tgt_share": 0.002,
-      "rz_share": 0.201,
-      "implied_total": 29.5,
-      "spread": 8.5,
-      "wind": 12.0,
-      "td_rate": 0.625
-     }
-    },
-    {
-     "rank": 3,
      "player_id": "00-0037248",
      "name": "James Cook",
      "pos": "RB",
@@ -10774,13 +10713,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 64.0,
+     "prob": 63.8,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": -165.0,
      "implied": 62.3,
-     "edge": 1.7,
-     "model_prob": 68.5,
+     "edge": 1.5,
+     "model_prob": 68.2,
      "market_prob": 55.6,
      "check": false,
      "detail": {
@@ -10821,12 +10760,12 @@
       "rz_share": 0.355,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.562
      }
     },
     {
-     "rank": 4,
+     "rank": 3,
      "player_id": "00-0038933",
      "name": "Dalton Kincaid",
      "pos": "TE",
@@ -10874,7 +10813,7 @@
       ],
       "need": 3.0,
       "recent_hits": 3,
-      "mu": 3.3,
+      "mu": 3.4,
       "def_rank": 9.0,
       "def_allowed": 5.8,
       "carry_share": 0.0,
@@ -10882,12 +10821,12 @@
       "rz_share": 0.048,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.375
      }
     },
     {
-     "rank": 5,
+     "rank": 4,
      "player_id": "00-0041511",
      "name": "Omar Cooper Jr.",
      "pos": "WR",
@@ -10938,73 +10877,73 @@
       "rz_share": 0.068,
       "implied_total": 21.0,
       "spread": -8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.4
      }
     },
     {
-     "rank": 6,
-     "player_id": "00-0040736",
-     "name": "Mason Taylor",
-     "pos": "TE",
+     "rank": 5,
+     "player_id": "00-0039890",
+     "name": "Adonai Mitchell",
+     "pos": "WR",
      "team": "NYJ",
      "opp": "BUF",
      "market": "rec_yds",
-     "line": 15.5,
-     "label": "리시빙 15.5야드 이상",
-     "prob": 60.7,
-     "status": "Active",
+     "line": 36.5,
+     "label": "리시빙 36.5야드 이상",
+     "prob": 58.3,
+     "status": "Questionable",
      "game_id": "2026_10_BUF_NYJ",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 7.4,
-     "model_prob": 65.9,
+     "edge": 5.0,
+     "model_prob": 62.2,
      "market_prob": 51.0,
      "check": false,
      "detail": {
       "recent": [
        {
-        "wk": 5,
-        "opp": "CLE",
-        "val": 24.0
+        "wk": 1,
+        "opp": "TEN",
+        "val": 60.0
        },
        {
-        "wk": 6,
-        "opp": "NE",
-        "val": 33.0
+        "wk": 2,
+        "opp": "GB",
+        "val": 63.0
        },
        {
         "wk": 7,
         "opp": "MIA",
-        "val": 62.0
+        "val": 0.0
        },
        {
         "wk": 8,
         "opp": "LV",
-        "val": 19.0
+        "val": 142.0
        },
        {
         "wk": 9,
         "opp": "KC",
-        "val": 11.0
+        "val": 0.0
        }
       ],
-      "need": 16.0,
-      "recent_hits": 4,
-      "mu": 30.1,
-      "def_rank": 4.0,
-      "def_allowed": 65.9,
-      "carry_share": 0.0,
-      "tgt_share": 0.151,
-      "rz_share": 0.009,
+      "need": 37.0,
+      "recent_hits": 3,
+      "mu": 49.0,
+      "def_rank": 14.0,
+      "def_allowed": 146.2,
+      "carry_share": 0.001,
+      "tgt_share": 0.217,
+      "rz_share": 0.165,
       "implied_total": 21.0,
       "spread": -8.5,
-      "wind": 12.0,
-      "td_rate": 0.125
+      "wind": 11.0,
+      "td_rate": 0.188
      }
     },
     {
-     "rank": 7,
+     "rank": 6,
      "player_id": "00-0030565",
      "name": "Geno Smith",
      "pos": "QB",
@@ -11013,7 +10952,7 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 58.3,
+     "prob": 57.3,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": null,
@@ -11052,7 +10991,7 @@
       ],
       "need": 225.0,
       "recent_hits": 3,
-      "mu": 228.2,
+      "mu": 231.7,
       "def_rank": 6.0,
       "def_allowed": 252.8,
       "carry_share": 0.078,
@@ -11060,73 +10999,12 @@
       "rz_share": 0.011,
       "implied_total": 21.0,
       "spread": -8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.0
      }
     },
     {
-     "rank": 8,
-     "player_id": "00-0039890",
-     "name": "Adonai Mitchell",
-     "pos": "WR",
-     "team": "NYJ",
-     "opp": "BUF",
-     "market": "rec_yds",
-     "line": 36.5,
-     "label": "리시빙 36.5야드 이상",
-     "prob": 57.2,
-     "status": "Questionable",
-     "game_id": "2026_10_BUF_NYJ",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 4.0,
-     "model_prob": 60.6,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 1,
-        "opp": "TEN",
-        "val": 60.0
-       },
-       {
-        "wk": 2,
-        "opp": "GB",
-        "val": 63.0
-       },
-       {
-        "wk": 7,
-        "opp": "MIA",
-        "val": 0.0
-       },
-       {
-        "wk": 8,
-        "opp": "LV",
-        "val": 142.0
-       },
-       {
-        "wk": 9,
-        "opp": "KC",
-        "val": 0.0
-       }
-      ],
-      "need": 37.0,
-      "recent_hits": 3,
-      "mu": 47.6,
-      "def_rank": 14.0,
-      "def_allowed": 146.2,
-      "carry_share": 0.001,
-      "tgt_share": 0.217,
-      "rz_share": 0.165,
-      "implied_total": 21.0,
-      "spread": -8.5,
-      "wind": 12.0,
-      "td_rate": 0.188
-     }
-    },
-    {
-     "rank": 9,
+     "rank": 7,
      "player_id": "00-0039901",
      "name": "Keon Coleman",
      "pos": "WR",
@@ -11135,13 +11013,13 @@
      "market": "rec_yds",
      "line": 28.5,
      "label": "리시빙 28.5야드 이상",
-     "prob": 56.1,
+     "prob": 56.2,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": -114.0,
      "implied": 53.3,
      "edge": 2.9,
-     "model_prob": 58.9,
+     "model_prob": 59.0,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -11174,7 +11052,7 @@
       ],
       "need": 29.0,
       "recent_hits": 2,
-      "mu": 41.4,
+      "mu": 41.5,
       "def_rank": 20.0,
       "def_allowed": 124.0,
       "carry_share": 0.0,
@@ -11182,12 +11060,12 @@
       "rz_share": 0.093,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.375
      }
     },
     {
-     "rank": 10,
+     "rank": 8,
      "player_id": "00-0034857",
      "name": "Josh Allen",
      "pos": "QB",
@@ -11196,7 +11074,7 @@
      "market": "pass_tds",
      "line": 1.5,
      "label": "패싱 TD 2개 이상",
-     "prob": 55.5,
+     "prob": 56.1,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": null,
@@ -11235,7 +11113,7 @@
       ],
       "need": 2.0,
       "recent_hits": 2,
-      "mu": 1.7,
+      "mu": 1.9,
       "def_rank": 5.0,
       "def_allowed": 1.9,
       "carry_share": 0.219,
@@ -11243,73 +11121,73 @@
       "rz_share": 0.201,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.625
      }
     },
     {
-     "rank": 11,
-     "player_id": "00-0039794",
-     "name": "Braelon Allen",
-     "pos": "RB",
-     "team": "NYJ",
-     "opp": "BUF",
-     "market": "rec_yds",
-     "line": 6.5,
-     "label": "리시빙 6.5야드 이상",
-     "prob": 54.7,
+     "rank": 9,
+     "player_id": "00-0034857",
+     "name": "Josh Allen",
+     "pos": "QB",
+     "team": "BUF",
+     "opp": "NYJ",
+     "market": "pass_yds",
+     "line": 249.5,
+     "label": "패싱 250야드 이상",
+     "prob": 54.9,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 1.4,
-     "model_prob": 56.7,
-     "market_prob": 51.0,
-     "check": false,
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "model_prob": null,
+     "market_prob": null,
+     "check": null,
      "detail": {
       "recent": [
        {
+        "wk": 4,
+        "opp": "NE",
+        "val": 253.0
+       },
+       {
         "wk": 5,
-        "opp": "CLE",
-        "val": 0.0
+        "opp": "LA",
+        "val": 210.0
        },
        {
         "wk": 6,
-        "opp": "NE",
-        "val": 26.0
-       },
-       {
-        "wk": 7,
-        "opp": "MIA",
-        "val": 30.0
+        "opp": "LV",
+        "val": 255.0
        },
        {
         "wk": 8,
-        "opp": "LV",
-        "val": 6.0
+        "opp": "BAL",
+        "val": 289.0
        },
        {
         "wk": 9,
-        "opp": "KC",
-        "val": 21.0
+        "opp": "MIN",
+        "val": 234.0
        }
       ],
-      "need": 7.0,
+      "need": 250.0,
       "recent_hits": 3,
-      "mu": 14.4,
-      "def_rank": 9.0,
-      "def_allowed": 36.2,
-      "carry_share": 0.541,
-      "tgt_share": 0.094,
-      "rz_share": 0.226,
-      "implied_total": 21.0,
-      "spread": -8.5,
-      "wind": 12.0,
-      "td_rate": 0.25
+      "mu": 268.1,
+      "def_rank": 20.0,
+      "def_allowed": 221.1,
+      "carry_share": 0.219,
+      "tgt_share": 0.002,
+      "rz_share": 0.201,
+      "implied_total": 29.5,
+      "spread": 8.5,
+      "wind": 11.0,
+      "td_rate": 0.625
      }
     },
     {
-     "rank": 12,
+     "rank": 10,
      "player_id": "00-0037248",
      "name": "James Cook",
      "pos": "RB",
@@ -11365,8 +11243,130 @@
       "rz_share": 0.355,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.562
+     }
+    },
+    {
+     "rank": 11,
+     "player_id": "00-0039794",
+     "name": "Braelon Allen",
+     "pos": "RB",
+     "team": "NYJ",
+     "opp": "BUF",
+     "market": "rec_yds",
+     "line": 6.5,
+     "label": "리시빙 6.5야드 이상",
+     "prob": 54.6,
+     "status": "Active",
+     "game_id": "2026_10_BUF_NYJ",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.3,
+     "model_prob": 56.5,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "CLE",
+        "val": 0.0
+       },
+       {
+        "wk": 6,
+        "opp": "NE",
+        "val": 26.0
+       },
+       {
+        "wk": 7,
+        "opp": "MIA",
+        "val": 30.0
+       },
+       {
+        "wk": 8,
+        "opp": "LV",
+        "val": 6.0
+       },
+       {
+        "wk": 9,
+        "opp": "KC",
+        "val": 21.0
+       }
+      ],
+      "need": 7.0,
+      "recent_hits": 3,
+      "mu": 14.1,
+      "def_rank": 9.0,
+      "def_allowed": 36.2,
+      "carry_share": 0.541,
+      "tgt_share": 0.094,
+      "rz_share": 0.226,
+      "implied_total": 21.0,
+      "spread": -8.5,
+      "wind": 11.0,
+      "td_rate": 0.25
+     }
+    },
+    {
+     "rank": 12,
+     "player_id": "00-0035689",
+     "name": "Dawson Knox",
+     "pos": "TE",
+     "team": "BUF",
+     "opp": "NYJ",
+     "market": "rec_yds",
+     "line": 11.5,
+     "label": "리시빙 11.5야드 이상",
+     "prob": 53.9,
+     "status": "Active",
+     "game_id": "2026_10_BUF_NYJ",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 0.7,
+     "model_prob": 55.5,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "NE",
+        "val": 13.0
+       },
+       {
+        "wk": 5,
+        "opp": "LA",
+        "val": 6.0
+       },
+       {
+        "wk": 6,
+        "opp": "LV",
+        "val": 0.0
+       },
+       {
+        "wk": 8,
+        "opp": "BAL",
+        "val": 6.0
+       },
+       {
+        "wk": 9,
+        "opp": "MIN",
+        "val": 37.0
+       }
+      ],
+      "need": 12.0,
+      "recent_hits": 2,
+      "mu": 18.8,
+      "def_rank": 3.0,
+      "def_allowed": 66.5,
+      "carry_share": 0.002,
+      "tgt_share": 0.099,
+      "rz_share": 0.079,
+      "implied_total": 29.5,
+      "spread": 8.5,
+      "wind": 11.0,
+      "td_rate": 0.188
      }
     },
     {
@@ -11379,13 +11379,13 @@
      "market": "rush_yds",
      "line": 52.5,
      "label": "러싱 52.5야드 이상",
-     "prob": 51.1,
+     "prob": 50.2,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -2.2,
-     "model_prob": 51.1,
+     "edge": -3.1,
+     "model_prob": 49.7,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -11418,7 +11418,7 @@
       ],
       "need": 53.0,
       "recent_hits": 3,
-      "mu": 55.0,
+      "mu": 54.4,
       "def_rank": 19.0,
       "def_allowed": 77.6,
       "carry_share": 0.61,
@@ -11426,7 +11426,7 @@
       "rz_share": 0.245,
       "implied_total": 21.0,
       "spread": -8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.312
      }
     },
@@ -11440,13 +11440,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 36.3,
+     "prob": 35.8,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": 160.0,
      "implied": 38.5,
-     "edge": -2.2,
-     "model_prob": 37.3,
+     "edge": -2.7,
+     "model_prob": 36.5,
      "market_prob": 34.3,
      "check": false,
      "detail": {
@@ -11487,7 +11487,7 @@
       "rz_share": 0.226,
       "implied_total": 21.0,
       "spread": -8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.25
      }
     },
@@ -11501,13 +11501,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 31.6,
+     "prob": 30.9,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": 190.0,
      "implied": 34.5,
-     "edge": -2.8,
-     "model_prob": 32.1,
+     "edge": -3.6,
+     "model_prob": 30.9,
      "market_prob": 30.8,
      "check": false,
      "detail": {
@@ -11548,7 +11548,7 @@
       "rz_share": 0.07,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.438
      }
     }
@@ -11556,67 +11556,6 @@
    "best15_edge": [
     {
      "rank": 1,
-     "player_id": "00-0040736",
-     "name": "Mason Taylor",
-     "pos": "TE",
-     "team": "NYJ",
-     "opp": "BUF",
-     "market": "rec_yds",
-     "line": 15.5,
-     "label": "리시빙 15.5야드 이상",
-     "prob": 60.7,
-     "status": "Active",
-     "game_id": "2026_10_BUF_NYJ",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 7.4,
-     "model_prob": 65.9,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "CLE",
-        "val": 24.0
-       },
-       {
-        "wk": 6,
-        "opp": "NE",
-        "val": 33.0
-       },
-       {
-        "wk": 7,
-        "opp": "MIA",
-        "val": 62.0
-       },
-       {
-        "wk": 8,
-        "opp": "LV",
-        "val": 19.0
-       },
-       {
-        "wk": 9,
-        "opp": "KC",
-        "val": 11.0
-       }
-      ],
-      "need": 16.0,
-      "recent_hits": 4,
-      "mu": 30.1,
-      "def_rank": 4.0,
-      "def_allowed": 65.9,
-      "carry_share": 0.0,
-      "tgt_share": 0.151,
-      "rz_share": 0.009,
-      "implied_total": 21.0,
-      "spread": -8.5,
-      "wind": 12.0,
-      "td_rate": 0.125
-     }
-    },
-    {
-     "rank": 2,
      "player_id": "00-0039890",
      "name": "Adonai Mitchell",
      "pos": "WR",
@@ -11625,13 +11564,13 @@
      "market": "rec_yds",
      "line": 36.5,
      "label": "리시빙 36.5야드 이상",
-     "prob": 57.2,
+     "prob": 58.3,
      "status": "Questionable",
      "game_id": "2026_10_BUF_NYJ",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 4.0,
-     "model_prob": 60.6,
+     "edge": 5.0,
+     "model_prob": 62.2,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -11664,7 +11603,7 @@
       ],
       "need": 37.0,
       "recent_hits": 3,
-      "mu": 47.6,
+      "mu": 49.0,
       "def_rank": 14.0,
       "def_allowed": 146.2,
       "carry_share": 0.001,
@@ -11672,12 +11611,12 @@
       "rz_share": 0.165,
       "implied_total": 21.0,
       "spread": -8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.188
      }
     },
     {
-     "rank": 3,
+     "rank": 2,
      "player_id": "00-0039901",
      "name": "Keon Coleman",
      "pos": "WR",
@@ -11686,13 +11625,13 @@
      "market": "rec_yds",
      "line": 28.5,
      "label": "리시빙 28.5야드 이상",
-     "prob": 56.1,
+     "prob": 56.2,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": -114.0,
      "implied": 53.3,
      "edge": 2.9,
-     "model_prob": 58.9,
+     "model_prob": 59.0,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -11725,7 +11664,7 @@
       ],
       "need": 29.0,
       "recent_hits": 2,
-      "mu": 41.4,
+      "mu": 41.5,
       "def_rank": 20.0,
       "def_allowed": 124.0,
       "carry_share": 0.0,
@@ -11733,12 +11672,12 @@
       "rz_share": 0.093,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.375
      }
     },
     {
-     "rank": 4,
+     "rank": 3,
      "player_id": "00-0037248",
      "name": "James Cook",
      "pos": "RB",
@@ -11747,13 +11686,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 64.0,
+     "prob": 63.8,
      "status": "Active",
      "game_id": "2026_10_BUF_NYJ",
      "odds": -165.0,
      "implied": 62.3,
-     "edge": 1.7,
-     "model_prob": 68.5,
+     "edge": 1.5,
+     "model_prob": 68.2,
      "market_prob": 55.6,
      "check": false,
      "detail": {
@@ -11794,73 +11733,12 @@
       "rz_share": 0.355,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.562
      }
     },
     {
-     "rank": 5,
-     "player_id": "00-0039794",
-     "name": "Braelon Allen",
-     "pos": "RB",
-     "team": "NYJ",
-     "opp": "BUF",
-     "market": "rec_yds",
-     "line": 6.5,
-     "label": "리시빙 6.5야드 이상",
-     "prob": 54.7,
-     "status": "Active",
-     "game_id": "2026_10_BUF_NYJ",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 1.4,
-     "model_prob": 56.7,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "CLE",
-        "val": 0.0
-       },
-       {
-        "wk": 6,
-        "opp": "NE",
-        "val": 26.0
-       },
-       {
-        "wk": 7,
-        "opp": "MIA",
-        "val": 30.0
-       },
-       {
-        "wk": 8,
-        "opp": "LV",
-        "val": 6.0
-       },
-       {
-        "wk": 9,
-        "opp": "KC",
-        "val": 21.0
-       }
-      ],
-      "need": 7.0,
-      "recent_hits": 3,
-      "mu": 14.4,
-      "def_rank": 9.0,
-      "def_allowed": 36.2,
-      "carry_share": 0.541,
-      "tgt_share": 0.094,
-      "rz_share": 0.226,
-      "implied_total": 21.0,
-      "spread": -8.5,
-      "wind": 12.0,
-      "td_rate": 0.25
-     }
-    },
-    {
-     "rank": 6,
+     "rank": 4,
      "player_id": "00-0037248",
      "name": "James Cook",
      "pos": "RB",
@@ -11916,8 +11794,130 @@
       "rz_share": 0.355,
       "implied_total": 29.5,
       "spread": 8.5,
-      "wind": 12.0,
+      "wind": 11.0,
       "td_rate": 0.562
+     }
+    },
+    {
+     "rank": 5,
+     "player_id": "00-0039794",
+     "name": "Braelon Allen",
+     "pos": "RB",
+     "team": "NYJ",
+     "opp": "BUF",
+     "market": "rec_yds",
+     "line": 6.5,
+     "label": "리시빙 6.5야드 이상",
+     "prob": 54.6,
+     "status": "Active",
+     "game_id": "2026_10_BUF_NYJ",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.3,
+     "model_prob": 56.5,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "CLE",
+        "val": 0.0
+       },
+       {
+        "wk": 6,
+        "opp": "NE",
+        "val": 26.0
+       },
+       {
+        "wk": 7,
+        "opp": "MIA",
+        "val": 30.0
+       },
+       {
+        "wk": 8,
+        "opp": "LV",
+        "val": 6.0
+       },
+       {
+        "wk": 9,
+        "opp": "KC",
+        "val": 21.0
+       }
+      ],
+      "need": 7.0,
+      "recent_hits": 3,
+      "mu": 14.1,
+      "def_rank": 9.0,
+      "def_allowed": 36.2,
+      "carry_share": 0.541,
+      "tgt_share": 0.094,
+      "rz_share": 0.226,
+      "implied_total": 21.0,
+      "spread": -8.5,
+      "wind": 11.0,
+      "td_rate": 0.25
+     }
+    },
+    {
+     "rank": 6,
+     "player_id": "00-0035689",
+     "name": "Dawson Knox",
+     "pos": "TE",
+     "team": "BUF",
+     "opp": "NYJ",
+     "market": "rec_yds",
+     "line": 11.5,
+     "label": "리시빙 11.5야드 이상",
+     "prob": 53.9,
+     "status": "Active",
+     "game_id": "2026_10_BUF_NYJ",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 0.7,
+     "model_prob": 55.5,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "NE",
+        "val": 13.0
+       },
+       {
+        "wk": 5,
+        "opp": "LA",
+        "val": 6.0
+       },
+       {
+        "wk": 6,
+        "opp": "LV",
+        "val": 0.0
+       },
+       {
+        "wk": 8,
+        "opp": "BAL",
+        "val": 6.0
+       },
+       {
+        "wk": 9,
+        "opp": "MIN",
+        "val": 37.0
+       }
+      ],
+      "need": 12.0,
+      "recent_hits": 2,
+      "mu": 18.8,
+      "def_rank": 3.0,
+      "def_allowed": 66.5,
+      "carry_share": 0.002,
+      "tgt_share": 0.099,
+      "rz_share": 0.079,
+      "implied_total": 29.5,
+      "spread": 8.5,
+      "wind": 11.0,
+      "td_rate": 0.188
      }
     }
    ]
@@ -11937,7 +11937,7 @@
    },
    "weather": {
     "temp_f": 52,
-    "wind_mph": 5,
+    "wind_mph": 8,
     "precip_pct": 0
    },
    "notes": [],
@@ -12079,67 +12079,6 @@
    "best15_prob": [
     {
      "rank": 1,
-     "player_id": "00-0036971",
-     "name": "Trevor Lawrence",
-     "pos": "QB",
-     "team": "JAX",
-     "opp": "TEN",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 67.2,
-     "status": "Active",
-     "game_id": "2026_10_JAX_TEN",
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "model_prob": null,
-     "market_prob": null,
-     "check": null,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "CIN",
-        "val": 227.0
-       },
-       {
-        "wk": 5,
-        "opp": "PHI",
-        "val": 331.0
-       },
-       {
-        "wk": 6,
-        "opp": "HOU",
-        "val": 306.0
-       },
-       {
-        "wk": 8,
-        "opp": "IND",
-        "val": 210.0
-       },
-       {
-        "wk": 9,
-        "opp": "BAL",
-        "val": 242.0
-       }
-      ],
-      "need": 225.0,
-      "recent_hits": 4,
-      "mu": 275.9,
-      "def_rank": 2.0,
-      "def_allowed": 272.8,
-      "carry_share": 0.102,
-      "tgt_share": 0.0,
-      "rz_share": 0.039,
-      "implied_total": 28.5,
-      "spread": 10.5,
-      "wind": 5.0,
-      "td_rate": 0.188
-     }
-    },
-    {
-     "rank": 2,
      "player_id": "00-0038935",
      "name": "Brenton Strange",
      "pos": "TE",
@@ -12195,12 +12134,12 @@
       "rz_share": 0.036,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.25
      }
     },
     {
-     "rank": 3,
+     "rank": 2,
      "player_id": "00-0038117",
      "name": "Wan'Dale Robinson",
      "pos": "WR",
@@ -12248,7 +12187,7 @@
       ],
       "need": 4.0,
       "recent_hits": 3,
-      "mu": 4.4,
+      "mu": 4.3,
       "def_rank": 6.0,
       "def_allowed": 12.5,
       "carry_share": 0.004,
@@ -12256,12 +12195,12 @@
       "rz_share": 0.058,
       "implied_total": 18.0,
       "spread": -10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.312
      }
     },
     {
-     "rank": 4,
+     "rank": 3,
      "player_id": "00-0036971",
      "name": "Trevor Lawrence",
      "pos": "QB",
@@ -12317,134 +12256,12 @@
       "rz_share": 0.039,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.188
      }
     },
     {
-     "rank": 5,
-     "player_id": "00-0038117",
-     "name": "Wan'Dale Robinson",
-     "pos": "WR",
-     "team": "TEN",
-     "opp": "JAX",
-     "market": "rec_yds",
-     "line": 37.5,
-     "label": "리시빙 37.5야드 이상",
-     "prob": 59.4,
-     "status": "Active",
-     "game_id": "2026_10_JAX_TEN",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 6.2,
-     "model_prob": 64.0,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "BAL",
-        "val": 19.0
-       },
-       {
-        "wk": 5,
-        "opp": "HOU",
-        "val": 53.0
-       },
-       {
-        "wk": 6,
-        "opp": "IND",
-        "val": 22.0
-       },
-       {
-        "wk": 7,
-        "opp": "CLE",
-        "val": 7.0
-       },
-       {
-        "wk": 8,
-        "opp": "CIN",
-        "val": 57.0
-       }
-      ],
-      "need": 38.0,
-      "recent_hits": 2,
-      "mu": 53.0,
-      "def_rank": 5.0,
-      "def_allowed": 174.5,
-      "carry_share": 0.004,
-      "tgt_share": 0.237,
-      "rz_share": 0.058,
-      "implied_total": 18.0,
-      "spread": -10.5,
-      "wind": 5.0,
-      "td_rate": 0.312
-     }
-    },
-    {
-     "rank": 6,
-     "player_id": "00-0038606",
-     "name": "Parker Washington",
-     "pos": "WR",
-     "team": "JAX",
-     "opp": "TEN",
-     "market": "receptions",
-     "line": 3.5,
-     "label": "리셉션 4개 이상",
-     "prob": 58.5,
-     "status": "Active",
-     "game_id": "2026_10_JAX_TEN",
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "model_prob": null,
-     "market_prob": null,
-     "check": null,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "CIN",
-        "val": 1.0
-       },
-       {
-        "wk": 5,
-        "opp": "PHI",
-        "val": 6.0
-       },
-       {
-        "wk": 6,
-        "opp": "HOU",
-        "val": 4.0
-       },
-       {
-        "wk": 8,
-        "opp": "IND",
-        "val": 1.0
-       },
-       {
-        "wk": 9,
-        "opp": "BAL",
-        "val": 2.0
-       }
-      ],
-      "need": 4.0,
-      "recent_hits": 2,
-      "mu": 3.9,
-      "def_rank": 1.0,
-      "def_allowed": 15.2,
-      "carry_share": 0.012,
-      "tgt_share": 0.231,
-      "rz_share": 0.074,
-      "implied_total": 28.5,
-      "spread": 10.5,
-      "wind": 5.0,
-      "td_rate": 0.5
-     }
-    },
-    {
-     "rank": 7,
+     "rank": 4,
      "player_id": "00-0040676",
      "name": "Cam Ward",
      "pos": "QB",
@@ -12492,7 +12309,7 @@
       ],
       "need": 200.0,
       "recent_hits": 2,
-      "mu": 203.2,
+      "mu": 203.3,
       "def_rank": 14.0,
       "def_allowed": 236.8,
       "carry_share": 0.135,
@@ -12500,73 +12317,73 @@
       "rz_share": 0.124,
       "implied_total": 18.0,
       "spread": -10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.188
      }
     },
     {
-     "rank": 8,
-     "player_id": "00-0034960",
-     "name": "Jakobi Meyers",
+     "rank": 5,
+     "player_id": "00-0038117",
+     "name": "Wan'Dale Robinson",
      "pos": "WR",
-     "team": "JAX",
-     "opp": "TEN",
+     "team": "TEN",
+     "opp": "JAX",
      "market": "rec_yds",
-     "line": 41.5,
-     "label": "리시빙 41.5야드 이상",
-     "prob": 57.1,
+     "line": 37.5,
+     "label": "리시빙 37.5야드 이상",
+     "prob": 57.5,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.8,
-     "model_prob": 60.3,
+     "edge": 4.3,
+     "model_prob": 61.1,
      "market_prob": 51.0,
      "check": false,
      "detail": {
       "recent": [
        {
         "wk": 4,
-        "opp": "CIN",
-        "val": 33.0
+        "opp": "BAL",
+        "val": 19.0
        },
        {
         "wk": 5,
-        "opp": "PHI",
-        "val": 37.0
+        "opp": "HOU",
+        "val": 53.0
        },
        {
         "wk": 6,
-        "opp": "HOU",
-        "val": 83.0
+        "opp": "IND",
+        "val": 22.0
+       },
+       {
+        "wk": 7,
+        "opp": "CLE",
+        "val": 7.0
        },
        {
         "wk": 8,
-        "opp": "IND",
-        "val": 24.0
-       },
-       {
-        "wk": 9,
-        "opp": "BAL",
-        "val": 65.0
+        "opp": "CIN",
+        "val": 57.0
        }
       ],
-      "need": 42.0,
+      "need": 38.0,
       "recent_hits": 2,
-      "mu": 53.7,
-      "def_rank": 1.0,
-      "def_allowed": 194.9,
-      "carry_share": 0.003,
-      "tgt_share": 0.189,
-      "rz_share": 0.167,
-      "implied_total": 28.5,
-      "spread": 10.5,
-      "wind": 5.0,
+      "mu": 49.2,
+      "def_rank": 5.0,
+      "def_allowed": 174.5,
+      "carry_share": 0.004,
+      "tgt_share": 0.237,
+      "rz_share": 0.058,
+      "implied_total": 18.0,
+      "spread": -10.5,
+      "wind": 8.0,
       "td_rate": 0.312
      }
     },
     {
-     "rank": 9,
+     "rank": 6,
      "player_id": "00-0041503",
      "name": "Nate Boerkircher",
      "pos": "TE",
@@ -12575,13 +12392,13 @@
      "market": "rec_yds",
      "line": 10.5,
      "label": "리시빙 10.5야드 이상",
-     "prob": 56.8,
+     "prob": 56.6,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.6,
-     "model_prob": 60.0,
+     "edge": 3.4,
+     "model_prob": 59.7,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -12614,7 +12431,7 @@
       ],
       "need": 11.0,
       "recent_hits": 4,
-      "mu": 20.6,
+      "mu": 20.4,
       "def_rank": 24.0,
       "def_allowed": 42.9,
       "carry_share": 0.0,
@@ -12622,12 +12439,73 @@
       "rz_share": 0.083,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.25
      }
     },
     {
-     "rank": 10,
+     "rank": 7,
+     "player_id": "00-0036971",
+     "name": "Trevor Lawrence",
+     "pos": "QB",
+     "team": "JAX",
+     "opp": "TEN",
+     "market": "pass_yds",
+     "line": 249.5,
+     "label": "패싱 250야드 이상",
+     "prob": 55.0,
+     "status": "Active",
+     "game_id": "2026_10_JAX_TEN",
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "model_prob": null,
+     "market_prob": null,
+     "check": null,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "CIN",
+        "val": 227.0
+       },
+       {
+        "wk": 5,
+        "opp": "PHI",
+        "val": 331.0
+       },
+       {
+        "wk": 6,
+        "opp": "HOU",
+        "val": 306.0
+       },
+       {
+        "wk": 8,
+        "opp": "IND",
+        "val": 210.0
+       },
+       {
+        "wk": 9,
+        "opp": "BAL",
+        "val": 242.0
+       }
+      ],
+      "need": 250.0,
+      "recent_hits": 2,
+      "mu": 279.3,
+      "def_rank": 2.0,
+      "def_allowed": 272.8,
+      "carry_share": 0.102,
+      "tgt_share": 0.0,
+      "rz_share": 0.039,
+      "implied_total": 28.5,
+      "spread": 10.5,
+      "wind": 8.0,
+      "td_rate": 0.188
+     }
+    },
+    {
+     "rank": 8,
      "player_id": "00-0041100",
      "name": "Josh Cameron",
      "pos": "WR",
@@ -12636,13 +12514,13 @@
      "market": "rec_yds",
      "line": 6.5,
      "label": "리시빙 6.5야드 이상",
-     "prob": 55.1,
+     "prob": 54.8,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.8,
-     "model_prob": 57.3,
+     "edge": 1.5,
+     "model_prob": 56.8,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -12675,7 +12553,7 @@
       ],
       "need": 7.0,
       "recent_hits": 2,
-      "mu": 15.1,
+      "mu": 14.6,
       "def_rank": 1.0,
       "def_allowed": 194.9,
       "carry_share": 0.0,
@@ -12683,12 +12561,73 @@
       "rz_share": 0.038,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.222
      }
     },
     {
-     "rank": 11,
+     "rank": 9,
+     "player_id": "00-0034960",
+     "name": "Jakobi Meyers",
+     "pos": "WR",
+     "team": "JAX",
+     "opp": "TEN",
+     "market": "rec_yds",
+     "line": 41.5,
+     "label": "리시빙 41.5야드 이상",
+     "prob": 54.6,
+     "status": "Active",
+     "game_id": "2026_10_JAX_TEN",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.4,
+     "model_prob": 56.6,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "CIN",
+        "val": 33.0
+       },
+       {
+        "wk": 5,
+        "opp": "PHI",
+        "val": 37.0
+       },
+       {
+        "wk": 6,
+        "opp": "HOU",
+        "val": 83.0
+       },
+       {
+        "wk": 8,
+        "opp": "IND",
+        "val": 24.0
+       },
+       {
+        "wk": 9,
+        "opp": "BAL",
+        "val": 65.0
+       }
+      ],
+      "need": 42.0,
+      "recent_hits": 2,
+      "mu": 50.5,
+      "def_rank": 1.0,
+      "def_allowed": 194.9,
+      "carry_share": 0.003,
+      "tgt_share": 0.189,
+      "rz_share": 0.167,
+      "implied_total": 28.5,
+      "spread": 10.5,
+      "wind": 8.0,
+      "td_rate": 0.312
+     }
+    },
+    {
+     "rank": 10,
      "player_id": "00-0040676",
      "name": "Cam Ward",
      "pos": "QB",
@@ -12736,7 +12675,7 @@
       ],
       "need": 12.0,
       "recent_hits": 2,
-      "mu": 17.3,
+      "mu": 17.4,
       "def_rank": 15.0,
       "def_allowed": 12.6,
       "carry_share": 0.135,
@@ -12744,12 +12683,12 @@
       "rz_share": 0.124,
       "implied_total": 18.0,
       "spread": -10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.188
      }
     },
     {
-     "rank": 12,
+     "rank": 11,
      "player_id": "00-0038611",
      "name": "Chris Rodriguez Jr.",
      "pos": "RB",
@@ -12758,13 +12697,13 @@
      "market": "rush_yds",
      "line": 30.5,
      "label": "러싱 30.5야드 이상",
-     "prob": 50.4,
+     "prob": 50.8,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -2.9,
-     "model_prob": 50.1,
+     "edge": -2.4,
+     "model_prob": 50.7,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -12797,7 +12736,7 @@
       ],
       "need": 31.0,
       "recent_hits": 3,
-      "mu": 35.2,
+      "mu": 35.8,
       "def_rank": 13.0,
       "def_allowed": 99.9,
       "carry_share": 0.273,
@@ -12805,12 +12744,12 @@
       "rz_share": 0.227,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.562
      }
     },
     {
-     "rank": 13,
+     "rank": 12,
      "player_id": "00-0035261",
      "name": "Tony Pollard",
      "pos": "RB",
@@ -12819,13 +12758,13 @@
      "market": "rush_yds",
      "line": 58.5,
      "label": "러싱 58.5야드 이상",
-     "prob": 46.5,
+     "prob": 48.8,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -6.8,
-     "model_prob": 44.1,
+     "edge": -4.5,
+     "model_prob": 47.6,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -12858,7 +12797,7 @@
       ],
       "need": 59.0,
       "recent_hits": 3,
-      "mu": 55.3,
+      "mu": 58.4,
       "def_rank": 26.0,
       "def_allowed": 68.2,
       "carry_share": 0.729,
@@ -12866,12 +12805,12 @@
       "rz_share": 0.406,
       "implied_total": 18.0,
       "spread": -10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.312
      }
     },
     {
-     "rank": 14,
+     "rank": 13,
      "player_id": "00-0040719",
      "name": "Bhayshul Tuten",
      "pos": "RB",
@@ -12880,13 +12819,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 46.4,
+     "prob": 45.7,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -120.0,
      "implied": 54.5,
-     "edge": -8.1,
-     "model_prob": 45.2,
+     "edge": -8.9,
+     "model_prob": 44.1,
      "market_prob": 48.7,
      "check": false,
      "detail": {
@@ -12927,12 +12866,12 @@
       "rz_share": 0.229,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.562
      }
     },
     {
-     "rank": 15,
+     "rank": 14,
      "player_id": "00-0035261",
      "name": "Tony Pollard",
      "pos": "RB",
@@ -12941,13 +12880,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 41.5,
+     "prob": 41.7,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": 120.0,
      "implied": 45.5,
-     "edge": -4.0,
-     "model_prob": 42.0,
+     "edge": -3.8,
+     "model_prob": 42.3,
      "market_prob": 40.6,
      "check": false,
      "detail": {
@@ -12988,8 +12927,69 @@
       "rz_share": 0.406,
       "implied_total": 18.0,
       "spread": -10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.312
+     }
+    },
+    {
+     "rank": 15,
+     "player_id": "00-0038606",
+     "name": "Parker Washington",
+     "pos": "WR",
+     "team": "JAX",
+     "opp": "TEN",
+     "market": "td",
+     "line": null,
+     "label": "애니타임 터치다운",
+     "prob": 34.4,
+     "status": "Active",
+     "game_id": "2026_10_JAX_TEN",
+     "odds": 130.0,
+     "implied": 43.5,
+     "edge": -9.1,
+     "model_prob": 32.0,
+     "market_prob": 38.8,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "CIN",
+        "val": 0.0
+       },
+       {
+        "wk": 5,
+        "opp": "PHI",
+        "val": 2.0
+       },
+       {
+        "wk": 6,
+        "opp": "HOU",
+        "val": 0.0
+       },
+       {
+        "wk": 8,
+        "opp": "IND",
+        "val": 0.0
+       },
+       {
+        "wk": 9,
+        "opp": "BAL",
+        "val": 1.0
+       }
+      ],
+      "need": null,
+      "recent_hits": 2,
+      "mu": null,
+      "def_rank": 10.0,
+      "def_allowed": 0.9,
+      "carry_share": 0.012,
+      "tgt_share": 0.231,
+      "rz_share": 0.074,
+      "implied_total": 28.5,
+      "spread": 10.5,
+      "wind": 8.0,
+      "td_rate": 0.5
      }
     }
    ],
@@ -13004,13 +13004,13 @@
      "market": "rec_yds",
      "line": 37.5,
      "label": "리시빙 37.5야드 이상",
-     "prob": 59.4,
+     "prob": 57.5,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 6.2,
-     "model_prob": 64.0,
+     "edge": 4.3,
+     "model_prob": 61.1,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -13043,7 +13043,7 @@
       ],
       "need": 38.0,
       "recent_hits": 2,
-      "mu": 53.0,
+      "mu": 49.2,
       "def_rank": 5.0,
       "def_allowed": 174.5,
       "carry_share": 0.004,
@@ -13051,73 +13051,12 @@
       "rz_share": 0.058,
       "implied_total": 18.0,
       "spread": -10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.312
      }
     },
     {
      "rank": 2,
-     "player_id": "00-0034960",
-     "name": "Jakobi Meyers",
-     "pos": "WR",
-     "team": "JAX",
-     "opp": "TEN",
-     "market": "rec_yds",
-     "line": 41.5,
-     "label": "리시빙 41.5야드 이상",
-     "prob": 57.1,
-     "status": "Active",
-     "game_id": "2026_10_JAX_TEN",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 3.8,
-     "model_prob": 60.3,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "CIN",
-        "val": 33.0
-       },
-       {
-        "wk": 5,
-        "opp": "PHI",
-        "val": 37.0
-       },
-       {
-        "wk": 6,
-        "opp": "HOU",
-        "val": 83.0
-       },
-       {
-        "wk": 8,
-        "opp": "IND",
-        "val": 24.0
-       },
-       {
-        "wk": 9,
-        "opp": "BAL",
-        "val": 65.0
-       }
-      ],
-      "need": 42.0,
-      "recent_hits": 2,
-      "mu": 53.7,
-      "def_rank": 1.0,
-      "def_allowed": 194.9,
-      "carry_share": 0.003,
-      "tgt_share": 0.189,
-      "rz_share": 0.167,
-      "implied_total": 28.5,
-      "spread": 10.5,
-      "wind": 5.0,
-      "td_rate": 0.312
-     }
-    },
-    {
-     "rank": 3,
      "player_id": "00-0041503",
      "name": "Nate Boerkircher",
      "pos": "TE",
@@ -13126,13 +13065,13 @@
      "market": "rec_yds",
      "line": 10.5,
      "label": "리시빙 10.5야드 이상",
-     "prob": 56.8,
+     "prob": 56.6,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.6,
-     "model_prob": 60.0,
+     "edge": 3.4,
+     "model_prob": 59.7,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -13165,7 +13104,7 @@
       ],
       "need": 11.0,
       "recent_hits": 4,
-      "mu": 20.6,
+      "mu": 20.4,
       "def_rank": 24.0,
       "def_allowed": 42.9,
       "carry_share": 0.0,
@@ -13173,12 +13112,12 @@
       "rz_share": 0.083,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.25
      }
     },
     {
-     "rank": 4,
+     "rank": 3,
      "player_id": "00-0041100",
      "name": "Josh Cameron",
      "pos": "WR",
@@ -13187,13 +13126,13 @@
      "market": "rec_yds",
      "line": 6.5,
      "label": "리시빙 6.5야드 이상",
-     "prob": 55.1,
+     "prob": 54.8,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.8,
-     "model_prob": 57.3,
+     "edge": 1.5,
+     "model_prob": 56.8,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -13226,7 +13165,7 @@
       ],
       "need": 7.0,
       "recent_hits": 2,
-      "mu": 15.1,
+      "mu": 14.6,
       "def_rank": 1.0,
       "def_allowed": 194.9,
       "carry_share": 0.0,
@@ -13234,27 +13173,27 @@
       "rz_share": 0.038,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
+      "wind": 8.0,
       "td_rate": 0.222
      }
     },
     {
-     "rank": 5,
-     "player_id": "00-0038606",
-     "name": "Parker Washington",
+     "rank": 4,
+     "player_id": "00-0034960",
+     "name": "Jakobi Meyers",
      "pos": "WR",
      "team": "JAX",
      "opp": "TEN",
      "market": "rec_yds",
-     "line": 60.5,
-     "label": "리시빙 60.5야드 이상",
-     "prob": 54.1,
+     "line": 41.5,
+     "label": "리시빙 41.5야드 이상",
+     "prob": 54.6,
      "status": "Active",
      "game_id": "2026_10_JAX_TEN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 0.8,
-     "model_prob": 55.7,
+     "edge": 1.4,
+     "model_prob": 56.6,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -13262,41 +13201,41 @@
        {
         "wk": 4,
         "opp": "CIN",
-        "val": 7.0
+        "val": 33.0
        },
        {
         "wk": 5,
         "opp": "PHI",
-        "val": 124.0
+        "val": 37.0
        },
        {
         "wk": 6,
         "opp": "HOU",
-        "val": 64.0
+        "val": 83.0
        },
        {
         "wk": 8,
         "opp": "IND",
-        "val": 16.0
+        "val": 24.0
        },
        {
         "wk": 9,
         "opp": "BAL",
-        "val": 61.0
+        "val": 65.0
        }
       ],
-      "need": 61.0,
-      "recent_hits": 3,
-      "mu": 75.6,
+      "need": 42.0,
+      "recent_hits": 2,
+      "mu": 50.5,
       "def_rank": 1.0,
       "def_allowed": 194.9,
-      "carry_share": 0.012,
-      "tgt_share": 0.231,
-      "rz_share": 0.074,
+      "carry_share": 0.003,
+      "tgt_share": 0.189,
+      "rz_share": 0.167,
       "implied_total": 28.5,
       "spread": 10.5,
-      "wind": 5.0,
-      "td_rate": 0.5
+      "wind": 8.0,
+      "td_rate": 0.312
      }
     }
    ]
@@ -13315,8 +13254,8 @@
     "home": 15.0
    },
    "weather": {
-    "temp_f": 73,
-    "wind_mph": 4,
+    "temp_f": 74,
+    "wind_mph": 1,
     "precip_pct": 0
    },
    "notes": [
@@ -13497,7 +13436,7 @@
       "rz_share": 0.022,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.188
      }
     },
@@ -13558,7 +13497,7 @@
       "rz_share": 0.178,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.312
      }
     },
@@ -13611,7 +13550,7 @@
       ],
       "need": 4.0,
       "recent_hits": 1,
-      "mu": 4.4,
+      "mu": 4.5,
       "def_rank": 19.0,
       "def_allowed": 3.8,
       "carry_share": 0.538,
@@ -13619,7 +13558,7 @@
       "rz_share": 0.442,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.625
      }
     },
@@ -13633,7 +13572,7 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 60.2,
+     "prob": 60.6,
      "status": "",
      "game_id": "2026_10_LA_ARI",
      "odds": null,
@@ -13672,7 +13611,7 @@
       ],
       "need": 225.0,
       "recent_hits": 2,
-      "mu": 241.8,
+      "mu": 243.9,
       "def_rank": 15.0,
       "def_allowed": 233.4,
       "carry_share": 0.044,
@@ -13680,7 +13619,7 @@
       "rz_share": 0.006,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.0
      }
     },
@@ -13741,7 +13680,7 @@
       "rz_share": 0.154,
       "implied_total": 15.0,
       "spread": -9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.5
      }
     },
@@ -13755,13 +13694,13 @@
      "market": "rec_yds",
      "line": 19.5,
      "label": "리시빙 19.5야드 이상",
-     "prob": 56.8,
+     "prob": 56.7,
      "status": "",
      "game_id": "2026_10_LA_ARI",
      "odds": -114.0,
      "implied": 53.3,
      "edge": 3.5,
-     "model_prob": 59.9,
+     "model_prob": 59.8,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -13794,7 +13733,7 @@
       ],
       "need": 20.0,
       "recent_hits": 2,
-      "mu": 31.3,
+      "mu": 31.2,
       "def_rank": 7.0,
       "def_allowed": 37.9,
       "carry_share": 0.538,
@@ -13802,7 +13741,7 @@
       "rz_share": 0.442,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.625
      }
     },
@@ -13855,7 +13794,7 @@
       ],
       "need": 35.0,
       "recent_hits": 3,
-      "mu": 44.4,
+      "mu": 44.3,
       "def_rank": 24.0,
       "def_allowed": 70.0,
       "carry_share": 0.459,
@@ -13863,7 +13802,7 @@
       "rz_share": 0.163,
       "implied_total": 15.0,
       "spread": -9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.188
      }
     },
@@ -13924,7 +13863,7 @@
       "rz_share": 0.006,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.0
      }
     },
@@ -13938,13 +13877,13 @@
      "market": "rec_yds",
      "line": 13.5,
      "label": "리시빙 13.5야드 이상",
-     "prob": 55.5,
+     "prob": 55.7,
      "status": "Questionable",
      "game_id": "2026_10_LA_ARI",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 2.2,
-     "model_prob": 57.9,
+     "edge": 2.4,
+     "model_prob": 58.2,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -13977,7 +13916,7 @@
       ],
       "need": 14.0,
       "recent_hits": 2,
-      "mu": 23.3,
+      "mu": 23.5,
       "def_rank": 21.0,
       "def_allowed": 45.8,
       "carry_share": 0.006,
@@ -13985,12 +13924,73 @@
       "rz_share": 0.079,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.125
      }
     },
     {
      "rank": 10,
+     "player_id": "00-0037157",
+     "name": "Bam Knight",
+     "pos": "RB",
+     "team": "ARI",
+     "opp": "LA",
+     "market": "rec_yds",
+     "line": 6.5,
+     "label": "리시빙 6.5야드 이상",
+     "prob": 55.0,
+     "status": "Active",
+     "game_id": "2026_10_LA_ARI",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.8,
+     "model_prob": 57.2,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 2,
+        "opp": "SEA",
+        "val": 0.0
+       },
+       {
+        "wk": 5,
+        "opp": "DET",
+        "val": 0.0
+       },
+       {
+        "wk": 6,
+        "opp": "LA",
+        "val": 18.0
+       },
+       {
+        "wk": 7,
+        "opp": "DEN",
+        "val": 15.0
+       },
+       {
+        "wk": 8,
+        "opp": "DAL",
+        "val": 10.0
+       }
+      ],
+      "need": 7.0,
+      "recent_hits": 3,
+      "mu": 15.1,
+      "def_rank": 2.0,
+      "def_allowed": 45.9,
+      "carry_share": 0.252,
+      "tgt_share": 0.058,
+      "rz_share": 0.15,
+      "implied_total": 15.0,
+      "spread": -9.5,
+      "wind": 1.0,
+      "td_rate": 0.312
+     }
+    },
+    {
+     "rank": 11,
      "player_id": "00-0039738",
      "name": "Blake Corum",
      "pos": "RB",
@@ -13999,7 +13999,7 @@
      "market": "rec_yds",
      "line": 6.5,
      "label": "리시빙 6.5야드 이상",
-     "prob": 54.8,
+     "prob": 54.7,
      "status": "",
      "game_id": "2026_10_LA_ARI",
      "odds": -114.0,
@@ -14038,7 +14038,7 @@
       ],
       "need": 7.0,
       "recent_hits": 3,
-      "mu": 14.6,
+      "mu": 14.5,
       "def_rank": 7.0,
       "def_allowed": 37.9,
       "carry_share": 0.365,
@@ -14046,69 +14046,8 @@
       "rz_share": 0.096,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.438
-     }
-    },
-    {
-     "rank": 11,
-     "player_id": "00-0037157",
-     "name": "Bam Knight",
-     "pos": "RB",
-     "team": "ARI",
-     "opp": "LA",
-     "market": "rec_yds",
-     "line": 6.5,
-     "label": "리시빙 6.5야드 이상",
-     "prob": 54.7,
-     "status": "Active",
-     "game_id": "2026_10_LA_ARI",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 1.5,
-     "model_prob": 56.8,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 2,
-        "opp": "SEA",
-        "val": 0.0
-       },
-       {
-        "wk": 5,
-        "opp": "DET",
-        "val": 0.0
-       },
-       {
-        "wk": 6,
-        "opp": "LA",
-        "val": 18.0
-       },
-       {
-        "wk": 7,
-        "opp": "DEN",
-        "val": 15.0
-       },
-       {
-        "wk": 8,
-        "opp": "DAL",
-        "val": 10.0
-       }
-      ],
-      "need": 7.0,
-      "recent_hits": 3,
-      "mu": 14.5,
-      "def_rank": 2.0,
-      "def_allowed": 45.9,
-      "carry_share": 0.252,
-      "tgt_share": 0.058,
-      "rz_share": 0.15,
-      "implied_total": 15.0,
-      "spread": -9.5,
-      "wind": 4.0,
-      "td_rate": 0.312
      }
     },
     {
@@ -14121,13 +14060,13 @@
      "market": "rush_yds",
      "line": 5.5,
      "label": "러싱 5.5야드 이상",
-     "prob": 50.4,
+     "prob": 50.3,
      "status": "Active",
      "game_id": "2026_10_LA_ARI",
      "odds": -114.0,
      "implied": 53.3,
      "edge": -2.9,
-     "model_prob": 50.1,
+     "model_prob": 50.0,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -14160,7 +14099,7 @@
       ],
       "need": 6.0,
       "recent_hits": 4,
-      "mu": 12.1,
+      "mu": 12.0,
       "def_rank": 3.0,
       "def_allowed": 23.2,
       "carry_share": 0.142,
@@ -14168,7 +14107,7 @@
       "rz_share": 0.077,
       "implied_total": 15.0,
       "spread": -9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.062
      }
     },
@@ -14188,7 +14127,7 @@
      "odds": 115.0,
      "implied": 46.5,
      "edge": -2.6,
-     "model_prob": 45.2,
+     "model_prob": 45.1,
      "market_prob": 41.5,
      "check": false,
      "detail": {
@@ -14229,7 +14168,7 @@
       "rz_share": 0.096,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.438
      }
     },
@@ -14243,13 +14182,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 19.0,
+     "prob": 19.3,
      "status": "Questionable",
      "game_id": "2026_10_LA_ARI",
      "odds": 550.0,
      "implied": 15.4,
-     "edge": 3.7,
-     "model_prob": 21.9,
+     "edge": 3.9,
+     "model_prob": 22.2,
      "market_prob": 13.7,
      "check": false,
      "detail": {
@@ -14290,7 +14229,7 @@
       "rz_share": 0.079,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.125
      }
     },
@@ -14304,7 +14243,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 18.5,
+     "prob": 18.4,
      "status": "Active",
      "game_id": "2026_10_LA_ARI",
      "odds": 290.0,
@@ -14351,7 +14290,7 @@
       "rz_share": 0.15,
       "implied_total": 15.0,
       "spread": -9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.312
      }
     }
@@ -14367,13 +14306,13 @@
      "market": "rec_yds",
      "line": 19.5,
      "label": "리시빙 19.5야드 이상",
-     "prob": 56.8,
+     "prob": 56.7,
      "status": "",
      "game_id": "2026_10_LA_ARI",
      "odds": -114.0,
      "implied": 53.3,
      "edge": 3.5,
-     "model_prob": 59.9,
+     "model_prob": 59.8,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -14406,7 +14345,7 @@
       ],
       "need": 20.0,
       "recent_hits": 2,
-      "mu": 31.3,
+      "mu": 31.2,
       "def_rank": 7.0,
       "def_allowed": 37.9,
       "carry_share": 0.538,
@@ -14414,7 +14353,7 @@
       "rz_share": 0.442,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.625
      }
     },
@@ -14467,7 +14406,7 @@
       ],
       "need": 35.0,
       "recent_hits": 3,
-      "mu": 44.4,
+      "mu": 44.3,
       "def_rank": 24.0,
       "def_allowed": 70.0,
       "carry_share": 0.459,
@@ -14475,7 +14414,7 @@
       "rz_share": 0.163,
       "implied_total": 15.0,
       "spread": -9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.188
      }
     },
@@ -14489,13 +14428,13 @@
      "market": "rec_yds",
      "line": 13.5,
      "label": "리시빙 13.5야드 이상",
-     "prob": 55.5,
+     "prob": 55.7,
      "status": "Questionable",
      "game_id": "2026_10_LA_ARI",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 2.2,
-     "model_prob": 57.9,
+     "edge": 2.4,
+     "model_prob": 58.2,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -14528,7 +14467,7 @@
       ],
       "need": 14.0,
       "recent_hits": 2,
-      "mu": 23.3,
+      "mu": 23.5,
       "def_rank": 21.0,
       "def_allowed": 45.8,
       "carry_share": 0.006,
@@ -14536,12 +14475,73 @@
       "rz_share": 0.079,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.125
      }
     },
     {
      "rank": 4,
+     "player_id": "00-0037157",
+     "name": "Bam Knight",
+     "pos": "RB",
+     "team": "ARI",
+     "opp": "LA",
+     "market": "rec_yds",
+     "line": 6.5,
+     "label": "리시빙 6.5야드 이상",
+     "prob": 55.0,
+     "status": "Active",
+     "game_id": "2026_10_LA_ARI",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.8,
+     "model_prob": 57.2,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 2,
+        "opp": "SEA",
+        "val": 0.0
+       },
+       {
+        "wk": 5,
+        "opp": "DET",
+        "val": 0.0
+       },
+       {
+        "wk": 6,
+        "opp": "LA",
+        "val": 18.0
+       },
+       {
+        "wk": 7,
+        "opp": "DEN",
+        "val": 15.0
+       },
+       {
+        "wk": 8,
+        "opp": "DAL",
+        "val": 10.0
+       }
+      ],
+      "need": 7.0,
+      "recent_hits": 3,
+      "mu": 15.1,
+      "def_rank": 2.0,
+      "def_allowed": 45.9,
+      "carry_share": 0.252,
+      "tgt_share": 0.058,
+      "rz_share": 0.15,
+      "implied_total": 15.0,
+      "spread": -9.5,
+      "wind": 1.0,
+      "td_rate": 0.312
+     }
+    },
+    {
+     "rank": 5,
      "player_id": "00-0039738",
      "name": "Blake Corum",
      "pos": "RB",
@@ -14550,7 +14550,7 @@
      "market": "rec_yds",
      "line": 6.5,
      "label": "리시빙 6.5야드 이상",
-     "prob": 54.8,
+     "prob": 54.7,
      "status": "",
      "game_id": "2026_10_LA_ARI",
      "odds": -114.0,
@@ -14589,7 +14589,7 @@
       ],
       "need": 7.0,
       "recent_hits": 3,
-      "mu": 14.6,
+      "mu": 14.5,
       "def_rank": 7.0,
       "def_allowed": 37.9,
       "carry_share": 0.365,
@@ -14597,69 +14597,8 @@
       "rz_share": 0.096,
       "implied_total": 24.5,
       "spread": 9.5,
-      "wind": 4.0,
+      "wind": 1.0,
       "td_rate": 0.438
-     }
-    },
-    {
-     "rank": 5,
-     "player_id": "00-0037157",
-     "name": "Bam Knight",
-     "pos": "RB",
-     "team": "ARI",
-     "opp": "LA",
-     "market": "rec_yds",
-     "line": 6.5,
-     "label": "리시빙 6.5야드 이상",
-     "prob": 54.7,
-     "status": "Active",
-     "game_id": "2026_10_LA_ARI",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 1.5,
-     "model_prob": 56.8,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 2,
-        "opp": "SEA",
-        "val": 0.0
-       },
-       {
-        "wk": 5,
-        "opp": "DET",
-        "val": 0.0
-       },
-       {
-        "wk": 6,
-        "opp": "LA",
-        "val": 18.0
-       },
-       {
-        "wk": 7,
-        "opp": "DEN",
-        "val": 15.0
-       },
-       {
-        "wk": 8,
-        "opp": "DAL",
-        "val": 10.0
-       }
-      ],
-      "need": 7.0,
-      "recent_hits": 3,
-      "mu": 14.5,
-      "def_rank": 2.0,
-      "def_allowed": 45.9,
-      "carry_share": 0.252,
-      "tgt_share": 0.058,
-      "rz_share": 0.15,
-      "implied_total": 15.0,
-      "spread": -9.5,
-      "wind": 4.0,
-      "td_rate": 0.312
      }
     }
    ]
@@ -16071,7 +16010,7 @@
    "weather": {
     "temp_f": 51,
     "wind_mph": 10,
-    "precip_pct": 59
+    "precip_pct": 61
    },
    "notes": [
     {
@@ -17363,8 +17302,8 @@
     "home": 26.5
    },
    "weather": {
-    "temp_f": 40,
-    "wind_mph": 3,
+    "temp_f": 42,
+    "wind_mph": 1,
     "precip_pct": 0
    },
    "notes": [],
@@ -17485,67 +17424,6 @@
    "best15_prob": [
     {
      "rank": 1,
-     "player_id": "00-0036410",
-     "name": "Tee Higgins",
-     "pos": "WR",
-     "team": "CIN",
-     "opp": "PIT",
-     "market": "receptions",
-     "line": 3.5,
-     "label": "리셉션 4개 이상",
-     "prob": 68.1,
-     "status": "Active",
-     "game_id": "2026_10_PIT_CIN",
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "model_prob": null,
-     "market_prob": null,
-     "check": null,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "JAX",
-        "val": 11.0
-       },
-       {
-        "wk": 5,
-        "opp": "MIA",
-        "val": 2.0
-       },
-       {
-        "wk": 7,
-        "opp": "BAL",
-        "val": 6.0
-       },
-       {
-        "wk": 8,
-        "opp": "TEN",
-        "val": 10.0
-       },
-       {
-        "wk": 9,
-        "opp": "ATL",
-        "val": 5.0
-       }
-      ],
-      "need": 4.0,
-      "recent_hits": 4,
-      "mu": 4.9,
-      "def_rank": 10.0,
-      "def_allowed": 12.0,
-      "carry_share": 0.0,
-      "tgt_share": 0.219,
-      "rz_share": 0.112,
-      "implied_total": 26.5,
-      "spread": 3.5,
-      "wind": 3.0,
-      "td_rate": 0.625
-     }
-    },
-    {
-     "rank": 2,
      "player_id": "00-0036442",
      "name": "Joe Burrow",
      "pos": "QB",
@@ -17593,7 +17471,7 @@
       ],
       "need": 225.0,
       "recent_hits": 4,
-      "mu": 275.2,
+      "mu": 275.6,
       "def_rank": 11.0,
       "def_allowed": 242.0,
       "carry_share": 0.123,
@@ -17601,12 +17479,12 @@
       "rz_share": 0.169,
       "implied_total": 26.5,
       "spread": 3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.188
      }
     },
     {
-     "rank": 3,
+     "rank": 2,
      "player_id": "00-0023459",
      "name": "Aaron Rodgers",
      "pos": "QB",
@@ -17615,7 +17493,7 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 63.0,
+     "prob": 65.0,
      "status": "Active",
      "game_id": "2026_10_PIT_CIN",
      "odds": null,
@@ -17654,7 +17532,7 @@
       ],
       "need": 225.0,
       "recent_hits": 3,
-      "mu": 260.5,
+      "mu": 266.1,
       "def_rank": 9.0,
       "def_allowed": 248.6,
       "carry_share": 0.05,
@@ -17662,8 +17540,69 @@
       "rz_share": 0.001,
       "implied_total": 23.0,
       "spread": -3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.062
+     }
+    },
+    {
+     "rank": 3,
+     "player_id": "00-0036900",
+     "name": "Ja'Marr Chase",
+     "pos": "WR",
+     "team": "CIN",
+     "opp": "PIT",
+     "market": "receptions",
+     "line": 5.5,
+     "label": "리셉션 6개 이상",
+     "prob": 61.6,
+     "status": "Active",
+     "game_id": "2026_10_PIT_CIN",
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "model_prob": null,
+     "market_prob": null,
+     "check": null,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "JAX",
+        "val": 3.0
+       },
+       {
+        "wk": 5,
+        "opp": "MIA",
+        "val": 6.0
+       },
+       {
+        "wk": 7,
+        "opp": "BAL",
+        "val": 5.0
+       },
+       {
+        "wk": 8,
+        "opp": "TEN",
+        "val": 11.0
+       },
+       {
+        "wk": 9,
+        "opp": "ATL",
+        "val": 10.0
+       }
+      ],
+      "need": 6.0,
+      "recent_hits": 3,
+      "mu": 6.6,
+      "def_rank": 10.0,
+      "def_allowed": 12.0,
+      "carry_share": 0.001,
+      "tgt_share": 0.304,
+      "rz_share": 0.123,
+      "implied_total": 26.5,
+      "spread": 3.5,
+      "wind": 1.0,
+      "td_rate": 0.5
      }
     },
     {
@@ -17723,7 +17662,7 @@
       "rz_share": 0.123,
       "implied_total": 23.0,
       "spread": -3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.188
      }
     },
@@ -17784,7 +17723,7 @@
       "rz_share": 0.212,
       "implied_total": 26.5,
       "spread": 3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.312
      }
     },
@@ -17845,7 +17784,7 @@
       "rz_share": 0.027,
       "implied_total": 23.0,
       "spread": -3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.125
      }
     },
@@ -17906,7 +17845,7 @@
       "rz_share": 0.169,
       "implied_total": 26.5,
       "spread": 3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.188
      }
     },
@@ -17920,13 +17859,13 @@
      "market": "rush_yds",
      "line": 46.5,
      "label": "러싱 46.5야드 이상",
-     "prob": 56.5,
+     "prob": 56.7,
      "status": "Active",
      "game_id": "2026_10_PIT_CIN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.3,
-     "model_prob": 59.5,
+     "edge": 3.4,
+     "model_prob": 59.8,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -17959,7 +17898,7 @@
       ],
       "need": 47.0,
       "recent_hits": 2,
-      "mu": 56.0,
+      "mu": 56.2,
       "def_rank": 24.0,
       "def_allowed": 70.0,
       "carry_share": 0.551,
@@ -17967,7 +17906,7 @@
       "rz_share": 0.212,
       "implied_total": 26.5,
       "spread": 3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.312
      }
     },
@@ -18028,7 +17967,7 @@
       "rz_share": 0.001,
       "implied_total": 23.0,
       "spread": -3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.062
      }
     },
@@ -18042,13 +17981,13 @@
      "market": "rush_yds",
      "line": 30.5,
      "label": "러싱 30.5야드 이상",
-     "prob": 52.0,
+     "prob": 51.7,
      "status": "Active",
      "game_id": "2026_10_PIT_CIN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -1.3,
-     "model_prob": 52.5,
+     "edge": -1.6,
+     "model_prob": 52.1,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -18081,7 +18020,7 @@
       ],
       "need": 31.0,
       "recent_hits": 3,
-      "mu": 37.4,
+      "mu": 37.2,
       "def_rank": 16.0,
       "def_allowed": 88.4,
       "carry_share": 0.39,
@@ -18089,7 +18028,7 @@
       "rz_share": 0.168,
       "implied_total": 23.0,
       "spread": -3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.25
      }
     },
@@ -18103,13 +18042,13 @@
      "market": "rush_yds",
      "line": 17.5,
      "label": "러싱 17.5야드 이상",
-     "prob": 50.5,
+     "prob": 50.6,
      "status": "Active",
      "game_id": "2026_10_PIT_CIN",
      "odds": -114.0,
      "implied": 53.3,
      "edge": -2.7,
-     "model_prob": 50.3,
+     "model_prob": 50.4,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -18142,7 +18081,7 @@
       ],
       "need": 18.0,
       "recent_hits": 2,
-      "mu": 24.7,
+      "mu": 24.9,
       "def_rank": 24.0,
       "def_allowed": 70.0,
       "carry_share": 0.283,
@@ -18150,7 +18089,7 @@
       "rz_share": 0.131,
       "implied_total": 26.5,
       "spread": 3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.312
      }
     },
@@ -18169,8 +18108,8 @@
      "game_id": "2026_10_PIT_CIN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -3.2,
-     "model_prob": 49.6,
+     "edge": -3.1,
+     "model_prob": 49.7,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -18203,7 +18142,7 @@
       ],
       "need": 20.0,
       "recent_hits": 3,
-      "mu": 24.7,
+      "mu": 24.8,
       "def_rank": 17.0,
       "def_allowed": 138.5,
       "carry_share": 0.012,
@@ -18211,12 +18150,73 @@
       "rz_share": 0.027,
       "implied_total": 26.5,
       "spread": 3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.0
      }
     },
     {
      "rank": 13,
+     "player_id": "00-0035640",
+     "name": "DK Metcalf",
+     "pos": "WR",
+     "team": "PIT",
+     "opp": "CIN",
+     "market": "rec_yds",
+     "line": 53.5,
+     "label": "리시빙 53.5야드 이상",
+     "prob": 47.8,
+     "status": "Active",
+     "game_id": "2026_10_PIT_CIN",
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": -5.5,
+     "model_prob": 46.1,
+     "market_prob": 51.0,
+     "check": false,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "CLE",
+        "val": 115.0
+       },
+       {
+        "wk": 5,
+        "opp": "IND",
+        "val": 12.0
+       },
+       {
+        "wk": 6,
+        "opp": "TB",
+        "val": 93.0
+       },
+       {
+        "wk": 7,
+        "opp": "NO",
+        "val": 56.0
+       },
+       {
+        "wk": 8,
+        "opp": "CLE",
+        "val": 4.0
+       }
+      ],
+      "need": 54.0,
+      "recent_hits": 3,
+      "mu": 53.6,
+      "def_rank": 18.0,
+      "def_allowed": 135.8,
+      "carry_share": 0.005,
+      "tgt_share": 0.236,
+      "rz_share": 0.123,
+      "implied_total": 23.0,
+      "spread": -3.5,
+      "wind": 1.0,
+      "td_rate": 0.188
+     }
+    },
+    {
+     "rank": 14,
      "player_id": "00-0038558",
      "name": "Darnell Washington",
      "pos": "TE",
@@ -18264,7 +18264,7 @@
       ],
       "need": 29.0,
       "recent_hits": 1,
-      "mu": 31.3,
+      "mu": 31.4,
       "def_rank": 2.0,
       "def_allowed": 80.6,
       "carry_share": 0.0,
@@ -18272,68 +18272,7 @@
       "rz_share": 0.128,
       "implied_total": 23.0,
       "spread": -3.5,
-      "wind": 3.0,
-      "td_rate": 0.188
-     }
-    },
-    {
-     "rank": 14,
-     "player_id": "00-0035640",
-     "name": "DK Metcalf",
-     "pos": "WR",
-     "team": "PIT",
-     "opp": "CIN",
-     "market": "rec_yds",
-     "line": 53.5,
-     "label": "리시빙 53.5야드 이상",
-     "prob": 46.5,
-     "status": "Active",
-     "game_id": "2026_10_PIT_CIN",
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": -6.7,
-     "model_prob": 44.1,
-     "market_prob": 51.0,
-     "check": false,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "CLE",
-        "val": 115.0
-       },
-       {
-        "wk": 5,
-        "opp": "IND",
-        "val": 12.0
-       },
-       {
-        "wk": 6,
-        "opp": "TB",
-        "val": 93.0
-       },
-       {
-        "wk": 7,
-        "opp": "NO",
-        "val": 56.0
-       },
-       {
-        "wk": 8,
-        "opp": "CLE",
-        "val": 4.0
-       }
-      ],
-      "need": 54.0,
-      "recent_hits": 3,
-      "mu": 51.9,
-      "def_rank": 18.0,
-      "def_allowed": 135.8,
-      "carry_share": 0.005,
-      "tgt_share": 0.236,
-      "rz_share": 0.123,
-      "implied_total": 23.0,
-      "spread": -3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.188
      }
     },
@@ -18394,7 +18333,7 @@
       "rz_share": 0.054,
       "implied_total": 26.5,
       "spread": 3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.5
      }
     }
@@ -18410,13 +18349,13 @@
      "market": "rush_yds",
      "line": 46.5,
      "label": "러싱 46.5야드 이상",
-     "prob": 56.5,
+     "prob": 56.7,
      "status": "Active",
      "game_id": "2026_10_PIT_CIN",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.3,
-     "model_prob": 59.5,
+     "edge": 3.4,
+     "model_prob": 59.8,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -18449,7 +18388,7 @@
       ],
       "need": 47.0,
       "recent_hits": 2,
-      "mu": 56.0,
+      "mu": 56.2,
       "def_rank": 24.0,
       "def_allowed": 70.0,
       "carry_share": 0.551,
@@ -18457,7 +18396,7 @@
       "rz_share": 0.212,
       "implied_total": 26.5,
       "spread": 3.5,
-      "wind": 3.0,
+      "wind": 1.0,
       "td_rate": 0.312
      }
     }
@@ -18478,7 +18417,7 @@
    },
    "weather": {
     "temp_f": 47,
-    "wind_mph": 5,
+    "wind_mph": 4,
     "precip_pct": 0
    },
    "notes": [],
@@ -18689,12 +18628,73 @@
       "rz_share": 0.041,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.438
      }
     },
     {
      "rank": 2,
+     "player_id": "00-0036355",
+     "name": "Justin Herbert",
+     "pos": "QB",
+     "team": "LAC",
+     "opp": "BAL",
+     "market": "pass_yds",
+     "line": 199.5,
+     "label": "패싱 200야드 이상",
+     "prob": 60.2,
+     "status": "Active",
+     "game_id": "2026_10_LAC_BAL",
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "model_prob": null,
+     "market_prob": null,
+     "check": null,
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "SEA",
+        "val": 189.0
+       },
+       {
+        "wk": 5,
+        "opp": "DEN",
+        "val": 121.0
+       },
+       {
+        "wk": 6,
+        "opp": "KC",
+        "val": 204.0
+       },
+       {
+        "wk": 8,
+        "opp": "LA",
+        "val": 257.0
+       },
+       {
+        "wk": 9,
+        "opp": "HOU",
+        "val": 193.0
+       }
+      ],
+      "need": 200.0,
+      "recent_hits": 2,
+      "mu": 205.1,
+      "def_rank": 8.0,
+      "def_allowed": 251.4,
+      "carry_share": 0.16,
+      "tgt_share": 0.003,
+      "rz_share": 0.108,
+      "implied_total": 17.0,
+      "spread": -4.5,
+      "wind": 4.0,
+      "td_rate": 0.062
+     }
+    },
+    {
+     "rank": 3,
      "player_id": "00-0040666",
      "name": "Omarion Hampton",
      "pos": "RB",
@@ -18750,69 +18750,8 @@
       "rz_share": 0.389,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.5
-     }
-    },
-    {
-     "rank": 3,
-     "player_id": "00-0036355",
-     "name": "Justin Herbert",
-     "pos": "QB",
-     "team": "LAC",
-     "opp": "BAL",
-     "market": "pass_yds",
-     "line": 199.5,
-     "label": "패싱 200야드 이상",
-     "prob": 58.9,
-     "status": "Active",
-     "game_id": "2026_10_LAC_BAL",
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "model_prob": null,
-     "market_prob": null,
-     "check": null,
-     "detail": {
-      "recent": [
-       {
-        "wk": 4,
-        "opp": "SEA",
-        "val": 189.0
-       },
-       {
-        "wk": 5,
-        "opp": "DEN",
-        "val": 121.0
-       },
-       {
-        "wk": 6,
-        "opp": "KC",
-        "val": 204.0
-       },
-       {
-        "wk": 8,
-        "opp": "LA",
-        "val": 257.0
-       },
-       {
-        "wk": 9,
-        "opp": "HOU",
-        "val": 193.0
-       }
-      ],
-      "need": 200.0,
-      "recent_hits": 2,
-      "mu": 204.2,
-      "def_rank": 8.0,
-      "def_allowed": 251.4,
-      "carry_share": 0.16,
-      "tgt_share": 0.003,
-      "rz_share": 0.108,
-      "implied_total": 17.0,
-      "spread": -4.5,
-      "wind": 5.0,
-      "td_rate": 0.062
      }
     },
     {
@@ -18872,7 +18811,7 @@
       "rz_share": 0.043,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.125
      }
     },
@@ -18886,13 +18825,13 @@
      "market": "rush_yds",
      "line": 12.5,
      "label": "러싱 12.5야드 이상",
-     "prob": 56.5,
+     "prob": 56.4,
      "status": "Active",
      "game_id": "2026_10_LAC_BAL",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.3,
-     "model_prob": 59.5,
+     "edge": 3.2,
+     "model_prob": 59.4,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -18925,7 +18864,7 @@
       ],
       "need": 13.0,
       "recent_hits": 3,
-      "mu": 24.7,
+      "mu": 24.5,
       "def_rank": 10.0,
       "def_allowed": 105.0,
       "carry_share": 0.129,
@@ -18933,7 +18872,7 @@
       "rz_share": 0.057,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.188
      }
     },
@@ -18994,7 +18933,7 @@
       "rz_share": 0.066,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.25
      }
     },
@@ -19055,7 +18994,7 @@
       "rz_share": 0.029,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.125
      }
     },
@@ -19116,7 +19055,7 @@
       "rz_share": 0.057,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.188
      }
     },
@@ -19177,7 +19116,7 @@
       "rz_share": 0.063,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.062
      }
     },
@@ -19238,7 +19177,7 @@
       "rz_share": 0.389,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.5
      }
     },
@@ -19299,7 +19238,7 @@
       "rz_share": 0.063,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.062
      }
     },
@@ -19313,13 +19252,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 17.8,
+     "prob": 17.9,
      "status": "Active",
      "game_id": "2026_10_LAC_BAL",
      "odds": 490.0,
      "implied": 16.9,
-     "edge": 0.8,
-     "model_prob": 19.2,
+     "edge": 0.9,
+     "model_prob": 19.4,
      "market_prob": 15.1,
      "check": false,
      "detail": {
@@ -19360,7 +19299,7 @@
       "rz_share": 0.017,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.312
      }
     },
@@ -19379,8 +19318,8 @@
      "game_id": "2026_10_LAC_BAL",
      "odds": 330.0,
      "implied": 23.3,
-     "edge": -5.6,
-     "model_prob": 16.0,
+     "edge": -5.5,
+     "model_prob": 16.1,
      "market_prob": 20.8,
      "check": false,
      "detail": {
@@ -19421,7 +19360,7 @@
       "rz_share": 0.048,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.312
      }
     },
@@ -19435,13 +19374,13 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 17.1,
+     "prob": 17.2,
      "status": "Active",
      "game_id": "2026_10_LAC_BAL",
      "odds": 330.0,
      "implied": 23.3,
-     "edge": -6.2,
-     "model_prob": 15.1,
+     "edge": -6.1,
+     "model_prob": 15.3,
      "market_prob": 20.8,
      "check": false,
      "detail": {
@@ -19482,7 +19421,7 @@
       "rz_share": 0.091,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.0
      }
     }
@@ -19545,7 +19484,7 @@
       "rz_share": 0.389,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.5
      }
     },
@@ -19606,7 +19545,7 @@
       "rz_share": 0.043,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.125
      }
     },
@@ -19620,13 +19559,13 @@
      "market": "rush_yds",
      "line": 12.5,
      "label": "러싱 12.5야드 이상",
-     "prob": 56.5,
+     "prob": 56.4,
      "status": "Active",
      "game_id": "2026_10_LAC_BAL",
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.3,
-     "model_prob": 59.5,
+     "edge": 3.2,
+     "model_prob": 59.4,
      "market_prob": 51.0,
      "check": false,
      "detail": {
@@ -19659,7 +19598,7 @@
       ],
       "need": 13.0,
       "recent_hits": 3,
-      "mu": 24.7,
+      "mu": 24.5,
       "def_rank": 10.0,
       "def_allowed": 105.0,
       "carry_share": 0.129,
@@ -19667,7 +19606,7 @@
       "rz_share": 0.057,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.188
      }
     },
@@ -19728,7 +19667,7 @@
       "rz_share": 0.066,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.25
      }
     },
@@ -19789,7 +19728,7 @@
       "rz_share": 0.029,
       "implied_total": 17.0,
       "spread": -4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.125
      }
     },
@@ -19850,7 +19789,7 @@
       "rz_share": 0.057,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.188
      }
     },
@@ -19911,7 +19850,7 @@
       "rz_share": 0.063,
       "implied_total": 21.5,
       "spread": 4.5,
-      "wind": 5.0,
+      "wind": 4.0,
       "td_rate": 0.062
      }
     }
@@ -19934,6 +19873,13 @@
   "T.J. Hockenson",
   "Tyler Goodson"
  ],
- "seconds": 17.2,
- "changes": []
+ "seconds": 14.6,
+ "changes": [
+  "▲ Zay Flowers 리셉션 4개 이상 새로 진입 (4위, 67.4%)",
+  "▲ Aaron Rodgers 패싱 225야드 이상 새로 진입 (8위, 65.0%)",
+  "▲ Dak Prescott 패싱 225야드 이상 새로 진입 (9위, 64.2%)",
+  "▼ Tee Higgins 리셉션 4개 이상 베스트 15에서 빠짐",
+  "▼ Trevor Lawrence 패싱 225야드 이상 베스트 15에서 빠짐",
+  "▼ Josh Allen 패싱 225야드 이상 베스트 15에서 빠짐"
+ ]
 }
