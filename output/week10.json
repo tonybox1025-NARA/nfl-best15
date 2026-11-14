@@ -1,11 +1,11 @@
 {
  "season": 2026,
  "week": 10,
- "generated_at": "2026-11-13 20:20 ET",
+ "generated_at": "2026-11-13 20:54 ET",
  "sources": {
   "injuries": "NFL 공식 리포트 300건 · ESPN 실시간 800건",
   "weather": "날씨 10경기 (야외)",
-  "odds": "FanDuel 배당 582개 (남은 크레딧 44)"
+  "odds": "배당 34분 전 데이터 사용 (크레딧 절약)"
  },
  "has_odds": true,
  "overall": {
@@ -19934,22 +19934,6 @@
   "T.J. Hockenson",
   "Tyler Goodson"
  ],
- "seconds": 20.2,
- "changes": [
-  "▲ Drake London 리셉션 4개 이상 새로 진입 (4위, 67.5%)",
-  "▲ Joe Burrow 패싱 225야드 이상 새로 진입 (5위, 67.2%)",
-  "▲ Kenneth Walker III 러싱 70야드 이상 새로 진입 (12위, 62.4%)",
-  "▲ Jahmyr Gibbs 애니타임 터치다운 새로 진입 (14위, 62.2%)",
-  "▲ Javonte Williams 애니타임 터치다운 새로 진입 (15위, 61.1%)",
-  "▼ George Pickens 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ T.J. Hockenson 리시빙 30야드 이상 베스트 15에서 빠짐",
-  "▼ A.J. Brown 리시빙 40야드 이상 베스트 15에서 빠짐",
-  "▼ Dak Prescott 패싱 225야드 이상 베스트 15에서 빠짐",
-  "▼ George Pickens 리시빙 50야드 이상 베스트 15에서 빠짐",
-  "✕ Brevin Jordan 결장 반영",
-  "✕ Jared Wayne 결장 반영",
-  "✕ Jonathan Mingo 결장 반영",
-  "✕ Marvin Harrison Jr. 결장 반영",
-  "✕ T.J. Hockenson 결장 반영"
- ]
+ "seconds": 17.2,
+ "changes": []
 }
