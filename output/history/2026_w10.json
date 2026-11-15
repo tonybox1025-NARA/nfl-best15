@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 10,
- "updated_at": "2026-11-15 14:59 ET",
+ "updated_at": "2026-11-15 15:07 ET",
  "games": {
   "2026_10_NE_DET": {
    "away": "NE",
@@ -4038,7 +4038,7 @@
      "odds": null,
      "implied": null,
      "edge": null,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 8,
@@ -4055,7 +4055,7 @@
      "odds": null,
      "implied": null,
      "edge": null,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 9,

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15 14:59 ET",
+ "updated_at": "2026-11-15 15:07 ET",
  "overall_best15": {
   "graded": 0,
   "hits": 0,
@@ -3428,7 +3428,7 @@
        "odds": null,
        "implied": null,
        "edge": null,
-       "status": "Active",
+       "status": "",
        "result": "pending",
        "actual": null
       },
@@ -3447,7 +3447,7 @@
        "odds": null,
        "implied": null,
        "edge": null,
-       "status": "Active",
+       "status": "",
        "result": "pending",
        "actual": null
       },

@@ -1,7 +1,7 @@
 # 2026 시즌 10주차 베스트 15
 
-생성: 2026-11-15 14:59 ET  
-데이터: NFL 공식 리포트 347건 · ESPN 실시간 800건 / 날씨 10경기 (야외) / FanDuel 배당 0개 (남은 크레딧 2)
+생성: 2026-11-15 15:07 ET  
+데이터: NFL 공식 리포트 347건 · ESPN 실시간 800건 / 날씨 10경기 (야외) / 배당 7분 전 데이터 사용 (크레딧 절약)
 
 > 확률은 과거 데이터 기반 추정치예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요. ⚠는 모델과 시장 차이가 15%p 넘는 픽(역할 변화·부상 확인 필요)이에요.
 
@@ -10,10 +10,10 @@
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Tee Higgins (WR) | CIN | PIT | 리셉션 4개 이상 | **68.1%** | - | - | Active |
-| 2 | Garrett Wilson (WR) | NYJ | BUF | 리셉션 4개 이상 | **67.4%** | - | - | Active |
-| 3 | Drake London (WR) | ATL | KC | 리셉션 4개 이상 | **67.4%** | - | - | Active |
-| 4 | Zay Flowers (WR) | BAL | LAC | 리셉션 4개 이상 | **67.4%** | - | - | Active |
-| 5 | Christian McCaffrey (RB) | SF | DAL | 리시빙 20야드 이상 | **67.3%** | - | - |  |
+| 2 | Drake London (WR) | ATL | KC | 리셉션 4개 이상 | **67.4%** | - | - | Active |
+| 3 | Zay Flowers (WR) | BAL | LAC | 리셉션 4개 이상 | **67.4%** | - | - | Active |
+| 4 | Christian McCaffrey (RB) | SF | DAL | 리시빙 20야드 이상 | **67.3%** | - | - |  |
+| 5 | Tyler Warren (TE) | IND | MIA | 리셉션 4개 이상 | **67.2%** | - | - | Active |
 | 6 | Trevor Lawrence (QB) | JAX | TEN | 패싱 225야드 이상 | **67.2%** | - | - |  |
 | 7 | Dak Prescott (QB) | DAL | SF | 패싱 225야드 이상 | **66.8%** | - | - | Active |
 | 8 | Dalton Kincaid (TE) | BUF | NYJ | 리시빙 30야드 이상 | **66.4%** | - | - | Active |
@@ -145,21 +145,21 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Garrett Wilson (WR) | NYJ | BUF | 리셉션 4개 이상 | **67.4%** | - | - | Active |
-| 2 | Dalton Kincaid (TE) | BUF | NYJ | 리시빙 30야드 이상 | **66.4%** | - | - | Active |
-| 3 | Breece Hall (RB) | NYJ | BUF | 러싱 40야드 이상 | **65.6%** | - | - | Active |
-| 4 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **64.9%** | - | - |  |
-| 5 | Dalton Kincaid (TE) | BUF | NYJ | 리셉션 3개 이상 | **63.7%** | - | - | Active |
-| 6 | Omar Cooper Jr. (WR) | NYJ | BUF | 리시빙 40야드 이상 | **62.8%** | - | - | Questionable |
-| 7 | Omar Cooper Jr. (WR) | NYJ | BUF | 리셉션 4개 이상 | **61.6%** | - | - | Questionable |
-| 8 | Braelon Allen (RB) | NYJ | BUF | 러싱 50야드 이상 | **61.5%** | - | - | Active |
-| 9 | Josh Allen (QB) | BUF | NYJ | 패싱 TD 2개 이상 | **60.6%** | - | - |  |
-| 10 | James Cook (RB) | BUF | NYJ | 러싱 90야드 이상 | **58.7%** | - | - |  |
-| 11 | Geno Smith (QB) | NYJ | BUF | 패싱 225야드 이상 | **58.1%** | - | - | Questionable |
-| 12 | Adonai Mitchell (WR) | NYJ | BUF | 리시빙 40야드 이상 | **57.6%** | - | - | Active |
-| 13 | Josh Allen (QB) | BUF | NYJ | 러싱 20야드 이상 | **57.1%** | - | - |  |
-| 14 | Garrett Wilson (WR) | NYJ | BUF | 리시빙 50야드 이상 | **56.6%** | - | - | Active |
-| 15 | Breece Hall (RB) | NYJ | BUF | 애니타임 터치다운 | **37.3%** | - | - | Active |
+| 1 | Dalton Kincaid (TE) | BUF | NYJ | 리시빙 30야드 이상 | **66.4%** | - | - | Active |
+| 2 | Breece Hall (RB) | NYJ | BUF | 러싱 40야드 이상 | **65.6%** | - | - | Active |
+| 3 | James Cook (RB) | BUF | NYJ | 애니타임 터치다운 | **64.9%** | - | - |  |
+| 4 | Adonai Mitchell (WR) | NYJ | BUF | 리시빙 40야드 이상 | **63.9%** | - | - | Active |
+| 5 | Breece Hall (RB) | NYJ | BUF | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 6 | Dalton Kincaid (TE) | BUF | NYJ | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 7 | Mason Taylor (TE) | NYJ | BUF | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 8 | Garrett Wilson (WR) | NYJ | BUF | 리시빙 50야드 이상 | **63.6%** | - | - | Active |
+| 9 | Garrett Wilson (WR) | NYJ | BUF | 리셉션 5개 이상 | **62.7%** | - | - | Active |
+| 10 | Braelon Allen (RB) | NYJ | BUF | 러싱 50야드 이상 | **61.5%** | - | - | Active |
+| 11 | Josh Allen (QB) | BUF | NYJ | 패싱 TD 2개 이상 | **60.6%** | - | - |  |
+| 12 | James Cook (RB) | BUF | NYJ | 러싱 90야드 이상 | **58.7%** | - | - |  |
+| 13 | Geno Smith (QB) | NYJ | BUF | 패싱 225야드 이상 | **58.1%** | - | - | Questionable |
+| 14 | Josh Allen (QB) | BUF | NYJ | 러싱 20야드 이상 | **57.1%** | - | - |  |
+| 15 | DJ Moore (WR) | BUF | NYJ | 리시빙 40야드 이상 | **55.9%** | - | - |  |
 
 ### JAX @ TEN · 2026-11-15 13:00 ET · Nissan Stadium
 스프레드 TEN +10.5 · 총점 45.5 · 예상 점수 JAX 28.0 – TEN 17.5
@@ -228,8 +228,8 @@
 | 4 | Brock Purdy (QB) | SF | DAL | 패싱 250야드 이상 | **62.8%** | - | - |  |
 | 5 | Brock Purdy (QB) | SF | DAL | 패싱 TD 2개 이상 | **62.7%** | - | - |  |
 | 6 | Javonte Williams (RB) | DAL | SF | 애니타임 터치다운 | **61.5%** | - | - | Active |
-| 7 | CeeDee Lamb (WR) | DAL | SF | 리시빙 70야드 이상 | **60.4%** | - | - | Active |
-| 8 | CeeDee Lamb (WR) | DAL | SF | 리셉션 7개 이상 | **59.5%** | - | - | Active |
+| 7 | CeeDee Lamb (WR) | DAL | SF | 리시빙 70야드 이상 | **60.4%** | - | - |  |
+| 8 | CeeDee Lamb (WR) | DAL | SF | 리셉션 7개 이상 | **59.5%** | - | - |  |
 | 9 | George Kittle (TE) | SF | DAL | 리시빙 60야드 이상 | **59.2%** | - | - |  |
 | 10 | George Pickens (WR) | DAL | SF | 리셉션 5개 이상 | **59.2%** | - | - | Active |
 | 11 | George Kittle (TE) | SF | DAL | 리셉션 5개 이상 | **59.1%** | - | - |  |
