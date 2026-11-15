@@ -1,11 +1,11 @@
 {
  "season": 2026,
  "week": 10,
- "generated_at": "2026-11-15 14:06 ET",
+ "generated_at": "2026-11-15 14:08 ET",
  "sources": {
   "injuries": "NFL 공식 리포트 347건 · ESPN 실시간 800건",
   "weather": "날씨 10경기 (야외)",
-  "odds": "배당 672분 전 데이터 사용 (크레딧 절약)"
+  "odds": "배당 674분 전 데이터 사용 (크레딧 절약)"
  },
  "has_odds": false,
  "overall": {
@@ -1709,7 +1709,7 @@
      "team": "KC",
      "position": "TE",
      "status": "Questionable",
-     "injury": "Ankle"
+     "injury": ""
     },
     {
      "player_display_name": "Patrick Mahomes",
@@ -11815,22 +11815,6 @@
   "T.J. Hockenson",
   "Tyler Goodson"
  ],
- "seconds": 11.6,
- "changes": [
-  "▲ Garrett Wilson 리셉션 4개 이상 새로 진입 (2위, 67.4%)",
-  "▲ Zay Flowers 리셉션 4개 이상 새로 진입 (4위, 67.4%)",
-  "• Dak Prescott 패싱 225야드 이상 64.2% → 66.8%",
-  "▲ Trey McBride 리시빙 40야드 이상 새로 진입 (11위, 64.9%)",
-  "▲ Tony Pollard 러싱 40야드 이상 새로 진입 (13위, 64.8%)",
-  "▲ Jonathan Taylor 러싱 50야드 이상 새로 진입 (14위, 63.9%)",
-  "▼ Christian Watson 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Tyler Warren 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Drake Maye 패싱 225야드 이상 베스트 15에서 빠짐",
-  "▼ George Pickens 리시빙 50야드 이상 베스트 15에서 빠짐",
-  "▼ Brock Purdy 패싱 TD 2개 이상 베스트 15에서 빠짐",
-  "✕ Jaydn Ott 결장 반영",
-  "✕ Jordan Addison 결장 반영",
-  "✕ Max Brosmer 결장 반영",
-  "✕ Pierre Strong 결장 반영"
- ]
+ "seconds": 12.6,
+ "changes": []
 }
