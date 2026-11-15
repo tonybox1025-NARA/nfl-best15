@@ -1,11 +1,11 @@
 {
  "season": 2026,
  "week": 10,
- "generated_at": "2026-11-15 14:08 ET",
+ "generated_at": "2026-11-15 14:59 ET",
  "sources": {
   "injuries": "NFL 공식 리포트 347건 · ESPN 실시간 800건",
   "weather": "날씨 10경기 (야외)",
-  "odds": "배당 674분 전 데이터 사용 (크레딧 절약)"
+  "odds": "FanDuel 배당 0개 (남은 크레딧 2)"
  },
  "has_odds": false,
  "overall": {
@@ -296,7 +296,7 @@
     "line": 224.5,
     "label": "패싱 225야드 이상",
     "prob": 67.2,
-    "status": "Active",
+    "status": "",
     "game_id": "2026_10_JAX_TEN",
     "detail": {
      "recent": [
@@ -1708,7 +1708,7 @@
      "player_display_name": "Travis Kelce",
      "team": "KC",
      "position": "TE",
-     "status": "Questionable",
+     "status": "Active",
      "injury": ""
     },
     {
@@ -2262,7 +2262,7 @@
      "line": 39.5,
      "label": "리시빙 40야드 이상",
      "prob": 59.5,
-     "status": "Questionable",
+     "status": "Active",
      "game_id": "2026_10_KC_ATL",
      "detail": {
       "recent": [
@@ -2540,13 +2540,6 @@
      "injury": ""
     },
     {
-     "player_display_name": "Jerry Jeudy",
-     "team": "CLE",
-     "position": "WR",
-     "status": "Active",
-     "injury": ""
-    },
-    {
      "player_display_name": "Davis Mills",
      "team": "HOU",
      "position": "QB",
@@ -2578,8 +2571,8 @@
      "player_display_name": "Woody Marks",
      "team": "HOU",
      "position": "RB",
-     "status": "Active",
-     "injury": ""
+     "status": "Questionable",
+     "injury": "Concussion"
     },
     {
      "player_display_name": "Harold Fannin Jr.",
@@ -2604,6 +2597,13 @@
     },
     {
      "player_display_name": "Denzel Boston",
+     "team": "CLE",
+     "position": "WR",
+     "status": "Active",
+     "injury": ""
+    },
+    {
+     "player_display_name": "KC Concepcion",
      "team": "CLE",
      "position": "WR",
      "status": "Active",
@@ -3007,7 +3007,7 @@
      "line": 49.5,
      "label": "러싱 50야드 이상",
      "prob": 60.1,
-     "status": "Active",
+     "status": "Questionable",
      "game_id": "2026_10_HOU_CLE",
      "detail": {
       "recent": [
@@ -3227,7 +3227,7 @@
      "line": null,
      "label": "애니타임 터치다운",
      "prob": 37.4,
-     "status": "Active",
+     "status": "Questionable",
      "game_id": "2026_10_HOU_CLE",
      "detail": {
       "recent": [
@@ -3422,8 +3422,8 @@
      "player_display_name": "Bo Melton",
      "team": "GB",
      "position": "WR",
-     "status": "Active",
-     "injury": ""
+     "status": "Questionable",
+     "injury": "Thigh"
     },
     {
      "player_display_name": "MarShawn Lloyd",
@@ -5855,8 +5855,8 @@
      "player_display_name": "Geno Smith",
      "team": "NYJ",
      "position": "QB",
-     "status": "Active",
-     "injury": ""
+     "status": "Questionable",
+     "injury": "Concussion"
     },
     {
      "player_display_name": "Ty Johnson",
@@ -5869,13 +5869,6 @@
      "player_display_name": "Dawson Knox",
      "team": "BUF",
      "position": "TE",
-     "status": "Active",
-     "injury": ""
-    },
-    {
-     "player_display_name": "Khalil Shakir",
-     "team": "BUF",
-     "position": "WR",
      "status": "Active",
      "injury": ""
     },
@@ -6530,7 +6523,7 @@
      "line": 224.5,
      "label": "패싱 225야드 이상",
      "prob": 58.1,
-     "status": "Active",
+     "status": "Questionable",
      "game_id": "2026_10_BUF_NYJ",
      "detail": {
       "recent": [
@@ -6846,13 +6839,6 @@
      "injury": ""
     },
     {
-     "player_display_name": "Trevor Lawrence",
-     "team": "JAX",
-     "position": "QB",
-     "status": "Active",
-     "injury": ""
-    },
-    {
      "player_display_name": "Chris Rodriguez Jr.",
      "team": "JAX",
      "position": "RB",
@@ -6942,7 +6928,7 @@
      "line": 224.5,
      "label": "패싱 225야드 이상",
      "prob": 67.2,
-     "status": "Active",
+     "status": "",
      "game_id": "2026_10_JAX_TEN",
      "detail": {
       "recent": [
@@ -7327,7 +7313,7 @@
      "line": 1.5,
      "label": "패싱 TD 2개 이상",
      "prob": 59.5,
-     "status": "Active",
+     "status": "",
      "game_id": "2026_10_JAX_TEN",
      "detail": {
       "recent": [
@@ -7879,8 +7865,8 @@
      "player_display_name": "Davis Allen",
      "team": "LA",
      "position": "TE",
-     "status": "Questionable",
-     "injury": "Oblique"
+     "status": "Active",
+     "injury": ""
     },
     {
      "player_display_name": "Konata Mumpfield",
@@ -8588,13 +8574,6 @@
      "injury": ""
     },
     {
-     "player_display_name": "Emanuel Wilson",
-     "team": "SEA",
-     "position": "RB",
-     "status": "Active",
-     "injury": ""
-    },
-    {
      "player_display_name": "Michael Mayer",
      "team": "LV",
      "position": "TE",
@@ -8662,7 +8641,7 @@
      "team": "LV",
      "position": "WR",
      "status": "Active",
-     "injury": ""
+     "injury": "Coach's Decision"
     },
     {
      "player_display_name": "Jadarian Price",
@@ -8785,61 +8764,6 @@
     },
     {
      "rank": 3,
-     "player_id": "00-0038797",
-     "name": "Emanuel Wilson",
-     "pos": "RB",
-     "team": "SEA",
-     "opp": "LV",
-     "market": "rush_yds",
-     "line": 49.5,
-     "label": "러싱 50야드 이상",
-     "prob": 62.4,
-     "status": "Active",
-     "game_id": "2026_10_SEA_LV",
-     "detail": {
-      "recent": [
-       {
-        "wk": 3,
-        "opp": "WAS",
-        "val": 14.0
-       },
-       {
-        "wk": 4,
-        "opp": "LAC",
-        "val": 81.0
-       },
-       {
-        "wk": 5,
-        "opp": "SF",
-        "val": 61.0
-       },
-       {
-        "wk": 6,
-        "opp": "DEN",
-        "val": 52.0
-       },
-       {
-        "wk": 7,
-        "opp": "KC",
-        "val": 100.0
-       }
-      ],
-      "need": 50.0,
-      "recent_hits": 4,
-      "mu": 69.0,
-      "def_rank": 1.0,
-      "def_allowed": 143.8,
-      "carry_share": 0.501,
-      "tgt_share": 0.05,
-      "rz_share": 0.239,
-      "implied_total": 23.5,
-      "spread": 6.5,
-      "wind": 0.0,
-      "td_rate": 0.312
-     }
-    },
-    {
-     "rank": 4,
      "player_id": "00-0038543",
      "name": "Jaxon Smith-Njigba",
      "pos": "WR",
@@ -8894,7 +8818,7 @@
      }
     },
     {
-     "rank": 5,
+     "rank": 4,
      "player_id": "00-0039338",
      "name": "Brock Bowers",
      "pos": "TE",
@@ -8949,7 +8873,7 @@
      }
     },
     {
-     "rank": 6,
+     "rank": 5,
      "player_id": "00-0035704",
      "name": "Drew Lock",
      "pos": "QB",
@@ -9004,7 +8928,7 @@
      }
     },
     {
-     "rank": 7,
+     "rank": 6,
      "player_id": "00-0039165",
      "name": "Zach Charbonnet",
      "pos": "RB",
@@ -9059,7 +8983,7 @@
      }
     },
     {
-     "rank": 8,
+     "rank": 7,
      "player_id": "00-0038563",
      "name": "Tre Tucker",
      "pos": "WR",
@@ -9114,7 +9038,7 @@
      }
     },
     {
-     "rank": 9,
+     "rank": 8,
      "player_id": "00-0040122",
      "name": "Ashton Jeanty",
      "pos": "RB",
@@ -9169,7 +9093,7 @@
      }
     },
     {
-     "rank": 10,
+     "rank": 9,
      "player_id": "00-0041512",
      "name": "Jadarian Price",
      "pos": "RB",
@@ -9224,7 +9148,7 @@
      }
     },
     {
-     "rank": 11,
+     "rank": 10,
      "player_id": "00-0038543",
      "name": "Jaxon Smith-Njigba",
      "pos": "WR",
@@ -9279,7 +9203,7 @@
      }
     },
     {
-     "rank": 12,
+     "rank": 11,
      "player_id": "00-0040122",
      "name": "Ashton Jeanty",
      "pos": "RB",
@@ -9334,62 +9258,7 @@
      }
     },
     {
-     "rank": 13,
-     "player_id": "00-0038797",
-     "name": "Emanuel Wilson",
-     "pos": "RB",
-     "team": "SEA",
-     "opp": "LV",
-     "market": "td",
-     "line": null,
-     "label": "애니타임 터치다운",
-     "prob": 34.7,
-     "status": "Active",
-     "game_id": "2026_10_SEA_LV",
-     "detail": {
-      "recent": [
-       {
-        "wk": 3,
-        "opp": "WAS",
-        "val": 0.0
-       },
-       {
-        "wk": 4,
-        "opp": "LAC",
-        "val": 2.0
-       },
-       {
-        "wk": 5,
-        "opp": "SF",
-        "val": 1.0
-       },
-       {
-        "wk": 6,
-        "opp": "DEN",
-        "val": 0.0
-       },
-       {
-        "wk": 7,
-        "opp": "KC",
-        "val": 1.0
-       }
-      ],
-      "need": null,
-      "recent_hits": 3,
-      "mu": null,
-      "def_rank": 5.0,
-      "def_allowed": 1.2,
-      "carry_share": 0.501,
-      "tgt_share": 0.05,
-      "rz_share": 0.239,
-      "implied_total": 23.5,
-      "spread": 6.5,
-      "wind": 0.0,
-      "td_rate": 0.312
-     }
-    },
-    {
-     "rank": 14,
+     "rank": 12,
      "player_id": "00-0039165",
      "name": "Zach Charbonnet",
      "pos": "RB",
@@ -11815,6 +11684,6 @@
   "T.J. Hockenson",
   "Tyler Goodson"
  ],
- "seconds": 12.6,
+ "seconds": 12.5,
  "changes": []
 }

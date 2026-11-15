@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 10,
- "updated_at": "2026-11-15 14:08 ET",
+ "updated_at": "2026-11-15 14:59 ET",
  "games": {
   "2026_10_NE_DET": {
    "away": "NE",
@@ -3745,23 +3745,6 @@
     },
     {
      "rank": 3,
-     "player_id": "00-0038797",
-     "name": "Emanuel Wilson",
-     "pos": "RB",
-     "team": "SEA",
-     "opp": "LV",
-     "game_id": "2026_10_SEA_LV",
-     "market": "rush_yds",
-     "line": 49.5,
-     "label": "러싱 50야드 이상",
-     "prob": 62.4,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": "Active"
-    },
-    {
-     "rank": 4,
      "player_id": "00-0038543",
      "name": "Jaxon Smith-Njigba",
      "pos": "WR",
@@ -3778,7 +3761,7 @@
      "status": "Active"
     },
     {
-     "rank": 5,
+     "rank": 4,
      "player_id": "00-0039338",
      "name": "Brock Bowers",
      "pos": "TE",
@@ -3795,7 +3778,7 @@
      "status": "Active"
     },
     {
-     "rank": 6,
+     "rank": 5,
      "player_id": "00-0035704",
      "name": "Drew Lock",
      "pos": "QB",
@@ -3812,7 +3795,7 @@
      "status": "Active"
     },
     {
-     "rank": 7,
+     "rank": 6,
      "player_id": "00-0039165",
      "name": "Zach Charbonnet",
      "pos": "RB",
@@ -3829,7 +3812,7 @@
      "status": "Active"
     },
     {
-     "rank": 8,
+     "rank": 7,
      "player_id": "00-0038563",
      "name": "Tre Tucker",
      "pos": "WR",
@@ -3846,7 +3829,7 @@
      "status": "Active"
     },
     {
-     "rank": 9,
+     "rank": 8,
      "player_id": "00-0040122",
      "name": "Ashton Jeanty",
      "pos": "RB",
@@ -3863,7 +3846,7 @@
      "status": "Active"
     },
     {
-     "rank": 10,
+     "rank": 9,
      "player_id": "00-0041512",
      "name": "Jadarian Price",
      "pos": "RB",
@@ -3880,7 +3863,7 @@
      "status": "Active"
     },
     {
-     "rank": 11,
+     "rank": 10,
      "player_id": "00-0038543",
      "name": "Jaxon Smith-Njigba",
      "pos": "WR",
@@ -3897,7 +3880,7 @@
      "status": "Active"
     },
     {
-     "rank": 12,
+     "rank": 11,
      "player_id": "00-0040122",
      "name": "Ashton Jeanty",
      "pos": "RB",
@@ -3914,24 +3897,7 @@
      "status": "Active"
     },
     {
-     "rank": 13,
-     "player_id": "00-0038797",
-     "name": "Emanuel Wilson",
-     "pos": "RB",
-     "team": "SEA",
-     "opp": "LV",
-     "game_id": "2026_10_SEA_LV",
-     "market": "td",
-     "line": null,
-     "label": "애니타임 터치다운",
-     "prob": 34.7,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": "Active"
-    },
-    {
-     "rank": 14,
+     "rank": 12,
      "player_id": "00-0039165",
      "name": "Zach Charbonnet",
      "pos": "RB",
