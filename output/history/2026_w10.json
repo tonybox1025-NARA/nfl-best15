@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 10,
- "updated_at": "2026-11-14 12:11 ET",
+ "updated_at": "2026-11-14 20:27 ET",
  "games": {
   "2026_10_NE_DET": {
    "away": "NE",
@@ -36,7 +36,7 @@
      "market": "receptions",
      "line": 5.5,
      "label": "리셉션 6개 이상",
-     "prob": 65.4,
+     "prob": 65.3,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -87,7 +87,7 @@
      "market": "pass_yds",
      "line": 249.5,
      "label": "패싱 250야드 이상",
-     "prob": 62.8,
+     "prob": 62.4,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -104,10 +104,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 62.0,
+     "prob": 62.1,
      "odds": -250.0,
      "implied": 71.4,
-     "edge": -9.4,
+     "edge": -9.3,
      "status": "Active"
     },
     {
@@ -138,7 +138,7 @@
      "market": "rec_yds",
      "line": 39.5,
      "label": "리시빙 40야드 이상",
-     "prob": 60.5,
+     "prob": 60.8,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -155,7 +155,7 @@
      "market": "pass_tds",
      "line": 1.5,
      "label": "패싱 TD 2개 이상",
-     "prob": 60.0,
+     "prob": 60.6,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -163,23 +163,6 @@
     },
     {
      "rank": 10,
-     "player_id": "00-0036875",
-     "name": "Rhamondre Stevenson",
-     "pos": "RB",
-     "team": "NE",
-     "opp": "DET",
-     "game_id": "2026_10_NE_DET",
-     "market": "rush_yds",
-     "line": 39.5,
-     "label": "러싱 40야드 이상",
-     "prob": 58.6,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": "Questionable"
-    },
-    {
-     "rank": 11,
      "player_id": "00-0039851",
      "name": "Drake Maye",
      "pos": "QB",
@@ -196,7 +179,7 @@
      "status": "Active"
     },
     {
-     "rank": 12,
+     "rank": 11,
      "player_id": "00-0040669",
      "name": "Isaac TeSlaa",
      "pos": "WR",
@@ -213,7 +196,7 @@
      "status": "Active"
     },
     {
-     "rank": 13,
+     "rank": 12,
      "player_id": "00-0041395",
      "name": "Eli Raridon",
      "pos": "TE",
@@ -230,7 +213,7 @@
      "status": "Active"
     },
     {
-     "rank": 14,
+     "rank": 13,
      "player_id": "00-0035676",
      "name": "A.J. Brown",
      "pos": "WR",
@@ -247,7 +230,7 @@
      "status": "Questionable"
     },
     {
-     "rank": 15,
+     "rank": 14,
      "player_id": "00-0039364",
      "name": "Sione Vaki",
      "pos": "RB",
@@ -261,6 +244,23 @@
      "odds": -113.0,
      "implied": 53.1,
      "edge": -8.7,
+     "status": "Questionable"
+    },
+    {
+     "rank": 15,
+     "player_id": "00-0036875",
+     "name": "Rhamondre Stevenson",
+     "pos": "RB",
+     "team": "NE",
+     "opp": "DET",
+     "game_id": "2026_10_NE_DET",
+     "market": "td",
+     "line": null,
+     "label": "애니타임 터치다운",
+     "prob": 38.2,
+     "odds": -105.0,
+     "implied": 51.2,
+     "edge": -13.0,
      "status": "Questionable"
     }
    ],
@@ -282,7 +282,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 67.5,
+     "prob": 67.4,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -367,7 +367,7 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 57.5,
+     "prob": 57.9,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -409,23 +409,6 @@
     },
     {
      "rank": 9,
-     "player_id": "00-0036637",
-     "name": "Noah Gray",
-     "pos": "TE",
-     "team": "KC",
-     "opp": "ATL",
-     "game_id": "2026_10_KC_ATL",
-     "market": "rec_yds",
-     "line": 12.5,
-     "label": "리시빙 12.5야드 이상",
-     "prob": 50.5,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": -2.8,
-     "status": "Active"
-    },
-    {
-     "rank": 10,
      "player_id": "00-0036906",
      "name": "Khalil Herbert",
      "pos": "RB",
@@ -442,6 +425,23 @@
      "status": "Active"
     },
     {
+     "rank": 10,
+     "player_id": "00-0036637",
+     "name": "Noah Gray",
+     "pos": "TE",
+     "team": "KC",
+     "opp": "ATL",
+     "game_id": "2026_10_KC_ATL",
+     "market": "rec_yds",
+     "line": 12.5,
+     "label": "리시빙 12.5야드 이상",
+     "prob": 50.4,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": -2.9,
+     "status": "Active"
+    },
+    {
      "rank": 11,
      "player_id": "00-0036906",
      "name": "Khalil Herbert",
@@ -452,10 +452,10 @@
      "market": "rush_yds",
      "line": 8.5,
      "label": "러싱 8.5야드 이상",
-     "prob": 50.2,
+     "prob": 50.3,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -3.1,
+     "edge": -3.0,
      "status": "Active"
     },
     {
@@ -469,10 +469,10 @@
      "market": "rush_yds",
      "line": 7.5,
      "label": "러싱 7.5야드 이상",
-     "prob": 46.9,
+     "prob": 47.0,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -6.3,
+     "edge": -6.2,
      "status": "Active"
     },
     {
@@ -486,10 +486,10 @@
      "market": "rush_yds",
      "line": 8.5,
      "label": "러싱 8.5야드 이상",
-     "prob": 43.8,
+     "prob": 43.9,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -9.5,
+     "edge": -9.4,
      "status": "Active"
     },
     {
@@ -520,10 +520,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 24.6,
+     "prob": 24.4,
      "odds": 280.0,
      "implied": 26.3,
-     "edge": -1.7,
+     "edge": -1.9,
      "status": "Active"
     }
    ],
@@ -588,6 +588,23 @@
     },
     {
      "rank": 3,
+     "player_id": "00-0039163",
+     "name": "C.J. Stroud",
+     "pos": "QB",
+     "team": "HOU",
+     "opp": "CLE",
+     "game_id": "2026_10_HOU_CLE",
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 63.0,
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "status": ""
+    },
+    {
+     "rank": 4,
      "player_id": "00-0036554",
      "name": "Nico Collins",
      "pos": "WR",
@@ -601,10 +618,10 @@
      "odds": null,
      "implied": null,
      "edge": null,
-     "status": "Active"
+     "status": ""
     },
     {
-     "rank": 4,
+     "rank": 5,
      "player_id": "00-0041037",
      "name": "Denzel Boston",
      "pos": "WR",
@@ -614,14 +631,14 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 61.5,
+     "prob": 60.5,
      "odds": null,
      "implied": null,
      "edge": null,
      "status": "Questionable"
     },
     {
-     "rank": 5,
+     "rank": 6,
      "player_id": "00-0040583",
      "name": "Woody Marks",
      "pos": "RB",
@@ -638,7 +655,7 @@
      "status": "Active"
     },
     {
-     "rank": 6,
+     "rank": 7,
      "player_id": "00-0040784",
      "name": "Quinshon Judkins",
      "pos": "RB",
@@ -653,23 +670,6 @@
      "implied": 53.3,
      "edge": 2.9,
      "status": "Active"
-    },
-    {
-     "rank": 7,
-     "player_id": "00-0039163",
-     "name": "C.J. Stroud",
-     "pos": "QB",
-     "team": "HOU",
-     "opp": "CLE",
-     "game_id": "2026_10_HOU_CLE",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 56.1,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": ""
     },
     {
      "rank": 8,
@@ -699,10 +699,10 @@
      "market": "rec_yds",
      "line": 29.5,
      "label": "리시빙 29.5야드 이상",
-     "prob": 54.9,
+     "prob": 54.4,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.6,
+     "edge": 1.1,
      "status": "Active"
     },
     {
@@ -716,10 +716,10 @@
      "market": "rec_yds",
      "line": 32.5,
      "label": "리시빙 32.5야드 이상",
-     "prob": 52.5,
+     "prob": 51.9,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -0.7,
+     "edge": -1.4,
      "status": "Active"
     },
     {
@@ -733,10 +733,10 @@
      "market": "rec_yds",
      "line": 45.5,
      "label": "리시빙 45.5야드 이상",
-     "prob": 51.7,
+     "prob": 51.1,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -1.6,
+     "edge": -2.1,
      "status": "Questionable"
     },
     {
@@ -767,10 +767,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 38.0,
+     "prob": 37.9,
      "odds": 135.0,
      "implied": 42.6,
-     "edge": -4.5,
+     "edge": -4.6,
      "status": "Active"
     },
     {
@@ -784,10 +784,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 31.1,
+     "prob": 31.0,
      "odds": 180.0,
      "implied": 35.7,
-     "edge": -4.6,
+     "edge": -4.8,
      "status": "Active"
     },
     {
@@ -801,10 +801,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 23.4,
+     "prob": 23.7,
      "odds": 330.0,
      "implied": 23.3,
-     "edge": 0.2,
+     "edge": 0.4,
      "status": "Active"
     }
    ],
@@ -837,10 +837,10 @@
      "market": "rec_yds",
      "line": 29.5,
      "label": "리시빙 29.5야드 이상",
-     "prob": 54.9,
+     "prob": 54.4,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.6,
+     "edge": 1.1,
      "status": "Active"
     }
    ]
@@ -861,7 +861,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 68.5,
+     "prob": 68.3,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -878,7 +878,7 @@
      "market": "receptions",
      "line": 4.5,
      "label": "리셉션 5개 이상",
-     "prob": 67.0,
+     "prob": 66.6,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -886,6 +886,23 @@
     },
     {
      "rank": 3,
+     "player_id": "00-0036264",
+     "name": "Jordan Love",
+     "pos": "QB",
+     "team": "GB",
+     "opp": "MIN",
+     "game_id": "2026_10_MIN_GB",
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 59.4,
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "status": ""
+    },
+    {
+     "rank": 4,
      "player_id": "00-0036322",
      "name": "Justin Jefferson",
      "pos": "WR",
@@ -895,14 +912,14 @@
      "market": "receptions",
      "line": 4.5,
      "label": "리셉션 5개 이상",
-     "prob": 59.1,
+     "prob": 58.9,
      "odds": null,
      "implied": null,
      "edge": null,
      "status": "Active"
     },
     {
-     "rank": 4,
+     "rank": 5,
      "player_id": "00-0038996",
      "name": "Tucker Kraft",
      "pos": "TE",
@@ -912,14 +929,14 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 58.9,
+     "prob": 58.8,
      "odds": null,
      "implied": null,
      "edge": null,
      "status": ""
     },
     {
-     "rank": 5,
+     "rank": 6,
      "player_id": "00-0039811",
      "name": "MarShawn Lloyd",
      "pos": "RB",
@@ -934,23 +951,6 @@
      "implied": 53.3,
      "edge": 5.5,
      "status": "Active"
-    },
-    {
-     "rank": 6,
-     "player_id": "00-0036264",
-     "name": "Jordan Love",
-     "pos": "QB",
-     "team": "GB",
-     "opp": "MIN",
-     "game_id": "2026_10_MIN_GB",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 58.1,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": ""
     },
     {
      "rank": 7,
@@ -1005,23 +1005,6 @@
     },
     {
      "rank": 10,
-     "player_id": "00-0040667",
-     "name": "Matthew Golden",
-     "pos": "WR",
-     "team": "GB",
-     "opp": "MIN",
-     "game_id": "2026_10_MIN_GB",
-     "market": "rec_yds",
-     "line": 69.5,
-     "label": "리시빙 69.5야드 이상",
-     "prob": 52.2,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": -1.1,
-     "status": ""
-    },
-    {
-     "rank": 11,
      "player_id": "00-0033293",
      "name": "Aaron Jones",
      "pos": "RB",
@@ -1036,6 +1019,23 @@
      "implied": 53.3,
      "edge": -4.7,
      "status": "Active"
+    },
+    {
+     "rank": 11,
+     "player_id": "00-0040667",
+     "name": "Matthew Golden",
+     "pos": "WR",
+     "team": "GB",
+     "opp": "MIN",
+     "game_id": "2026_10_MIN_GB",
+     "market": "rec_yds",
+     "line": 69.5,
+     "label": "리시빙 69.5야드 이상",
+     "prob": 48.0,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": -5.2,
+     "status": ""
     },
     {
      "rank": 12,
@@ -1065,10 +1065,10 @@
      "market": "rush_yds",
      "line": 45.5,
      "label": "러싱 45.5야드 이상",
-     "prob": 46.9,
+     "prob": 47.3,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -6.3,
+     "edge": -5.9,
      "status": "Active"
     },
     {
@@ -1082,10 +1082,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 37.9,
+     "prob": 37.1,
      "odds": 140.0,
      "implied": 41.7,
-     "edge": -3.8,
+     "edge": -4.6,
      "status": "Active"
     },
     {
@@ -1099,10 +1099,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 36.8,
+     "prob": 36.7,
      "odds": 200.0,
      "implied": 33.3,
-     "edge": 3.5,
+     "edge": 3.3,
      "status": "Active"
     }
    ],
@@ -1159,7 +1159,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 67.6,
+     "prob": 67.5,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -1207,34 +1207,17 @@
      "team": "MIA",
      "opp": "IND",
      "game_id": "2026_10_MIA_IND",
-     "market": "receptions",
-     "line": 3.5,
-     "label": "리셉션 4개 이상",
-     "prob": 58.6,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": "Active"
-    },
-    {
-     "rank": 5,
-     "player_id": "00-0041523",
-     "name": "Caleb Douglas",
-     "pos": "WR",
-     "team": "MIA",
-     "opp": "IND",
-     "game_id": "2026_10_MIA_IND",
      "market": "rec_yds",
      "line": 42.5,
      "label": "리시빙 42.5야드 이상",
-     "prob": 58.0,
+     "prob": 57.3,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 4.7,
-     "status": "Active"
+     "edge": 4.1,
+     "status": ""
     },
     {
-     "rank": 6,
+     "rank": 5,
      "player_id": "00-0041125",
      "name": "Seth McGowan",
      "pos": "RB",
@@ -1244,14 +1227,14 @@
      "market": "rush_yds",
      "line": 25.5,
      "label": "러싱 25.5야드 이상",
-     "prob": 54.6,
+     "prob": 54.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.3,
+     "edge": 1.2,
      "status": ""
     },
     {
-     "rank": 7,
+     "rank": 6,
      "player_id": "00-0039874",
      "name": "Jaylen Wright",
      "pos": "RB",
@@ -1268,7 +1251,7 @@
      "status": "Active"
     },
     {
-     "rank": 8,
+     "rank": 7,
      "player_id": "00-0040128",
      "name": "Tyler Warren",
      "pos": "TE",
@@ -1278,14 +1261,14 @@
      "market": "rec_yds",
      "line": 44.5,
      "label": "리시빙 44.5야드 이상",
-     "prob": 53.4,
+     "prob": 53.1,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 0.1,
+     "edge": -0.2,
      "status": "Active"
     },
     {
-     "rank": 9,
+     "rank": 8,
      "player_id": "00-0037252",
      "name": "Greg Dulcich",
      "pos": "TE",
@@ -1295,31 +1278,14 @@
      "market": "rec_yds",
      "line": 34.5,
      "label": "리시빙 34.5야드 이상",
-     "prob": 52.2,
+     "prob": 51.3,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -1.1,
+     "edge": -2.0,
      "status": "Active"
     },
     {
-     "rank": 10,
-     "player_id": "00-0039880",
-     "name": "Malik Washington",
-     "pos": "WR",
-     "team": "MIA",
-     "opp": "IND",
-     "game_id": "2026_10_MIA_IND",
-     "market": "rec_yds",
-     "line": 35.5,
-     "label": "리시빙 35.5야드 이상",
-     "prob": 47.1,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": -6.2,
-     "status": "Active"
-    },
-    {
-     "rank": 11,
+     "rank": 9,
      "player_id": "00-0035710",
      "name": "Daniel Jones",
      "pos": "QB",
@@ -1336,24 +1302,24 @@
      "status": ""
     },
     {
-     "rank": 12,
-     "player_id": "00-0036223",
-     "name": "Jonathan Taylor",
+     "rank": 10,
+     "player_id": "00-0040198",
+     "name": "Ollie Gordon II",
      "pos": "RB",
-     "team": "IND",
-     "opp": "MIA",
+     "team": "MIA",
+     "opp": "IND",
      "game_id": "2026_10_MIA_IND",
-     "market": "rush_yds",
-     "line": 69.5,
-     "label": "러싱 69.5야드 이상",
-     "prob": 45.9,
+     "market": "rec_yds",
+     "line": 5.5,
+     "label": "리시빙 5.5야드 이상",
+     "prob": 45.7,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -7.4,
-     "status": "Active"
+     "edge": -7.6,
+     "status": ""
     },
     {
-     "rank": 13,
+     "rank": 11,
      "player_id": "00-0036223",
      "name": "Jonathan Taylor",
      "pos": "RB",
@@ -1363,14 +1329,14 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 40.7,
+     "prob": 38.9,
      "odds": -115.0,
      "implied": 53.5,
-     "edge": -12.8,
+     "edge": -14.6,
      "status": "Active"
     },
     {
-     "rank": 14,
+     "rank": 12,
      "player_id": "00-0040198",
      "name": "Ollie Gordon II",
      "pos": "RB",
@@ -1380,14 +1346,14 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 36.7,
+     "prob": 36.0,
      "odds": 100.0,
      "implied": 50.0,
-     "edge": -13.3,
-     "status": "Active"
+     "edge": -14.0,
+     "status": ""
     },
     {
-     "rank": 15,
+     "rank": 13,
      "player_id": "00-0030279",
      "name": "Keenan Allen",
      "pos": "WR",
@@ -1397,11 +1363,28 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 26.4,
+     "prob": 24.4,
      "odds": 340.0,
      "implied": 22.7,
-     "edge": 3.7,
+     "edge": 1.7,
      "status": "Active"
+    },
+    {
+     "rank": 14,
+     "player_id": "00-0041125",
+     "name": "Seth McGowan",
+     "pos": "RB",
+     "team": "IND",
+     "opp": "MIA",
+     "game_id": "2026_10_MIA_IND",
+     "market": "td",
+     "line": null,
+     "label": "애니타임 터치다운",
+     "prob": 23.1,
+     "odds": 280.0,
+     "implied": 26.3,
+     "edge": -3.3,
+     "status": ""
     }
    ],
    "best15_edge": [
@@ -1416,11 +1399,11 @@
      "market": "rec_yds",
      "line": 42.5,
      "label": "리시빙 42.5야드 이상",
-     "prob": 58.0,
+     "prob": 57.3,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 4.7,
-     "status": "Active"
+     "edge": 4.1,
+     "status": ""
     },
     {
      "rank": 2,
@@ -1433,10 +1416,10 @@
      "market": "rush_yds",
      "line": 25.5,
      "label": "러싱 25.5야드 이상",
-     "prob": 54.6,
+     "prob": 54.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.3,
+     "edge": 1.2,
      "status": ""
     },
     {
@@ -1454,23 +1437,6 @@
      "odds": -114.0,
      "implied": 53.3,
      "edge": 0.7,
-     "status": "Active"
-    },
-    {
-     "rank": 4,
-     "player_id": "00-0040128",
-     "name": "Tyler Warren",
-     "pos": "TE",
-     "team": "IND",
-     "opp": "MIA",
-     "game_id": "2026_10_MIA_IND",
-     "market": "rec_yds",
-     "line": 44.5,
-     "label": "리시빙 44.5야드 이상",
-     "prob": 53.4,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 0.1,
      "status": "Active"
     }
    ]
@@ -1772,7 +1738,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 67.4,
+     "prob": 67.3,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -1806,11 +1772,11 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 63.6,
+     "prob": 63.0,
      "odds": -165.0,
      "implied": 62.3,
-     "edge": 1.3,
-     "status": "Active"
+     "edge": 0.8,
+     "status": ""
     },
     {
      "rank": 4,
@@ -1831,16 +1797,16 @@
     },
     {
      "rank": 5,
-     "player_id": "00-0034857",
-     "name": "Josh Allen",
+     "player_id": "00-0030565",
+     "name": "Geno Smith",
      "pos": "QB",
-     "team": "BUF",
-     "opp": "NYJ",
+     "team": "NYJ",
+     "opp": "BUF",
      "game_id": "2026_10_BUF_NYJ",
-     "market": "pass_tds",
-     "line": 1.5,
-     "label": "패싱 TD 2개 이상",
-     "prob": 60.6,
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 59.4,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -1857,31 +1823,14 @@
      "market": "rec_yds",
      "line": 36.5,
      "label": "리시빙 36.5야드 이상",
-     "prob": 58.3,
+     "prob": 58.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 5.0,
+     "edge": 5.2,
      "status": "Questionable"
     },
     {
      "rank": 7,
-     "player_id": "00-0030565",
-     "name": "Geno Smith",
-     "pos": "QB",
-     "team": "NYJ",
-     "opp": "BUF",
-     "game_id": "2026_10_BUF_NYJ",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 57.3,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": "Active"
-    },
-    {
-     "rank": 8,
      "player_id": "00-0039901",
      "name": "Keon Coleman",
      "pos": "WR",
@@ -1898,24 +1847,7 @@
      "status": "Active"
     },
     {
-     "rank": 9,
-     "player_id": "00-0037248",
-     "name": "James Cook",
-     "pos": "RB",
-     "team": "BUF",
-     "opp": "NYJ",
-     "game_id": "2026_10_BUF_NYJ",
-     "market": "rush_yds",
-     "line": 91.5,
-     "label": "러싱 91.5야드 이상",
-     "prob": 55.1,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 1.8,
-     "status": "Active"
-    },
-    {
-     "rank": 10,
+     "rank": 8,
      "player_id": "00-0034857",
      "name": "Josh Allen",
      "pos": "QB",
@@ -1925,11 +1857,45 @@
      "market": "pass_yds",
      "line": 249.5,
      "label": "패싱 250야드 이상",
-     "prob": 54.9,
+     "prob": 56.5,
      "odds": null,
      "implied": null,
      "edge": null,
-     "status": "Active"
+     "status": ""
+    },
+    {
+     "rank": 9,
+     "player_id": "00-0034857",
+     "name": "Josh Allen",
+     "pos": "QB",
+     "team": "BUF",
+     "opp": "NYJ",
+     "game_id": "2026_10_BUF_NYJ",
+     "market": "pass_tds",
+     "line": 1.5,
+     "label": "패싱 TD 2개 이상",
+     "prob": 56.1,
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "status": ""
+    },
+    {
+     "rank": 10,
+     "player_id": "00-0037248",
+     "name": "James Cook",
+     "pos": "RB",
+     "team": "BUF",
+     "opp": "NYJ",
+     "game_id": "2026_10_BUF_NYJ",
+     "market": "rush_yds",
+     "line": 91.5,
+     "label": "러싱 91.5야드 이상",
+     "prob": 55.0,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.7,
+     "status": ""
     },
     {
      "rank": 11,
@@ -1976,10 +1942,10 @@
      "market": "rush_yds",
      "line": 53.5,
      "label": "러싱 53.5야드 이상",
-     "prob": 49.8,
+     "prob": 49.3,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -3.5,
+     "edge": -3.9,
      "status": "Active"
     },
     {
@@ -1993,10 +1959,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 35.7,
+     "prob": 36.1,
      "odds": 165.0,
      "implied": 37.7,
-     "edge": -2.1,
+     "edge": -1.6,
      "status": "Active"
     },
     {
@@ -2010,10 +1976,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 30.8,
+     "prob": 30.7,
      "odds": 190.0,
      "implied": 34.5,
-     "edge": -3.7,
+     "edge": -3.8,
      "status": "Active"
     }
    ],
@@ -2029,10 +1995,10 @@
      "market": "rec_yds",
      "line": 36.5,
      "label": "리시빙 36.5야드 이상",
-     "prob": 58.3,
+     "prob": 58.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 5.0,
+     "edge": 5.2,
      "status": "Questionable"
     },
     {
@@ -2063,31 +2029,14 @@
      "market": "rush_yds",
      "line": 91.5,
      "label": "러싱 91.5야드 이상",
-     "prob": 55.1,
+     "prob": 55.0,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.8,
-     "status": "Active"
+     "edge": 1.7,
+     "status": ""
     },
     {
      "rank": 4,
-     "player_id": "00-0037248",
-     "name": "James Cook",
-     "pos": "RB",
-     "team": "BUF",
-     "opp": "NYJ",
-     "game_id": "2026_10_BUF_NYJ",
-     "market": "td",
-     "line": null,
-     "label": "애니타임 터치다운",
-     "prob": 63.6,
-     "odds": -165.0,
-     "implied": 62.3,
-     "edge": 1.3,
-     "status": "Active"
-    },
-    {
-     "rank": 5,
      "player_id": "00-0039794",
      "name": "Braelon Allen",
      "pos": "RB",
@@ -2102,6 +2051,23 @@
      "implied": 53.3,
      "edge": 1.3,
      "status": "Active"
+    },
+    {
+     "rank": 5,
+     "player_id": "00-0037248",
+     "name": "James Cook",
+     "pos": "RB",
+     "team": "BUF",
+     "opp": "NYJ",
+     "game_id": "2026_10_BUF_NYJ",
+     "market": "td",
+     "line": null,
+     "label": "애니타임 터치다운",
+     "prob": 63.0,
+     "odds": -165.0,
+     "implied": 62.3,
+     "edge": 0.8,
+     "status": ""
     },
     {
      "rank": 6,
@@ -2159,7 +2125,7 @@
      "odds": null,
      "implied": null,
      "edge": null,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 3,
@@ -2180,23 +2146,6 @@
     },
     {
      "rank": 4,
-     "player_id": "00-0040676",
-     "name": "Cam Ward",
-     "pos": "QB",
-     "team": "TEN",
-     "opp": "JAX",
-     "game_id": "2026_10_JAX_TEN",
-     "market": "pass_yds",
-     "line": 199.5,
-     "label": "패싱 200야드 이상",
-     "prob": 58.1,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": "Active"
-    },
-    {
-     "rank": 5,
      "player_id": "00-0038117",
      "name": "Wan'Dale Robinson",
      "pos": "WR",
@@ -2206,11 +2155,28 @@
      "market": "rec_yds",
      "line": 37.5,
      "label": "리시빙 37.5야드 이상",
-     "prob": 57.6,
+     "prob": 58.1,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 4.4,
-     "status": "Active"
+     "edge": 4.8,
+     "status": ""
+    },
+    {
+     "rank": 5,
+     "player_id": "00-0040676",
+     "name": "Cam Ward",
+     "pos": "QB",
+     "team": "TEN",
+     "opp": "JAX",
+     "game_id": "2026_10_JAX_TEN",
+     "market": "pass_yds",
+     "line": 199.5,
+     "label": "패싱 200야드 이상",
+     "prob": 57.3,
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "status": ""
     },
     {
      "rank": 6,
@@ -2223,10 +2189,10 @@
      "market": "rec_yds",
      "line": 10.5,
      "label": "리시빙 10.5야드 이상",
-     "prob": 56.6,
+     "prob": 56.8,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.4,
+     "edge": 3.5,
      "status": "Active"
     },
     {
@@ -2240,10 +2206,10 @@
      "market": "rec_yds",
      "line": 41.5,
      "label": "리시빙 41.5야드 이상",
-     "prob": 55.0,
+     "prob": 56.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.8,
+     "edge": 3.2,
      "status": "Active"
     },
     {
@@ -2257,10 +2223,10 @@
      "market": "rec_yds",
      "line": 6.5,
      "label": "리시빙 6.5야드 이상",
-     "prob": 54.8,
+     "prob": 54.9,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.5,
+     "edge": 1.6,
      "status": "Active"
     },
     {
@@ -2274,7 +2240,7 @@
      "market": "pass_yds",
      "line": 249.5,
      "label": "패싱 250야드 이상",
-     "prob": 54.6,
+     "prob": 54.2,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -2295,7 +2261,7 @@
      "odds": -114.0,
      "implied": 53.3,
      "edge": -1.5,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 11,
@@ -2325,10 +2291,10 @@
      "market": "rush_yds",
      "line": 58.5,
      "label": "러싱 58.5야드 이상",
-     "prob": 47.8,
+     "prob": 47.0,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -5.5,
+     "edge": -6.2,
      "status": "Active"
     },
     {
@@ -2342,10 +2308,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 46.3,
+     "prob": 46.4,
      "odds": -120.0,
      "implied": 54.5,
-     "edge": -8.2,
+     "edge": -8.1,
      "status": "Active"
     },
     {
@@ -2359,10 +2325,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 41.6,
+     "prob": 42.0,
      "odds": 120.0,
      "implied": 45.5,
-     "edge": -3.8,
+     "edge": -3.4,
      "status": "Active"
     },
     {
@@ -2376,10 +2342,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 34.8,
+     "prob": 35.0,
      "odds": 130.0,
      "implied": 43.5,
-     "edge": -8.6,
+     "edge": -8.5,
      "status": "Active"
     }
    ],
@@ -2395,11 +2361,11 @@
      "market": "rec_yds",
      "line": 37.5,
      "label": "리시빙 37.5야드 이상",
-     "prob": 57.6,
+     "prob": 58.1,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 4.4,
-     "status": "Active"
+     "edge": 4.8,
+     "status": ""
     },
     {
      "rank": 2,
@@ -2412,10 +2378,10 @@
      "market": "rec_yds",
      "line": 10.5,
      "label": "리시빙 10.5야드 이상",
-     "prob": 56.6,
+     "prob": 56.8,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.4,
+     "edge": 3.5,
      "status": "Active"
     },
     {
@@ -2429,10 +2395,10 @@
      "market": "rec_yds",
      "line": 41.5,
      "label": "리시빙 41.5야드 이상",
-     "prob": 55.0,
+     "prob": 56.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.8,
+     "edge": 3.2,
      "status": "Active"
     },
     {
@@ -2446,10 +2412,27 @@
      "market": "rec_yds",
      "line": 6.5,
      "label": "리시빙 6.5야드 이상",
-     "prob": 54.8,
+     "prob": 54.9,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 1.5,
+     "edge": 1.6,
+     "status": "Active"
+    },
+    {
+     "rank": 5,
+     "player_id": "00-0038606",
+     "name": "Parker Washington",
+     "pos": "WR",
+     "team": "JAX",
+     "opp": "TEN",
+     "game_id": "2026_10_JAX_TEN",
+     "market": "rec_yds",
+     "line": 60.5,
+     "label": "리시빙 60.5야드 이상",
+     "prob": 53.4,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 0.1,
      "status": "Active"
     }
    ]
@@ -2555,7 +2538,7 @@
      "market": "rec_yds",
      "line": 19.5,
      "label": "리시빙 19.5야드 이상",
-     "prob": 56.8,
+     "prob": 56.7,
      "odds": -114.0,
      "implied": 53.3,
      "edge": 3.5,
@@ -2606,31 +2589,14 @@
      "market": "rec_yds",
      "line": 13.5,
      "label": "리시빙 13.5야드 이상",
-     "prob": 55.5,
+     "prob": 55.7,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 2.2,
+     "edge": 2.4,
      "status": "Questionable"
     },
     {
      "rank": 10,
-     "player_id": "00-0039738",
-     "name": "Blake Corum",
-     "pos": "RB",
-     "team": "LA",
-     "opp": "ARI",
-     "game_id": "2026_10_LA_ARI",
-     "market": "rec_yds",
-     "line": 6.5,
-     "label": "리시빙 6.5야드 이상",
-     "prob": 54.8,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 1.5,
-     "status": ""
-    },
-    {
-     "rank": 11,
      "player_id": "00-0037157",
      "name": "Bam Knight",
      "pos": "RB",
@@ -2640,11 +2606,28 @@
      "market": "rec_yds",
      "line": 6.5,
      "label": "리시빙 6.5야드 이상",
+     "prob": 55.0,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.8,
+     "status": "Active"
+    },
+    {
+     "rank": 11,
+     "player_id": "00-0039738",
+     "name": "Blake Corum",
+     "pos": "RB",
+     "team": "LA",
+     "opp": "ARI",
+     "game_id": "2026_10_LA_ARI",
+     "market": "rec_yds",
+     "line": 6.5,
+     "label": "리시빙 6.5야드 이상",
      "prob": 54.7,
      "odds": -114.0,
      "implied": 53.3,
      "edge": 1.5,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 12,
@@ -2727,7 +2710,7 @@
      "market": "rec_yds",
      "line": 19.5,
      "label": "리시빙 19.5야드 이상",
-     "prob": 56.8,
+     "prob": 56.7,
      "odds": -114.0,
      "implied": 53.3,
      "edge": 3.5,
@@ -2761,31 +2744,14 @@
      "market": "rec_yds",
      "line": 13.5,
      "label": "리시빙 13.5야드 이상",
-     "prob": 55.5,
+     "prob": 55.7,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 2.2,
+     "edge": 2.4,
      "status": "Questionable"
     },
     {
      "rank": 4,
-     "player_id": "00-0039738",
-     "name": "Blake Corum",
-     "pos": "RB",
-     "team": "LA",
-     "opp": "ARI",
-     "game_id": "2026_10_LA_ARI",
-     "market": "rec_yds",
-     "line": 6.5,
-     "label": "리시빙 6.5야드 이상",
-     "prob": 54.8,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 1.5,
-     "status": ""
-    },
-    {
-     "rank": 5,
      "player_id": "00-0037157",
      "name": "Bam Knight",
      "pos": "RB",
@@ -2795,11 +2761,28 @@
      "market": "rec_yds",
      "line": 6.5,
      "label": "리시빙 6.5야드 이상",
+     "prob": 55.0,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.8,
+     "status": "Active"
+    },
+    {
+     "rank": 5,
+     "player_id": "00-0039738",
+     "name": "Blake Corum",
+     "pos": "RB",
+     "team": "LA",
+     "opp": "ARI",
+     "game_id": "2026_10_LA_ARI",
+     "market": "rec_yds",
+     "line": 6.5,
+     "label": "리시빙 6.5야드 이상",
      "prob": 54.7,
      "odds": -114.0,
      "implied": 53.3,
      "edge": 1.5,
-     "status": "Active"
+     "status": ""
     }
    ]
   },
@@ -3168,10 +3151,10 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 65.9,
+     "prob": 64.9,
      "odds": -270.0,
      "implied": 73.0,
-     "edge": -7.1,
+     "edge": -8.1,
      "status": ""
     },
     {
@@ -3185,7 +3168,7 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 64.2,
+     "prob": 64.6,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -3253,7 +3236,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 61.1,
+     "prob": 61.2,
      "odds": -170.0,
      "implied": 63.0,
      "edge": -1.8,
@@ -3261,23 +3244,6 @@
     },
     {
      "rank": 7,
-     "player_id": "00-0036997",
-     "name": "Javonte Williams",
-     "pos": "RB",
-     "team": "DAL",
-     "opp": "SF",
-     "game_id": "2026_10_SF_DAL",
-     "market": "rush_yds",
-     "line": 60.5,
-     "label": "러싱 60.5야드 이상",
-     "prob": 60.7,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 7.4,
-     "status": "Active"
-    },
-    {
-     "rank": 8,
      "player_id": "00-0036358",
      "name": "CeeDee Lamb",
      "pos": "WR",
@@ -3294,7 +3260,7 @@
      "status": "Active"
     },
     {
-     "rank": 9,
+     "rank": 8,
      "player_id": "00-0037247",
      "name": "George Pickens",
      "pos": "WR",
@@ -3311,7 +3277,7 @@
      "status": "Active"
     },
     {
-     "rank": 10,
+     "rank": 9,
      "player_id": "00-0033288",
      "name": "George Kittle",
      "pos": "TE",
@@ -3328,24 +3294,7 @@
      "status": ""
     },
     {
-     "rank": 11,
-     "player_id": "00-0040172",
-     "name": "Jordan Watkins",
-     "pos": "WR",
-     "team": "SF",
-     "opp": "DAL",
-     "game_id": "2026_10_SF_DAL",
-     "market": "rec_yds",
-     "line": 23.5,
-     "label": "리시빙 23.5야드 이상",
-     "prob": 57.3,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 4.0,
-     "status": "Active"
-    },
-    {
-     "rank": 12,
+     "rank": 10,
      "player_id": "00-0033077",
      "name": "Dak Prescott",
      "pos": "QB",
@@ -3362,7 +3311,7 @@
      "status": "Active"
     },
     {
-     "rank": 13,
+     "rank": 11,
      "player_id": "00-0039410",
      "name": "Ryan Flournoy",
      "pos": "WR",
@@ -3379,7 +3328,24 @@
      "status": "Active"
     },
     {
-     "rank": 14,
+     "rank": 12,
+     "player_id": "00-0041052",
+     "name": "Kaelon Black",
+     "pos": "RB",
+     "team": "SF",
+     "opp": "DAL",
+     "game_id": "2026_10_SF_DAL",
+     "market": "rush_yds",
+     "line": 34.5,
+     "label": "러싱 34.5야드 이상",
+     "prob": 55.8,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 2.5,
+     "status": "Active"
+    },
+    {
+     "rank": 13,
      "player_id": "00-0033288",
      "name": "George Kittle",
      "pos": "TE",
@@ -3389,10 +3355,27 @@
      "market": "rec_yds",
      "line": 61.5,
      "label": "리시빙 61.5야드 이상",
-     "prob": 55.7,
+     "prob": 55.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 2.4,
+     "edge": 2.2,
+     "status": ""
+    },
+    {
+     "rank": 14,
+     "player_id": "00-0040172",
+     "name": "Jordan Watkins",
+     "pos": "WR",
+     "team": "SF",
+     "opp": "DAL",
+     "game_id": "2026_10_SF_DAL",
+     "market": "rec_yds",
+     "line": 23.5,
+     "label": "리시빙 23.5야드 이상",
+     "prob": 55.0,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.7,
      "status": ""
     },
     {
@@ -3409,47 +3392,13 @@
      "prob": 53.2,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -0.0,
+     "edge": -0.1,
      "status": "Active"
     }
    ],
    "best15_edge": [
     {
      "rank": 1,
-     "player_id": "00-0036997",
-     "name": "Javonte Williams",
-     "pos": "RB",
-     "team": "DAL",
-     "opp": "SF",
-     "game_id": "2026_10_SF_DAL",
-     "market": "rush_yds",
-     "line": 60.5,
-     "label": "러싱 60.5야드 이상",
-     "prob": 60.7,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 7.4,
-     "status": "Active"
-    },
-    {
-     "rank": 2,
-     "player_id": "00-0040172",
-     "name": "Jordan Watkins",
-     "pos": "WR",
-     "team": "SF",
-     "opp": "DAL",
-     "game_id": "2026_10_SF_DAL",
-     "market": "rec_yds",
-     "line": 23.5,
-     "label": "리시빙 23.5야드 이상",
-     "prob": 57.3,
-     "odds": -114.0,
-     "implied": 53.3,
-     "edge": 4.0,
-     "status": "Active"
-    },
-    {
-     "rank": 3,
      "player_id": "00-0039410",
      "name": "Ryan Flournoy",
      "pos": "WR",
@@ -3466,7 +3415,24 @@
      "status": "Active"
     },
     {
-     "rank": 4,
+     "rank": 2,
+     "player_id": "00-0041052",
+     "name": "Kaelon Black",
+     "pos": "RB",
+     "team": "SF",
+     "opp": "DAL",
+     "game_id": "2026_10_SF_DAL",
+     "market": "rush_yds",
+     "line": 34.5,
+     "label": "러싱 34.5야드 이상",
+     "prob": 55.8,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 2.5,
+     "status": "Active"
+    },
+    {
+     "rank": 3,
      "player_id": "00-0033288",
      "name": "George Kittle",
      "pos": "TE",
@@ -3476,10 +3442,27 @@
      "market": "rec_yds",
      "line": 61.5,
      "label": "리시빙 61.5야드 이상",
-     "prob": 55.7,
+     "prob": 55.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 2.4,
+     "edge": 2.2,
+     "status": ""
+    },
+    {
+     "rank": 4,
+     "player_id": "00-0040172",
+     "name": "Jordan Watkins",
+     "pos": "WR",
+     "team": "SF",
+     "opp": "DAL",
+     "game_id": "2026_10_SF_DAL",
+     "market": "rec_yds",
+     "line": 23.5,
+     "label": "리시빙 23.5야드 이상",
+     "prob": 55.0,
+     "odds": -114.0,
+     "implied": 53.3,
+     "edge": 1.7,
      "status": ""
     }
    ]
@@ -3508,6 +3491,23 @@
     },
     {
      "rank": 2,
+     "player_id": "00-0036442",
+     "name": "Joe Burrow",
+     "pos": "QB",
+     "team": "CIN",
+     "opp": "PIT",
+     "game_id": "2026_10_PIT_CIN",
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 67.2,
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "status": "Active"
+    },
+    {
+     "rank": 3,
      "player_id": "00-0023459",
      "name": "Aaron Rodgers",
      "pos": "QB",
@@ -3517,14 +3517,31 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 63.4,
+     "prob": 63.0,
      "odds": null,
      "implied": null,
      "edge": null,
      "status": "Active"
     },
     {
-     "rank": 3,
+     "rank": 4,
+     "player_id": "00-0035640",
+     "name": "DK Metcalf",
+     "pos": "WR",
+     "team": "PIT",
+     "opp": "CIN",
+     "game_id": "2026_10_PIT_CIN",
+     "market": "receptions",
+     "line": 3.5,
+     "label": "리셉션 4개 이상",
+     "prob": 61.6,
+     "odds": null,
+     "implied": null,
+     "edge": null,
+     "status": "Active"
+    },
+    {
+     "rank": 5,
      "player_id": "00-0038597",
      "name": "Chase Brown",
      "pos": "RB",
@@ -3541,7 +3558,7 @@
      "status": "Active"
     },
     {
-     "rank": 4,
+     "rank": 6,
      "player_id": "00-0041489",
      "name": "Germie Bernard",
      "pos": "WR",
@@ -3558,24 +3575,7 @@
      "status": "Active"
     },
     {
-     "rank": 5,
-     "player_id": "00-0035640",
-     "name": "DK Metcalf",
-     "pos": "WR",
-     "team": "PIT",
-     "opp": "CIN",
-     "game_id": "2026_10_PIT_CIN",
-     "market": "receptions",
-     "line": 3.5,
-     "label": "리셉션 4개 이상",
-     "prob": 61.5,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": "Active"
-    },
-    {
-     "rank": 6,
+     "rank": 7,
      "player_id": "00-0036442",
      "name": "Joe Burrow",
      "pos": "QB",
@@ -3585,14 +3585,14 @@
      "market": "pass_tds",
      "line": 1.5,
      "label": "패싱 TD 2개 이상",
-     "prob": 61.1,
+     "prob": 60.6,
      "odds": null,
      "implied": null,
      "edge": null,
      "status": "Active"
     },
     {
-     "rank": 7,
+     "rank": 8,
      "player_id": "00-0038597",
      "name": "Chase Brown",
      "pos": "RB",
@@ -3602,14 +3602,14 @@
      "market": "rush_yds",
      "line": 46.5,
      "label": "러싱 46.5야드 이상",
-     "prob": 57.0,
+     "prob": 56.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.7,
+     "edge": 3.3,
      "status": "Active"
     },
     {
-     "rank": 8,
+     "rank": 9,
      "player_id": "00-0023459",
      "name": "Aaron Rodgers",
      "pos": "QB",
@@ -3620,23 +3620,6 @@
      "line": 1.5,
      "label": "패싱 TD 2개 이상",
      "prob": 56.1,
-     "odds": null,
-     "implied": null,
-     "edge": null,
-     "status": "Active"
-    },
-    {
-     "rank": 9,
-     "player_id": "00-0036442",
-     "name": "Joe Burrow",
-     "pos": "QB",
-     "team": "CIN",
-     "opp": "PIT",
-     "game_id": "2026_10_PIT_CIN",
-     "market": "pass_yds",
-     "line": 249.5,
-     "label": "패싱 250야드 이상",
-     "prob": 55.9,
      "odds": null,
      "implied": null,
      "edge": null,
@@ -3687,10 +3670,10 @@
      "market": "rec_yds",
      "line": 19.5,
      "label": "리시빙 19.5야드 이상",
-     "prob": 50.4,
+     "prob": 50.1,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -2.9,
+     "edge": -3.2,
      "status": "Active"
     },
     {
@@ -3704,10 +3687,10 @@
      "market": "rec_yds",
      "line": 28.5,
      "label": "리시빙 28.5야드 이상",
-     "prob": 47.6,
+     "prob": 47.3,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": -5.6,
+     "edge": -6.0,
      "status": "Active"
     },
     {
@@ -3742,7 +3725,7 @@
      "odds": -114.0,
      "implied": 53.3,
      "edge": -9.3,
-     "status": "Active"
+     "status": "Questionable"
     }
    ],
    "best15_edge": [
@@ -3757,10 +3740,10 @@
      "market": "rush_yds",
      "line": 46.5,
      "label": "러싱 46.5야드 이상",
-     "prob": 57.0,
+     "prob": 56.5,
      "odds": -114.0,
      "implied": 53.3,
-     "edge": 3.7,
+     "edge": 3.3,
      "status": "Active"
     }
    ]
@@ -3819,7 +3802,7 @@
      "odds": -114.0,
      "implied": 53.3,
      "edge": 6.8,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 4,
@@ -3887,7 +3870,7 @@
      "odds": -114.0,
      "implied": 53.3,
      "edge": 1.8,
-     "status": "Questionable"
+     "status": "Active"
     },
     {
      "rank": 8,
@@ -3938,7 +3921,7 @@
      "odds": -114.0,
      "implied": 53.3,
      "edge": -5.2,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 11,
@@ -3989,7 +3972,7 @@
      "odds": 490.0,
      "implied": 16.9,
      "edge": 0.9,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 14,
@@ -4025,7 +4008,7 @@
      "odds": -114.0,
      "implied": 53.3,
      "edge": 6.8,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 2,
@@ -4093,7 +4076,7 @@
      "odds": -114.0,
      "implied": 53.3,
      "edge": 1.8,
-     "status": "Questionable"
+     "status": "Active"
     },
     {
      "rank": 6,
@@ -4145,7 +4128,7 @@
     "market": "receptions",
     "line": 3.5,
     "label": "리셉션 4개 이상",
-    "prob": 68.5,
+    "prob": 68.3,
     "odds": null,
     "implied": null,
     "edge": null,
@@ -4179,7 +4162,7 @@
     "market": "receptions",
     "line": 3.5,
     "label": "리셉션 4개 이상",
-    "prob": 67.6,
+    "prob": 67.5,
     "odds": null,
     "implied": null,
     "edge": null,
@@ -4196,7 +4179,7 @@
     "market": "receptions",
     "line": 3.5,
     "label": "리셉션 4개 이상",
-    "prob": 67.5,
+    "prob": 67.4,
     "odds": null,
     "implied": null,
     "edge": null,
@@ -4204,6 +4187,23 @@
    },
    {
     "rank": 5,
+    "player_id": "00-0036442",
+    "name": "Joe Burrow",
+    "pos": "QB",
+    "team": "CIN",
+    "opp": "PIT",
+    "game_id": "2026_10_PIT_CIN",
+    "market": "pass_yds",
+    "line": 224.5,
+    "label": "패싱 225야드 이상",
+    "prob": 67.2,
+    "odds": null,
+    "implied": null,
+    "edge": null,
+    "status": "Active"
+   },
+   {
+    "rank": 6,
     "player_id": "00-0039851",
     "name": "Drake Maye",
     "pos": "QB",
@@ -4220,7 +4220,7 @@
     "status": "Active"
    },
    {
-    "rank": 6,
+    "rank": 7,
     "player_id": "00-0033280",
     "name": "Christian McCaffrey",
     "pos": "RB",
@@ -4230,14 +4230,14 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 65.9,
+    "prob": 64.9,
     "odds": -270.0,
     "implied": 73.0,
-    "edge": -7.1,
+    "edge": -8.1,
     "status": ""
    },
    {
-    "rank": 7,
+    "rank": 8,
     "player_id": "00-0033077",
     "name": "Dak Prescott",
     "pos": "QB",
@@ -4247,14 +4247,14 @@
     "market": "pass_yds",
     "line": 224.5,
     "label": "패싱 225야드 이상",
-    "prob": 64.2,
+    "prob": 64.6,
     "odds": null,
     "implied": null,
     "edge": null,
     "status": "Active"
    },
    {
-    "rank": 8,
+    "rank": 9,
     "player_id": "00-0037248",
     "name": "James Cook",
     "pos": "RB",
@@ -4264,14 +4264,14 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 63.6,
+    "prob": 63.0,
     "odds": -165.0,
     "implied": 62.3,
-    "edge": 1.3,
-    "status": "Active"
+    "edge": 0.8,
+    "status": ""
    },
    {
-    "rank": 9,
+    "rank": 10,
     "player_id": "00-0023459",
     "name": "Aaron Rodgers",
     "pos": "QB",
@@ -4281,24 +4281,7 @@
     "market": "pass_yds",
     "line": 224.5,
     "label": "패싱 225야드 이상",
-    "prob": 63.4,
-    "odds": null,
-    "implied": null,
-    "edge": null,
-    "status": "Active"
-   },
-   {
-    "rank": 10,
-    "player_id": "00-0033106",
-    "name": "Jared Goff",
-    "pos": "QB",
-    "team": "DET",
-    "opp": "NE",
-    "game_id": "2026_10_NE_DET",
-    "market": "pass_yds",
-    "line": 249.5,
-    "label": "패싱 250야드 이상",
-    "prob": 62.8,
+    "prob": 63.0,
     "odds": null,
     "implied": null,
     "edge": null,
@@ -4349,10 +4332,10 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 62.0,
+    "prob": 62.1,
     "odds": -250.0,
     "implied": 71.4,
-    "edge": -9.4,
+    "edge": -9.3,
     "status": "Active"
    },
    {
@@ -4366,7 +4349,7 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 61.1,
+    "prob": 61.2,
     "odds": -170.0,
     "implied": 63.0,
     "edge": -1.8,
@@ -4374,16 +4357,16 @@
    },
    {
     "rank": 15,
-    "player_id": "00-0036442",
-    "name": "Joe Burrow",
-    "pos": "QB",
-    "team": "CIN",
-    "opp": "PIT",
-    "game_id": "2026_10_PIT_CIN",
-    "market": "pass_tds",
-    "line": 1.5,
-    "label": "패싱 TD 2개 이상",
-    "prob": 61.1,
+    "player_id": "00-0038621",
+    "name": "DeMario Douglas",
+    "pos": "WR",
+    "team": "NE",
+    "opp": "DET",
+    "game_id": "2026_10_NE_DET",
+    "market": "rec_yds",
+    "line": 39.5,
+    "label": "리시빙 40야드 이상",
+    "prob": 60.8,
     "odds": null,
     "implied": null,
     "edge": null,
@@ -4402,10 +4385,10 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 65.9,
+    "prob": 64.9,
     "odds": -270.0,
     "implied": 73.0,
-    "edge": -7.1,
+    "edge": -8.1,
     "status": ""
    },
    {
@@ -4419,11 +4402,11 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 63.6,
+    "prob": 63.0,
     "odds": -165.0,
     "implied": 62.3,
-    "edge": 1.3,
-    "status": "Active"
+    "edge": 0.8,
+    "status": ""
    },
    {
     "rank": 3,
@@ -4436,10 +4419,10 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 62.0,
+    "prob": 62.1,
     "odds": -250.0,
     "implied": 71.4,
-    "edge": -9.4,
+    "edge": -9.3,
     "status": "Active"
    },
    {
@@ -4453,7 +4436,7 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 61.1,
+    "prob": 61.2,
     "odds": -170.0,
     "implied": 63.0,
     "edge": -1.8,
@@ -4478,6 +4461,23 @@
    },
    {
     "rank": 6,
+    "player_id": "00-0034857",
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "NYJ",
+    "game_id": "2026_10_BUF_NYJ",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 50.9,
+    "odds": -170.0,
+    "implied": 63.0,
+    "edge": -12.0,
+    "status": ""
+   },
+   {
+    "rank": 7,
     "player_id": "00-0036555",
     "name": "Chuba Hubbard",
     "pos": "RB",
@@ -4491,23 +4491,6 @@
     "odds": -155.0,
     "implied": 60.8,
     "edge": -10.5,
-    "status": "Active"
-   },
-   {
-    "rank": 7,
-    "player_id": "00-0034857",
-    "name": "Josh Allen",
-    "pos": "QB",
-    "team": "BUF",
-    "opp": "NYJ",
-    "game_id": "2026_10_BUF_NYJ",
-    "market": "td",
-    "line": null,
-    "label": "애니타임 터치다운",
-    "prob": 50.3,
-    "odds": -170.0,
-    "implied": 63.0,
-    "edge": -12.7,
     "status": "Active"
    },
    {
@@ -4538,10 +4521,10 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 46.3,
+    "prob": 46.4,
     "odds": -120.0,
     "implied": 54.5,
-    "edge": -8.2,
+    "edge": -8.1,
     "status": "Active"
    },
    {
@@ -4597,6 +4580,23 @@
    },
    {
     "rank": 13,
+    "player_id": "00-0035261",
+    "name": "Tony Pollard",
+    "pos": "RB",
+    "team": "TEN",
+    "opp": "JAX",
+    "game_id": "2026_10_JAX_TEN",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 42.0,
+    "odds": 120.0,
+    "implied": 45.5,
+    "edge": -3.4,
+    "status": "Active"
+   },
+   {
+    "rank": 14,
     "player_id": "00-0036900",
     "name": "Ja'Marr Chase",
     "pos": "WR",
@@ -4613,7 +4613,7 @@
     "status": "Active"
    },
    {
-    "rank": 14,
+    "rank": 15,
     "player_id": "00-0036410",
     "name": "Tee Higgins",
     "pos": "WR",
@@ -4628,45 +4628,11 @@
     "implied": 46.5,
     "edge": -4.6,
     "status": "Active"
-   },
-   {
-    "rank": 15,
-    "player_id": "00-0036358",
-    "name": "CeeDee Lamb",
-    "pos": "WR",
-    "team": "DAL",
-    "opp": "SF",
-    "game_id": "2026_10_SF_DAL",
-    "market": "td",
-    "line": null,
-    "label": "애니타임 터치다운",
-    "prob": 41.7,
-    "odds": -115.0,
-    "implied": 53.5,
-    "edge": -11.8,
-    "status": "Active"
    }
   ],
   "edge": [
    {
     "rank": 1,
-    "player_id": "00-0036997",
-    "name": "Javonte Williams",
-    "pos": "RB",
-    "team": "DAL",
-    "opp": "SF",
-    "game_id": "2026_10_SF_DAL",
-    "market": "rush_yds",
-    "line": 60.5,
-    "label": "러싱 60.5야드 이상",
-    "prob": 60.7,
-    "odds": -114.0,
-    "implied": 53.3,
-    "edge": 7.4,
-    "status": "Active"
-   },
-   {
-    "rank": 2,
     "player_id": "00-0040666",
     "name": "Omarion Hampton",
     "pos": "RB",
@@ -4680,10 +4646,10 @@
     "odds": -114.0,
     "implied": 53.3,
     "edge": 6.8,
-    "status": "Active"
+    "status": ""
    },
    {
-    "rank": 3,
+    "rank": 2,
     "player_id": "00-0039811",
     "name": "MarShawn Lloyd",
     "pos": "RB",
@@ -4698,6 +4664,23 @@
     "implied": 53.3,
     "edge": 5.5,
     "status": "Active"
+   },
+   {
+    "rank": 3,
+    "player_id": "00-0039890",
+    "name": "Adonai Mitchell",
+    "pos": "WR",
+    "team": "NYJ",
+    "opp": "BUF",
+    "game_id": "2026_10_BUF_NYJ",
+    "market": "rec_yds",
+    "line": 36.5,
+    "label": "리시빙 36.5야드 이상",
+    "prob": 58.5,
+    "odds": -114.0,
+    "implied": 53.3,
+    "edge": 5.2,
+    "status": "Questionable"
    },
    {
     "rank": 4,
@@ -4718,20 +4701,20 @@
    },
    {
     "rank": 5,
-    "player_id": "00-0039890",
-    "name": "Adonai Mitchell",
+    "player_id": "00-0038117",
+    "name": "Wan'Dale Robinson",
     "pos": "WR",
-    "team": "NYJ",
-    "opp": "BUF",
-    "game_id": "2026_10_BUF_NYJ",
+    "team": "TEN",
+    "opp": "JAX",
+    "game_id": "2026_10_JAX_TEN",
     "market": "rec_yds",
-    "line": 36.5,
-    "label": "리시빙 36.5야드 이상",
-    "prob": 58.3,
+    "line": 37.5,
+    "label": "리시빙 37.5야드 이상",
+    "prob": 58.1,
     "odds": -114.0,
     "implied": 53.3,
-    "edge": 5.0,
-    "status": "Questionable"
+    "edge": 4.8,
+    "status": ""
    },
    {
     "rank": 6,
@@ -4752,23 +4735,6 @@
    },
    {
     "rank": 7,
-    "player_id": "00-0041523",
-    "name": "Caleb Douglas",
-    "pos": "WR",
-    "team": "MIA",
-    "opp": "IND",
-    "game_id": "2026_10_MIA_IND",
-    "market": "rec_yds",
-    "line": 42.5,
-    "label": "리시빙 42.5야드 이상",
-    "prob": 58.0,
-    "odds": -114.0,
-    "implied": 53.3,
-    "edge": 4.7,
-    "status": "Active"
-   },
-   {
-    "rank": 8,
     "player_id": "00-0038597",
     "name": "Chase Brown",
     "pos": "RB",
@@ -4778,10 +4744,27 @@
     "market": "rush_yds",
     "line": 46.5,
     "label": "러싱 46.5야드 이상",
-    "prob": 57.0,
+    "prob": 56.5,
     "odds": -114.0,
     "implied": 53.3,
-    "edge": 3.7,
+    "edge": 3.3,
+    "status": "Active"
+   },
+   {
+    "rank": 8,
+    "player_id": "00-0034975",
+    "name": "Justice Hill",
+    "pos": "RB",
+    "team": "BAL",
+    "opp": "LAC",
+    "game_id": "2026_10_LAC_BAL",
+    "market": "rush_yds",
+    "line": 12.5,
+    "label": "러싱 12.5야드 이상",
+    "prob": 56.4,
+    "odds": -114.0,
+    "implied": 53.3,
+    "edge": 3.2,
     "status": "Active"
    },
    {
@@ -4795,11 +4778,11 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 63.6,
+    "prob": 63.0,
     "odds": -165.0,
     "implied": 62.3,
-    "edge": 1.3,
-    "status": "Active"
+    "edge": 0.8,
+    "status": ""
    }
   ]
  }
