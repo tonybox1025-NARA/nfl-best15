@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16 02:09 ET",
+ "updated_at": "2026-11-16 16:19 ET",
  "overall_best15": {
   "graded": 14,
   "hits": 10,
@@ -30,7 +30,7 @@
   "rate": 51.6,
   "avg_prob": 58.0,
   "void": 5,
-  "pending": 4
+  "pending": 6
  },
  "calibration": [
   {
@@ -213,6 +213,25 @@
       },
       {
        "rank": 5,
+       "player_id": "00-0039064",
+       "name": "Zay Flowers",
+       "pos": "WR",
+       "team": "BAL",
+       "opp": "LAC",
+       "game_id": "2026_10_LAC_BAL",
+       "market": "receptions",
+       "line": 3.5,
+       "label": "리셉션 4개 이상",
+       "prob": 67.5,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 6,
        "player_id": "00-0033280",
        "name": "Christian McCaffrey",
        "pos": "RB",
@@ -231,7 +250,7 @@
        "actual": 161.0
       },
       {
-       "rank": 6,
+       "rank": 7,
        "player_id": "00-0036971",
        "name": "Trevor Lawrence",
        "pos": "QB",
@@ -250,7 +269,7 @@
        "actual": 352.0
       },
       {
-       "rank": 7,
+       "rank": 8,
        "player_id": "00-0039851",
        "name": "Drake Maye",
        "pos": "QB",
@@ -269,7 +288,7 @@
        "actual": 48.0
       },
       {
-       "rank": 8,
+       "rank": 9,
        "player_id": "00-0036442",
        "name": "Joe Burrow",
        "pos": "QB",
@@ -288,7 +307,7 @@
        "actual": 409.0
       },
       {
-       "rank": 9,
+       "rank": 10,
        "player_id": "00-0033077",
        "name": "Dak Prescott",
        "pos": "QB",
@@ -307,7 +326,7 @@
        "actual": 343.0
       },
       {
-       "rank": 10,
+       "rank": 11,
        "player_id": "00-0038933",
        "name": "Dalton Kincaid",
        "pos": "TE",
@@ -326,7 +345,7 @@
        "actual": 58.0
       },
       {
-       "rank": 11,
+       "rank": 12,
        "player_id": "00-0038120",
        "name": "Breece Hall",
        "pos": "RB",
@@ -345,7 +364,7 @@
        "actual": 41.0
       },
       {
-       "rank": 12,
+       "rank": 13,
        "player_id": "00-0036410",
        "name": "Tee Higgins",
        "pos": "WR",
@@ -364,7 +383,7 @@
        "actual": 66.0
       },
       {
-       "rank": 13,
+       "rank": 14,
        "player_id": "00-0037744",
        "name": "Trey McBride",
        "pos": "TE",
@@ -383,7 +402,7 @@
        "actual": 37.0
       },
       {
-       "rank": 14,
+       "rank": 15,
        "player_id": "00-0037248",
        "name": "James Cook",
        "pos": "RB",
@@ -400,25 +419,6 @@
        "status": "",
        "result": "hit",
        "actual": 1
-      },
-      {
-       "rank": 15,
-       "player_id": "00-0039064",
-       "name": "Zay Flowers",
-       "pos": "WR",
-       "team": "BAL",
-       "opp": "LAC",
-       "game_id": "2026_10_LAC_BAL",
-       "market": "receptions",
-       "line": 3.5,
-       "label": "리셉션 4개 이상",
-       "prob": 63.7,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
       }
      ]
     },
@@ -681,6 +681,25 @@
       },
       {
        "rank": 14,
+       "player_id": "00-0032764",
+       "name": "Derrick Henry",
+       "pos": "RB",
+       "team": "BAL",
+       "opp": "LAC",
+       "game_id": "2026_10_LAC_BAL",
+       "market": "td",
+       "line": null,
+       "label": "애니타임 터치다운",
+       "prob": 41.4,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 15,
        "player_id": "00-0035261",
        "name": "Tony Pollard",
        "pos": "RB",
@@ -697,25 +716,6 @@
        "status": "Active",
        "result": "hit",
        "actual": 1
-      },
-      {
-       "rank": 15,
-       "player_id": "00-0032764",
-       "name": "Derrick Henry",
-       "pos": "RB",
-       "team": "BAL",
-       "opp": "LAC",
-       "game_id": "2026_10_LAC_BAL",
-       "market": "td",
-       "line": null,
-       "label": "애니타임 터치다운",
-       "prob": 40.4,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
       }
      ]
     },
@@ -3982,7 +3982,7 @@
       "rate": null,
       "avg_prob": null,
       "void": 0,
-      "pending": 4
+      "pending": 6
      },
      "picks": [
       {
@@ -3996,7 +3996,7 @@
        "market": "receptions",
        "line": 3.5,
        "label": "리셉션 4개 이상",
-       "prob": 63.7,
+       "prob": 67.5,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -4015,7 +4015,7 @@
        "market": "rush_yds",
        "line": 59.5,
        "label": "러싱 60야드 이상",
-       "prob": 62.3,
+       "prob": 62.6,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -4034,7 +4034,7 @@
        "market": "rec_yds",
        "line": 49.5,
        "label": "리시빙 50야드 이상",
-       "prob": 60.8,
+       "prob": 62.5,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -4044,6 +4044,25 @@
       },
       {
        "rank": 4,
+       "player_id": "00-0036355",
+       "name": "Justin Herbert",
+       "pos": "QB",
+       "team": "LAC",
+       "opp": "BAL",
+       "game_id": "2026_10_LAC_BAL",
+       "market": "pass_yds",
+       "line": 199.5,
+       "label": "패싱 200야드 이상",
+       "prob": 62.2,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 5,
        "player_id": "00-0032764",
        "name": "Derrick Henry",
        "pos": "RB",
@@ -4053,11 +4072,30 @@
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 40.4,
+       "prob": 41.4,
        "odds": null,
        "implied": null,
        "edge": null,
        "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 6,
+       "player_id": "00-0040666",
+       "name": "Omarion Hampton",
+       "pos": "RB",
+       "team": "LAC",
+       "opp": "BAL",
+       "game_id": "2026_10_LAC_BAL",
+       "market": "td",
+       "line": null,
+       "label": "애니타임 터치다운",
+       "prob": 31.2,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "",
        "result": "pending",
        "actual": null
       }
@@ -4070,7 +4108,7 @@
     "rate": 51.6,
     "avg_prob": 58.0,
     "void": 5,
-    "pending": 4
+    "pending": 6
    }
   }
  ]

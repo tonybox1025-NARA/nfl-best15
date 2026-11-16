@@ -1,7 +1,7 @@
 # 2026 시즌 10주차 베스트 15
 
-생성: 2026-11-16 02:09 ET  
-데이터: NFL 공식 리포트 347건 · ESPN 실시간 800건 / 날씨 1경기 (야외) / 배당 669분 전 데이터 사용 (크레딧 절약)
+생성: 2026-11-16 16:19 ET  
+데이터: NFL 공식 리포트 347건 · ESPN 실시간 800건 / 날씨 1경기 (야외) / FanDuel 배당 0개 (남은 크레딧 2)
 
 > 확률은 과거 데이터 기반 추정치예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요. ⚠는 모델과 시장 차이가 15%p 넘는 픽(역할 변화·부상 확인 필요)이에요.
 
@@ -9,26 +9,31 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Zay Flowers (WR) | BAL | LAC | 리셉션 4개 이상 | **63.7%** | - | - | Active |
-| 2 | Derrick Henry (RB) | BAL | LAC | 러싱 60야드 이상 | **62.3%** | - | - | Active |
-| 3 | Zay Flowers (WR) | BAL | LAC | 리시빙 50야드 이상 | **60.8%** | - | - | Active |
-| 4 | Derrick Henry (RB) | BAL | LAC | 애니타임 터치다운 | **40.4%** | - | - | Active |
+| 1 | Zay Flowers (WR) | BAL | LAC | 리셉션 4개 이상 | **67.5%** | - | - | Active |
+| 2 | Derrick Henry (RB) | BAL | LAC | 러싱 60야드 이상 | **62.6%** | - | - | Active |
+| 3 | Zay Flowers (WR) | BAL | LAC | 리시빙 50야드 이상 | **62.5%** | - | - | Active |
+| 4 | Justin Herbert (QB) | LAC | BAL | 패싱 200야드 이상 | **62.2%** | - | - | Active |
+| 5 | Derrick Henry (RB) | BAL | LAC | 애니타임 터치다운 | **41.4%** | - | - | Active |
+| 6 | Omarion Hampton (RB) | LAC | BAL | 애니타임 터치다운 | **31.2%** | - | - |  |
 
 ## 터치다운 확률 TOP 15
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Derrick Henry (RB) | BAL | LAC | 애니타임 터치다운 | **40.4%** | - | - | Active |
-| 2 | Zay Flowers (WR) | BAL | LAC | 애니타임 터치다운 | **34.9%** | - | - | Active |
+| 1 | Derrick Henry (RB) | BAL | LAC | 애니타임 터치다운 | **41.4%** | - | - | Active |
+| 2 | Zay Flowers (WR) | BAL | LAC | 애니타임 터치다운 | **35.1%** | - | - | Active |
+| 3 | Omarion Hampton (RB) | LAC | BAL | 애니타임 터치다운 | **31.2%** | - | - |  |
 
 ## 경기별 베스트 15
 
 ### LAC @ BAL · 2026-11-16 20:15 ET · M&T Bank Stadium
-스프레드 BAL -4.5 · 총점 38.5 · 예상 점수 LAC 17.0 – BAL 21.5
+스프레드 BAL -4.5 · 총점 39.5 · 예상 점수 LAC 17.5 – BAL 22.0
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Zay Flowers (WR) | BAL | LAC | 리셉션 4개 이상 | **63.7%** | - | - | Active |
-| 2 | Derrick Henry (RB) | BAL | LAC | 러싱 60야드 이상 | **62.3%** | - | - | Active |
-| 3 | Zay Flowers (WR) | BAL | LAC | 리시빙 50야드 이상 | **60.8%** | - | - | Active |
-| 4 | Derrick Henry (RB) | BAL | LAC | 애니타임 터치다운 | **40.4%** | - | - | Active |
+| 1 | Zay Flowers (WR) | BAL | LAC | 리셉션 4개 이상 | **67.5%** | - | - | Active |
+| 2 | Derrick Henry (RB) | BAL | LAC | 러싱 60야드 이상 | **62.6%** | - | - | Active |
+| 3 | Zay Flowers (WR) | BAL | LAC | 리시빙 50야드 이상 | **62.5%** | - | - | Active |
+| 4 | Justin Herbert (QB) | LAC | BAL | 패싱 200야드 이상 | **62.2%** | - | - | Active |
+| 5 | Derrick Henry (RB) | BAL | LAC | 애니타임 터치다운 | **41.4%** | - | - | Active |
+| 6 | Omarion Hampton (RB) | LAC | BAL | 애니타임 터치다운 | **31.2%** | - | - |  |

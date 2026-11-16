@@ -1,11 +1,11 @@
 {
  "season": 2026,
  "week": 10,
- "generated_at": "2026-11-16 02:09 ET",
+ "generated_at": "2026-11-16 16:19 ET",
  "sources": {
   "injuries": "NFL 공식 리포트 347건 · ESPN 실시간 800건",
   "weather": "날씨 1경기 (야외)",
-  "odds": "배당 669분 전 데이터 사용 (크레딧 절약)"
+  "odds": "FanDuel 배당 0개 (남은 크레딧 2)"
  },
  "has_odds": false,
  "overall": {
@@ -20,7 +20,7 @@
     "market": "receptions",
     "line": 3.5,
     "label": "리셉션 4개 이상",
-    "prob": 63.7,
+    "prob": 67.5,
     "status": "Active",
     "game_id": "2026_10_LAC_BAL",
     "detail": {
@@ -53,15 +53,15 @@
      ],
      "need": 4.0,
      "recent_hits": 3,
-     "mu": 4.7,
+     "mu": 4.8,
      "def_rank": 2.0,
      "def_allowed": 11.5,
      "carry_share": 0.028,
      "tgt_share": 0.308,
      "rz_share": 0.041,
-     "implied_total": 21.5,
+     "implied_total": 22.0,
      "spread": 4.5,
-     "wind": 6.0,
+     "wind": 5.0,
      "td_rate": 0.438
     }
    },
@@ -75,7 +75,7 @@
     "market": "rush_yds",
     "line": 59.5,
     "label": "러싱 60야드 이상",
-    "prob": 62.3,
+    "prob": 62.6,
     "status": "Active",
     "game_id": "2026_10_LAC_BAL",
     "detail": {
@@ -108,15 +108,15 @@
      ],
      "need": 60.0,
      "recent_hits": 1,
-     "mu": 82.6,
+     "mu": 83.1,
      "def_rank": 1.0,
      "def_allowed": 105.0,
      "carry_share": 0.625,
      "tgt_share": 0.046,
      "rz_share": 0.554,
-     "implied_total": 21.5,
+     "implied_total": 22.0,
      "spread": 4.5,
-     "wind": 6.0,
+     "wind": 5.0,
      "td_rate": 0.625
     }
    },
@@ -130,7 +130,7 @@
     "market": "rec_yds",
     "line": 49.5,
     "label": "리시빙 50야드 이상",
-    "prob": 60.8,
+    "prob": 62.5,
     "status": "Active",
     "game_id": "2026_10_LAC_BAL",
     "detail": {
@@ -163,20 +163,75 @@
      ],
      "need": 50.0,
      "recent_hits": 3,
-     "mu": 68.2,
+     "mu": 70.2,
      "def_rank": 2.0,
      "def_allowed": 157.9,
      "carry_share": 0.028,
      "tgt_share": 0.308,
      "rz_share": 0.041,
-     "implied_total": 21.5,
+     "implied_total": 22.0,
      "spread": 4.5,
-     "wind": 6.0,
+     "wind": 5.0,
      "td_rate": 0.438
     }
    },
    {
     "rank": 4,
+    "player_id": "00-0036355",
+    "name": "Justin Herbert",
+    "pos": "QB",
+    "team": "LAC",
+    "opp": "BAL",
+    "market": "pass_yds",
+    "line": 199.5,
+    "label": "패싱 200야드 이상",
+    "prob": 62.2,
+    "status": "Active",
+    "game_id": "2026_10_LAC_BAL",
+    "detail": {
+     "recent": [
+      {
+       "wk": 4,
+       "opp": "SEA",
+       "val": 189.0
+      },
+      {
+       "wk": 5,
+       "opp": "DEN",
+       "val": 121.0
+      },
+      {
+       "wk": 6,
+       "opp": "KC",
+       "val": 204.0
+      },
+      {
+       "wk": 8,
+       "opp": "LA",
+       "val": 257.0
+      },
+      {
+       "wk": 9,
+       "opp": "HOU",
+       "val": 193.0
+      }
+     ],
+     "need": 200.0,
+     "recent_hits": 2,
+     "mu": 209.4,
+     "def_rank": 1.0,
+     "def_allowed": 251.4,
+     "carry_share": 0.16,
+     "tgt_share": 0.003,
+     "rz_share": 0.108,
+     "implied_total": 17.5,
+     "spread": -4.5,
+     "wind": 5.0,
+     "td_rate": 0.062
+    }
+   },
+   {
+    "rank": 5,
     "player_id": "00-0032764",
     "name": "Derrick Henry",
     "pos": "RB",
@@ -185,7 +240,7 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 40.4,
+    "prob": 41.4,
     "status": "Active",
     "game_id": "2026_10_LAC_BAL",
     "detail": {
@@ -224,10 +279,65 @@
      "carry_share": 0.625,
      "tgt_share": 0.046,
      "rz_share": 0.554,
-     "implied_total": 21.5,
+     "implied_total": 22.0,
      "spread": 4.5,
-     "wind": 6.0,
+     "wind": 5.0,
      "td_rate": 0.625
+    }
+   },
+   {
+    "rank": 6,
+    "player_id": "00-0040666",
+    "name": "Omarion Hampton",
+    "pos": "RB",
+    "team": "LAC",
+    "opp": "BAL",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 31.2,
+    "status": "",
+    "game_id": "2026_10_LAC_BAL",
+    "detail": {
+     "recent": [
+      {
+       "wk": 4,
+       "opp": "SEA",
+       "val": 1.0
+      },
+      {
+       "wk": 5,
+       "opp": "DEN",
+       "val": 0.0
+      },
+      {
+       "wk": 6,
+       "opp": "KC",
+       "val": 0.0
+      },
+      {
+       "wk": 8,
+       "opp": "LA",
+       "val": 0.0
+      },
+      {
+       "wk": 9,
+       "opp": "HOU",
+       "val": 0.0
+      }
+     ],
+     "need": null,
+     "recent_hits": 1,
+     "mu": null,
+     "def_rank": 2.0,
+     "def_allowed": 0.9,
+     "carry_share": 0.418,
+     "tgt_share": 0.062,
+     "rz_share": 0.389,
+     "implied_total": 17.5,
+     "spread": -4.5,
+     "wind": 5.0,
+     "td_rate": 0.5
     }
    }
   ],
@@ -243,7 +353,7 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 40.4,
+    "prob": 41.4,
     "status": "Active",
     "game_id": "2026_10_LAC_BAL",
     "detail": {
@@ -282,9 +392,9 @@
      "carry_share": 0.625,
      "tgt_share": 0.046,
      "rz_share": 0.554,
-     "implied_total": 21.5,
+     "implied_total": 22.0,
      "spread": 4.5,
-     "wind": 6.0,
+     "wind": 5.0,
      "td_rate": 0.625
     }
    },
@@ -298,7 +408,7 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 34.9,
+    "prob": 35.1,
     "status": "Active",
     "game_id": "2026_10_LAC_BAL",
     "detail": {
@@ -337,10 +447,65 @@
      "carry_share": 0.028,
      "tgt_share": 0.308,
      "rz_share": 0.041,
-     "implied_total": 21.5,
+     "implied_total": 22.0,
      "spread": 4.5,
-     "wind": 6.0,
+     "wind": 5.0,
      "td_rate": 0.438
+    }
+   },
+   {
+    "rank": 3,
+    "player_id": "00-0040666",
+    "name": "Omarion Hampton",
+    "pos": "RB",
+    "team": "LAC",
+    "opp": "BAL",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 31.2,
+    "status": "",
+    "game_id": "2026_10_LAC_BAL",
+    "detail": {
+     "recent": [
+      {
+       "wk": 4,
+       "opp": "SEA",
+       "val": 1.0
+      },
+      {
+       "wk": 5,
+       "opp": "DEN",
+       "val": 0.0
+      },
+      {
+       "wk": 6,
+       "opp": "KC",
+       "val": 0.0
+      },
+      {
+       "wk": 8,
+       "opp": "LA",
+       "val": 0.0
+      },
+      {
+       "wk": 9,
+       "opp": "HOU",
+       "val": 0.0
+      }
+     ],
+     "need": null,
+     "recent_hits": 1,
+     "mu": null,
+     "def_rank": 2.0,
+     "def_allowed": 0.9,
+     "carry_share": 0.418,
+     "tgt_share": 0.062,
+     "rz_share": 0.389,
+     "implied_total": 17.5,
+     "spread": -4.5,
+     "wind": 5.0,
+     "td_rate": 0.5
     }
    }
   ],
@@ -355,14 +520,14 @@
    "stadium": "M&T Bank Stadium",
    "roof": "outdoors",
    "spread_home": 4.5,
-   "total": 38.5,
+   "total": 39.5,
    "proj": {
-    "away": 17.0,
-    "home": 21.5
+    "away": 17.5,
+    "home": 22.0
    },
    "weather": {
-    "temp_f": 43,
-    "wind_mph": 6,
+    "temp_f": 44,
+    "wind_mph": 5,
     "precip_pct": 0
    },
    "notes": [],
@@ -498,7 +663,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 63.7,
+     "prob": 67.5,
      "status": "Active",
      "game_id": "2026_10_LAC_BAL",
      "detail": {
@@ -531,15 +696,15 @@
       ],
       "need": 4.0,
       "recent_hits": 3,
-      "mu": 4.7,
+      "mu": 4.8,
       "def_rank": 2.0,
       "def_allowed": 11.5,
       "carry_share": 0.028,
       "tgt_share": 0.308,
       "rz_share": 0.041,
-      "implied_total": 21.5,
+      "implied_total": 22.0,
       "spread": 4.5,
-      "wind": 6.0,
+      "wind": 5.0,
       "td_rate": 0.438
      }
     },
@@ -553,7 +718,7 @@
      "market": "rush_yds",
      "line": 59.5,
      "label": "러싱 60야드 이상",
-     "prob": 62.3,
+     "prob": 62.6,
      "status": "Active",
      "game_id": "2026_10_LAC_BAL",
      "detail": {
@@ -586,15 +751,15 @@
       ],
       "need": 60.0,
       "recent_hits": 1,
-      "mu": 82.6,
+      "mu": 83.1,
       "def_rank": 1.0,
       "def_allowed": 105.0,
       "carry_share": 0.625,
       "tgt_share": 0.046,
       "rz_share": 0.554,
-      "implied_total": 21.5,
+      "implied_total": 22.0,
       "spread": 4.5,
-      "wind": 6.0,
+      "wind": 5.0,
       "td_rate": 0.625
      }
     },
@@ -608,7 +773,7 @@
      "market": "rec_yds",
      "line": 49.5,
      "label": "리시빙 50야드 이상",
-     "prob": 60.8,
+     "prob": 62.5,
      "status": "Active",
      "game_id": "2026_10_LAC_BAL",
      "detail": {
@@ -641,20 +806,75 @@
       ],
       "need": 50.0,
       "recent_hits": 3,
-      "mu": 68.2,
+      "mu": 70.2,
       "def_rank": 2.0,
       "def_allowed": 157.9,
       "carry_share": 0.028,
       "tgt_share": 0.308,
       "rz_share": 0.041,
-      "implied_total": 21.5,
+      "implied_total": 22.0,
       "spread": 4.5,
-      "wind": 6.0,
+      "wind": 5.0,
       "td_rate": 0.438
      }
     },
     {
      "rank": 4,
+     "player_id": "00-0036355",
+     "name": "Justin Herbert",
+     "pos": "QB",
+     "team": "LAC",
+     "opp": "BAL",
+     "market": "pass_yds",
+     "line": 199.5,
+     "label": "패싱 200야드 이상",
+     "prob": 62.2,
+     "status": "Active",
+     "game_id": "2026_10_LAC_BAL",
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "SEA",
+        "val": 189.0
+       },
+       {
+        "wk": 5,
+        "opp": "DEN",
+        "val": 121.0
+       },
+       {
+        "wk": 6,
+        "opp": "KC",
+        "val": 204.0
+       },
+       {
+        "wk": 8,
+        "opp": "LA",
+        "val": 257.0
+       },
+       {
+        "wk": 9,
+        "opp": "HOU",
+        "val": 193.0
+       }
+      ],
+      "need": 200.0,
+      "recent_hits": 2,
+      "mu": 209.4,
+      "def_rank": 1.0,
+      "def_allowed": 251.4,
+      "carry_share": 0.16,
+      "tgt_share": 0.003,
+      "rz_share": 0.108,
+      "implied_total": 17.5,
+      "spread": -4.5,
+      "wind": 5.0,
+      "td_rate": 0.062
+     }
+    },
+    {
+     "rank": 5,
      "player_id": "00-0032764",
      "name": "Derrick Henry",
      "pos": "RB",
@@ -663,7 +883,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 40.4,
+     "prob": 41.4,
      "status": "Active",
      "game_id": "2026_10_LAC_BAL",
      "detail": {
@@ -702,10 +922,65 @@
       "carry_share": 0.625,
       "tgt_share": 0.046,
       "rz_share": 0.554,
-      "implied_total": 21.5,
+      "implied_total": 22.0,
       "spread": 4.5,
-      "wind": 6.0,
+      "wind": 5.0,
       "td_rate": 0.625
+     }
+    },
+    {
+     "rank": 6,
+     "player_id": "00-0040666",
+     "name": "Omarion Hampton",
+     "pos": "RB",
+     "team": "LAC",
+     "opp": "BAL",
+     "market": "td",
+     "line": null,
+     "label": "애니타임 터치다운",
+     "prob": 31.2,
+     "status": "",
+     "game_id": "2026_10_LAC_BAL",
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "SEA",
+        "val": 1.0
+       },
+       {
+        "wk": 5,
+        "opp": "DEN",
+        "val": 0.0
+       },
+       {
+        "wk": 6,
+        "opp": "KC",
+        "val": 0.0
+       },
+       {
+        "wk": 8,
+        "opp": "LA",
+        "val": 0.0
+       },
+       {
+        "wk": 9,
+        "opp": "HOU",
+        "val": 0.0
+       }
+      ],
+      "need": null,
+      "recent_hits": 1,
+      "mu": null,
+      "def_rank": 2.0,
+      "def_allowed": 0.9,
+      "carry_share": 0.418,
+      "tgt_share": 0.062,
+      "rz_share": 0.389,
+      "implied_total": 17.5,
+      "spread": -4.5,
+      "wind": 5.0,
+      "td_rate": 0.5
      }
     }
    ],
@@ -713,20 +988,10 @@
   }
  ],
  "out_players": [],
- "seconds": 18.0,
+ "seconds": 9.7,
  "changes": [
-  "▲ Derrick Henry 애니타임 터치다운 새로 진입 (4위, 40.4%)",
-  "▼ Tee Higgins 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Joe Burrow 패싱 TD 2개 이상 베스트 15에서 빠짐",
-  "▼ DK Metcalf 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Chase Brown 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Joe Burrow 패싱 250야드 이상 베스트 15에서 빠짐",
-  "▼ DK Metcalf 리시빙 40야드 이상 베스트 15에서 빠짐",
-  "▼ Aaron Rodgers 패싱 225야드 이상 베스트 15에서 빠짐",
-  "▼ Ja'Marr Chase 리시빙 60야드 이상 베스트 15에서 빠짐",
-  "▼ Jaylen Warren 러싱 50야드 이상 베스트 15에서 빠짐",
-  "▼ Chase Brown 러싱 50야드 이상 베스트 15에서 빠짐",
-  "▼ Aaron Rodgers 패싱 TD 2개 이상 베스트 15에서 빠짐",
-  "▼ Tee Higgins 리시빙 50야드 이상 베스트 15에서 빠짐"
+  "• Zay Flowers 리셉션 4개 이상 63.7% → 67.5%",
+  "▲ Justin Herbert 패싱 200야드 이상 새로 진입 (4위, 62.2%)",
+  "▲ Omarion Hampton 애니타임 터치다운 새로 진입 (6위, 31.2%)"
  ]
 }
