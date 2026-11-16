@@ -1,39 +1,125 @@
 {
- "updated_at": "2026-11-15 15:07 ET",
+ "updated_at": "2026-11-15 19:43 ET",
  "overall_best15": {
-  "graded": 0,
-  "hits": 0,
-  "rate": null,
-  "avg_prob": null,
+  "graded": 8,
+  "hits": 5,
+  "rate": 62.5,
+  "avg_prob": 66.7,
   "void": 1,
-  "pending": 14
+  "pending": 5
  },
  "td_top15": {
-  "graded": 0,
-  "hits": 0,
-  "rate": null,
-  "avg_prob": null,
-  "void": 1,
-  "pending": 13
+  "graded": 7,
+  "hits": 7,
+  "rate": 100.0,
+  "avg_prob": 49.8,
+  "void": 4,
+  "pending": 3
  },
  "edge_list": {
-  "graded": 0,
+  "graded": 1,
   "hits": 0,
-  "rate": null,
-  "avg_prob": null,
-  "void": 1,
+  "rate": 0.0,
+  "avg_prob": 57.4,
+  "void": 0,
   "pending": 0
  },
  "game_best15": {
-  "graded": 0,
-  "hits": 0,
-  "rate": null,
-  "avg_prob": null,
-  "void": 15,
-  "pending": 151
+  "graded": 103,
+  "hits": 48,
+  "rate": 46.6,
+  "avg_prob": 57.6,
+  "void": 28,
+  "pending": 35
  },
- "calibration": [],
- "by_market": {},
+ "calibration": [
+  {
+   "label": "0–40%",
+   "n": 9,
+   "pred": 34.3,
+   "actual": 22.2
+  },
+  {
+   "label": "40–50%",
+   "n": 7,
+   "pred": 45.3,
+   "actual": 85.7
+  },
+  {
+   "label": "50–55%",
+   "n": 4,
+   "pred": 53.0,
+   "actual": 50.0
+  },
+  {
+   "label": "55–60%",
+   "n": 34,
+   "pred": 57.6,
+   "actual": 44.1
+  },
+  {
+   "label": "60–65%",
+   "n": 40,
+   "pred": 62.2,
+   "actual": 47.5
+  },
+  {
+   "label": "65–70%",
+   "n": 11,
+   "pred": 66.8,
+   "actual": 54.5
+  }
+ ],
+ "by_market": {
+  "pass_tds": {
+   "graded": 7,
+   "hits": 3,
+   "rate": 42.9,
+   "avg_prob": 57.5,
+   "void": 0,
+   "pending": 0
+  },
+  "pass_yds": {
+   "graded": 11,
+   "hits": 5,
+   "rate": 45.5,
+   "avg_prob": 60.7,
+   "void": 0,
+   "pending": 0
+  },
+  "rec_yds": {
+   "graded": 28,
+   "hits": 13,
+   "rate": 46.4,
+   "avg_prob": 58.7,
+   "void": 0,
+   "pending": 0
+  },
+  "receptions": {
+   "graded": 27,
+   "hits": 11,
+   "rate": 40.7,
+   "avg_prob": 63.5,
+   "void": 0,
+   "pending": 0
+  },
+  "rush_yds": {
+   "graded": 16,
+   "hits": 9,
+   "rate": 56.2,
+   "avg_prob": 58.4,
+   "void": 0,
+   "pending": 0
+  },
+  "td": {
+   "graded": 16,
+   "hits": 9,
+   "rate": 56.2,
+   "avg_prob": 41.1,
+   "void": 0,
+   "pending": 0
+  }
+ },
  "weeks": [
   {
    "season": 2026,
@@ -41,12 +127,12 @@
    "lists": {
     "prob": {
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
+      "graded": 8,
+      "hits": 5,
+      "rate": 62.5,
+      "avg_prob": 66.7,
       "void": 1,
-      "pending": 14
+      "pending": 5
      },
      "picks": [
       {
@@ -65,8 +151,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 3.0
       },
       {
        "rank": 2,
@@ -103,8 +189,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 6.0
       },
       {
        "rank": 4,
@@ -122,30 +208,11 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 2.0
       },
       {
        "rank": 5,
-       "player_id": "00-0039064",
-       "name": "Zay Flowers",
-       "pos": "WR",
-       "team": "BAL",
-       "opp": "LAC",
-       "game_id": "2026_10_LAC_BAL",
-       "market": "receptions",
-       "line": 3.5,
-       "label": "리셉션 4개 이상",
-       "prob": 67.4,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 6,
        "player_id": "00-0033280",
        "name": "Christian McCaffrey",
        "pos": "RB",
@@ -164,7 +231,7 @@
        "actual": null
       },
       {
-       "rank": 7,
+       "rank": 6,
        "player_id": "00-0036971",
        "name": "Trevor Lawrence",
        "pos": "QB",
@@ -179,11 +246,11 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 352.0
       },
       {
-       "rank": 8,
+       "rank": 7,
        "player_id": "00-0039851",
        "name": "Drake Maye",
        "pos": "QB",
@@ -198,7 +265,26 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "void",
+       "result": "miss",
+       "actual": 48.0
+      },
+      {
+       "rank": 8,
+       "player_id": "00-0036442",
+       "name": "Joe Burrow",
+       "pos": "QB",
+       "team": "CIN",
+       "opp": "PIT",
+       "game_id": "2026_10_PIT_CIN",
+       "market": "pass_yds",
+       "line": 224.5,
+       "label": "패싱 225야드 이상",
+       "prob": 67.2,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
        "actual": null
       },
       {
@@ -236,8 +322,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 58.0
       },
       {
        "rank": 11,
@@ -255,8 +341,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 41.0
       },
       {
        "rank": 12,
@@ -269,7 +355,7 @@
        "market": "rec_yds",
        "line": 39.5,
        "label": "리시빙 40야드 이상",
-       "prob": 65.5,
+       "prob": 65.2,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -293,7 +379,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -312,38 +398,19 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 15,
-       "player_id": "00-0023459",
-       "name": "Aaron Rodgers",
-       "pos": "QB",
-       "team": "PIT",
-       "opp": "CIN",
-       "game_id": "2026_10_PIT_CIN",
-       "market": "pass_yds",
-       "line": 224.5,
-       "label": "패싱 225야드 이상",
-       "prob": 63.4,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       }
      ]
     },
     "td": {
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
-      "void": 1,
-      "pending": 13
+      "graded": 7,
+      "hits": 7,
+      "rate": 100.0,
+      "avg_prob": 49.8,
+      "void": 4,
+      "pending": 3
      },
      "picks": [
       {
@@ -362,8 +429,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       },
       {
        "rank": 2,
@@ -400,8 +467,8 @@
        "implied": 71.4,
        "edge": -9.4,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "hit",
+       "actual": 2
       },
       {
        "rank": 4,
@@ -438,7 +505,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -457,8 +524,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 2
       },
       {
        "rank": 7,
@@ -476,7 +543,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -495,8 +562,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 2
       },
       {
        "rank": 9,
@@ -514,8 +581,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       },
       {
        "rank": 10,
@@ -533,7 +600,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -552,8 +619,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       },
       {
        "rank": 12,
@@ -571,7 +638,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -609,18 +676,18 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       }
      ]
     },
     "edge": {
      "summary": {
-      "graded": 0,
+      "graded": 1,
       "hits": 0,
-      "rate": null,
-      "avg_prob": null,
-      "void": 1,
+      "rate": 0.0,
+      "avg_prob": 57.4,
+      "void": 0,
       "pending": 0
      },
      "picks": [
@@ -640,8 +707,8 @@
        "implied": 53.1,
        "edge": 4.3,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 4.0
       }
      ]
     }
@@ -652,11 +719,11 @@
      "home": "DET",
      "kickoff": "2026-11-15 09:30 ET",
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
-      "void": 15,
+      "graded": 15,
+      "hits": 7,
+      "rate": 46.7,
+      "avg_prob": 58.1,
+      "void": 0,
       "pending": 0
      },
      "picks": [
@@ -676,8 +743,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 48.0
       },
       {
        "rank": 2,
@@ -695,8 +762,8 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 4.0
       },
       {
        "rank": 3,
@@ -714,8 +781,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 2.0
       },
       {
        "rank": 4,
@@ -733,8 +800,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "hit",
+       "actual": 7.0
       },
       {
        "rank": 5,
@@ -752,8 +819,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "hit",
+       "actual": 303.0
       },
       {
        "rank": 6,
@@ -771,8 +838,8 @@
        "implied": 71.4,
        "edge": -9.4,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "hit",
+       "actual": 2
       },
       {
        "rank": 7,
@@ -790,8 +857,8 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 2.0
       },
       {
        "rank": 8,
@@ -809,8 +876,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "hit",
+       "actual": 3.0
       },
       {
        "rank": 9,
@@ -828,8 +895,8 @@
        "implied": 53.1,
        "edge": 4.3,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 4.0
       },
       {
        "rank": 10,
@@ -847,8 +914,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 0.0
       },
       {
        "rank": 11,
@@ -866,8 +933,8 @@
        "implied": 53.1,
        "edge": -0.1,
        "status": "",
-       "result": "void",
-       "actual": null
+       "result": "hit",
+       "actual": 48.0
       },
       {
        "rank": 12,
@@ -885,8 +952,8 @@
        "implied": 53.1,
        "edge": -0.1,
        "status": "Active",
-       "result": "void",
-       "actual": null
+       "result": "hit",
+       "actual": 19.0
       },
       {
        "rank": 13,
@@ -904,8 +971,8 @@
        "implied": 53.1,
        "edge": -1.4,
        "status": "Questionable",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 27.0
       },
       {
        "rank": 14,
@@ -923,8 +990,8 @@
        "implied": 53.1,
        "edge": -3.5,
        "status": "Questionable",
-       "result": "void",
-       "actual": null
+       "result": "miss",
+       "actual": 4.0
       },
       {
        "rank": 15,
@@ -942,8 +1009,8 @@
        "implied": 53.1,
        "edge": -8.7,
        "status": "Questionable",
-       "result": "void",
-       "actual": null
+       "result": "hit",
+       "actual": 28.0
       }
      ]
     },
@@ -952,12 +1019,12 @@
      "home": "ATL",
      "kickoff": "2026-11-15 13:00 ET",
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
+      "graded": 12,
+      "hits": 11,
+      "rate": 91.7,
+      "avg_prob": 58.6,
       "void": 0,
-      "pending": 12
+      "pending": 0
      },
      "picks": [
       {
@@ -976,8 +1043,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 6.0
       },
       {
        "rank": 2,
@@ -995,8 +1062,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 4.0
       },
       {
        "rank": 3,
@@ -1014,8 +1081,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 4.0
       },
       {
        "rank": 4,
@@ -1033,8 +1100,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 5.0
       },
       {
        "rank": 5,
@@ -1052,8 +1119,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 109.0
       },
       {
        "rank": 6,
@@ -1071,8 +1138,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 71.0
       },
       {
        "rank": 7,
@@ -1090,8 +1157,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 348.0
       },
       {
        "rank": 8,
@@ -1109,8 +1176,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 30.0
       },
       {
        "rank": 9,
@@ -1128,8 +1195,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 82.0
       },
       {
        "rank": 10,
@@ -1147,8 +1214,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 286.0
       },
       {
        "rank": 11,
@@ -1166,8 +1233,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 50.0
       },
       {
        "rank": 12,
@@ -1185,8 +1252,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 2
       }
      ]
     },
@@ -1195,12 +1262,12 @@
      "home": "CLE",
      "kickoff": "2026-11-15 13:00 ET",
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
+      "graded": 13,
+      "hits": 6,
+      "rate": 46.2,
+      "avg_prob": 56.5,
       "void": 0,
-      "pending": 13
+      "pending": 0
      },
      "picks": [
       {
@@ -1219,8 +1286,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 1.0
       },
       {
        "rank": 2,
@@ -1238,8 +1305,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 7.0
       },
       {
        "rank": 3,
@@ -1257,8 +1324,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 211.0
       },
       {
        "rank": 4,
@@ -1276,8 +1343,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 94.0
       },
       {
        "rank": 5,
@@ -1295,8 +1362,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 9.0
       },
       {
        "rank": 6,
@@ -1314,8 +1381,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 38.0
       },
       {
        "rank": 7,
@@ -1333,8 +1400,8 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 1.0
       },
       {
        "rank": 8,
@@ -1352,8 +1419,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 50.0
       },
       {
        "rank": 9,
@@ -1371,8 +1438,8 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 16.0
       },
       {
        "rank": 10,
@@ -1390,8 +1457,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 11.0
       },
       {
        "rank": 11,
@@ -1409,8 +1476,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 3.0
       },
       {
        "rank": 12,
@@ -1428,8 +1495,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0
       },
       {
        "rank": 13,
@@ -1447,8 +1514,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       }
      ]
     },
@@ -1457,12 +1524,12 @@
      "home": "GB",
      "kickoff": "2026-11-15 13:00 ET",
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
+      "graded": 12,
+      "hits": 4,
+      "rate": 33.3,
+      "avg_prob": 58.5,
       "void": 0,
-      "pending": 12
+      "pending": 0
      },
      "picks": [
       {
@@ -1481,8 +1548,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 3.0
       },
       {
        "rank": 2,
@@ -1500,8 +1567,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 5.0
       },
       {
        "rank": 3,
@@ -1519,8 +1586,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 37.0
       },
       {
        "rank": 4,
@@ -1538,8 +1605,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 220.0
       },
       {
        "rank": 5,
@@ -1557,8 +1624,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 9.0
       },
       {
        "rank": 6,
@@ -1576,8 +1643,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 1.0
       },
       {
        "rank": 7,
@@ -1595,8 +1662,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 47.0
       },
       {
        "rank": 8,
@@ -1614,8 +1681,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 74.0
       },
       {
        "rank": 9,
@@ -1633,8 +1700,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 70.0
       },
       {
        "rank": 10,
@@ -1652,8 +1719,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 19.0
       },
       {
        "rank": 11,
@@ -1671,8 +1738,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 1.0
       },
       {
        "rank": 12,
@@ -1690,8 +1757,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0
       }
      ]
     },
@@ -1700,12 +1767,12 @@
      "home": "IND",
      "kickoff": "2026-11-15 13:00 ET",
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
-      "void": 0,
-      "pending": 11
+      "graded": 9,
+      "hits": 3,
+      "rate": 33.3,
+      "avg_prob": 55.4,
+      "void": 2,
+      "pending": 0
      },
      "picks": [
       {
@@ -1724,8 +1791,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 2.0
       },
       {
        "rank": 2,
@@ -1743,8 +1810,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0.0
       },
       {
        "rank": 3,
@@ -1762,8 +1829,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 71.0
       },
       {
        "rank": 4,
@@ -1781,7 +1848,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -1800,8 +1867,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 1.0
       },
       {
        "rank": 6,
@@ -1819,8 +1886,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 83.0
       },
       {
        "rank": 7,
@@ -1838,8 +1905,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 76.0
       },
       {
        "rank": 8,
@@ -1857,8 +1924,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0.0
       },
       {
        "rank": 9,
@@ -1876,7 +1943,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -1895,8 +1962,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0
       },
       {
        "rank": 11,
@@ -1914,8 +1981,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0
       }
      ]
     },
@@ -1924,12 +1991,12 @@
      "home": "NO",
      "kickoff": "2026-11-15 13:00 ET",
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
-      "void": 0,
-      "pending": 15
+      "graded": 14,
+      "hits": 2,
+      "rate": 14.3,
+      "avg_prob": 57.1,
+      "void": 1,
+      "pending": 0
      },
      "picks": [
       {
@@ -1948,8 +2015,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 3.0
       },
       {
        "rank": 2,
@@ -1967,8 +2034,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0.0
       },
       {
        "rank": 3,
@@ -1986,8 +2053,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 2.0
       },
       {
        "rank": 4,
@@ -2005,8 +2072,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 3.0
       },
       {
        "rank": 5,
@@ -2024,8 +2091,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0.0
       },
       {
        "rank": 6,
@@ -2043,8 +2110,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 92.0
       },
       {
        "rank": 7,
@@ -2062,8 +2129,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 187.0
       },
       {
        "rank": 8,
@@ -2081,8 +2148,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 35.0
       },
       {
        "rank": 9,
@@ -2100,8 +2167,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 6.0
       },
       {
        "rank": 10,
@@ -2119,8 +2186,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 30.0
       },
       {
        "rank": 11,
@@ -2138,8 +2205,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0.0
       },
       {
        "rank": 12,
@@ -2157,8 +2224,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 200.0
       },
       {
        "rank": 13,
@@ -2176,8 +2243,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 2
       },
       {
        "rank": 14,
@@ -2195,7 +2262,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2214,8 +2281,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0
       }
      ]
     },
@@ -2224,12 +2291,12 @@
      "home": "NYJ",
      "kickoff": "2026-11-15 13:00 ET",
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
-      "void": 0,
-      "pending": 15
+      "graded": 13,
+      "hits": 7,
+      "rate": 53.8,
+      "avg_prob": 59.9,
+      "void": 2,
+      "pending": 0
      },
      "picks": [
       {
@@ -2248,8 +2315,8 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 7.0
       },
       {
        "rank": 2,
@@ -2267,8 +2334,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 58.0
       },
       {
        "rank": 3,
@@ -2286,8 +2353,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 41.0
       },
       {
        "rank": 4,
@@ -2305,8 +2372,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       },
       {
        "rank": 5,
@@ -2324,8 +2391,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 2.0
       },
       {
        "rank": 6,
@@ -2343,7 +2410,7 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2362,7 +2429,7 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2381,8 +2448,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 40.0
       },
       {
        "rank": 9,
@@ -2400,8 +2467,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 1.0
       },
       {
        "rank": 10,
@@ -2419,8 +2486,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 157.0
       },
       {
        "rank": 11,
@@ -2438,8 +2505,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 148.0
       },
       {
        "rank": 12,
@@ -2457,8 +2524,8 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 59.0
       },
       {
        "rank": 13,
@@ -2476,8 +2543,8 @@
        "implied": null,
        "edge": null,
        "status": "Questionable",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 106.0
       },
       {
        "rank": 14,
@@ -2495,8 +2562,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 5.0
       },
       {
        "rank": 15,
@@ -2514,8 +2581,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0
       }
      ]
     },
@@ -2524,12 +2591,12 @@
      "home": "TEN",
      "kickoff": "2026-11-15 13:00 ET",
      "summary": {
-      "graded": 0,
-      "hits": 0,
-      "rate": null,
-      "avg_prob": null,
+      "graded": 15,
+      "hits": 8,
+      "rate": 53.3,
+      "avg_prob": 56.1,
       "void": 0,
-      "pending": 15
+      "pending": 0
      },
      "picks": [
       {
@@ -2548,8 +2615,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 352.0
       },
       {
        "rank": 2,
@@ -2567,8 +2634,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 2.0
       },
       {
        "rank": 3,
@@ -2586,8 +2653,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 34.0
       },
       {
        "rank": 4,
@@ -2605,8 +2672,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 10.0
       },
       {
        "rank": 5,
@@ -2624,8 +2691,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 3.0
       },
       {
        "rank": 6,
@@ -2643,8 +2710,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 88.0
       },
       {
        "rank": 7,
@@ -2662,8 +2729,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 3.0
       },
       {
        "rank": 8,
@@ -2681,8 +2748,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 7.0
       },
       {
        "rank": 9,
@@ -2700,8 +2767,8 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 231.0
       },
       {
        "rank": 10,
@@ -2719,8 +2786,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 9.0
       },
       {
        "rank": 11,
@@ -2738,8 +2805,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 152.0
       },
       {
        "rank": 12,
@@ -2757,8 +2824,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 33.0
       },
       {
        "rank": 13,
@@ -2776,8 +2843,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       },
       {
        "rank": 14,
@@ -2795,8 +2862,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "hit",
+       "actual": 1
       },
       {
        "rank": 15,
@@ -2814,8 +2881,8 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
+       "result": "miss",
+       "actual": 0
       }
      ]
     },
@@ -2828,8 +2895,8 @@
       "hits": 0,
       "rate": null,
       "avg_prob": null,
-      "void": 0,
-      "pending": 11
+      "void": 11,
+      "pending": 0
      },
      "picks": [
       {
@@ -2848,7 +2915,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2867,7 +2934,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2886,7 +2953,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2905,7 +2972,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2924,7 +2991,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2943,7 +3010,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2962,7 +3029,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -2981,7 +3048,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3000,7 +3067,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3019,7 +3086,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3038,7 +3105,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       }
      ]
@@ -3052,8 +3119,8 @@
       "hits": 0,
       "rate": null,
       "avg_prob": null,
-      "void": 0,
-      "pending": 12
+      "void": 12,
+      "pending": 0
      },
      "picks": [
       {
@@ -3072,7 +3139,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3091,7 +3158,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3110,7 +3177,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3129,7 +3196,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3148,7 +3215,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3167,7 +3234,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3186,7 +3253,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3205,7 +3272,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3224,7 +3291,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3243,7 +3310,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3262,7 +3329,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3281,7 +3348,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       }
      ]
@@ -3620,16 +3687,16 @@
       },
       {
        "rank": 2,
-       "player_id": "00-0036410",
-       "name": "Tee Higgins",
-       "pos": "WR",
+       "player_id": "00-0036442",
+       "name": "Joe Burrow",
+       "pos": "QB",
        "team": "CIN",
        "opp": "PIT",
        "game_id": "2026_10_PIT_CIN",
-       "market": "rec_yds",
-       "line": 39.5,
-       "label": "리시빙 40야드 이상",
-       "prob": 65.5,
+       "market": "pass_yds",
+       "line": 224.5,
+       "label": "패싱 225야드 이상",
+       "prob": 67.2,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3639,16 +3706,16 @@
       },
       {
        "rank": 3,
-       "player_id": "00-0023459",
-       "name": "Aaron Rodgers",
-       "pos": "QB",
-       "team": "PIT",
-       "opp": "CIN",
+       "player_id": "00-0036410",
+       "name": "Tee Higgins",
+       "pos": "WR",
+       "team": "CIN",
+       "opp": "PIT",
        "game_id": "2026_10_PIT_CIN",
-       "market": "pass_yds",
-       "line": 224.5,
-       "label": "패싱 225야드 이상",
-       "prob": 63.4,
+       "market": "rec_yds",
+       "line": 39.5,
+       "label": "리시빙 40야드 이상",
+       "prob": 65.2,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3658,6 +3725,44 @@
       },
       {
        "rank": 4,
+       "player_id": "00-0023459",
+       "name": "Aaron Rodgers",
+       "pos": "QB",
+       "team": "PIT",
+       "opp": "CIN",
+       "game_id": "2026_10_PIT_CIN",
+       "market": "pass_yds",
+       "line": 224.5,
+       "label": "패싱 225야드 이상",
+       "prob": 63.0,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 5,
+       "player_id": "00-0035640",
+       "name": "DK Metcalf",
+       "pos": "WR",
+       "team": "PIT",
+       "opp": "CIN",
+       "game_id": "2026_10_PIT_CIN",
+       "market": "receptions",
+       "line": 3.5,
+       "label": "리셉션 4개 이상",
+       "prob": 61.6,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 6,
        "player_id": "00-0038597",
        "name": "Chase Brown",
        "pos": "RB",
@@ -3676,7 +3781,7 @@
        "actual": null
       },
       {
-       "rank": 5,
+       "rank": 7,
        "player_id": "00-0041489",
        "name": "Germie Bernard",
        "pos": "WR",
@@ -3687,44 +3792,6 @@
        "line": 3.5,
        "label": "리셉션 4개 이상",
        "prob": 61.6,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 6,
-       "player_id": "00-0035640",
-       "name": "DK Metcalf",
-       "pos": "WR",
-       "team": "PIT",
-       "opp": "CIN",
-       "game_id": "2026_10_PIT_CIN",
-       "market": "receptions",
-       "line": 3.5,
-       "label": "리셉션 4개 이상",
-       "prob": 61.5,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 7,
-       "player_id": "00-0036442",
-       "name": "Joe Burrow",
-       "pos": "QB",
-       "team": "CIN",
-       "opp": "PIT",
-       "game_id": "2026_10_PIT_CIN",
-       "market": "pass_tds",
-       "line": 1.5,
-       "label": "패싱 TD 2개 이상",
-       "prob": 61.1,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3753,6 +3820,25 @@
       },
       {
        "rank": 9,
+       "player_id": "00-0036442",
+       "name": "Joe Burrow",
+       "pos": "QB",
+       "team": "CIN",
+       "opp": "PIT",
+       "game_id": "2026_10_PIT_CIN",
+       "market": "pass_tds",
+       "line": 1.5,
+       "label": "패싱 TD 2개 이상",
+       "prob": 60.6,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 10,
        "player_id": "00-0037228",
        "name": "Jaylen Warren",
        "pos": "RB",
@@ -3771,7 +3857,7 @@
        "actual": null
       },
       {
-       "rank": 10,
+       "rank": 11,
        "player_id": "00-0036900",
        "name": "Ja'Marr Chase",
        "pos": "WR",
@@ -3790,7 +3876,7 @@
        "actual": null
       },
       {
-       "rank": 11,
+       "rank": 12,
        "player_id": "00-0038597",
        "name": "Chase Brown",
        "pos": "RB",
@@ -3800,7 +3886,7 @@
        "market": "rush_yds",
        "line": 49.5,
        "label": "러싱 50야드 이상",
-       "prob": 56.9,
+       "prob": 56.7,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3809,7 +3895,7 @@
        "actual": null
       },
       {
-       "rank": 12,
+       "rank": 13,
        "player_id": "00-0023459",
        "name": "Aaron Rodgers",
        "pos": "QB",
@@ -3820,25 +3906,6 @@
        "line": 1.5,
        "label": "패싱 TD 2개 이상",
        "prob": 56.1,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 13,
-       "player_id": "00-0036442",
-       "name": "Joe Burrow",
-       "pos": "QB",
-       "team": "CIN",
-       "opp": "PIT",
-       "game_id": "2026_10_PIT_CIN",
-       "market": "pass_yds",
-       "line": 249.5,
-       "label": "패싱 250야드 이상",
-       "prob": 55.9,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3910,7 +3977,7 @@
        "market": "rec_yds",
        "line": 49.5,
        "label": "리시빙 50야드 이상",
-       "prob": 62.7,
+       "prob": 62.5,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3929,7 +3996,7 @@
        "market": "rush_yds",
        "line": 59.5,
        "label": "러싱 60야드 이상",
-       "prob": 62.6,
+       "prob": 62.4,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3948,7 +4015,7 @@
        "market": "pass_yds",
        "line": 199.5,
        "label": "패싱 200야드 이상",
-       "prob": 60.2,
+       "prob": 58.9,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3967,7 +4034,7 @@
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 40.4,
+       "prob": 40.5,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3986,7 +4053,7 @@
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 31.6,
+       "prob": 31.4,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3998,12 +4065,12 @@
     }
    },
    "games_summary": {
-    "graded": 0,
-    "hits": 0,
-    "rate": null,
-    "avg_prob": null,
-    "void": 15,
-    "pending": 151
+    "graded": 103,
+    "hits": 48,
+    "rate": 46.6,
+    "avg_prob": 57.6,
+    "void": 28,
+    "pending": 35
    }
   }
  ]
