@@ -1,20 +1,20 @@
 {
- "updated_at": "2026-11-15 19:43 ET",
+ "updated_at": "2026-11-15 21:18 ET",
  "overall_best15": {
   "graded": 8,
   "hits": 5,
   "rate": 62.5,
   "avg_prob": 66.7,
-  "void": 1,
-  "pending": 5
+  "void": 3,
+  "pending": 4
  },
  "td_top15": {
   "graded": 7,
   "hits": 7,
   "rate": 100.0,
   "avg_prob": 49.8,
-  "void": 4,
-  "pending": 3
+  "void": 6,
+  "pending": 2
  },
  "edge_list": {
   "graded": 1,
@@ -29,8 +29,8 @@
   "hits": 48,
   "rate": 46.6,
   "avg_prob": 57.6,
-  "void": 28,
-  "pending": 35
+  "void": 43,
+  "pending": 18
  },
  "calibration": [
   {
@@ -131,8 +131,8 @@
       "hits": 5,
       "rate": 62.5,
       "avg_prob": 66.7,
-      "void": 1,
-      "pending": 5
+      "void": 3,
+      "pending": 4
      },
      "picks": [
       {
@@ -227,7 +227,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -303,7 +303,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -400,6 +400,25 @@
        "status": "",
        "result": "hit",
        "actual": 1
+      },
+      {
+       "rank": 15,
+       "player_id": "00-0039064",
+       "name": "Zay Flowers",
+       "pos": "WR",
+       "team": "BAL",
+       "opp": "LAC",
+       "game_id": "2026_10_LAC_BAL",
+       "market": "receptions",
+       "line": 3.5,
+       "label": "리셉션 4개 이상",
+       "prob": 63.7,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
       }
      ]
     },
@@ -409,8 +428,8 @@
       "hits": 7,
       "rate": 100.0,
       "avg_prob": 49.8,
-      "void": 4,
-      "pending": 3
+      "void": 6,
+      "pending": 2
      },
      "picks": [
       {
@@ -448,7 +467,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -486,7 +505,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -678,6 +697,25 @@
        "status": "Active",
        "result": "hit",
        "actual": 1
+      },
+      {
+       "rank": 15,
+       "player_id": "00-0032764",
+       "name": "Derrick Henry",
+       "pos": "RB",
+       "team": "BAL",
+       "opp": "LAC",
+       "game_id": "2026_10_LAC_BAL",
+       "market": "td",
+       "line": null,
+       "label": "애니타임 터치다운",
+       "prob": 40.4,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
       }
      ]
     },
@@ -3362,8 +3400,8 @@
       "hits": 0,
       "rate": null,
       "avg_prob": null,
-      "void": 0,
-      "pending": 15
+      "void": 15,
+      "pending": 0
      },
      "picks": [
       {
@@ -3382,7 +3420,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3401,7 +3439,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3420,7 +3458,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3439,7 +3477,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3458,7 +3496,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3477,7 +3515,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3496,7 +3534,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3515,7 +3553,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3534,7 +3572,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3553,7 +3591,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3572,7 +3610,7 @@
        "implied": null,
        "edge": null,
        "status": "",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3591,7 +3629,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3610,7 +3648,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3629,7 +3667,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       },
       {
@@ -3648,7 +3686,7 @@
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
+       "result": "void",
        "actual": null
       }
      ]
@@ -3944,7 +3982,7 @@
       "rate": null,
       "avg_prob": null,
       "void": 0,
-      "pending": 6
+      "pending": 4
      },
      "picks": [
       {
@@ -3958,7 +3996,7 @@
        "market": "receptions",
        "line": 3.5,
        "label": "리셉션 4개 이상",
-       "prob": 67.4,
+       "prob": 63.7,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3968,25 +4006,6 @@
       },
       {
        "rank": 2,
-       "player_id": "00-0039064",
-       "name": "Zay Flowers",
-       "pos": "WR",
-       "team": "BAL",
-       "opp": "LAC",
-       "game_id": "2026_10_LAC_BAL",
-       "market": "rec_yds",
-       "line": 49.5,
-       "label": "리시빙 50야드 이상",
-       "prob": 62.5,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 3,
        "player_id": "00-0032764",
        "name": "Derrick Henry",
        "pos": "RB",
@@ -3996,7 +4015,26 @@
        "market": "rush_yds",
        "line": 59.5,
        "label": "러싱 60야드 이상",
-       "prob": 62.4,
+       "prob": 62.3,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 3,
+       "player_id": "00-0039064",
+       "name": "Zay Flowers",
+       "pos": "WR",
+       "team": "BAL",
+       "opp": "LAC",
+       "game_id": "2026_10_LAC_BAL",
+       "market": "rec_yds",
+       "line": 49.5,
+       "label": "리시빙 50야드 이상",
+       "prob": 60.8,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -4006,25 +4044,6 @@
       },
       {
        "rank": 4,
-       "player_id": "00-0036355",
-       "name": "Justin Herbert",
-       "pos": "QB",
-       "team": "LAC",
-       "opp": "BAL",
-       "game_id": "2026_10_LAC_BAL",
-       "market": "pass_yds",
-       "line": 199.5,
-       "label": "패싱 200야드 이상",
-       "prob": 58.9,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "Active",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 5,
        "player_id": "00-0032764",
        "name": "Derrick Henry",
        "pos": "RB",
@@ -4034,30 +4053,11 @@
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 40.5,
+       "prob": 40.4,
        "odds": null,
        "implied": null,
        "edge": null,
        "status": "Active",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 6,
-       "player_id": "00-0040666",
-       "name": "Omarion Hampton",
-       "pos": "RB",
-       "team": "LAC",
-       "opp": "BAL",
-       "game_id": "2026_10_LAC_BAL",
-       "market": "td",
-       "line": null,
-       "label": "애니타임 터치다운",
-       "prob": 31.4,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "",
        "result": "pending",
        "actual": null
       }
@@ -4069,8 +4069,8 @@
     "hits": 48,
     "rate": 46.6,
     "avg_prob": 57.6,
-    "void": 28,
-    "pending": 35
+    "void": 43,
+    "pending": 18
    }
   }
  ]
