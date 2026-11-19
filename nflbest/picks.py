@@ -52,7 +52,7 @@ def candidates(b: Bundle, pred: pd.DataFrame, odds: pd.DataFrame | None = None) 
                                           "prob": r.p_td, "odds": price, "implied": american_to_prob(price)}))
             elif r.p_td >= M.MIN_P_TD:
                 rows.append({**base, "market": "td", "label": M.TD_LABEL, "line": None,
-                             "prob": _sel(b, "td", r.p_td)})
+                             "prob": float(r.p_td)})  # TD는 1단계 보정만 (백테스트에서 이미 정확)
 
         # ---- 야드/리셉션/패싱
         for mkey, (mname, label, by_pos) in M.MARKETS.items():
@@ -101,7 +101,11 @@ def best15(c: pd.DataFrame, by: str = "prob", n: int = 15, per_player: int = 2,
     if key == "edge":   # 엣지순: 배당 있는 픽만, 확률 MIN_P_EDGE 이상 (복권식 롱샷 제외)
         c = c[c.edge.notna() & (c.edge > 0) & (c.prob >= M.MIN_P_EDGE)]
     c = c.sort_values([key, "prob"], ascending=False)
-    c = c.groupby("player_id", sort=False).head(per_player)
+    # 선수당 최대 per_player개 — 단, 애니타임 TD는 별도 칸이라 이 제한에서 빼요
+    # (예: Nico Collins가 야드·리셉션 픽 2개로 TD 픽이 밀려나지 않게)
+    td = c[c.market == "td"]
+    other = c[c.market != "td"].groupby("player_id", sort=False).head(per_player)
+    c = pd.concat([other, td]).sort_values([key, "prob"], ascending=False)
     if c.market.nunique() > 1:
         c = c.groupby("market", sort=False).head(per_market)
     out = c.head(n).copy()
