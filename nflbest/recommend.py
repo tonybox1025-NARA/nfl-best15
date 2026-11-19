@@ -48,6 +48,8 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
             up.loc[up.game_id == gid, "wind"] = w["wind_mph"]
 
     pred = model.predict(bundle, up)
+    from . import role
+    role.attach(pred, role.tables(feat, season))
 
     # ---- 부상
     inj, inj_msg = live.injuries(season, week)
@@ -64,6 +66,7 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     status_by_pid = pred.set_index("player_id").status.to_dict()
     cand["status"] = cand.player_id.map(status_by_pid).fillna("")
     has_odds = "edge" in cand and cand.edge.notna().any()
+    b_ref[0] = bundle
     if len(cand):
         cand["detail"] = _details(cand, feat, pred)
     scen = _scenarios(bundle, pred0, cand, od, feat)
@@ -135,6 +138,36 @@ def _f(x, nd=1):
     return None if x is None or (isinstance(x, float) and np.isnan(x)) else round(float(x), nd)
 
 
+b_ref = [None]   # 확률 범위 계산용 모델 (run에서 채움)
+
+
+def _role_detail(market: str, u) -> dict | None:
+    """역할 기반 계산 내역 (앱 설명용)."""
+    if market == "rush_yds":
+        return {"kind": "rush", "team_car": _f(u.get("team_car_exp")), "share": _f(u.get("car_share"), 3),
+                "exp_car": _f(u.get("exp_car")), "ypc": _f(u.get("ypc"), 2), "def": _f(u.get("d_rush"), 2),
+                "role_mu": _f(u.get("mu_rush_role")), "model_mu": _f(u.get("mu_rush_yds_model"))}
+    if market in ("rec_yds", "receptions"):
+        return {"kind": "rec" if market == "rec_yds" else "recs", "team_pass": _f(u.get("team_pass_exp")),
+                "share": _f(u.get("tgt_share"), 3), "exp_tgt": _f(u.get("exp_tgt")), "ypt": _f(u.get("ypt"), 2),
+                "catch": _f(u.get("catch"), 2), "def": _f(u.get("d_rec"), 2),
+                "role_mu": _f(u.get("mu_rec_role" if market == "rec_yds" else "mu_recs_role")),
+                "model_mu": _f(u.get("mu_rec_yds_model" if market == "rec_yds" else "mu_receptions_model"))}
+    return None
+
+
+def _range(b, market: str, mu) -> list | None:
+    """예상 범위 (25%~75% 구간): 비슷한 예상값 선수들의 실제 결과 분포에서."""
+    if b is None or market == "td" or mu is None or (isinstance(mu, float) and np.isnan(mu)):
+        return None
+    name = {"rush_yds": "rush_yds", "rec_yds": "rec_yds", "receptions": "receptions",
+            "pass_yds": "pass_yds", "pass_tds": "pass_tds"}[market]
+    r = b.resid[name]
+    i = int(np.clip(np.searchsorted(r["edges"], mu, side="right") - 1, 0, len(r["ratios"]) - 1))
+    q = np.quantile(r["ratios"][i] * mu, [0.25, 0.75])
+    return [round(float(q[0]), 1 if name in ("receptions", "pass_tds") else 0), round(float(q[1]), 1 if name in ("receptions", "pass_tds") else 0)]
+
+
 def _details(cand: pd.DataFrame, feat: pd.DataFrame, pred: pd.DataFrame) -> list[dict]:
     """픽 상세 화면용 근거: 최근 5경기 기록, 상대 수비 허용 순위, 사용량, 팀 예상 득점."""
     hist = feat[~feat.upcoming].sort_values("gameday")
@@ -168,6 +201,9 @@ def _details(cand: pd.DataFrame, feat: pd.DataFrame, pred: pd.DataFrame) -> list
             "rz_share": _f(u.get("rz_share_ewm"), 3), "implied_total": _f(u.get("implied_total")),
             "spread": _f(u.get("team_spread")), "wind": _f(u.get("wind"), 0),
             "td_rate": _f(u.get("td_rate_l16"), 3),
+            "role": _role_detail(r.market, u),
+            "range": _range(b_ref[0], r.market, getattr(r, "mu", None)),
+            "new_role": bool(u.get("role_changed")) if not pd.isna(u.get("role_changed", np.nan)) else False,
         })
     return out
 
@@ -283,8 +319,13 @@ def _checks(cand: pd.DataFrame) -> pd.DataFrame:
     return c
 
 
+ROLE_W = 0.5   # 역할이 바뀐 선수: 최종 예상 = 모델(과거 기록) 50% + 역할 기반 계산 50%
+
+
 def _redistribute(pred: pd.DataFrame) -> list[dict]:
-    """결장 선수의 타깃/캐리를 같은 팀 동료에게 나눠줘요 (70%만 — 나머지는 다른 곳으로 샘)."""
+    """결장 선수의 타깃/캐리 70%를 같은 팀 동료에게 점유율 비례로 나눠줘요.
+    몫이 늘어난 선수는 '새 역할'로 역할 기반 예상(사용량 × 효율 × 상대 수비)을 다시 계산해서 섞어요."""
+    from . import role
     notes = []
     for team, t in pred.groupby("team"):
         out = t[t.status.map(live.is_out) & t.in_last_game.fillna(False).astype(bool)]
@@ -293,24 +334,36 @@ def _redistribute(pred: pd.DataFrame) -> list[dict]:
         act = t[~t.status.map(live.is_out)]
         catch = act[act.position.isin(["RB", "WR", "TE"])]
         rbs = act[act.position == "RB"]
-        vac_t = out[out.position.isin(["RB", "WR", "TE"])].tgt_share_ewm.fillna(0).sum()
-        vac_c = out[out.position == "RB"].carry_share_ewm.fillna(0).sum()
-        ft = min(1 + 0.7 * vac_t / max(catch.tgt_share_ewm.fillna(0).sum(), 0.05), 1.5)
-        fc = min(1 + 0.7 * vac_c / max(rbs.carry_share_ewm.fillna(0).sum(), 0.05), 1.6)
-        idx_c, idx_r = catch.index, rbs.index
-        pred.loc[idx_c, "mu_rec_yds"] *= ft
-        pred.loc[idx_c, "mu_receptions"] *= ft
-        pred.loc[idx_r, "mu_rush_yds"] *= fc
-        cs, ts = pred.loc[idx_c, "carry_share_ewm"].fillna(0), pred.loc[idx_c, "tgt_share_ewm"].fillna(0)
+        vac_t = out[out.position.isin(["RB", "WR", "TE"])].tgt_share.fillna(0).sum()
+        vac_c = out[out.position == "RB"].car_share.fillna(0).sum()
+        st = max(catch.tgt_share.sum(), 0.05)
+        sc = max(rbs.car_share.sum(), 0.05)
+        old_t = pred.loc[catch.index, "tgt_share"].copy()
+        old_c = pred.loc[rbs.index, "car_share"].copy()
+        pred.loc[catch.index, "tgt_share"] = old_t + 0.7 * vac_t * old_t / st
+        pred.loc[rbs.index, "car_share"] = (old_c + 0.7 * vac_c * old_c / sc).clip(upper=0.8)
+        idx = catch.index
+        role.compute(pred, idx)
+        ft = (pred.loc[idx, "tgt_share"] / old_t.reindex(idx).replace(0, np.nan)).fillna(1).clip(upper=2.0)
+        fc = (pred.loc[idx, "car_share"] / pred.loc[idx, "car_share"].where(~idx.isin(rbs.index), old_c.reindex(idx)).replace(0, np.nan)).fillna(1).clip(upper=2.0)
+        fc = fc.where(idx.isin(rbs.index), 1.0)
+        for i in idx:
+            if ft[i] > 1.001:
+                pred.loc[i, "mu_rec_yds"] = (1 - ROLE_W) * pred.loc[i, "mu_rec_yds"] * ft[i] + ROLE_W * pred.loc[i, "mu_rec_role"]
+                pred.loc[i, "mu_receptions"] = (1 - ROLE_W) * pred.loc[i, "mu_receptions"] * ft[i] + ROLE_W * pred.loc[i, "mu_recs_role"]
+            if fc[i] > 1.001 and not pd.isna(pred.loc[i, "mu_rush_yds"]):
+                pred.loc[i, "mu_rush_yds"] = (1 - ROLE_W) * pred.loc[i, "mu_rush_yds"] * fc[i] + ROLE_W * pred.loc[i, "mu_rush_role"]
+        cs, ts = pred.loc[idx, "car_share"], pred.loc[idx, "tgt_share"]
         w = (cs / (cs + ts).replace(0, np.nan)).fillna(0)
         f_td = w * fc + (1 - w) * ft
-        pred.loc[idx_c, "p_td"] = 1 - (1 - pred.loc[idx_c, "p_td"]) ** f_td
+        pred.loc[idx, "p_td"] = 1 - (1 - pred.loc[idx, "p_td"]) ** f_td
+        pred.loc[idx, "role_changed"] = (ft > 1.001) | (fc > 1.001)
         if (out.position == "QB").any():  # 주전 QB 결장: 패스 지표 하향
-            pred.loc[idx_c, ["mu_rec_yds", "mu_receptions"]] *= 0.9
+            pred.loc[idx, ["mu_rec_yds", "mu_receptions"]] *= 0.9
         for r in out.itertuples():
             notes.append({"game_id": r.game_id, "team": team, "name": r.player_display_name,
                           "pos": r.position, "status": r.status,
-                          "effect": f"동료 타깃 x{ft:.2f}, RB 캐리 x{fc:.2f}"})
+                          "effect": f"동료 타깃 x{float(ft.max()):.2f}, RB 캐리 x{float(fc.max()):.2f}"})
     return notes
 
 
