@@ -53,6 +53,7 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     inj, inj_msg = live.injuries(season, week)
     pred["status"] = pred.player_display_name.map(lambda n: inj.get(picks.name_key(n), {}).get("status", ""))
     pred["injury"] = pred.player_display_name.map(lambda n: inj.get(picks.name_key(n), {}).get("injury", ""))
+    pred0 = pred.copy()            # 부상 반영 전 (시나리오 계산용)
     notes = _redistribute(pred)
     pred = pred[~pred.status.map(live.is_out)]
 
@@ -65,6 +66,7 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     has_odds = "edge" in cand and cand.edge.notna().any()
     if len(cand):
         cand["detail"] = _details(cand, feat, pred)
+    scen = _scenarios(bundle, pred0, cand, od, feat)
 
     def pack(df):
         if df is None or df.empty:
@@ -90,7 +92,8 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
             "spread_home": g.spread_line, "total": g.total_line,
             "proj": {"away": round(g.total_line - home_imp, 1), "home": round(home_imp, 1)},
             "weather": wx.get(g.game_id), "notes": [n for n in notes if n["game_id"] == g.game_id],
-            "injuries": pred[(pred.game_id == g.game_id) & (pred.status != "")][
+            "scenarios": scen.get(g.game_id, []),
+            "injuries": pred0[(pred0.game_id == g.game_id) & (pred0.status != "")][
                 ["player_display_name", "team", "position", "status", "injury"]].to_dict("records"),
             "best15_prob": pack(picks.best15(gc, "prob")),
             "best15_edge": pack(picks.best15(gc, "edge")) if has_odds else [],
@@ -182,6 +185,91 @@ def _clean(o):
     if isinstance(o, np.bool_):
         return bool(o)
     return o
+
+
+SCEN_STATUSES = {"questionable", "doubtful", "out", "훈련 불참"}
+
+
+def _apply(pred0: pd.DataFrame, force: dict) -> pd.DataFrame:
+    """force={player_id: 'Out'|''} 로 상태를 바꾼 뒤 결장 재분배까지 적용한 팀 예측."""
+    t = pred0.copy()
+    for pid, st in force.items():
+        t.loc[t.player_id == pid, "status"] = st
+        if st == "Out":
+            t.loc[t.player_id == pid, "in_last_game"] = True   # 결장 시 몫을 동료에게 나눠줘요
+    _redistribute(t)
+    return t[~t.status.map(live.is_out)]
+
+
+def _profile(feat: pd.DataFrame, pid: str, row) -> dict:
+    """대체 선수 소개: 최근 3경기, 이번 시즌 누적, 팀 내 사용량."""
+    h = feat[(feat.player_id == pid) & ~feat.upcoming].sort_values("gameday")
+    season = int(row["season"])
+    cur = h[h.season == season]
+    last3 = [{"wk": int(x.week), "opp": x.opponent_team, "car": _f(x.carries, 0), "rush": _f(x.rushing_yards, 0),
+              "tgt": _f(x.targets, 0), "rec": _f(x.receptions, 0), "recyd": _f(x.receiving_yards, 0),
+              "td": _f(x.td_any, 0)} for x in h.tail(3).itertuples()]
+    return {"name": row["player_display_name"], "pos": row["position"], "team": row["team"],
+            "games": int(len(cur)), "rush_yds": _f(cur.rushing_yards.sum(), 0), "rec_yds": _f(cur.receiving_yards.sum(), 0),
+            "rec": _f(cur.receptions.sum(), 0), "tds": _f(cur.td_any.sum(), 0),
+            "carry_share": _f(row.get("carry_share_ewm"), 3), "tgt_share": _f(row.get("tgt_share_ewm"), 3),
+            "last3": last3}
+
+
+def _scenarios(b, pred0: pd.DataFrame, cand: pd.DataFrame, od, feat: pd.DataFrame) -> dict:
+    """출전이 불확실한(또는 결장한) 주요 선수마다: 뛸 때 vs 안 뛸 때 동료 확률, 대체 선수와 그 선수의 픽."""
+    out = {}
+    rel = pred0[pred0.status.str.lower().isin(SCEN_STATUSES)]
+    rel = rel[(rel.position == "QB") | (rel.carry_share_ewm.fillna(0) >= 0.15) | (rel.tgt_share_ewm.fillna(0) >= 0.10)]
+    for r in rel.itertuples():
+        team = pred0[pred0.team == r.team]
+        play = _apply(team, {r.player_id: ""}).set_index("player_id")
+        miss = _apply(team, {r.player_id: "Out"}).set_index("player_id")
+        # 동료 픽: 현재 후보 중 같은 팀 상위 픽 + 결장 시 새로 생기는 픽
+        base = cand[(cand.team == r.team) & (cand.player_id != r.player_id)].sort_values("prob", ascending=False).head(10)
+        effects = []
+        for c in base.itertuples():
+            if c.player_id not in play.index or c.player_id not in miss.index:
+                continue
+            bd = c._asdict()
+            pp = picks.prob_for(b, play.loc[c.player_id], c.market, c.line, bd)
+            pm = picks.prob_for(b, miss.loc[c.player_id], c.market, c.line, bd)
+            if np.isnan(pp) or np.isnan(pm) or abs(pm - pp) < 0.01:
+                continue
+            effects.append({"player_id": c.player_id, "name": c.name, "label": c.label, "market": c.market,
+                            "line": c.line, "prob_play": round(pp * 100, 1), "prob_out": round(pm * 100, 1)})
+        # 대체 선수: 같은 포지션에서 결장 시 예상값이 가장 많이 오르는 선수
+        key = {"RB": "mu_rush_yds", "QB": "mu_pass_yds"}.get(r.position, "mu_rec_yds")
+        same = [pid for pid in miss.index if pid != r.player_id and miss.loc[pid, "position"] == r.position and pid in play.index]
+        repl = None
+        if same:
+            gain = {pid: (miss.loc[pid, key] if not pd.isna(miss.loc[pid, key]) else 0) -
+                         (play.loc[pid, key] if not pd.isna(play.loc[pid, key]) else 0) for pid in same}
+            rid = max(gain, key=gain.get)
+            if gain[rid] > 0.5:
+                rrow = miss.loc[rid].copy(); rrow["player_display_name"] = miss.loc[rid, "player_display_name"]
+                prof = _profile(feat, rid, rrow)
+                rc = picks.candidates(b, miss.loc[[rid]].reset_index(), od)
+                rp = []
+                if len(rc):
+                    for c in rc.sort_values("prob", ascending=False).head(4).itertuples():
+                        bd = c._asdict()
+                        pp = picks.prob_for(b, play.loc[rid], c.market, c.line, bd)
+                        rp.append({"label": c.label, "market": c.market, "prob_out": round(c.prob * 100, 1),
+                                   "prob_play": None if np.isnan(pp) else round(pp * 100, 1)})
+                prof["picks"] = rp
+                prof["mu_play"] = _f(play.loc[rid, key]); prof["mu_out"] = _f(miss.loc[rid, key]); prof["stat"] = key[3:]
+                repl = prof
+        own = cand[cand.player_id == r.player_id].sort_values("prob", ascending=False).head(3)
+        out.setdefault(r.game_id, []).append({
+            "player_id": r.player_id, "name": r.player_display_name, "pos": r.position, "team": r.team,
+            "status": r.status, "injury": r.injury,
+            "carry_share": _f(r.carry_share_ewm, 3), "tgt_share": _f(r.tgt_share_ewm, 3),
+            "own_picks": [{"label": c.label, "prob": round(c.prob * 100, 1)} for c in own.itertuples()],
+            "effects": sorted(effects, key=lambda e: -abs(e["prob_out"] - e["prob_play"]))[:6],
+            "replacement": repl,
+        })
+    return out
 
 
 def _checks(cand: pd.DataFrame) -> pd.DataFrame:

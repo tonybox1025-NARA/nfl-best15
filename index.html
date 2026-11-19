@@ -129,7 +129,7 @@ const T = {
     s_prob: "확률순", s_edge: "엣지순", s_td: "터치다운",
     h_edge: "엣지 = 우리 확률 − FanDuel 배당 확률. 높을수록 배당 대비 가치가 커요.",
     h_td: "애니타임 터치다운 확률이 높은 순서예요.",
-    h_prob: "적중 확률이 높은 순서예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요.",
+    h_prob: "TD·야드·리셉션 구분 없이 확률이 높은 순서예요. 픽을 누르면 이유를 볼 수 있어요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요.",
     no_data: "아직 데이터가 없어요", see_check: n => `⚠ 확인 필요 픽 ${n}개 보기 →`,
     disclaimer: "확률은 과거 데이터로 계산한 추정치예요. 2024·2025 시즌 검증에서 실제 적중은 모델 확률보다 평균 3~4%p 낮았어요.",
     edge: "엣지", implied: "배당 확률", add_t: "티켓 후보에 담기", rm_t: "티켓에서 빼기", added: "티켓 후보에 담았어요", removed: "티켓에서 뺐어요",
@@ -186,7 +186,7 @@ const T = {
     s_prob: "Probability", s_edge: "Edge", s_td: "Touchdown",
     h_edge: "Edge = our probability − FanDuel implied probability. Higher means more value vs. the odds.",
     h_td: "Sorted by anytime touchdown probability.",
-    h_prob: "Sorted by hit probability. Picks with odds blend model 65% + market 35%.",
+    h_prob: "All markets ranked purely by probability. Tap a pick to see why. Picks with odds blend model 65% + market 35%.",
     no_data: "No data yet", see_check: n => `⚠ See ${n} picks to check →`,
     disclaimer: "Probabilities are estimates from historical data. In 2024–2025 backtests, actual hit rates ran 3–4 pts below model probabilities on average.",
     edge: "Edge", implied: "implied", add_t: "Add to ticket", rm_t: "Remove from ticket", added: "Added to ticket", removed: "Removed from ticket",
@@ -371,6 +371,152 @@ function pickRow(p, opts = {}) {
   </div>`;
 }
 
+
+// ================================================================== 설명 문장 (픽 / 경기 / 부상 시나리오)
+const ko = () => LANG === "ko";
+const pctS = x => x == null ? "-" : Math.round(x * 100) + "%";
+const nTeams = () => D.games.length * 2;
+function josa(word, a, b) {           // 받침 있으면 a, 없으면 b (이/가, 은/는, 을/를)
+  const c = String(word).trim().slice(-1).charCodeAt(0);
+  if (c >= 0xAC00 && c <= 0xD7A3) return word + ((c - 0xAC00) % 28 ? a : b);
+  return word + (/[aeiouyAEIOUY]$/.test(String(word)) ? b : a);
+}
+function scenFor(p) {                 // 이 픽에 영향을 주는 부상 시나리오
+  const g = gameOf(p.game_id); if (!g || !g.scenarios) return [];
+  const out = [];
+  g.scenarios.forEach(s => (s.effects || []).forEach(e => { if (e.player_id === p.player_id && e.label === p.label) out.push({ s, e }); }));
+  return out;
+}
+function statusWord(st) {
+  const s = (st || "").toLowerCase();
+  if (ko()) return s === "out" ? "결장 확정" : s === "doubtful" ? "결장 유력" : s === "questionable" ? "출전 불확실" : st;
+  return s === "out" ? "ruled out" : s === "doubtful" ? "doubtful" : s === "questionable" ? "questionable" : trStatus(st);
+}
+function narrPick(p) {
+  const d = p.detail || {}, g = gameOf(p.game_id), td = isTD(p), lbl = trLabel(p.label);
+  const rec = d.recent || [], n = rec.length, N = nTeams();
+  const unit = { rush_yds: ko() ? "러싱 야드" : "rush yds", rec_yds: ko() ? "리시빙 야드" : "rec yds", receptions: ko() ? "리셉션" : "receptions", pass_yds: ko() ? "패싱 야드" : "pass yds", pass_tds: ko() ? "패싱 TD" : "pass TDs" }[p.market];
+  const S = [];
+  if (ko()) {
+    S.push(`${esc(p.name)} 선수가 <b>${esc(lbl)}</b>을 기록할 확률은 <b>${p.prob.toFixed(1)}%</b>예요.`);
+    if (n) S.push(td ? `최근 ${n}경기 중 <b>${d.recent_hits}경기</b>에서 터치다운을 기록했어요.` : `최근 ${n}경기 중 <b>${d.recent_hits}경기</b>에서 이 기준을 넘었어요.`);
+    if (n && rec[n - 1].wk < D.week - 2) S.push(`⚠ 마지막 출전이 ${rec[n - 1].wk}주차예요. 공백 후 복귀라 출전 시간이 제한될 수 있고, 모델이 최근 역할을 정확히 모를 수 있어요.`);
+    if (!td && d.mu != null) S.push(`모델은 이번 경기에서 ${unit} 약 <b>${d.mu}</b>을(를) 예상해요 (기준 ${d.need}).`);
+    const role = [];
+    if (d.carry_share >= 0.45) role.push(`팀 러싱 시도의 ${pctS(d.carry_share)}를 맡는 주전 러닝백`);
+    else if (d.carry_share >= 0.15) role.push(`러싱 시도의 ${pctS(d.carry_share)}를 나눠 맡는 러닝백`);
+    if (d.tgt_share >= 0.22) role.push(`팀 타깃의 ${pctS(d.tgt_share)}를 받는 핵심 패스 옵션`);
+    else if (d.tgt_share >= 0.1) role.push(`타깃 점유율 ${pctS(d.tgt_share)}`);
+    if (d.rz_share >= 0.15) role.push(`레드존(10야드 안) 플레이의 ${pctS(d.rz_share)}를 가져가요`);
+    if (role.length) S.push(`역할: ${role.join(", ")}.`);
+    if (d.def_rank != null) {
+      const r = Math.round(d.def_rank), tone = r <= N / 3 ? "유리한 매치업이에요" : r >= (2 * N) / 3 ? "까다로운 매치업이에요" : "평균적인 매치업이에요";
+      S.push(`상대 ${esc(p.opp)} 수비는 ${esc(p.pos)}에게 최근 8경기 평균 ${d.def_allowed}${td ? "개의 TD" : ""}를 허용했어요. 이번 주 ${N}팀 중 ${r}번째로 많이 내준 팀이라 ${tone}.`);
+    }
+    if (d.spread != null && d.implied_total != null) {
+      const sp = d.spread, big = Math.abs(sp) >= 7;
+      let flow = sp > 0 ? `${esc(p.team)}가 ${sp}점 우세, 팀 예상 득점 ${d.implied_total}점이에요.` : sp < 0 ? `${esc(p.team)}가 ${-sp}점 열세, 팀 예상 득점 ${d.implied_total}점이에요.` : `박빙 경기로, 팀 예상 득점은 ${d.implied_total}점이에요.`;
+      if (big && sp > 0 && p.pos === "RB") flow += " 리드하는 시간이 길면 러싱 시도가 늘어나는 흐름이에요.";
+      if (big && sp < 0 && (p.pos === "WR" || p.pos === "TE" || p.market === "pass_yds")) flow += " 따라가는 경기라 패스가 늘어날 수 있어요.";
+      if (big && sp < 0 && p.pos === "RB") flow += " 크게 지면 러싱 시도가 줄어들 수 있어요.";
+      if (td) flow += d.implied_total >= 26 ? " 득점 기회가 많은 경기예요." : d.implied_total <= 18 ? " 팀 득점 자체가 적게 예상돼서 TD 기회가 제한적이에요." : "";
+      S.push(flow);
+    }
+    if (d.wind >= 15) S.push(`킥오프 바람이 ${d.wind}mph로 강해서 패스는 불리하고 러싱은 유리해요.`);
+    scenFor(p).forEach(({ s, e }) => {
+      const up = e.prob_out > e.prob_play;
+      S.push(`<b>${esc(s.name)}</b> 선수(${esc(s.pos)}, ${statusWord(s.status)})가 ${(s.status || "").toLowerCase() === "out" ? "결장해서" : "결장하면"} 이 픽 확률은 ${e.prob_play}% → <b>${e.prob_out}%</b>로 ${up ? "올라가요" : "내려가요"}.`);
+    });
+    if ((p.status || "").toLowerCase() === "questionable") S.push("⚠ 본인이 출전 불확실이에요. 킥오프 90분 전 비출전 명단을 확인하세요.");
+    if (p.check) S.push("⚠ 모델과 FanDuel 차이가 커요. 역할 변화 뉴스를 확인하세요.");
+  } else {
+    S.push(`${esc(p.name)}: <b>${esc(lbl)}</b> — <b>${p.prob.toFixed(1)}%</b>.`);
+    if (n) S.push(td ? `Scored a TD in <b>${d.recent_hits} of the last ${n}</b> games.` : `Cleared this line in <b>${d.recent_hits} of the last ${n}</b> games.`);
+    if (n && rec[n - 1].wk < D.week - 2) S.push(`⚠ Last played in Week ${rec[n - 1].wk}. Returning from a layoff, so his snaps may be limited and the model may not know his current role.`);
+    if (!td && d.mu != null) S.push(`The model projects about <b>${d.mu}</b> ${unit} (line ${d.need}).`);
+    const role = [];
+    if (d.carry_share >= 0.45) role.push(`lead back with ${pctS(d.carry_share)} of team carries`);
+    else if (d.carry_share >= 0.15) role.push(`shares the backfield (${pctS(d.carry_share)} of carries)`);
+    if (d.tgt_share >= 0.22) role.push(`a primary target (${pctS(d.tgt_share)} target share)`);
+    else if (d.tgt_share >= 0.1) role.push(`${pctS(d.tgt_share)} target share`);
+    if (d.rz_share >= 0.15) role.push(`${pctS(d.rz_share)} of red-zone (inside 10) plays`);
+    if (role.length) S.push(`Role: ${role.join(", ")}.`);
+    if (d.def_rank != null) {
+      const r = Math.round(d.def_rank), tone = r <= N / 3 ? "a favorable matchup" : r >= (2 * N) / 3 ? "a tough matchup" : "an average matchup";
+      S.push(`${esc(p.opp)} has allowed ${d.def_allowed}${td ? " TDs" : ""} per game to ${esc(p.pos)}s over the last 8 — #${r} most of ${N} teams this week, ${tone}.`);
+    }
+    if (d.spread != null && d.implied_total != null) {
+      const sp = d.spread, big = Math.abs(sp) >= 7;
+      let flow = sp > 0 ? `${esc(p.team)} is favored by ${sp} with an implied ${d.implied_total} points.` : sp < 0 ? `${esc(p.team)} is a ${-sp}-point underdog with an implied ${d.implied_total} points.` : `Expected to be close; implied ${d.implied_total} points.`;
+      if (big && sp > 0 && p.pos === "RB") flow += " Playing with a lead usually means more carries.";
+      if (big && sp < 0 && (p.pos === "WR" || p.pos === "TE" || p.market === "pass_yds")) flow += " Trailing should mean more passing.";
+      if (big && sp < 0 && p.pos === "RB") flow += " A blowout loss could cut his carries.";
+      if (td) flow += d.implied_total >= 26 ? " Plenty of scoring chances expected." : d.implied_total <= 18 ? " Low team total limits TD chances." : "";
+      S.push(flow);
+    }
+    if (d.wind >= 15) S.push(`Wind ${d.wind} mph at kickoff: hurts passing, helps rushing.`);
+    scenFor(p).forEach(({ s, e }) => {
+      S.push(`If <b>${esc(s.name)}</b> (${esc(s.pos)}, ${statusWord(s.status)}) ${(s.status || "").toLowerCase() === "out" ? "is out" : "sits"}, this pick goes ${e.prob_play}% → <b>${e.prob_out}%</b>.`);
+    });
+    if ((p.status || "").toLowerCase() === "questionable") S.push("⚠ He is questionable himself. Check inactives 90 minutes before kickoff.");
+    if (p.check) S.push("⚠ Model and FanDuel disagree a lot. Check for role-change news.");
+  }
+  return S;
+}
+function narrGame(g) {
+  const fav = g.spread_home > 0 ? g.home : g.away, dog = fav === g.home ? g.away : g.home, sp = Math.abs(g.spread_home || 0);
+  const w = g.weather || {}, S = [], top = g.best15_prob[0], tdTop = g.best15_prob.filter(isTD).sort((a, b) => b.prob - a.prob)[0];
+  if (ko()) {
+    S.push(sp ? `<b>${fav}</b>가 ${sp}점 우세예요. 예상 점수는 ${g.away} ${g.proj.away} – ${g.home} ${g.proj.home}, 총점 ${g.total}이에요.` : `박빙 경기예요. 예상 점수 ${g.away} ${g.proj.away} – ${g.home} ${g.proj.home}.`);
+    if (sp >= 7) S.push(`${fav}가 리드하는 흐름이 예상돼요. ${fav}는 러싱과 득점 쪽 픽이, ${dog}는 따라가며 늘어나는 패싱 쪽 픽이 유리해요.`);
+    else if (sp <= 3) S.push("양 팀 모두 평소대로 공격을 나눌 가능성이 커요.");
+    S.push(w.dome ? "돔 경기라 날씨 영향이 없어요." : w.wind_mph >= 15 ? `바람이 ${w.wind_mph}mph로 강해서 패싱 픽은 조심하세요.` : w.temp_f != null ? `날씨 ${w.temp_f}°F, 바람 ${w.wind_mph}mph로 영향이 적어요.` : "");
+    (g.scenarios || []).forEach(s => {
+      const r = s.replacement;
+      S.push(`<b>${esc(s.name)}</b> 선수(${esc(s.team)} ${esc(s.pos)})는 ${statusWord(s.status)}${s.injury ? " (" + esc(s.injury) + ")" : ""}예요.` + (r ? ` 빠지면 <b>${esc(r.name)}</b> 선수가 가장 큰 영향을 받아요.` : ""));
+    });
+    if (top) S.push(`이 경기에서 가장 확률이 높은 픽은 <b>${esc(top.name)} ${esc(trLabel(top.label))} (${top.prob}%)</b>예요.`);
+    if (tdTop) S.push(`TD 최고 후보는 <b>${esc(tdTop.name)} (${tdTop.prob}%)</b>예요.`);
+  } else {
+    S.push(sp ? `<b>${fav}</b> is favored by ${sp}. Projected ${g.away} ${g.proj.away} – ${g.home} ${g.proj.home}, total ${g.total}.` : `Expected to be close. Projected ${g.away} ${g.proj.away} – ${g.home} ${g.proj.home}.`);
+    if (sp >= 7) S.push(`${fav} should play with a lead: favor ${fav} rushing/scoring picks and ${dog} catch-up passing picks.`);
+    else if (sp <= 3) S.push("Both teams should run their normal offense.");
+    S.push(w.dome ? "Dome game, no weather impact." : w.wind_mph >= 15 ? `Wind ${w.wind_mph} mph: be careful with passing picks.` : w.temp_f != null ? `${w.temp_f}°F, wind ${w.wind_mph} mph: little impact.` : "");
+    (g.scenarios || []).forEach(s => {
+      const r = s.replacement;
+      S.push(`<b>${esc(s.name)}</b> (${esc(s.team)} ${esc(s.pos)}) is ${statusWord(s.status)}${s.injury ? " (" + esc(s.injury) + ")" : ""}.` + (r ? ` If he sits, <b>${esc(r.name)}</b> is affected most.` : ""));
+    });
+    if (top) S.push(`Highest-probability pick: <b>${esc(top.name)} ${esc(trLabel(top.label))} (${top.prob}%)</b>.`);
+    if (tdTop) S.push(`Top TD candidate: <b>${esc(tdTop.name)} (${tdTop.prob}%)</b>.`);
+  }
+  return S.filter(Boolean);
+}
+function scenCard(s) {
+  const k = ko(), r = s.replacement, isOut = (s.status || "").toLowerCase() === "out";
+  const arrow = (a, b) => `<span class="num">${a ?? "-"}%</span> → <b class="num" style="color:${b > a ? "var(--ok)" : "var(--bad)"}">${b}%</b>`;
+  const eff = (s.effects || []).map(e => `<div class="between small" style="padding:3px 0;border-top:1px solid var(--line2)"><span style="min-width:0">${esc(e.name)} · <span style="color:var(--acc2)">${esc(trLabel(e.label))}</span></span><span style="flex:none">${arrow(e.prob_play, e.prob_out)}</span></div>`).join("");
+  let rep = "";
+  if (r) {
+    const stat = { rush_yds: k ? "러싱 야드" : "rush yds", rec_yds: k ? "리시빙 야드" : "rec yds", pass_yds: k ? "패싱 야드" : "pass yds" }[r.stat] || r.stat;
+    const l3 = (r.last3 || []).map(x => k ? `${x.wk}주 ${esc(x.opp)}: 캐리 ${x.car} · ${x.rush}야드 / 리셉션 ${x.rec}(${x.tgt}타깃) · ${x.recyd}야드${x.td ? " · TD " + x.td : ""}` : `Wk${x.wk} ${esc(x.opp)}: ${x.car} car · ${x.rush} yds / ${x.rec} rec (${x.tgt} tgt) · ${x.recyd} yds${x.td ? " · " + x.td + " TD" : ""}`).join("<br>");
+    const title = (s.pos === "RB" || s.pos === "QB") ? (k ? "대체 선수" : "Replacement") : (k ? "가장 큰 혜택" : "Biggest beneficiary");
+    rep = `<div style="background:var(--s2);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:6px">
+      <div class="small muted">${title}</div>
+      <div><b>${esc(r.name)}</b> <span class="small muted">${esc(r.team)} ${esc(r.pos)}</span></div>
+      <div class="small" style="color:var(--mu2)">${k ? `이번 시즌 ${r.games}경기 · 러싱 ${r.rush_yds}야드 · 리시빙 ${r.rec_yds}야드 · TD ${r.tds}개 · 러싱 점유율 ${pctS(r.carry_share)} · 타깃 점유율 ${pctS(r.tgt_share)}` : `${r.games} games this season · ${r.rush_yds} rush yds · ${r.rec_yds} rec yds · ${r.tds} TD · carry share ${pctS(r.carry_share)} · target share ${pctS(r.tgt_share)}`}</div>
+      <div class="small" style="color:var(--mu2)">${k ? `${esc(s.name)} 결장 시 예상 ${stat}: ${r.mu_play} → <b>${r.mu_out}</b>` : `Projected ${stat} if ${esc(s.name)} sits: ${r.mu_play} → <b>${r.mu_out}</b>`}</div>
+      ${l3 ? `<div class="small muted" style="line-height:1.6">${k ? "최근 3경기" : "Last 3 games"}<br>${l3}</div>` : ""}
+      ${(r.picks || []).map(x => `<div class="between small"><span style="color:var(--acc2)">${esc(trLabel(x.label))}</span><span>${x.prob_play != null ? arrow(x.prob_play, x.prob_out) : `<b class="num">${x.prob_out}%</b>`}</span></div>`).join("")}
+    </div>`;
+  }
+  return `<section class="card" style="display:flex;flex-direction:column;gap:8px">
+    <div class="between"><b>${esc(s.name)} <span class="small muted">${esc(s.team)} ${esc(s.pos)}</span></b>${badge(s.status)}</div>
+    <div class="small" style="color:var(--mu2)">${k ? (isOut ? `결장이 확정돼서 아래처럼 반영됐어요${s.injury ? " (" + esc(s.injury) + ")" : ""}. 출전했다면 → 결장 시:` : `출전 여부가 불확실해요${s.injury ? " (" + esc(s.injury) + ")" : ""}. 지금 확률은 출전 기준이에요. 출전 시 → 결장 시:`) : (isOut ? `Ruled out${s.injury ? " (" + esc(s.injury) + ")" : ""}; already applied. If he had played → without him:` : `Status uncertain${s.injury ? " (" + esc(s.injury) + ")" : ""}. Current numbers assume he plays. Plays → sits:`)}</div>
+    ${eff || `<div class="small muted">${k ? "동료 픽에 큰 변화 없음" : "Little effect on teammates"}</div>`}
+    ${rep}
+  </section>`;
+}
+
 // ================================================================== views
 function vHome() {
   const o = D.overall, t = L();
@@ -462,7 +608,8 @@ function vGame(gid) {
     <div class="small" style="color:var(--mu2)">${t.weather}: ${esc(wx)}</div>
     <button class="btn-line" id="refresh2" ${refreshing ? "disabled" : ""}>${refreshing ? t.refreshing_short : t.refresh}</button>
   </section>
-  ${g.notes.length ? `<section class="card small" style="color:var(--acc2)">${g.notes.map(n => `✕ ${esc(n.name)} (${esc(n.pos)}) ${esc(trStatus(n.status))} → ${esc(trEffect(n.effect))}`).join("<br>")}</section>` : ""}
+  <section class="card" style="display:flex;flex-direction:column;gap:6px"><b>${ko() ? "경기 분석" : "Game analysis"}</b>${narrGame(g).map(x => `<div style="font-size:14px;line-height:1.6;color:var(--mu2)">${x}</div>`).join("")}</section>
+  ${(g.scenarios || []).length ? `<h2>${ko() ? "부상 시나리오" : "Injury scenarios"}</h2>${g.scenarios.map(scenCard).join("")}` : ""}
   <section class="card" style="display:flex;flex-direction:column;gap:8px">
     <div class="between"><b>${t.inj_title}</b><span class="small muted">${t.inactive_note}</span></div>
     ${inj.length ? inj.map(i => `<div class="between small"><span>${esc(i.player_display_name)} · ${esc(i.team)} ${esc(i.position)}${i.injury ? " · " + esc(i.injury) : ""}</span>${badge(i.status)}</div>`).join("") : `<div class="small muted">${t.none}</div>`}
@@ -515,6 +662,7 @@ function vPick() {
   </section>
   ${p.model_prob != null ? `<div class="small muted">${t.blend(p.model_prob, p.market_prob)}</div>` : ""}
   ${p.check ? `<div class="card small" style="color:var(--warn)">${t.check_warn}</div>` : ""}
+  <section class="card" style="display:flex;flex-direction:column;gap:8px"><b>${ko() ? "분석" : "Analysis"}</b>${narrPick(p).map(x => `<div style="font-size:14px;line-height:1.65;color:var(--mu2)">${x}</div>`).join("")}</section>
   <section class="card" style="display:flex;flex-direction:column;gap:12px">
     <div class="between"><b>${t.recent_n(rec.length)}</b>${d.recent_hits != null ? `<span class="small" style="color:var(--ok);font-weight:700">${t.hits_n(rec.length, d.recent_hits)}</span>` : ""}</div>
     ${chart}

@@ -87,30 +87,37 @@ def _sel(b: Bundle, name: str, p: float) -> float:
     return float(sc.predict([p])[0]) if sc is not None else p
 
 
-def best15(c: pd.DataFrame, by: str = "prob", n: int = 15, per_player: int = 2,
-           per_market: int | None = None) -> pd.DataFrame:
-    """확률순(또는 엣지순) 상위 n개.
-    한 선수(최대 per_player개)나 한 종류 마켓(최대 per_market개)이 목록을 독차지하지 않게 해요."""
+def best15(c: pd.DataFrame, by: str = "prob", n: int = 15) -> pd.DataFrame:
+    """확률순(또는 엣지순) 상위 n개 — 선수·마켓 제한 없이 순수하게 높은 순서.
+    '확인 필요'(모델과 시장 차이 큼)만 빼요."""
     if c.empty:
         return c
-    per_market = per_market or M.MAX_PER_MARKET
     key = by if by in c and c[by].notna().any() else "prob"
-    # '확인 필요'(모델과 시장 차이 큼)는 순위에서 빼고 따로 보여줘요
     if "check" in c:
         c = c[~c.check.fillna(False).astype(bool)]
     if key == "edge":   # 엣지순: 배당 있는 픽만, 확률 MIN_P_EDGE 이상 (복권식 롱샷 제외)
         c = c[c.edge.notna() & (c.edge > 0) & (c.prob >= M.MIN_P_EDGE)]
-    c = c.sort_values([key, "prob"], ascending=False)
-    # 선수당 최대 per_player개 — 단, 애니타임 TD는 별도 칸이라 이 제한에서 빼요
-    # (예: Nico Collins가 야드·리셉션 픽 2개로 TD 픽이 밀려나지 않게)
-    td = c[c.market == "td"]
-    other = c[c.market != "td"].groupby("player_id", sort=False).head(per_player)
-    c = pd.concat([other, td]).sort_values([key, "prob"], ascending=False)
-    if c.market.nunique() > 1:
-        c = c.groupby("market", sort=False).head(per_market)
-    out = c.head(n).copy()
+    out = c.sort_values([key, "prob"], ascending=False).head(n).copy()
     out.insert(0, "rank", range(1, len(out) + 1))
     return out
+
+
+def prob_for(b: Bundle, row, market: str, line, base: dict | None = None) -> float:
+    """선수 행(row)의 예상값으로 특정 마켓·기준선의 확률을 다시 계산 (부상 시나리오용).
+    base = 원래 픽 정보 (배당 혼합 여부를 똑같이 적용하려고)."""
+    if market == "td":
+        p = float(row["p_td"])
+    else:
+        mname = M.MARKETS[market][0]
+        mu = row.get(f"mu_{mname}")
+        if mu is None or np.isnan(mu):
+            return float("nan")
+        p = prob_at_least(b, mname, mu, float(line) + 0.5)
+        if not (base and base.get("market_prob") is not None and not pd.isna(base.get("market_prob"))):
+            return _sel(b, mname, p)
+    if base and base.get("market_prob") is not None and not pd.isna(base.get("market_prob")):
+        return MODEL_WEIGHT * p + (1 - MODEL_WEIGHT) * base["market_prob"]
+    return p
 
 
 def name_key(name: str) -> str:

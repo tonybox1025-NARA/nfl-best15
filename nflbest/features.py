@@ -107,24 +107,52 @@ def build(seasons: list[int], current_season: int, target_week: int | None) -> p
 
 
 def _upcoming_rows(ps: pd.DataFrame, sched: pd.DataFrame, season: int, week: int) -> pd.DataFrame:
+    """다가오는 경기에 나올 선수 목록.
+
+    - RB·WR·TE: 공식 로스터(이번 주, 활동 중) 기준 → 이적·부상 복귀 선수도 포함
+      (이번 시즌 경기 기록이 있는 선수만. 기록은 다른 팀에서 쌓은 것도 그대로 써요)
+    - QB: 이 팀의 최근 3경기에 뛴 선수만 (오래전 선발 기록이 있는 백업 QB가 끼지 않게)
+    """
     games = sched[(sched.season == season) & (sched.week == week) & sched.home_score.isna()]
-    played = ps.merge(sched[["game_id", "gameday"]], on="game_id")
+    played = ps.merge(sched[["game_id", "gameday"]], on="game_id").sort_values("gameday")
+    last_game = played.groupby("player_id").tail(1).set_index("player_id")
+    latest_team = last_game.team
+    ros = data.rosters(season)
+    if len(ros):
+        ros = ros[ros.week <= week].sort_values("week").groupby("gsis_id").tail(1)
+        ros = ros[(ros.status == "ACT") & ros.position.isin(["RB", "WR", "TE"])]
     rows = []
-    # 각 선수의 '가장 최근 소속팀'이 이 팀일 때만 (트레이드 반영)
-    latest_team = played.sort_values("gameday").groupby("player_id").team.last()
+
+    def add(pid, team, opp, gm, last3, pos=None):
+        lg = last_game.loc[pid]
+        rows.append({"player_id": pid, "player_display_name": lg.player_display_name,
+                     "position": pos or lg.position, "headshot_url": lg.headshot_url,
+                     "season": season, "week": week, "season_type": "REG",
+                     "game_id": gm.game_id, "team": team, "opponent_team": opp,
+                     "upcoming": True, "in_last_game": lg.game_id == last3.iloc[-1],
+                     "new_to_team": lg.team != team})
+
     for _, gm in games.iterrows():
         for team, opp in [(gm.home_team, gm.away_team), (gm.away_team, gm.home_team)]:
-            tg = played[(played.team == team)]
-            last3 = tg.drop_duplicates("game_id").sort_values("gameday").game_id.tail(3)
+            tg = played[played.team == team]
+            last3 = tg.drop_duplicates("game_id").game_id.tail(3)
             recent = tg[tg.game_id.isin(last3)]
+            seen = set()
+            # QB (그리고 로스터가 없을 때는 전 포지션): 최근 3경기 출전 선수
             for pid, r in recent.groupby("player_id").tail(1).set_index("player_id").iterrows():
                 if latest_team.get(pid) != team:
                     continue
-                rows.append({"player_id": pid, "player_display_name": r.player_display_name,
-                             "position": r.position, "headshot_url": r.headshot_url,
-                             "season": season, "week": week, "season_type": "REG",
-                             "game_id": gm.game_id, "team": team, "opponent_team": opp,
-                             "upcoming": True, "in_last_game": r.game_id == last3.iloc[-1]})
+                if len(ros) and r.position != "QB":
+                    continue
+                add(pid, team, opp, gm, last3); seen.add(pid)
+            # RB·WR·TE: 공식 로스터 기준
+            for rr in ros[ros.team == team].itertuples() if len(ros) else []:
+                pid = rr.gsis_id
+                if pid in seen or pid not in last_game.index:
+                    continue
+                if last_game.loc[pid].season < season and week > 4:
+                    continue   # 이번 시즌 기록이 없는 선수는 제외
+                add(pid, team, opp, gm, last3, rr.position); seen.add(pid)
     return pd.DataFrame(rows)
 
 

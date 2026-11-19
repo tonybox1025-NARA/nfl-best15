@@ -46,6 +46,14 @@ def injuries(season: int, max_age_hours: float = 1) -> pd.DataFrame:
         return pd.DataFrame()
 
 
+def rosters(season: int, max_age_hours: float = 6) -> pd.DataFrame:
+    """주차별 공식 로스터 (이적·부상자 명단 반영). 실패하면 빈 표."""
+    try:
+        return _cached(f"rosters_{season}", lambda: nfl.load_rosters([season]), max_age_hours)
+    except Exception:
+        return pd.DataFrame()
+
+
 def current_week(sched: pd.DataFrame, season: int, today: str) -> int:
     """오늘 이후(오늘 포함) 첫 경기가 있는 주차. 이미 끝난 목요일 경기가 있어도 같은 주차로 봐요."""
     s = sched[(sched.season == season) & (sched.game_type == "REG")]
