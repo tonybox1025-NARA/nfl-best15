@@ -1,7 +1,7 @@
 # 2026 시즌 11주차 베스트 15
 
-생성: 2026-11-19 18:50 ET  
-데이터: NFL 공식 리포트 253건 · ESPN 실시간 800건 / 날씨 11경기 (야외) / 배당 111분 전 데이터 사용 (크레딧 절약)
+생성: 2026-11-19 21:44 ET  
+데이터: NFL 공식 리포트 253건 · ESPN 실시간 800건 / 날씨 11경기 (야외) / 배당 285분 전 데이터 사용 (크레딧 절약)
 
 > 확률은 과거 데이터 기반 추정치예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요. ⚠는 모델과 시장 차이가 15%p 넘는 픽(역할 변화·부상 확인 필요)이에요.
 
@@ -14,7 +14,7 @@
 | 3 | James Cook (RB) | BUF | MIA | 애니타임 터치다운 | **68.2%** | - | - | Active |
 | 4 | Garrett Wilson (WR) | NYJ | LAC | 리셉션 4개 이상 | **67.9%** | - | - | Active |
 | 5 | Isaiah Likely (TE) | NYG | JAX | 리셉션 4개 이상 | **67.6%** | - | - | Active |
-| 6 | Nico Collins (WR) | HOU | IND | 리셉션 4개 이상 | **67.3%** | - | - | Active |
+| 6 | Nico Collins (WR) | HOU | IND | 리셉션 4개 이상 | **67.3%** | - | - |  |
 | 7 | Jordyn Tyson (WR) | NO | CHI | 리셉션 4개 이상 | **67.2%** | - | - | Questionable |
 | 8 | Stefon Diggs (WR) | WAS | CIN | 리셉션 4개 이상 | **67.0%** | - | - | Active |
 | 9 | Jahmyr Gibbs (RB) | DET | TB | 리시빙 20야드 이상 | **67.0%** | - | - | Active |
@@ -52,18 +52,18 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Nico Collins (WR) | HOU | IND | 리셉션 4개 이상 | **67.3%** | - | - | Active |
-| 2 | C.J. Stroud (QB) | HOU | IND | 패싱 TD 2개 이상 | **62.7%** | - | - | Active |
-| 3 | Nico Collins (WR) | HOU | IND | 리시빙 50야드 이상 | **62.0%** | - | - | Active |
-| 4 | David Montgomery (RB) | HOU | IND | 러싱 50야드 이상 | **61.4%** | - | - | Active |
+| 1 | Nico Collins (WR) | HOU | IND | 리셉션 4개 이상 | **67.3%** | - | - |  |
+| 2 | C.J. Stroud (QB) | HOU | IND | 패싱 TD 2개 이상 | **62.7%** | - | - |  |
+| 3 | Nico Collins (WR) | HOU | IND | 리시빙 50야드 이상 | **62.0%** | - | - |  |
+| 4 | David Montgomery (RB) | HOU | IND | 러싱 50야드 이상 | **61.5%** | - | - | Active |
 | 5 | Tyler Warren (TE) | IND | HOU | 리셉션 4개 이상 | **61.3%** | - | - | Active |
 | 6 | Jonathan Taylor (RB) | IND | HOU | 러싱 50야드 이상 | **56.1%** | - | - | Active |
-| 7 | C.J. Stroud (QB) | HOU | IND | 패싱 250야드 이상 | **54.6%** | - | - | Active |
+| 7 | C.J. Stroud (QB) | HOU | IND | 패싱 250야드 이상 | **54.6%** | - | - |  |
 | 8 | David Montgomery (RB) | HOU | IND | 애니타임 터치다운 | **43.5%** | - | - | Active |
-| 9 | Nico Collins (WR) | HOU | IND | 애니타임 터치다운 | **40.0%** | - | - | Active |
+| 9 | Nico Collins (WR) | HOU | IND | 애니타임 터치다운 | **40.0%** | - | - |  |
 | 10 | Xavier Hutchinson (WR) | HOU | IND | 애니타임 터치다운 | **32.5%** | - | - | Active |
-| 11 | Dalton Schultz (TE) | HOU | IND | 애니타임 터치다운 | **31.7%** | - | - | Active |
-| 12 | Tank Dell (WR) | HOU | IND | 애니타임 터치다운 | **31.3%** | - | - | Active |
+| 11 | Dalton Schultz (TE) | HOU | IND | 애니타임 터치다운 | **31.7%** | - | - |  |
+| 12 | Tank Dell (WR) | HOU | IND | 애니타임 터치다운 | **31.3%** | - | - |  |
 | 13 | Jonathan Taylor (RB) | IND | HOU | 애니타임 터치다운 | **29.4%** | - | - | Active |
 | 14 | Emari Demercado (RB) | HOU | IND | 애니타임 터치다운 | **22.7%** | - | - | Active |
 | 15 | Kayshon Boutte (WR) | HOU | IND | 애니타임 터치다운 | **20.9%** | - | - | Active |
@@ -293,8 +293,8 @@
 | 8 | Kirk Cousins (QB) | MIN | SF | 패싱 TD 2개 이상 | **61.1%** | - | - | Active |
 | 9 | Christian McCaffrey (RB) | SF | MIN | 러싱 50야드 이상 | **60.6%** | - | - | 훈련 불참 |
 | 10 | Christian McCaffrey (RB) | SF | MIN | 애니타임 터치다운 | **60.5%** | - | - | 훈련 불참 |
-| 11 | Brock Purdy (QB) | SF | MIN | 패싱 TD 2개 이상 | **60.0%** | - | - | Active |
-| 12 | Brock Purdy (QB) | SF | MIN | 패싱 225야드 이상 | **59.8%** | - | - | Active |
+| 11 | Brock Purdy (QB) | SF | MIN | 패싱 TD 2개 이상 | **60.0%** | - | - |  |
+| 12 | Brock Purdy (QB) | SF | MIN | 패싱 225야드 이상 | **59.8%** | - | - |  |
 | 13 | Justin Jefferson (WR) | MIN | SF | 리셉션 5개 이상 | **59.7%** | - | - | Active |
 | 14 | Justin Jefferson (WR) | MIN | SF | 리시빙 50야드 이상 | **58.8%** | - | - | Active |
 | 15 | T.J. Hockenson (TE) | MIN | SF | 리시빙 40야드 이상 | **57.9%** | - | - | Questionable |

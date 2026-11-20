@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 11,
- "updated_at": "2026-11-19 18:50 ET",
+ "updated_at": "2026-11-19 21:44 ET",
  "games": {
   "2026_11_IND_HOU": {
    "away": "IND",
@@ -3086,7 +3086,7 @@
      "odds": null,
      "implied": null,
      "edge": null,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 12,
@@ -3103,7 +3103,7 @@
      "odds": null,
      "implied": null,
      "edge": null,
-     "status": "Active"
+     "status": ""
     },
     {
      "rank": 13,
