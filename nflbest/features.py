@@ -130,7 +130,9 @@ def _upcoming_rows(ps: pd.DataFrame, sched: pd.DataFrame, season: int, week: int
                      "season": season, "week": week, "season_type": "REG",
                      "game_id": gm.game_id, "team": team, "opponent_team": opp,
                      "upcoming": True, "in_last_game": lg.game_id == last3.iloc[-1],
-                     "new_to_team": lg.team != team})
+                     "new_to_team": lg.team != team,
+                     # 팀 직전 경기 패스 시도 수 (주전 QB 판별용)
+                     "qb_last_att": float(lg.attempts or 0) if lg.game_id == last3.iloc[-1] else 0.0})
 
     for _, gm in games.iterrows():
         for team, opp in [(gm.home_team, gm.away_team), (gm.away_team, gm.home_team)]:

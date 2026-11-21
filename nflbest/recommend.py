@@ -55,6 +55,7 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     inj, inj_msg = live.injuries(season, week)
     pred["status"] = pred.player_display_name.map(lambda n: inj.get(picks.name_key(n), {}).get("status", ""))
     pred["injury"] = pred.player_display_name.map(lambda n: inj.get(picks.name_key(n), {}).get("injury", ""))
+    pred = _starting_qbs(pred)     # 팀당 주전 QB 1명만 (백업·장기 결장 QB 제외)
     pred0 = pred.copy()            # 부상 반영 전 (시나리오 계산용)
     notes = _redistribute(pred)
     pred = pred[~pred.status.map(live.is_out)]
@@ -223,6 +224,22 @@ def _clean(o):
     return o
 
 
+def _starting_qbs(pred: pd.DataFrame) -> pd.DataFrame:
+    """팀마다 이번 주 선발 QB 한 명만 남겨요.
+    기준: 결장이 아닌 QB 중 팀 직전 경기에서 패스를 가장 많이 던진 선수 (없으면 최근 3경기 평균 시도 수).
+    → 몇 주째 결장 중인 QB나 백업 QB가 예측·시나리오에 끼지 않아요."""
+    qb = pred[pred.position == "QB"].copy()
+    if qb.empty:
+        return pred
+    qb["_out"] = qb.status.map(live.is_out)
+    qb["_k1"] = qb.get("qb_last_att", pd.Series(0, index=qb.index)).fillna(0)
+    qb["_k2"] = qb.attempts_l3.fillna(0)
+    keep = (qb[~qb._out].sort_values(["_k1", "_k2"], ascending=False).groupby("team").head(1).index)
+    starters_out = qb[qb._out & (qb._k1 > 0)]          # 지난주 선발했는데 이번 주 결장 → 시나리오용으로 유지
+    drop = qb.index.difference(keep).difference(starters_out.index)
+    return pred.drop(index=drop)
+
+
 SCEN_STATUSES = {"questionable", "doubtful", "out", "훈련 불참"}
 
 
@@ -231,8 +248,8 @@ def _apply(pred0: pd.DataFrame, force: dict) -> pd.DataFrame:
     t = pred0.copy()
     for pid, st in force.items():
         t.loc[t.player_id == pid, "status"] = st
-        if st == "Out":
-            t.loc[t.player_id == pid, "in_last_game"] = True   # 결장 시 몫을 동료에게 나눠줘요
+        if st == "Out" and pid not in set(t[t.in_last_game.fillna(False).astype(bool)].player_id):
+            t.loc[t.player_id == pid, "in_last_game"] = True   # 불확실 선수가 빠지는 경우: 몫을 동료에게 나눠줘요
     _redistribute(t)
     return t[~t.status.map(live.is_out)]
 
@@ -256,6 +273,8 @@ def _scenarios(b, pred0: pd.DataFrame, cand: pd.DataFrame, od, feat: pd.DataFram
     """출전이 불확실한(또는 결장한) 주요 선수마다: 뛸 때 vs 안 뛸 때 동료 확률, 대체 선수와 그 선수의 픽."""
     out = {}
     rel = pred0[pred0.status.str.lower().isin(SCEN_STATUSES)]
+    # 이미 몇 주째 결장 중인 선수는 제외 (팀 데이터에 이미 그 선수 없이 반영돼 있어요)
+    rel = rel[~(rel.status.map(live.is_out) & ~rel.in_last_game.fillna(False).astype(bool))]
     rel = rel[(rel.position == "QB") | (rel.carry_share_ewm.fillna(0) >= 0.15) | (rel.tgt_share_ewm.fillna(0) >= 0.10)]
     for r in rel.itertuples():
         team = pred0[pred0.team == r.team]
