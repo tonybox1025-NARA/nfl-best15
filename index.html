@@ -360,7 +360,7 @@ function pickRow(p, opts = {}) {
   return `<div class="pick" role="link" tabindex="0" data-pick="${k}">
     <div class="rank${top}">${p.rank}</div>
     <div class="pmain">
-      <div class="row"><span class="pname">${esc(p.name)}</span>${badge(p.status)}</div>
+      <div class="row"><span class="pname">${esc(p.name)}</span>${badge(p.status)}${confBadge(p.detail)}</div>
       <div class="small muted">${esc(p.team)} ${esc(p.pos)} · vs ${esc(p.opp)}${g && !opts.noGame ? " · " + kick(g.kickoff) : ""}</div>
       <div class="plabel">${esc(trLabel(p.label))}</div>
       <div class="bar"><i style="width:${p.prob}%"></i></div>
@@ -392,6 +392,37 @@ function statusWord(st) {
   if (ko()) return s === "out" ? "결장 확정" : s === "doubtful" ? "결장 유력" : s === "questionable" ? "출전 불확실" : st;
   return s === "out" ? "ruled out" : s === "doubtful" ? "doubtful" : s === "questionable" ? "questionable" : trStatus(st);
 }
+
+function teamInfo(p) { const g = gameOf(p.game_id); return g && g.teams ? g.teams[p.team] || {} : {}; }
+function confBadge(d) {
+  if (!d || !d.conf || d.conf === "high") return "";
+  return d.conf === "low" ? `<span class="badge" style="color:var(--bad);border:1px solid var(--bad)">${ko() ? "신뢰도 낮음" : "Low confidence"}</span>`
+                          : `<span class="badge" style="color:var(--mu2);border:1px solid var(--line)">${ko() ? "신뢰도 보통" : "Medium"}</span>`;
+}
+function confReasons(p) {
+  const d = p.detail || {}, ti = teamInfo(p), prev = (ti.prev_qbs || []).join(", ");
+  const M = ko() ? {
+    role: "동료가 빠져서 역할이 바뀐 선수예요. 이번 경기 사용량은 추정치예요.",
+    qb_new: `${esc(p.team)}의 QB가 최근 바뀌었어요(${esc(prev)} → ${esc(ti.qb || "")}). 현재 QB 선발이 ${ti.qb_games}경기뿐이라 이 조합의 데이터가 아직 적어요.`,
+    qb_mid: `${esc(p.team)}의 QB가 바뀐 지 ${ti.qb_games}경기째예요. 데이터가 쌓이는 중이에요.`,
+    qb_few: `선발 경험이 적은 QB예요 (최근 8경기 중 선발 ${ti.qb_games}경기).`,
+    layoff: "최근 공백 후 복귀라 출전 시간이 제한될 수 있어요.",
+    new_team: "이적 후 새 팀에서 뛴 경기가 적어요.",
+    status: "본인 출전이 불확실해요. 비출전 명단을 확인하세요.",
+    market: "FanDuel 가격과 차이가 커요. 모델이 모르는 정보가 있을 수 있어요.",
+  } : {
+    role: "His role changed because a teammate is out. Usage this game is an estimate.",
+    qb_new: `${esc(p.team)} changed QBs recently (${esc(prev)} → ${esc(ti.qb || "")}). Only ${ti.qb_games} start(s) with the current QB, so data for this combo is thin.`,
+    qb_mid: `${esc(p.team)} is ${ti.qb_games} games into a QB change. Data is still building.`,
+    qb_few: `Inexperienced starting QB (${ti.qb_games} starts in the last 8 games).`,
+    layoff: "Returning from a layoff; snaps may be limited.",
+    new_team: "Few games with his new team.",
+    status: "His own status is uncertain. Check inactives.",
+    market: "Far from the FanDuel price. The market may know something.",
+  };
+  return (d.conf_why || []).map(w => M[w]).filter(Boolean);
+}
+
 function narrPick(p) {
   const d = p.detail || {}, g = gameOf(p.game_id), td = isTD(p), lbl = trLabel(p.label);
   const rec = d.recent || [], n = rec.length, N = nTeams();
@@ -416,9 +447,10 @@ function narrPick(p) {
     else if (d.tgt_share >= 0.1) role.push(`타깃 점유율 ${pctS(d.tgt_share)}`);
     if (d.rz_share >= 0.15) role.push(`레드존(10야드 안) 플레이의 ${pctS(d.rz_share)}를 가져가요`);
     if (role.length) S.push(`역할: ${role.join(", ")}.`);
+    if (d.qb_ctx) { const ti = teamInfo(p); S.push(`<b>QB 교체 반영:</b> ${esc(p.team)}은 최근 ${esc((ti.prev_qbs || []).join(", "))} → <b>${esc(ti.qb || "")}</b>로 바뀌었어요. 타깃 점유율과 팀 패스량을 ${esc(ti.qb || "")}와 뛴 ${ti.qb_games}경기 위주로 다시 계산했어요.`); }
     if (d.def_rank != null) {
       const r = Math.round(d.def_rank), tone = r <= N / 3 ? "유리한 매치업이에요" : r >= (2 * N) / 3 ? "까다로운 매치업이에요" : "평균적인 매치업이에요";
-      S.push(`상대 ${esc(p.opp)} 수비는 ${esc(p.pos)}에게 최근 8경기 평균 ${d.def_allowed}${td ? "개의 TD" : ""}를 허용했어요. 이번 주 ${N}팀 중 ${r}번째로 많이 내준 팀이라 ${tone}.`);
+      S.push(`상대 ${esc(p.opp)} 수비는 ${esc(p.pos)}에게 최근 8경기 평균 ${d.def_allowed}${td ? "개의 TD" : p.market === "receptions" ? "개 리셉션" : p.market === "pass_tds" ? "개 패싱 TD" : "야드"}를 허용했어요. 이번 주 ${N}팀 중 ${r}번째로 많이 내준 팀이라 ${tone}.`);
     }
     if (d.spread != null && d.implied_total != null) {
       const sp = d.spread, big = Math.abs(sp) >= 7;
@@ -455,9 +487,10 @@ function narrPick(p) {
     else if (d.tgt_share >= 0.1) role.push(`${pctS(d.tgt_share)} target share`);
     if (d.rz_share >= 0.15) role.push(`${pctS(d.rz_share)} of red-zone (inside 10) plays`);
     if (role.length) S.push(`Role: ${role.join(", ")}.`);
+    if (d.qb_ctx) { const ti = teamInfo(p); S.push(`<b>QB change applied:</b> ${esc(p.team)} went ${esc((ti.prev_qbs || []).join(", "))} → <b>${esc(ti.qb || "")}</b>. Target share and team pass volume were recalculated mainly from his ${ti.qb_games} start(s).`); }
     if (d.def_rank != null) {
       const r = Math.round(d.def_rank), tone = r <= N / 3 ? "a favorable matchup" : r >= (2 * N) / 3 ? "a tough matchup" : "an average matchup";
-      S.push(`${esc(p.opp)} has allowed ${d.def_allowed}${td ? " TDs" : ""} per game to ${esc(p.pos)}s over the last 8 — #${r} most of ${N} teams this week, ${tone}.`);
+      S.push(`${esc(p.opp)} has allowed ${d.def_allowed}${td ? " TDs" : p.market === "receptions" ? " catches" : p.market === "pass_tds" ? " pass TDs" : " yds"} per game to ${esc(p.pos)}s over the last 8 — #${r} most of ${N} teams this week, ${tone}.`);
     }
     if (d.spread != null && d.implied_total != null) {
       const sp = d.spread, big = Math.abs(sp) >= 7;
@@ -485,6 +518,7 @@ function narrGame(g) {
     if (sp >= 7) S.push(`${fav}가 리드하는 흐름이 예상돼요. ${fav}는 러싱과 득점 쪽 픽이, ${dog}는 따라가며 늘어나는 패싱 쪽 픽이 유리해요.`);
     else if (sp <= 3) S.push("양 팀 모두 평소대로 공격을 나눌 가능성이 커요.");
     S.push(w.dome ? "돔 경기라 날씨 영향이 없어요." : w.wind_mph >= 15 ? `바람이 ${w.wind_mph}mph로 강해서 패싱 픽은 조심하세요.` : w.temp_f != null ? `날씨 ${w.temp_f}°F, 바람 ${w.wind_mph}mph로 영향이 적어요.` : "");
+    styleLines(g).forEach(x => S.push(x));
     (g.scenarios || []).forEach(s => {
       const r = s.replacement;
       S.push(`<b>${esc(s.name)}</b> 선수(${esc(s.team)} ${esc(s.pos)})는 ${statusWord(s.status)}${s.injury ? " (" + esc(s.injury) + ")" : ""}예요.` + (r ? ` 빠지면 <b>${esc(r.name)}</b> 선수가 가장 큰 영향을 받아요.` : ""));
@@ -496,6 +530,7 @@ function narrGame(g) {
     if (sp >= 7) S.push(`${fav} should play with a lead: favor ${fav} rushing/scoring picks and ${dog} catch-up passing picks.`);
     else if (sp <= 3) S.push("Both teams should run their normal offense.");
     S.push(w.dome ? "Dome game, no weather impact." : w.wind_mph >= 15 ? `Wind ${w.wind_mph} mph: be careful with passing picks.` : w.temp_f != null ? `${w.temp_f}°F, wind ${w.wind_mph} mph: little impact.` : "");
+    styleLines(g).forEach(x => S.push(x));
     (g.scenarios || []).forEach(s => {
       const r = s.replacement;
       S.push(`<b>${esc(s.name)}</b> (${esc(s.team)} ${esc(s.pos)}) is ${statusWord(s.status)}${s.injury ? " (" + esc(s.injury) + ")" : ""}.` + (r ? ` If he sits, <b>${esc(r.name)}</b> is affected most.` : ""));
@@ -504,6 +539,33 @@ function narrGame(g) {
     if (tdTop) S.push(`Top TD candidate: <b>${esc(tdTop.name)} (${tdTop.prob}%)</b>.`);
   }
   return S.filter(Boolean);
+}
+function styleLines(g) {
+  const T = g.teams || {}, out = [];
+  [[g.away, g.home], [g.home, g.away]].forEach(([a, b]) => {
+    const A = T[a], B = T[b]; if (!A || !B) return;
+    const n = A.n;
+    if (ko()) {
+      let line = `<b>${a} 공격</b>: 패스 비율 ${Math.round(A.pass_rate * 100)}% (이번 주 ${n}팀 중 ${A.pass_rate_rank}번째로 많이 던짐), 경기당 패스 ${A.pass_att}회 · 러싱 ${A.rush_att}회.`;
+      if (A.changed) line += ` QB는 ${esc((A.prev_qbs || []).join(", "))} → <b>${esc(A.qb)}</b>로 바뀌었고 선발 ${A.qb_games}경기째예요.`;
+      else if (A.qb) line += ` QB ${esc(A.qb)}.`;
+      const run = B.def_ypc_rank <= n / 3 ? `${b} 런 수비가 캐리당 ${B.def_ypc}야드로 많이 내줘서(${B.def_ypc_rank}위) ${a} 러싱이 유리해요` : B.def_ypc_rank >= (2 * n) / 3 ? `${b} 런 수비가 캐리당 ${B.def_ypc}야드로 단단해서(${n}팀 중 ${B.def_ypc_rank}번째) ${a} 러싱은 불리해요` : "";
+      const pas = B.def_ypt_rank <= n / 3 ? `${b} 패스 수비가 타깃당 ${B.def_ypt}야드로 많이 내줘서(${B.def_ypt_rank}위) ${a} 리시버가 유리해요` : B.def_ypt_rank >= (2 * n) / 3 ? `${b} 패스 수비가 타깃당 ${B.def_ypt}야드로 짠 편이라(${n}팀 중 ${B.def_ypt_rank}번째) ${a} 리시버는 불리해요` : "";
+      const m = [run, pas].filter(Boolean).join(", ");
+      if (m) line += ` 매치업: ${m}.`;
+      out.push(line);
+    } else {
+      let line = `<b>${a} offense</b>: ${Math.round(A.pass_rate * 100)}% pass rate (#${A.pass_rate_rank} of ${n} this week), ${A.pass_att} passes · ${A.rush_att} runs per game.`;
+      if (A.changed) line += ` QB changed ${esc((A.prev_qbs || []).join(", "))} → <b>${esc(A.qb)}</b> (${A.qb_games} start(s)).`;
+      else if (A.qb) line += ` QB ${esc(A.qb)}.`;
+      const run = B.def_ypc_rank <= n / 3 ? `${b} allows ${B.def_ypc} yds/carry (#${B.def_ypc_rank}) — good for ${a} runs` : B.def_ypc_rank >= (2 * n) / 3 ? `${b} allows only ${B.def_ypc} yds/carry — tough for ${a} runs` : "";
+      const pas = B.def_ypt_rank <= n / 3 ? `${b} allows ${B.def_ypt} yds/target (#${B.def_ypt_rank}) — good for ${a} receivers` : B.def_ypt_rank >= (2 * n) / 3 ? `${b} allows only ${B.def_ypt} yds/target — tough for ${a} receivers` : "";
+      const m = [run, pas].filter(Boolean).join("; ");
+      if (m) line += ` Matchup: ${m}.`;
+      out.push(line);
+    }
+  });
+  return out;
 }
 function scenCard(s) {
   const k = ko(), r = s.replacement, isOut = (s.status || "").toLowerCase() === "out";
@@ -676,6 +738,7 @@ function vPick() {
   </section>
   ${p.model_prob != null ? `<div class="small muted">${t.blend(p.model_prob, p.market_prob)}</div>` : ""}
   ${p.check ? `<div class="card small" style="color:var(--warn)">${t.check_warn}</div>` : ""}
+  ${p.detail && p.detail.conf && p.detail.conf !== "high" ? `<section class="card" style="display:flex;flex-direction:column;gap:6px;border-color:${p.detail.conf === "low" ? "var(--bad)" : "var(--line)"}"><div class="row"><b>${ko() ? "신뢰도" : "Confidence"}</b>${confBadge(p.detail)}</div>${confReasons(p).map(x => `<div class="small" style="color:var(--mu2);line-height:1.6">• ${x}</div>`).join("")}<div class="small muted">${ko() ? "신뢰도가 낮은 픽은 순위에서 5%p만큼 뒤로 밀려 있어요 (표시된 확률은 그대로)." : "Low-confidence picks are ranked 5 pts lower (the shown probability is unchanged)."}</div></section>` : ""}
   <section class="card" style="display:flex;flex-direction:column;gap:8px"><b>${ko() ? "분석" : "Analysis"}</b>${narrPick(p).map(x => `<div style="font-size:14px;line-height:1.65;color:var(--mu2)">${x}</div>`).join("")}</section>
   <section class="card" style="display:flex;flex-direction:column;gap:12px">
     <div class="between"><b>${t.recent_n(rec.length)}</b>${d.recent_hits != null ? `<span class="small" style="color:var(--ok);font-weight:700">${t.hits_n(rec.length, d.recent_hits)}</span>` : ""}</div>

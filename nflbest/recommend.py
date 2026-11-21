@@ -56,6 +56,9 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     pred["status"] = pred.player_display_name.map(lambda n: inj.get(picks.name_key(n), {}).get("status", ""))
     pred["injury"] = pred.player_display_name.map(lambda n: inj.get(picks.name_key(n), {}).get("injury", ""))
     pred = _starting_qbs(pred)     # 팀당 주전 QB 1명만 (백업·장기 결장 QB 제외)
+    from . import context
+    qbinfo = context.apply_qb_context(pred, feat)   # QB가 바뀐 팀: 현재 QB 기준으로 리시버 사용량 재계산
+    ctx_ref[0] = qbinfo; ctx_ref[1] = week
     pred0 = pred.copy()            # 부상 반영 전 (시나리오 계산용)
     notes = _redistribute(pred)
     pred = pred[~pred.status.map(live.is_out)]
@@ -70,6 +73,8 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
     b_ref[0] = bundle
     if len(cand):
         cand["detail"] = _details(cand, feat, pred)
+        cand["conf"] = [d.get("conf") for d in cand.detail]
+    styles = context.team_styles(feat, pred, qbinfo)
     scen = _scenarios(bundle, pred0, cand, od, feat)
 
     def pack(df):
@@ -97,6 +102,7 @@ def run(season: int | None = None, week: int | None = None, refresh_only: bool =
             "proj": {"away": round(g.total_line - home_imp, 1), "home": round(home_imp, 1)},
             "weather": wx.get(g.game_id), "notes": [n for n in notes if n["game_id"] == g.game_id],
             "scenarios": scen.get(g.game_id, []),
+            "teams": {g.away_team: styles.get(g.away_team), g.home_team: styles.get(g.home_team)},
             "injuries": pred0[(pred0.game_id == g.game_id) & (pred0.status != "")][
                 ["player_display_name", "team", "position", "status", "injury"]].to_dict("records"),
             "best15_prob": pack(picks.best15(gc, "prob")),
@@ -140,6 +146,7 @@ def _f(x, nd=1):
 
 
 b_ref = [None]   # 확률 범위 계산용 모델 (run에서 채움)
+ctx_ref = [{}, 0]  # QB 맥락, 주차 (신뢰도 계산용)
 
 
 def _role_detail(market: str, u) -> dict | None:
@@ -205,7 +212,11 @@ def _details(cand: pd.DataFrame, feat: pd.DataFrame, pred: pd.DataFrame) -> list
             "role": _role_detail(r.market, u),
             "range": _range(b_ref[0], r.market, getattr(r, "mu", None)),
             "new_role": bool(u.get("role_changed")) if not pd.isna(u.get("role_changed", np.nan)) else False,
+            "qb_ctx": bool(u.get("qb_ctx")) if not pd.isna(u.get("qb_ctx", np.nan)) else False,
         })
+        from . import context
+        lvl, why = context.confidence(r, u, ctx_ref[0], ctx_ref[1], recent[-1]["wk"] if recent else None)
+        out[-1]["conf"] = lvl; out[-1]["conf_why"] = why
     return out
 
 

@@ -97,7 +97,9 @@ def best15(c: pd.DataFrame, by: str = "prob", n: int = 15) -> pd.DataFrame:
         c = c[~c.check.fillna(False).astype(bool)]
     if key == "edge":   # 엣지순: 배당 있는 픽만, 확률 MIN_P_EDGE 이상 (복권식 롱샷 제외)
         c = c[c.edge.notna() & (c.edge > 0) & (c.prob >= M.MIN_P_EDGE)]
-    out = c.sort_values([key, "prob"], ascending=False).head(n).copy()
+    # 신뢰도 '낮음'(역할 변화·QB 교체 직후 등)은 순위에서 5%p만큼 뒤로 (표시 확률은 그대로)
+    c = c.assign(_k=c[key] - np.where(c.get("conf", pd.Series("", index=c.index)) == "low", 0.05, 0))
+    out = c.sort_values(["_k", "prob"], ascending=False).head(n).drop(columns="_k").copy()
     out.insert(0, "rank", range(1, len(out) + 1))
     return out
 
