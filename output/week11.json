@@ -1,11 +1,11 @@
 {
  "season": 2026,
  "week": 11,
- "generated_at": "2026-11-22 15:55 ET",
+ "generated_at": "2026-11-22 16:36 ET",
  "sources": {
   "injuries": "NFL 공식 리포트 313건 · ESPN 실시간 800건",
   "weather": "날씨 9경기 (야외)",
-  "odds": "FanDuel 배당 0개 (남은 크레딧 2)"
+  "odds": "배당 40분 전 데이터 사용 (크레딧 절약)"
  },
  "has_odds": false,
  "overall": {
@@ -224,6 +224,82 @@
    },
    {
     "rank": 4,
+    "player_id": "00-0040735",
+    "name": "Luther Burden III",
+    "pos": "WR",
+    "team": "CHI",
+    "opp": "NO",
+    "market": "receptions",
+    "line": 3.5,
+    "label": "리셉션 4개 이상",
+    "prob": 68.0,
+    "status": "Active",
+    "game_id": "2026_11_NO_CHI",
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "GB",
+       "val": 4.0
+      },
+      {
+       "wk": 6,
+       "opp": "ATL",
+       "val": 8.0
+      },
+      {
+       "wk": 7,
+       "opp": "NE",
+       "val": 4.0
+      },
+      {
+       "wk": 8,
+       "opp": "SEA",
+       "val": 7.0
+      },
+      {
+       "wk": 9,
+       "opp": "TB",
+       "val": 7.0
+      }
+     ],
+     "need": 4.0,
+     "recent_hits": 5,
+     "mu": 4.9,
+     "def_rank": 18.0,
+     "def_allowed": 9.6,
+     "carry_share": 0.025,
+     "tgt_share": 0.223,
+     "rz_share": 0.051,
+     "implied_total": 29.5,
+     "spread": 11.5,
+     "wind": 10.0,
+     "td_rate": 0.312,
+     "role": {
+      "kind": "recs",
+      "team_pass": 31.1,
+      "share": 0.23,
+      "exp_tgt": 6.8,
+      "ypt": 9.19,
+      "catch": 0.69,
+      "def": 1.11,
+      "role_mu": 4.7,
+      "model_mu": 5.1
+     },
+     "range": [
+      3.1,
+      6.4
+     ],
+     "new_role": false,
+     "qb_ctx": true,
+     "conf": "mid",
+     "conf_why": [
+      "qb_mid"
+     ]
+    }
+   },
+   {
+    "rank": 5,
     "player_id": "00-0033077",
     "name": "Dak Prescott",
     "pos": "QB",
@@ -287,7 +363,7 @@
     }
    },
    {
-    "rank": 5,
+    "rank": 6,
     "player_id": "00-0036900",
     "name": "Ja'Marr Chase",
     "pos": "WR",
@@ -361,7 +437,7 @@
     }
    },
    {
-    "rank": 6,
+    "rank": 7,
     "player_id": "00-0037247",
     "name": "George Pickens",
     "pos": "WR",
@@ -435,7 +511,7 @@
     }
    },
    {
-    "rank": 7,
+    "rank": 8,
     "player_id": "00-0039361",
     "name": "Bucky Irving",
     "pos": "RB",
@@ -510,7 +586,7 @@
     }
    },
    {
-    "rank": 8,
+    "rank": 9,
     "player_id": "00-0035261",
     "name": "Tony Pollard",
     "pos": "RB",
@@ -573,7 +649,7 @@
     }
    },
    {
-    "rank": 9,
+    "rank": 10,
     "player_id": "00-0040124",
     "name": "Tetairoa McMillan",
     "pos": "WR",
@@ -647,7 +723,7 @@
     }
    },
    {
-    "rank": 10,
+    "rank": 11,
     "player_id": "00-0037240",
     "name": "Jameson Williams",
     "pos": "WR",
@@ -721,7 +797,7 @@
     }
    },
    {
-    "rank": 11,
+    "rank": 12,
     "player_id": "00-0039139",
     "name": "Jahmyr Gibbs",
     "pos": "RB",
@@ -782,7 +858,7 @@
     }
    },
    {
-    "rank": 12,
+    "rank": 13,
     "player_id": "00-0039337",
     "name": "Malik Nabers",
     "pos": "WR",
@@ -858,7 +934,7 @@
     }
    },
    {
-    "rank": 13,
+    "rank": 14,
     "player_id": "00-0038597",
     "name": "Chase Brown",
     "pos": "RB",
@@ -931,7 +1007,7 @@
     }
    },
    {
-    "rank": 14,
+    "rank": 15,
     "player_id": "00-0037809",
     "name": "Chig Okonkwo",
     "pos": "TE",
@@ -997,80 +1073,6 @@
      "range": [
       2.0,
       5.1
-     ],
-     "new_role": false,
-     "qb_ctx": false,
-     "conf": "high",
-     "conf_why": []
-    }
-   },
-   {
-    "rank": 15,
-    "player_id": "00-0038935",
-    "name": "Brenton Strange",
-    "pos": "TE",
-    "team": "JAX",
-    "opp": "NYG",
-    "market": "receptions",
-    "line": 2.5,
-    "label": "리셉션 3개 이상",
-    "prob": 63.7,
-    "status": "",
-    "game_id": "2026_11_JAX_NYG",
-    "detail": {
-     "recent": [
-      {
-       "wk": 5,
-       "opp": "PHI",
-       "val": 7.0
-      },
-      {
-       "wk": 6,
-       "opp": "HOU",
-       "val": 5.0
-      },
-      {
-       "wk": 8,
-       "opp": "IND",
-       "val": 2.0
-      },
-      {
-       "wk": 9,
-       "opp": "BAL",
-       "val": 2.0
-      },
-      {
-       "wk": 10,
-       "opp": "TEN",
-       "val": 2.0
-      }
-     ],
-     "need": 3.0,
-     "recent_hits": 2,
-     "mu": 3.3,
-     "def_rank": 7.0,
-     "def_allowed": 6.1,
-     "carry_share": 0.0,
-     "tgt_share": 0.141,
-     "rz_share": 0.049,
-     "implied_total": 25.8,
-     "spread": 6.0,
-     "wind": 6.0,
-     "td_rate": 0.312,
-     "role": {
-      "kind": "recs",
-      "team_pass": 28.4,
-      "share": 0.141,
-      "exp_tgt": 3.8,
-      "ypt": 7.88,
-      "catch": 0.72,
-      "def": 0.84,
-      "role_mu": 2.7,
-      "model_mu": 3.3
-     },
-     "range": [
-      1.9,
-      4.7
      ],
      "new_role": false,
      "qb_ctx": false,
@@ -1525,7 +1527,7 @@
     "line": null,
     "label": "애니타임 터치다운",
     "prob": 52.6,
-    "status": "",
+    "status": "Active",
     "game_id": "2026_11_MIA_BUF",
     "detail": {
      "recent": [
@@ -1760,6 +1762,69 @@
    },
    {
     "rank": 12,
+    "player_id": "00-0036275",
+    "name": "D'Andre Swift",
+    "pos": "RB",
+    "team": "CHI",
+    "opp": "NO",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 48.5,
+    "status": "Active",
+    "game_id": "2026_11_NO_CHI",
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "GB",
+       "val": 1.0
+      },
+      {
+       "wk": 6,
+       "opp": "ATL",
+       "val": 2.0
+      },
+      {
+       "wk": 7,
+       "opp": "NE",
+       "val": 1.0
+      },
+      {
+       "wk": 8,
+       "opp": "SEA",
+       "val": 3.0
+      },
+      {
+       "wk": 9,
+       "opp": "TB",
+       "val": 0.0
+      }
+     ],
+     "need": null,
+     "recent_hits": 4,
+     "mu": null,
+     "def_rank": 2.0,
+     "def_allowed": 1.5,
+     "carry_share": 0.558,
+     "tgt_share": 0.087,
+     "rz_share": 0.393,
+     "implied_total": 29.5,
+     "spread": 11.5,
+     "wind": 10.0,
+     "td_rate": 0.5,
+     "role": null,
+     "range": null,
+     "new_role": false,
+     "qb_ctx": true,
+     "conf": "mid",
+     "conf_why": [
+      "qb_mid"
+     ]
+    }
+   },
+   {
+    "rank": 13,
     "player_id": "00-0031588",
     "name": "Stefon Diggs",
     "pos": "WR",
@@ -1820,7 +1885,7 @@
     }
    },
    {
-    "rank": 13,
+    "rank": 14,
     "player_id": "00-0036555",
     "name": "Chuba Hubbard",
     "pos": "RB",
@@ -1881,7 +1946,7 @@
     }
    },
    {
-    "rank": 14,
+    "rank": 15,
     "player_id": "00-0041496",
     "name": "Jonah Coleman",
     "pos": "RB",
@@ -1939,69 +2004,6 @@
      "qb_ctx": false,
      "conf": "high",
      "conf_why": []
-    }
-   },
-   {
-    "rank": 15,
-    "player_id": "00-0036275",
-    "name": "D'Andre Swift",
-    "pos": "RB",
-    "team": "CHI",
-    "opp": "NO",
-    "market": "td",
-    "line": null,
-    "label": "애니타임 터치다운",
-    "prob": 50.8,
-    "status": "Active",
-    "game_id": "2026_11_NO_CHI",
-    "detail": {
-     "recent": [
-      {
-       "wk": 5,
-       "opp": "GB",
-       "val": 1.0
-      },
-      {
-       "wk": 6,
-       "opp": "ATL",
-       "val": 2.0
-      },
-      {
-       "wk": 7,
-       "opp": "NE",
-       "val": 1.0
-      },
-      {
-       "wk": 8,
-       "opp": "SEA",
-       "val": 3.0
-      },
-      {
-       "wk": 9,
-       "opp": "TB",
-       "val": 0.0
-      }
-     ],
-     "need": null,
-     "recent_hits": 4,
-     "mu": null,
-     "def_rank": 2.0,
-     "def_allowed": 1.5,
-     "carry_share": 0.558,
-     "tgt_share": 0.087,
-     "rz_share": 0.393,
-     "implied_total": 29.5,
-     "spread": 11.5,
-     "wind": 10.0,
-     "td_rate": 0.5,
-     "role": null,
-     "range": null,
-     "new_role": true,
-     "qb_ctx": true,
-     "conf": "low",
-     "conf_why": [
-      "role"
-     ]
     }
    }
   ],
@@ -2194,6 +2196,13 @@
      "injury": ""
     },
     {
+     "player_display_name": "Josh Allen",
+     "team": "BUF",
+     "position": "QB",
+     "status": "Active",
+     "injury": ""
+    },
+    {
      "player_display_name": "Ty Johnson",
      "team": "BUF",
      "position": "RB",
@@ -2204,13 +2213,6 @@
      "player_display_name": "Dawson Knox",
      "team": "BUF",
      "position": "TE",
-     "status": "Active",
-     "injury": ""
-    },
-    {
-     "player_display_name": "Khalil Shakir",
-     "team": "BUF",
-     "position": "WR",
      "status": "Active",
      "injury": ""
     },
@@ -2353,7 +2355,7 @@
      "line": 1.5,
      "label": "패싱 TD 2개 이상",
      "prob": 60.0,
-     "status": "",
+     "status": "Active",
      "game_id": "2026_11_MIA_BUF",
      "detail": {
       "recent": [
@@ -2493,7 +2495,7 @@
      "line": 224.5,
      "label": "패싱 225야드 이상",
      "prob": 58.1,
-     "status": "",
+     "status": "Active",
      "game_id": "2026_11_MIA_BUF",
      "detail": {
       "recent": [
@@ -2859,7 +2861,7 @@
      "line": null,
      "label": "애니타임 터치다운",
      "prob": 52.6,
-     "status": "",
+     "status": "Active",
      "game_id": "2026_11_MIA_BUF",
      "detail": {
       "recent": [
@@ -2920,7 +2922,7 @@
      "line": 39.5,
      "label": "리시빙 40야드 이상",
      "prob": 56.2,
-     "status": "Active",
+     "status": "",
      "game_id": "2026_11_MIA_BUF",
      "detail": {
       "recent": [
@@ -3122,7 +3124,7 @@
      "line": null,
      "label": "애니타임 터치다운",
      "prob": 32.7,
-     "status": "Active",
+     "status": "",
      "game_id": "2026_11_MIA_BUF",
      "detail": {
       "recent": [
@@ -3322,7 +3324,248 @@
     "precip_pct": 12
    },
    "notes": [],
-   "scenarios": [],
+   "scenarios": [
+    {
+     "player_id": "00-0032764",
+     "name": "Derrick Henry",
+     "pos": "RB",
+     "team": "BAL",
+     "status": "Questionable",
+     "injury": "Concussion",
+     "carry_share": 0.633,
+     "tgt_share": 0.059,
+     "own_picks": [
+      {
+       "label": "러싱 60야드 이상",
+       "prob": 57.8
+      },
+      {
+       "label": "애니타임 터치다운",
+       "prob": 43.5
+      }
+     ],
+     "effects": [
+      {
+       "player_id": "00-0039064",
+       "name": "Zay Flowers",
+       "label": "리셉션 5개 이상",
+       "market": "receptions",
+       "line": 4.5,
+       "prob_play": 61.5,
+       "prob_out": 65.9
+      },
+      {
+       "player_id": "00-0034753",
+       "name": "Mark Andrews",
+       "label": "리셉션 4개 이상",
+       "market": "receptions",
+       "line": 3.5,
+       "prob_play": 60.2,
+       "prob_out": 61.6
+      },
+      {
+       "player_id": "00-0039064",
+       "name": "Zay Flowers",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 31.8,
+       "prob_out": 33.0
+      }
+     ],
+     "replacement": {
+      "name": "Justice Hill",
+      "pos": "RB",
+      "team": "BAL",
+      "games": 10,
+      "rush_yds": 244.0,
+      "rec_yds": 145.0,
+      "rec": 25.0,
+      "tds": 1.0,
+      "carry_share": 0.144,
+      "tgt_share": 0.146,
+      "last3": [
+       {
+        "wk": 8,
+        "opp": "BUF",
+        "car": 3.0,
+        "rush": 15.0,
+        "tgt": 8.0,
+        "rec": 4.0,
+        "recyd": 20.0,
+        "td": 0.0
+       },
+       {
+        "wk": 9,
+        "opp": "JAX",
+        "car": 9.0,
+        "rush": 85.0,
+        "tgt": 3.0,
+        "rec": 3.0,
+        "recyd": 7.0,
+        "td": 1.0
+       },
+       {
+        "wk": 10,
+        "opp": "LAC",
+        "car": 3.0,
+        "rush": 4.0,
+        "tgt": 7.0,
+        "rec": 5.0,
+        "recyd": 34.0,
+        "td": 0.0
+       }
+      ],
+      "picks": [
+       {
+        "label": "리셉션 3개 이상",
+        "market": "receptions",
+        "prob_out": 63.7,
+        "prob_play": 63.7
+       },
+       {
+        "label": "애니타임 터치다운",
+        "market": "td",
+        "prob_out": 27.0,
+        "prob_play": 16.2
+       }
+      ],
+      "mu_play": 16.1,
+      "mu_out": 44.2,
+      "stat": "rush_yds"
+     }
+    },
+    {
+     "player_id": "00-0039491",
+     "name": "Jalen Coker",
+     "pos": "WR",
+     "team": "CAR",
+     "status": "Questionable",
+     "injury": "Undisclosed",
+     "carry_share": 0.015,
+     "tgt_share": 0.177,
+     "own_picks": [
+      {
+       "label": "애니타임 터치다운",
+       "prob": 27.1
+      }
+     ],
+     "effects": [
+      {
+       "player_id": "00-0040124",
+       "name": "Tetairoa McMillan",
+       "label": "리시빙 40야드 이상",
+       "market": "rec_yds",
+       "line": 39.5,
+       "prob_play": 64.7,
+       "prob_out": 75.7
+      },
+      {
+       "player_id": "00-0040124",
+       "name": "Tetairoa McMillan",
+       "label": "리셉션 4개 이상",
+       "market": "receptions",
+       "line": 3.5,
+       "prob_play": 62.2,
+       "prob_out": 70.1
+      },
+      {
+       "player_id": "00-0040124",
+       "name": "Tetairoa McMillan",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 31.1,
+       "prob_out": 34.5
+      },
+      {
+       "player_id": "00-0031610",
+       "name": "Darren Waller",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 22.1,
+       "prob_out": 24.7
+      },
+      {
+       "player_id": "00-0037005",
+       "name": "Tommy Tremble",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 20.7,
+       "prob_out": 23.1
+      }
+     ],
+     "replacement": {
+      "name": "Tetairoa McMillan",
+      "pos": "WR",
+      "team": "CAR",
+      "games": 9,
+      "rush_yds": 0.0,
+      "rec_yds": 660.0,
+      "rec": 49.0,
+      "tds": 3.0,
+      "carry_share": 0.0,
+      "tgt_share": 0.241,
+      "last3": [
+       {
+        "wk": 8,
+        "opp": "GB",
+        "car": 0.0,
+        "rush": 0.0,
+        "tgt": 11.0,
+        "rec": 6.0,
+        "recyd": 58.0,
+        "td": 0.0
+       },
+       {
+        "wk": 9,
+        "opp": "DEN",
+        "car": 0.0,
+        "rush": 0.0,
+        "tgt": 6.0,
+        "rec": 4.0,
+        "recyd": 56.0,
+        "td": 1.0
+       },
+       {
+        "wk": 10,
+        "opp": "NO",
+        "car": 0.0,
+        "rush": 0.0,
+        "tgt": 7.0,
+        "rec": 3.0,
+        "recyd": 35.0,
+        "td": 0.0
+       }
+      ],
+      "picks": [
+       {
+        "label": "리셉션 5개 이상",
+        "market": "receptions",
+        "prob_out": 61.1,
+        "prob_play": 53.4
+       },
+       {
+        "label": "리시빙 60야드 이상",
+        "market": "rec_yds",
+        "prob_out": 58.8,
+        "prob_play": 44.5
+       },
+       {
+        "label": "애니타임 터치다운",
+        "market": "td",
+        "prob_out": 34.5,
+        "prob_play": 31.1
+       }
+      ],
+      "mu_play": 57.0,
+      "mu_out": 78.5,
+      "stat": "rec_yds"
+     }
+    }
+   ],
    "teams": {
     "BAL": {
      "pass_att": 31.7,
@@ -3366,6 +3609,13 @@
      "position": "TE",
      "status": "Active",
      "injury": ""
+    },
+    {
+     "player_display_name": "Derrick Henry",
+     "team": "BAL",
+     "position": "RB",
+     "status": "Questionable",
+     "injury": "Concussion"
     },
     {
      "player_display_name": "Mark Andrews",
@@ -3417,13 +3667,6 @@
      "injury": ""
     },
     {
-     "player_display_name": "Zay Flowers",
-     "team": "BAL",
-     "position": "WR",
-     "status": "Active",
-     "injury": ""
-    },
-    {
      "player_display_name": "Bryce Young",
      "team": "CAR",
      "position": "QB",
@@ -3441,8 +3684,8 @@
      "player_display_name": "Jalen Coker",
      "team": "CAR",
      "position": "WR",
-     "status": "Active",
-     "injury": ""
+     "status": "Questionable",
+     "injury": "Undisclosed"
     },
     {
      "player_display_name": "Rasheen Ali",
@@ -3860,7 +4103,7 @@
      "line": 4.5,
      "label": "리셉션 5개 이상",
      "prob": 61.5,
-     "status": "Active",
+     "status": "",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
       "recent": [
@@ -4076,7 +4319,7 @@
      "line": 59.5,
      "label": "리시빙 60야드 이상",
      "prob": 59.9,
-     "status": "Active",
+     "status": "",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
       "recent": [
@@ -4152,7 +4395,7 @@
      "line": 59.5,
      "label": "러싱 60야드 이상",
      "prob": 57.8,
-     "status": "",
+     "status": "Questionable",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
       "recent": [
@@ -4212,7 +4455,8 @@
       "qb_ctx": true,
       "conf": "low",
       "conf_why": [
-       "qb_new"
+       "qb_new",
+       "status"
       ]
      }
     },
@@ -4288,7 +4532,7 @@
      "line": null,
      "label": "애니타임 터치다운",
      "prob": 43.5,
-     "status": "",
+     "status": "Questionable",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
       "recent": [
@@ -4336,7 +4580,8 @@
       "qb_ctx": true,
       "conf": "low",
       "conf_why": [
-       "qb_new"
+       "qb_new",
+       "status"
       ]
      }
     },
@@ -4412,7 +4657,7 @@
      "line": null,
      "label": "애니타임 터치다운",
      "prob": 27.1,
-     "status": "Active",
+     "status": "Questionable",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
       "recent": [
@@ -4458,8 +4703,10 @@
       "range": null,
       "new_role": false,
       "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
+      "conf": "mid",
+      "conf_why": [
+       "status"
+      ]
      }
     },
     {
@@ -4473,7 +4720,7 @@
      "line": null,
      "label": "애니타임 터치다운",
      "prob": 31.8,
-     "status": "Active",
+     "status": "",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
       "recent": [
@@ -4547,14 +4794,6 @@
     "precip_pct": 59
    },
    "notes": [
-    {
-     "game_id": "2026_11_NO_CHI",
-     "team": "CHI",
-     "name": "Roschon Johnson",
-     "pos": "RB",
-     "status": "Out",
-     "effect": "동료 타깃 x1.02, RB 캐리 x1.08"
-    },
     {
      "game_id": "2026_11_NO_CHI",
      "team": "NO",
@@ -4898,7 +5137,7 @@
      "player_display_name": "Roschon Johnson",
      "team": "CHI",
      "position": "RB",
-     "status": "Out",
+     "status": "Questionable",
      "injury": "Ankle"
     },
     {
@@ -5050,28 +5289,331 @@
       "role": {
        "kind": "recs",
        "team_pass": 31.1,
-       "share": 0.234,
-       "exp_tgt": 6.9,
+       "share": 0.23,
+       "exp_tgt": 6.8,
        "ypt": 9.19,
        "catch": 0.69,
        "def": 1.11,
-       "role_mu": 4.8,
+       "role_mu": 4.7,
        "model_mu": 5.1
       },
       "range": [
        3.1,
        6.4
       ],
-      "new_role": true,
+      "new_role": false,
       "qb_ctx": true,
-      "conf": "low",
+      "conf": "mid",
       "conf_why": [
-       "role"
+       "qb_mid"
       ]
      }
     },
     {
      "rank": 2,
+     "player_id": "00-0040126",
+     "name": "Colston Loveland",
+     "pos": "TE",
+     "team": "CHI",
+     "opp": "NO",
+     "market": "rec_yds",
+     "line": 39.5,
+     "label": "리시빙 40야드 이상",
+     "prob": 62.5,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "GB",
+        "val": 19.0
+       },
+       {
+        "wk": 6,
+        "opp": "ATL",
+        "val": 65.0
+       },
+       {
+        "wk": 7,
+        "opp": "NE",
+        "val": 69.0
+       },
+       {
+        "wk": 8,
+        "opp": "SEA",
+        "val": 65.0
+       },
+       {
+        "wk": 9,
+        "opp": "TB",
+        "val": 54.0
+       }
+      ],
+      "need": 40.0,
+      "recent_hits": 4,
+      "mu": 54.2,
+      "def_rank": 6.0,
+      "def_allowed": 67.5,
+      "carry_share": 0.0,
+      "tgt_share": 0.226,
+      "rz_share": 0.045,
+      "implied_total": 29.5,
+      "spread": 11.5,
+      "wind": 10.0,
+      "td_rate": 0.312,
+      "role": {
+       "kind": "rec",
+       "team_pass": 31.1,
+       "share": 0.229,
+       "exp_tgt": 6.8,
+       "ypt": 7.21,
+       "catch": 0.65,
+       "def": 1.08,
+       "role_mu": 52.6,
+       "model_mu": 55.8
+      },
+      "range": [
+       28.0,
+       78.0
+      ],
+      "new_role": false,
+      "qb_ctx": true,
+      "conf": "mid",
+      "conf_why": [
+       "qb_mid"
+      ]
+     }
+    },
+    {
+     "rank": 3,
+     "player_id": "00-0040126",
+     "name": "Colston Loveland",
+     "pos": "TE",
+     "team": "CHI",
+     "opp": "NO",
+     "market": "receptions",
+     "line": 3.5,
+     "label": "리셉션 4개 이상",
+     "prob": 62.0,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "GB",
+        "val": 2.0
+       },
+       {
+        "wk": 6,
+        "opp": "ATL",
+        "val": 6.0
+       },
+       {
+        "wk": 7,
+        "opp": "NE",
+        "val": 7.0
+       },
+       {
+        "wk": 8,
+        "opp": "SEA",
+        "val": 7.0
+       },
+       {
+        "wk": 9,
+        "opp": "TB",
+        "val": 4.0
+       }
+      ],
+      "need": 4.0,
+      "recent_hits": 4,
+      "mu": 4.5,
+      "def_rank": 9.0,
+      "def_allowed": 5.9,
+      "carry_share": 0.0,
+      "tgt_share": 0.226,
+      "rz_share": 0.045,
+      "implied_total": 29.5,
+      "spread": 11.5,
+      "wind": 10.0,
+      "td_rate": 0.312,
+      "role": {
+       "kind": "recs",
+       "team_pass": 31.1,
+       "share": 0.229,
+       "exp_tgt": 6.8,
+       "ypt": 7.21,
+       "catch": 0.65,
+       "def": 1.08,
+       "role_mu": 4.4,
+       "model_mu": 4.7
+      },
+      "range": [
+       2.9,
+       6.1
+      ],
+      "new_role": false,
+      "qb_ctx": true,
+      "conf": "mid",
+      "conf_why": [
+       "qb_mid"
+      ]
+     }
+    },
+    {
+     "rank": 4,
+     "player_id": "00-0036275",
+     "name": "D'Andre Swift",
+     "pos": "RB",
+     "team": "CHI",
+     "opp": "NO",
+     "market": "rush_yds",
+     "line": 49.5,
+     "label": "러싱 50야드 이상",
+     "prob": 61.7,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "GB",
+        "val": 43.0
+       },
+       {
+        "wk": 6,
+        "opp": "ATL",
+        "val": 44.0
+       },
+       {
+        "wk": 7,
+        "opp": "NE",
+        "val": 78.0
+       },
+       {
+        "wk": 8,
+        "opp": "SEA",
+        "val": 69.0
+       },
+       {
+        "wk": 9,
+        "opp": "TB",
+        "val": 31.0
+       }
+      ],
+      "need": 50.0,
+      "recent_hits": 2,
+      "mu": 68.2,
+      "def_rank": 6.0,
+      "def_allowed": 104.6,
+      "carry_share": 0.558,
+      "tgt_share": 0.087,
+      "rz_share": 0.393,
+      "implied_total": 29.5,
+      "spread": 11.5,
+      "wind": 10.0,
+      "td_rate": 0.5,
+      "role": {
+       "kind": "rush",
+       "team_car": 38.7,
+       "share": 0.558,
+       "exp_car": 21.6,
+       "ypc": 4.1,
+       "def": 1.01,
+       "role_mu": 89.4,
+       "model_mu": 68.2
+      },
+      "range": [
+       38.0,
+       84.0
+      ],
+      "new_role": false,
+      "qb_ctx": true,
+      "conf": "mid",
+      "conf_why": [
+       "qb_mid"
+      ]
+     }
+    },
+    {
+     "rank": 5,
+     "player_id": "00-0040735",
+     "name": "Luther Burden III",
+     "pos": "WR",
+     "team": "CHI",
+     "opp": "NO",
+     "market": "rec_yds",
+     "line": 49.5,
+     "label": "리시빙 50야드 이상",
+     "prob": 60.9,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "GB",
+        "val": 47.0
+       },
+       {
+        "wk": 6,
+        "opp": "ATL",
+        "val": 95.0
+       },
+       {
+        "wk": 7,
+        "opp": "NE",
+        "val": 130.0
+       },
+       {
+        "wk": 8,
+        "opp": "SEA",
+        "val": 56.0
+       },
+       {
+        "wk": 9,
+        "opp": "TB",
+        "val": 97.0
+       }
+      ],
+      "need": 50.0,
+      "recent_hits": 4,
+      "mu": 68.3,
+      "def_rank": 12.0,
+      "def_allowed": 144.8,
+      "carry_share": 0.025,
+      "tgt_share": 0.223,
+      "rz_share": 0.051,
+      "implied_total": 29.5,
+      "spread": 11.5,
+      "wind": 10.0,
+      "td_rate": 0.312,
+      "role": {
+       "kind": "rec",
+       "team_pass": 31.1,
+       "share": 0.23,
+       "exp_tgt": 6.8,
+       "ypt": 9.19,
+       "catch": 0.69,
+       "def": 1.11,
+       "role_mu": 69.5,
+       "model_mu": 67.1
+      },
+      "range": [
+       36.0,
+       90.0
+      ],
+      "new_role": false,
+      "qb_ctx": true,
+      "conf": "mid",
+      "conf_why": [
+       "qb_mid"
+      ]
+     }
+    },
+    {
+     "rank": 6,
      "player_id": "00-0037239",
      "name": "Chris Olave",
      "pos": "WR",
@@ -5147,7 +5689,7 @@
      }
     },
     {
-     "rank": 3,
+     "rank": 7,
      "player_id": "00-0039918",
      "name": "Caleb Williams",
      "pos": "QB",
@@ -5211,7 +5753,7 @@
      }
     },
     {
-     "rank": 4,
+     "rank": 8,
      "player_id": "00-0037239",
      "name": "Chris Olave",
      "pos": "WR",
@@ -5287,7 +5829,7 @@
      }
     },
     {
-     "rank": 5,
+     "rank": 9,
      "player_id": "00-0039918",
      "name": "Caleb Williams",
      "pos": "QB",
@@ -5351,7 +5893,7 @@
      }
     },
     {
-     "rank": 6,
+     "rank": 10,
      "player_id": "00-0033906",
      "name": "Alvin Kamara",
      "pos": "RB",
@@ -5427,82 +5969,7 @@
      }
     },
     {
-     "rank": 7,
-     "player_id": "00-0036275",
-     "name": "D'Andre Swift",
-     "pos": "RB",
-     "team": "CHI",
-     "opp": "NO",
-     "market": "rush_yds",
-     "line": 59.5,
-     "label": "러싱 60야드 이상",
-     "prob": 63.6,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "GB",
-        "val": 43.0
-       },
-       {
-        "wk": 6,
-        "opp": "ATL",
-        "val": 44.0
-       },
-       {
-        "wk": 7,
-        "opp": "NE",
-        "val": 78.0
-       },
-       {
-        "wk": 8,
-        "opp": "SEA",
-        "val": 69.0
-       },
-       {
-        "wk": 9,
-        "opp": "TB",
-        "val": 31.0
-       }
-      ],
-      "need": 60.0,
-      "recent_hits": 2,
-      "mu": 84.9,
-      "def_rank": 6.0,
-      "def_allowed": 104.6,
-      "carry_share": 0.558,
-      "tgt_share": 0.087,
-      "rz_share": 0.393,
-      "implied_total": 29.5,
-      "spread": 11.5,
-      "wind": 10.0,
-      "td_rate": 0.5,
-      "role": {
-       "kind": "rush",
-       "team_car": 38.7,
-       "share": 0.601,
-       "exp_car": 23.3,
-       "ypc": 4.1,
-       "def": 1.01,
-       "role_mu": 96.3,
-       "model_mu": 68.2
-      },
-      "range": [
-       47.0,
-       104.0
-      ],
-      "new_role": true,
-      "qb_ctx": true,
-      "conf": "low",
-      "conf_why": [
-       "role"
-      ]
-     }
-    },
-    {
-     "rank": 8,
+     "rank": 11,
      "player_id": "00-0041029",
      "name": "Jordyn Tyson",
      "pos": "WR",
@@ -5563,311 +6030,7 @@
      }
     },
     {
-     "rank": 9,
-     "player_id": "00-0040126",
-     "name": "Colston Loveland",
-     "pos": "TE",
-     "team": "CHI",
-     "opp": "NO",
-     "market": "rec_yds",
-     "line": 39.5,
-     "label": "리시빙 40야드 이상",
-     "prob": 62.6,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "GB",
-        "val": 19.0
-       },
-       {
-        "wk": 6,
-        "opp": "ATL",
-        "val": 65.0
-       },
-       {
-        "wk": 7,
-        "opp": "NE",
-        "val": 69.0
-       },
-       {
-        "wk": 8,
-        "opp": "SEA",
-        "val": 65.0
-       },
-       {
-        "wk": 9,
-        "opp": "TB",
-        "val": 54.0
-       }
-      ],
-      "need": 40.0,
-      "recent_hits": 4,
-      "mu": 54.3,
-      "def_rank": 6.0,
-      "def_allowed": 67.5,
-      "carry_share": 0.0,
-      "tgt_share": 0.226,
-      "rz_share": 0.045,
-      "implied_total": 29.5,
-      "spread": 11.5,
-      "wind": 10.0,
-      "td_rate": 0.312,
-      "role": {
-       "kind": "rec",
-       "team_pass": 31.1,
-       "share": 0.233,
-       "exp_tgt": 6.9,
-       "ypt": 7.21,
-       "catch": 0.65,
-       "def": 1.08,
-       "role_mu": 53.4,
-       "model_mu": 55.8
-      },
-      "range": [
-       28.0,
-       78.0
-      ],
-      "new_role": true,
-      "qb_ctx": true,
-      "conf": "low",
-      "conf_why": [
-       "role"
-      ]
-     }
-    },
-    {
-     "rank": 10,
-     "player_id": "00-0040735",
-     "name": "Luther Burden III",
-     "pos": "WR",
-     "team": "CHI",
-     "opp": "NO",
-     "market": "rec_yds",
-     "line": 49.5,
-     "label": "리시빙 50야드 이상",
-     "prob": 62.4,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "GB",
-        "val": 47.0
-       },
-       {
-        "wk": 6,
-        "opp": "ATL",
-        "val": 95.0
-       },
-       {
-        "wk": 7,
-        "opp": "NE",
-        "val": 130.0
-       },
-       {
-        "wk": 8,
-        "opp": "SEA",
-        "val": 56.0
-       },
-       {
-        "wk": 9,
-        "opp": "TB",
-        "val": 97.0
-       }
-      ],
-      "need": 50.0,
-      "recent_hits": 4,
-      "mu": 70.1,
-      "def_rank": 12.0,
-      "def_allowed": 144.8,
-      "carry_share": 0.025,
-      "tgt_share": 0.223,
-      "rz_share": 0.051,
-      "implied_total": 29.5,
-      "spread": 11.5,
-      "wind": 10.0,
-      "td_rate": 0.312,
-      "role": {
-       "kind": "rec",
-       "team_pass": 31.1,
-       "share": 0.234,
-       "exp_tgt": 6.9,
-       "ypt": 9.19,
-       "catch": 0.69,
-       "def": 1.11,
-       "role_mu": 70.7,
-       "model_mu": 67.1
-      },
-      "range": [
-       37.0,
-       92.0
-      ],
-      "new_role": true,
-      "qb_ctx": true,
-      "conf": "low",
-      "conf_why": [
-       "role"
-      ]
-     }
-    },
-    {
-     "rank": 11,
-     "player_id": "00-0040126",
-     "name": "Colston Loveland",
-     "pos": "TE",
-     "team": "CHI",
-     "opp": "NO",
-     "market": "receptions",
-     "line": 3.5,
-     "label": "리셉션 4개 이상",
-     "prob": 61.9,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "GB",
-        "val": 2.0
-       },
-       {
-        "wk": 6,
-        "opp": "ATL",
-        "val": 6.0
-       },
-       {
-        "wk": 7,
-        "opp": "NE",
-        "val": 7.0
-       },
-       {
-        "wk": 8,
-        "opp": "SEA",
-        "val": 7.0
-       },
-       {
-        "wk": 9,
-        "opp": "TB",
-        "val": 4.0
-       }
-      ],
-      "need": 4.0,
-      "recent_hits": 4,
-      "mu": 4.5,
-      "def_rank": 9.0,
-      "def_allowed": 5.9,
-      "carry_share": 0.0,
-      "tgt_share": 0.226,
-      "rz_share": 0.045,
-      "implied_total": 29.5,
-      "spread": 11.5,
-      "wind": 10.0,
-      "td_rate": 0.312,
-      "role": {
-       "kind": "recs",
-       "team_pass": 31.1,
-       "share": 0.233,
-       "exp_tgt": 6.9,
-       "ypt": 7.21,
-       "catch": 0.65,
-       "def": 1.08,
-       "role_mu": 4.5,
-       "model_mu": 4.7
-      },
-      "range": [
-       2.9,
-       6.1
-      ],
-      "new_role": true,
-      "qb_ctx": true,
-      "conf": "low",
-      "conf_why": [
-       "role"
-      ]
-     }
-    },
-    {
      "rank": 12,
-     "player_id": "00-0040236",
-     "name": "Kyle Monangai",
-     "pos": "RB",
-     "team": "CHI",
-     "opp": "NO",
-     "market": "rush_yds",
-     "line": 49.5,
-     "label": "러싱 50야드 이상",
-     "prob": 61.4,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 20,
-        "opp": "LA",
-        "val": 36.0
-       },
-       {
-        "wk": 1,
-        "opp": "CAR",
-        "val": 100.0
-       },
-       {
-        "wk": 2,
-        "opp": "MIN",
-        "val": 47.0
-       },
-       {
-        "wk": 3,
-        "opp": "PHI",
-        "val": 31.0
-       },
-       {
-        "wk": 4,
-        "opp": "NYJ",
-        "val": 146.0
-       }
-      ],
-      "need": 50.0,
-      "recent_hits": 2,
-      "mu": 61.4,
-      "def_rank": 6.0,
-      "def_allowed": 104.6,
-      "carry_share": 0.367,
-      "tgt_share": 0.052,
-      "rz_share": 0.27,
-      "implied_total": 29.5,
-      "spread": 11.5,
-      "wind": 10.0,
-      "td_rate": 0.375,
-      "role": {
-       "kind": "rush",
-       "team_car": 38.7,
-       "share": 0.395,
-       "exp_car": 15.3,
-       "ypc": 4.66,
-       "def": 1.01,
-       "role_mu": 71.8,
-       "model_mu": 47.4
-      },
-      "range": [
-       36.0,
-       84.0
-      ],
-      "new_role": true,
-      "qb_ctx": true,
-      "conf": "low",
-      "conf_why": [
-       "role",
-       "layoff"
-      ]
-     }
-    },
-    {
-     "rank": 13,
      "player_id": "00-0036973",
      "name": "Travis Etienne",
      "pos": "RB",
@@ -5942,7 +6105,7 @@
      }
     },
     {
-     "rank": 14,
+     "rank": 13,
      "player_id": "00-0041029",
      "name": "Jordyn Tyson",
      "pos": "WR",
@@ -6003,6 +6166,81 @@
      }
     },
     {
+     "rank": 14,
+     "player_id": "00-0040236",
+     "name": "Kyle Monangai",
+     "pos": "RB",
+     "team": "CHI",
+     "opp": "NO",
+     "market": "rush_yds",
+     "line": 39.5,
+     "label": "러싱 40야드 이상",
+     "prob": 56.4,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 20,
+        "opp": "LA",
+        "val": 36.0
+       },
+       {
+        "wk": 1,
+        "opp": "CAR",
+        "val": 100.0
+       },
+       {
+        "wk": 2,
+        "opp": "MIN",
+        "val": 47.0
+       },
+       {
+        "wk": 3,
+        "opp": "PHI",
+        "val": 31.0
+       },
+       {
+        "wk": 4,
+        "opp": "NYJ",
+        "val": 146.0
+       }
+      ],
+      "need": 40.0,
+      "recent_hits": 3,
+      "mu": 47.4,
+      "def_rank": 6.0,
+      "def_allowed": 104.6,
+      "carry_share": 0.367,
+      "tgt_share": 0.052,
+      "rz_share": 0.27,
+      "implied_total": 29.5,
+      "spread": 11.5,
+      "wind": 10.0,
+      "td_rate": 0.375,
+      "role": {
+       "kind": "rush",
+       "team_car": 38.7,
+       "share": 0.367,
+       "exp_car": 14.2,
+       "ypc": 4.66,
+       "def": 1.01,
+       "role_mu": 66.6,
+       "model_mu": 47.4
+      },
+      "range": [
+       25.0,
+       68.0
+      ],
+      "new_role": false,
+      "qb_ctx": true,
+      "conf": "low",
+      "conf_why": [
+       "layoff"
+      ]
+     }
+    },
+    {
      "rank": 15,
      "player_id": "00-0036275",
      "name": "D'Andre Swift",
@@ -6012,7 +6250,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 50.8,
+     "prob": 48.5,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -6057,11 +6295,11 @@
       "td_rate": 0.5,
       "role": null,
       "range": null,
-      "new_role": true,
+      "new_role": false,
       "qb_ctx": true,
-      "conf": "low",
+      "conf": "mid",
       "conf_why": [
-       "role"
+       "qb_mid"
       ]
      }
     }
@@ -9799,7 +10037,197 @@
      "effect": "동료 타깃 x1.05, RB 캐리 x1.00"
     }
    ],
-   "scenarios": [],
+   "scenarios": [
+    {
+     "player_id": "00-0033885",
+     "name": "David Njoku",
+     "pos": "TE",
+     "team": "LAC",
+     "status": "Questionable",
+     "injury": "Shoulder",
+     "carry_share": 0.0,
+     "tgt_share": 0.122,
+     "own_picks": [],
+     "effects": [
+      {
+       "player_id": "00-0040727",
+       "name": "Tre Harris",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 22.2,
+       "prob_out": 23.7
+      },
+      {
+       "player_id": "00-0039915",
+       "name": "Ladd McConkey",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 21.4,
+       "prob_out": 22.9
+      }
+     ],
+     "replacement": {
+      "name": "Charlie Kolar",
+      "pos": "TE",
+      "team": "LAC",
+      "games": 7,
+      "rush_yds": 3.0,
+      "rec_yds": 145.0,
+      "rec": 15.0,
+      "tds": 0.0,
+      "carry_share": 0.005,
+      "tgt_share": 0.12,
+      "last3": [
+       {
+        "wk": 8,
+        "opp": "LA",
+        "car": 0.0,
+        "rush": 0.0,
+        "tgt": 4.0,
+        "rec": 1.0,
+        "recyd": 20.0,
+        "td": 0.0
+       },
+       {
+        "wk": 9,
+        "opp": "HOU",
+        "car": 1.0,
+        "rush": 3.0,
+        "tgt": 3.0,
+        "rec": 3.0,
+        "recyd": 31.0,
+        "td": 0.0
+       },
+       {
+        "wk": 10,
+        "opp": "BAL",
+        "car": 0.0,
+        "rush": 0.0,
+        "tgt": 3.0,
+        "rec": 2.0,
+        "recyd": 16.0,
+        "td": 0.0
+       }
+      ],
+      "picks": [],
+      "mu_play": 25.8,
+      "mu_out": 28.3,
+      "stat": "rec_yds"
+     }
+    },
+    {
+     "player_id": "00-0038454",
+     "name": "Keaton Mitchell",
+     "pos": "RB",
+     "team": "LAC",
+     "status": "Questionable",
+     "injury": "Back",
+     "carry_share": 0.169,
+     "tgt_share": 0.09,
+     "own_picks": [],
+     "effects": [
+      {
+       "player_id": "00-0040666",
+       "name": "Omarion Hampton",
+       "label": "러싱 50야드 이상",
+       "market": "rush_yds",
+       "line": 49.5,
+       "prob_play": 60.5,
+       "prob_out": 65.3
+      },
+      {
+       "player_id": "00-0040666",
+       "name": "Omarion Hampton",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 29.5,
+       "prob_out": 33.3
+      },
+      {
+       "player_id": "00-0040727",
+       "name": "Tre Harris",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 22.2,
+       "prob_out": 23.3
+      },
+      {
+       "player_id": "00-0039915",
+       "name": "Ladd McConkey",
+       "label": "애니타임 터치다운",
+       "market": "td",
+       "line": null,
+       "prob_play": 21.4,
+       "prob_out": 22.5
+      }
+     ],
+     "replacement": {
+      "name": "Omarion Hampton",
+      "pos": "RB",
+      "team": "LAC",
+      "games": 9,
+      "rush_yds": 474.0,
+      "rec_yds": 63.0,
+      "rec": 12.0,
+      "tds": 4.0,
+      "carry_share": 0.466,
+      "tgt_share": 0.075,
+      "last3": [
+       {
+        "wk": 8,
+        "opp": "LA",
+        "car": 9.0,
+        "rush": 20.0,
+        "tgt": 3.0,
+        "rec": 2.0,
+        "recyd": 7.0,
+        "td": 0.0
+       },
+       {
+        "wk": 9,
+        "opp": "HOU",
+        "car": 13.0,
+        "rush": 60.0,
+        "tgt": 0.0,
+        "rec": 0.0,
+        "recyd": 0.0,
+        "td": 0.0
+       },
+       {
+        "wk": 10,
+        "opp": "BAL",
+        "car": 22.0,
+        "rush": 105.0,
+        "tgt": 2.0,
+        "rec": 1.0,
+        "recyd": 0.0,
+        "td": 1.0
+       }
+      ],
+      "picks": [
+       {
+        "label": "러싱 50야드 이상",
+        "market": "rush_yds",
+        "prob_out": 65.3,
+        "prob_play": 60.5
+       },
+       {
+        "label": "애니타임 터치다운",
+        "market": "td",
+        "prob_out": 33.3,
+        "prob_play": 29.5
+       }
+      ],
+      "mu_play": 60.2,
+      "mu_out": 73.0,
+      "stat": "rush_yds"
+     }
+    }
+   ],
    "teams": {
     "NYJ": {
      "pass_att": 32.5,
@@ -9851,8 +10279,8 @@
      "player_display_name": "David Njoku",
      "team": "LAC",
      "position": "TE",
-     "status": "Active",
-     "injury": ""
+     "status": "Questionable",
+     "injury": "Shoulder"
     },
     {
      "player_display_name": "Justin Herbert",
@@ -9893,8 +10321,8 @@
      "player_display_name": "Keaton Mitchell",
      "team": "LAC",
      "position": "RB",
-     "status": "Active",
-     "injury": ""
+     "status": "Questionable",
+     "injury": "Back"
     },
     {
      "player_display_name": "Quentin Johnston",
@@ -14784,7 +15212,7 @@
    "weather": {
     "temp_f": 51,
     "wind_mph": 13,
-    "precip_pct": 1
+    "precip_pct": 2
    },
    "notes": [],
    "scenarios": [
@@ -16150,26 +16578,11 @@
   "Dalton Kincaid",
   "Isaiah Williams",
   "Kaden Wetjen",
-  "Roschon Johnson",
   "Tyjae Spears"
  ],
- "seconds": 25.3,
+ "seconds": 12.2,
  "changes": [
-  "▲ Jayden Daniels 패싱 200야드 이상 새로 진입 (1위, 68.8%)",
-  "▲ Chase Brown 리셉션 4개 이상 새로 진입 (2위, 68.4%)",
-  "▲ Dak Prescott 패싱 225야드 이상 새로 진입 (4위, 67.2%)",
-  "▲ Bucky Irving 러싱 60야드 이상 새로 진입 (7위, 65.1%)",
-  "▲ Tony Pollard 애니타임 터치다운 새로 진입 (8위, 70.1%)",
-  "▲ Chase Brown 러싱 50야드 이상 새로 진입 (13위, 63.9%)",
-  "▼ Trevor Lawrence 패싱 200야드 이상 베스트 15에서 빠짐",
-  "▼ Luther Burden III 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Jordyn Tyson 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ James Cook 애니타임 터치다운 베스트 15에서 빠짐",
-  "▼ Trey McBride 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Travis Kelce 리셉션 3개 이상 베스트 15에서 빠짐",
-  "✕ Audric Estime 결장 반영",
-  "✕ Brock Bowers 결장 반영",
-  "✕ Kaden Wetjen 결장 반영",
-  "✕ Roschon Johnson 결장 반영"
+  "▲ Luther Burden III 리셉션 4개 이상 새로 진입 (4위, 68.0%)",
+  "▼ Brenton Strange 리셉션 3개 이상 베스트 15에서 빠짐"
  ]
 }

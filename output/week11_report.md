@@ -1,7 +1,7 @@
 # 2026 시즌 11주차 베스트 15
 
-생성: 2026-11-22 15:55 ET  
-데이터: NFL 공식 리포트 313건 · ESPN 실시간 800건 / 날씨 9경기 (야외) / FanDuel 배당 0개 (남은 크레딧 2)
+생성: 2026-11-22 16:36 ET  
+데이터: NFL 공식 리포트 313건 · ESPN 실시간 800건 / 날씨 9경기 (야외) / 배당 40분 전 데이터 사용 (크레딧 절약)
 
 > 확률은 과거 데이터 기반 추정치예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요. ⚠는 모델과 시장 차이가 15%p 넘는 픽(역할 변화·부상 확인 필요)이에요.
 
@@ -12,18 +12,18 @@
 | 1 | Jayden Daniels (QB) | WAS | CIN | 패싱 200야드 이상 | **68.8%** | - | - | Active |
 | 2 | Chase Brown (RB) | CIN | WAS | 리셉션 4개 이상 | **68.4%** | - | - | Active |
 | 3 | Jahmyr Gibbs (RB) | DET | TB | 리시빙 20야드 이상 | **68.1%** | - | - | Active |
-| 4 | Dak Prescott (QB) | DAL | TEN | 패싱 225야드 이상 | **67.2%** | - | - | Active |
-| 5 | Ja'Marr Chase (WR) | CIN | WAS | 리셉션 6개 이상 | **66.0%** | - | - | Active |
-| 6 | George Pickens (WR) | DAL | TEN | 리셉션 5개 이상 | **65.6%** | - | - | Active |
-| 7 | Bucky Irving (RB) | TB | DET | 러싱 60야드 이상 | **65.1%** | - | - | Active |
-| 8 | Tony Pollard (RB) | TEN | DAL | 애니타임 터치다운 | **70.1%** | - | - |  |
-| 9 | Tetairoa McMillan (WR) | CAR | BAL | 리시빙 40야드 이상 | **64.7%** | - | - | Active |
-| 10 | Jameson Williams (WR) | DET | TB | 리시빙 40야드 이상 | **64.4%** | - | - | Active |
-| 11 | Jahmyr Gibbs (RB) | DET | TB | 애니타임 터치다운 | **64.4%** | - | - | Active |
-| 12 | Malik Nabers (WR) | NYG | JAX | 리셉션 5개 이상 | **64.2%** | - | - |  |
-| 13 | Chase Brown (RB) | CIN | WAS | 러싱 50야드 이상 | **63.9%** | - | - | Active |
-| 14 | Chig Okonkwo (TE) | WAS | CIN | 리셉션 3개 이상 | **63.7%** | - | - | Active |
-| 15 | Brenton Strange (TE) | JAX | NYG | 리셉션 3개 이상 | **63.7%** | - | - |  |
+| 4 | Luther Burden III (WR) | CHI | NO | 리셉션 4개 이상 | **68.0%** | - | - | Active |
+| 5 | Dak Prescott (QB) | DAL | TEN | 패싱 225야드 이상 | **67.2%** | - | - | Active |
+| 6 | Ja'Marr Chase (WR) | CIN | WAS | 리셉션 6개 이상 | **66.0%** | - | - | Active |
+| 7 | George Pickens (WR) | DAL | TEN | 리셉션 5개 이상 | **65.6%** | - | - | Active |
+| 8 | Bucky Irving (RB) | TB | DET | 러싱 60야드 이상 | **65.1%** | - | - | Active |
+| 9 | Tony Pollard (RB) | TEN | DAL | 애니타임 터치다운 | **70.1%** | - | - |  |
+| 10 | Tetairoa McMillan (WR) | CAR | BAL | 리시빙 40야드 이상 | **64.7%** | - | - | Active |
+| 11 | Jameson Williams (WR) | DET | TB | 리시빙 40야드 이상 | **64.4%** | - | - | Active |
+| 12 | Jahmyr Gibbs (RB) | DET | TB | 애니타임 터치다운 | **64.4%** | - | - | Active |
+| 13 | Malik Nabers (WR) | NYG | JAX | 리셉션 5개 이상 | **64.2%** | - | - |  |
+| 14 | Chase Brown (RB) | CIN | WAS | 러싱 50야드 이상 | **63.9%** | - | - | Active |
+| 15 | Chig Okonkwo (TE) | WAS | CIN | 리셉션 3개 이상 | **63.7%** | - | - | Active |
 
 ## 터치다운 확률 TOP 15
 
@@ -36,14 +36,14 @@
 | 5 | Bucky Irving (RB) | TB | DET | 애니타임 터치다운 | **57.9%** | - | - | Active |
 | 6 | Christian McCaffrey (RB) | SF | MIN | 애니타임 터치다운 | **56.9%** | - | - |  |
 | 7 | Ja'Marr Chase (WR) | CIN | WAS | 애니타임 터치다운 | **55.5%** | - | - | Active |
-| 8 | Josh Allen (QB) | BUF | MIA | 애니타임 터치다운 | **52.6%** | - | - |  |
+| 8 | Josh Allen (QB) | BUF | MIA | 애니타임 터치다운 | **52.6%** | - | - | Active |
 | 9 | Javonte Williams (RB) | DAL | TEN | 애니타임 터치다운 | **51.5%** | - | - | Active |
 | 10 | Chase Brown (RB) | CIN | WAS | 애니타임 터치다운 | **50.3%** | - | - | Active |
 | 11 | CeeDee Lamb (WR) | DAL | TEN | 애니타임 터치다운 | **48.9%** | - | - | Active |
-| 12 | Stefon Diggs (WR) | WAS | CIN | 애니타임 터치다운 | **48.2%** | - | - | Active |
-| 13 | Chuba Hubbard (RB) | CAR | BAL | 애니타임 터치다운 | **48.2%** | - | - | Active |
-| 14 | Jonah Coleman (RB) | DEN | LV | 애니타임 터치다운 | **47.8%** | - | - | Active |
-| 15 | D'Andre Swift (RB) | CHI | NO | 애니타임 터치다운 | **50.8%** | - | - | Active |
+| 12 | D'Andre Swift (RB) | CHI | NO | 애니타임 터치다운 | **48.5%** | - | - | Active |
+| 13 | Stefon Diggs (WR) | WAS | CIN | 애니타임 터치다운 | **48.2%** | - | - | Active |
+| 14 | Chuba Hubbard (RB) | CAR | BAL | 애니타임 터치다운 | **48.2%** | - | - | Active |
+| 15 | Jonah Coleman (RB) | DEN | LV | 애니타임 터치다운 | **47.8%** | - | - | Active |
 
 ## 경기별 베스트 15
 
@@ -53,18 +53,18 @@
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
 | 1 | James Cook (RB) | BUF | MIA | 애니타임 터치다운 | **67.3%** | - | - |  |
-| 2 | Josh Allen (QB) | BUF | MIA | 패싱 TD 2개 이상 | **60.0%** | - | - |  |
+| 2 | Josh Allen (QB) | BUF | MIA | 패싱 TD 2개 이상 | **60.0%** | - | - | Active |
 | 3 | DJ Moore (WR) | BUF | MIA | 리시빙 40야드 이상 | **64.3%** | - | - | Active |
-| 4 | Josh Allen (QB) | BUF | MIA | 패싱 225야드 이상 | **58.1%** | - | - |  |
+| 4 | Josh Allen (QB) | BUF | MIA | 패싱 225야드 이상 | **58.1%** | - | - | Active |
 | 5 | Caleb Douglas (WR) | MIA | BUF | 리시빙 40야드 이상 | **62.7%** | - | - | Active |
 | 6 | Caleb Douglas (WR) | MIA | BUF | 리셉션 4개 이상 | **61.6%** | - | - | Active |
 | 7 | Ollie Gordon II (RB) | MIA | BUF | 러싱 40야드 이상 | **60.3%** | - | - |  |
 | 8 | James Cook (RB) | BUF | MIA | 러싱 90야드 이상 | **58.7%** | - | - |  |
-| 9 | Josh Allen (QB) | BUF | MIA | 애니타임 터치다운 | **52.6%** | - | - |  |
-| 10 | Khalil Shakir (WR) | BUF | MIA | 리시빙 40야드 이상 | **56.2%** | - | - | Active |
+| 9 | Josh Allen (QB) | BUF | MIA | 애니타임 터치다운 | **52.6%** | - | - | Active |
+| 10 | Khalil Shakir (WR) | BUF | MIA | 리시빙 40야드 이상 | **56.2%** | - | - |  |
 | 11 | DJ Moore (WR) | BUF | MIA | 애니타임 터치다운 | **45.8%** | - | - | Active |
 | 12 | Keon Coleman (WR) | BUF | MIA | 애니타임 터치다운 | **36.0%** | - | - | Active |
-| 13 | Khalil Shakir (WR) | BUF | MIA | 애니타임 터치다운 | **32.7%** | - | - | Active |
+| 13 | Khalil Shakir (WR) | BUF | MIA | 애니타임 터치다운 | **32.7%** | - | - |  |
 | 14 | Ollie Gordon II (RB) | MIA | BUF | 애니타임 터치다운 | **31.4%** | - | - |  |
 | 15 | Ty Johnson (RB) | BUF | MIA | 애니타임 터치다운 | **21.4%** | - | - | Active |
 
@@ -78,16 +78,16 @@
 | 3 | Chuba Hubbard (RB) | CAR | BAL | 러싱 60야드 이상 | **60.5%** | - | - | Active |
 | 4 | Justice Hill (RB) | BAL | CAR | 리셉션 3개 이상 | **63.7%** | - | - | Active |
 | 5 | Bryce Young (QB) | CAR | BAL | 패싱 225야드 이상 | **58.3%** | - | - | Active |
-| 6 | Zay Flowers (WR) | BAL | CAR | 리셉션 5개 이상 | **61.5%** | - | - | Active |
+| 6 | Zay Flowers (WR) | BAL | CAR | 리셉션 5개 이상 | **61.5%** | - | - |  |
 | 7 | Bryce Young (QB) | CAR | BAL | 패싱 TD 2개 이상 | **55.5%** | - | - | Active |
 | 8 | Mark Andrews (TE) | BAL | CAR | 리셉션 4개 이상 | **60.2%** | - | - | Active |
-| 9 | Zay Flowers (WR) | BAL | CAR | 리시빙 60야드 이상 | **59.9%** | - | - | Active |
-| 10 | Derrick Henry (RB) | BAL | CAR | 러싱 60야드 이상 | **57.8%** | - | - |  |
+| 9 | Zay Flowers (WR) | BAL | CAR | 리시빙 60야드 이상 | **59.9%** | - | - |  |
+| 10 | Derrick Henry (RB) | BAL | CAR | 러싱 60야드 이상 | **57.8%** | - | - | Questionable |
 | 11 | Chuba Hubbard (RB) | CAR | BAL | 애니타임 터치다운 | **48.2%** | - | - | Active |
-| 12 | Derrick Henry (RB) | BAL | CAR | 애니타임 터치다운 | **43.5%** | - | - |  |
+| 12 | Derrick Henry (RB) | BAL | CAR | 애니타임 터치다운 | **43.5%** | - | - | Questionable |
 | 13 | Tetairoa McMillan (WR) | CAR | BAL | 애니타임 터치다운 | **31.1%** | - | - | Active |
-| 14 | Jalen Coker (WR) | CAR | BAL | 애니타임 터치다운 | **27.1%** | - | - | Active |
-| 15 | Zay Flowers (WR) | BAL | CAR | 애니타임 터치다운 | **31.8%** | - | - | Active |
+| 14 | Jalen Coker (WR) | CAR | BAL | 애니타임 터치다운 | **27.1%** | - | - | Questionable |
+| 15 | Zay Flowers (WR) | BAL | CAR | 애니타임 터치다운 | **31.8%** | - | - |  |
 
 ### NO @ CHI · 2026-11-22 13:00 ET · Soldier Field
 스프레드 CHI -11.5 · 총점 47.5 · 예상 점수 NO 18.0 – CHI 29.5
@@ -95,20 +95,20 @@
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Luther Burden III (WR) | CHI | NO | 리셉션 4개 이상 | **68.0%** | - | - | Active |
-| 2 | Chris Olave (WR) | NO | CHI | 리셉션 5개 이상 | **65.8%** | - | - | Active |
-| 3 | Caleb Williams (QB) | CHI | NO | 패싱 TD 2개 이상 | **59.5%** | - | - | Active |
-| 4 | Chris Olave (WR) | NO | CHI | 리시빙 50야드 이상 | **64.5%** | - | - | Active |
-| 5 | Caleb Williams (QB) | CHI | NO | 패싱 225야드 이상 | **59.4%** | - | - | Active |
-| 6 | Alvin Kamara (RB) | NO | CHI | 리셉션 3개 이상 | **63.7%** | - | - | Active |
-| 7 | D'Andre Swift (RB) | CHI | NO | 러싱 60야드 이상 | **63.6%** | - | - | Active |
-| 8 | Jordyn Tyson (WR) | NO | CHI | 리시빙 50야드 이상 | **62.7%** | - | - | Active |
-| 9 | Colston Loveland (TE) | CHI | NO | 리시빙 40야드 이상 | **62.6%** | - | - | Active |
-| 10 | Luther Burden III (WR) | CHI | NO | 리시빙 50야드 이상 | **62.4%** | - | - | Active |
-| 11 | Colston Loveland (TE) | CHI | NO | 리셉션 4개 이상 | **61.9%** | - | - | Active |
-| 12 | Kyle Monangai (RB) | CHI | NO | 러싱 50야드 이상 | **61.4%** | - | - | Active |
-| 13 | Travis Etienne (RB) | NO | CHI | 러싱 40야드 이상 | **59.9%** | - | - | Active |
-| 14 | Jordyn Tyson (WR) | NO | CHI | 리셉션 6개 이상 | **59.3%** | - | - | Active |
-| 15 | D'Andre Swift (RB) | CHI | NO | 애니타임 터치다운 | **50.8%** | - | - | Active |
+| 2 | Colston Loveland (TE) | CHI | NO | 리시빙 40야드 이상 | **62.5%** | - | - | Active |
+| 3 | Colston Loveland (TE) | CHI | NO | 리셉션 4개 이상 | **62.0%** | - | - | Active |
+| 4 | D'Andre Swift (RB) | CHI | NO | 러싱 50야드 이상 | **61.7%** | - | - | Active |
+| 5 | Luther Burden III (WR) | CHI | NO | 리시빙 50야드 이상 | **60.9%** | - | - | Active |
+| 6 | Chris Olave (WR) | NO | CHI | 리셉션 5개 이상 | **65.8%** | - | - | Active |
+| 7 | Caleb Williams (QB) | CHI | NO | 패싱 TD 2개 이상 | **59.5%** | - | - | Active |
+| 8 | Chris Olave (WR) | NO | CHI | 리시빙 50야드 이상 | **64.5%** | - | - | Active |
+| 9 | Caleb Williams (QB) | CHI | NO | 패싱 225야드 이상 | **59.4%** | - | - | Active |
+| 10 | Alvin Kamara (RB) | NO | CHI | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 11 | Jordyn Tyson (WR) | NO | CHI | 리시빙 50야드 이상 | **62.7%** | - | - | Active |
+| 12 | Travis Etienne (RB) | NO | CHI | 러싱 40야드 이상 | **59.9%** | - | - | Active |
+| 13 | Jordyn Tyson (WR) | NO | CHI | 리셉션 6개 이상 | **59.3%** | - | - | Active |
+| 14 | Kyle Monangai (RB) | CHI | NO | 러싱 40야드 이상 | **56.4%** | - | - | Active |
+| 15 | D'Andre Swift (RB) | CHI | NO | 애니타임 터치다운 | **48.5%** | - | - | Active |
 
 ### TEN @ DAL · 2026-11-22 13:00 ET · AT&T Stadium
 스프레드 DAL -7.5 · 총점 55.5 · 예상 점수 TEN 24.0 – DAL 31.5
