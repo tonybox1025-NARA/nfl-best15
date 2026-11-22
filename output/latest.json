@@ -1,82 +1,72 @@
 {
  "season": 2026,
  "week": 11,
- "generated_at": "2026-11-21 20:45 ET",
+ "generated_at": "2026-11-21 23:21 ET",
  "sources": {
   "injuries": "NFL 공식 리포트 310건 · ESPN 실시간 800건",
   "weather": "날씨 10경기 (야외)",
-  "odds": "배당 685분 전 데이터 사용 (크레딧 절약)"
+  "odds": "FanDuel 배당 0개 (남은 크레딧 2)"
  },
  "has_odds": false,
  "overall": {
   "prob": [
    {
     "rank": 1,
-    "player_id": "00-0037239",
-    "name": "Chris Olave",
-    "pos": "WR",
-    "team": "NO",
-    "opp": "CHI",
-    "market": "receptions",
-    "line": 3.5,
-    "label": "리셉션 4개 이상",
-    "prob": 68.5,
+    "player_id": "00-0036971",
+    "name": "Trevor Lawrence",
+    "pos": "QB",
+    "team": "JAX",
+    "opp": "NYG",
+    "market": "pass_yds",
+    "line": 199.5,
+    "label": "패싱 200야드 이상",
+    "prob": 68.4,
     "status": "Active",
-    "game_id": "2026_11_NO_CHI",
+    "game_id": "2026_11_JAX_NYG",
     "detail": {
      "recent": [
       {
        "wk": 5,
-       "opp": "MIN",
-       "val": 4.0
+       "opp": "PHI",
+       "val": 331.0
       },
       {
        "wk": 6,
-       "opp": "NYG",
-       "val": 4.0
+       "opp": "HOU",
+       "val": 306.0
       },
       {
-       "wk": 7,
-       "opp": "PIT",
-       "val": 6.0
+       "wk": 8,
+       "opp": "IND",
+       "val": 210.0
       },
       {
        "wk": 9,
-       "opp": "CLE",
-       "val": 7.0
+       "opp": "BAL",
+       "val": 242.0
       },
       {
        "wk": 10,
-       "opp": "CAR",
-       "val": 3.0
+       "opp": "TEN",
+       "val": 352.0
       }
      ],
-     "need": 4.0,
-     "recent_hits": 4,
-     "mu": 5.0,
-     "def_rank": 24.0,
-     "def_allowed": 8.8,
-     "carry_share": 0.0,
-     "tgt_share": 0.258,
-     "rz_share": 0.047,
-     "implied_total": 18.5,
-     "spread": -11.5,
-     "wind": 12.0,
-     "td_rate": 0.438,
-     "role": {
-      "kind": "recs",
-      "team_pass": 39.2,
-      "share": 0.258,
-      "exp_tgt": 9.6,
-      "ypt": 8.63,
-      "catch": 0.66,
-      "def": 1.1,
-      "role_mu": 6.3,
-      "model_mu": 5.0
-     },
+     "need": 200.0,
+     "recent_hits": 5,
+     "mu": 220.8,
+     "def_rank": 22.0,
+     "def_allowed": 198.5,
+     "carry_share": 0.104,
+     "tgt_share": 0.0,
+     "rz_share": 0.052,
+     "implied_total": 25.8,
+     "spread": 6.0,
+     "wind": 7.0,
+     "td_rate": 0.188,
+     "role": null,
      "range": [
-      3.1,
-      6.5
+      188.0,
+      276.0
      ],
      "new_role": false,
      "qb_ctx": false,
@@ -135,7 +125,7 @@
      "rz_share": 0.051,
      "implied_total": 30.0,
      "spread": 11.5,
-     "wind": 12.0,
+     "wind": 9.0,
      "td_rate": 0.312,
      "role": {
       "kind": "recs",
@@ -170,7 +160,7 @@
     "market": "rec_yds",
     "line": 19.5,
     "label": "리시빙 20야드 이상",
-    "prob": 67.8,
+    "prob": 67.6,
     "status": "Active",
     "game_id": "2026_11_TB_DET",
     "detail": {
@@ -203,30 +193,30 @@
      ],
      "need": 20.0,
      "recent_hits": 3,
-     "mu": 37.4,
+     "mu": 37.1,
      "def_rank": 19.0,
      "def_allowed": 26.2,
      "carry_share": 0.719,
      "tgt_share": 0.172,
      "rz_share": 0.413,
-     "implied_total": 26.0,
-     "spread": 4.5,
+     "implied_total": 25.5,
+     "spread": 3.5,
      "wind": 0.0,
      "td_rate": 0.75,
      "role": {
       "kind": "rec",
-      "team_pass": 31.4,
+      "team_pass": 31.7,
       "share": 0.172,
-      "exp_tgt": 5.1,
+      "exp_tgt": 5.2,
       "ypt": 6.27,
       "catch": 0.78,
       "def": 0.95,
-      "role_mu": 30.6,
-      "model_mu": 37.4
+      "role_mu": 30.9,
+      "model_mu": 37.1
      },
      "range": [
-      16.0,
-      55.0
+      15.0,
+      54.0
      ],
      "new_role": false,
      "qb_ctx": false,
@@ -244,7 +234,7 @@
     "market": "receptions",
     "line": 3.5,
     "label": "리셉션 4개 이상",
-    "prob": 66.9,
+    "prob": 67.3,
     "status": "Active",
     "game_id": "2026_11_NO_CHI",
     "detail": {
@@ -262,7 +252,7 @@
      ],
      "need": 4.0,
      "recent_hits": 2,
-     "mu": 4.7,
+     "mu": 4.8,
      "def_rank": 24.0,
      "def_allowed": 8.8,
      "carry_share": 0.0,
@@ -270,7 +260,7 @@
      "rz_share": 0.0,
      "implied_total": 18.5,
      "spread": -11.5,
-     "wind": 12.0,
+     "wind": 9.0,
      "td_rate": 0.0,
      "role": {
       "kind": "recs",
@@ -281,7 +271,7 @@
       "catch": 0.7,
       "def": 1.1,
       "role_mu": 7.5,
-      "model_mu": 4.7
+      "model_mu": 4.8
      },
      "range": [
       3.0,
@@ -369,141 +359,6 @@
    },
    {
     "rank": 6,
-    "player_id": "00-0039139",
-    "name": "Jahmyr Gibbs",
-    "pos": "RB",
-    "team": "DET",
-    "opp": "TB",
-    "market": "td",
-    "line": null,
-    "label": "애니타임 터치다운",
-    "prob": 65.0,
-    "status": "Active",
-    "game_id": "2026_11_TB_DET",
-    "detail": {
-     "recent": [
-      {
-       "wk": 5,
-       "opp": "ARI",
-       "val": 2.0
-      },
-      {
-       "wk": 7,
-       "opp": "GB",
-       "val": 0.0
-      },
-      {
-       "wk": 8,
-       "opp": "MIN",
-       "val": 1.0
-      },
-      {
-       "wk": 9,
-       "opp": "MIA",
-       "val": 1.0
-      },
-      {
-       "wk": 10,
-       "opp": "NE",
-       "val": 2.0
-      }
-     ],
-     "need": null,
-     "recent_hits": 4,
-     "mu": null,
-     "def_rank": 24.0,
-     "def_allowed": 0.2,
-     "carry_share": 0.719,
-     "tgt_share": 0.172,
-     "rz_share": 0.413,
-     "implied_total": 26.0,
-     "spread": 4.5,
-     "wind": 0.0,
-     "td_rate": 0.75,
-     "role": null,
-     "range": null,
-     "new_role": false,
-     "qb_ctx": false,
-     "conf": "high",
-     "conf_why": []
-    }
-   },
-   {
-    "rank": 7,
-    "player_id": "00-0037240",
-    "name": "Jameson Williams",
-    "pos": "WR",
-    "team": "DET",
-    "opp": "TB",
-    "market": "rec_yds",
-    "line": 39.5,
-    "label": "리시빙 40야드 이상",
-    "prob": 64.8,
-    "status": "Active",
-    "game_id": "2026_11_TB_DET",
-    "detail": {
-     "recent": [
-      {
-       "wk": 5,
-       "opp": "ARI",
-       "val": 47.0
-      },
-      {
-       "wk": 7,
-       "opp": "GB",
-       "val": 91.0
-      },
-      {
-       "wk": 8,
-       "opp": "MIN",
-       "val": 70.0
-      },
-      {
-       "wk": 9,
-       "opp": "MIA",
-       "val": 31.0
-      },
-      {
-       "wk": 10,
-       "opp": "NE",
-       "val": 50.0
-      }
-     ],
-     "need": 40.0,
-     "recent_hits": 4,
-     "mu": 57.1,
-     "def_rank": 14.0,
-     "def_allowed": 143.9,
-     "carry_share": 0.007,
-     "tgt_share": 0.184,
-     "rz_share": 0.16,
-     "implied_total": 26.0,
-     "spread": 4.5,
-     "wind": 0.0,
-     "td_rate": 0.312,
-     "role": {
-      "kind": "rec",
-      "team_pass": 31.4,
-      "share": 0.184,
-      "exp_tgt": 5.5,
-      "ypt": 9.71,
-      "catch": 0.63,
-      "def": 0.94,
-      "role_mu": 50.3,
-      "model_mu": 57.1
-     },
-     "range": [
-      29.0,
-      82.0
-     ],
-     "new_role": false,
-     "qb_ctx": false,
-     "conf": "high",
-     "conf_why": []
-    }
-   },
-   {
-    "rank": 8,
     "player_id": "00-0040124",
     "name": "Tetairoa McMillan",
     "pos": "WR",
@@ -551,19 +406,19 @@
      "carry_share": 0.0,
      "tgt_share": 0.241,
      "rz_share": 0.114,
-     "implied_total": 23.2,
-     "spread": 3.0,
+     "implied_total": 23.0,
+     "spread": 2.5,
      "wind": 8.0,
      "td_rate": 0.312,
      "role": {
       "kind": "rec",
-      "team_pass": 35.7,
+      "team_pass": 35.9,
       "share": 0.241,
       "exp_tgt": 8.2,
       "ypt": 8.41,
       "catch": 0.6,
       "def": 1.18,
-      "role_mu": 81.1,
+      "role_mu": 81.5,
       "model_mu": 57.0
      },
      "range": [
@@ -577,7 +432,7 @@
     }
    },
    {
-    "rank": 9,
+    "rank": 7,
     "player_id": "00-0037247",
     "name": "George Pickens",
     "pos": "WR",
@@ -651,7 +506,7 @@
     }
    },
    {
-    "rank": 10,
+    "rank": 8,
     "player_id": "00-0039337",
     "name": "Malik Nabers",
     "pos": "WR",
@@ -660,7 +515,7 @@
     "market": "receptions",
     "line": 4.5,
     "label": "리셉션 5개 이상",
-    "prob": 64.2,
+    "prob": 64.1,
     "status": "Active",
     "game_id": "2026_11_JAX_NYG",
     "detail": {
@@ -699,9 +554,9 @@
      "carry_share": 0.0,
      "tgt_share": 0.283,
      "rz_share": 0.117,
-     "implied_total": 20.2,
+     "implied_total": 19.8,
      "spread": -6.0,
-     "wind": 6.0,
+     "wind": 7.0,
      "td_rate": 0.312,
      "role": {
       "kind": "recs",
@@ -712,7 +567,7 @@
       "catch": 0.63,
       "def": 1.1,
       "role_mu": 5.6,
-      "model_mu": 5.7
+      "model_mu": 5.6
      },
      "range": [
       3.5,
@@ -727,7 +582,7 @@
     }
    },
    {
-    "rank": 11,
+    "rank": 9,
     "player_id": "00-0037248",
     "name": "James Cook",
     "pos": "RB",
@@ -787,6 +642,141 @@
      "conf_why": [
       "role"
      ]
+    }
+   },
+   {
+    "rank": 10,
+    "player_id": "00-0037240",
+    "name": "Jameson Williams",
+    "pos": "WR",
+    "team": "DET",
+    "opp": "TB",
+    "market": "rec_yds",
+    "line": 39.5,
+    "label": "리시빙 40야드 이상",
+    "prob": 63.8,
+    "status": "Active",
+    "game_id": "2026_11_TB_DET",
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "ARI",
+       "val": 47.0
+      },
+      {
+       "wk": 7,
+       "opp": "GB",
+       "val": 91.0
+      },
+      {
+       "wk": 8,
+       "opp": "MIN",
+       "val": 70.0
+      },
+      {
+       "wk": 9,
+       "opp": "MIA",
+       "val": 31.0
+      },
+      {
+       "wk": 10,
+       "opp": "NE",
+       "val": 50.0
+      }
+     ],
+     "need": 40.0,
+     "recent_hits": 4,
+     "mu": 56.1,
+     "def_rank": 14.0,
+     "def_allowed": 143.9,
+     "carry_share": 0.007,
+     "tgt_share": 0.184,
+     "rz_share": 0.16,
+     "implied_total": 25.5,
+     "spread": 3.5,
+     "wind": 0.0,
+     "td_rate": 0.312,
+     "role": {
+      "kind": "rec",
+      "team_pass": 31.7,
+      "share": 0.184,
+      "exp_tgt": 5.5,
+      "ypt": 9.71,
+      "catch": 0.63,
+      "def": 0.94,
+      "role_mu": 50.8,
+      "model_mu": 56.1
+     },
+     "range": [
+      29.0,
+      81.0
+     ],
+     "new_role": false,
+     "qb_ctx": false,
+     "conf": "high",
+     "conf_why": []
+    }
+   },
+   {
+    "rank": 11,
+    "player_id": "00-0039139",
+    "name": "Jahmyr Gibbs",
+    "pos": "RB",
+    "team": "DET",
+    "opp": "TB",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 63.8,
+    "status": "Active",
+    "game_id": "2026_11_TB_DET",
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "ARI",
+       "val": 2.0
+      },
+      {
+       "wk": 7,
+       "opp": "GB",
+       "val": 0.0
+      },
+      {
+       "wk": 8,
+       "opp": "MIN",
+       "val": 1.0
+      },
+      {
+       "wk": 9,
+       "opp": "MIA",
+       "val": 1.0
+      },
+      {
+       "wk": 10,
+       "opp": "NE",
+       "val": 2.0
+      }
+     ],
+     "need": null,
+     "recent_hits": 4,
+     "mu": null,
+     "def_rank": 24.0,
+     "def_allowed": 0.2,
+     "carry_share": 0.719,
+     "tgt_share": 0.172,
+     "rz_share": 0.413,
+     "implied_total": 25.5,
+     "spread": 3.5,
+     "wind": 0.0,
+     "td_rate": 0.75,
+     "role": null,
+     "range": null,
+     "new_role": false,
+     "qb_ctx": false,
+     "conf": "high",
+     "conf_why": []
     }
    },
    {
@@ -1060,9 +1050,9 @@
      "carry_share": 0.0,
      "tgt_share": 0.141,
      "rz_share": 0.049,
-     "implied_total": 26.2,
+     "implied_total": 25.8,
      "spread": 6.0,
-     "wind": 6.0,
+     "wind": 7.0,
      "td_rate": 0.312,
      "role": {
       "kind": "recs",
@@ -1090,67 +1080,6 @@
   "td": [
    {
     "rank": 1,
-    "player_id": "00-0039139",
-    "name": "Jahmyr Gibbs",
-    "pos": "RB",
-    "team": "DET",
-    "opp": "TB",
-    "market": "td",
-    "line": null,
-    "label": "애니타임 터치다운",
-    "prob": 65.0,
-    "status": "Active",
-    "game_id": "2026_11_TB_DET",
-    "detail": {
-     "recent": [
-      {
-       "wk": 5,
-       "opp": "ARI",
-       "val": 2.0
-      },
-      {
-       "wk": 7,
-       "opp": "GB",
-       "val": 0.0
-      },
-      {
-       "wk": 8,
-       "opp": "MIN",
-       "val": 1.0
-      },
-      {
-       "wk": 9,
-       "opp": "MIA",
-       "val": 1.0
-      },
-      {
-       "wk": 10,
-       "opp": "NE",
-       "val": 2.0
-      }
-     ],
-     "need": null,
-     "recent_hits": 4,
-     "mu": null,
-     "def_rank": 24.0,
-     "def_allowed": 0.2,
-     "carry_share": 0.719,
-     "tgt_share": 0.172,
-     "rz_share": 0.413,
-     "implied_total": 26.0,
-     "spread": 4.5,
-     "wind": 0.0,
-     "td_rate": 0.75,
-     "role": null,
-     "range": null,
-     "new_role": false,
-     "qb_ctx": false,
-     "conf": "high",
-     "conf_why": []
-    }
-   },
-   {
-    "rank": 2,
     "player_id": "00-0037248",
     "name": "James Cook",
     "pos": "RB",
@@ -1210,6 +1139,67 @@
      "conf_why": [
       "role"
      ]
+    }
+   },
+   {
+    "rank": 2,
+    "player_id": "00-0039139",
+    "name": "Jahmyr Gibbs",
+    "pos": "RB",
+    "team": "DET",
+    "opp": "TB",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 63.8,
+    "status": "Active",
+    "game_id": "2026_11_TB_DET",
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "ARI",
+       "val": 2.0
+      },
+      {
+       "wk": 7,
+       "opp": "GB",
+       "val": 0.0
+      },
+      {
+       "wk": 8,
+       "opp": "MIN",
+       "val": 1.0
+      },
+      {
+       "wk": 9,
+       "opp": "MIA",
+       "val": 1.0
+      },
+      {
+       "wk": 10,
+       "opp": "NE",
+       "val": 2.0
+      }
+     ],
+     "need": null,
+     "recent_hits": 4,
+     "mu": null,
+     "def_rank": 24.0,
+     "def_allowed": 0.2,
+     "carry_share": 0.719,
+     "tgt_share": 0.172,
+     "rz_share": 0.413,
+     "implied_total": 25.5,
+     "spread": 3.5,
+     "wind": 0.0,
+     "td_rate": 0.75,
+     "role": null,
+     "range": null,
+     "new_role": false,
+     "qb_ctx": false,
+     "conf": "high",
+     "conf_why": []
     }
    },
    {
@@ -1285,7 +1275,7 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 58.5,
+    "prob": 58.7,
     "status": "Active",
     "game_id": "2026_11_JAX_NYG",
     "detail": {
@@ -1324,9 +1314,9 @@
      "carry_share": 0.517,
      "tgt_share": 0.072,
      "rz_share": 0.327,
-     "implied_total": 26.2,
+     "implied_total": 25.8,
      "spread": 6.0,
-     "wind": 6.0,
+     "wind": 7.0,
      "td_rate": 0.625,
      "role": null,
      "range": null,
@@ -1338,67 +1328,6 @@
    },
    {
     "rank": 5,
-    "player_id": "00-0033280",
-    "name": "Christian McCaffrey",
-    "pos": "RB",
-    "team": "SF",
-    "opp": "MIN",
-    "market": "td",
-    "line": null,
-    "label": "애니타임 터치다운",
-    "prob": 56.9,
-    "status": "",
-    "game_id": "2026_11_MIN_SF",
-    "detail": {
-     "recent": [
-      {
-       "wk": 5,
-       "opp": "SEA",
-       "val": 1.0
-      },
-      {
-       "wk": 6,
-       "opp": "WAS",
-       "val": 2.0
-      },
-      {
-       "wk": 7,
-       "opp": "ATL",
-       "val": 1.0
-      },
-      {
-       "wk": 9,
-       "opp": "LV",
-       "val": 2.0
-      },
-      {
-       "wk": 10,
-       "opp": "DAL",
-       "val": 3.0
-      }
-     ],
-     "need": null,
-     "recent_hits": 5,
-     "mu": null,
-     "def_rank": 15.0,
-     "def_allowed": 0.6,
-     "carry_share": 0.456,
-     "tgt_share": 0.183,
-     "rz_share": 0.536,
-     "implied_total": 25.0,
-     "spread": 3.5,
-     "wind": 4.0,
-     "td_rate": 0.812,
-     "role": null,
-     "range": null,
-     "new_role": false,
-     "qb_ctx": false,
-     "conf": "high",
-     "conf_why": []
-    }
-   },
-   {
-    "rank": 6,
     "player_id": "00-0039361",
     "name": "Bucky Irving",
     "pos": "RB",
@@ -1407,7 +1336,7 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 56.1,
+    "prob": 57.0,
     "status": "Active",
     "game_id": "2026_11_TB_DET",
     "detail": {
@@ -1446,8 +1375,8 @@
      "carry_share": 0.597,
      "tgt_share": 0.107,
      "rz_share": 0.42,
-     "implied_total": 21.5,
-     "spread": -4.5,
+     "implied_total": 22.0,
+     "spread": -3.5,
      "wind": 0.0,
      "td_rate": 0.5,
      "role": null,
@@ -1458,6 +1387,67 @@
      "conf_why": [
       "qb_mid"
      ]
+    }
+   },
+   {
+    "rank": 6,
+    "player_id": "00-0033280",
+    "name": "Christian McCaffrey",
+    "pos": "RB",
+    "team": "SF",
+    "opp": "MIN",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 55.5,
+    "status": "",
+    "game_id": "2026_11_MIN_SF",
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "SEA",
+       "val": 1.0
+      },
+      {
+       "wk": 6,
+       "opp": "WAS",
+       "val": 2.0
+      },
+      {
+       "wk": 7,
+       "opp": "ATL",
+       "val": 1.0
+      },
+      {
+       "wk": 9,
+       "opp": "LV",
+       "val": 2.0
+      },
+      {
+       "wk": 10,
+       "opp": "DAL",
+       "val": 3.0
+      }
+     ],
+     "need": null,
+     "recent_hits": 5,
+     "mu": null,
+     "def_rank": 15.0,
+     "def_allowed": 0.6,
+     "carry_share": 0.456,
+     "tgt_share": 0.183,
+     "rz_share": 0.536,
+     "implied_total": 24.8,
+     "spread": 3.0,
+     "wind": 5.0,
+     "td_rate": 0.812,
+     "role": null,
+     "range": null,
+     "new_role": false,
+     "qb_ctx": false,
+     "conf": "high",
+     "conf_why": []
     }
    },
    {
@@ -1584,69 +1574,6 @@
    },
    {
     "rank": 9,
-    "player_id": "00-0036275",
-    "name": "D'Andre Swift",
-    "pos": "RB",
-    "team": "CHI",
-    "opp": "NO",
-    "market": "td",
-    "line": null,
-    "label": "애니타임 터치다운",
-    "prob": 52.1,
-    "status": "Active",
-    "game_id": "2026_11_NO_CHI",
-    "detail": {
-     "recent": [
-      {
-       "wk": 5,
-       "opp": "GB",
-       "val": 1.0
-      },
-      {
-       "wk": 6,
-       "opp": "ATL",
-       "val": 2.0
-      },
-      {
-       "wk": 7,
-       "opp": "NE",
-       "val": 1.0
-      },
-      {
-       "wk": 8,
-       "opp": "SEA",
-       "val": 3.0
-      },
-      {
-       "wk": 9,
-       "opp": "TB",
-       "val": 0.0
-      }
-     ],
-     "need": null,
-     "recent_hits": 4,
-     "mu": null,
-     "def_rank": 2.0,
-     "def_allowed": 1.5,
-     "carry_share": 0.558,
-     "tgt_share": 0.087,
-     "rz_share": 0.393,
-     "implied_total": 30.0,
-     "spread": 11.5,
-     "wind": 12.0,
-     "td_rate": 0.5,
-     "role": null,
-     "range": null,
-     "new_role": false,
-     "qb_ctx": true,
-     "conf": "mid",
-     "conf_why": [
-      "qb_mid"
-     ]
-    }
-   },
-   {
-    "rank": 10,
     "player_id": "00-0036997",
     "name": "Javonte Williams",
     "pos": "RB",
@@ -1707,7 +1634,7 @@
     }
    },
    {
-    "rank": 11,
+    "rank": 10,
     "player_id": "00-0038597",
     "name": "Chase Brown",
     "pos": "RB",
@@ -1768,6 +1695,69 @@
     }
    },
    {
+    "rank": 11,
+    "player_id": "00-0036275",
+    "name": "D'Andre Swift",
+    "pos": "RB",
+    "team": "CHI",
+    "opp": "NO",
+    "market": "td",
+    "line": null,
+    "label": "애니타임 터치다운",
+    "prob": 49.5,
+    "status": "Active",
+    "game_id": "2026_11_NO_CHI",
+    "detail": {
+     "recent": [
+      {
+       "wk": 5,
+       "opp": "GB",
+       "val": 1.0
+      },
+      {
+       "wk": 6,
+       "opp": "ATL",
+       "val": 2.0
+      },
+      {
+       "wk": 7,
+       "opp": "NE",
+       "val": 1.0
+      },
+      {
+       "wk": 8,
+       "opp": "SEA",
+       "val": 3.0
+      },
+      {
+       "wk": 9,
+       "opp": "TB",
+       "val": 0.0
+      }
+     ],
+     "need": null,
+     "recent_hits": 4,
+     "mu": null,
+     "def_rank": 2.0,
+     "def_allowed": 1.5,
+     "carry_share": 0.558,
+     "tgt_share": 0.087,
+     "rz_share": 0.393,
+     "implied_total": 30.0,
+     "spread": 11.5,
+     "wind": 9.0,
+     "td_rate": 0.5,
+     "role": null,
+     "range": null,
+     "new_role": false,
+     "qb_ctx": true,
+     "conf": "mid",
+     "conf_why": [
+      "qb_mid"
+     ]
+    }
+   },
+   {
     "rank": 12,
     "player_id": "00-0036555",
     "name": "Chuba Hubbard",
@@ -1777,7 +1767,7 @@
     "market": "td",
     "line": null,
     "label": "애니타임 터치다운",
-    "prob": 49.4,
+    "prob": 48.9,
     "status": "Active",
     "game_id": "2026_11_BAL_CAR",
     "detail": {
@@ -1816,8 +1806,8 @@
      "carry_share": 0.71,
      "tgt_share": 0.135,
      "rz_share": 0.375,
-     "implied_total": 23.2,
-     "spread": 3.0,
+     "implied_total": 23.0,
+     "spread": 2.5,
      "wind": 8.0,
      "td_rate": 0.5,
      "role": null,
@@ -2029,9 +2019,9 @@
     "home": 30.5
    },
    "weather": {
-    "temp_f": 66,
+    "temp_f": 67,
     "wind_mph": 14,
-    "precip_pct": 2
+    "precip_pct": 1
    },
    "notes": [
     {
@@ -3318,16 +3308,16 @@
    "kickoff": "2026-11-22 13:00 ET",
    "stadium": "Bank of America Stadium",
    "roof": "outdoors",
-   "spread_home": 3.0,
+   "spread_home": 2.5,
    "total": 43.5,
    "proj": {
-    "away": 20.2,
-    "home": 23.2
+    "away": 20.5,
+    "home": 23.0
    },
    "weather": {
-    "temp_f": 59,
+    "temp_f": 60,
     "wind_mph": 8,
-    "precip_pct": 23
+    "precip_pct": 27
    },
    "notes": [],
    "scenarios": [
@@ -3343,7 +3333,7 @@
      "own_picks": [
       {
        "label": "애니타임 터치다운",
-       "prob": 22.7
+       "prob": 22.0
       }
      ],
      "effects": [
@@ -3354,7 +3344,7 @@
        "market": "rec_yds",
        "line": 39.5,
        "prob_play": 64.7,
-       "prob_out": 74.7
+       "prob_out": 74.8
       },
       {
        "player_id": "00-0040124",
@@ -3363,7 +3353,7 @@
        "market": "receptions",
        "line": 3.5,
        "prob_play": 62.2,
-       "prob_out": 69.3
+       "prob_out": 69.4
       },
       {
        "player_id": "00-0040124",
@@ -3380,8 +3370,8 @@
        "label": "애니타임 터치다운",
        "market": "td",
        "line": null,
-       "prob_play": 26.3,
-       "prob_out": 28.3
+       "prob_play": 26.6,
+       "prob_out": 28.6
       },
       {
        "player_id": "00-0037005",
@@ -3389,8 +3379,8 @@
        "label": "애니타임 터치다운",
        "market": "td",
        "line": null,
-       "prob_play": 21.3,
-       "prob_out": 23.2
+       "prob_play": 20.6,
+       "prob_out": 22.4
       }
      ],
      "replacement": {
@@ -3440,12 +3430,12 @@
        {
         "label": "애니타임 터치다운",
         "market": "td",
-        "prob_out": 23.2,
-        "prob_play": 21.3
+        "prob_out": 22.4,
+        "prob_play": 20.6
        }
       ],
       "mu_play": 27.7,
-      "mu_out": 32.6,
+      "mu_out": 32.7,
       "stat": "rec_yds"
      }
     },
@@ -3461,7 +3451,7 @@
      "own_picks": [
       {
        "label": "애니타임 터치다운",
-       "prob": 21.3
+       "prob": 20.6
       }
      ],
      "effects": [
@@ -3472,7 +3462,7 @@
        "market": "rec_yds",
        "line": 39.5,
        "prob_play": 64.7,
-       "prob_out": 74.3
+       "prob_out": 74.4
       },
       {
        "player_id": "00-0040124",
@@ -3490,7 +3480,7 @@
        "market": "td",
        "line": null,
        "prob_play": 30.7,
-       "prob_out": 32.8
+       "prob_out": 32.7
       },
       {
        "player_id": "00-0039491",
@@ -3498,8 +3488,8 @@
        "label": "애니타임 터치다운",
        "market": "td",
        "line": null,
-       "prob_play": 26.3,
-       "prob_out": 28.0
+       "prob_play": 26.6,
+       "prob_out": 28.3
       },
       {
        "player_id": "00-0031610",
@@ -3507,8 +3497,8 @@
        "label": "애니타임 터치다운",
        "market": "td",
        "line": null,
-       "prob_play": 22.7,
-       "prob_out": 24.3
+       "prob_play": 22.0,
+       "prob_out": 23.6
       }
      ],
      "replacement": {
@@ -3570,12 +3560,12 @@
        {
         "label": "애니타임 터치다운",
         "market": "td",
-        "prob_out": 24.3,
-        "prob_play": 22.7
+        "prob_out": 23.6,
+        "prob_play": 22.0
        }
       ],
       "mu_play": 32.3,
-      "mu_out": 38.6,
+      "mu_out": 38.7,
       "stat": "rec_yds"
      }
     }
@@ -3808,19 +3798,19 @@
       "carry_share": 0.0,
       "tgt_share": 0.241,
       "rz_share": 0.114,
-      "implied_total": 23.2,
-      "spread": 3.0,
+      "implied_total": 23.0,
+      "spread": 2.5,
       "wind": 8.0,
       "td_rate": 0.312,
       "role": {
        "kind": "rec",
-       "team_pass": 35.7,
+       "team_pass": 35.9,
        "share": 0.241,
        "exp_tgt": 8.2,
        "ypt": 8.41,
        "catch": 0.6,
        "def": 1.18,
-       "role_mu": 81.1,
+       "role_mu": 81.5,
        "model_mu": 57.0
       },
       "range": [
@@ -3882,13 +3872,13 @@
       "carry_share": 0.0,
       "tgt_share": 0.241,
       "rz_share": 0.114,
-      "implied_total": 23.2,
-      "spread": 3.0,
+      "implied_total": 23.0,
+      "spread": 2.5,
       "wind": 8.0,
       "td_rate": 0.312,
       "role": {
        "kind": "recs",
-       "team_pass": 35.7,
+       "team_pass": 35.9,
        "share": 0.241,
        "exp_tgt": 8.2,
        "ypt": 8.41,
@@ -3917,7 +3907,7 @@
      "market": "rush_yds",
      "line": 59.5,
      "label": "러싱 60야드 이상",
-     "prob": 61.4,
+     "prob": 61.0,
      "status": "Active",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
@@ -3950,25 +3940,25 @@
       ],
       "need": 60.0,
       "recent_hits": 4,
-      "mu": 81.5,
+      "mu": 81.1,
       "def_rank": 13.0,
       "def_allowed": 87.6,
       "carry_share": 0.71,
       "tgt_share": 0.135,
       "rz_share": 0.375,
-      "implied_total": 23.2,
-      "spread": 3.0,
+      "implied_total": 23.0,
+      "spread": 2.5,
       "wind": 8.0,
       "td_rate": 0.5,
       "role": {
        "kind": "rush",
-       "team_car": 26.8,
+       "team_car": 26.6,
        "share": 0.71,
-       "exp_car": 19.0,
+       "exp_car": 18.9,
        "ypc": 4.3,
        "def": 0.89,
-       "role_mu": 72.6,
-       "model_mu": 81.5
+       "role_mu": 72.1,
+       "model_mu": 81.1
       },
       "range": [
        45.0,
@@ -4029,13 +4019,13 @@
       "carry_share": 0.144,
       "tgt_share": 0.146,
       "rz_share": 0.045,
-      "implied_total": 20.2,
-      "spread": -3.0,
+      "implied_total": 20.5,
+      "spread": -2.5,
       "wind": 8.0,
       "td_rate": 0.125,
       "role": {
        "kind": "recs",
-       "team_pass": 37.5,
+       "team_pass": 37.3,
        "share": 0.147,
        "exp_tgt": 5.2,
        "ypt": 4.95,
@@ -4045,7 +4035,7 @@
        "model_mu": 2.7
       },
       "range": [
-       1.9,
+       1.8,
        4.6
       ],
       "new_role": false,
@@ -4066,7 +4056,7 @@
      "market": "pass_yds",
      "line": 224.5,
      "label": "패싱 225야드 이상",
-     "prob": 58.7,
+     "prob": 56.5,
      "status": "Active",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
@@ -4099,19 +4089,19 @@
       ],
       "need": 225.0,
       "recent_hits": 2,
-      "mu": 228.9,
+      "mu": 230.1,
       "def_rank": 15.0,
       "def_allowed": 236.0,
       "carry_share": 0.061,
       "tgt_share": 0.0,
       "rz_share": 0.058,
-      "implied_total": 23.2,
-      "spread": 3.0,
+      "implied_total": 23.0,
+      "spread": 2.5,
       "wind": 8.0,
       "td_rate": 0.188,
       "role": null,
       "range": [
-       195.0,
+       192.0,
        287.0
       ],
       "new_role": false,
@@ -4130,7 +4120,7 @@
      "market": "receptions",
      "line": 4.5,
      "label": "리셉션 5개 이상",
-     "prob": 61.7,
+     "prob": 61.5,
      "status": "Active",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
@@ -4169,19 +4159,19 @@
       "carry_share": 0.023,
       "tgt_share": 0.275,
       "rz_share": 0.033,
-      "implied_total": 20.2,
-      "spread": -3.0,
+      "implied_total": 20.5,
+      "spread": -2.5,
       "wind": 8.0,
       "td_rate": 0.438,
       "role": {
        "kind": "recs",
-       "team_pass": 37.5,
+       "team_pass": 37.3,
        "share": 0.242,
        "exp_tgt": 8.6,
        "ypt": 9.69,
        "catch": 0.68,
        "def": 0.89,
-       "role_mu": 5.9,
+       "role_mu": 5.8,
        "model_mu": 5.0
       },
       "range": [
@@ -4245,8 +4235,8 @@
       "carry_share": 0.061,
       "tgt_share": 0.0,
       "rz_share": 0.058,
-      "implied_total": 23.2,
-      "spread": 3.0,
+      "implied_total": 23.0,
+      "spread": 2.5,
       "wind": 8.0,
       "td_rate": 0.188,
       "role": null,
@@ -4270,7 +4260,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 60.0,
+     "prob": 59.9,
      "status": "Active",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
@@ -4309,13 +4299,13 @@
       "carry_share": 0.011,
       "tgt_share": 0.161,
       "rz_share": 0.05,
-      "implied_total": 20.2,
-      "spread": -3.0,
+      "implied_total": 20.5,
+      "spread": -2.5,
       "wind": 8.0,
       "td_rate": 0.062,
       "role": {
        "kind": "recs",
-       "team_pass": 37.5,
+       "team_pass": 37.3,
        "share": 0.164,
        "exp_tgt": 5.8,
        "ypt": 6.42,
@@ -4379,26 +4369,26 @@
       ],
       "need": 60.0,
       "recent_hits": 3,
-      "mu": 80.3,
+      "mu": 80.1,
       "def_rank": 18.0,
       "def_allowed": 136.1,
       "carry_share": 0.023,
       "tgt_share": 0.275,
       "rz_share": 0.033,
-      "implied_total": 20.2,
-      "spread": -3.0,
+      "implied_total": 20.5,
+      "spread": -2.5,
       "wind": 8.0,
       "td_rate": 0.438,
       "role": {
        "kind": "rec",
-       "team_pass": 37.5,
+       "team_pass": 37.3,
        "share": 0.242,
        "exp_tgt": 8.6,
        "ypt": 9.69,
        "catch": 0.68,
        "def": 0.89,
-       "role_mu": 74.3,
-       "model_mu": 86.4
+       "role_mu": 73.9,
+       "model_mu": 86.3
       },
       "range": [
        43.0,
@@ -4422,7 +4412,7 @@
      "market": "rush_yds",
      "line": 59.5,
      "label": "러싱 60야드 이상",
-     "prob": 58.5,
+     "prob": 58.1,
      "status": "Active",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
@@ -4455,29 +4445,29 @@
       ],
       "need": 60.0,
       "recent_hits": 0,
-      "mu": 78.4,
+      "mu": 77.6,
       "def_rank": 15.0,
       "def_allowed": 85.5,
       "carry_share": 0.633,
       "tgt_share": 0.059,
       "rz_share": 0.594,
-      "implied_total": 20.2,
-      "spread": -3.0,
+      "implied_total": 20.5,
+      "spread": -2.5,
       "wind": 8.0,
       "td_rate": 0.625,
       "role": {
        "kind": "rush",
-       "team_car": 24.4,
+       "team_car": 24.5,
        "share": 0.633,
-       "exp_car": 15.4,
+       "exp_car": 15.5,
        "ypc": 4.62,
        "def": 0.91,
-       "role_mu": 65.2,
-       "model_mu": 78.4
+       "role_mu": 65.7,
+       "model_mu": 77.6
       },
       "range": [
        43.0,
-       96.0
+       95.0
       ],
       "new_role": false,
       "qb_ctx": true,
@@ -4497,7 +4487,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 49.4,
+     "prob": 48.9,
      "status": "Active",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
@@ -4536,8 +4526,8 @@
       "carry_share": 0.71,
       "tgt_share": 0.135,
       "rz_share": 0.375,
-      "implied_total": 23.2,
-      "spread": 3.0,
+      "implied_total": 23.0,
+      "spread": 2.5,
       "wind": 8.0,
       "td_rate": 0.5,
       "role": null,
@@ -4558,7 +4548,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 42.2,
+     "prob": 41.4,
      "status": "Active",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
@@ -4597,8 +4587,8 @@
       "carry_share": 0.633,
       "tgt_share": 0.059,
       "rz_share": 0.594,
-      "implied_total": 20.2,
-      "spread": -3.0,
+      "implied_total": 20.5,
+      "spread": -2.5,
       "wind": 8.0,
       "td_rate": 0.625,
       "role": null,
@@ -4660,8 +4650,8 @@
       "carry_share": 0.0,
       "tgt_share": 0.241,
       "rz_share": 0.114,
-      "implied_total": 23.2,
-      "spread": 3.0,
+      "implied_total": 23.0,
+      "spread": 2.5,
       "wind": 8.0,
       "td_rate": 0.312,
       "role": null,
@@ -4682,7 +4672,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 26.3,
+     "prob": 26.6,
      "status": "Active",
      "game_id": "2026_11_BAL_CAR",
      "detail": {
@@ -4721,8 +4711,8 @@
       "carry_share": 0.015,
       "tgt_share": 0.177,
       "rz_share": 0.079,
-      "implied_total": 23.2,
-      "spread": 3.0,
+      "implied_total": 23.0,
+      "spread": 2.5,
       "wind": 8.0,
       "td_rate": 0.375,
       "role": null,
@@ -4782,8 +4772,8 @@
       "carry_share": 0.023,
       "tgt_share": 0.275,
       "rz_share": 0.033,
-      "implied_total": 20.2,
-      "spread": -3.0,
+      "implied_total": 20.5,
+      "spread": -2.5,
       "wind": 8.0,
       "td_rate": 0.438,
       "role": null,
@@ -4813,9 +4803,9 @@
     "home": 30.0
    },
    "weather": {
-    "temp_f": 54,
-    "wind_mph": 12,
-    "precip_pct": 70
+    "temp_f": 55,
+    "wind_mph": 9,
+    "precip_pct": 73
    },
    "notes": [],
    "scenarios": [],
@@ -5006,80 +4996,6 @@
    "best15_prob": [
     {
      "rank": 1,
-     "player_id": "00-0037239",
-     "name": "Chris Olave",
-     "pos": "WR",
-     "team": "NO",
-     "opp": "CHI",
-     "market": "receptions",
-     "line": 3.5,
-     "label": "리셉션 4개 이상",
-     "prob": 68.5,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "MIN",
-        "val": 4.0
-       },
-       {
-        "wk": 6,
-        "opp": "NYG",
-        "val": 4.0
-       },
-       {
-        "wk": 7,
-        "opp": "PIT",
-        "val": 6.0
-       },
-       {
-        "wk": 9,
-        "opp": "CLE",
-        "val": 7.0
-       },
-       {
-        "wk": 10,
-        "opp": "CAR",
-        "val": 3.0
-       }
-      ],
-      "need": 4.0,
-      "recent_hits": 4,
-      "mu": 5.0,
-      "def_rank": 24.0,
-      "def_allowed": 8.8,
-      "carry_share": 0.0,
-      "tgt_share": 0.258,
-      "rz_share": 0.047,
-      "implied_total": 18.5,
-      "spread": -11.5,
-      "wind": 12.0,
-      "td_rate": 0.438,
-      "role": {
-       "kind": "recs",
-       "team_pass": 39.2,
-       "share": 0.258,
-       "exp_tgt": 9.6,
-       "ypt": 8.63,
-       "catch": 0.66,
-       "def": 1.1,
-       "role_mu": 6.3,
-       "model_mu": 5.0
-      },
-      "range": [
-       3.1,
-       6.5
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
-     }
-    },
-    {
-     "rank": 2,
      "player_id": "00-0040735",
      "name": "Luther Burden III",
      "pos": "WR",
@@ -5129,7 +5045,7 @@
       "rz_share": 0.051,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.312,
       "role": {
        "kind": "recs",
@@ -5155,7 +5071,7 @@
      }
     },
     {
-     "rank": 3,
+     "rank": 2,
      "player_id": "00-0041029",
      "name": "Jordyn Tyson",
      "pos": "WR",
@@ -5164,7 +5080,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 66.9,
+     "prob": 67.3,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -5182,7 +5098,7 @@
       ],
       "need": 4.0,
       "recent_hits": 2,
-      "mu": 4.7,
+      "mu": 4.8,
       "def_rank": 24.0,
       "def_allowed": 8.8,
       "carry_share": 0.0,
@@ -5190,7 +5106,7 @@
       "rz_share": 0.0,
       "implied_total": 18.5,
       "spread": -11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.0,
       "role": {
        "kind": "recs",
@@ -5201,7 +5117,7 @@
        "catch": 0.7,
        "def": 1.1,
        "role_mu": 7.5,
-       "model_mu": 4.7
+       "model_mu": 4.8
       },
       "range": [
        3.0,
@@ -5214,81 +5130,7 @@
      }
     },
     {
-     "rank": 4,
-     "player_id": "00-0037239",
-     "name": "Chris Olave",
-     "pos": "WR",
-     "team": "NO",
-     "opp": "CHI",
-     "market": "rec_yds",
-     "line": 39.5,
-     "label": "리시빙 40야드 이상",
-     "prob": 62.9,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "MIN",
-        "val": 46.0
-       },
-       {
-        "wk": 6,
-        "opp": "NYG",
-        "val": 43.0
-       },
-       {
-        "wk": 7,
-        "opp": "PIT",
-        "val": 56.0
-       },
-       {
-        "wk": 9,
-        "opp": "CLE",
-        "val": 98.0
-       },
-       {
-        "wk": 10,
-        "opp": "CAR",
-        "val": 30.0
-       }
-      ],
-      "need": 40.0,
-      "recent_hits": 4,
-      "mu": 55.3,
-      "def_rank": 16.0,
-      "def_allowed": 139.2,
-      "carry_share": 0.0,
-      "tgt_share": 0.258,
-      "rz_share": 0.047,
-      "implied_total": 18.5,
-      "spread": -11.5,
-      "wind": 12.0,
-      "td_rate": 0.438,
-      "role": {
-       "kind": "rec",
-       "team_pass": 39.2,
-       "share": 0.258,
-       "exp_tgt": 9.6,
-       "ypt": 8.63,
-       "catch": 0.66,
-       "def": 1.1,
-       "role_mu": 91.0,
-       "model_mu": 55.3
-      },
-      "range": [
-       28.0,
-       80.0
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
-     }
-    },
-    {
-     "rank": 5,
+     "rank": 3,
      "player_id": "00-0040126",
      "name": "Colston Loveland",
      "pos": "TE",
@@ -5330,7 +5172,7 @@
       ],
       "need": 40.0,
       "recent_hits": 4,
-      "mu": 54.6,
+      "mu": 54.2,
       "def_rank": 6.0,
       "def_allowed": 67.5,
       "carry_share": 0.0,
@@ -5338,7 +5180,7 @@
       "rz_share": 0.045,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.312,
       "role": {
        "kind": "rec",
@@ -5349,11 +5191,11 @@
        "catch": 0.65,
        "def": 1.08,
        "role_mu": 52.6,
-       "model_mu": 56.7
+       "model_mu": 55.9
       },
       "range": [
        28.0,
-       79.0
+       78.0
       ],
       "new_role": false,
       "qb_ctx": true,
@@ -5364,7 +5206,7 @@
      }
     },
     {
-     "rank": 6,
+     "rank": 4,
      "player_id": "00-0036275",
      "name": "D'Andre Swift",
      "pos": "RB",
@@ -5373,7 +5215,7 @@
      "market": "rush_yds",
      "line": 49.5,
      "label": "러싱 50야드 이상",
-     "prob": 62.6,
+     "prob": 62.4,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -5406,7 +5248,7 @@
       ],
       "need": 50.0,
       "recent_hits": 2,
-      "mu": 69.3,
+      "mu": 69.0,
       "def_rank": 7.0,
       "def_allowed": 104.6,
       "carry_share": 0.558,
@@ -5414,7 +5256,7 @@
       "rz_share": 0.393,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.5,
       "role": {
        "kind": "rush",
@@ -5424,7 +5266,7 @@
        "ypc": 4.1,
        "def": 1.01,
        "role_mu": 89.4,
-       "model_mu": 69.3
+       "model_mu": 69.0
       },
       "range": [
        38.0,
@@ -5439,7 +5281,7 @@
      }
     },
     {
-     "rank": 7,
+     "rank": 5,
      "player_id": "00-0041029",
      "name": "Jordyn Tyson",
      "pos": "WR",
@@ -5448,7 +5290,7 @@
      "market": "rec_yds",
      "line": 39.5,
      "label": "리시빙 40야드 이상",
-     "prob": 62.1,
+     "prob": 62.3,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -5466,7 +5308,7 @@
       ],
       "need": 40.0,
       "recent_hits": 1,
-      "mu": 53.6,
+      "mu": 53.7,
       "def_rank": 16.0,
       "def_allowed": 139.2,
       "carry_share": 0.0,
@@ -5474,7 +5316,7 @@
       "rz_share": 0.0,
       "implied_total": 18.5,
       "spread": -11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.0,
       "role": {
        "kind": "rec",
@@ -5485,7 +5327,7 @@
        "catch": 0.7,
        "def": 1.1,
        "role_mu": 85.8,
-       "model_mu": 53.6
+       "model_mu": 53.7
       },
       "range": [
        27.0,
@@ -5498,7 +5340,81 @@
      }
     },
     {
-     "rank": 8,
+     "rank": 6,
+     "player_id": "00-0037239",
+     "name": "Chris Olave",
+     "pos": "WR",
+     "team": "NO",
+     "opp": "CHI",
+     "market": "rec_yds",
+     "line": 39.5,
+     "label": "리시빙 40야드 이상",
+     "prob": 62.1,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "MIN",
+        "val": 46.0
+       },
+       {
+        "wk": 6,
+        "opp": "NYG",
+        "val": 43.0
+       },
+       {
+        "wk": 7,
+        "opp": "PIT",
+        "val": 56.0
+       },
+       {
+        "wk": 9,
+        "opp": "CLE",
+        "val": 98.0
+       },
+       {
+        "wk": 10,
+        "opp": "CAR",
+        "val": 30.0
+       }
+      ],
+      "need": 40.0,
+      "recent_hits": 4,
+      "mu": 53.4,
+      "def_rank": 16.0,
+      "def_allowed": 139.2,
+      "carry_share": 0.0,
+      "tgt_share": 0.258,
+      "rz_share": 0.047,
+      "implied_total": 18.5,
+      "spread": -11.5,
+      "wind": 9.0,
+      "td_rate": 0.438,
+      "role": {
+       "kind": "rec",
+       "team_pass": 39.2,
+       "share": 0.258,
+       "exp_tgt": 9.6,
+       "ypt": 8.63,
+       "catch": 0.66,
+       "def": 1.1,
+       "role_mu": 91.0,
+       "model_mu": 53.4
+      },
+      "range": [
+       27.0,
+       77.0
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "high",
+      "conf_why": []
+     }
+    },
+    {
+     "rank": 7,
      "player_id": "00-0040126",
      "name": "Colston Loveland",
      "pos": "TE",
@@ -5507,7 +5423,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 61.7,
+     "prob": 61.9,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -5548,7 +5464,7 @@
       "rz_share": 0.045,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.312,
       "role": {
        "kind": "recs",
@@ -5559,7 +5475,7 @@
        "catch": 0.65,
        "def": 1.08,
        "role_mu": 4.4,
-       "model_mu": 4.6
+       "model_mu": 4.7
       },
       "range": [
        2.9,
@@ -5574,7 +5490,7 @@
      }
     },
     {
-     "rank": 9,
+     "rank": 8,
      "player_id": "00-0040735",
      "name": "Luther Burden III",
      "pos": "WR",
@@ -5583,7 +5499,7 @@
      "market": "rec_yds",
      "line": 49.5,
      "label": "리시빙 50야드 이상",
-     "prob": 61.5,
+     "prob": 61.0,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -5616,7 +5532,7 @@
       ],
       "need": 50.0,
       "recent_hits": 4,
-      "mu": 68.9,
+      "mu": 68.4,
       "def_rank": 13.0,
       "def_allowed": 144.8,
       "carry_share": 0.025,
@@ -5624,7 +5540,7 @@
       "rz_share": 0.051,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.312,
       "role": {
        "kind": "rec",
@@ -5635,11 +5551,11 @@
        "catch": 0.69,
        "def": 1.11,
        "role_mu": 69.5,
-       "model_mu": 68.4
+       "model_mu": 67.2
       },
       "range": [
-       37.0,
-       91.0
+       36.0,
+       90.0
       ],
       "new_role": false,
       "qb_ctx": true,
@@ -5650,71 +5566,7 @@
      }
     },
     {
-     "rank": 10,
-     "player_id": "00-0039918",
-     "name": "Caleb Williams",
-     "pos": "QB",
-     "team": "CHI",
-     "opp": "NO",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 57.3,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 2,
-        "opp": "MIN",
-        "val": 138.0
-       },
-       {
-        "wk": 6,
-        "opp": "ATL",
-        "val": 305.0
-       },
-       {
-        "wk": 7,
-        "opp": "NE",
-        "val": 308.0
-       },
-       {
-        "wk": 8,
-        "opp": "SEA",
-        "val": 247.0
-       },
-       {
-        "wk": 9,
-        "opp": "TB",
-        "val": 279.0
-       }
-      ],
-      "need": 225.0,
-      "recent_hits": 4,
-      "mu": 252.6,
-      "def_rank": 7.0,
-      "def_allowed": 254.9,
-      "carry_share": 0.154,
-      "tgt_share": 0.0,
-      "rz_share": 0.099,
-      "implied_total": 30.0,
-      "spread": 11.5,
-      "wind": 12.0,
-      "td_rate": 0.062,
-      "role": null,
-      "range": [
-       183.0,
-       298.0
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
-     }
-    },
-    {
-     "rank": 11,
+     "rank": 9,
      "player_id": "00-0039918",
      "name": "Caleb Williams",
      "pos": "QB",
@@ -5723,7 +5575,7 @@
      "market": "pass_tds",
      "line": 1.5,
      "label": "패싱 TD 2개 이상",
-     "prob": 56.1,
+     "prob": 60.6,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -5756,7 +5608,7 @@
       ],
       "need": 2.0,
       "recent_hits": 2,
-      "mu": 1.9,
+      "mu": 2.1,
       "def_rank": 14.0,
       "def_allowed": 1.4,
       "carry_share": 0.154,
@@ -5764,12 +5616,150 @@
       "rz_share": 0.099,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.062,
       "role": null,
       "range": [
        1.0,
-       3.1
+       2.7
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "high",
+      "conf_why": []
+     }
+    },
+    {
+     "rank": 10,
+     "player_id": "00-0039918",
+     "name": "Caleb Williams",
+     "pos": "QB",
+     "team": "CHI",
+     "opp": "NO",
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 60.2,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 2,
+        "opp": "MIN",
+        "val": 138.0
+       },
+       {
+        "wk": 6,
+        "opp": "ATL",
+        "val": 305.0
+       },
+       {
+        "wk": 7,
+        "opp": "NE",
+        "val": 308.0
+       },
+       {
+        "wk": 8,
+        "opp": "SEA",
+        "val": 247.0
+       },
+       {
+        "wk": 9,
+        "opp": "TB",
+        "val": 279.0
+       }
+      ],
+      "need": 225.0,
+      "recent_hits": 4,
+      "mu": 257.7,
+      "def_rank": 7.0,
+      "def_allowed": 254.9,
+      "carry_share": 0.154,
+      "tgt_share": 0.0,
+      "rz_share": 0.099,
+      "implied_total": 30.0,
+      "spread": 11.5,
+      "wind": 9.0,
+      "td_rate": 0.062,
+      "role": null,
+      "range": [
+       187.0,
+       304.0
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "high",
+      "conf_why": []
+     }
+    },
+    {
+     "rank": 11,
+     "player_id": "00-0037239",
+     "name": "Chris Olave",
+     "pos": "WR",
+     "team": "NO",
+     "opp": "CHI",
+     "market": "receptions",
+     "line": 4.5,
+     "label": "리셉션 5개 이상",
+     "prob": 58.5,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "MIN",
+        "val": 4.0
+       },
+       {
+        "wk": 6,
+        "opp": "NYG",
+        "val": 4.0
+       },
+       {
+        "wk": 7,
+        "opp": "PIT",
+        "val": 6.0
+       },
+       {
+        "wk": 9,
+        "opp": "CLE",
+        "val": 7.0
+       },
+       {
+        "wk": 10,
+        "opp": "CAR",
+        "val": 3.0
+       }
+      ],
+      "need": 5.0,
+      "recent_hits": 2,
+      "mu": 5.1,
+      "def_rank": 24.0,
+      "def_allowed": 8.8,
+      "carry_share": 0.0,
+      "tgt_share": 0.258,
+      "rz_share": 0.047,
+      "implied_total": 18.5,
+      "spread": -11.5,
+      "wind": 9.0,
+      "td_rate": 0.438,
+      "role": {
+       "kind": "recs",
+       "team_pass": 39.2,
+       "share": 0.258,
+       "exp_tgt": 9.6,
+       "ypt": 8.63,
+       "catch": 0.66,
+       "def": 1.1,
+       "role_mu": 6.3,
+       "model_mu": 5.1
+      },
+      "range": [
+       3.2,
+       6.7
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -5779,69 +5769,6 @@
     },
     {
      "rank": 12,
-     "player_id": "00-0036275",
-     "name": "D'Andre Swift",
-     "pos": "RB",
-     "team": "CHI",
-     "opp": "NO",
-     "market": "td",
-     "line": null,
-     "label": "애니타임 터치다운",
-     "prob": 52.1,
-     "status": "Active",
-     "game_id": "2026_11_NO_CHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "GB",
-        "val": 1.0
-       },
-       {
-        "wk": 6,
-        "opp": "ATL",
-        "val": 2.0
-       },
-       {
-        "wk": 7,
-        "opp": "NE",
-        "val": 1.0
-       },
-       {
-        "wk": 8,
-        "opp": "SEA",
-        "val": 3.0
-       },
-       {
-        "wk": 9,
-        "opp": "TB",
-        "val": 0.0
-       }
-      ],
-      "need": null,
-      "recent_hits": 4,
-      "mu": null,
-      "def_rank": 2.0,
-      "def_allowed": 1.5,
-      "carry_share": 0.558,
-      "tgt_share": 0.087,
-      "rz_share": 0.393,
-      "implied_total": 30.0,
-      "spread": 11.5,
-      "wind": 12.0,
-      "td_rate": 0.5,
-      "role": null,
-      "range": null,
-      "new_role": false,
-      "qb_ctx": true,
-      "conf": "mid",
-      "conf_why": [
-       "qb_mid"
-      ]
-     }
-    },
-    {
-     "rank": 13,
      "player_id": "00-0040236",
      "name": "Kyle Monangai",
      "pos": "RB",
@@ -5883,7 +5810,7 @@
       ],
       "need": 40.0,
       "recent_hits": 3,
-      "mu": 47.4,
+      "mu": 47.6,
       "def_rank": 7.0,
       "def_allowed": 104.6,
       "carry_share": 0.367,
@@ -5891,7 +5818,7 @@
       "rz_share": 0.27,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.375,
       "role": {
        "kind": "rush",
@@ -5901,7 +5828,7 @@
        "ypc": 4.66,
        "def": 1.01,
        "role_mu": 66.6,
-       "model_mu": 47.4
+       "model_mu": 47.6
       },
       "range": [
        25.0,
@@ -5916,6 +5843,69 @@
      }
     },
     {
+     "rank": 13,
+     "player_id": "00-0036275",
+     "name": "D'Andre Swift",
+     "pos": "RB",
+     "team": "CHI",
+     "opp": "NO",
+     "market": "td",
+     "line": null,
+     "label": "애니타임 터치다운",
+     "prob": 49.5,
+     "status": "Active",
+     "game_id": "2026_11_NO_CHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "GB",
+        "val": 1.0
+       },
+       {
+        "wk": 6,
+        "opp": "ATL",
+        "val": 2.0
+       },
+       {
+        "wk": 7,
+        "opp": "NE",
+        "val": 1.0
+       },
+       {
+        "wk": 8,
+        "opp": "SEA",
+        "val": 3.0
+       },
+       {
+        "wk": 9,
+        "opp": "TB",
+        "val": 0.0
+       }
+      ],
+      "need": null,
+      "recent_hits": 4,
+      "mu": null,
+      "def_rank": 2.0,
+      "def_allowed": 1.5,
+      "carry_share": 0.558,
+      "tgt_share": 0.087,
+      "rz_share": 0.393,
+      "implied_total": 30.0,
+      "spread": 11.5,
+      "wind": 9.0,
+      "td_rate": 0.5,
+      "role": null,
+      "range": null,
+      "new_role": false,
+      "qb_ctx": true,
+      "conf": "mid",
+      "conf_why": [
+       "qb_mid"
+      ]
+     }
+    },
+    {
      "rank": 14,
      "player_id": "00-0040236",
      "name": "Kyle Monangai",
@@ -5925,7 +5915,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 43.5,
+     "prob": 43.0,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -5966,7 +5956,7 @@
       "rz_share": 0.27,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.375,
       "role": null,
       "range": null,
@@ -5980,15 +5970,15 @@
     },
     {
      "rank": 15,
-     "player_id": "00-0040735",
-     "name": "Luther Burden III",
-     "pos": "WR",
+     "player_id": "00-0040126",
+     "name": "Colston Loveland",
+     "pos": "TE",
      "team": "CHI",
      "opp": "NO",
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 35.6,
+     "prob": 36.7,
      "status": "Active",
      "game_id": "2026_11_NO_CHI",
      "detail": {
@@ -6001,7 +5991,7 @@
        {
         "wk": 6,
         "opp": "ATL",
-        "val": 0.0
+        "val": 1.0
        },
        {
         "wk": 7,
@@ -6011,25 +6001,25 @@
        {
         "wk": 8,
         "opp": "SEA",
-        "val": 1.0
+        "val": 0.0
        },
        {
         "wk": 9,
         "opp": "TB",
-        "val": 1.0
+        "val": 0.0
        }
       ],
       "need": null,
-      "recent_hits": 3,
+      "recent_hits": 2,
       "mu": null,
-      "def_rank": 16.0,
+      "def_rank": 7.0,
       "def_allowed": 0.6,
-      "carry_share": 0.025,
-      "tgt_share": 0.223,
-      "rz_share": 0.051,
+      "carry_share": 0.0,
+      "tgt_share": 0.226,
+      "rz_share": 0.045,
       "implied_total": 30.0,
       "spread": 11.5,
-      "wind": 12.0,
+      "wind": 9.0,
       "td_rate": 0.312,
       "role": null,
       "range": null,
@@ -6058,7 +6048,7 @@
     "home": 31.0
    },
    "weather": {
-    "temp_f": 64,
+    "temp_f": 62,
     "wind_mph": 15,
     "precip_pct": 0
    },
@@ -7426,11 +7416,11 @@
    "kickoff": "2026-11-22 13:00 ET",
    "stadium": "Ford Field",
    "roof": "dome",
-   "spread_home": 4.5,
+   "spread_home": 3.5,
    "total": 47.5,
    "proj": {
-    "away": 21.5,
-    "home": 26.0
+    "away": 22.0,
+    "home": 25.5
    },
    "weather": {
     "dome": true
@@ -7638,7 +7628,7 @@
      "market": "rec_yds",
      "line": 19.5,
      "label": "리시빙 20야드 이상",
-     "prob": 67.8,
+     "prob": 67.6,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -7671,30 +7661,30 @@
       ],
       "need": 20.0,
       "recent_hits": 3,
-      "mu": 37.4,
+      "mu": 37.1,
       "def_rank": 19.0,
       "def_allowed": 26.2,
       "carry_share": 0.719,
       "tgt_share": 0.172,
       "rz_share": 0.413,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.75,
       "role": {
        "kind": "rec",
-       "team_pass": 31.4,
+       "team_pass": 31.7,
        "share": 0.172,
-       "exp_tgt": 5.1,
+       "exp_tgt": 5.2,
        "ypt": 6.27,
        "catch": 0.78,
        "def": 0.95,
-       "role_mu": 30.6,
-       "model_mu": 37.4
+       "role_mu": 30.9,
+       "model_mu": 37.1
       },
       "range": [
-       16.0,
-       55.0
+       15.0,
+       54.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -7704,6 +7694,80 @@
     },
     {
      "rank": 2,
+     "player_id": "00-0037240",
+     "name": "Jameson Williams",
+     "pos": "WR",
+     "team": "DET",
+     "opp": "TB",
+     "market": "rec_yds",
+     "line": 39.5,
+     "label": "리시빙 40야드 이상",
+     "prob": 63.8,
+     "status": "Active",
+     "game_id": "2026_11_TB_DET",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "ARI",
+        "val": 47.0
+       },
+       {
+        "wk": 7,
+        "opp": "GB",
+        "val": 91.0
+       },
+       {
+        "wk": 8,
+        "opp": "MIN",
+        "val": 70.0
+       },
+       {
+        "wk": 9,
+        "opp": "MIA",
+        "val": 31.0
+       },
+       {
+        "wk": 10,
+        "opp": "NE",
+        "val": 50.0
+       }
+      ],
+      "need": 40.0,
+      "recent_hits": 4,
+      "mu": 56.1,
+      "def_rank": 14.0,
+      "def_allowed": 143.9,
+      "carry_share": 0.007,
+      "tgt_share": 0.184,
+      "rz_share": 0.16,
+      "implied_total": 25.5,
+      "spread": 3.5,
+      "wind": 0.0,
+      "td_rate": 0.312,
+      "role": {
+       "kind": "rec",
+       "team_pass": 31.7,
+       "share": 0.184,
+       "exp_tgt": 5.5,
+       "ypt": 9.71,
+       "catch": 0.63,
+       "def": 0.94,
+       "role_mu": 50.8,
+       "model_mu": 56.1
+      },
+      "range": [
+       29.0,
+       81.0
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "high",
+      "conf_why": []
+     }
+    },
+    {
+     "rank": 3,
      "player_id": "00-0039139",
      "name": "Jahmyr Gibbs",
      "pos": "RB",
@@ -7712,7 +7776,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 65.0,
+     "prob": 63.8,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -7751,86 +7815,12 @@
       "carry_share": 0.719,
       "tgt_share": 0.172,
       "rz_share": 0.413,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.75,
       "role": null,
       "range": null,
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
-     }
-    },
-    {
-     "rank": 3,
-     "player_id": "00-0037240",
-     "name": "Jameson Williams",
-     "pos": "WR",
-     "team": "DET",
-     "opp": "TB",
-     "market": "rec_yds",
-     "line": 39.5,
-     "label": "리시빙 40야드 이상",
-     "prob": 64.8,
-     "status": "Active",
-     "game_id": "2026_11_TB_DET",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "ARI",
-        "val": 47.0
-       },
-       {
-        "wk": 7,
-        "opp": "GB",
-        "val": 91.0
-       },
-       {
-        "wk": 8,
-        "opp": "MIN",
-        "val": 70.0
-       },
-       {
-        "wk": 9,
-        "opp": "MIA",
-        "val": 31.0
-       },
-       {
-        "wk": 10,
-        "opp": "NE",
-        "val": 50.0
-       }
-      ],
-      "need": 40.0,
-      "recent_hits": 4,
-      "mu": 57.1,
-      "def_rank": 14.0,
-      "def_allowed": 143.9,
-      "carry_share": 0.007,
-      "tgt_share": 0.184,
-      "rz_share": 0.16,
-      "implied_total": 26.0,
-      "spread": 4.5,
-      "wind": 0.0,
-      "td_rate": 0.312,
-      "role": {
-       "kind": "rec",
-       "team_pass": 31.4,
-       "share": 0.184,
-       "exp_tgt": 5.5,
-       "ypt": 9.71,
-       "catch": 0.63,
-       "def": 0.94,
-       "role_mu": 50.3,
-       "model_mu": 57.1
-      },
-      "range": [
-       29.0,
-       82.0
-      ],
       "new_role": false,
       "qb_ctx": false,
       "conf": "high",
@@ -7886,15 +7876,15 @@
       "carry_share": 0.003,
       "tgt_share": 0.166,
       "rz_share": 0.125,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.375,
       "role": {
        "kind": "recs",
-       "team_pass": 31.4,
+       "team_pass": 31.7,
        "share": 0.166,
-       "exp_tgt": 4.9,
+       "exp_tgt": 5.0,
        "ypt": 8.55,
        "catch": 0.74,
        "def": 0.97,
@@ -7954,29 +7944,29 @@
       ],
       "need": 60.0,
       "recent_hits": 4,
-      "mu": 85.0,
+      "mu": 85.2,
       "def_rank": 22.0,
       "def_allowed": 66.1,
       "carry_share": 0.597,
       "tgt_share": 0.107,
       "rz_share": 0.42,
-      "implied_total": 21.5,
-      "spread": -4.5,
+      "implied_total": 22.0,
+      "spread": -3.5,
       "wind": 0.0,
       "td_rate": 0.5,
       "role": {
        "kind": "rush",
-       "team_car": 35.4,
+       "team_car": 36.0,
        "share": 0.597,
-       "exp_car": 21.2,
+       "exp_car": 21.5,
        "ypc": 4.35,
        "def": 0.9,
-       "role_mu": 83.1,
-       "model_mu": 85.0
+       "role_mu": 84.4,
+       "model_mu": 85.2
       },
       "range": [
        47.0,
-       104.0
+       105.0
       ],
       "new_role": false,
       "qb_ctx": true,
@@ -7988,15 +7978,15 @@
     },
     {
      "rank": 6,
-     "player_id": "00-0033106",
-     "name": "Jared Goff",
-     "pos": "QB",
+     "player_id": "00-0039139",
+     "name": "Jahmyr Gibbs",
+     "pos": "RB",
      "team": "DET",
      "opp": "TB",
-     "market": "pass_tds",
-     "line": 1.5,
-     "label": "패싱 TD 2개 이상",
-     "prob": 61.6,
+     "market": "rush_yds",
+     "line": 59.5,
+     "label": "러싱 60야드 이상",
+     "prob": 63.6,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -8004,45 +7994,54 @@
        {
         "wk": 5,
         "opp": "ARI",
-        "val": 3.0
+        "val": 151.0
        },
        {
         "wk": 7,
         "opp": "GB",
-        "val": 2.0
+        "val": 116.0
        },
        {
         "wk": 8,
         "opp": "MIN",
-        "val": 1.0
+        "val": 153.0
        },
        {
         "wk": 9,
         "opp": "MIA",
-        "val": 0.0
+        "val": 74.0
        },
        {
         "wk": 10,
         "opp": "NE",
-        "val": 3.0
+        "val": 153.0
        }
       ],
-      "need": 2.0,
-      "recent_hits": 3,
-      "mu": 2.3,
-      "def_rank": 14.0,
-      "def_allowed": 1.4,
-      "carry_share": 0.069,
-      "tgt_share": 0.0,
-      "rz_share": 0.026,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "need": 60.0,
+      "recent_hits": 5,
+      "mu": 84.8,
+      "def_rank": 23.0,
+      "def_allowed": 65.2,
+      "carry_share": 0.719,
+      "tgt_share": 0.172,
+      "rz_share": 0.413,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
-      "td_rate": 0.062,
-      "role": null,
+      "td_rate": 0.75,
+      "role": {
+       "kind": "rush",
+       "team_car": 31.8,
+       "share": 0.719,
+       "exp_car": 22.8,
+       "ypc": 4.86,
+       "def": 0.89,
+       "role_mu": 98.7,
+       "model_mu": 84.8
+      },
       "range": [
-       1.1,
-       2.9
+       47.0,
+       104.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -8099,15 +8098,15 @@
       "carry_share": 0.719,
       "tgt_share": 0.172,
       "rz_share": 0.413,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.75,
       "role": {
        "kind": "recs",
-       "team_pass": 31.4,
+       "team_pass": 31.7,
        "share": 0.172,
-       "exp_tgt": 5.1,
+       "exp_tgt": 5.2,
        "ypt": 6.27,
        "catch": 0.78,
        "def": 0.95,
@@ -8126,6 +8125,70 @@
     },
     {
      "rank": 8,
+     "player_id": "00-0033106",
+     "name": "Jared Goff",
+     "pos": "QB",
+     "team": "DET",
+     "opp": "TB",
+     "market": "pass_tds",
+     "line": 1.5,
+     "label": "패싱 TD 2개 이상",
+     "prob": 61.1,
+     "status": "Active",
+     "game_id": "2026_11_TB_DET",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "ARI",
+        "val": 3.0
+       },
+       {
+        "wk": 7,
+        "opp": "GB",
+        "val": 2.0
+       },
+       {
+        "wk": 8,
+        "opp": "MIN",
+        "val": 1.0
+       },
+       {
+        "wk": 9,
+        "opp": "MIA",
+        "val": 0.0
+       },
+       {
+        "wk": 10,
+        "opp": "NE",
+        "val": 3.0
+       }
+      ],
+      "need": 2.0,
+      "recent_hits": 3,
+      "mu": 2.2,
+      "def_rank": 14.0,
+      "def_allowed": 1.4,
+      "carry_share": 0.069,
+      "tgt_share": 0.0,
+      "rz_share": 0.026,
+      "implied_total": 25.5,
+      "spread": 3.5,
+      "wind": 0.0,
+      "td_rate": 0.062,
+      "role": null,
+      "range": [
+       1.0,
+       2.8
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "high",
+      "conf_why": []
+     }
+    },
+    {
+     "rank": 9,
      "player_id": "00-0036963",
      "name": "Amon-Ra St. Brown",
      "pos": "WR",
@@ -8134,7 +8197,7 @@
      "market": "rec_yds",
      "line": 59.5,
      "label": "리시빙 60야드 이상",
-     "prob": 60.6,
+     "prob": 58.6,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -8167,30 +8230,30 @@
       ],
       "need": 60.0,
       "recent_hits": 4,
-      "mu": 81.5,
+      "mu": 78.2,
       "def_rank": 14.0,
       "def_allowed": 143.9,
       "carry_share": 0.007,
       "tgt_share": 0.302,
       "rz_share": 0.1,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.375,
       "role": {
        "kind": "rec",
-       "team_pass": 31.4,
+       "team_pass": 31.7,
        "share": 0.302,
-       "exp_tgt": 9.0,
+       "exp_tgt": 9.1,
        "ypt": 8.34,
        "catch": 0.68,
        "def": 0.94,
-       "role_mu": 70.8,
-       "model_mu": 81.5
+       "role_mu": 71.5,
+       "model_mu": 78.2
       },
       "range": [
-       43.0,
-       108.0
+       42.0,
+       103.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -8199,7 +8262,7 @@
      }
     },
     {
-     "rank": 9,
+     "rank": 10,
      "player_id": "00-0036963",
      "name": "Amon-Ra St. Brown",
      "pos": "WR",
@@ -8208,7 +8271,7 @@
      "market": "receptions",
      "line": 5.5,
      "label": "리셉션 6개 이상",
-     "prob": 59.5,
+     "prob": 58.5,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -8241,30 +8304,30 @@
       ],
       "need": 6.0,
       "recent_hits": 4,
-      "mu": 6.4,
+      "mu": 6.2,
       "def_rank": 9.0,
       "def_allowed": 11.8,
       "carry_share": 0.007,
       "tgt_share": 0.302,
       "rz_share": 0.1,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.375,
       "role": {
        "kind": "recs",
-       "team_pass": 31.4,
+       "team_pass": 31.7,
        "share": 0.302,
-       "exp_tgt": 9.0,
+       "exp_tgt": 9.1,
        "ypt": 8.34,
        "catch": 0.68,
        "def": 0.94,
-       "role_mu": 6.1,
-       "model_mu": 6.4
+       "role_mu": 6.2,
+       "model_mu": 6.2
       },
       "range": [
-       4.0,
-       8.3
+       3.9,
+       8.1
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -8273,7 +8336,7 @@
      }
     },
     {
-     "rank": 10,
+     "rank": 11,
      "player_id": "00-0039065",
      "name": "Sam LaPorta",
      "pos": "TE",
@@ -8282,7 +8345,7 @@
      "market": "rec_yds",
      "line": 29.5,
      "label": "리시빙 30야드 이상",
-     "prob": 58.7,
+     "prob": 58.2,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -8315,103 +8378,30 @@
       ],
       "need": 30.0,
       "recent_hits": 3,
-      "mu": 42.8,
+      "mu": 41.8,
       "def_rank": 14.0,
       "def_allowed": 53.1,
       "carry_share": 0.003,
       "tgt_share": 0.166,
       "rz_share": 0.125,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.375,
       "role": {
        "kind": "rec",
-       "team_pass": 31.4,
+       "team_pass": 31.7,
        "share": 0.166,
-       "exp_tgt": 4.9,
+       "exp_tgt": 5.0,
        "ypt": 8.55,
        "catch": 0.74,
        "def": 0.97,
-       "role_mu": 40.7,
-       "model_mu": 42.8
+       "role_mu": 41.2,
+       "model_mu": 41.8
       },
       "range": [
-       18.0,
-       63.0
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
-     }
-    },
-    {
-     "rank": 11,
-     "player_id": "00-0039139",
-     "name": "Jahmyr Gibbs",
-     "pos": "RB",
-     "team": "DET",
-     "opp": "TB",
-     "market": "rush_yds",
-     "line": 69.5,
-     "label": "러싱 70야드 이상",
-     "prob": 58.0,
-     "status": "Active",
-     "game_id": "2026_11_TB_DET",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "ARI",
-        "val": 151.0
-       },
-       {
-        "wk": 7,
-        "opp": "GB",
-        "val": 116.0
-       },
-       {
-        "wk": 8,
-        "opp": "MIN",
-        "val": 153.0
-       },
-       {
-        "wk": 9,
-        "opp": "MIA",
-        "val": 74.0
-       },
-       {
-        "wk": 10,
-        "opp": "NE",
-        "val": 153.0
-       }
-      ],
-      "need": 70.0,
-      "recent_hits": 5,
-      "mu": 90.2,
-      "def_rank": 23.0,
-      "def_allowed": 65.2,
-      "carry_share": 0.719,
-      "tgt_share": 0.172,
-      "rz_share": 0.413,
-      "implied_total": 26.0,
-      "spread": 4.5,
-      "wind": 0.0,
-      "td_rate": 0.75,
-      "role": {
-       "kind": "rush",
-       "team_car": 32.2,
-       "share": 0.719,
-       "exp_car": 23.1,
-       "ypc": 4.86,
-       "def": 0.89,
-       "role_mu": 100.1,
-       "model_mu": 90.2
-      },
-      "range": [
-       50.0,
-       111.0
+       17.0,
+       61.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -8429,7 +8419,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 56.1,
+     "prob": 57.0,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -8468,8 +8458,8 @@
       "carry_share": 0.597,
       "tgt_share": 0.107,
       "rz_share": 0.42,
-      "implied_total": 21.5,
-      "spread": -4.5,
+      "implied_total": 22.0,
+      "spread": -3.5,
       "wind": 0.0,
       "td_rate": 0.5,
       "role": null,
@@ -8492,7 +8482,7 @@
      "market": "pass_yds",
      "line": 249.5,
      "label": "패싱 250야드 이상",
-     "prob": 55.5,
+     "prob": 54.6,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -8525,20 +8515,20 @@
       ],
       "need": 250.0,
       "recent_hits": 3,
-      "mu": 279.7,
+      "mu": 278.5,
       "def_rank": 18.0,
       "def_allowed": 223.2,
       "carry_share": 0.069,
       "tgt_share": 0.0,
       "rz_share": 0.026,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.062,
       "role": null,
       "range": [
        211.0,
-       313.0
+       312.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -8556,7 +8546,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 32.5,
+     "prob": 33.0,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -8595,8 +8585,8 @@
       "carry_share": 0.007,
       "tgt_share": 0.302,
       "rz_share": 0.1,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.375,
       "role": null,
@@ -8617,7 +8607,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 31.2,
+     "prob": 31.1,
      "status": "Active",
      "game_id": "2026_11_TB_DET",
      "detail": {
@@ -8656,8 +8646,8 @@
       "carry_share": 0.007,
       "tgt_share": 0.184,
       "rz_share": 0.16,
-      "implied_total": 26.0,
-      "spread": 4.5,
+      "implied_total": 25.5,
+      "spread": 3.5,
       "wind": 0.0,
       "td_rate": 0.312,
       "role": null,
@@ -9914,15 +9904,15 @@
    "stadium": "MetLife Stadium",
    "roof": "outdoors",
    "spread_home": -6.0,
-   "total": 46.5,
+   "total": 45.5,
    "proj": {
-    "away": 26.2,
-    "home": 20.2
+    "away": 25.8,
+    "home": 19.8
    },
    "weather": {
-    "temp_f": 57,
-    "wind_mph": 6,
-    "precip_pct": 14
+    "temp_f": 63,
+    "wind_mph": 7,
+    "precip_pct": 12
    },
    "notes": [],
    "scenarios": [],
@@ -10084,6 +10074,70 @@
    "best15_prob": [
     {
      "rank": 1,
+     "player_id": "00-0036971",
+     "name": "Trevor Lawrence",
+     "pos": "QB",
+     "team": "JAX",
+     "opp": "NYG",
+     "market": "pass_yds",
+     "line": 199.5,
+     "label": "패싱 200야드 이상",
+     "prob": 68.4,
+     "status": "Active",
+     "game_id": "2026_11_JAX_NYG",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "PHI",
+        "val": 331.0
+       },
+       {
+        "wk": 6,
+        "opp": "HOU",
+        "val": 306.0
+       },
+       {
+        "wk": 8,
+        "opp": "IND",
+        "val": 210.0
+       },
+       {
+        "wk": 9,
+        "opp": "BAL",
+        "val": 242.0
+       },
+       {
+        "wk": 10,
+        "opp": "TEN",
+        "val": 352.0
+       }
+      ],
+      "need": 200.0,
+      "recent_hits": 5,
+      "mu": 220.8,
+      "def_rank": 22.0,
+      "def_allowed": 198.5,
+      "carry_share": 0.104,
+      "tgt_share": 0.0,
+      "rz_share": 0.052,
+      "implied_total": 25.8,
+      "spread": 6.0,
+      "wind": 7.0,
+      "td_rate": 0.188,
+      "role": null,
+      "range": [
+       188.0,
+       276.0
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "high",
+      "conf_why": []
+     }
+    },
+    {
+     "rank": 2,
      "player_id": "00-0039337",
      "name": "Malik Nabers",
      "pos": "WR",
@@ -10092,7 +10146,7 @@
      "market": "receptions",
      "line": 4.5,
      "label": "리셉션 5개 이상",
-     "prob": 64.2,
+     "prob": 64.1,
      "status": "Active",
      "game_id": "2026_11_JAX_NYG",
      "detail": {
@@ -10131,9 +10185,9 @@
       "carry_share": 0.0,
       "tgt_share": 0.283,
       "rz_share": 0.117,
-      "implied_total": 20.2,
+      "implied_total": 19.8,
       "spread": -6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.312,
       "role": {
        "kind": "recs",
@@ -10144,7 +10198,7 @@
        "catch": 0.63,
        "def": 1.1,
        "role_mu": 5.6,
-       "model_mu": 5.7
+       "model_mu": 5.6
       },
       "range": [
        3.5,
@@ -10159,7 +10213,7 @@
      }
     },
     {
-     "rank": 2,
+     "rank": 3,
      "player_id": "00-0038935",
      "name": "Brenton Strange",
      "pos": "TE",
@@ -10207,9 +10261,9 @@
       "carry_share": 0.0,
       "tgt_share": 0.141,
       "rz_share": 0.049,
-      "implied_total": 26.2,
+      "implied_total": 25.8,
       "spread": 6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.312,
       "role": {
        "kind": "recs",
@@ -10233,7 +10287,7 @@
      }
     },
     {
-     "rank": 3,
+     "rank": 4,
      "player_id": "00-0040719",
      "name": "Bhayshul Tuten",
      "pos": "RB",
@@ -10242,7 +10296,7 @@
      "market": "rush_yds",
      "line": 49.5,
      "label": "러싱 50야드 이상",
-     "prob": 62.5,
+     "prob": 62.2,
      "status": "Active",
      "game_id": "2026_11_JAX_NYG",
      "detail": {
@@ -10275,15 +10329,15 @@
       ],
       "need": 50.0,
       "recent_hits": 3,
-      "mu": 62.8,
+      "mu": 62.7,
       "def_rank": 9.0,
       "def_allowed": 95.1,
       "carry_share": 0.517,
       "tgt_share": 0.072,
       "rz_share": 0.327,
-      "implied_total": 26.2,
+      "implied_total": 25.8,
       "spread": 6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.625,
       "role": {
        "kind": "rush",
@@ -10293,7 +10347,7 @@
        "ypc": 4.23,
        "def": 1.01,
        "role_mu": 72.0,
-       "model_mu": 62.8
+       "model_mu": 62.7
       },
       "range": [
        37.0,
@@ -10306,7 +10360,7 @@
      }
     },
     {
-     "rank": 4,
+     "rank": 5,
      "player_id": "00-0038606",
      "name": "Parker Washington",
      "pos": "WR",
@@ -10348,15 +10402,15 @@
       ],
       "need": 4.0,
       "recent_hits": 3,
-      "mu": 4.5,
+      "mu": 4.4,
       "def_rank": 17.0,
       "def_allowed": 10.4,
       "carry_share": 0.01,
       "tgt_share": 0.238,
       "rz_share": 0.08,
-      "implied_total": 26.2,
+      "implied_total": 25.8,
       "spread": 6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.562,
       "role": {
        "kind": "recs",
@@ -10367,11 +10421,11 @@
        "catch": 0.61,
        "def": 0.92,
        "role_mu": 3.9,
-       "model_mu": 4.5
+       "model_mu": 4.4
       },
       "range": [
-       2.9,
-       6.0
+       2.8,
+       5.9
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -10380,7 +10434,7 @@
      }
     },
     {
-     "rank": 5,
+     "rank": 6,
      "player_id": "00-0040715",
      "name": "Cam Skattebo",
      "pos": "RB",
@@ -10389,7 +10443,7 @@
      "market": "rush_yds",
      "line": 49.5,
      "label": "러싱 50야드 이상",
-     "prob": 61.5,
+     "prob": 60.1,
      "status": "",
      "game_id": "2026_11_JAX_NYG",
      "detail": {
@@ -10422,15 +10476,15 @@
       ],
       "need": 50.0,
       "recent_hits": 5,
-      "mu": 61.5,
+      "mu": 59.7,
       "def_rank": 20.0,
       "def_allowed": 71.6,
       "carry_share": 0.541,
       "tgt_share": 0.09,
       "rz_share": 0.391,
-      "implied_total": 20.2,
+      "implied_total": 19.8,
       "spread": -6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.5,
       "role": {
        "kind": "rush",
@@ -10440,87 +10494,11 @@
        "ypc": 4.19,
        "def": 0.93,
        "role_mu": 53.7,
-       "model_mu": 61.5
-      },
-      "range": [
-       36.0,
-       84.0
-      ],
-      "new_role": false,
-      "qb_ctx": true,
-      "conf": "mid",
-      "conf_why": [
-       "qb_mid"
-      ]
-     }
-    },
-    {
-     "rank": 6,
-     "player_id": "00-0039337",
-     "name": "Malik Nabers",
-     "pos": "WR",
-     "team": "NYG",
-     "opp": "JAX",
-     "market": "rec_yds",
-     "line": 49.5,
-     "label": "리시빙 50야드 이상",
-     "prob": 59.9,
-     "status": "Active",
-     "game_id": "2026_11_JAX_NYG",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "WAS",
-        "val": 121.0
-       },
-       {
-        "wk": 6,
-        "opp": "NO",
-        "val": 165.0
-       },
-       {
-        "wk": 7,
-        "opp": "HOU",
-        "val": 111.0
-       },
-       {
-        "wk": 9,
-        "opp": "PHI",
-        "val": 43.0
-       },
-       {
-        "wk": 10,
-        "opp": "WAS",
-        "val": 44.0
-       }
-      ],
-      "need": 50.0,
-      "recent_hits": 3,
-      "mu": 66.6,
-      "def_rank": 3.0,
-      "def_allowed": 175.5,
-      "carry_share": 0.0,
-      "tgt_share": 0.283,
-      "rz_share": 0.117,
-      "implied_total": 20.2,
-      "spread": -6.0,
-      "wind": 6.0,
-      "td_rate": 0.312,
-      "role": {
-       "kind": "rec",
-       "team_pass": 33.5,
-       "share": 0.279,
-       "exp_tgt": 8.9,
-       "ypt": 8.36,
-       "catch": 0.63,
-       "def": 1.1,
-       "role_mu": 81.8,
-       "model_mu": 51.3
+       "model_mu": 59.7
       },
       "range": [
        35.0,
-       88.0
+       82.0
       ],
       "new_role": false,
       "qb_ctx": true,
@@ -10540,7 +10518,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 58.5,
+     "prob": 58.7,
      "status": "Active",
      "game_id": "2026_11_JAX_NYG",
      "detail": {
@@ -10579,9 +10557,9 @@
       "carry_share": 0.517,
       "tgt_share": 0.072,
       "rz_share": 0.327,
-      "implied_total": 26.2,
+      "implied_total": 25.8,
       "spread": 6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.625,
       "role": null,
       "range": null,
@@ -10593,6 +10571,82 @@
     },
     {
      "rank": 8,
+     "player_id": "00-0039337",
+     "name": "Malik Nabers",
+     "pos": "WR",
+     "team": "NYG",
+     "opp": "JAX",
+     "market": "rec_yds",
+     "line": 49.5,
+     "label": "리시빙 50야드 이상",
+     "prob": 58.6,
+     "status": "Active",
+     "game_id": "2026_11_JAX_NYG",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "WAS",
+        "val": 121.0
+       },
+       {
+        "wk": 6,
+        "opp": "NO",
+        "val": 165.0
+       },
+       {
+        "wk": 7,
+        "opp": "HOU",
+        "val": 111.0
+       },
+       {
+        "wk": 9,
+        "opp": "PHI",
+        "val": 43.0
+       },
+       {
+        "wk": 10,
+        "opp": "WAS",
+        "val": 44.0
+       }
+      ],
+      "need": 50.0,
+      "recent_hits": 3,
+      "mu": 65.1,
+      "def_rank": 3.0,
+      "def_allowed": 175.5,
+      "carry_share": 0.0,
+      "tgt_share": 0.283,
+      "rz_share": 0.117,
+      "implied_total": 19.8,
+      "spread": -6.0,
+      "wind": 7.0,
+      "td_rate": 0.312,
+      "role": {
+       "kind": "rec",
+       "team_pass": 33.5,
+       "share": 0.279,
+       "exp_tgt": 8.9,
+       "ypt": 8.36,
+       "catch": 0.63,
+       "def": 1.1,
+       "role_mu": 81.8,
+       "model_mu": 48.3
+      },
+      "range": [
+       35.0,
+       86.0
+      ],
+      "new_role": false,
+      "qb_ctx": true,
+      "conf": "mid",
+      "conf_why": [
+       "qb_mid"
+      ]
+     }
+    },
+    {
+     "rank": 9,
      "player_id": "00-0037838",
      "name": "Isaiah Likely",
      "pos": "TE",
@@ -10640,9 +10694,9 @@
       "carry_share": 0.0,
       "tgt_share": 0.246,
       "rz_share": 0.117,
-      "implied_total": 20.2,
+      "implied_total": 19.8,
       "spread": -6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.375,
       "role": {
        "kind": "recs",
@@ -10668,145 +10722,7 @@
      }
     },
     {
-     "rank": 9,
-     "player_id": "00-0038606",
-     "name": "Parker Washington",
-     "pos": "WR",
-     "team": "JAX",
-     "opp": "NYG",
-     "market": "rec_yds",
-     "line": 59.5,
-     "label": "리시빙 60야드 이상",
-     "prob": 57.9,
-     "status": "Active",
-     "game_id": "2026_11_JAX_NYG",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "PHI",
-        "val": 124.0
-       },
-       {
-        "wk": 6,
-        "opp": "HOU",
-        "val": 64.0
-       },
-       {
-        "wk": 8,
-        "opp": "IND",
-        "val": 16.0
-       },
-       {
-        "wk": 9,
-        "opp": "BAL",
-        "val": 61.0
-       },
-       {
-        "wk": 10,
-        "opp": "TEN",
-        "val": 152.0
-       }
-      ],
-      "need": 60.0,
-      "recent_hits": 4,
-      "mu": 77.0,
-      "def_rank": 20.0,
-      "def_allowed": 128.4,
-      "carry_share": 0.01,
-      "tgt_share": 0.238,
-      "rz_share": 0.08,
-      "implied_total": 26.2,
-      "spread": 6.0,
-      "wind": 6.0,
-      "td_rate": 0.562,
-      "role": {
-       "kind": "rec",
-       "team_pass": 28.4,
-       "share": 0.238,
-       "exp_tgt": 6.4,
-       "ypt": 10.05,
-       "catch": 0.61,
-       "def": 0.92,
-       "role_mu": 59.3,
-       "model_mu": 77.0
-      },
-      "range": [
-       41.0,
-       102.0
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
-     }
-    },
-    {
      "rank": 10,
-     "player_id": "00-0036971",
-     "name": "Trevor Lawrence",
-     "pos": "QB",
-     "team": "JAX",
-     "opp": "NYG",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 57.1,
-     "status": "Active",
-     "game_id": "2026_11_JAX_NYG",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "PHI",
-        "val": 331.0
-       },
-       {
-        "wk": 6,
-        "opp": "HOU",
-        "val": 306.0
-       },
-       {
-        "wk": 8,
-        "opp": "IND",
-        "val": 210.0
-       },
-       {
-        "wk": 9,
-        "opp": "BAL",
-        "val": 242.0
-       },
-       {
-        "wk": 10,
-        "opp": "TEN",
-        "val": 352.0
-       }
-      ],
-      "need": 225.0,
-      "recent_hits": 4,
-      "mu": 227.2,
-      "def_rank": 22.0,
-      "def_allowed": 198.5,
-      "carry_share": 0.104,
-      "tgt_share": 0.0,
-      "rz_share": 0.052,
-      "implied_total": 26.2,
-      "spread": 6.0,
-      "wind": 6.0,
-      "td_rate": 0.188,
-      "role": null,
-      "range": [
-       193.0,
-       284.0
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
-     }
-    },
-    {
-     "rank": 11,
      "player_id": "00-0037838",
      "name": "Isaiah Likely",
      "pos": "TE",
@@ -10815,7 +10731,7 @@
      "market": "rec_yds",
      "line": 39.5,
      "label": "리시빙 40야드 이상",
-     "prob": 56.8,
+     "prob": 57.1,
      "status": "Active",
      "game_id": "2026_11_JAX_NYG",
      "detail": {
@@ -10848,15 +10764,15 @@
       ],
       "need": 40.0,
       "recent_hits": 4,
-      "mu": 48.3,
+      "mu": 48.5,
       "def_rank": 24.0,
       "def_allowed": 30.5,
       "carry_share": 0.0,
       "tgt_share": 0.246,
       "rz_share": 0.117,
-      "implied_total": 20.2,
+      "implied_total": 19.8,
       "spread": -6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.375,
       "role": {
        "kind": "rec",
@@ -10867,7 +10783,7 @@
        "catch": 0.7,
        "def": 0.78,
        "role_mu": 43.8,
-       "model_mu": 52.8
+       "model_mu": 53.3
       },
       "range": [
        25.0,
@@ -10879,6 +10795,80 @@
       "conf_why": [
        "qb_mid"
       ]
+     }
+    },
+    {
+     "rank": 11,
+     "player_id": "00-0038606",
+     "name": "Parker Washington",
+     "pos": "WR",
+     "team": "JAX",
+     "opp": "NYG",
+     "market": "rec_yds",
+     "line": 59.5,
+     "label": "리시빙 60야드 이상",
+     "prob": 56.5,
+     "status": "Active",
+     "game_id": "2026_11_JAX_NYG",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "PHI",
+        "val": 124.0
+       },
+       {
+        "wk": 6,
+        "opp": "HOU",
+        "val": 64.0
+       },
+       {
+        "wk": 8,
+        "opp": "IND",
+        "val": 16.0
+       },
+       {
+        "wk": 9,
+        "opp": "BAL",
+        "val": 61.0
+       },
+       {
+        "wk": 10,
+        "opp": "TEN",
+        "val": 152.0
+       }
+      ],
+      "need": 60.0,
+      "recent_hits": 4,
+      "mu": 74.9,
+      "def_rank": 20.0,
+      "def_allowed": 128.4,
+      "carry_share": 0.01,
+      "tgt_share": 0.238,
+      "rz_share": 0.08,
+      "implied_total": 25.8,
+      "spread": 6.0,
+      "wind": 7.0,
+      "td_rate": 0.562,
+      "role": {
+       "kind": "rec",
+       "team_pass": 28.4,
+       "share": 0.238,
+       "exp_tgt": 6.4,
+       "ypt": 10.05,
+       "catch": 0.61,
+       "def": 0.92,
+       "role_mu": 59.3,
+       "model_mu": 74.9
+      },
+      "range": [
+       40.0,
+       99.0
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "high",
+      "conf_why": []
      }
     },
     {
@@ -10930,14 +10920,14 @@
       "carry_share": 0.104,
       "tgt_share": 0.0,
       "rz_share": 0.052,
-      "implied_total": 26.2,
+      "implied_total": 25.8,
       "spread": 6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.188,
       "role": null,
       "range": [
-       1.0,
-       2.9
+       0.9,
+       2.8
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -10955,7 +10945,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 40.8,
+     "prob": 40.7,
      "status": "Active",
      "game_id": "2026_11_JAX_NYG",
      "detail": {
@@ -10994,9 +10984,9 @@
       "carry_share": 0.01,
       "tgt_share": 0.238,
       "rz_share": 0.08,
-      "implied_total": 26.2,
+      "implied_total": 25.8,
       "spread": 6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.562,
       "role": null,
       "range": null,
@@ -11016,7 +11006,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 37.0,
+     "prob": 36.7,
      "status": "",
      "game_id": "2026_11_JAX_NYG",
      "detail": {
@@ -11055,9 +11045,9 @@
       "carry_share": 0.541,
       "tgt_share": 0.09,
       "rz_share": 0.391,
-      "implied_total": 20.2,
+      "implied_total": 19.8,
       "spread": -6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.5,
       "role": null,
       "range": null,
@@ -11079,7 +11069,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 30.8,
+     "prob": 30.2,
      "status": "Active",
      "game_id": "2026_11_JAX_NYG",
      "detail": {
@@ -11118,9 +11108,9 @@
       "carry_share": 0.0,
       "tgt_share": 0.246,
       "rz_share": 0.117,
-      "implied_total": 20.2,
+      "implied_total": 19.8,
       "spread": -6.0,
-      "wind": 6.0,
+      "wind": 7.0,
       "td_rate": 0.375,
       "role": null,
       "range": null,
@@ -12555,7 +12545,7 @@
     "home": 25.5
    },
    "weather": {
-    "temp_f": 46,
+    "temp_f": 43,
     "wind_mph": 6,
     "precip_pct": 0
    },
@@ -13900,9 +13890,9 @@
     "home": 17.0
    },
    "weather": {
-    "temp_f": 59,
-    "wind_mph": 6,
-    "precip_pct": 17
+    "temp_f": 61,
+    "wind_mph": 8,
+    "precip_pct": 25
    },
    "notes": [],
    "scenarios": [],
@@ -14094,7 +14084,7 @@
      "market": "rec_yds",
      "line": 39.5,
      "label": "리시빙 40야드 이상",
-     "prob": 63.0,
+     "prob": 61.1,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -14127,7 +14117,7 @@
       ],
       "need": 40.0,
       "recent_hits": 3,
-      "mu": 55.4,
+      "mu": 52.5,
       "def_rank": 2.0,
       "def_allowed": 182.6,
       "carry_share": 0.004,
@@ -14135,7 +14125,7 @@
       "rz_share": 0.123,
       "implied_total": 20.5,
       "spread": 3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.25,
       "role": {
        "kind": "rec",
@@ -14146,11 +14136,11 @@
        "catch": 0.55,
        "def": 1.07,
        "role_mu": 54.8,
-       "model_mu": 55.4
+       "model_mu": 52.5
       },
       "range": [
-       28.0,
-       80.0
+       27.0,
+       76.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -14160,79 +14150,6 @@
     },
     {
      "rank": 2,
-     "player_id": "00-0037228",
-     "name": "Jaylen Warren",
-     "pos": "RB",
-     "team": "PIT",
-     "opp": "PHI",
-     "market": "rush_yds",
-     "line": 49.5,
-     "label": "러싱 50야드 이상",
-     "prob": 60.8,
-     "status": "Active",
-     "game_id": "2026_11_PIT_PHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "IND",
-        "val": 101.0
-       },
-       {
-        "wk": 6,
-        "opp": "TB",
-        "val": 50.0
-       },
-       {
-        "wk": 7,
-        "opp": "NO",
-        "val": 101.0
-       },
-       {
-        "wk": 8,
-        "opp": "CLE",
-        "val": 143.0
-       },
-       {
-        "wk": 10,
-        "opp": "CIN",
-        "val": 15.0
-       }
-      ],
-      "need": 50.0,
-      "recent_hits": 4,
-      "mu": 67.2,
-      "def_rank": 5.0,
-      "def_allowed": 109.9,
-      "carry_share": 0.547,
-      "tgt_share": 0.137,
-      "rz_share": 0.124,
-      "implied_total": 20.5,
-      "spread": 3.5,
-      "wind": 6.0,
-      "td_rate": 0.312,
-      "role": {
-       "kind": "rush",
-       "team_car": 26.1,
-       "share": 0.547,
-       "exp_car": 14.3,
-       "ypc": 5.19,
-       "def": 0.98,
-       "role_mu": 72.3,
-       "model_mu": 67.2
-      },
-      "range": [
-       37.0,
-       82.0
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
-     }
-    },
-    {
-     "rank": 3,
      "player_id": "00-0023459",
      "name": "Aaron Rodgers",
      "pos": "QB",
@@ -14282,12 +14199,85 @@
       "rz_share": 0.001,
       "implied_total": 20.5,
       "spread": 3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.062,
       "role": null,
       "range": [
        1.0,
-       2.8
+       2.7
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "high",
+      "conf_why": []
+     }
+    },
+    {
+     "rank": 3,
+     "player_id": "00-0037228",
+     "name": "Jaylen Warren",
+     "pos": "RB",
+     "team": "PIT",
+     "opp": "PHI",
+     "market": "rush_yds",
+     "line": 49.5,
+     "label": "러싱 50야드 이상",
+     "prob": 60.5,
+     "status": "Active",
+     "game_id": "2026_11_PIT_PHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 5,
+        "opp": "IND",
+        "val": 101.0
+       },
+       {
+        "wk": 6,
+        "opp": "TB",
+        "val": 50.0
+       },
+       {
+        "wk": 7,
+        "opp": "NO",
+        "val": 101.0
+       },
+       {
+        "wk": 8,
+        "opp": "CLE",
+        "val": 143.0
+       },
+       {
+        "wk": 10,
+        "opp": "CIN",
+        "val": 15.0
+       }
+      ],
+      "need": 50.0,
+      "recent_hits": 4,
+      "mu": 66.7,
+      "def_rank": 5.0,
+      "def_allowed": 109.9,
+      "carry_share": 0.547,
+      "tgt_share": 0.137,
+      "rz_share": 0.124,
+      "implied_total": 20.5,
+      "spread": 3.5,
+      "wind": 8.0,
+      "td_rate": 0.312,
+      "role": {
+       "kind": "rush",
+       "team_car": 26.1,
+       "share": 0.547,
+       "exp_car": 14.3,
+       "ypc": 5.19,
+       "def": 0.98,
+       "role_mu": 72.3,
+       "model_mu": 66.7
+      },
+      "range": [
+       37.0,
+       82.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -14305,7 +14295,7 @@
      "market": "pass_yds",
      "line": 199.5,
      "label": "패싱 200야드 이상",
-     "prob": 60.2,
+     "prob": 59.8,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -14338,7 +14328,7 @@
       ],
       "need": 200.0,
       "recent_hits": 3,
-      "mu": 219.0,
+      "mu": 217.5,
       "def_rank": 9.0,
       "def_allowed": 248.2,
       "carry_share": 0.057,
@@ -14346,12 +14336,12 @@
       "rz_share": 0.001,
       "implied_total": 20.5,
       "spread": 3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.062,
       "role": null,
       "range": [
-       164.0,
-       285.0
+       163.0,
+       283.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -14369,7 +14359,7 @@
      "market": "receptions",
      "line": 3.5,
      "label": "리셉션 4개 이상",
-     "prob": 63.7,
+     "prob": 63.5,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -14410,7 +14400,7 @@
       "rz_share": 0.019,
       "implied_total": 17.0,
       "spread": -3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.1,
       "role": {
        "kind": "recs",
@@ -14421,7 +14411,7 @@
        "catch": 0.66,
        "def": 1.0,
        "role_mu": 5.4,
-       "model_mu": 4.0
+       "model_mu": 3.9
       },
       "range": [
        3.0,
@@ -14486,7 +14476,7 @@
       "rz_share": 0.063,
       "implied_total": 17.0,
       "spread": -3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.312,
       "role": {
        "kind": "recs",
@@ -14563,7 +14553,7 @@
       "rz_share": 0.038,
       "implied_total": 17.0,
       "spread": -3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.312,
       "role": {
        "kind": "recs",
@@ -14590,72 +14580,6 @@
     },
     {
      "rank": 8,
-     "player_id": "00-0039398",
-     "name": "Joe Milton III",
-     "pos": "QB",
-     "team": "PHI",
-     "opp": "PIT",
-     "market": "pass_yds",
-     "line": 199.5,
-     "label": "패싱 200야드 이상",
-     "prob": 60.2,
-     "status": "Active",
-     "game_id": "2026_11_PIT_PHI",
-     "detail": {
-      "recent": [
-       {
-        "wk": 3,
-        "opp": "CHI",
-        "val": 41.0
-       },
-       {
-        "wk": 8,
-        "opp": "DEN",
-        "val": 58.0
-       },
-       {
-        "wk": 16,
-        "opp": "LAC",
-        "val": 11.0
-       },
-       {
-        "wk": 18,
-        "opp": "NYG",
-        "val": 73.0
-       },
-       {
-        "wk": 9,
-        "opp": "NYG",
-        "val": 169.0
-       }
-      ],
-      "need": 200.0,
-      "recent_hits": 0,
-      "mu": 205.0,
-      "def_rank": 2.0,
-      "def_allowed": 275.2,
-      "carry_share": 0.165,
-      "tgt_share": 0.0,
-      "rz_share": 0.162,
-      "implied_total": 17.0,
-      "spread": -3.5,
-      "wind": 6.0,
-      "td_rate": 0.143,
-      "role": null,
-      "range": [
-       166.0,
-       266.0
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "low",
-      "conf_why": [
-       "qb_few"
-      ]
-     }
-    },
-    {
-     "rank": 9,
      "player_id": "00-0040867",
      "name": "Makai Lemon",
      "pos": "WR",
@@ -14664,7 +14588,7 @@
      "market": "rec_yds",
      "line": 39.5,
      "label": "리시빙 40야드 이상",
-     "prob": 59.7,
+     "prob": 59.2,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -14697,7 +14621,7 @@
       ],
       "need": 40.0,
       "recent_hits": 4,
-      "mu": 51.0,
+      "mu": 50.7,
       "def_rank": 5.0,
       "def_allowed": 171.5,
       "carry_share": 0.001,
@@ -14705,7 +14629,7 @@
       "rz_share": 0.019,
       "implied_total": 17.0,
       "spread": -3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.1,
       "role": {
        "kind": "rec",
@@ -14716,11 +14640,11 @@
        "catch": 0.66,
        "def": 1.0,
        "role_mu": 53.6,
-       "model_mu": 48.5
+       "model_mu": 47.8
       },
       "range": [
        26.0,
-       74.0
+       73.0
       ],
       "new_role": false,
       "qb_ctx": true,
@@ -14731,7 +14655,7 @@
      }
     },
     {
-     "rank": 10,
+     "rank": 9,
      "player_id": "00-0036912",
      "name": "DeVonta Smith",
      "pos": "WR",
@@ -14740,7 +14664,7 @@
      "market": "rec_yds",
      "line": 49.5,
      "label": "리시빙 50야드 이상",
-     "prob": 59.0,
+     "prob": 59.1,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -14781,7 +14705,7 @@
       "rz_share": 0.063,
       "implied_total": 17.0,
       "spread": -3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.312,
       "role": {
        "kind": "rec",
@@ -14792,7 +14716,7 @@
        "catch": 0.63,
        "def": 1.0,
        "role_mu": 82.1,
-       "model_mu": 49.1
+       "model_mu": 49.2
       },
       "range": [
        35.0,
@@ -14808,7 +14732,7 @@
      }
     },
     {
-     "rank": 11,
+     "rank": 10,
      "player_id": "00-0034351",
      "name": "Dallas Goedert",
      "pos": "TE",
@@ -14817,7 +14741,7 @@
      "market": "rec_yds",
      "line": 29.5,
      "label": "리시빙 30야드 이상",
-     "prob": 58.7,
+     "prob": 58.6,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -14850,7 +14774,7 @@
       ],
       "need": 30.0,
       "recent_hits": 5,
-      "mu": 42.7,
+      "mu": 42.5,
       "def_rank": 10.0,
       "def_allowed": 60.5,
       "carry_share": 0.007,
@@ -14858,7 +14782,7 @@
       "rz_share": 0.038,
       "implied_total": 17.0,
       "spread": -3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.312,
       "role": {
        "kind": "rec",
@@ -14869,17 +14793,83 @@
        "catch": 0.71,
        "def": 1.08,
        "role_mu": 48.5,
-       "model_mu": 36.9
+       "model_mu": 36.6
       },
       "range": [
        18.0,
-       63.0
+       62.0
       ],
       "new_role": false,
       "qb_ctx": true,
       "conf": "low",
       "conf_why": [
        "qb_new"
+      ]
+     }
+    },
+    {
+     "rank": 11,
+     "player_id": "00-0039398",
+     "name": "Joe Milton III",
+     "pos": "QB",
+     "team": "PHI",
+     "opp": "PIT",
+     "market": "pass_yds",
+     "line": 199.5,
+     "label": "패싱 200야드 이상",
+     "prob": 57.7,
+     "status": "Active",
+     "game_id": "2026_11_PIT_PHI",
+     "detail": {
+      "recent": [
+       {
+        "wk": 3,
+        "opp": "CHI",
+        "val": 41.0
+       },
+       {
+        "wk": 8,
+        "opp": "DEN",
+        "val": 58.0
+       },
+       {
+        "wk": 16,
+        "opp": "LAC",
+        "val": 11.0
+       },
+       {
+        "wk": 18,
+        "opp": "NYG",
+        "val": 73.0
+       },
+       {
+        "wk": 9,
+        "opp": "NYG",
+        "val": 169.0
+       }
+      ],
+      "need": 200.0,
+      "recent_hits": 0,
+      "mu": 202.8,
+      "def_rank": 2.0,
+      "def_allowed": 275.2,
+      "carry_share": 0.165,
+      "tgt_share": 0.0,
+      "rz_share": 0.162,
+      "implied_total": 17.0,
+      "spread": -3.5,
+      "wind": 8.0,
+      "td_rate": 0.143,
+      "role": null,
+      "range": [
+       164.0,
+       263.0
+      ],
+      "new_role": false,
+      "qb_ctx": false,
+      "conf": "low",
+      "conf_why": [
+       "qb_few"
       ]
      }
     },
@@ -14893,7 +14883,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 37.0,
+     "prob": 36.6,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -14934,7 +14924,7 @@
       "rz_share": 0.124,
       "implied_total": 20.5,
       "spread": 3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.312,
       "role": null,
       "range": null,
@@ -14954,7 +14944,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 26.3,
+     "prob": 25.5,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -14995,7 +14985,7 @@
       "rz_share": 0.123,
       "implied_total": 20.5,
       "spread": 3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.25,
       "role": null,
       "range": null,
@@ -15015,7 +15005,7 @@
      "market": "td",
      "line": null,
      "label": "애니타임 터치다운",
-     "prob": 28.5,
+     "prob": 27.8,
      "status": "Active",
      "game_id": "2026_11_PIT_PHI",
      "detail": {
@@ -15056,7 +15046,7 @@
       "rz_share": 0.458,
       "implied_total": 17.0,
       "spread": -3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.375,
       "role": null,
       "range": null,
@@ -15119,7 +15109,7 @@
       "rz_share": 0.063,
       "implied_total": 17.0,
       "spread": -3.5,
-      "wind": 6.0,
+      "wind": 8.0,
       "td_rate": 0.312,
       "role": null,
       "range": null,
@@ -15142,16 +15132,16 @@
    "kickoff": "2026-11-22 20:20 ET",
    "stadium": "Estadio Banorte",
    "roof": "outdoors",
-   "spread_home": 3.5,
+   "spread_home": 3.0,
    "total": 46.5,
    "proj": {
-    "away": 21.5,
-    "home": 25.0
+    "away": 21.8,
+    "home": 24.8
    },
    "weather": {
-    "temp_f": 52,
-    "wind_mph": 4,
-    "precip_pct": 3
+    "temp_f": 51,
+    "wind_mph": 5,
+    "precip_pct": 2
    },
    "notes": [],
    "scenarios": [
@@ -15167,7 +15157,7 @@
      "own_picks": [
       {
        "label": "리시빙 40야드 이상",
-       "prob": 65.5
+       "prob": 65.8
       },
       {
        "label": "리셉션 4개 이상",
@@ -15175,7 +15165,7 @@
       },
       {
        "label": "애니타임 터치다운",
-       "prob": 35.2
+       "prob": 34.4
       }
      ],
      "effects": [
@@ -15186,7 +15176,7 @@
        "market": "receptions",
        "line": 3.5,
        "prob_play": 62.7,
-       "prob_out": 72.2
+       "prob_out": 72.4
       },
       {
        "player_id": "00-0030279",
@@ -15195,7 +15185,7 @@
        "market": "receptions",
        "line": 3.5,
        "prob_play": 61.6,
-       "prob_out": 67.0
+       "prob_out": 67.1
       },
       {
        "player_id": "00-0033288",
@@ -15204,25 +15194,7 @@
        "market": "rec_yds",
        "line": 39.5,
        "prob_play": 62.6,
-       "prob_out": 67.2
-      },
-      {
-       "player_id": "00-0033280",
-       "name": "Christian McCaffrey",
-       "label": "리시빙 40야드 이상",
-       "market": "rec_yds",
-       "line": 39.5,
-       "prob_play": 56.6,
-       "prob_out": 54.8
-      },
-      {
-       "player_id": "00-0033280",
-       "name": "Christian McCaffrey",
-       "label": "애니타임 터치다운",
-       "market": "td",
-       "line": null,
-       "prob_play": 56.9,
-       "prob_out": 58.4
+       "prob_out": 67.3
       },
       {
        "player_id": "00-0033280",
@@ -15231,7 +15203,16 @@
        "market": "receptions",
        "line": 3.5,
        "prob_play": 61.6,
-       "prob_out": 62.9
+       "prob_out": 63.1
+      },
+      {
+       "player_id": "00-0033280",
+       "name": "Christian McCaffrey",
+       "label": "리시빙 40야드 이상",
+       "market": "rec_yds",
+       "line": 39.5,
+       "prob_play": 56.3,
+       "prob_out": 54.8
       }
      ],
      "replacement": {
@@ -15281,12 +15262,12 @@
        {
         "label": "애니타임 터치다운",
         "market": "td",
-        "prob_out": 44.4,
-        "prob_play": 41.5
+        "prob_out": 43.7,
+        "prob_play": 40.9
        }
       ],
-      "mu_play": 36.0,
-      "mu_out": 38.6,
+      "mu_play": 36.7,
+      "mu_out": 39.1,
       "stat": "rec_yds"
      }
     }
@@ -15504,19 +15485,19 @@
       "carry_share": 0.0,
       "tgt_share": 0.262,
       "rz_share": 0.106,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.438,
       "role": {
        "kind": "recs",
-       "team_pass": 29.1,
+       "team_pass": 29.3,
        "share": 0.262,
-       "exp_tgt": 7.2,
+       "exp_tgt": 7.3,
        "ypt": 8.81,
        "catch": 0.74,
        "def": 0.87,
-       "role_mu": 5.3,
+       "role_mu": 5.4,
        "model_mu": 4.6
       },
       "range": [
@@ -15578,19 +15559,19 @@
       "carry_share": 0.0,
       "tgt_share": 0.262,
       "rz_share": 0.106,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.438,
       "role": {
        "kind": "rec",
-       "team_pass": 29.1,
+       "team_pass": 29.3,
        "share": 0.262,
-       "exp_tgt": 7.2,
+       "exp_tgt": 7.3,
        "ypt": 8.81,
        "catch": 0.74,
        "def": 0.87,
-       "role_mu": 55.7,
+       "role_mu": 56.0,
        "model_mu": 54.4
       },
       "range": [
@@ -15652,13 +15633,13 @@
       "carry_share": 0.0,
       "tgt_share": 0.23,
       "rz_share": 0.096,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.062,
       "role": {
        "kind": "recs",
-       "team_pass": 29.1,
+       "team_pass": 29.3,
        "share": 0.23,
        "exp_tgt": 6.4,
        "ypt": 6.19,
@@ -15726,13 +15707,13 @@
       "carry_share": 0.456,
       "tgt_share": 0.183,
       "rz_share": 0.536,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.812,
       "role": {
        "kind": "recs",
-       "team_pass": 29.1,
+       "team_pass": 29.3,
        "share": 0.183,
        "exp_tgt": 5.1,
        "ypt": 7.14,
@@ -15800,18 +15781,18 @@
       "carry_share": 0.456,
       "tgt_share": 0.183,
       "rz_share": 0.536,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.812,
       "role": {
        "kind": "rush",
-       "team_car": 32.1,
+       "team_car": 31.9,
        "share": 0.456,
-       "exp_car": 14.6,
+       "exp_car": 14.5,
        "ypc": 4.29,
        "def": 1.02,
-       "role_mu": 63.9,
+       "role_mu": 63.5,
        "model_mu": 61.6
       },
       "range": [
@@ -15826,6 +15807,82 @@
     },
     {
      "rank": 6,
+     "player_id": "00-0035229",
+     "name": "T.J. Hockenson",
+     "pos": "TE",
+     "team": "MIN",
+     "opp": "SF",
+     "market": "rec_yds",
+     "line": 29.5,
+     "label": "리시빙 30야드 이상",
+     "prob": 66.2,
+     "status": "Active",
+     "game_id": "2026_11_MIN_SF",
+     "detail": {
+      "recent": [
+       {
+        "wk": 4,
+        "opp": "MIA",
+        "val": 119.0
+       },
+       {
+        "wk": 5,
+        "opp": "NO",
+        "val": 7.0
+       },
+       {
+        "wk": 7,
+        "opp": "IND",
+        "val": 35.0
+       },
+       {
+        "wk": 8,
+        "opp": "DET",
+        "val": 58.0
+       },
+       {
+        "wk": 9,
+        "opp": "BUF",
+        "val": 33.0
+       }
+      ],
+      "need": 30.0,
+      "recent_hits": 4,
+      "mu": 45.2,
+      "def_rank": 11.0,
+      "def_allowed": 57.5,
+      "carry_share": 0.001,
+      "tgt_share": 0.193,
+      "rz_share": 0.27,
+      "implied_total": 21.8,
+      "spread": -3.0,
+      "wind": 5.0,
+      "td_rate": 0.312,
+      "role": {
+       "kind": "rec",
+       "team_pass": 31.6,
+       "share": 0.193,
+       "exp_tgt": 5.8,
+       "ypt": 7.33,
+       "catch": 0.77,
+       "def": 0.98,
+       "role_mu": 41.8,
+       "model_mu": 48.5
+      },
+      "range": [
+       23.0,
+       65.0
+      ],
+      "new_role": false,
+      "qb_ctx": true,
+      "conf": "low",
+      "conf_why": [
+       "qb_new"
+      ]
+     }
+    },
+    {
+     "rank": 7,
      "player_id": "00-0036322",
      "name": "Justin Jefferson",
      "pos": "WR",
@@ -15834,7 +15891,7 @@
      "market": "receptions",
      "line": 4.5,
      "label": "리셉션 5개 이상",
-     "prob": 66.1,
+     "prob": 65.9,
      "status": "Active",
      "game_id": "2026_11_MIN_SF",
      "detail": {
@@ -15873,13 +15930,13 @@
       "carry_share": 0.003,
       "tgt_share": 0.329,
       "rz_share": 0.186,
-      "implied_total": 21.5,
-      "spread": -3.5,
-      "wind": 4.0,
+      "implied_total": 21.8,
+      "spread": -3.0,
+      "wind": 5.0,
       "td_rate": 0.188,
       "role": {
        "kind": "recs",
-       "team_pass": 31.7,
+       "team_pass": 31.6,
        "share": 0.357,
        "exp_tgt": 10.7,
        "ypt": 7.07,
@@ -15901,7 +15958,7 @@
      }
     },
     {
-     "rank": 7,
+     "rank": 8,
      "player_id": "00-0031408",
      "name": "Mike Evans",
      "pos": "WR",
@@ -15910,7 +15967,7 @@
      "market": "rec_yds",
      "line": 39.5,
      "label": "리시빙 40야드 이상",
-     "prob": 65.5,
+     "prob": 65.8,
      "status": "Questionable",
      "game_id": "2026_11_MIN_SF",
      "detail": {
@@ -15943,30 +16000,30 @@
       ],
       "need": 40.0,
       "recent_hits": 4,
-      "mu": 60.0,
+      "mu": 60.3,
       "def_rank": 24.0,
       "def_allowed": 107.2,
       "carry_share": 0.0,
       "tgt_share": 0.239,
       "rz_share": 0.125,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.438,
       "role": {
        "kind": "rec",
-       "team_pass": 29.1,
+       "team_pass": 29.3,
        "share": 0.239,
-       "exp_tgt": 6.6,
+       "exp_tgt": 6.7,
        "ypt": 7.94,
        "catch": 0.6,
        "def": 0.91,
-       "role_mu": 48.0,
-       "model_mu": 60.0
+       "role_mu": 48.3,
+       "model_mu": 60.3
       },
       "range": [
        32.0,
-       79.0
+       80.0
       ],
       "new_role": false,
       "qb_ctx": false,
@@ -15975,70 +16032,6 @@
        "layoff",
        "status"
       ]
-     }
-    },
-    {
-     "rank": 8,
-     "player_id": "00-0037834",
-     "name": "Brock Purdy",
-     "pos": "QB",
-     "team": "SF",
-     "opp": "MIN",
-     "market": "pass_yds",
-     "line": 224.5,
-     "label": "패싱 225야드 이상",
-     "prob": 59.8,
-     "status": "",
-     "game_id": "2026_11_MIN_SF",
-     "detail": {
-      "recent": [
-       {
-        "wk": 5,
-        "opp": "SEA",
-        "val": 189.0
-       },
-       {
-        "wk": 6,
-        "opp": "WAS",
-        "val": 264.0
-       },
-       {
-        "wk": 7,
-        "opp": "ATL",
-        "val": 288.0
-       },
-       {
-        "wk": 9,
-        "opp": "LV",
-        "val": 232.0
-       },
-       {
-        "wk": 10,
-        "opp": "DAL",
-        "val": 389.0
-       }
-      ],
-      "need": 225.0,
-      "recent_hits": 4,
-      "mu": 237.0,
-      "def_rank": 23.0,
-      "def_allowed": 166.4,
-      "carry_share": 0.143,
-      "tgt_share": 0.0,
-      "rz_share": 0.07,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
-      "td_rate": 0.25,
-      "role": null,
-      "range": [
-       197.0,
-       295.0
-      ],
-      "new_role": false,
-      "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
      }
     },
     {
@@ -16090,9 +16083,9 @@
       "carry_share": 0.143,
       "tgt_share": 0.0,
       "rz_share": 0.07,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.25,
       "role": null,
       "range": [
@@ -16115,7 +16108,7 @@
      "market": "rec_yds",
      "line": 39.5,
      "label": "리시빙 40야드 이상",
-     "prob": 58.6,
+     "prob": 58.2,
      "status": "Active",
      "game_id": "2026_11_MIN_SF",
      "detail": {
@@ -16148,29 +16141,29 @@
       ],
       "need": 40.0,
       "recent_hits": 3,
-      "mu": 50.2,
+      "mu": 49.8,
       "def_rank": 24.0,
       "def_allowed": 107.2,
       "carry_share": 0.0,
       "tgt_share": 0.23,
       "rz_share": 0.096,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.062,
       "role": {
        "kind": "rec",
-       "team_pass": 29.1,
+       "team_pass": 29.3,
        "share": 0.23,
        "exp_tgt": 6.4,
        "ypt": 6.19,
        "catch": 0.66,
        "def": 0.91,
-       "role_mu": 36.0,
-       "model_mu": 50.2
+       "role_mu": 36.2,
+       "model_mu": 49.8
       },
       "range": [
-       26.0,
+       25.0,
        72.0
       ],
       "new_role": false,
@@ -16181,15 +16174,15 @@
     },
     {
      "rank": 11,
-     "player_id": "00-0033280",
-     "name": "Christian McCaffrey",
-     "pos": "RB",
+     "player_id": "00-0037834",
+     "name": "Brock Purdy",
+     "pos": "QB",
      "team": "SF",
      "opp": "MIN",
-     "market": "td",
-     "line": null,
-     "label": "애니타임 터치다운",
-     "prob": 56.9,
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 57.3,
      "status": "",
      "game_id": "2026_11_MIN_SF",
      "detail": {
@@ -16197,43 +16190,46 @@
        {
         "wk": 5,
         "opp": "SEA",
-        "val": 1.0
+        "val": 189.0
        },
        {
         "wk": 6,
         "opp": "WAS",
-        "val": 2.0
+        "val": 264.0
        },
        {
         "wk": 7,
         "opp": "ATL",
-        "val": 1.0
+        "val": 288.0
        },
        {
         "wk": 9,
         "opp": "LV",
-        "val": 2.0
+        "val": 232.0
        },
        {
         "wk": 10,
         "opp": "DAL",
-        "val": 3.0
+        "val": 389.0
        }
       ],
-      "need": null,
-      "recent_hits": 5,
-      "mu": null,
-      "def_rank": 15.0,
-      "def_allowed": 0.6,
-      "carry_share": 0.456,
-      "tgt_share": 0.183,
-      "rz_share": 0.536,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
-      "td_rate": 0.812,
+      "need": 225.0,
+      "recent_hits": 4,
+      "mu": 231.3,
+      "def_rank": 23.0,
+      "def_allowed": 166.4,
+      "carry_share": 0.143,
+      "tgt_share": 0.0,
+      "rz_share": 0.07,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
+      "td_rate": 0.25,
       "role": null,
-      "range": null,
+      "range": [
+       193.0,
+       288.0
+      ],
       "new_role": false,
       "qb_ctx": false,
       "conf": "high",
@@ -16289,9 +16285,9 @@
       "carry_share": 0.098,
       "tgt_share": 0.0,
       "rz_share": 0.122,
-      "implied_total": 21.5,
-      "spread": -3.5,
-      "wind": 4.0,
+      "implied_total": 21.8,
+      "spread": -3.0,
+      "wind": 5.0,
       "td_rate": 0.188,
       "role": null,
       "range": [
@@ -16355,15 +16351,15 @@
       "carry_share": 0.0,
       "tgt_share": 0.239,
       "rz_share": 0.125,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
+      "implied_total": 24.8,
+      "spread": 3.0,
+      "wind": 5.0,
       "td_rate": 0.438,
       "role": {
        "kind": "recs",
-       "team_pass": 29.1,
+       "team_pass": 29.3,
        "share": 0.239,
-       "exp_tgt": 6.6,
+       "exp_tgt": 6.7,
        "ypt": 7.94,
        "catch": 0.6,
        "def": 0.91,
@@ -16432,20 +16428,20 @@
       "carry_share": 0.001,
       "tgt_share": 0.193,
       "rz_share": 0.27,
-      "implied_total": 21.5,
-      "spread": -3.5,
-      "wind": 4.0,
+      "implied_total": 21.8,
+      "spread": -3.0,
+      "wind": 5.0,
       "td_rate": 0.312,
       "role": {
        "kind": "recs",
-       "team_pass": 31.7,
+       "team_pass": 31.6,
        "share": 0.193,
        "exp_tgt": 5.8,
        "ypt": 7.33,
        "catch": 0.77,
        "def": 0.98,
        "role_mu": 4.5,
-       "model_mu": 4.2
+       "model_mu": 4.1
       },
       "range": [
        2.8,
@@ -16461,76 +16457,68 @@
     },
     {
      "rank": 15,
-     "player_id": "00-0033280",
-     "name": "Christian McCaffrey",
-     "pos": "RB",
-     "team": "SF",
-     "opp": "MIN",
-     "market": "rec_yds",
-     "line": 39.5,
-     "label": "리시빙 40야드 이상",
-     "prob": 56.6,
-     "status": "",
+     "player_id": "00-0029604",
+     "name": "Kirk Cousins",
+     "pos": "QB",
+     "team": "MIN",
+     "opp": "SF",
+     "market": "pass_yds",
+     "line": 224.5,
+     "label": "패싱 225야드 이상",
+     "prob": 61.4,
+     "status": "Active",
      "game_id": "2026_11_MIN_SF",
      "detail": {
       "recent": [
        {
-        "wk": 5,
-        "opp": "SEA",
-        "val": 15.0
-       },
-       {
         "wk": 6,
-        "opp": "WAS",
-        "val": 53.0
+        "opp": "BUF",
+        "val": 313.0
        },
        {
         "wk": 7,
-        "opp": "ATL",
-        "val": 61.0
+        "opp": "LA",
+        "val": 295.0
+       },
+       {
+        "wk": 8,
+        "opp": "NYJ",
+        "val": 247.0
        },
        {
         "wk": 9,
-        "opp": "LV",
-        "val": 19.0
+        "opp": "SF",
+        "val": 216.0
        },
        {
         "wk": 10,
-        "opp": "DAL",
-        "val": 161.0
+        "opp": "GB",
+        "val": 207.0
        }
       ],
-      "need": 40.0,
+      "need": 225.0,
       "recent_hits": 3,
-      "mu": 48.0,
-      "def_rank": 21.0,
-      "def_allowed": 24.1,
-      "carry_share": 0.456,
-      "tgt_share": 0.183,
-      "rz_share": 0.536,
-      "implied_total": 25.0,
-      "spread": 3.5,
-      "wind": 4.0,
-      "td_rate": 0.812,
-      "role": {
-       "kind": "rec",
-       "team_pass": 29.1,
-       "share": 0.183,
-       "exp_tgt": 5.1,
-       "ypt": 7.14,
-       "catch": 0.8,
-       "def": 0.94,
-       "role_mu": 33.9,
-       "model_mu": 48.0
-      },
+      "mu": 244.8,
+      "def_rank": 10.0,
+      "def_allowed": 244.8,
+      "carry_share": 0.098,
+      "tgt_share": 0.0,
+      "rz_share": 0.122,
+      "implied_total": 21.8,
+      "spread": -3.0,
+      "wind": 5.0,
+      "td_rate": 0.188,
+      "role": null,
       "range": [
-       24.0,
-       69.0
+       201.0,
+       299.0
       ],
       "new_role": false,
       "qb_ctx": false,
-      "conf": "high",
-      "conf_why": []
+      "conf": "low",
+      "conf_why": [
+       "qb_few"
+      ]
      }
     }
    ],
@@ -17918,27 +17906,9 @@
   "Isaiah Williams",
   "Tyjae Spears"
  ],
- "seconds": 80.8,
+ "seconds": 16.5,
  "changes": [
-  "▲ Chris Olave 리셉션 4개 이상 새로 진입 (1위, 68.5%)",
-  "▲ Luther Burden III 리셉션 4개 이상 새로 진입 (2위, 68.0%)",
-  "▲ Jahmyr Gibbs 애니타임 터치다운 새로 진입 (6위, 65.0%)",
-  "▲ Jameson Williams 리시빙 40야드 이상 새로 진입 (7위, 64.8%)",
-  "▲ George Pickens 리셉션 5개 이상 새로 진입 (9위, 64.2%)",
-  "▲ Trey McBride 리셉션 4개 이상 새로 진입 (12위, 63.7%)",
-  "▲ Travis Kelce 리셉션 3개 이상 새로 진입 (13위, 63.7%)",
-  "▲ Chig Okonkwo 리셉션 3개 이상 새로 진입 (14위, 63.7%)",
-  "▲ Brenton Strange 리셉션 3개 이상 새로 진입 (15위, 63.7%)",
-  "▼ Zay Flowers 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Isaiah Likely 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Jared Goff 패싱 225야드 이상 베스트 15에서 빠짐",
-  "▼ Carnell Tate 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Emeka Egbuka 리셉션 4개 이상 베스트 15에서 빠짐",
-  "▼ Joe Burrow 패싱 250야드 이상 베스트 15에서 빠짐",
-  "▼ Justin Jefferson 리시빙 40야드 이상 베스트 15에서 빠짐",
-  "▼ Mike Evans 리시빙 40야드 이상 베스트 15에서 빠짐",
-  "▼ Garrett Wilson 리셉션 5개 이상 베스트 15에서 빠짐",
-  "✕ Carson Beck 결장 반영",
-  "✕ Tyjae Spears 결장 반영"
+  "▲ Trevor Lawrence 패싱 200야드 이상 새로 진입 (1위, 68.4%)",
+  "▼ Chris Olave 리셉션 4개 이상 베스트 15에서 빠짐"
  ]
 }
