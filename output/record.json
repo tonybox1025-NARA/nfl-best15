@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26 22:52 ET",
+ "updated_at": "2026-11-26 23:33 ET",
  "overall_best15": {
   "graded": 33,
   "hits": 25,
@@ -327,25 +327,6 @@
       },
       {
        "rank": 11,
-       "player_id": "00-0037740",
-       "name": "Garrett Wilson",
-       "pos": "WR",
-       "team": "NYJ",
-       "opp": "MIA",
-       "game_id": "2026_12_NYJ_MIA",
-       "market": "rec_yds",
-       "line": 39.5,
-       "label": "리시빙 40야드 이상",
-       "prob": 66.2,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 12,
        "player_id": "00-0039139",
        "name": "Jahmyr Gibbs",
        "pos": "RB",
@@ -364,7 +345,7 @@
        "actual": 3
       },
       {
-       "rank": 13,
+       "rank": 12,
        "player_id": "00-0040122",
        "name": "Ashton Jeanty",
        "pos": "RB",
@@ -383,7 +364,7 @@
        "actual": null
       },
       {
-       "rank": 14,
+       "rank": 13,
        "player_id": "00-0038543",
        "name": "Jaxon Smith-Njigba",
        "pos": "WR",
@@ -402,7 +383,7 @@
        "actual": null
       },
       {
-       "rank": 15,
+       "rank": 14,
        "player_id": "00-0033293",
        "name": "Aaron Jones",
        "pos": "RB",
@@ -417,6 +398,25 @@
        "implied": null,
        "edge": null,
        "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 15,
+       "player_id": "00-0040719",
+       "name": "Bhayshul Tuten",
+       "pos": "RB",
+       "team": "JAX",
+       "opp": "TEN",
+       "game_id": "2026_12_TEN_JAX",
+       "market": "rush_yds",
+       "line": 39.5,
+       "label": "러싱 40야드 이상",
+       "prob": 65.5,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "Questionable",
        "result": "pending",
        "actual": null
       }
@@ -1956,7 +1956,7 @@
        "market": "rush_yds",
        "line": 39.5,
        "label": "러싱 40야드 이상",
-       "prob": 58.8,
+       "prob": 58.0,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -1975,7 +1975,7 @@
        "market": "rush_yds",
        "line": 39.5,
        "label": "러싱 40야드 이상",
-       "prob": 60.8,
+       "prob": 61.3,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -2900,25 +2900,6 @@
      "picks": [
       {
        "rank": 1,
-       "player_id": "00-0037740",
-       "name": "Garrett Wilson",
-       "pos": "WR",
-       "team": "NYJ",
-       "opp": "MIA",
-       "game_id": "2026_12_NYJ_MIA",
-       "market": "rec_yds",
-       "line": 39.5,
-       "label": "리시빙 40야드 이상",
-       "prob": 66.2,
-       "odds": null,
-       "implied": null,
-       "edge": null,
-       "status": "",
-       "result": "pending",
-       "actual": null
-      },
-      {
-       "rank": 2,
        "player_id": "00-0040198",
        "name": "Ollie Gordon II",
        "pos": "RB",
@@ -2937,7 +2918,7 @@
        "actual": null
       },
       {
-       "rank": 3,
+       "rank": 2,
        "player_id": "00-0037252",
        "name": "Greg Dulcich",
        "pos": "TE",
@@ -2956,7 +2937,7 @@
        "actual": null
       },
       {
-       "rank": 4,
+       "rank": 3,
        "player_id": "00-0037740",
        "name": "Garrett Wilson",
        "pos": "WR",
@@ -2975,7 +2956,7 @@
        "actual": null
       },
       {
-       "rank": 5,
+       "rank": 4,
        "player_id": "00-0041523",
        "name": "Caleb Douglas",
        "pos": "WR",
@@ -2994,7 +2975,7 @@
        "actual": null
       },
       {
-       "rank": 6,
+       "rank": 5,
        "player_id": "00-0038120",
        "name": "Breece Hall",
        "pos": "RB",
@@ -3013,7 +2994,7 @@
        "actual": null
       },
       {
-       "rank": 7,
+       "rank": 6,
        "player_id": "00-0039794",
        "name": "Braelon Allen",
        "pos": "RB",
@@ -3032,7 +3013,7 @@
        "actual": null
       },
       {
-       "rank": 8,
+       "rank": 7,
        "player_id": "00-0041523",
        "name": "Caleb Douglas",
        "pos": "WR",
@@ -3051,7 +3032,7 @@
        "actual": null
       },
       {
-       "rank": 9,
+       "rank": 8,
        "player_id": "00-0041511",
        "name": "Omar Cooper Jr.",
        "pos": "WR",
@@ -3070,7 +3051,7 @@
        "actual": null
       },
       {
-       "rank": 10,
+       "rank": 9,
        "player_id": "00-0037252",
        "name": "Greg Dulcich",
        "pos": "TE",
@@ -3080,11 +3061,30 @@
        "market": "rec_yds",
        "line": 29.5,
        "label": "리시빙 30야드 이상",
-       "prob": 55.8,
+       "prob": 56.0,
        "odds": null,
        "implied": null,
        "edge": null,
        "status": "Active",
+       "result": "pending",
+       "actual": null
+      },
+      {
+       "rank": 10,
+       "player_id": "00-0037740",
+       "name": "Garrett Wilson",
+       "pos": "WR",
+       "team": "NYJ",
+       "opp": "MIA",
+       "game_id": "2026_12_NYJ_MIA",
+       "market": "rec_yds",
+       "line": 49.5,
+       "label": "리시빙 50야드 이상",
+       "prob": 55.8,
+       "odds": null,
+       "implied": null,
+       "edge": null,
+       "status": "",
        "result": "pending",
        "actual": null
       },
@@ -3099,7 +3099,7 @@
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 41.4,
+       "prob": 42.0,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3118,7 +3118,7 @@
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 36.4,
+       "prob": 36.3,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3137,7 +3137,7 @@
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 32.3,
+       "prob": 32.5,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3156,7 +3156,7 @@
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 29.5,
+       "prob": 28.3,
        "odds": null,
        "implied": null,
        "edge": null,
@@ -3166,20 +3166,20 @@
       },
       {
        "rank": 15,
-       "player_id": "00-0041523",
-       "name": "Caleb Douglas",
+       "player_id": "00-0039890",
+       "name": "Adonai Mitchell",
        "pos": "WR",
-       "team": "MIA",
-       "opp": "NYJ",
+       "team": "NYJ",
+       "opp": "MIA",
        "game_id": "2026_12_NYJ_MIA",
        "market": "td",
        "line": null,
        "label": "애니타임 터치다운",
-       "prob": 27.0,
+       "prob": 27.2,
        "odds": null,
        "implied": null,
        "edge": null,
-       "status": "",
+       "status": "Active",
        "result": "pending",
        "actual": null
       }
