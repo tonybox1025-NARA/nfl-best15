@@ -1,7 +1,7 @@
 # 2026 시즌 12주차 베스트 15
 
-생성: 2026-11-27 17:29 ET  
-데이터: NFL 공식 리포트 343건 · ESPN 실시간 800건 / 날씨 10경기 (야외) / FanDuel 배당 0개 (남은 크레딧 2)
+생성: 2026-11-27 22:38 ET  
+데이터: NFL 공식 리포트 343건 · ESPN 실시간 800건 / 날씨 10경기 (야외) / 배당 309분 전 데이터 사용 (크레딧 절약)
 
 > 확률은 과거 데이터 기반 추정치예요. 배당이 있는 픽은 모델 65% + 시장 35%로 섞은 확률이에요. ⚠는 모델과 시장 차이가 15%p 넘는 픽(역할 변화·부상 확인 필요)이에요.
 
@@ -11,19 +11,19 @@
 |---|---|---|---|---|---|---|---|---|
 | 1 | Tee Higgins (WR) | CIN | NO | 리셉션 4개 이상 | **68.1%** | - | - | Questionable |
 | 2 | Chase Brown (RB) | CIN | NO | 리셉션 4개 이상 | **68.0%** | - | - | Active |
-| 3 | Harold Fannin Jr. (TE) | CLE | LV | 리시빙 30야드 이상 | **67.1%** | - | - | Active |
-| 4 | Isaiah Likely (TE) | NYG | IND | 리시빙 30야드 이상 | **67.1%** | - | - | Active |
+| 3 | Harold Fannin Jr. (TE) | CLE | LV | 리시빙 30야드 이상 | **67.4%** | - | - | Active |
+| 4 | Isaiah Likely (TE) | NYG | IND | 리시빙 30야드 이상 | **67.2%** | - | - | Active |
 | 5 | Zay Flowers (WR) | BAL | HOU | 리셉션 5개 이상 | **66.6%** | - | - | Active |
-| 6 | Garrett Wilson (WR) | NYJ | MIA | 리시빙 40야드 이상 | **66.3%** | - | - |  |
-| 7 | Jaxon Smith-Njigba (WR) | SEA | SF | 리셉션 6개 이상 | **65.8%** | - | - | Active |
+| 6 | Jaxon Smith-Njigba (WR) | SEA | SF | 리셉션 6개 이상 | **65.9%** | - | - | Active |
+| 7 | Malik Nabers (WR) | NYG | IND | 리셉션 5개 이상 | **65.6%** | - | - | Active |
 | 8 | Aaron Jones (RB) | MIN | ATL | 러싱 40야드 이상 | **65.6%** | - | - | Active |
-| 9 | Malik Nabers (WR) | NYG | IND | 리셉션 5개 이상 | **65.2%** | - | - | Active |
-| 10 | Stefon Diggs (WR) | WAS | ARI | 리시빙 40야드 이상 | **64.9%** | - | - | Active |
-| 11 | Jayden Daniels (QB) | WAS | ARI | 러싱 20야드 이상 | **64.9%** | - | - | Active |
-| 12 | Malik Nabers (WR) | NYG | IND | 리시빙 50야드 이상 | **64.7%** | - | - | Active |
-| 13 | Bucky Irving (RB) | TB | CAR | 러싱 60야드 이상 | **64.7%** | - | - |  |
-| 14 | Justin Jefferson (WR) | MIN | ATL | 리셉션 5개 이상 | **64.2%** | - | - | Active |
-| 15 | Mark Andrews (TE) | BAL | HOU | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 9 | Stefon Diggs (WR) | WAS | ARI | 리시빙 40야드 이상 | **65.6%** | - | - | Active |
+| 10 | Jayden Daniels (QB) | WAS | ARI | 러싱 20야드 이상 | **64.9%** | - | - | Active |
+| 11 | Bucky Irving (RB) | TB | CAR | 러싱 60야드 이상 | **64.7%** | - | - |  |
+| 12 | Justin Jefferson (WR) | MIN | ATL | 리셉션 5개 이상 | **64.2%** | - | - | Active |
+| 13 | Mark Andrews (TE) | BAL | HOU | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 14 | Justice Hill (RB) | BAL | HOU | 리셉션 3개 이상 | **63.7%** | - | - | Active |
+| 15 | Chig Okonkwo (TE) | WAS | ARI | 리셉션 3개 이상 | **63.7%** | - | - | Active |
 
 ## 터치다운 확률 TOP 15
 
@@ -31,19 +31,19 @@
 |---|---|---|---|---|---|---|---|---|
 | 1 | Derrick Henry (RB) | BAL | HOU | 애니타임 터치다운 | **62.4%** | - | - | Active |
 | 2 | Bucky Irving (RB) | TB | CAR | 애니타임 터치다운 | **53.7%** | - | - |  |
-| 3 | Christian McCaffrey (RB) | SF | SEA | 애니타임 터치다운 | **53.5%** | - | - |  |
+| 3 | Christian McCaffrey (RB) | SF | SEA | 애니타임 터치다운 | **53.9%** | - | - |  |
 | 4 | Ja'Marr Chase (WR) | CIN | NO | 애니타임 터치다운 | **48.1%** | - | - | Active |
-| 5 | Tony Pollard (RB) | TEN | JAX | 애니타임 터치다운 | **46.5%** | - | - | 훈련 불참 |
-| 6 | Jonah Coleman (RB) | DEN | PIT | 애니타임 터치다운 | **44.8%** | - | - |  |
-| 7 | Cam Skattebo (RB) | NYG | IND | 애니타임 터치다운 | **43.6%** | - | - | Active |
+| 5 | Tony Pollard (RB) | TEN | JAX | 애니타임 터치다운 | **45.4%** | - | - | 훈련 불참 |
+| 6 | Jonah Coleman (RB) | DEN | PIT | 애니타임 터치다운 | **44.8%** | - | - | Active |
+| 7 | Cam Skattebo (RB) | NYG | IND | 애니타임 터치다운 | **43.8%** | - | - | Active |
 | 8 | Chuba Hubbard (RB) | CAR | TB | 애니타임 터치다운 | **42.4%** | - | - |  |
-| 9 | Breece Hall (RB) | NYJ | MIA | 애니타임 터치다운 | **41.1%** | - | - |  |
+| 9 | Breece Hall (RB) | NYJ | MIA | 애니타임 터치다운 | **42.3%** | - | - |  |
 | 10 | Chase Brown (RB) | CIN | NO | 애니타임 터치다운 | **40.9%** | - | - | Active |
 | 11 | Tee Higgins (WR) | CIN | NO | 애니타임 터치다운 | **39.8%** | - | - | Questionable |
 | 12 | Jacory Croskey-Merritt (RB) | WAS | ARI | 애니타임 터치다운 | **38.8%** | - | - | Active |
 | 13 | Stefon Diggs (WR) | WAS | ARI | 애니타임 터치다운 | **38.2%** | - | - | Active |
-| 14 | Jakobi Meyers (WR) | JAX | TEN | 애니타임 터치다운 | **43.0%** | - | - | Active |
-| 15 | Quinshon Judkins (RB) | CLE | LV | 애니타임 터치다운 | **37.5%** | - | - |  |
+| 14 | Quinshon Judkins (RB) | CLE | LV | 애니타임 터치다운 | **37.5%** | - | - |  |
+| 15 | Aaron Jones (RB) | MIN | ATL | 애니타임 터치다운 | **37.5%** | - | - | Active |
 
 ## 경기별 베스트 15
 
@@ -52,10 +52,10 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Jonah Coleman (RB) | DEN | PIT | 러싱 40야드 이상 | **59.4%** | - | - |  |
+| 1 | Jonah Coleman (RB) | DEN | PIT | 러싱 40야드 이상 | **59.4%** | - | - | Active |
 | 2 | Bo Nix (QB) | DEN | PIT | 패싱 200야드 이상 | **55.3%** | - | - | Active |
-| 3 | Jonah Coleman (RB) | DEN | PIT | 애니타임 터치다운 | **44.8%** | - | - |  |
-| 4 | Jaylen Warren (RB) | PIT | DEN | 애니타임 터치다운 | **29.3%** | - | - |  |
+| 3 | Jonah Coleman (RB) | DEN | PIT | 애니타임 터치다운 | **44.8%** | - | - | Active |
+| 4 | Jaylen Warren (RB) | PIT | DEN | 애니타임 터치다운 | **29.3%** | - | - | Active |
 | 5 | Max Hurleman (WR) | PIT | DEN | 애니타임 터치다운 | **22.6%** | - | - | Active |
 
 ### NO @ CIN · 2026-11-29 13:00 ET · Paycor Stadium
@@ -92,12 +92,12 @@
 | 6 | Nico Collins (WR) | HOU | BAL | 리셉션 4개 이상 | **67.0%** | - | - | Active |
 | 7 | Jacoby Brissett (QB) | BAL | HOU | 패싱 200야드 이상 | **60.6%** | - | - | Active |
 | 8 | C.J. Stroud (QB) | HOU | BAL | 패싱 225야드 이상 | **59.8%** | - | - | Active |
-| 9 | Derrick Henry (RB) | BAL | HOU | 러싱 70야드 이상 | **57.3%** | - | - | Active |
-| 10 | C.J. Stroud (QB) | HOU | BAL | 패싱 TD 2개 이상 | **56.1%** | - | - | Active |
-| 11 | Woody Marks (RB) | HOU | BAL | 러싱 50야드 이상 | **60.4%** | - | - | Active |
-| 12 | David Montgomery (RB) | HOU | BAL | 러싱 40야드 이상 | **59.4%** | - | - | Active |
-| 13 | Tank Dell (WR) | HOU | BAL | 리시빙 40야드 이상 | **55.8%** | - | - | Active |
-| 14 | Nico Collins (WR) | HOU | BAL | 리시빙 60야드 이상 | **55.2%** | - | - | Active |
+| 9 | Nico Collins (WR) | HOU | BAL | 리시빙 50야드 이상 | **64.6%** | - | - | Active |
+| 10 | Derrick Henry (RB) | BAL | HOU | 러싱 70야드 이상 | **57.3%** | - | - | Active |
+| 11 | C.J. Stroud (QB) | HOU | BAL | 패싱 TD 2개 이상 | **56.1%** | - | - | Active |
+| 12 | Woody Marks (RB) | HOU | BAL | 러싱 50야드 이상 | **60.1%** | - | - | Active |
+| 13 | David Montgomery (RB) | HOU | BAL | 러싱 40야드 이상 | **59.5%** | - | - | Active |
+| 14 | Tank Dell (WR) | HOU | BAL | 리시빙 40야드 이상 | **55.8%** | - | - | Active |
 | 15 | Nico Collins (WR) | HOU | BAL | 애니타임 터치다운 | **38.4%** | - | - | Active |
 
 ### NYG @ IND · 2026-11-29 13:00 ET · Lucas Oil Stadium
@@ -105,37 +105,37 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Isaiah Likely (TE) | NYG | IND | 리시빙 30야드 이상 | **67.1%** | - | - | Active |
-| 2 | Malik Nabers (WR) | NYG | IND | 리셉션 5개 이상 | **65.2%** | - | - | Active |
-| 3 | Malik Nabers (WR) | NYG | IND | 리시빙 50야드 이상 | **64.7%** | - | - | Active |
-| 4 | Cam Skattebo (RB) | NYG | IND | 러싱 50야드 이상 | **62.5%** | - | - | Active |
-| 5 | Isaiah Likely (TE) | NYG | IND | 리셉션 4개 이상 | **61.6%** | - | - | Active |
-| 6 | Jonathan Taylor (RB) | IND | NYG | 러싱 50야드 이상 | **62.1%** | - | - | Active |
-| 7 | Tyler Warren (TE) | IND | NYG | 리셉션 4개 이상 | **61.2%** | - | - |  |
-| 8 | Cam Skattebo (RB) | NYG | IND | 애니타임 터치다운 | **43.6%** | - | - | Active |
-| 9 | Malik Nabers (WR) | NYG | IND | 애니타임 터치다운 | **34.3%** | - | - | Active |
-| 10 | Isaiah Likely (TE) | NYG | IND | 애니타임 터치다운 | **31.3%** | - | - | Active |
-| 11 | Jonathan Taylor (RB) | IND | NYG | 애니타임 터치다운 | **34.0%** | - | - | Active |
-| 12 | Malachi Fields (WR) | NYG | IND | 애니타임 터치다운 | **21.4%** | - | - | Active |
+| 1 | Isaiah Likely (TE) | NYG | IND | 리시빙 30야드 이상 | **67.2%** | - | - | Active |
+| 2 | Malik Nabers (WR) | NYG | IND | 리셉션 5개 이상 | **65.6%** | - | - | Active |
+| 3 | Isaiah Likely (TE) | NYG | IND | 리셉션 4개 이상 | **61.6%** | - | - | Active |
+| 4 | Cam Skattebo (RB) | NYG | IND | 러싱 50야드 이상 | **61.3%** | - | - | Active |
+| 5 | Malik Nabers (WR) | NYG | IND | 리시빙 60야드 이상 | **57.3%** | - | - | Active |
+| 6 | Jonathan Taylor (RB) | IND | NYG | 러싱 50야드 이상 | **62.0%** | - | - | Active |
+| 7 | Tyler Warren (TE) | IND | NYG | 리셉션 4개 이상 | **61.5%** | - | - |  |
+| 8 | Cam Skattebo (RB) | NYG | IND | 애니타임 터치다운 | **43.8%** | - | - | Active |
+| 9 | Malik Nabers (WR) | NYG | IND | 애니타임 터치다운 | **34.4%** | - | - | Active |
+| 10 | Isaiah Likely (TE) | NYG | IND | 애니타임 터치다운 | **32.0%** | - | - | Active |
+| 11 | Jonathan Taylor (RB) | IND | NYG | 애니타임 터치다운 | **34.2%** | - | - | Active |
+| 12 | Malachi Fields (WR) | NYG | IND | 애니타임 터치다운 | **21.9%** | - | - | Active |
 
 ### TEN @ JAX · 2026-11-29 13:00 ET · EverBank Stadium
 스프레드 JAX -14.0 · 총점 48.5 · 예상 점수 TEN 17.2 – JAX 31.2
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Carnell Tate (WR) | TEN | JAX | 리시빙 40야드 이상 | **62.7%** | - | - | Active |
-| 2 | Trevor Lawrence (QB) | JAX | TEN | 패싱 TD 2개 이상 | **62.7%** | - | - |  |
-| 3 | Tony Pollard (RB) | TEN | JAX | 러싱 50야드 이상 | **62.5%** | - | - | 훈련 불참 |
+| 1 | Tony Pollard (RB) | TEN | JAX | 러싱 50야드 이상 | **63.3%** | - | - | 훈련 불참 |
+| 2 | Carnell Tate (WR) | TEN | JAX | 리시빙 40야드 이상 | **62.7%** | - | - | Active |
+| 3 | Trevor Lawrence (QB) | JAX | TEN | 패싱 TD 2개 이상 | **62.7%** | - | - |  |
 | 4 | Carnell Tate (WR) | TEN | JAX | 리셉션 4개 이상 | **61.2%** | - | - | Active |
 | 5 | Brenton Strange (TE) | JAX | TEN | 리셉션 3개 이상 | **63.7%** | - | - |  |
-| 6 | Jakobi Meyers (WR) | JAX | TEN | 리시빙 50야드 이상 | **63.3%** | - | - | Active |
-| 7 | Jakobi Meyers (WR) | JAX | TEN | 리셉션 4개 이상 | **63.1%** | - | - | Active |
-| 8 | Chris Rodriguez Jr. (RB) | JAX | TEN | 러싱 50야드 이상 | **59.5%** | - | - | Active |
+| 6 | Jakobi Meyers (WR) | JAX | TEN | 리셉션 4개 이상 | **63.1%** | - | - | Active |
+| 7 | Jakobi Meyers (WR) | JAX | TEN | 리시빙 50야드 이상 | **62.5%** | - | - | Active |
+| 8 | Chris Rodriguez Jr. (RB) | JAX | TEN | 러싱 50야드 이상 | **59.4%** | - | - | Active |
 | 9 | Trevor Lawrence (QB) | JAX | TEN | 패싱 250야드 이상 | **54.2%** | - | - |  |
-| 10 | Tony Pollard (RB) | TEN | JAX | 애니타임 터치다운 | **46.5%** | - | - | 훈련 불참 |
-| 11 | Jakobi Meyers (WR) | JAX | TEN | 애니타임 터치다운 | **43.0%** | - | - | Active |
+| 10 | Tony Pollard (RB) | TEN | JAX | 애니타임 터치다운 | **45.4%** | - | - | 훈련 불참 |
+| 11 | Jakobi Meyers (WR) | JAX | TEN | 애니타임 터치다운 | **42.4%** | - | - | Active |
 | 12 | Chris Rodriguez Jr. (RB) | JAX | TEN | 애니타임 터치다운 | **39.9%** | - | - | Active |
-| 13 | Brenton Strange (TE) | JAX | TEN | 애니타임 터치다운 | **34.4%** | - | - |  |
+| 13 | Brenton Strange (TE) | JAX | TEN | 애니타임 터치다운 | **33.2%** | - | - |  |
 | 14 | Tanner Koziol (TE) | JAX | TEN | 애니타임 터치다운 | **28.1%** | - | - | Active |
 | 15 | Carnell Tate (WR) | TEN | JAX | 애니타임 터치다운 | **22.0%** | - | - | Active |
 
@@ -144,21 +144,21 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Garrett Wilson (WR) | NYJ | MIA | 리시빙 40야드 이상 | **66.3%** | - | - |  |
-| 2 | Greg Dulcich (TE) | MIA | NYJ | 리셉션 3개 이상 | **63.3%** | - | - | Active |
-| 3 | Ollie Gordon II (RB) | MIA | NYJ | 러싱 50야드 이상 | **62.8%** | - | - |  |
-| 4 | Breece Hall (RB) | NYJ | MIA | 러싱 50야드 이상 | **62.0%** | - | - |  |
-| 5 | Garrett Wilson (WR) | NYJ | MIA | 리셉션 4개 이상 | **61.6%** | - | - |  |
-| 6 | Caleb Douglas (WR) | MIA | NYJ | 리셉션 4개 이상 | **61.4%** | - | - |  |
-| 7 | Adonai Mitchell (WR) | NYJ | MIA | 리시빙 40야드 이상 | **57.7%** | - | - | Active |
-| 8 | Braelon Allen (RB) | NYJ | MIA | 러싱 50야드 이상 | **57.5%** | - | - | Active |
-| 9 | Caleb Douglas (WR) | MIA | NYJ | 리시빙 50야드 이상 | **57.5%** | - | - |  |
-| 10 | Greg Dulcich (TE) | MIA | NYJ | 리시빙 30야드 이상 | **56.2%** | - | - | Active |
-| 11 | Geno Smith (QB) | NYJ | MIA | 패싱 225야드 이상 | **54.6%** | - | - | Active |
-| 12 | Breece Hall (RB) | NYJ | MIA | 애니타임 터치다운 | **41.1%** | - | - |  |
-| 13 | Garrett Wilson (WR) | NYJ | MIA | 애니타임 터치다운 | **32.1%** | - | - |  |
-| 14 | Ollie Gordon II (RB) | MIA | NYJ | 애니타임 터치다운 | **31.0%** | - | - |  |
-| 15 | Braelon Allen (RB) | NYJ | MIA | 애니타임 터치다운 | **29.2%** | - | - | Active |
+| 1 | Greg Dulcich (TE) | MIA | NYJ | 리셉션 3개 이상 | **63.3%** | - | - | Active |
+| 2 | Ollie Gordon II (RB) | MIA | NYJ | 러싱 50야드 이상 | **62.8%** | - | - |  |
+| 3 | Garrett Wilson (WR) | NYJ | MIA | 리셉션 4개 이상 | **62.5%** | - | - |  |
+| 4 | Breece Hall (RB) | NYJ | MIA | 러싱 50야드 이상 | **61.9%** | - | - |  |
+| 5 | Caleb Douglas (WR) | MIA | NYJ | 리셉션 4개 이상 | **61.6%** | - | - |  |
+| 6 | Braelon Allen (RB) | NYJ | MIA | 러싱 40야드 이상 | **61.3%** | - | - | Active |
+| 7 | Caleb Douglas (WR) | MIA | NYJ | 리시빙 50야드 이상 | **59.2%** | - | - |  |
+| 8 | Garrett Wilson (WR) | NYJ | MIA | 리시빙 50야드 이상 | **58.8%** | - | - |  |
+| 9 | Adonai Mitchell (WR) | NYJ | MIA | 리시빙 40야드 이상 | **58.6%** | - | - | Active |
+| 10 | Greg Dulcich (TE) | MIA | NYJ | 리시빙 30야드 이상 | **56.3%** | - | - | Active |
+| 11 | Kyle McCord (QB) | MIA | NYJ | 패싱 200야드 이상 | **56.1%** | - | - |  |
+| 12 | Geno Smith (QB) | NYJ | MIA | 패싱 225야드 이상 | **54.6%** | - | - | Active |
+| 13 | Breece Hall (RB) | NYJ | MIA | 애니타임 터치다운 | **42.3%** | - | - |  |
+| 14 | Garrett Wilson (WR) | NYJ | MIA | 애니타임 터치다운 | **32.5%** | - | - |  |
+| 15 | Ollie Gordon II (RB) | MIA | NYJ | 애니타임 터치다운 | **30.9%** | - | - |  |
 
 ### ATL @ MIN · 2026-11-29 13:00 ET · U.S. Bank Stadium
 스프레드 MIN -7.0 · 총점 41.5 · 예상 점수 ATL 17.2 – MIN 24.2
@@ -192,7 +192,7 @@
 | 4 | Rhamondre Stevenson (RB) | NE | LAC | 러싱 40야드 이상 | **57.5%** | - | - | Active |
 | 5 | Hunter Henry (TE) | NE | LAC | 리시빙 30야드 이상 | **56.9%** | - | - | Active |
 | 6 | Omarion Hampton (RB) | LAC | NE | 애니타임 터치다운 | **35.5%** | - | - | Active |
-| 7 | Corey Kiner (RB) | NE | LAC | 애니타임 터치다운 | **28.4%** | - | - | Active |
+| 7 | Corey Kiner (RB) | NE | LAC | 애니타임 터치다운 | **28.4%** | - | - |  |
 | 8 | Rhamondre Stevenson (RB) | NE | LAC | 애니타임 터치다운 | **24.4%** | - | - | Active |
 | 9 | Mack Hollins (WR) | NE | LAC | 애니타임 터치다운 | **21.4%** | - | - | Active |
 | 10 | DeMario Douglas (WR) | NE | LAC | 애니타임 터치다운 | **20.0%** | - | - | Active |
@@ -202,63 +202,63 @@
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Stefon Diggs (WR) | WAS | ARI | 리시빙 40야드 이상 | **64.9%** | - | - | Active |
+| 1 | Stefon Diggs (WR) | WAS | ARI | 리시빙 40야드 이상 | **65.6%** | - | - | Active |
 | 2 | Jayden Daniels (QB) | WAS | ARI | 러싱 20야드 이상 | **64.9%** | - | - | Active |
 | 3 | Chig Okonkwo (TE) | WAS | ARI | 리셉션 3개 이상 | **63.7%** | - | - | Active |
 | 4 | Stefon Diggs (WR) | WAS | ARI | 리셉션 4개 이상 | **61.6%** | - | - | Active |
-| 5 | Jayden Daniels (QB) | WAS | ARI | 패싱 200야드 이상 | **61.0%** | - | - | Active |
-| 6 | Jacory Croskey-Merritt (RB) | WAS | ARI | 러싱 50야드 이상 | **56.7%** | - | - | Active |
-| 7 | Trey McBride (TE) | ARI | WAS | 리셉션 7개 이상 | **59.7%** | - | - | Active |
-| 8 | Trey McBride (TE) | ARI | WAS | 리시빙 60야드 이상 | **58.3%** | - | - | Active |
-| 9 | Jacory Croskey-Merritt (RB) | WAS | ARI | 애니타임 터치다운 | **38.8%** | - | - | Active |
-| 10 | Stefon Diggs (WR) | WAS | ARI | 애니타임 터치다운 | **38.2%** | - | - | Active |
-| 11 | Austin Ekeler (RB) | WAS | ARI | 애니타임 터치다운 | **30.9%** | - | - | Active |
-| 12 | Antonio Williams (WR) | WAS | ARI | 애니타임 터치다운 | **30.7%** | - | - | Active |
-| 13 | Trey McBride (TE) | ARI | WAS | 애니타임 터치다운 | **31.8%** | - | - | Active |
-| 14 | Jayden Daniels (QB) | WAS | ARI | 애니타임 터치다운 | **26.1%** | - | - | Active |
-| 15 | Rachaad White (RB) | WAS | ARI | 애니타임 터치다운 | **24.5%** | - | - | Active |
+| 5 | Jayden Daniels (QB) | WAS | ARI | 패싱 200야드 이상 | **58.5%** | - | - | Active |
+| 6 | Jacory Croskey-Merritt (RB) | WAS | ARI | 러싱 50야드 이상 | **56.6%** | - | - | Active |
+| 7 | Chig Okonkwo (TE) | WAS | ARI | 리시빙 30야드 이상 | **55.3%** | - | - | Active |
+| 8 | Trey McBride (TE) | ARI | WAS | 리셉션 7개 이상 | **59.9%** | - | - | Active |
+| 9 | Trey McBride (TE) | ARI | WAS | 리시빙 60야드 이상 | **59.1%** | - | - | Active |
+| 10 | Jacory Croskey-Merritt (RB) | WAS | ARI | 애니타임 터치다운 | **38.8%** | - | - | Active |
+| 11 | Stefon Diggs (WR) | WAS | ARI | 애니타임 터치다운 | **38.2%** | - | - | Active |
+| 12 | Austin Ekeler (RB) | WAS | ARI | 애니타임 터치다운 | **30.9%** | - | - | Active |
+| 13 | Antonio Williams (WR) | WAS | ARI | 애니타임 터치다운 | **30.7%** | - | - | Active |
+| 14 | Trey McBride (TE) | ARI | WAS | 애니타임 터치다운 | **32.0%** | - | - | Active |
+| 15 | Jayden Daniels (QB) | WAS | ARI | 애니타임 터치다운 | **26.3%** | - | - | Active |
 
 ### SEA @ SF · 2026-11-29 16:25 ET · Levi's Stadium
 스프레드 SF -2.5 · 총점 43.5 · 예상 점수 SEA 20.5 – SF 23.0
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Jaxon Smith-Njigba (WR) | SEA | SF | 리셉션 6개 이상 | **65.8%** | - | - | Active |
-| 2 | Christian McCaffrey (RB) | SF | SEA | 리시빙 20야드 이상 | **66.3%** | - | - |  |
-| 3 | Mike Evans (WR) | SF | SEA | 리시빙 40야드 이상 | **64.9%** | - | - | Questionable |
-| 4 | Drew Lock (QB) | SEA | SF | 패싱 200야드 이상 | **59.8%** | - | - | Questionable |
-| 5 | Christian McCaffrey (RB) | SF | SEA | 리셉션 3개 이상 | **63.7%** | - | - |  |
-| 6 | George Kittle (TE) | SF | SEA | 리셉션 4개 이상 | **61.6%** | - | - |  |
-| 7 | Jaxon Smith-Njigba (WR) | SEA | SF | 리시빙 70야드 이상 | **56.5%** | - | - | Active |
-| 8 | George Kittle (TE) | SF | SEA | 리시빙 30야드 이상 | **60.8%** | - | - |  |
-| 9 | Christian McCaffrey (RB) | SF | SEA | 러싱 40야드 이상 | **59.5%** | - | - |  |
-| 10 | Emanuel Wilson (RB) | SEA | SF | 러싱 40야드 이상 | **58.2%** | - | - |  |
-| 11 | Christian McCaffrey (RB) | SF | SEA | 애니타임 터치다운 | **53.5%** | - | - |  |
-| 12 | Jaxon Smith-Njigba (WR) | SEA | SF | 애니타임 터치다운 | **35.0%** | - | - | Active |
-| 13 | Zach Charbonnet (RB) | SEA | SF | 애니타임 터치다운 | **32.0%** | - | - | Active |
-| 14 | Emanuel Wilson (RB) | SEA | SF | 애니타임 터치다운 | **34.8%** | - | - |  |
-| 15 | Mike Evans (WR) | SF | SEA | 애니타임 터치다운 | **29.5%** | - | - | Questionable |
+| 1 | Jaxon Smith-Njigba (WR) | SEA | SF | 리셉션 6개 이상 | **65.9%** | - | - | Active |
+| 2 | Drew Lock (QB) | SEA | SF | 패싱 200야드 이상 | **61.0%** | - | - | Active |
+| 3 | Christian McCaffrey (RB) | SF | SEA | 리셉션 3개 이상 | **63.7%** | - | - |  |
+| 4 | Mike Evans (WR) | SF | SEA | 리시빙 40야드 이상 | **61.8%** | - | - | Questionable |
+| 5 | George Kittle (TE) | SF | SEA | 리셉션 4개 이상 | **61.6%** | - | - |  |
+| 6 | Christian McCaffrey (RB) | SF | SEA | 리시빙 20야드 이상 | **61.3%** | - | - |  |
+| 7 | Jaxon Smith-Njigba (WR) | SEA | SF | 리시빙 70야드 이상 | **55.6%** | - | - | Active |
+| 8 | Christian McCaffrey (RB) | SF | SEA | 러싱 40야드 이상 | **59.8%** | - | - |  |
+| 9 | Mike Evans (WR) | SF | SEA | 리셉션 4개 이상 | **59.5%** | - | - | Questionable |
+| 10 | Emanuel Wilson (RB) | SEA | SF | 러싱 40야드 이상 | **59.3%** | - | - |  |
+| 11 | George Kittle (TE) | SF | SEA | 리시빙 40야드 이상 | **56.7%** | - | - |  |
+| 12 | Christian McCaffrey (RB) | SF | SEA | 애니타임 터치다운 | **53.9%** | - | - |  |
+| 13 | Jaxon Smith-Njigba (WR) | SEA | SF | 애니타임 터치다운 | **33.0%** | - | - | Active |
+| 14 | Zach Charbonnet (RB) | SEA | SF | 애니타임 터치다운 | **31.9%** | - | - | Active |
+| 15 | Emanuel Wilson (RB) | SEA | SF | 애니타임 터치다운 | **34.4%** | - | - |  |
 
 ### LV @ CLE · 2026-11-29 20:20 ET · Huntington Bank Field
 스프레드 CLE -4.5 · 총점 39.5 · 예상 점수 LV 17.5 – CLE 22.0
 
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Harold Fannin Jr. (TE) | CLE | LV | 리시빙 30야드 이상 | **67.1%** | - | - | Active |
+| 1 | Harold Fannin Jr. (TE) | CLE | LV | 리시빙 30야드 이상 | **67.4%** | - | - | Active |
 | 2 | KC Concepcion (WR) | CLE | LV | 리시빙 40야드 이상 | **62.5%** | - | - | Active |
 | 3 | Ashton Jeanty (RB) | LV | CLE | 리시빙 20야드 이상 | **61.7%** | - | - | Active |
 | 4 | Brock Bowers (TE) | LV | CLE | 리셉션 4개 이상 | **61.6%** | - | - | Questionable |
 | 5 | Harold Fannin Jr. (TE) | CLE | LV | 리셉션 4개 이상 | **61.6%** | - | - | Active |
-| 6 | Ashton Jeanty (RB) | LV | CLE | 리셉션 4개 이상 | **60.7%** | - | - | Active |
+| 6 | Ashton Jeanty (RB) | LV | CLE | 리셉션 4개 이상 | **60.8%** | - | - | Active |
 | 7 | Ashton Jeanty (RB) | LV | CLE | 러싱 50야드 이상 | **58.9%** | - | - | Active |
-| 8 | Quinshon Judkins (RB) | CLE | LV | 러싱 50야드 이상 | **58.6%** | - | - |  |
-| 9 | Brock Bowers (TE) | LV | CLE | 리시빙 40야드 이상 | **56.0%** | - | - | Questionable |
-| 10 | Deshaun Watson (QB) | CLE | LV | 패싱 200야드 이상 | **54.9%** | - | - | Active |
-| 11 | Quinshon Judkins (RB) | CLE | LV | 애니타임 터치다운 | **37.5%** | - | - |  |
-| 12 | Ashton Jeanty (RB) | LV | CLE | 애니타임 터치다운 | **35.5%** | - | - | Active |
-| 13 | Harold Fannin Jr. (TE) | CLE | LV | 애니타임 터치다운 | **30.0%** | - | - | Active |
-| 14 | KC Concepcion (WR) | CLE | LV | 애니타임 터치다운 | **29.6%** | - | - | Active |
-| 15 | Deshaun Watson (QB) | CLE | LV | 애니타임 터치다운 | **25.5%** | - | - | Active |
+| 8 | Quinshon Judkins (RB) | CLE | LV | 러싱 50야드 이상 | **58.5%** | - | - |  |
+| 9 | KC Concepcion (WR) | CLE | LV | 리셉션 4개 이상 | **58.2%** | - | - | Active |
+| 10 | Brock Bowers (TE) | LV | CLE | 리시빙 40야드 이상 | **56.7%** | - | - | Questionable |
+| 11 | Deshaun Watson (QB) | CLE | LV | 패싱 200야드 이상 | **54.5%** | - | - | Active |
+| 12 | Quinshon Judkins (RB) | CLE | LV | 애니타임 터치다운 | **37.5%** | - | - |  |
+| 13 | Ashton Jeanty (RB) | LV | CLE | 애니타임 터치다운 | **35.5%** | - | - | Active |
+| 14 | Harold Fannin Jr. (TE) | CLE | LV | 애니타임 터치다운 | **30.0%** | - | - | Active |
+| 15 | KC Concepcion (WR) | CLE | LV | 애니타임 터치다운 | **29.6%** | - | - | Active |
 
 ### CAR @ TB · 2026-11-30 20:15 ET · Raymond James Stadium
 스프레드 TB -3.0 · 총점 43.5 · 예상 점수 CAR 20.2 – TB 23.2
@@ -266,16 +266,15 @@
 | 순위 | 선수 | 팀 | 상대 | 픽 | 확률 | FanDuel | 엣지 | 상태 |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Bucky Irving (RB) | TB | CAR | 러싱 60야드 이상 | **64.7%** | - | - |  |
-| 2 | Chuba Hubbard (RB) | CAR | TB | 러싱 50야드 이상 | **60.7%** | - | - |  |
-| 3 | Tetairoa McMillan (WR) | CAR | TB | 리시빙 50야드 이상 | **59.5%** | - | - | Questionable |
-| 4 | Bryce Young (QB) | CAR | TB | 패싱 225야드 이상 | **59.4%** | - | - | Active |
-| 5 | Tetairoa McMillan (WR) | CAR | TB | 리셉션 5개 이상 | **58.3%** | - | - | Questionable |
-| 6 | Baker Mayfield (QB) | TB | CAR | 패싱 200야드 이상 | **57.7%** | - | - | Active |
-| 7 | Bryce Young (QB) | CAR | TB | 패싱 TD 2개 이상 | **56.1%** | - | - | Active |
-| 8 | Bucky Irving (RB) | TB | CAR | 애니타임 터치다운 | **53.7%** | - | - |  |
-| 9 | Chuba Hubbard (RB) | CAR | TB | 애니타임 터치다운 | **42.4%** | - | - |  |
-| 10 | Tetairoa McMillan (WR) | CAR | TB | 애니타임 터치다운 | **27.9%** | - | - | Questionable |
-| 11 | Emeka Egbuka (WR) | TB | CAR | 애니타임 터치다운 | **22.4%** | - | - | Active |
-| 12 | Kenny Gainwell (RB) | TB | CAR | 애니타임 터치다운 | **21.8%** | - | - | Active |
-| 13 | Jalen Coker (WR) | CAR | TB | 애니타임 터치다운 | **21.7%** | - | - | Active |
-| 14 | Ted Hurst III (WR) | TB | CAR | 애니타임 터치다운 | **21.4%** | - | - | Active |
+| 2 | Chuba Hubbard (RB) | CAR | TB | 러싱 50야드 이상 | **60.5%** | - | - |  |
+| 3 | Tetairoa McMillan (WR) | CAR | TB | 리시빙 50야드 이상 | **59.9%** | - | - | Questionable |
+| 4 | Tetairoa McMillan (WR) | CAR | TB | 리셉션 5개 이상 | **58.3%** | - | - | Questionable |
+| 5 | Bryce Young (QB) | CAR | TB | 패싱 225야드 이상 | **57.3%** | - | - | Active |
+| 6 | Bryce Young (QB) | CAR | TB | 패싱 TD 2개 이상 | **55.5%** | - | - | Active |
+| 7 | Bucky Irving (RB) | TB | CAR | 애니타임 터치다운 | **53.7%** | - | - |  |
+| 8 | Chuba Hubbard (RB) | CAR | TB | 애니타임 터치다운 | **42.4%** | - | - |  |
+| 9 | Tetairoa McMillan (WR) | CAR | TB | 애니타임 터치다운 | **27.9%** | - | - | Questionable |
+| 10 | Emeka Egbuka (WR) | TB | CAR | 애니타임 터치다운 | **22.4%** | - | - | Active |
+| 11 | Kenny Gainwell (RB) | TB | CAR | 애니타임 터치다운 | **21.8%** | - | - | Active |
+| 12 | Jalen Coker (WR) | CAR | TB | 애니타임 터치다운 | **21.7%** | - | - | Active |
+| 13 | Ted Hurst III (WR) | TB | CAR | 애니타임 터치다운 | **21.4%** | - | - | Active |
